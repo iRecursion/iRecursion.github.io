@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>AsciiDoc | AsciiDoc</title>
+    
+    
+    
+	<link rel="stylesheet" href="../../../_/css/site.css">
+    
+    <meta name="generator" content="Antora 3.1.7">
+    <meta property="og:description" content="documentation page for Grpc.">
+    <meta property="og:site_name" content="Asciidoctor Doc">
+    <meta property="og:title" content="Grpc - ">
+    <meta name="page-spec" content="grpc:ProtocolBuffer:ProtocolBuffer.adoc">
+
+<link rel="stylesheet" href="../../../_/css/retrieve.css">
+    <link rel="icon" href="../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+    	
+    		<a class="navbar-item logo" >
+				<img src="../../../_/img/asciidoctor-logo.svg">
+			</a>
+
+  			<a class="navbar-item title">AsciiDoc</a>
+    	</div>
+    	
+        <div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+				
+ 				<div class="navbar-item has-dropdown is-hoverable">
+		  			<div class="navbar-link">AsciiDoc List</div>
+		  			<div class="navbar-dropdown is-right">
+			            <a class="navbar-item" target="_blank" 
+			            	href="../../../doc/v0.0.1/index.html" >Documentation
+		            	</a>
+		            	
+			            <a class="navbar-item" target="_blank" 
+			            	href="../../../ai/v0.0.1/index.html" >AI
+		            	</a>
+		            	
+		            	<a class="navbar-item" target="_blank" 
+			            	href="../../../osp/v0.0.1/index.html" >Osp
+			            </a>
+		            	
+		            	<a class="navbar-item" target="_blank" 
+			            	href="../../../flink/v0.0.1/index.html" >Flink
+			            </a>
+			            
+			            <a class="navbar-item" target="_blank" 
+			            	href="../../../managerialism/v0.0.1/index.html" >Managerialism
+		            	</a>
+					</div>
+				</div>
+				
+		            <div id="main">
+		                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+			            </div>
+			        </section>
+				
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-explore is-active" data-panel="explore">
+  <div class="context">
+    <span class="title">Grpc</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../../ai/v0.0.1/index.html">AI</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../ai/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../doc/v0.0.1/index.html">Documentation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../doc/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../flink/v0.0.1/index.html">Flink</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../flink/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="../index.html">Grpc</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../managerialism/v0.0.1/index.html">Managerialism</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../managerialism/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../osp/v0.0.1/index.html">Osp (Temporary)</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../osp/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../ai/v0.0.1/index.html" 
+  	class="home-link" title="Home"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+
+</div>
+  <div class="content">
+<aside class="toc sidebar" 
+	data-title="Content" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc grpc">
+	<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_trackback">1. Trackback</a></li>
+<li><a href="#_introduction">2. Introduction</a></li>
+<li><a href="#_installation">3. Installation</a>
+<ul class="sectlevel2">
+<li><a href="#_protobuf_compiler">3.1. Protobuf Compiler</a></li>
+<li><a href="#_protobuf_runtime">3.2. Protobuf Runtime</a></li>
+</ul>
+</li>
+<li><a href="#_additional_data_type_support">4. Additional Data Type Support</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_trackback"><a class="anchor" href="#_trackback"></a>1. Trackback</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://grpc.io" class="bare">https://grpc.io</a></p>
+</li>
+<li>
+<p><a href="https://protobuf.dev" class="bare">https://protobuf.dev</a></p>
+</li>
+<li>
+<p><a href="https://flatbuffers.dev" class="bare">https://flatbuffers.dev</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_introduction"><a class="anchor" href="#_introduction"></a>2. Introduction</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Protocol Buffer是用于序列化结构化数据，与语言，<br>
+与平台无关的可扩展机制(extensible mechanism)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_installation"><a class="anchor" href="#_installation"></a>3. Installation</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_protobuf_compiler"><a class="anchor" href="#_protobuf_compiler"></a>3.1. Protobuf Compiler</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/protocolbuffers/protobuf/releases" class="bare">https://github.com/protocolbuffers/protobuf/releases</a></p>
+</li>
+<li>
+<p><a href="https://repo1.maven.org/maven2/com/google/protobuf/protoc/" class="bare">https://repo1.maven.org/maven2/com/google/protobuf/protoc/</a></p>
+</li>
+<li>
+<p>protoc-26.0-win64.zip，解压protoc.exe到某目录，并配置PATH</p>
+</li>
+<li>
+<p>protoc --version</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_protobuf_runtime"><a class="anchor" href="#_protobuf_runtime"></a>3.2. Protobuf Runtime</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/protocolbuffers/protobuf/tree/main/java" class="bare">https://github.com/protocolbuffers/protobuf/tree/main/java</a></p>
+</li>
+<li>
+<p>安装Protobuf Compiler</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">protoc --java_out=${OUTPUT_DIR} path/to/your/proto/file</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
+  	&lt;groupId&gt;com.google.protobuf&lt;/groupId&gt;
+  	&lt;artifactId&gt;protobuf-java&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Entry</th>
+<th class="tableblock halign-left valign-top">Memo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">protobuf-java</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Protocol Buffer Java核心库，</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">protobuf-java-util</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Protocol Buffer Java工具类，如Json支持</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_additional_data_type_support"><a class="anchor" href="#_additional_data_type_support"></a>4. Additional Data Type Support</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Protocol Buffer支持众多scalar value type，包括可变长度编码<br>
+(variable-length encoding)和固定大小(fixed size)的整数(integer)；</p>
+</li>
+<li>
+<p>可通过定义消息(message)来创建自定义符合数据类型<br>
+(composite data type)，这些消息本身可分配给字段的数据类型；</p>
+</li>
+<li>
+<p>除简单值类型和符合值类型外，还发布了集中常见类型：<br>
+<a href="https://protobuf.dev/programming-guides/dos-donts/#common" class="bare">https://protobuf.dev/programming-guides/dos-donts/#common</a></p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Memo</th>
+<th class="tableblock halign-left valign-top">Url</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Duration</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">signed and fixed-length span of time，如42秒</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://github.com/protocolbuffers/protobuf/blob/master/src/google/protobuf/duration.proto" target="_blank" rel="noopener">Duration.proto</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Timestamp</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">point in time independent of any time zone<br>
+ or calendar，如2017-01-15T01:30:15.01Z</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://github.com/protocolbuffers/protobuf/blob/master/src/google/protobuf/timestamp.proto" target="_blank" rel="noopener">Timestamp.proto</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">interval</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">time interval independent of time zone or calendar，<br>
+ 如2017-01-15T01:30:15.01Z - 2017-01-16T02:30:15.01Z</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://github.com/googleapis/googleapis/blob/master/google/type/interval.proto" target="_blank" rel="noopener">Interval.proto</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">whole calendar date，如2023-09-19</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://github.com/googleapis/googleapis/blob/master/google/type/date.proto" target="_blank" rel="noopener">Date.proto</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dayofweek</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">day of week，如Monday</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://github.com/googleapis/googleapis/blob/master/google/type/dayofweek.proto" target="_blank" rel="noopener">DayOfWeek.proto</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">timeofday</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">time of day，如：10:42:23</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://github.com/googleapis/googleapis/blob/master/google/type/timeofday.proto" target="_blank" rel="noopener">TimeOfDay.proto</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">latlng</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">latitude longitude pair</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://github.com/googleapis/googleapis/blob/master/google/type/latlng.proto" target="_blank" rel="noopener">LatLng.proto</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">money</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">money with currency type，如99 CNY</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://github.com/googleapis/googleapis/blob/master/google/type/money.proto" target="_blank" rel="noopener">Money.proto</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">postal_address</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">postal address</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://github.com/googleapis/googleapis/blob/master/google/type/postal_address.proto" target="_blank" rel="noopener">PostalAddress.proto</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">color</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rgba color space</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://github.com/googleapis/googleapis/blob/master/google/type/color.proto" target="_blank" rel="noopener">Color.proto</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">month</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">month of year，如April</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://github.com/googleapis/googleapis/blob/master/google/type/month.proto" target="_blank" rel="noopener">Month.proto</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+	</article>
+  </div>
+</main>
+</div>
+		<footer class="footer">
+	<div class="footer-main">
+  		<figure class="footer-brand">
+
+			Authored in AsciiDoc <br />
+			Produced by Antora and Asciidoctor
+		</figure>
+  	</div>
+  
+	<div class="footer-legal">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		<p>Copyright © 2024 Elf</p>
+
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+</footer>
+
+<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+
+<script src="../../../_/js/vendor/lunr.js"></script>
+<script src="../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../.." data-snippet-length="100" data-stylesheet="../../../_/css/search.css"></script>
+<script async src="../../../search-index.js"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  messageStyle: "none",
+  tex2jax: { inlineMath: [["\\(", "\\)"]], displayMath: [["\\[", "\\]"]], ignoreClass: "nostem|nolatexmath" },
+  asciimath2jax: { delimiters: [["\\$", "\\$"]], ignoreClass: "nostem|noasciimath" },
+  TeX: { equationNumbers: { autoNumber: "none" } }
+})
+MathJax.Hub.Register.StartupHook("AsciiMath Jax Ready", function () {
+  MathJax.InputJax.AsciiMath.postfilterHooks.Add(function (data, node) {
+    if ((node = data.script.parentNode) && (node = node.parentNode) && node.classList.contains("stemblock")) {
+      data.math.root.display = "block"
+    }
+    return data
+  })
+})
+</script>
+  </body>
+
+</html>
