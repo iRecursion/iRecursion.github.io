@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>AsciiDoc | AsciiDoc</title>
+    
+    
+    
+	<link rel="stylesheet" href="../../../../../_/css/site.css">
+    
+    <meta name="generator" content="Antora 3.1.7">
+    <meta property="og:description" content="documentation page for AI.">
+    <meta property="og:site_name" content="Asciidoctor Doc">
+    <meta property="og:title" content="AI - ">
+    <meta name="page-spec" content="ai:SpringAI:Api/VectorDatabase/Qdrant.adoc">
+
+<link rel="stylesheet" href="../../../../../_/css/retrieve.css">
+    <link rel="icon" href="../../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+    	
+    		<a class="navbar-item logo" >
+				<img src="../../../../../_/img/asciidoctor-logo.svg">
+			</a>
+
+  			<a class="navbar-item title">AsciiDoc</a>
+    	</div>
+    	
+        <div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+				
+ 				<div class="navbar-item has-dropdown is-hoverable">
+		  			<div class="navbar-link">AsciiDoc List</div>
+		  			<div class="navbar-dropdown is-right">
+			            <a class="navbar-item" target="_blank" 
+			            	href="../../../../../doc/v0.0.1/index.html" >Documentation
+		            	</a>
+		            	
+			            <a class="navbar-item" target="_blank" 
+			            	href="../../../../../ai/v0.0.1/index.html" >AI
+		            	</a>
+		            	
+		            	<a class="navbar-item" target="_blank" 
+			            	href="../../../../../osp/v0.0.1/index.html" >Osp
+			            </a>
+		            	
+		            	<a class="navbar-item" target="_blank" 
+			            	href="../../../../../flink/v0.0.1/index.html" >Flink
+			            </a>
+			            
+			            <a class="navbar-item" target="_blank" 
+			            	href="../../../../../managerialism/v0.0.1/index.html" >Managerialism
+		            	</a>
+					</div>
+				</div>
+				
+		            <div id="main">
+		                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+			            </div>
+			        </section>
+				
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active is-loading" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../../index.html">AI</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Spring AI</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../AIConcept.html">AI Concept</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../SpringAIDependency.html">Spring AI Dependency</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../SpringAIProperty.html">Spring AI Property</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../TestContainer.html">Test Container</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Spring AI Api</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../GenericModel.html">Generic Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Prompt.html">Prompt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../OutputParser.html">Output Parser</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../EtlPipeline.html">Etl Pipeline</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ImageGeneration.html">Image Generation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../FunctionCalling.html">Function Calling</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../EvaluationTesting.html">Evaluation Testing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Chat Completion</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../ChatCompletion/ChatCompletion.html">Chat Completion</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../ChatCompletion/Ollama.html">Ollama</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../ChatCompletion/HuggingFace.html">Hugging Face</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Embedding</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Embedding/Embedding.html">Embedding</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Embedding/Ollama.html">Ollama</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Embedding/PostgresMachineLearning.html">Postgres Machine Learning</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Embedding/TransformerOnnx.html">Transformer Onnx</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">VectorDatabase</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="VectorDatabase.html">Vector Database</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="VectorExplanation.html">Vector Explanation</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="Chroma.html">Chroma</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="Milvus.html">Milvus</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="Neo4j.html">Neo4j</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="PostgresInstallation.html">Postgres Installation</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="PostgresVector.html">Postgres Vector</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="PostgresVectorSimilarity.html">Postgres Vector Similarity</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="Weaviate.html">Weaviate</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="Redis.html">Redis</a>
+  </li>
+  <li class="nav-item is-current-url" data-depth="4">
+    <a class="nav-link" href="Qdrant.html">Qdrant</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+  <script>
+;(function () {
+  var panel = document.querySelector('.nav-panel-menu')
+  var page
+  var hash = window.location.hash
+  if (hash) {
+    if (~hash.indexOf('%')) hash = decodeURIComponent(hash)
+    if (~hash.indexOf('"')) hash = hash.replace(/(?=")/g, '\\')
+    var link = panel.querySelector('.nav-link[href="' + hash + '"]')
+    if (link) page = link.parentNode
+    else if ((page = panel.querySelector('.is-current-url'))) page.classList.add('is-provisional')
+  } else {
+    page = panel.querySelector('.is-current-url')
+  }
+  if (page) {
+    var ancestor = page
+    while ((ancestor = ancestor.parentNode) && ancestor !== panel) {
+      if (ancestor.className === 'nav-item') ancestor.classList.add('is-current-path', 'is-active')
+    }
+    page.classList.add('is-current-page', 'is-active')
+    if (panel.scrollHeight > panel.clientHeight) {
+      var panelRect = panel.getBoundingClientRect()
+      var linkRect = page.querySelector('.nav-link').getBoundingClientRect()
+      panel.scrollTop += Math.round(linkRect.top - panelRect.top - (panelRect.height - linkRect.height) * 0.5)
+    }
+  } else {
+    panel.scrollTop = 0
+  }
+  panel.classList.remove('is-loading')
+})()
+  </script>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">AI</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../../../index.html">AI</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../../../doc/v0.0.1/index.html">Documentation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../doc/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../../../flink/v0.0.1/index.html">Flink</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../flink/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../../../managerialism/v0.0.1/index.html">Managerialism</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../managerialism/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../../../osp/v0.0.1/index.html">Osp (Temporary)</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../osp/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../index.html" 
+  	class="home-link" title="Home"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../../index.html">AI</a></li>
+    <li>Spring AI</li>
+    <li>Spring AI Api</li>
+    <li>VectorDatabase</li>
+    <li><a href="Qdrant.html">Qdrant</a></li>
+  </ul>
+</nav>
+
+</div>
+  <div class="content">
+<aside class="toc sidebar" 
+	data-title="Content" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc ai">
+	<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_prerequisite">1. Prerequisite</a></li>
+<li><a href="#_start_qdrant">2. Start Qdrant</a></li>
+<li><a href="#_dependency">3. Dependency</a></li>
+<li><a href="#_usage">4. Usage</a></li>
+<li><a href="#_metadata_filtering">5. Metadata Filtering</a></li>
+<li><a href="#_property">6. Property</a></li>
+<li><a href="#_qdrant_entry">7. Qdrant Entry</a>
+<ul class="sectlevel2">
+<li><a href="#_initialize_client">7.1. Initialize Client</a></li>
+<li><a href="#_create_collection">7.2. Create Collection</a></li>
+<li><a href="#_add_vector">7.3. Add Vector</a></li>
+<li><a href="#_run_query">7.4. Run Query</a></li>
+<li><a href="#_add_filter">7.5. Add Filter</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_prerequisite"><a class="anchor" href="#_prerequisite"></a>1. Prerequisite</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>设置Qdrant VectorStore，以存储document embeddings<br>
+和执行similarity search，Qdrant是开源，高性能的向量搜索引擎/数据库；</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-right valign-top">Port</th>
+<th class="tableblock halign-left valign-top">Memo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">6333</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">http api，monitoring health and metric endpoint</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">6334</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">gRPC api</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">6335</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">distribute deployment</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_start_qdrant"><a class="anchor" href="#_start_qdrant"></a>2. Start Qdrant</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/qdrant/qdrant/blob/master/config/config.yaml" class="bare">https://github.com/qdrant/qdrant/blob/master/config/config.yaml</a></p>
+</li>
+<li>
+<p><a href="https://qdrant.tech/documentation" class="bare">https://qdrant.tech/documentation</a></p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">docker run \
+	--name qdrant \
+	-p 6333:6333 \
+	--privileged=true \
+	--net network-common \
+	-v /elf/qdrant/data:/qdrant/storage \
+	-itd qdrant/qdrant:v1.8.1</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">-v /elf/qdrant/config/custom_config.yaml:/qdrant/config/custom_config.yaml \
+
+-v /elf/qdrant/config/custom_config.yaml:/qdrant/config/custom_config.yaml \
+-itd qdrant/qdrant:v1.8.1 \
+./qdrant --config-path config/custom_config.yaml</code></pre>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-right valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Url</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Rest Api</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://192.168.0.123:6333" class="bare">http://192.168.0.123:6333</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Web UI</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://192.168.0.123:6333/dashboard" class="bare">http://192.168.0.123:6333/dashboard</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">gRpc Api</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://192.168.0.123:6334" class="bare">http://192.168.0.123:6334</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_dependency"><a class="anchor" href="#_dependency"></a>3. Dependency</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
+    &lt;groupId&gt;io.qdrant&lt;/groupId&gt;
+    &lt;artifactId&gt;client&lt;/artifactId&gt;
+    &lt;version&gt;1.8.0&lt;/version&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+    &lt;groupId&gt;com.google.guava&lt;/groupId&gt;
+    &lt;artifactId&gt;guava&lt;/artifactId&gt;
+    &lt;version&gt;33.0.0-jre&lt;/version&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+	&lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+	&lt;artifactId&gt;spring-ai-qdrant-store-spring-boot-starter&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">spring:
+  ai:
+    vectorstore:
+      qdrant:
+        # &lt;qdrant instance host&gt;
+        host: 192.168.0.123
+        # &lt;qdrant instance gRpc port&gt;
+        port: 6334
+        # &lt;api key&gt;
+        api-key:
+        # &lt;Qdrant collection name&gt;
+        collection-name:</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_usage"><a class="anchor" href="#_usage"></a>4. Usage</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">@Autowired
+VectorStore vectorStore;
+
+List &lt;Document&gt; documentList = List.of(
+    new Document("Spring AI rocks!! Spring AI rocks!! Spring AI rocks!! Spring AI rocks!! Spring AI rocks!!", Map.of("meta1", "meta1")),
+    new Document("The World is Big and Salvation Lurks Around the Corner"),
+    new Document("You walk forward facing the past and you turn back toward the future.", Map.of("meta2", "meta2")));
+
+//add document list to Qdrant
+vectorStore.add(List.of(documentList));
+
+//retrieve document similar to query
+List&lt;Document&gt; resultList = vectorStore
+	.similaritySearch(SearchRequest.query("Spring").withTopK(5));</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_metadata_filtering"><a class="anchor" href="#_metadata_filtering"></a>5. Metadata Filtering</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>可使用Qdrant向量存储利用通用的，可移植的元数据过滤器；<br>
+leverage generic，portable metadata filter；</p>
+</li>
+<li>
+<p>text expression language 方式：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">var expression = "author in ['john', 'jill'] &amp;&amp; article_type == 'blog'";
+
+vectorStore.similaritySearch(
+    SearchRequest.defaults()
+    	.withQuery("The World")
+	    .withTopK(TOP_K)
+	    .withSimilarityThreshold(SIMILARITY_THRESHOLD)
+	    .withFilterExpression(expression));</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>programmatically using Filter.Expression Dsl：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">var builder = new FilterExpressionBuilder();
+
+vectorStore.similaritySearch(SearchRequest.defaults()
+    .withQuery("The World")
+    .withTopK(TOP_K)
+    .withSimilarityThreshold(SIMILARITY_THRESHOLD)
+    .withFilterExpression(b.and(
+        builder.in("john", "jill"),
+        builder.eq("article_type", "blog")).build()));</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>这些过滤器表达式都可转换为等效的Qdrant过滤器；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_property"><a class="anchor" href="#_property"></a>6. Property</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Property</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Default Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.vectorstore.qdrant.host</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Qdrant服务器host</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">localhost</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.vectorstore.qdrant.port</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Qdrant服务器gRpc端口</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6334</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.vectorstore.qdrant.api-key</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">认证Qdrant服务器的Api Key</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.vectorstore.qdrant.collection-name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Qdrant里的我们创建的collection名称</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.vectorstore.qdrant.use-tls</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">是否使用Tls(Https)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_qdrant_entry"><a class="anchor" href="#_qdrant_entry"></a>7. Qdrant Entry</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_initialize_client"><a class="anchor" href="#_initialize_client"></a>7.1. Initialize Client</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">import io.qdrant.client.QdrantClient;
+import io.qdrant.client.QdrantGrpcClient;
+
+var client = new QdrantClient(
+    QdrantGrpcClient.newBuilder("192.168.0.123",6334,false).build());</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_create_collection"><a class="anchor" href="#_create_collection"></a>7.2. Create Collection</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">import io.qdrant.client.grpc.Collections.Distance;
+import io.qdrant.client.grpc.Collections.VectorParams;
+
+client.createCollectionAsync("test_collection",
+    VectorParams.newBuilder().setDistance(Distance.Dot)
+    	.setSize(4).build()).get();</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_add_vector"><a class="anchor" href="#_add_vector"></a>7.3. Add Vector</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ExecutionException;
+
+import io.qdrant.client.PointIdFactory;
+import io.qdrant.client.QdrantClient;
+import io.qdrant.client.QdrantGrpcClient;
+import io.qdrant.client.ValueFactory;
+import io.qdrant.client.VectorsFactory;
+import io.qdrant.client.grpc.Points;
+import io.qdrant.client.grpc.Points.PointStruct;
+import io.qdrant.client.grpc.Points.UpdateResult;
+
+var gRpcClient = QdrantGrpcClient
+	.newBuilder("192.168.0.123",6334,false).build();
+var client = new QdrantClient(gRpcClient);
+
+List&lt;Points.PointStruct&gt; psList = List.of(
+	PointStruct.newBuilder()
+		.setId(PointIdFactory.id(1))
+		.setVectors(VectorsFactory.vectors(0.05f,0.61f,0.76f,0.74f))
+		.putAllPayload(Map.of("city", ValueFactory.value("Berlin")))
+		.build(),
+
+	PointStruct.newBuilder()
+		.setId(PointIdFactory.id(2))
+		.setVectors(VectorsFactory.vectors(0.19f,0.81f,0.75f,0.11f))
+		.putAllPayload(Map.of("city", ValueFactory.value("London")))
+		.build(),
+
+	PointStruct.newBuilder()
+		.setId(PointIdFactory.id(4))
+		.setVectors(VectorsFactory.vectors(0.36f,0.55f,0.47f,0.94f))
+		.putAllPayload(Map.of("city", ValueFactory.value("Moscow")))
+		.build());
+
+UpdateResult operationInfo = client
+	.upsertAsync("test_collection",psList).get();
+
+System.out.println(operationInfo);</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_run_query"><a class="anchor" href="#_run_query"></a>7.4. Run Query</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">var gRpcClient = QdrantGrpcClient.newBuilder("192.168.0.123",6334,false).build();
+var client = new QdrantClient(gRpcClient);
+
+List&lt;ScoredPoint&gt; searchResult = client.searchAsync(
+    SearchPoints.newBuilder()
+        .setCollectionName("test_collection")
+        .setLimit(3)
+        .addAllVector(List.of(0.2f,0.1f,0.9f,0.7f))
+        .setWithPayload(WithPayloadSelectorFactory.enable(true))
+        .build()).get();
+
+System.out.println(searchResult);</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_add_filter"><a class="anchor" href="#_add_filter"></a>7.5. Add Filter</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">var gRpcClient = QdrantGrpcClient.newBuilder("192.168.0.123",6334,false).build();
+var client = new QdrantClient(gRpcClient);
+
+List&lt;ScoredPoint&gt; searchResult = client.searchAsync(
+    SearchPoints.newBuilder()
+        .setCollectionName("test_collection")
+        .setLimit(3)
+        .setFilter(Filter.newBuilder().addMust(
+        	ConditionFactory.matchKeyword("city", "London")))
+        .addAllVector(List.of(0.2f, 0.1f, 0.9f, 0.7f))
+        .setWithPayload(WithPayloadSelectorFactory.enable(true)).build()).get();
+
+System.out.println(searchResult);</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+	</article>
+  </div>
+</main>
+</div>
+		<footer class="footer">
+	<div class="footer-main">
+  		<figure class="footer-brand">
+
+			Authored in AsciiDoc <br />
+			Produced by Antora and Asciidoctor
+		</figure>
+  	</div>
+  
+	<div class="footer-legal">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		<p>Copyright © 2024 Elf</p>
+
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+</footer>
+
+<script id="site-script" src="../../../../../_/js/site.js" data-ui-root-path="../../../../../_"></script>
+<script async src="../../../../../_/js/vendor/highlight.js"></script>
+
+<script src="../../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../../.." data-snippet-length="100" data-stylesheet="../../../../../_/css/search.css"></script>
+<script async src="../../../../../search-index.js"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  messageStyle: "none",
+  tex2jax: { inlineMath: [["\\(", "\\)"]], displayMath: [["\\[", "\\]"]], ignoreClass: "nostem|nolatexmath" },
+  asciimath2jax: { delimiters: [["\\$", "\\$"]], ignoreClass: "nostem|noasciimath" },
+  TeX: { equationNumbers: { autoNumber: "none" } }
+})
+MathJax.Hub.Register.StartupHook("AsciiMath Jax Ready", function () {
+  MathJax.InputJax.AsciiMath.postfilterHooks.Add(function (data, node) {
+    if ((node = data.script.parentNode) && (node = node.parentNode) && node.classList.contains("stemblock")) {
+      data.math.root.display = "block"
+    }
+    return data
+  })
+})
+</script>
+  </body>
+
+</html>

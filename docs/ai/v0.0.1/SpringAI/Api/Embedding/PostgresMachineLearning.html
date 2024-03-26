@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>AsciiDoc | AsciiDoc</title>
+    
+    
+    
+	<link rel="stylesheet" href="../../../../../_/css/site.css">
+    
+    <meta name="generator" content="Antora 3.1.7">
+    <meta property="og:description" content="documentation page for AI.">
+    <meta property="og:site_name" content="Asciidoctor Doc">
+    <meta property="og:title" content="AI - ">
+    <meta name="page-spec" content="ai:SpringAI:Api/Embedding/PostgresMachineLearning.adoc">
+
+<link rel="stylesheet" href="../../../../../_/css/retrieve.css">
+    <link rel="icon" href="../../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+    	
+    		<a class="navbar-item logo" >
+				<img src="../../../../../_/img/asciidoctor-logo.svg">
+			</a>
+
+  			<a class="navbar-item title">AsciiDoc</a>
+    	</div>
+    	
+        <div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+				
+ 				<div class="navbar-item has-dropdown is-hoverable">
+		  			<div class="navbar-link">AsciiDoc List</div>
+		  			<div class="navbar-dropdown is-right">
+			            <a class="navbar-item" target="_blank" 
+			            	href="../../../../../doc/v0.0.1/index.html" >Documentation
+		            	</a>
+		            	
+			            <a class="navbar-item" target="_blank" 
+			            	href="../../../../../ai/v0.0.1/index.html" >AI
+		            	</a>
+		            	
+		            	<a class="navbar-item" target="_blank" 
+			            	href="../../../../../osp/v0.0.1/index.html" >Osp
+			            </a>
+		            	
+		            	<a class="navbar-item" target="_blank" 
+			            	href="../../../../../flink/v0.0.1/index.html" >Flink
+			            </a>
+			            
+			            <a class="navbar-item" target="_blank" 
+			            	href="../../../../../managerialism/v0.0.1/index.html" >Managerialism
+		            	</a>
+					</div>
+				</div>
+				
+		            <div id="main">
+		                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+			            </div>
+			        </section>
+				
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active is-loading" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../../index.html">AI</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Spring AI</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../AIConcept.html">AI Concept</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../SpringAIDependency.html">Spring AI Dependency</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../SpringAIProperty.html">Spring AI Property</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../TestContainer.html">Test Container</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Spring AI Api</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../GenericModel.html">Generic Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Prompt.html">Prompt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../OutputParser.html">Output Parser</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../EtlPipeline.html">Etl Pipeline</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ImageGeneration.html">Image Generation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../FunctionCalling.html">Function Calling</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../EvaluationTesting.html">Evaluation Testing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Chat Completion</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../ChatCompletion/ChatCompletion.html">Chat Completion</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../ChatCompletion/Ollama.html">Ollama</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../ChatCompletion/HuggingFace.html">Hugging Face</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Embedding</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="Embedding.html">Embedding</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="Ollama.html">Ollama</a>
+  </li>
+  <li class="nav-item is-current-url" data-depth="4">
+    <a class="nav-link" href="PostgresMachineLearning.html">Postgres Machine Learning</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="TransformerOnnx.html">Transformer Onnx</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">VectorDatabase</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../VectorDatabase/VectorDatabase.html">Vector Database</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../VectorDatabase/VectorExplanation.html">Vector Explanation</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../VectorDatabase/Chroma.html">Chroma</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../VectorDatabase/Milvus.html">Milvus</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../VectorDatabase/Neo4j.html">Neo4j</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../VectorDatabase/PostgresInstallation.html">Postgres Installation</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../VectorDatabase/PostgresVector.html">Postgres Vector</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../VectorDatabase/PostgresVectorSimilarity.html">Postgres Vector Similarity</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../VectorDatabase/Weaviate.html">Weaviate</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../VectorDatabase/Redis.html">Redis</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../VectorDatabase/Qdrant.html">Qdrant</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+  <script>
+;(function () {
+  var panel = document.querySelector('.nav-panel-menu')
+  var page
+  var hash = window.location.hash
+  if (hash) {
+    if (~hash.indexOf('%')) hash = decodeURIComponent(hash)
+    if (~hash.indexOf('"')) hash = hash.replace(/(?=")/g, '\\')
+    var link = panel.querySelector('.nav-link[href="' + hash + '"]')
+    if (link) page = link.parentNode
+    else if ((page = panel.querySelector('.is-current-url'))) page.classList.add('is-provisional')
+  } else {
+    page = panel.querySelector('.is-current-url')
+  }
+  if (page) {
+    var ancestor = page
+    while ((ancestor = ancestor.parentNode) && ancestor !== panel) {
+      if (ancestor.className === 'nav-item') ancestor.classList.add('is-current-path', 'is-active')
+    }
+    page.classList.add('is-current-page', 'is-active')
+    if (panel.scrollHeight > panel.clientHeight) {
+      var panelRect = panel.getBoundingClientRect()
+      var linkRect = page.querySelector('.nav-link').getBoundingClientRect()
+      panel.scrollTop += Math.round(linkRect.top - panelRect.top - (panelRect.height - linkRect.height) * 0.5)
+    }
+  } else {
+    panel.scrollTop = 0
+  }
+  panel.classList.remove('is-loading')
+})()
+  </script>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">AI</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../../../index.html">AI</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../../../doc/v0.0.1/index.html">Documentation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../doc/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../../../flink/v0.0.1/index.html">Flink</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../flink/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../../../managerialism/v0.0.1/index.html">Managerialism</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../managerialism/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../../../osp/v0.0.1/index.html">Osp (Temporary)</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../osp/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../index.html" 
+  	class="home-link" title="Home"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../../index.html">AI</a></li>
+    <li>Spring AI</li>
+    <li>Spring AI Api</li>
+    <li>Embedding</li>
+    <li><a href="PostgresMachineLearning.html">Postgres Machine Learning</a></li>
+  </ul>
+</nav>
+
+</div>
+  <div class="content">
+<aside class="toc sidebar" 
+	data-title="Content" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc ai">
+	<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_intro">1. Intro</a></li>
+<li><a href="#_embedding_properties">2. Embedding Properties</a></li>
+<li><a href="#_embeddingoptions">3. EmbeddingOptions</a></li>
+<li><a href="#_usage">4. Usage</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_intro"><a class="anchor" href="#_intro"></a>1. Intro</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Spring AI支持PostgresML text embeddings model；<br>
+Embedding是文本的数字表示，它们被用来将单词word和句子sentence表示为向量，数字数组；</p>
+</li>
+<li>
+<p>Embedding可通过用距离测量distance measure比较数字向量<br>
+numeric vector的相似性similarity来找到相似的文本片段piece，<br>
+也可用作其他ML模型的输入特征，因大多数算法不能直接使用文本；</p>
+</li>
+<li>
+<p>许多预训练的LLM可用于从PostgresML中的文本生成embeddings，<br>
+我们可浏览所有可用的模型，在Hugging Face找到的最佳解决方案；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
+	&lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-ai-postgresml-spring-boot-starter&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_embedding_properties"><a class="anchor" href="#_embedding_properties"></a>2. Embedding Properties</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>用spring.ai.postgresml.embedding.options.*<br>
+属性来配置PostgresMlEmbeddingClient</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Property</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Default Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.postgresml.embedding.enabled</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">启用PostgresML embedding client</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.postgresml.embedding.options.transformer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">用于embedding的Huggingface transformer model</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">distilbert-base-uncased</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.postgresml.embedding.options.kwargs</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">additional transformer specific option</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">空map</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.postgresml.embedding.options.vectorType</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">用作embedding的PostgresML向量类型：PG_ARRAY或PG_VECTOR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PG_ARRAY</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.postgresml.embedding.options.metadataMode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Document metadata aggregation mode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EMBED</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_embeddingoptions"><a class="anchor" href="#_embeddingoptions"></a>3. EmbeddingOptions</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/spring-projects/spring-ai/blob/main/models/spring-ai-openai/src/main/java/org/springframework/ai/postgresml/PostgresMlEmbeddingOptions.java" target="_blank" rel="noopener">PostgresMlEmbeddingOptions.java</a></p>
+</li>
+<li>
+<p>用PostgresMlEmbeddingOptions.java为<br>
+PostgresMlEmbeddingClient配置选项，比如要使用的模型等；</p>
+</li>
+<li>
+<p>启动时，可将PostgresMlEmbeddingOptions传递给PostgresMlEmbeddingClient<br>
+构造方法，以配置用于所有嵌入请求embedding request的默认选项；</p>
+</li>
+<li>
+<p>在运行时，可用EmbeddingRequest中的PostgresMlEmbeddingOptions覆盖默认选项；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">var strList = List.of("Hello World",
+	"World is big and salvation is near");
+
+var embeddingResponse = embeddingClient.call(
+	new EmbeddingRequest(strList,
+		PostgresMlEmbeddingOptions.builder()
+			.withTransformer("intfloat/e5-small")
+            .withVectorType(VectorType.PG_ARRAY)
+            .withKwargs(Map.of("device", "gpu"))
+    	.build()));</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_usage"><a class="anchor" href="#_usage"></a>4. Usage</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">spring:
+  ai:
+    postgresml:
+      embedding:
+        options:
+          transformer: distilbert-base-uncased
+          vectorType: PG_ARRAY
+          metadataMode: EMBED
+          kwargs:
+            device: cpu</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">@RestController
+public class EmbeddingController {
+
+    private final EmbeddingClient embeddingClient;
+
+    @Autowired
+    public EmbeddingController(EmbeddingClient embeddingClient) {
+        this.embeddingClient = embeddingClient;
+    }
+
+    @GetMapping("/ai/embedding")
+    public Map embed(@RequestParam(value = "message",
+    	defaultValue = "Tell me a joke") String message) {
+        var embeddingResponse = this.embeddingClient
+        	.embedForResponse(List.of(message));
+        return Map.of("embedding", embeddingResponse);
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+	</article>
+  </div>
+</main>
+</div>
+		<footer class="footer">
+	<div class="footer-main">
+  		<figure class="footer-brand">
+
+			Authored in AsciiDoc <br />
+			Produced by Antora and Asciidoctor
+		</figure>
+  	</div>
+  
+	<div class="footer-legal">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		<p>Copyright © 2024 Elf</p>
+
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+</footer>
+
+<script id="site-script" src="../../../../../_/js/site.js" data-ui-root-path="../../../../../_"></script>
+<script async src="../../../../../_/js/vendor/highlight.js"></script>
+
+<script src="../../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../../.." data-snippet-length="100" data-stylesheet="../../../../../_/css/search.css"></script>
+<script async src="../../../../../search-index.js"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  messageStyle: "none",
+  tex2jax: { inlineMath: [["\\(", "\\)"]], displayMath: [["\\[", "\\]"]], ignoreClass: "nostem|nolatexmath" },
+  asciimath2jax: { delimiters: [["\\$", "\\$"]], ignoreClass: "nostem|noasciimath" },
+  TeX: { equationNumbers: { autoNumber: "none" } }
+})
+MathJax.Hub.Register.StartupHook("AsciiMath Jax Ready", function () {
+  MathJax.InputJax.AsciiMath.postfilterHooks.Add(function (data, node) {
+    if ((node = data.script.parentNode) && (node = node.parentNode) && node.classList.contains("stemblock")) {
+      data.math.root.display = "block"
+    }
+    return data
+  })
+})
+</script>
+  </body>
+
+</html>

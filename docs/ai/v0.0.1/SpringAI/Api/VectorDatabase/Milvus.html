@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>AsciiDoc | AsciiDoc</title>
+    
+    
+    
+	<link rel="stylesheet" href="../../../../../_/css/site.css">
+    
+    <meta name="generator" content="Antora 3.1.7">
+    <meta property="og:description" content="documentation page for AI.">
+    <meta property="og:site_name" content="Asciidoctor Doc">
+    <meta property="og:title" content="AI - ">
+    <meta name="page-spec" content="ai:SpringAI:Api/VectorDatabase/Milvus.adoc">
+
+<link rel="stylesheet" href="../../../../../_/css/retrieve.css">
+    <link rel="icon" href="../../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+    	
+    		<a class="navbar-item logo" >
+				<img src="../../../../../_/img/asciidoctor-logo.svg">
+			</a>
+
+  			<a class="navbar-item title">AsciiDoc</a>
+    	</div>
+    	
+        <div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+				
+ 				<div class="navbar-item has-dropdown is-hoverable">
+		  			<div class="navbar-link">AsciiDoc List</div>
+		  			<div class="navbar-dropdown is-right">
+			            <a class="navbar-item" target="_blank" 
+			            	href="../../../../../doc/v0.0.1/index.html" >Documentation
+		            	</a>
+		            	
+			            <a class="navbar-item" target="_blank" 
+			            	href="../../../../../ai/v0.0.1/index.html" >AI
+		            	</a>
+		            	
+		            	<a class="navbar-item" target="_blank" 
+			            	href="../../../../../osp/v0.0.1/index.html" >Osp
+			            </a>
+		            	
+		            	<a class="navbar-item" target="_blank" 
+			            	href="../../../../../flink/v0.0.1/index.html" >Flink
+			            </a>
+			            
+			            <a class="navbar-item" target="_blank" 
+			            	href="../../../../../managerialism/v0.0.1/index.html" >Managerialism
+		            	</a>
+					</div>
+				</div>
+				
+		            <div id="main">
+		                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+			            </div>
+			        </section>
+				
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active is-loading" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../../index.html">AI</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Spring AI</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../AIConcept.html">AI Concept</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../SpringAIDependency.html">Spring AI Dependency</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../SpringAIProperty.html">Spring AI Property</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../TestContainer.html">Test Container</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Spring AI Api</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../GenericModel.html">Generic Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Prompt.html">Prompt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../OutputParser.html">Output Parser</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../EtlPipeline.html">Etl Pipeline</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ImageGeneration.html">Image Generation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../FunctionCalling.html">Function Calling</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../EvaluationTesting.html">Evaluation Testing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Chat Completion</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../ChatCompletion/ChatCompletion.html">Chat Completion</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../ChatCompletion/Ollama.html">Ollama</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../ChatCompletion/HuggingFace.html">Hugging Face</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Embedding</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Embedding/Embedding.html">Embedding</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Embedding/Ollama.html">Ollama</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Embedding/PostgresMachineLearning.html">Postgres Machine Learning</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Embedding/TransformerOnnx.html">Transformer Onnx</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">VectorDatabase</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="VectorDatabase.html">Vector Database</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="VectorExplanation.html">Vector Explanation</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="Chroma.html">Chroma</a>
+  </li>
+  <li class="nav-item is-current-url" data-depth="4">
+    <a class="nav-link" href="Milvus.html">Milvus</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="Neo4j.html">Neo4j</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="PostgresInstallation.html">Postgres Installation</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="PostgresVector.html">Postgres Vector</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="PostgresVectorSimilarity.html">Postgres Vector Similarity</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="Weaviate.html">Weaviate</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="Redis.html">Redis</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="Qdrant.html">Qdrant</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+  <script>
+;(function () {
+  var panel = document.querySelector('.nav-panel-menu')
+  var page
+  var hash = window.location.hash
+  if (hash) {
+    if (~hash.indexOf('%')) hash = decodeURIComponent(hash)
+    if (~hash.indexOf('"')) hash = hash.replace(/(?=")/g, '\\')
+    var link = panel.querySelector('.nav-link[href="' + hash + '"]')
+    if (link) page = link.parentNode
+    else if ((page = panel.querySelector('.is-current-url'))) page.classList.add('is-provisional')
+  } else {
+    page = panel.querySelector('.is-current-url')
+  }
+  if (page) {
+    var ancestor = page
+    while ((ancestor = ancestor.parentNode) && ancestor !== panel) {
+      if (ancestor.className === 'nav-item') ancestor.classList.add('is-current-path', 'is-active')
+    }
+    page.classList.add('is-current-page', 'is-active')
+    if (panel.scrollHeight > panel.clientHeight) {
+      var panelRect = panel.getBoundingClientRect()
+      var linkRect = page.querySelector('.nav-link').getBoundingClientRect()
+      panel.scrollTop += Math.round(linkRect.top - panelRect.top - (panelRect.height - linkRect.height) * 0.5)
+    }
+  } else {
+    panel.scrollTop = 0
+  }
+  panel.classList.remove('is-loading')
+})()
+  </script>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">AI</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../../../index.html">AI</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../../../doc/v0.0.1/index.html">Documentation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../doc/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../../../flink/v0.0.1/index.html">Flink</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../flink/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../../../managerialism/v0.0.1/index.html">Managerialism</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../managerialism/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../../../osp/v0.0.1/index.html">Osp (Temporary)</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../osp/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../index.html" 
+  	class="home-link" title="Home"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../../index.html">AI</a></li>
+    <li>Spring AI</li>
+    <li>Spring AI Api</li>
+    <li>VectorDatabase</li>
+    <li><a href="Milvus.html">Milvus</a></li>
+  </ul>
+</nav>
+
+</div>
+  <div class="content">
+<aside class="toc sidebar" 
+	data-title="Content" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc ai">
+	<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_introduction">1. Introduction</a></li>
+<li><a href="#_milvus_setup">2. Milvus Setup</a></li>
+<li><a href="#_gui_attu">3. Gui Attu</a></li>
+<li><a href="#_dependency">4. Dependency</a></li>
+<li><a href="#_yaml">5. Yaml</a></li>
+<li><a href="#_usage">6. Usage</a></li>
+<li><a href="#_metadata_filtering">7. Metadata Filtering</a></li>
+<li><a href="#_milvus_properties">8. Milvus Properties</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_introduction"><a class="anchor" href="#_introduction"></a>1. Introduction</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Milvus是向量数据库，在数据科学和ML引起极大的关注，突出特点如对向量索引和查询的支持，<br>
+Milvus采用最先进的(state-of-the-art)尖端(cutting-edge)算法加速搜索，<br>
+即使处理大数据集，也能非常高效地检索相似的向量；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_milvus_setup"><a class="anchor" href="#_milvus_setup"></a>2. Milvus Setup</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://milvus.io/docs" class="bare">https://milvus.io/docs</a></p>
+</li>
+<li>
+<p><a href="https://github.com/milvus-io/milvus/releases" class="bare">https://github.com/milvus-io/milvus/releases</a></p>
+</li>
+<li>
+<p><a href="https://github.com/zilliztech/attu/releases" class="bare">https://github.com/zilliztech/attu/releases</a></p>
+</li>
+<li>
+<p><a href="https://github.com/zilliztech/attu" class="bare">https://github.com/zilliztech/attu</a></p>
+</li>
+<li>
+<p><a href="https://github.com/zilliztech/VectorDBBench" class="bare">https://github.com/zilliztech/VectorDBBench</a></p>
+</li>
+<li>
+<p>wget <a href="https://github.com/milvus-io/milvus/releases/download/v2.3.12/milvus-standalone-docker-compose.yml" class="bare">https://github.com/milvus-io/milvus/releases/download/v2.3.12/milvus-standalone-docker-compose.yml</a></p>
+</li>
+<li>
+<p>mv milvus-standalone-docker-compose.yml docker-compose.yaml</p>
+</li>
+<li>
+<p>删除网络，docker-compose up -d</p>
+</li>
+<li>
+<p>docker-compose down &amp;&amp; rm -rf volumes</p>
+</li>
+<li>
+<p><a href="http://192.168.0.123:9001：minioadmin" class="bare">http://192.168.0.123:9001：minioadmin</a> - minioadmin</p>
+</li>
+<li>
+<p><a href="https://milvus.io/docs/install_standalone-docker.md" class="bare">https://milvus.io/docs/install_standalone-docker.md</a></p>
+</li>
+<li>
+<p>19530端口：gRpc和Restful Api，连接到Milvus服务器的默认端口；</p>
+</li>
+<li>
+<p>9091端口：是管理端口，用于metric collection，<br>
+pprof profiling和health probe within K8S；</p>
+</li>
+<li>
+<p>Milvus默认凭证：root - Milvus，最大连接数65536</p>
+</li>
+<li>
+<p>备份工具：https://github.com/zilliztech/milvus-backup</p>
+</li>
+<li>
+<p>Troubleshooting：http://192.168.0.123:19530</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">docker system prune --all --force --volumes</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_gui_attu"><a class="anchor" href="#_gui_attu"></a>3. Gui Attu</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://192.168.0.123:8000" class="bare">http://192.168.0.123:8000</a></p>
+</li>
+<li>
+<p>MILVUS_URL可选，忌用127.0.0.1或localhost</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">docker run \
+	--name attu \
+	-p 8000:3000 \
+	--privileged=true \
+	--net network-common \
+	-e MILVUS_URL=192.168.0.123:19530 \
+	-itd zilliz/attu:v2.3.8</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_dependency"><a class="anchor" href="#_dependency"></a>4. Dependency</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
+	&lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+	&lt;artifactId&gt;spring-ai-milvus-store-spring-boot-starter&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_yaml"><a class="anchor" href="#_yaml"></a>5. Yaml</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">spring:
+  ai:
+    vectorstore:
+      milvus:
+        database-name: default
+        collection-name: vector_store
+        embedding-dimension: 1536
+        index-type: IVF_FLAT
+        metric-type: cosine
+        client:
+          host: 192.168.0.123
+          port: 19530
+          username: root
+          password: Milvus</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_usage"><a class="anchor" href="#_usage"></a>6. Usage</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">@Autowired
+VectorStore vectorStore;
+
+List &lt;Document&gt; documentList = List.of(
+    new Document("Spring AI rocks!! Spring AI rocks!! Spring AI rocks!! Spring AI rocks!! Spring AI rocks!!", Map.of("meta1", "meta1")),
+    new Document("The World is Big and Salvation Lurks Around the Corner"),
+    new Document("You walk forward facing the past and you turn back toward the future.", Map.of("meta2", "meta2")));
+
+vectorStore.add(documentList);
+List&lt;Document&gt; resultList = vectorStore
+	.similaritySearch(SearchRequest.query("Spring").withTopK(5));</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_metadata_filtering"><a class="anchor" href="#_metadata_filtering"></a>7. Metadata Filtering</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>text expression language方式：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">vectorStore.similaritySearch(
+	SearchRequest.defaults()
+	    .withQuery("The World")
+	    .withTopK(TOP_K)
+	    .withSimilarityThreshold(SIMILARITY_THRESHOLD)
+	    .withFilterExpression("author in ['john', 'jill'] &amp;&amp; article_type == 'blog'"));</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>programmatically Filter.Expression Dsl方式：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">var builder = new FilterExpressionBuilder();
+
+vectorStore.similaritySearch(SearchRequest.defaults()
+    .withQuery("The World")
+    .withTopK(TOP_K)
+    .withSimilarityThreshold(SIMILARITY_THRESHOLD)
+    .withFilterExpression(b.and(
+        builder.in("john", "jill"),
+        builder.eq("article_type", "blog")).build()));</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_milvus_properties"><a class="anchor" href="#_milvus_properties"></a>8. Milvus Properties</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Property</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Default Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.vectorstore.milvus.database-name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dbName</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">default</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.vectorstore.milvus.collection-name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">collectionName</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">vector_store</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.vectorstore.milvus.embedding-dimension</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">collection中向量的维度dimension</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1536</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.vectorstore.milvus.index-type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">collection index type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IVF_FLAT</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.vectorstore.milvus.metric-type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">collection metric type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">COSINE</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.vectorstore.milvus.index-parameters</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">collection index parameter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{"nlist":1024}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.vectorstore.milvus.client.host</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Milvus主机地址</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">localhost</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.vectorstore.milvus.client.port</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">连接端口</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">19530</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.vectorstore.milvus.client.uri</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Milvus实例uri</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.vectorstore.milvus.client.token</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">用作识别和验证目的的密钥的令牌Token</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.vectorstore.milvus.client.connect-timeout-ms</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">client channel的连接超时值，须大于零</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10000</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.vectorstore.milvus.client.keep-alive-time-ms</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">client channel Keep-alive time，须大于零</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">55000</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.vectorstore.milvus.client.keep-alive-timeout-ms</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">client channel keep-alive timeout值</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">20000</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.vectorstore.milvus.client.rpc-deadline-ms</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">等待服务器reply的最后期限，<br>
+ 需大于等于零，设置截止日期，<br>
+ 网络波动引起快速rpc失败时，客户端将等待</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.vectorstore.milvus.client.client-key-path</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">双向认证的client.key路径,secure为true时有效</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.vectorstore.milvus.client.client-pem-path</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">双向认证的client.pem路径,secure为true时有效</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.vectorstore.milvus.client.ca-pem-path</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">双向认证的ca.pem路径,secure为true时有效</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.vectorstore.milvus.client.server-pem-path</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">双向认证的server.pem路径,secure为true时有效</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.vectorstore.milvus.client.server-name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">设置ssl主机名检查的目标名称覆盖，<br>
+ 仅当secure为True时生效，<br>
+ 注：此值传递给grp.ssl_target_name_override</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.vectorstore.milvus.client.secure</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">确保此连接的授权安全，设置为True可启用TLS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.vectorstore.milvus.client.idle-timeout-ms</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">client channel Idle timeout，需大于零</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24h</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.vectorstore.milvus.client.username</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">连接的用户名</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">root</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.vectorstore.milvus.client.password</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">连接的密码</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">milvus</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+	</article>
+  </div>
+</main>
+</div>
+		<footer class="footer">
+	<div class="footer-main">
+  		<figure class="footer-brand">
+
+			Authored in AsciiDoc <br />
+			Produced by Antora and Asciidoctor
+		</figure>
+  	</div>
+  
+	<div class="footer-legal">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		<p>Copyright © 2024 Elf</p>
+
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+</footer>
+
+<script id="site-script" src="../../../../../_/js/site.js" data-ui-root-path="../../../../../_"></script>
+<script async src="../../../../../_/js/vendor/highlight.js"></script>
+
+<script src="../../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../../.." data-snippet-length="100" data-stylesheet="../../../../../_/css/search.css"></script>
+<script async src="../../../../../search-index.js"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  messageStyle: "none",
+  tex2jax: { inlineMath: [["\\(", "\\)"]], displayMath: [["\\[", "\\]"]], ignoreClass: "nostem|nolatexmath" },
+  asciimath2jax: { delimiters: [["\\$", "\\$"]], ignoreClass: "nostem|noasciimath" },
+  TeX: { equationNumbers: { autoNumber: "none" } }
+})
+MathJax.Hub.Register.StartupHook("AsciiMath Jax Ready", function () {
+  MathJax.InputJax.AsciiMath.postfilterHooks.Add(function (data, node) {
+    if ((node = data.script.parentNode) && (node = node.parentNode) && node.classList.contains("stemblock")) {
+      data.math.root.display = "block"
+    }
+    return data
+  })
+})
+</script>
+  </body>
+
+</html>

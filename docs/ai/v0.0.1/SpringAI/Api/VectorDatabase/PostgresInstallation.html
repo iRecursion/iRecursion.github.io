@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>AsciiDoc | AsciiDoc</title>
+    
+    
+    
+	<link rel="stylesheet" href="../../../../../_/css/site.css">
+    
+    <meta name="generator" content="Antora 3.1.7">
+    <meta property="og:description" content="documentation page for AI.">
+    <meta property="og:site_name" content="Asciidoctor Doc">
+    <meta property="og:title" content="AI - ">
+    <meta name="page-spec" content="ai:SpringAI:Api/VectorDatabase/PostgresInstallation.adoc">
+
+<link rel="stylesheet" href="../../../../../_/css/retrieve.css">
+    <link rel="icon" href="../../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+    	
+    		<a class="navbar-item logo" >
+				<img src="../../../../../_/img/asciidoctor-logo.svg">
+			</a>
+
+  			<a class="navbar-item title">AsciiDoc</a>
+    	</div>
+    	
+        <div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+				
+ 				<div class="navbar-item has-dropdown is-hoverable">
+		  			<div class="navbar-link">AsciiDoc List</div>
+		  			<div class="navbar-dropdown is-right">
+			            <a class="navbar-item" target="_blank" 
+			            	href="../../../../../doc/v0.0.1/index.html" >Documentation
+		            	</a>
+		            	
+			            <a class="navbar-item" target="_blank" 
+			            	href="../../../../../ai/v0.0.1/index.html" >AI
+		            	</a>
+		            	
+		            	<a class="navbar-item" target="_blank" 
+			            	href="../../../../../osp/v0.0.1/index.html" >Osp
+			            </a>
+		            	
+		            	<a class="navbar-item" target="_blank" 
+			            	href="../../../../../flink/v0.0.1/index.html" >Flink
+			            </a>
+			            
+			            <a class="navbar-item" target="_blank" 
+			            	href="../../../../../managerialism/v0.0.1/index.html" >Managerialism
+		            	</a>
+					</div>
+				</div>
+				
+		            <div id="main">
+		                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+			            </div>
+			        </section>
+				
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active is-loading" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../../index.html">AI</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Spring AI</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../AIConcept.html">AI Concept</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../SpringAIDependency.html">Spring AI Dependency</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../SpringAIProperty.html">Spring AI Property</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../TestContainer.html">Test Container</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Spring AI Api</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../GenericModel.html">Generic Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Prompt.html">Prompt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../OutputParser.html">Output Parser</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../EtlPipeline.html">Etl Pipeline</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ImageGeneration.html">Image Generation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../FunctionCalling.html">Function Calling</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../EvaluationTesting.html">Evaluation Testing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Chat Completion</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../ChatCompletion/ChatCompletion.html">Chat Completion</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../ChatCompletion/Ollama.html">Ollama</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../ChatCompletion/HuggingFace.html">Hugging Face</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Embedding</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Embedding/Embedding.html">Embedding</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Embedding/Ollama.html">Ollama</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Embedding/PostgresMachineLearning.html">Postgres Machine Learning</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Embedding/TransformerOnnx.html">Transformer Onnx</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">VectorDatabase</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="VectorDatabase.html">Vector Database</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="VectorExplanation.html">Vector Explanation</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="Chroma.html">Chroma</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="Milvus.html">Milvus</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="Neo4j.html">Neo4j</a>
+  </li>
+  <li class="nav-item is-current-url" data-depth="4">
+    <a class="nav-link" href="PostgresInstallation.html">Postgres Installation</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="PostgresVector.html">Postgres Vector</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="PostgresVectorSimilarity.html">Postgres Vector Similarity</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="Weaviate.html">Weaviate</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="Redis.html">Redis</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="Qdrant.html">Qdrant</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+  <script>
+;(function () {
+  var panel = document.querySelector('.nav-panel-menu')
+  var page
+  var hash = window.location.hash
+  if (hash) {
+    if (~hash.indexOf('%')) hash = decodeURIComponent(hash)
+    if (~hash.indexOf('"')) hash = hash.replace(/(?=")/g, '\\')
+    var link = panel.querySelector('.nav-link[href="' + hash + '"]')
+    if (link) page = link.parentNode
+    else if ((page = panel.querySelector('.is-current-url'))) page.classList.add('is-provisional')
+  } else {
+    page = panel.querySelector('.is-current-url')
+  }
+  if (page) {
+    var ancestor = page
+    while ((ancestor = ancestor.parentNode) && ancestor !== panel) {
+      if (ancestor.className === 'nav-item') ancestor.classList.add('is-current-path', 'is-active')
+    }
+    page.classList.add('is-current-page', 'is-active')
+    if (panel.scrollHeight > panel.clientHeight) {
+      var panelRect = panel.getBoundingClientRect()
+      var linkRect = page.querySelector('.nav-link').getBoundingClientRect()
+      panel.scrollTop += Math.round(linkRect.top - panelRect.top - (panelRect.height - linkRect.height) * 0.5)
+    }
+  } else {
+    panel.scrollTop = 0
+  }
+  panel.classList.remove('is-loading')
+})()
+  </script>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">AI</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../../../index.html">AI</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../../../doc/v0.0.1/index.html">Documentation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../doc/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../../../flink/v0.0.1/index.html">Flink</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../flink/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../../../managerialism/v0.0.1/index.html">Managerialism</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../managerialism/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../../../osp/v0.0.1/index.html">Osp (Temporary)</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../osp/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../index.html" 
+  	class="home-link" title="Home"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../../index.html">AI</a></li>
+    <li>Spring AI</li>
+    <li>Spring AI Api</li>
+    <li>VectorDatabase</li>
+    <li><a href="PostgresInstallation.html">Postgres Installation</a></li>
+  </ul>
+</nav>
+
+</div>
+  <div class="content">
+<aside class="toc sidebar" 
+	data-title="Content" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc ai">
+	<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_postgres">1. Postgres</a></li>
+<li><a href="#_postgres_vector">2. Postgres Vector</a></li>
+<li><a href="#_navicat">3. Navicat</a></li>
+<li><a href="#_postgres_admin">4. Postgres Admin</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_postgres"><a class="anchor" href="#_postgres"></a>1. Postgres</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">docker run \
+	--name pg \
+	-p 5432:5432 \
+	--privileged=true \
+	--net network-common \
+	--shm-size 1G \
+  	-e POSTGRES_PASSWORD=pg-cipher \
+	-e PGDATA=/var/lib/postgresql/data/pgdata \
+	-v /elf/postgress/data:/var/lib/postgresql/data \
+	-itd postgres:16.2</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_postgres_vector"><a class="anchor" href="#_postgres_vector"></a>2. Postgres Vector</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">docker run \
+	--name pgv \
+	-p 5432:5432 \
+	--privileged=true \
+	--net network-common \
+	--shm-size 1G \
+  	-e POSTGRES_PASSWORD=pg-cipher \
+	-e PGDATA=/var/lib/postgresql/data/pgdata \
+	-v /elf/postgress/data:/var/lib/postgresql/data \
+	-itd pgvector/pgvector:0.6.2-pg16</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>直接修改Postgres镜像名即可：<br>
+postgres:16.2修改为pgvector/pgvector:0.6.2-pg16</p>
+</li>
+<li>
+<p>对原有Postgres，可进入每个Postgres实例，安装Postgres Vector：<br>
+apt install postgresql-16-pgvector，并重启postgres容器；</p>
+</li>
+<li>
+<p>也可自定义Dockerfile或使用docker-compose.yaml；</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p># Shared Memory Limit：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">--shm-size=1g</code></pre>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell"># Enable Assertion
+PG_CFLAGS="-DUSE_ASSERT_CHECKING"
+
+# Enable Benchmarking
+PG_CFLAGS="-DIVFFLAT_BENCH"
+
+# Show Memory Usage
+PG_CFLAGS="-DHNSW_MEMORY -DIVFFLAT_MEMORY"
+
+# Retrieveet k-means Metric
+PG_CFLAGS="-DIVFFLAT_KMEANS_DEBUG"</code></pre>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_navicat"><a class="anchor" href="#_navicat"></a>3. Navicat</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Navicat连接Postgres出现datlastsysoid不存在：Postgres15从表中<br>
+已删除datlastsysoid字段，Navicat16.1之前的版本会出现查询错误；</p>
+</li>
+<li>
+<p>备份Navicat安装目录下libcc.dll，在任何十六进制<br>
+编辑器打开此文件，或使用 <a href="https://hexed.it" class="bare">https://hexed.it</a> 打开；</p>
+</li>
+<li>
+<p>搜索 <mark>SELECT DISTINCT datlastsysoid</mark>，<br>
+将其替换为 <mark>SELECT DISTINCT dattablespace</mark>，<br>
+按Ctrl + S保存并下载到本地，替换原文件后可顺利连接；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_postgres_admin"><a class="anchor" href="#_postgres_admin"></a>4. Postgres Admin</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">mkdir -p /data/docker/pgadmin/{data,logs}
+
+mkdir -p /elf/PgAdmin/{data,log} &amp;&amp; \
+	chown  -R 5050:5050 /elf/PgAdmin</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">docker run \
+	--name pga \
+	-p 5050:80 \
+	--privileged=true \
+	--net network-common \
+	--shm-size 1G \
+  	-e PGADMIN_DEFAULT_EMAIL=2032047511@qq.com \
+	-e PGADMIN_DEFAULT_PASSWORD=admin \
+	-v /elf/PgAdmin/data:/var/lib/pgadmin \
+	-v /elf/PgAdmin/log:/var/log/pgadmin \
+	-itd dpage/pgadmin4:8.4</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Postgres Admin连接Postgres同样有问题，宿主机修改：</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>vim /elf/postgress/data/pgdata/pg_hba.conf，</p>
+</li>
+<li>
+<p>在IPv4和IPv6 Local Connection之间添加行：</p>
+</li>
+<li>
+<p><mark>host    all		all		0.0.0.0/0		md5</mark></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p># vim /elf/postgress/data/pgdata/postgresql.conf</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>修改host和端口：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell"># listen_addresses = '127.0.0.1'
+listen_addresses = '*'
+
+# port = 5432
+port = 5432</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>重启Postgres：docker restart pgv</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://192.168.0.123:5050，" class="bare">http://192.168.0.123:5050，</a><br>
+<a href="mailto:2032047511@qq.com">2032047511@qq.com</a> - admin</p>
+</li>
+<li>
+<p>右键Servers &#8594; Register &#8594; Instance</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Entry</th>
+<th class="tableblock halign-left valign-top">Memo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Host</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">192.168.0.123</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Port</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5432</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Database</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">postgres</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Username</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">postgres</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Password</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">pg-cipher</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+	</article>
+  </div>
+</main>
+</div>
+		<footer class="footer">
+	<div class="footer-main">
+  		<figure class="footer-brand">
+
+			Authored in AsciiDoc <br />
+			Produced by Antora and Asciidoctor
+		</figure>
+  	</div>
+  
+	<div class="footer-legal">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		<p>Copyright © 2024 Elf</p>
+
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+</footer>
+
+<script id="site-script" src="../../../../../_/js/site.js" data-ui-root-path="../../../../../_"></script>
+<script async src="../../../../../_/js/vendor/highlight.js"></script>
+
+<script src="../../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../../.." data-snippet-length="100" data-stylesheet="../../../../../_/css/search.css"></script>
+<script async src="../../../../../search-index.js"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  messageStyle: "none",
+  tex2jax: { inlineMath: [["\\(", "\\)"]], displayMath: [["\\[", "\\]"]], ignoreClass: "nostem|nolatexmath" },
+  asciimath2jax: { delimiters: [["\\$", "\\$"]], ignoreClass: "nostem|noasciimath" },
+  TeX: { equationNumbers: { autoNumber: "none" } }
+})
+MathJax.Hub.Register.StartupHook("AsciiMath Jax Ready", function () {
+  MathJax.InputJax.AsciiMath.postfilterHooks.Add(function (data, node) {
+    if ((node = data.script.parentNode) && (node = node.parentNode) && node.classList.contains("stemblock")) {
+      data.math.root.display = "block"
+    }
+    return data
+  })
+})
+</script>
+  </body>
+
+</html>

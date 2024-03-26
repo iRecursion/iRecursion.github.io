@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>AsciiDoc | AsciiDoc</title>
+    
+    
+    
+	<link rel="stylesheet" href="../../../../_/css/site.css">
+    
+    <meta name="generator" content="Antora 3.1.7">
+    <meta property="og:description" content="documentation page for Osp (Temporary).">
+    <meta property="og:site_name" content="Asciidoctor Doc">
+    <meta property="og:title" content="Osp (Temporary) - ">
+    <meta name="page-spec" content="osp:Elementary:DevOps/JenkinsInstallation.adoc">
+
+<link rel="stylesheet" href="../../../../_/css/retrieve.css">
+    <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+    	
+    		<a class="navbar-item logo" >
+				<img src="../../../../_/img/asciidoctor-logo.svg">
+			</a>
+
+  			<a class="navbar-item title">AsciiDoc</a>
+    	</div>
+    	
+        <div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+				
+ 				<div class="navbar-item has-dropdown is-hoverable">
+		  			<div class="navbar-link">AsciiDoc List</div>
+		  			<div class="navbar-dropdown is-right">
+			            <a class="navbar-item" target="_blank" 
+			            	href="../../../../doc/v0.0.1/index.html" >Documentation
+		            	</a>
+		            	
+			            <a class="navbar-item" target="_blank" 
+			            	href="../../../../ai/v0.0.1/index.html" >AI
+		            	</a>
+		            	
+		            	<a class="navbar-item" target="_blank" 
+			            	href="../../../../osp/v0.0.1/index.html" >Osp
+			            </a>
+		            	
+		            	<a class="navbar-item" target="_blank" 
+			            	href="../../../../flink/v0.0.1/index.html" >Flink
+			            </a>
+			            
+			            <a class="navbar-item" target="_blank" 
+			            	href="../../../../managerialism/v0.0.1/index.html" >Managerialism
+		            	</a>
+					</div>
+				</div>
+				
+		            <div id="main">
+		                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+			            </div>
+			        </section>
+				
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active is-loading" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">Osp (Temporary)</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Elementary</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Database</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Database/PowerDesigner.html">PowerDesigner 设置</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Database/RedisStack.html">Redis Stack 安装</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Database/MongoInstallation.html">Mongo 安装</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Database/MongoBootDemo.html">Mongo Boot案例</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Database/MySqlPerformanceTuning.html">MySql 调优</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Database/ElasticInstallation.html">Elastic 安装</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Language</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/RustInstallation.html">Rust 安装</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/RustConfiguration.html">Rust 配置</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/GroovyInstallation.html">Groovy 安装</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Antora</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Antora/AsciidoctorInstallation.html">Asciidoctor 安装</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Antora/AntoraInstallation.html">Antora 安装</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Antora/Antora.yaml.html">Antora.yaml</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Antora/AntoraExtension.html">AntoraExtension</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Antora/AntoraPlaybook.html">AntoraPlaybook</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Antora/AntoraSetup.html">AntoraSetup</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Antora/AntoraSkill.html">AntoraSkill</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Antora/ContentSource.html">ContentSource</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Antora/Markdown.html">Markdown</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Rare</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Rare/GrpcBoot.html">Grpc Boot</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Rare/DockerToolkit.html">Docker Toolkit</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Rare/Tinkerpop.html">Tinkerpop</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Rare/Standpoint.html">Standpoint</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Rare/Keycloak.html">Keycloak 安装</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Rare/AILearningPath.html">AI 学习路线</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Virtualization</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Virtualization/UbuntuConfigurer.html">Ubuntu 配置</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Virtualization/HyperV.html">HyperV 安装</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Virtualization/DockerRegistry.html">Docker 仓库</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Virtualization/K8SInstallation.html">K8S 安装</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Virtualization/K8SExtension.html">K8S 扩展</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">DevOps</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="NexusInstallation.html">Nexus 安装</a>
+  </li>
+  <li class="nav-item is-current-url" data-depth="3">
+    <a class="nav-link" href="JenkinsInstallation.html">Jenkins 安装</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Todo</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Kafka</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Intro</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Todo/Kafka/Intro/KafkaEntry.html">Kafka Entry</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Todo/Kafka/Intro/KafkaApi.html">Kafka Api</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Todo/Kafka/Intro/KafkaDesign.html">Kafka Design</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Todo/Kafka/Intro/KafkaRI.html">Kafka RI</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Config</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Todo/Kafka/Config/BrokerConfig.html">Broker Config</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Todo/Kafka/Config/ProducerConfig.html">Producer Config</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Todo/Kafka/Config/ConsumerConfig.html">Consumer Config</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Todo/Kafka/Config/KafkaConnectConfig.html">Kafka Connect Config</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Todo/Kafka/Config/SourceConnectorConfig.html">Source Connector Config</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Todo/Kafka/Config/SinkConnectorConfig.html">Sink Connector Config</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Todo/Kafka/Config/KafkaStreamConfig.html">Kafka Stream Config</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Todo/Kafka/Config/AdminClientConfig.html">Admin Client Config</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Todo/Kafka/Config/MirrorMakerConfig.html">Mirror Maker Config</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Todo/Kafka/Config/SystemProperty.html">System Property</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Todo/Kafka/Config/TierStorageConfig.html">Tier Storage Config</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Operation</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Todo/Kafka/Operation/BasicOperation.html">Basic Operation</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Todo/Kafka/Operation/GeoReplication.html">Geo Replication</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Todo/Kafka/Operation/MultiTenancy.html">Multi Tenancy</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Todo/Kafka/Operation/Hardware.html">Hardware</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Todo/Kafka/Operation/Monitoring.html">Monitoring</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Todo/Kafka/Operation/KRaft.html">KRaft</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Todo/Kafka/Operation/TierStorage.html">Tier Storage</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Security</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">KafkaConnect</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">KafkaStream</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Pulsar</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Intro</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Architecture</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Pulsar Schema</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Pulsar Function</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Pulsar IO</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Pulsar SQL</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Tier Storage</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Transaction</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Deployment</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Administration</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Observability</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Security</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Performance</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Client Library</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Admin Api</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Adaptor</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Tutorial</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Development</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Reference</span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Process</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Beam</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Flink</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Spark</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Cache</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Redis</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Ignite</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Hazelcast</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Varnish</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Persistence</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Vector</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Chroma</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Milvus</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Qdrant</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Weaviate</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Relational</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Graph</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">KeyValue</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Document</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Column</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Object</span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Spring Data</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Common</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Elastic</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Elastic Support</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Data/Elastic/ElasticSupport/ElasticClient.html">Elastic 客户端</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Data/Elastic/ElasticSupport/ElasticObjectMapping.html">Elastic 对象映射</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Data/Elastic/ElasticSupport/ElasticOperation.html">Elastic 操作</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Data/Elastic/ElasticSupport/ReactiveElasticOperation.html">响应式 Elastic操作</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Data/Elastic/ElasticSupport/EntityCallback.html">实体回调</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Data/Elastic/ElasticSupport/ElasticAuditing.html">Elastic审计</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Data/Elastic/ElasticSupport/JoinTypeImplementation.html">JoinType实现</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Data/Elastic/ElasticSupport/RoutingValue.html">路由值</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Data/Elastic/ElasticSupport/MiscellaneousElasticOperation.html">各种Elastic操作</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Data/Elastic/ElasticSupport/ScriptRuntimeField.html">运行字段脚本化</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Repository</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Data/Elastic/Repository/CoreConcept.html">核心思想</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Data/Elastic/Repository/DefiningRepositoryInterface.html">定义仓库接口</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Data/Elastic/Repository/ElasticRepository.html">命令式 仓库</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Data/Elastic/Repository/ReactiveElasticRepository.html">响应式 仓库</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Data/Elastic/Repository/CreatingRepositoryInstance.html">创建仓库实例</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Data/Elastic/Repository/DefiningQueryMethod.html">定义查询方法</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Data/Elastic/Repository/QueryMethod.html">查询方法</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Data/Elastic/Repository/Projection.html">投影</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Data/Elastic/Repository/CustomRepositoryImplementation.html">自定义 仓库实现</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Data/Elastic/Repository/AggregateRootPublishingEvent.html">聚合根 发布事件</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Data/Elastic/Repository/RepositoryMethodNullHandling.html">仓库方法 空捕获</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Data/Elastic/Repository/RepositoryQueryKeyword.html">仓库查询 关键字</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Data/Elastic/Repository/RepositoryQueryReturnType.html">仓库查询 返回类型</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Cassandra</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Couchbase</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Mongo</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Neo4j</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">R2dbc</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Redis</span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+  <script>
+;(function () {
+  var panel = document.querySelector('.nav-panel-menu')
+  var page
+  var hash = window.location.hash
+  if (hash) {
+    if (~hash.indexOf('%')) hash = decodeURIComponent(hash)
+    if (~hash.indexOf('"')) hash = hash.replace(/(?=")/g, '\\')
+    var link = panel.querySelector('.nav-link[href="' + hash + '"]')
+    if (link) page = link.parentNode
+    else if ((page = panel.querySelector('.is-current-url'))) page.classList.add('is-provisional')
+  } else {
+    page = panel.querySelector('.is-current-url')
+  }
+  if (page) {
+    var ancestor = page
+    while ((ancestor = ancestor.parentNode) && ancestor !== panel) {
+      if (ancestor.className === 'nav-item') ancestor.classList.add('is-current-path', 'is-active')
+    }
+    page.classList.add('is-current-page', 'is-active')
+    if (panel.scrollHeight > panel.clientHeight) {
+      var panelRect = panel.getBoundingClientRect()
+      var linkRect = page.querySelector('.nav-link').getBoundingClientRect()
+      panel.scrollTop += Math.round(linkRect.top - panelRect.top - (panelRect.height - linkRect.height) * 0.5)
+    }
+  } else {
+    panel.scrollTop = 0
+  }
+  panel.classList.remove('is-loading')
+})()
+  </script>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Osp (Temporary)</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../../../ai/v0.0.1/index.html">AI</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../ai/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../../doc/v0.0.1/index.html">Documentation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../doc/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../../flink/v0.0.1/index.html">Flink</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../flink/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../../managerialism/v0.0.1/index.html">Managerialism</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../managerialism/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="../../index.html">Osp (Temporary)</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../../ai/v0.0.1/index.html" 
+  	class="home-link" title="Home"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">Osp (Temporary)</a></li>
+    <li>Elementary</li>
+    <li>DevOps</li>
+    <li><a href="JenkinsInstallation.html">Jenkins 安装</a></li>
+  </ul>
+</nav>
+
+</div>
+  <div class="content">
+<aside class="toc sidebar" 
+	data-title="Content" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc osp">
+	<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_preface">1. Preface</a></li>
+<li><a href="#_dir_and_permission">2. Dir and Permission</a></li>
+<li><a href="#_run_container">3. Run Container</a></li>
+<li><a href="#_note_password">4. Note Password</a></li>
+<li><a href="#_sign_in">5. Sign In</a></li>
+<li><a href="#_jenkins初始化">6. Jenkins初始化</a></li>
+<li><a href="#_plugin_source">7. Plugin Source</a></li>
+<li><a href="#_agent_slave">8. Agent Slave</a></li>
+<li><a href="#_external_plugin">9. External Plugin</a></li>
+<li><a href="#_data_dir">10. Data Dir</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_preface"><a class="anchor" href="#_preface"></a>1. Preface</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Master主要做任务调度，Agent专用于任务执行；</p>
+</li>
+<li>
+<p><mark>尽量不要使用其它lts版本，容易引发异常，含无法安装插件</mark>，<br>
+UnknownHostException: updates.jenkins.io</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_dir_and_permission"><a class="anchor" href="#_dir_and_permission"></a>2. Dir and Permission</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">mkdir -p /elf/jenkins/jenkins-master \
+	&amp;&amp; chmod 777 -R /elf/jenkins/jenkins-master</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_run_container"><a class="anchor" href="#_run_container"></a>3. Run Container</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">docker run \
+	--name jenkins-master \
+	--privileged=true \
+	--net network-common \
+	-p 8080:8080 -p 50000:50000 \
+	--volume /elf/jenkins/jenkins-master:/var/jenkins_home \
+	-e JAVA_OPTS="-Dorg.apache.commons.jelly.tags.fmt,timeZone='Asia/Shanghai'" \
+	-itd jenkins/jenkins:lts</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_note_password"><a class="anchor" href="#_note_password"></a>4. Note Password</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">docker logs -f jenkins-master
+
+5fe80e2a13e248388a46a6921a70621e
+
+/var/jenkins_home/secrets/initialAdminPassword</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_sign_in"><a class="anchor" href="#_sign_in"></a>5. Sign In</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://192.168.0.123:8080" class="bare">http://192.168.0.123:8080</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_jenkins初始化"><a class="anchor" href="#_jenkins初始化"></a>6. Jenkins初始化</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>选择自定义安装插件，选择最上面的None取消所选，<br>
+然后选择Language两项：locale和localization-zh-cn</p>
+</li>
+<li>
+<p>创建用户：admin - admin</p>
+</li>
+<li>
+<p>获得Jenkins URL：http://192.168.0.123:8080/</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">docker exec jenkins-master cat \
+	/var/jenkins_home/secrets/initialAdminPassword
+
+docker stop jenkins-master &amp;&amp; docker remove jenkins-master</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_plugin_source"><a class="anchor" href="#_plugin_source"></a>7. Plugin Source</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>请使用中文社区源，来替代清华源；</p>
+</li>
+<li>
+<p>访问http://192.168.0.123:8080/chinese/</p>
+</li>
+<li>
+<p>使用 &#8658; 设置更新中心地址 &#8658; 覆盖Update Site</p>
+</li>
+<li>
+<p><mark><a href="https://mirrors.cloud.tencent.com/jenkins/updates/update-center.json" class="bare">https://mirrors.cloud.tencent.com/jenkins/updates/update-center.json</a></mark><br>
+<a href="https://updates.jenkins-zh.cn/update-center.json" class="bare">https://updates.jenkins-zh.cn/update-center.json</a><br>
+<mark><a href="https://www.jenkins-zh.cn/tutorial/management/plugin/update-center" class="bare">https://www.jenkins-zh.cn/tutorial/management/plugin/update-center</a></mark></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_agent_slave"><a class="anchor" href="#_agent_slave"></a>8. Agent Slave</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>进jenkins-master容器，得知jdk版本为17，因任何agent节点都需使用；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">wget https://download.oracle.com/java/17/latest/jdk-17_linux-x64_bin.tar.gz
+
+tar -zxvf jdk-17_linux-x64_bin.tar.gz -C /elf/ &amp;&amp; mv ./jdk-17.0.9 ./jdk17
+
+vim /etc/profile
+
+export JAVA_HOME=/elf/jdk17
+export PATH=$PATH:$JAVA_HOME/bin
+
+source /etc/profile</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>executor number(执行器)：执行一个任务会占用一个执行器；</p>
+</li>
+<li>
+<p>label：标签代表一组，如我们可创建10个节点，但共属一个标签，<br>
+运行时会在此10个节点中随机选取节点来运行任务；</p>
+</li>
+<li>
+<p>登录后 &#8658; Manage Jenkins &#8658; Nodes &#8658; New Node<br>
+节点有动态节点和静态节点之分，此处为创建普通节点，动态节点会用到旁边的Clouds；</p>
+</li>
+<li>
+<p>节点名称：jenkins-agent，类型：Permanent Agent，</p>
+</li>
+<li>
+<p>执行器数设为5，远程根目录：/elf/jenkins/jenkins-agent-01</p>
+</li>
+<li>
+<p>标签设置为：jenkins-agent，启动方式(Launch Method)：Java Web；</p>
+</li>
+<li>
+<p>Custom WorkDir Path：/elf/jenkins/jenkins-agent</p>
+</li>
+<li>
+<p>点击节点，运行Agent命令并保存秘密存储到文件，在/elf/jenkins目录执行以下命令；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">echo 25aef4033456fff46e0a49e282b340ebd93e8309b5413852f06fb01f8be61a1d &gt; secret-file
+curl -sO http://192.168.0.123:8080/jnlpJars/agent.jar
+java -jar agent.jar -jnlpUrl http://192.168.0.123:8080/computer/jenkins%2Dagent%2D01/jenkins-agent.jnlp \
+	-secret @secret-file -workDir "/elf/jenkins/jenkins-agent"</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>agent连接到master后，编写脚本后台启动agent</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">vim /elf/jenkins/start-agent.sh
+
+echo 25aef4033456fff46e0a49e282b340ebd93e8309b5413852f06fb01f8be61a1d &gt; secret-file
+curl -sO http://192.168.0.123:8080/jnlpJars/agent.jar
+nohup java -jar agent.jar -jnlpUrl http://192.168.0.123:8080/computer/jenkins%2Dagent%2D01/jenkins-agent.jnlp \
+	-secret @secret-file -workDir "/elf/jenkins/jenkins-agent" &gt;&gt;/dev/null &amp;</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>在Jenkins Pipeline中，流水线由多阶段stage组成，如：构建、测试、部署等</p>
+</li>
+<li>
+<p>Jenkins每个Agent节点都应有相对应的环境，如Jdk，Maven，Gradle等来执行Java程序；</p>
+</li>
+<li>
+<p>Agent节点可分为静态和动态节点，静态节点是固定虚拟机或容器，动态节点是随任务的构建自动创建agent节点；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_external_plugin"><a class="anchor" href="#_external_plugin"></a>9. External Plugin</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Pipeline；</p>
+</li>
+<li>
+<p>Strict Crumb Issuer；</p>
+</li>
+<li>
+<p>Role-based Authorization Strategy；</p>
+</li>
+<li>
+<p>Credentials；</p>
+</li>
+<li>
+<p>Blue Ocean；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_data_dir"><a class="anchor" href="#_data_dir"></a>10. Data Dir</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Entry</th>
+<th class="tableblock halign-left valign-top">Memo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">caches</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">系统缓存数据</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">jobs</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Jenkins项目作业</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">nodes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Jenkins Agent节点信息</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">secrets</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">秘钥信息</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">userContent</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">类web站点目录，可上传文件</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">workspace</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">默认的工作目录</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">fingerprints</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">指纹验证信息</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">logs</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">日志信息</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">plugins</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">插件相关配置</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">updates</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">插件更新目录</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">users</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">jenkins系统用户目录</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+	</article>
+  </div>
+</main>
+</div>
+		<footer class="footer">
+	<div class="footer-main">
+  		<figure class="footer-brand">
+
+			Authored in AsciiDoc <br />
+			Produced by Antora and Asciidoctor
+		</figure>
+  	</div>
+  
+	<div class="footer-legal">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		<p>Copyright © 2024 Elf</p>
+
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+</footer>
+
+<script id="site-script" src="../../../../_/js/site.js" data-ui-root-path="../../../../_"></script>
+<script async src="../../../../_/js/vendor/highlight.js"></script>
+
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  messageStyle: "none",
+  tex2jax: { inlineMath: [["\\(", "\\)"]], displayMath: [["\\[", "\\]"]], ignoreClass: "nostem|nolatexmath" },
+  asciimath2jax: { delimiters: [["\\$", "\\$"]], ignoreClass: "nostem|noasciimath" },
+  TeX: { equationNumbers: { autoNumber: "none" } }
+})
+MathJax.Hub.Register.StartupHook("AsciiMath Jax Ready", function () {
+  MathJax.InputJax.AsciiMath.postfilterHooks.Add(function (data, node) {
+    if ((node = data.script.parentNode) && (node = node.parentNode) && node.classList.contains("stemblock")) {
+      data.math.root.display = "block"
+    }
+    return data
+  })
+})
+</script>
+  </body>
+
+</html>

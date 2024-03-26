@@ -1,0 +1,1700 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>AsciiDoc | AsciiDoc</title>
+    
+    
+    
+	<link rel="stylesheet" href="../../../../_/css/site.css">
+    
+    <meta name="generator" content="Antora 3.1.7">
+    <meta property="og:description" content="documentation page for Osp (Temporary).">
+    <meta property="og:site_name" content="Asciidoctor Doc">
+    <meta property="og:title" content="Osp (Temporary) - ">
+    <meta name="page-spec" content="osp:Elementary:Database/ElasticInstallation.adoc">
+
+<link rel="stylesheet" href="../../../../_/css/retrieve.css">
+    <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+    	
+    		<a class="navbar-item logo" >
+				<img src="../../../../_/img/asciidoctor-logo.svg">
+			</a>
+
+  			<a class="navbar-item title">AsciiDoc</a>
+    	</div>
+    	
+        <div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+				
+ 				<div class="navbar-item has-dropdown is-hoverable">
+		  			<div class="navbar-link">AsciiDoc List</div>
+		  			<div class="navbar-dropdown is-right">
+			            <a class="navbar-item" target="_blank" 
+			            	href="../../../../doc/v0.0.1/index.html" >Documentation
+		            	</a>
+		            	
+			            <a class="navbar-item" target="_blank" 
+			            	href="../../../../ai/v0.0.1/index.html" >AI
+		            	</a>
+		            	
+		            	<a class="navbar-item" target="_blank" 
+			            	href="../../../../osp/v0.0.1/index.html" >Osp
+			            </a>
+		            	
+		            	<a class="navbar-item" target="_blank" 
+			            	href="../../../../flink/v0.0.1/index.html" >Flink
+			            </a>
+			            
+			            <a class="navbar-item" target="_blank" 
+			            	href="../../../../managerialism/v0.0.1/index.html" >Managerialism
+		            	</a>
+					</div>
+				</div>
+				
+		            <div id="main">
+		                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+			            </div>
+			        </section>
+				
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active is-loading" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">Osp (Temporary)</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Elementary</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Database</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="PowerDesigner.html">PowerDesigner 设置</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="RedisStack.html">Redis Stack 安装</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="MongoInstallation.html">Mongo 安装</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="MongoBootDemo.html">Mongo Boot案例</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="MySqlPerformanceTuning.html">MySql 调优</a>
+  </li>
+  <li class="nav-item is-current-url" data-depth="3">
+    <a class="nav-link" href="ElasticInstallation.html">Elastic 安装</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Language</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/RustInstallation.html">Rust 安装</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/RustConfiguration.html">Rust 配置</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/GroovyInstallation.html">Groovy 安装</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Antora</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Antora/AsciidoctorInstallation.html">Asciidoctor 安装</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Antora/AntoraInstallation.html">Antora 安装</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Antora/Antora.yaml.html">Antora.yaml</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Antora/AntoraExtension.html">AntoraExtension</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Antora/AntoraPlaybook.html">AntoraPlaybook</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Antora/AntoraSetup.html">AntoraSetup</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Antora/AntoraSkill.html">AntoraSkill</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Antora/ContentSource.html">ContentSource</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Antora/Markdown.html">Markdown</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Rare</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Rare/GrpcBoot.html">Grpc Boot</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Rare/DockerToolkit.html">Docker Toolkit</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Rare/Tinkerpop.html">Tinkerpop</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Rare/Standpoint.html">Standpoint</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Rare/Keycloak.html">Keycloak 安装</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Rare/AILearningPath.html">AI 学习路线</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Virtualization</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Virtualization/UbuntuConfigurer.html">Ubuntu 配置</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Virtualization/HyperV.html">HyperV 安装</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Virtualization/DockerRegistry.html">Docker 仓库</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Virtualization/K8SInstallation.html">K8S 安装</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Virtualization/K8SExtension.html">K8S 扩展</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">DevOps</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../DevOps/NexusInstallation.html">Nexus 安装</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../DevOps/JenkinsInstallation.html">Jenkins 安装</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Todo</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Kafka</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Intro</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Todo/Kafka/Intro/KafkaEntry.html">Kafka Entry</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Todo/Kafka/Intro/KafkaApi.html">Kafka Api</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Todo/Kafka/Intro/KafkaDesign.html">Kafka Design</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Todo/Kafka/Intro/KafkaRI.html">Kafka RI</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Config</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Todo/Kafka/Config/BrokerConfig.html">Broker Config</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Todo/Kafka/Config/ProducerConfig.html">Producer Config</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Todo/Kafka/Config/ConsumerConfig.html">Consumer Config</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Todo/Kafka/Config/KafkaConnectConfig.html">Kafka Connect Config</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Todo/Kafka/Config/SourceConnectorConfig.html">Source Connector Config</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Todo/Kafka/Config/SinkConnectorConfig.html">Sink Connector Config</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Todo/Kafka/Config/KafkaStreamConfig.html">Kafka Stream Config</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Todo/Kafka/Config/AdminClientConfig.html">Admin Client Config</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Todo/Kafka/Config/MirrorMakerConfig.html">Mirror Maker Config</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Todo/Kafka/Config/SystemProperty.html">System Property</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Todo/Kafka/Config/TierStorageConfig.html">Tier Storage Config</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Operation</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Todo/Kafka/Operation/BasicOperation.html">Basic Operation</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Todo/Kafka/Operation/GeoReplication.html">Geo Replication</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Todo/Kafka/Operation/MultiTenancy.html">Multi Tenancy</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Todo/Kafka/Operation/Hardware.html">Hardware</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Todo/Kafka/Operation/Monitoring.html">Monitoring</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Todo/Kafka/Operation/KRaft.html">KRaft</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Todo/Kafka/Operation/TierStorage.html">Tier Storage</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Security</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">KafkaConnect</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">KafkaStream</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Pulsar</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Intro</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Architecture</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Pulsar Schema</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Pulsar Function</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Pulsar IO</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Pulsar SQL</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Tier Storage</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Transaction</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Deployment</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Administration</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Observability</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Security</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Performance</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Client Library</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Admin Api</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Adaptor</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Tutorial</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Development</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Reference</span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Process</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Beam</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Flink</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Spark</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Cache</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Redis</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Ignite</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Hazelcast</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Varnish</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Persistence</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Vector</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Chroma</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Milvus</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Qdrant</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Weaviate</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Relational</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Graph</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">KeyValue</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Document</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Column</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Object</span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Spring Data</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Common</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Elastic</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Elastic Support</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Data/Elastic/ElasticSupport/ElasticClient.html">Elastic 客户端</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Data/Elastic/ElasticSupport/ElasticObjectMapping.html">Elastic 对象映射</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Data/Elastic/ElasticSupport/ElasticOperation.html">Elastic 操作</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Data/Elastic/ElasticSupport/ReactiveElasticOperation.html">响应式 Elastic操作</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Data/Elastic/ElasticSupport/EntityCallback.html">实体回调</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Data/Elastic/ElasticSupport/ElasticAuditing.html">Elastic审计</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Data/Elastic/ElasticSupport/JoinTypeImplementation.html">JoinType实现</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Data/Elastic/ElasticSupport/RoutingValue.html">路由值</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Data/Elastic/ElasticSupport/MiscellaneousElasticOperation.html">各种Elastic操作</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Data/Elastic/ElasticSupport/ScriptRuntimeField.html">运行字段脚本化</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Repository</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Data/Elastic/Repository/CoreConcept.html">核心思想</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Data/Elastic/Repository/DefiningRepositoryInterface.html">定义仓库接口</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Data/Elastic/Repository/ElasticRepository.html">命令式 仓库</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Data/Elastic/Repository/ReactiveElasticRepository.html">响应式 仓库</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Data/Elastic/Repository/CreatingRepositoryInstance.html">创建仓库实例</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Data/Elastic/Repository/DefiningQueryMethod.html">定义查询方法</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Data/Elastic/Repository/QueryMethod.html">查询方法</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Data/Elastic/Repository/Projection.html">投影</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Data/Elastic/Repository/CustomRepositoryImplementation.html">自定义 仓库实现</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Data/Elastic/Repository/AggregateRootPublishingEvent.html">聚合根 发布事件</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Data/Elastic/Repository/RepositoryMethodNullHandling.html">仓库方法 空捕获</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Data/Elastic/Repository/RepositoryQueryKeyword.html">仓库查询 关键字</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../Data/Elastic/Repository/RepositoryQueryReturnType.html">仓库查询 返回类型</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Cassandra</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Couchbase</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Mongo</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Neo4j</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">R2dbc</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Redis</span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+  <script>
+;(function () {
+  var panel = document.querySelector('.nav-panel-menu')
+  var page
+  var hash = window.location.hash
+  if (hash) {
+    if (~hash.indexOf('%')) hash = decodeURIComponent(hash)
+    if (~hash.indexOf('"')) hash = hash.replace(/(?=")/g, '\\')
+    var link = panel.querySelector('.nav-link[href="' + hash + '"]')
+    if (link) page = link.parentNode
+    else if ((page = panel.querySelector('.is-current-url'))) page.classList.add('is-provisional')
+  } else {
+    page = panel.querySelector('.is-current-url')
+  }
+  if (page) {
+    var ancestor = page
+    while ((ancestor = ancestor.parentNode) && ancestor !== panel) {
+      if (ancestor.className === 'nav-item') ancestor.classList.add('is-current-path', 'is-active')
+    }
+    page.classList.add('is-current-page', 'is-active')
+    if (panel.scrollHeight > panel.clientHeight) {
+      var panelRect = panel.getBoundingClientRect()
+      var linkRect = page.querySelector('.nav-link').getBoundingClientRect()
+      panel.scrollTop += Math.round(linkRect.top - panelRect.top - (panelRect.height - linkRect.height) * 0.5)
+    }
+  } else {
+    panel.scrollTop = 0
+  }
+  panel.classList.remove('is-loading')
+})()
+  </script>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Osp (Temporary)</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../../../ai/v0.0.1/index.html">AI</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../ai/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../../doc/v0.0.1/index.html">Documentation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../doc/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../../flink/v0.0.1/index.html">Flink</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../flink/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../../managerialism/v0.0.1/index.html">Managerialism</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../managerialism/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="../../index.html">Osp (Temporary)</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../../ai/v0.0.1/index.html" 
+  	class="home-link" title="Home"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">Osp (Temporary)</a></li>
+    <li>Elementary</li>
+    <li>Database</li>
+    <li><a href="ElasticInstallation.html">Elastic 安装</a></li>
+  </ul>
+</nav>
+
+</div>
+  <div class="content">
+<aside class="toc sidebar" 
+	data-title="Content" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc osp">
+	<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_common">1. Common</a></li>
+<li><a href="#_启动_es7">2. 启动 ES7</a></li>
+<li><a href="#_访问es7">3. 访问ES7</a></li>
+<li><a href="#_启动_es8">4. 启动 ES8</a></li>
+<li><a href="#_设置密码">5. 设置密码</a></li>
+<li><a href="#_访问es8">6. 访问ES8</a></li>
+<li><a href="#_kibana">7. Kibana</a></li>
+<li><a href="#_kibana_token">8. Kibana Token</a></li>
+<li><a href="#_导出证书">9. 导出证书</a></li>
+<li><a href="#_测试api连接">10. 测试Api连接</a>
+<ul class="sectlevel2">
+<li><a href="#_添加证书">10.1. 添加证书</a></li>
+<li><a href="#_添加依赖">10.2. 添加依赖</a></li>
+<li><a href="#_工具类">10.3. 工具类</a></li>
+<li><a href="#_测试代码">10.4. 测试代码</a></li>
+</ul>
+</li>
+<li><a href="#_spring_data整合es8">11. Spring Data整合ES8</a>
+<ul class="sectlevel2">
+<li><a href="#_project_structure">11.1. Project Structure</a></li>
+<li><a href="#_dependency">11.2. Dependency</a></li>
+<li><a href="#_application_yaml">11.3. application.yaml</a></li>
+<li><a href="#_configuration">11.4. Configuration</a></li>
+<li><a href="#_controller">11.5. Controller</a></li>
+<li><a href="#_entry">11.6. Entry</a></li>
+</ul>
+</li>
+<li><a href="#_elastic_client">12. Elastic Client</a>
+<ul class="sectlevel2">
+<li><a href="#_imperative_client">12.1. Imperative Client</a></li>
+<li><a href="#_reactive_client">12.2. Reactive Client</a></li>
+</ul>
+</li>
+<li><a href="#_api">13. Api</a></li>
+<li><a href="#_elastic_crud">14. Elastic Crud</a>
+<ul class="sectlevel2">
+<li><a href="#_employee">14.1. Employee</a></li>
+<li><a href="#_controller_2">14.2. Controller</a></li>
+<li><a href="#_test">14.3. Test</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_common"><a class="anchor" href="#_common"></a>1. Common</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.elastic.co/blog" class="bare">https://www.elastic.co/blog</a></p>
+</li>
+<li>
+<p><a href="https://www.elastic.co/guide/index.html" class="bare">https://www.elastic.co/guide/index.html</a></p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">mkdir -p {/elf/es/.cache,/elf/es/data,/elf/es/logs} &amp;&amp; \
+	chmod 777 -R /elf/es</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_启动_es7"><a class="anchor" href="#_启动_es7"></a>2. 启动 ES7</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">docker run --name es7 \
+	--net network-common \
+	-p 9200:9200 -p 9300:9300 \
+	--privileged=true \
+	-e "discovery.type=single-node" \
+	-v /elf/es/.cache:/usr/share/elasticsearch/.cache \
+	-v /elf/es/data:/usr/share/elasticsearch/data \
+	-v /elf/es/logs:/usr/share/elasticsearch/logs \
+	-itd docker.elastic.co/elasticsearch/elasticsearch:7.17.18</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_访问es7"><a class="anchor" href="#_访问es7"></a>3. 访问ES7</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://192.168.0.123:9200" class="bare">http://192.168.0.123:9200</a></p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">{
+  "name" : "516266baebb4",
+  "cluster_name" : "docker-cluster",
+  "cluster_uuid" : "7GMURjAVRZinou21XMNYpQ",
+  "version" : {
+    "number" : "7.17.15",
+    "build_flavor" : "default",
+    "build_type" : "docker",
+    "build_hash" : "0b8ecfb4378335f4689c4223d1f1115f16bef3ba",
+    "build_date" : "2023-11-10T22:03:46.987399016Z",
+    "build_snapshot" : false,
+    "lucene_version" : "8.11.1",
+    "minimum_wire_compatibility_version" : "6.8.0",
+    "minimum_index_compatibility_version" : "6.0.0-beta1"
+  },
+  "tagline" : "You Know, for Search"
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_启动_es8"><a class="anchor" href="#_启动_es8"></a>4. 启动 ES8</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">docker run --name es8 \
+	-m 1GB \
+    -e ES_JAVA_OPTS="-Xms1024m -Xmx1024m" \
+	--net network-common \
+	-p 9200:9200 -p 9300:9300 \
+	--privileged=true \
+	-e "discovery.type=single-node" \
+	-v /elf/es/.cache:/usr/share/elasticsearch/.cache \
+	-v /elf/es/data:/usr/share/elasticsearch/data \
+	-v /elf/es/logs:/usr/share/elasticsearch/logs \
+	-itd docker.elastic.co/elasticsearch/elasticsearch:8.12.2</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_设置密码"><a class="anchor" href="#_设置密码"></a>5. 设置密码</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">docker exec -it es8 /usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic --interactive
+
+y
+
+# passwords must be at least [6] characters long
+# Enter password for [elastic]:
+# Re-enter password for [elastic]:
+# Password for the [elastic] user successfully reset.
+
+es8es8 - es8es8</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_访问es8"><a class="anchor" href="#_访问es8"></a>6. 访问ES8</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://192.168.0.123:9200/" class="bare">https://192.168.0.123:9200/</a></p>
+</li>
+<li>
+<p>elastic - <code>es8es8</code></p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">{
+  "name" : "f7308049be08",
+  "cluster_name" : "docker-cluster",
+  "cluster_uuid" : "YcdyuNUVSkuJuFzLXbpIFg",
+  "version" : {
+    "number" : "8.11.2",
+    "build_flavor" : "default",
+    "build_type" : "docker",
+    "build_hash" : "76013fa76dcbf144c886990c6290715f5dc2ae20",
+    "build_date" : "2023-12-05T10:03:47.729926671Z",
+    "build_snapshot" : false,
+    "lucene_version" : "9.8.0",
+    "minimum_wire_compatibility_version" : "7.17.0",
+    "minimum_index_compatibility_version" : "7.0.0"
+  },
+  "tagline" : "You Know, for Search"
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_kibana"><a class="anchor" href="#_kibana"></a>7. Kibana</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">docker run --name kibana \
+	--net network-common \
+	-p 5601:5601 \
+	--privileged=true \
+	-itd docker.elastic.co/kibana/kibana:8.12.2</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_kibana_token"><a class="anchor" href="#_kibana_token"></a>8. Kibana Token</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">docker exec -it es8 /usr/share/elasticsearch/bin/elasticsearch-create-enrollment-token -s kibana
+
+eyJ2ZXIiOiI4LjEyLjIiLCJhZHIiOlsiMTcyLjE4LjAuMjo5MjAwIl0sImZnciI6IjRjZDc0MWVhYzdkMzczZTJiMTdjNGQ1YjNjNTg5N2ZlMjhjNzE1MDRiNDc0OGI2Njc4OWFjYTZhODVmMjRiNDIiLCJrZXkiOiJfeE54R0k0QlVHTVI1WXB1S2hXSzpIV0FEWUlvN1RXTzFiYm8xSTd1SHlnIn0=</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>控制台获取验证码：<code>docker logs kibana</code>；<br>
+<a href="http://0.0.0.0:5601/?code=686936；" class="bare">http://0.0.0.0:5601/?code=686936；</a></p>
+</li>
+<li>
+<p>粘贴Enrollment Token，Configure Elastic；</p>
+</li>
+<li>
+<p>使用 <code>elastic - es8es8</code> 登录；</p>
+</li>
+<li>
+<p><a href="http://192.168.0.123:5601/app/integrations/browse" class="bare">http://192.168.0.123:5601/app/integrations/browse</a><br>
+<a href="http://192.168.0.123:5601/app/home#/" class="bare">http://192.168.0.123:5601/app/home#/</a></p>
+</li>
+<li>
+<p>进入开发工具：控制台：<br>
+<a href="http://192.168.0.123:5601/app/dev_tools#/console" class="bare">http://192.168.0.123:5601/app/dev_tools#/console</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_导出证书"><a class="anchor" href="#_导出证书"></a>9. 导出证书</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">docker exec -it es8 /bin/bash
+
+find $(pwd) -name 'http_ca.crt'
+
+# /usr/share/elasticsearch/config/certs/http_ca.crt
+
+exit
+
+docker cp es8:/usr/share/elasticsearch/config/certs/http_ca.crt /elf/http_ca.crt</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_测试api连接"><a class="anchor" href="#_测试api连接"></a>10. 测试Api连接</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_添加证书"><a class="anchor" href="#_添加证书"></a>10.1. 添加证书</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>添加已导出的证书到src/main/resources/certificate/http_ca.crt</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_添加依赖"><a class="anchor" href="#_添加依赖"></a>10.2. 添加依赖</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependencies&gt;
+	&lt;dependency&gt;
+		&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+		&lt;artifactId&gt;spring-boot-starter-data-elasticsearch&lt;/artifactId&gt;
+	&lt;/dependency&gt;
+
+	&lt;dependency&gt;
+		&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+		&lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;
+	&lt;/dependency&gt;
+
+	&lt;dependency&gt;
+		&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+		&lt;artifactId&gt;spring-boot-starter-log4j2&lt;/artifactId&gt;
+	&lt;/dependency&gt;
+
+	&lt;!--
+		&lt;dependency&gt;
+		    &lt;groupId&gt;org.elasticsearch.plugin&lt;/groupId&gt;
+		    &lt;artifactId&gt;x-pack-sql-jdbc&lt;/artifactId&gt;
+		    &lt;version&gt;8.11.2&lt;/version&gt;
+		&lt;/dependency&gt;
+
+		&lt;dependency&gt;
+		    &lt;groupId&gt;com.fasterxml.jackson.core&lt;/groupId&gt;
+		    &lt;artifactId&gt;jackson-databind&lt;/artifactId&gt;
+		&lt;/dependency&gt;
+
+		&lt;dependency&gt;
+		    &lt;groupId&gt;jakarta.json&lt;/groupId&gt;
+		    &lt;artifactId&gt;jakarta.json-api&lt;/artifactId&gt;
+		&lt;/dependency&gt;
+	 --&gt;
+&lt;/dependencies&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_工具类"><a class="anchor" href="#_工具类"></a>10.3. 工具类</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">package io.os.es.kit;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.security.KeyManagementException;
+import java.security.KeyStore;
+import java.security.KeyStoreException;
+import java.security.NoSuchAlgorithmException;
+import java.security.cert.Certificate;
+import java.security.cert.CertificateException;
+import java.security.cert.CertificateFactory;
+import javax.net.ssl.SSLContext;
+import org.apache.http.HttpHost;
+import org.apache.http.auth.AuthScope;
+import org.apache.http.auth.Credentials;
+import org.apache.http.auth.UsernamePasswordCredentials;
+import org.apache.http.client.CredentialsProvider;
+import org.apache.http.conn.ssl.NoopHostnameVerifier;
+import org.apache.http.impl.client.BasicCredentialsProvider;
+import org.apache.http.impl.nio.client.HttpAsyncClientBuilder;
+import org.apache.http.ssl.SSLContextBuilder;
+import org.apache.http.ssl.SSLContexts;
+import org.elasticsearch.client.RestClient;
+import org.elasticsearch.client.RestClientBuilder;
+import co.elastic.clients.elasticsearch.ElasticsearchAsyncClient;
+import co.elastic.clients.elasticsearch.ElasticsearchClient;
+import co.elastic.clients.json.jackson.JacksonJsonpMapper;
+import co.elastic.clients.transport.ElasticsearchTransport;
+import co.elastic.clients.transport.rest_client.RestClientTransport;
+
+public class ElasticClient {
+
+	//同步需关闭传输对象：transport.close();
+	private ElasticsearchClient syncClient;
+	private ElasticsearchTransport transport;
+	private ElasticsearchAsyncClient asyncClient;
+
+	public ElasticsearchClient getSyncClient() {
+		return syncClient;
+	}
+	public void setSyncClient(ElasticsearchClient syncClient) {
+		this.syncClient = syncClient;
+	}
+
+	public ElasticsearchTransport getTransport() {
+		return transport;
+	}
+	public void setTransport(ElasticsearchTransport transport) {
+		this.transport = transport;
+	}
+
+	public ElasticsearchAsyncClient getAsyncClient() {
+		return asyncClient;
+	}
+	public void setAsyncClient(ElasticsearchAsyncClient asyncClient) {
+		this.asyncClient = asyncClient;
+	}
+
+	//syncClient操作完需关闭transport，而asyncClient则无需
+	void connectToElastic(String userName,String cipherCode,String certificatePath,HttpHost httpHost) {
+		try {
+			final CredentialsProvider provider = new BasicCredentialsProvider();
+			Credentials credential = new UsernamePasswordCredentials(userName,cipherCode);
+			provider.setCredentials(AuthScope.ANY,credential);
+
+			Path caPath = Path.of(certificatePath);
+			CertificateFactory factory = CertificateFactory.getInstance("X.509");
+			Certificate trustCa;
+			try(InputStream is = Files.newInputStream(caPath)){
+				trustCa = factory.generateCertificate(is);
+			}
+
+			KeyStore trustStore = KeyStore.getInstance("pkcs12");
+			trustStore.load(null,null);
+			trustStore.setCertificateEntry("ca",trustCa);
+
+			SSLContextBuilder sslContextBuilder = SSLContexts.custom()
+				.loadTrustMaterial(trustStore,null);
+			final SSLContext sslContext = sslContextBuilder.build();
+
+			RestClientBuilder builder = RestClient
+				.builder(new HttpHost(httpHost.getHostName(),httpHost.getPort(),httpHost.getSchemeName()))
+				.setHttpClientConfigCallback(new RestClientBuilder.HttpClientConfigCallback() {
+					@Override
+					public HttpAsyncClientBuilder customizeHttpClient(HttpAsyncClientBuilder asyncBuilder) {
+						return asyncBuilder.setSSLContext(sslContext)
+							.setSSLHostnameVerifier(NoopHostnameVerifier.INSTANCE)
+							.setDefaultCredentialsProvider(provider);
+					}
+				});
+			RestClient restClient = builder.build();
+			transport = new RestClientTransport(restClient,new JacksonJsonpMapper());
+
+			syncClient = new ElasticsearchClient(transport);
+			asyncClient = new ElasticsearchAsyncClient(transport);
+		} catch (IOException | CertificateException | KeyStoreException
+			| NoSuchAlgorithmException | KeyManagementException e) {
+			e.printStackTrace();
+		}
+	}
+
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_测试代码"><a class="anchor" href="#_测试代码"></a>10.4. 测试代码</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">import java.io.IOException;
+import java.lang.invoke.MethodHandles;
+import org.apache.http.HttpHost;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import co.elastic.clients.elasticsearch._types.ElasticsearchException;
+import co.elastic.clients.transport.endpoints.BooleanResponse;
+
+public class Tester {
+
+	private static final Logger logger = LoggerFactory
+		.getLogger(MethodHandles.lookup().lookupClass());
+
+	public static void main(String[] sa) throws ElasticsearchException, IOException{
+		ElasticClient client = new ElasticClient();
+
+		String userName = "elastic";
+		String cipherCode = "es8es8";
+		String certificatePath = "src/main/resources/certificate/http_ca.crt";
+		HttpHost httpHost = new HttpHost("192.168.0.123",9200,"https");
+
+		client.connectToElastic(userName,cipherCode,certificatePath,httpHost);
+		BooleanResponse response = client.getSyncClient().indices().exists(r -&gt; r.index("elf"));
+		logger.error("exist index:{}",response.value());
+		client.getTransport().close();
+	}
+
+}</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>21:15:17.754 [main] ERROR io.os.es.kit.Tester - exist index:true</p>
+</li>
+<li>
+<p>org.springframework.boot.autoconfigure.elasticsearch.ElasticsearchProperties</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_spring_data整合es8"><a class="anchor" href="#_spring_data整合es8"></a>11. Spring Data整合ES8</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>ElasticSearch 8.11.2</p>
+</li>
+<li>
+<p>Spring Data 2023.1</p>
+</li>
+<li>
+<p>Spring Data ElasticSearch 5.2.0</p>
+</li>
+<li>
+<p>Spring Boot 3.2.0</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_project_structure"><a class="anchor" href="#_project_structure"></a>11.1. Project Structure</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">📄 pom.xml
+📂 src
+  📂 main
+    📂 java
+      📂 io.os.es
+        📄 ElasticEntry.java
+        📂 config
+          📄 ElasticConfig.java
+        📂 controller
+          📄 ElasticController.java
+    📂 resources
+      📄 application.yaml
+      📂 certificate
+        📄 http_ca.crt</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_dependency"><a class="anchor" href="#_dependency"></a>11.2. Dependency</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependencies&gt;
+	&lt;dependency&gt;
+		&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+		&lt;artifactId&gt;spring-boot-starter-data-elasticsearch&lt;/artifactId&gt;
+	&lt;/dependency&gt;
+
+	&lt;dependency&gt;
+		&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+		&lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;
+	&lt;/dependency&gt;
+
+	&lt;dependency&gt;
+		&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+		&lt;artifactId&gt;spring-boot-starter-log4j2&lt;/artifactId&gt;
+	&lt;/dependency&gt;
+&lt;/dependencies&gt;
+
+&lt;build&gt;
+	&lt;resources&gt;
+		&lt;resource&gt;
+	    	&lt;directory&gt;src/main/resources&lt;/directory&gt;
+	     	&lt;filtering&gt;true&lt;/filtering&gt;
+	     	&lt;includes&gt;
+	        	&lt;include&gt;**/*.yaml&lt;/include&gt;
+	     	&lt;/includes&gt;
+		&lt;/resource&gt;
+	&lt;/resources&gt;
+&lt;/build&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_application_yaml"><a class="anchor" href="#_application_yaml"></a>11.3. application.yaml</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">spring:
+  elasticsearch:
+    username: elastic
+    password: es8es8
+    restclient:
+      ssl:
+        bundle: src/main/resources/certificate/http_ca.crt
+    #此处不能携带schema，如https://192.168.0.123:9200
+    uris:
+    - 192.168.0.123:9200
+  data:
+    elasticsearch:
+      repositories:
+        enabled: true</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_configuration"><a class="anchor" href="#_configuration"></a>11.4. Configuration</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">package io.os.es.config;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.security.KeyManagementException;
+import java.security.KeyStore;
+import java.security.KeyStoreException;
+import java.security.NoSuchAlgorithmException;
+import java.security.cert.Certificate;
+import java.security.cert.CertificateException;
+import java.security.cert.CertificateFactory;
+import java.time.Duration;
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.TrustManagerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.elasticsearch.ElasticsearchProperties;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.data.elasticsearch.client.ClientConfiguration;
+import org.springframework.data.elasticsearch.client.elc.ElasticsearchConfiguration;
+
+@Configuration
+@EnableConfigurationProperties({ElasticsearchProperties.class})
+public class ElasticConfig extends ElasticsearchConfiguration {
+
+	@Autowired
+	private ElasticsearchProperties prop;
+
+    @Override
+    public ClientConfiguration clientConfiguration() {
+    	String[] uriArr = prop.getUris().toArray(String[]::new);
+        return ClientConfiguration.builder()
+            .connectedTo(uriArr)
+            .usingSsl(getSslContext(),(hostname,session) -&gt; true)
+            .withConnectTimeout(Duration.ofSeconds(5))
+            .withSocketTimeout(Duration.ofSeconds(30))
+            .withBasicAuth(prop.getUsername(),prop.getPassword())
+            .build();
+    }
+
+    private SSLContext getSslContext(){
+		try {
+			Path caPath = Path.of(prop.getRestclient().getSsl().getBundle());
+			CertificateFactory factory = CertificateFactory.getInstance("X.509");
+			Certificate trustCa;
+			try(InputStream is = Files.newInputStream(caPath)){
+				trustCa = factory.generateCertificate(is);
+			}
+
+			String keyStoreType = KeyStore.getDefaultType();
+	        KeyStore keyStore = KeyStore.getInstance(keyStoreType);
+	        keyStore.load(null, null);
+	        keyStore.setCertificateEntry("ca", trustCa);
+
+	        String algorithm = TrustManagerFactory.getDefaultAlgorithm();
+	        TrustManagerFactory tmf = TrustManagerFactory.getInstance(algorithm);
+	        tmf.init(keyStore);
+
+	        SSLContext context = SSLContext.getInstance("TLS");
+	        context.init(null,tmf.getTrustManagers(),null);
+	        return context;
+		} catch (CertificateException | IOException | KeyStoreException
+			| NoSuchAlgorithmException | KeyManagementException e) {
+			e.printStackTrace();
+			return null;
+		}
+    }
+
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_controller"><a class="anchor" href="#_controller"></a>11.5. Controller</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">import java.io.IOException;
+import java.lang.invoke.MethodHandles;
+import java.util.UUID;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import co.elastic.clients.elasticsearch.ElasticsearchClient;
+import co.elastic.clients.elasticsearch._types.ElasticsearchException;
+
+@RestController
+@RequestMapping
+public class ElasticController {
+
+	private static final Logger logger = LoggerFactory
+		.getLogger(MethodHandles.lookup().lookupClass());
+
+	@Autowired
+	private ElasticsearchClient esClient;
+
+	@GetMapping("/create")
+	public String createIndex() {
+		try {
+			String response = esClient.indices().create(r -&gt; r.index(UUID.randomUUID().toString())).toString();
+			logger.error("create index:{}",response);
+			return response;
+		} catch (ElasticsearchException | IOException e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_entry"><a class="anchor" href="#_entry"></a>11.6. Entry</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class ElasticEntry {
+
+	public static void main(String[] args) {
+		SpringApplication.run(ElasticEntry.class, args);
+	}
+
+}</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://localhost:8080/create" class="bare">http://localhost:8080/create</a></p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">2023-12-10T11:02:54.544+08:00 ERROR 40672 i.o.e.c.ElasticController
+	create index:CreateIndexResponse:
+{"index":"26726252-8571-416a-b47a-47a6dc2124b2","shards_acknowledged":true,"acknowledged":true}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_elastic_client"><a class="anchor" href="#_elastic_client"></a>12. Elastic Client</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_imperative_client"><a class="anchor" href="#_imperative_client"></a>12.1. Imperative Client</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">@Configuration
+public class ImperativeElasticConfig
+	extends ElasticsearchConfiguration {}
+
+@Autowired
+ElasticsearchOperations imperativeOperation;
+
+@Autowired
+ElasticsearchClient imperativeClient;
+
+@Autowired
+RestClient restClient;
+
+@Autowired
+JsonpMapper jsonpMapper;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_reactive_client"><a class="anchor" href="#_reactive_client"></a>12.2. Reactive Client</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">@Configuration
+public class ReactiveElasticConfig
+	extends ReactiveElasticsearchConfiguration {}
+
+@Autowired
+ReactiveElasticsearchOperations reactiveOperation;
+
+@Autowired
+ReactiveElasticsearchClient reactiveClient;
+
+@Autowired
+RestClient restClient;
+
+@Autowired
+JsonpMapper jsonpMapper;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_api"><a class="anchor" href="#_api"></a>13. Api</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>ElasticsearchTemplate</p>
+</li>
+<li>
+<p>ElasticsearchRepository</p>
+</li>
+<li>
+<p>ElasticsearchOperations(Recommended)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>IndexOperations</p>
+</li>
+<li>
+<p>SearchOperations</p>
+</li>
+<li>
+<p>DocumentOperations</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_elastic_crud"><a class="anchor" href="#_elastic_crud"></a>14. Elastic Crud</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_employee"><a class="anchor" href="#_employee"></a>14.1. Employee</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">@Document(indexName = "employee", createIndex = true)
+public class Employee {
+
+    @Id
+    private String employeeId;
+
+    @Field(type = FieldType.Text, name = "name")
+    private String name;
+
+    @Field(type = FieldType.Long, name = "salary")
+    private long salary;
+
+    public Employee() {}
+
+	public String getEmployeeId() {
+		return employeeId;
+	}
+	public void setEmployeeId(String employeeId) {
+		this.employeeId = employeeId;
+	}
+
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public long getSalary() {
+		return salary;
+	}
+	public void setSalary(long salary) {
+		this.salary = salary;
+	}
+
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_controller_2"><a class="anchor" href="#_controller_2"></a>14.2. Controller</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.elasticsearch.core.ElasticsearchOperations;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import io.os.elastic.model.Employee;
+
+@RestController
+@RequestMapping
+public class EmployeeController {
+
+	@Autowired
+	private ElasticsearchOperations elasticOperation;
+
+	@PostMapping("/employee")
+	public ResponseEntity&lt;Employee&gt; insert(@RequestBody Employee employee){
+		var emp = elasticOperation.save(employee);
+		return ResponseEntity.ok(emp);
+	}
+
+	@DeleteMapping("/deleteById/{employeeId}")
+	public ResponseEntity&lt;String&gt; deleteById(
+			@PathVariable("employeeId") String employeeId){
+		String empId = elasticOperation.delete(employeeId,Employee.class);
+		return ResponseEntity.ok(empId);
+	}
+
+	@PutMapping("/updateById")
+	public ResponseEntity&lt;Employee&gt; updateById(
+		@RequestBody Employee employee){
+		Employee emp = elasticOperation.get(employee.getEmployeeId(),Employee.class);
+		emp.setName(employee.getName());
+		emp.setSalary(employee.getSalary());
+		elasticOperation.save(emp);
+		return ResponseEntity.ok(emp);
+	}
+
+	@GetMapping("/getById/{employeeId}")
+	public ResponseEntity&lt;Employee&gt; getById(
+		@PathVariable("employeeId") String employeeId){
+		Employee emp = elasticOperation.get(employeeId,Employee.class);
+		return ResponseEntity.ok(emp);
+	}
+
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_test"><a class="anchor" href="#_test"></a>14.3. Test</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>localhost:8080/employee</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">{
+    "name":"elf",
+    "salary":"666"
+}</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>localhost:8080/updateById</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">{
+    "employeeId": "9KQfHI4BwaDO2KMCR8eQ",
+    "name":"lml",
+    "salary":"666"
+}</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>localhost:8080/getById/86QaHI4BwaDO2KMCPcdA</p>
+</li>
+<li>
+<p>localhost:8080/deleteById/8qQWHI4BwaDO2KMC7seg</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+	</article>
+  </div>
+</main>
+</div>
+		<footer class="footer">
+	<div class="footer-main">
+  		<figure class="footer-brand">
+
+			Authored in AsciiDoc <br />
+			Produced by Antora and Asciidoctor
+		</figure>
+  	</div>
+  
+	<div class="footer-legal">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		<p>Copyright © 2024 Elf</p>
+
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+</footer>
+
+<script id="site-script" src="../../../../_/js/site.js" data-ui-root-path="../../../../_"></script>
+<script async src="../../../../_/js/vendor/highlight.js"></script>
+
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  messageStyle: "none",
+  tex2jax: { inlineMath: [["\\(", "\\)"]], displayMath: [["\\[", "\\]"]], ignoreClass: "nostem|nolatexmath" },
+  asciimath2jax: { delimiters: [["\\$", "\\$"]], ignoreClass: "nostem|noasciimath" },
+  TeX: { equationNumbers: { autoNumber: "none" } }
+})
+MathJax.Hub.Register.StartupHook("AsciiMath Jax Ready", function () {
+  MathJax.InputJax.AsciiMath.postfilterHooks.Add(function (data, node) {
+    if ((node = data.script.parentNode) && (node = node.parentNode) && node.classList.contains("stemblock")) {
+      data.math.root.display = "block"
+    }
+    return data
+  })
+})
+</script>
+  </body>
+
+</html>
