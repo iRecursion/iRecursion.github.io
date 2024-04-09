@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>AsciiDoc | AsciiDoc</title>
+    
+    
+    
+	<link rel="stylesheet" href="../../../../_/css/site.css">
+	    
+    <meta name="generator" content="Antora 3.1.7">
+    <meta property="og:description" content="documentation page for Makeshift.">
+    <meta property="og:site_name" content="Asciidoctor Doc">
+    <meta property="og:title" content="Makeshift - ">
+    <meta name="page-spec" content="ms:SpringAI:Solitary/SpringAIDependency.adoc">
+
+<link rel="stylesheet" href="../../../../_/css/retrieve.css">
+    <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+    	
+    		<a class="navbar-item logo" >
+				<img src="../../../../_/img/asciidoctor-logo.svg">
+			</a>
+
+  			<a class="navbar-item title">AsciiDoc</a>
+    	</div>
+    	
+        <div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+				 
+		            <div id="main">
+		                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+			            </div>
+			        </section>
+				
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active is-loading" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">Makeshift</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Spring AI</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Solitary</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="AIConcept.html">AI Concept</a>
+  </li>
+  <li class="nav-item is-current-url" data-depth="3">
+    <a class="nav-link" href="SpringAIDependency.html">Spring AI Dependency</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="SpringAIProperty.html">Spring AI Property</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="GenericModel.html">Generic Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Prompt.html">Prompt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="OutputParser.html">Output Parser</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="EtlPipeline.html">Etl Pipeline</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ImageGeneration.html">Image Generation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="FunctionCalling.html">Function Calling</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="EvaluationTesting.html">Evaluation Testing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="TestContainer.html">Test Container</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Chat Completion</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ChatCompletion/ChatCompletion.html">Chat Completion</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ChatCompletion/Ollama.html">Ollama</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ChatCompletion/HuggingFace.html">Hugging Face</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Embedding</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Embedding/Embedding.html">Embedding</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Embedding/Ollama.html">Ollama</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Embedding/PostgresML.html">Postgres ML</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Embedding/TransformerOnnx.html">Transformer Onnx</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Vector Store</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Store/VectorExplanation.html">Vector Explanation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Store/VectorStore.html">Vector Store</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Store/Neo4j.html">Neo4j</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Store/Redis.html">Redis</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Store/Chroma.html">Chroma</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Store/Milvus.html">Milvus</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Store/Qdrant.html">Qdrant</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Store/Elastic.html">Elastic</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Store/Weaviate.html">Weaviate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Store/Pgv.html">Postgres Vector</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Environment</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Virtualization</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Virtualization/HyperVConfigurer.html">HyperV Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Virtualization/UbuntuConfigurer.html">Ubuntu Configurer</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Containerization</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Containerization/DockerFundamental.html">Docker Fundamental</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Containerization/K8SInstallation.html">K8S Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Containerization/K8SExtension.html">K8S Extension</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">DevOps</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/DevOps/NexusInstallation.html">Nexus Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/DevOps/JenkinsInstallation.html">Jenkins Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Pom Template</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/PomTemplate/FlattenLifecycle.html">Flatten Lifecycle</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/PomTemplate/JakartaSpecification.html">Jakarta Specification</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Language</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Language/GraalWin.html">Graal Win</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Language/CondaJupyter.html">Conda Jupyter</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Language/LuaInstallation.html">Lua Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Language/RustInstallation.html">Rust Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Language/RustConfiguration.html">Rust Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Language/GroovyInstallation.html">Groovy Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Message</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Message/KafkaInstallation.html">Kafka Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Message/PulsarInstallation.html">Pulsar Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Discovery</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Discovery/NacosInstallation.html">Nacos Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Store</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Store/PowerDesigner.html">Power Designer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Store/MongoInstallation.html">Mongo Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Store/MySQLInstallation.html">MySQL Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Store/ElasticInstallation.html">Elastic Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Store/PostgresInstallation.html">Postgres Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Store/AeroSpikeInstallation.html">AeroSpike Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Store/RedisStackInstallation.html">Redis Stack Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Security</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Security/KeycloakInstallation.html">Keycloak Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Practical Case</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/PracticalCase/MongoCase.html">Mongo Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/PracticalCase/ElasticCase.html">Elastic Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/PracticalCase/MySqlTuning.html">MySql Tuning</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/PracticalCase/KeycloakCase.html">Keycloak Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/PracticalCase/TinkerpopCase.html">Tinkerpop Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/PracticalCase/PgvSimilarity.html">Pgv Similarity</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/PracticalCase/BookmarkCase.html">Bookmark Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/PracticalCase/AirflowDagCase.html">Airflow Dag Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/PracticalCase/ModularizingCase.html">Modularizing Case</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Processing</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Processing/FlinkInstallation.html">Flink Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Assortment</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Assortment/CommonAssortment.html">Common Assortment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Assortment/TechniqueAssortment.html">Technique Assortment</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Periphery</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Periphery/RssFeed.html">Rss Feed</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Kafka</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Fundamental</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Fundamental/KafkaEco.html">Kafka Eco</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Fundamental/KafkaTheory.html">Kafka Theory</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+  <script>
+;(function () {
+  var panel = document.querySelector('.nav-panel-menu')
+  var page
+  var hash = window.location.hash
+  if (hash) {
+    if (~hash.indexOf('%')) hash = decodeURIComponent(hash)
+    if (~hash.indexOf('"')) hash = hash.replace(/(?=")/g, '\\')
+    var link = panel.querySelector('.nav-link[href="' + hash + '"]')
+    if (link) page = link.parentNode
+    else if ((page = panel.querySelector('.is-current-url'))) page.classList.add('is-provisional')
+  } else {
+    page = panel.querySelector('.is-current-url')
+  }
+  if (page) {
+    var ancestor = page
+    while ((ancestor = ancestor.parentNode) && ancestor !== panel) {
+      if (ancestor.className === 'nav-item') ancestor.classList.add('is-current-path', 'is-active')
+    }
+    page.classList.add('is-current-page', 'is-active')
+    if (panel.scrollHeight > panel.clientHeight) {
+      var panelRect = panel.getBoundingClientRect()
+      var linkRect = page.querySelector('.nav-link').getBoundingClientRect()
+      panel.scrollTop += Math.round(linkRect.top - panelRect.top - (panelRect.height - linkRect.height) * 0.5)
+    }
+  } else {
+    panel.scrollTop = 0
+  }
+  panel.classList.remove('is-loading')
+})()
+  </script>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Makeshift</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../../index.html">Makeshift</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../index.html" 
+  	class="home-link" title="Home"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">Makeshift</a></li>
+    <li>Spring AI</li>
+    <li>Solitary</li>
+    <li><a href="SpringAIDependency.html">Spring AI Dependency</a></li>
+  </ul>
+</nav>
+
+</div>
+  <div class="content">
+<aside class="toc sidebar" 
+	data-title="Content" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc ms">
+	<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_generic">1. Generic</a></li>
+<li><a href="#_ollama_chat">2. Ollama Chat</a></li>
+<li><a href="#_embedding">3. Embedding</a>
+<ul class="sectlevel2">
+<li><a href="#_ollama">3.1. Ollama</a></li>
+<li><a href="#_postgres_ml">3.2. Postgres ML</a></li>
+<li><a href="#_transformer_onnx">3.3. Transformer Onnx</a></li>
+</ul>
+</li>
+<li><a href="#_vector">4. Vector</a>
+<ul class="sectlevel2">
+<li><a href="#_chroma">4.1. Chroma</a></li>
+<li><a href="#_milvus">4.2. Milvus</a></li>
+<li><a href="#_neo4j">4.3. Neo4j</a></li>
+<li><a href="#_weaviate">4.4. Weaviate</a></li>
+<li><a href="#_redis">4.5. Redis</a></li>
+<li><a href="#_qdrant">4.6. Qdrant</a></li>
+<li><a href="#_postgres_vector">4.7. Postgres Vector</a></li>
+</ul>
+</li>
+<li><a href="#_ai_solver">5. AI Solver</a></li>
+<li><a href="#_overall">6. Overall</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_generic"><a class="anchor" href="#_generic"></a>1. Generic</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;properties&gt;
+	&lt;ai.revision&gt;ai.1.0.0&lt;/ai.revision&gt;
+	&lt;spring.ai.version&gt;0.8.1&lt;/spring.ai.version&gt;
+	&lt;timefold.solver.version&gt;1.7.0&lt;/timefold.solver.version&gt;
+&lt;/properties&gt;
+
+&lt;dependencyManagement&gt;
+	&lt;dependencies&gt;
+		&lt;dependency&gt;
+    		&lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+    		&lt;artifactId&gt;spring-ai-bom&lt;/artifactId&gt;
+    		&lt;version&gt;${spring.ai.version}&lt;/version&gt;
+    		&lt;type&gt;pom&lt;/type&gt;
+    		&lt;scope&gt;import&lt;/scope&gt;
+  		&lt;/dependency&gt;
+
+  		&lt;dependency&gt;
+    		&lt;groupId&gt;ai.timefold.solver&lt;/groupId&gt;
+    		&lt;artifactId&gt;timefold-solver-bom&lt;/artifactId&gt;
+    		&lt;version&gt;${timefold.solver.version}&lt;/version&gt;
+    		&lt;type&gt;pom&lt;/type&gt;
+    		&lt;scope&gt;import&lt;/scope&gt;
+  		&lt;/dependency&gt;
+	&lt;/dependencies&gt;
+&lt;/dependencyManagement&gt;
+
+&lt;repositories&gt;
+	&lt;repository&gt;
+  		&lt;id&gt;spring-milestones&lt;/id&gt;
+  		&lt;name&gt;Spring Milestones&lt;/name&gt;
+  		&lt;url&gt;https://repo.spring.io/milestone&lt;/url&gt;
+  		&lt;snapshots&gt;
+    		&lt;enabled&gt;false&lt;/enabled&gt;
+  		&lt;/snapshots&gt;
+	&lt;/repository&gt;
+&lt;/repositories&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ollama_chat"><a class="anchor" href="#_ollama_chat"></a>2. Ollama Chat</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+	&lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+   	&lt;artifactId&gt;spring-ai-ollama-spring-boot-starter&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_embedding"><a class="anchor" href="#_embedding"></a>3. Embedding</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_ollama"><a class="anchor" href="#_ollama"></a>3.1. Ollama</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+	&lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+   	&lt;artifactId&gt;spring-ai-ollama-spring-boot-starter&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_postgres_ml"><a class="anchor" href="#_postgres_ml"></a>3.2. Postgres ML</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-ai-postgresml-spring-boot-starter&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_transformer_onnx"><a class="anchor" href="#_transformer_onnx"></a>3.3. Transformer Onnx</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+   	&lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+   	&lt;artifactId&gt;spring-ai-transformers-spring-boot-starter&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_vector"><a class="anchor" href="#_vector"></a>4. Vector</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_chroma"><a class="anchor" href="#_chroma"></a>4.1. Chroma</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+	&lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-ai-chroma-store-spring-boot-starter&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_milvus"><a class="anchor" href="#_milvus"></a>4.2. Milvus</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+	&lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+	&lt;artifactId&gt;spring-ai-milvus-store-spring-boot-starter&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_neo4j"><a class="anchor" href="#_neo4j"></a>4.3. Neo4j</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+	&lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-ai-neo4j-store-spring-boot-starter&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_weaviate"><a class="anchor" href="#_weaviate"></a>4.4. Weaviate</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+  	&lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+  	&lt;artifactId&gt;spring-ai-transformers-spring-boot-starter&lt;/artifactId&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+  	&lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+  	&lt;artifactId&gt;spring-ai-weaviate-store-spring-boot-starter&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_redis"><a class="anchor" href="#_redis"></a>4.5. Redis</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+	&lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+  	&lt;artifactId&gt;spring-ai-transformers-spring-boot-starter&lt;/artifactId&gt;
+&lt;/dependency&gt;
+&lt;dependency&gt;
+	&lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+  	&lt;artifactId&gt;spring-ai-redis-spring-boot-starter&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_qdrant"><a class="anchor" href="#_qdrant"></a>4.6. Qdrant</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+	&lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+	&lt;artifactId&gt;spring-ai-qdrant-store-spring-boot-starter&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_postgres_vector"><a class="anchor" href="#_postgres_vector"></a>4.7. Postgres Vector</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+	&lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+  	&lt;artifactId&gt;spring-ai-pgvector-store-spring-boot-starter&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ai_solver"><a class="anchor" href="#_ai_solver"></a>5. AI Solver</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+	&lt;groupId&gt;ai.timefold.solver&lt;/groupId&gt;
+	&lt;artifactId&gt;timefold-solver-spring-boot-starter&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_overall"><a class="anchor" href="#_overall"></a>6. Overall</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+	&lt;groupId&gt;ai.timefold.solver&lt;/groupId&gt;
+	&lt;artifactId&gt;timefold-solver-spring-boot-starter&lt;/artifactId&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+	&lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+   	&lt;artifactId&gt;spring-ai-ollama-spring-boot-starter&lt;/artifactId&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+   	&lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+   	&lt;artifactId&gt;spring-ai-transformers-spring-boot-starter&lt;/artifactId&gt;
+&lt;/dependency&gt;
+&lt;dependency&gt;
+	&lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-ai-chroma-store-spring-boot-starter&lt;/artifactId&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+	&lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+	&lt;artifactId&gt;spring-ai-milvus-store-spring-boot-starter&lt;/artifactId&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+	&lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+	&lt;artifactId&gt;spring-ai-qdrant-store-spring-boot-starter&lt;/artifactId&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+  	&lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+  	&lt;artifactId&gt;spring-ai-weaviate-store-spring-boot-starter&lt;/artifactId&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+	&lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-ai-neo4j-store-spring-boot-starter&lt;/artifactId&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+	&lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+  	&lt;artifactId&gt;spring-ai-redis-spring-boot-starter&lt;/artifactId&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+	&lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+  	&lt;artifactId&gt;spring-ai-pgvector-store-spring-boot-starter&lt;/artifactId&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-ai-postgresml-spring-boot-starter&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+	</article>
+  </div>
+</main>
+</div>
+		<footer class="footer">
+	<div class="footer-main">
+  		<figure class="footer-brand">
+
+			Authored in AsciiDoc <br />
+			Produced by Antora and Asciidoctor
+		</figure>
+  	</div>
+  
+	<div class="footer-legal">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		<p>Copyright © 2024 Elf</p>
+
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+</footer>
+
+<script id="site-script" src="../../../../_/js/site.js" data-ui-root-path="../../../../_"></script>
+<script async src="../../../../_/js/vendor/highlight.js"></script>
+<script async src="../../../../_/js/vendor/highlight.bundle.js"></script>
+
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  messageStyle: "none",
+  tex2jax: { inlineMath: [["\\(", "\\)"]], displayMath: [["\\[", "\\]"]], ignoreClass: "nostem|nolatexmath" },
+  asciimath2jax: { delimiters: [["\\$", "\\$"]], ignoreClass: "nostem|noasciimath" },
+  TeX: { equationNumbers: { autoNumber: "none" } }
+})
+MathJax.Hub.Register.StartupHook("AsciiMath Jax Ready", function () {
+  MathJax.InputJax.AsciiMath.postfilterHooks.Add(function (data, node) {
+    if ((node = data.script.parentNode) && (node = node.parentNode) && node.classList.contains("stemblock")) {
+      data.math.root.display = "block"
+    }
+    return data
+  })
+})
+</script>
+  </body>
+
+</html>

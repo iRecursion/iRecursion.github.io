@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>AsciiDoc | AsciiDoc</title>
+    
+    
+    
+	<link rel="stylesheet" href="../../../../_/css/site.css">
+	    
+    <meta name="generator" content="Antora 3.1.7">
+    <meta property="og:description" content="documentation page for Makeshift.">
+    <meta property="og:site_name" content="Asciidoctor Doc">
+    <meta property="og:title" content="Makeshift - ">
+    <meta name="page-spec" content="ms:SpringAI:Store/Weaviate.adoc">
+
+<link rel="stylesheet" href="../../../../_/css/retrieve.css">
+    <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+    	
+    		<a class="navbar-item logo" >
+				<img src="../../../../_/img/asciidoctor-logo.svg">
+			</a>
+
+  			<a class="navbar-item title">AsciiDoc</a>
+    	</div>
+    	
+        <div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+				 
+		            <div id="main">
+		                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+			            </div>
+			        </section>
+				
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active is-loading" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">Makeshift</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Spring AI</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Solitary</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Solitary/AIConcept.html">AI Concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Solitary/SpringAIDependency.html">Spring AI Dependency</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Solitary/SpringAIProperty.html">Spring AI Property</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Solitary/GenericModel.html">Generic Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Solitary/Prompt.html">Prompt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Solitary/OutputParser.html">Output Parser</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Solitary/EtlPipeline.html">Etl Pipeline</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Solitary/ImageGeneration.html">Image Generation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Solitary/FunctionCalling.html">Function Calling</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Solitary/EvaluationTesting.html">Evaluation Testing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Solitary/TestContainer.html">Test Container</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Chat Completion</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ChatCompletion/ChatCompletion.html">Chat Completion</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ChatCompletion/Ollama.html">Ollama</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ChatCompletion/HuggingFace.html">Hugging Face</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Embedding</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Embedding/Embedding.html">Embedding</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Embedding/Ollama.html">Ollama</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Embedding/PostgresML.html">Postgres ML</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Embedding/TransformerOnnx.html">Transformer Onnx</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Vector Store</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="VectorExplanation.html">Vector Explanation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="VectorStore.html">Vector Store</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Neo4j.html">Neo4j</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Redis.html">Redis</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Chroma.html">Chroma</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Milvus.html">Milvus</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Qdrant.html">Qdrant</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Elastic.html">Elastic</a>
+  </li>
+  <li class="nav-item is-current-url" data-depth="3">
+    <a class="nav-link" href="Weaviate.html">Weaviate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Pgv.html">Postgres Vector</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Environment</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Virtualization</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Virtualization/HyperVConfigurer.html">HyperV Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Virtualization/UbuntuConfigurer.html">Ubuntu Configurer</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Containerization</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Containerization/DockerFundamental.html">Docker Fundamental</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Containerization/K8SInstallation.html">K8S Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Containerization/K8SExtension.html">K8S Extension</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">DevOps</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/DevOps/NexusInstallation.html">Nexus Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/DevOps/JenkinsInstallation.html">Jenkins Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Pom Template</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/PomTemplate/FlattenLifecycle.html">Flatten Lifecycle</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/PomTemplate/JakartaSpecification.html">Jakarta Specification</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Language</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Language/GraalWin.html">Graal Win</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Language/CondaJupyter.html">Conda Jupyter</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Language/LuaInstallation.html">Lua Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Language/RustInstallation.html">Rust Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Language/RustConfiguration.html">Rust Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Language/GroovyInstallation.html">Groovy Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Message</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Message/KafkaInstallation.html">Kafka Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Message/PulsarInstallation.html">Pulsar Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Discovery</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Discovery/NacosInstallation.html">Nacos Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Store</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Store/PowerDesigner.html">Power Designer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Store/MongoInstallation.html">Mongo Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Store/MySQLInstallation.html">MySQL Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Store/ElasticInstallation.html">Elastic Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Store/PostgresInstallation.html">Postgres Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Store/AeroSpikeInstallation.html">AeroSpike Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Store/RedisStackInstallation.html">Redis Stack Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Security</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Security/KeycloakInstallation.html">Keycloak Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Practical Case</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/PracticalCase/MongoCase.html">Mongo Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/PracticalCase/ElasticCase.html">Elastic Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/PracticalCase/MySqlTuning.html">MySql Tuning</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/PracticalCase/KeycloakCase.html">Keycloak Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/PracticalCase/TinkerpopCase.html">Tinkerpop Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/PracticalCase/PgvSimilarity.html">Pgv Similarity</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/PracticalCase/BookmarkCase.html">Bookmark Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/PracticalCase/AirflowDagCase.html">Airflow Dag Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/PracticalCase/ModularizingCase.html">Modularizing Case</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Processing</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Processing/FlinkInstallation.html">Flink Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Assortment</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Assortment/CommonAssortment.html">Common Assortment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Assortment/TechniqueAssortment.html">Technique Assortment</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Periphery</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Periphery/RssFeed.html">Rss Feed</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Kafka</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Fundamental</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Fundamental/KafkaEco.html">Kafka Eco</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Fundamental/KafkaTheory.html">Kafka Theory</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+  <script>
+;(function () {
+  var panel = document.querySelector('.nav-panel-menu')
+  var page
+  var hash = window.location.hash
+  if (hash) {
+    if (~hash.indexOf('%')) hash = decodeURIComponent(hash)
+    if (~hash.indexOf('"')) hash = hash.replace(/(?=")/g, '\\')
+    var link = panel.querySelector('.nav-link[href="' + hash + '"]')
+    if (link) page = link.parentNode
+    else if ((page = panel.querySelector('.is-current-url'))) page.classList.add('is-provisional')
+  } else {
+    page = panel.querySelector('.is-current-url')
+  }
+  if (page) {
+    var ancestor = page
+    while ((ancestor = ancestor.parentNode) && ancestor !== panel) {
+      if (ancestor.className === 'nav-item') ancestor.classList.add('is-current-path', 'is-active')
+    }
+    page.classList.add('is-current-page', 'is-active')
+    if (panel.scrollHeight > panel.clientHeight) {
+      var panelRect = panel.getBoundingClientRect()
+      var linkRect = page.querySelector('.nav-link').getBoundingClientRect()
+      panel.scrollTop += Math.round(linkRect.top - panelRect.top - (panelRect.height - linkRect.height) * 0.5)
+    }
+  } else {
+    panel.scrollTop = 0
+  }
+  panel.classList.remove('is-loading')
+})()
+  </script>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Makeshift</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../../index.html">Makeshift</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../index.html" 
+  	class="home-link" title="Home"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">Makeshift</a></li>
+    <li>Spring AI</li>
+    <li>Vector Store</li>
+    <li><a href="Weaviate.html">Weaviate</a></li>
+  </ul>
+</nav>
+
+</div>
+  <div class="content">
+<aside class="toc sidebar" 
+	data-title="Content" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc ms">
+	<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_introduction">1. Introduction</a></li>
+<li><a href="#_prerequisite">2. Prerequisite</a></li>
+<li><a href="#_weaviate_setup">3. Weaviate Setup</a></li>
+<li><a href="#_dependency">4. Dependency</a></li>
+<li><a href="#_usage">5. Usage</a></li>
+<li><a href="#_metadata_filtering">6. Metadata Filtering</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_introduction"><a class="anchor" href="#_introduction"></a>1. Introduction</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Weaviate是开源向量数据库，允许存储ML模型的数据对象和向量嵌入，<br>
+并无缝扩展到数十亿(scale seamlessly into billion)个数据对象中，<br>
+提供存储文档嵌入、内容和元数据及搜索嵌入(包括元数据过滤)的工具；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_prerequisite"><a class="anchor" href="#_prerequisite"></a>2. Prerequisite</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>EmbeddingClient实例计算文档嵌入document embeddings，可用选项：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>PostgresML Embedding Client；</p>
+</li>
+<li>
+<p>Transformer Embedding：计算本地环境中的嵌入，<br>
+按Onnx Transformer Embedding instruction操作；</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_weaviate_setup"><a class="anchor" href="#_weaviate_setup"></a>3. Weaviate Setup</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://weaviate.io/developers/weaviate" class="bare">https://weaviate.io/developers/weaviate</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://hub.docker.com/r/semitechnologies/weaviate" class="bare">https://hub.docker.com/r/semitechnologies/weaviate</a></p>
+</div>
+<div class="paragraph">
+<p>docker pull semitechnologies/weaviate:1.24.1</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_dependency"><a class="anchor" href="#_dependency"></a>4. Dependency</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+  	&lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+  	&lt;artifactId&gt;spring-ai-transformers-spring-boot-starter&lt;/artifactId&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+  	&lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+  	&lt;artifactId&gt;spring-ai-weaviate-store&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_usage"><a class="anchor" href="#_usage"></a>5. Usage</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Bean
+VectorStore vectorStore(EmbeddingClient embeddingClient) {
+	var config = WeaviateVectorStoreConfig.builder()
+		.withScheme("http")
+		.withHost("192.168.0.123:8080")
+
+		//define metadata field to used in similarity search filter
+		.withFilterableMetadataFields(List.of(
+	        MetadataField.text("country"),
+	        MetadataField.number("year"),
+	        MetadataField.bool("active")))
+
+		//consistency level can：ONE,QUORUM,ALL
+		.withConsistencyLevel(ConsistentLevel.ONE)
+		.build();
+	return new WeaviateVectorStore(config,embeddingClient);
+}</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>必须明确explicitly列出filter expression中使用的任何元数据键<br>
+metadata key的所有元数据字段名称和类型(BOOLEAN、TEXT或NUMBER)，<br>
+text("country"),number("year"),bool("active")；</p>
+</li>
+<li>
+<p>若filterable metadata field expand with new entry，<br>
+那必须(re)upload/update documents with this metadata；</p>
+</li>
+<li>
+<p>可在没明确定义的情况下使用以下Weaviate系统元数据字段：<br>
+id、_creationTimeUnix和_lastUpdateTimeUnix；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">List&lt;Document&gt; documentList = List.of(
+   new Document("Spring AI rocks!! Spring AI rocks!! Spring AI rocks!! Spring AI rocks!! Spring AI rocks!!", Map.of("country", "UK", "active", true, "year", 2020)),
+   new Document("The World is Big and Salvation Lurks Around the Corner", Map.of()),
+   new Document("You walk forward facing the past and you turn back toward the future.", Map.of("country", "NL", "active", false, "year", 2023)));
+
+vectorStore.add(List.of(document));
+
+List&lt;Document&gt; resultList = vectorStore.similaritySearch(
+   SearchRequest.query("Spring").withTopK(5));</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_metadata_filtering"><a class="anchor" href="#_metadata_filtering"></a>6. Metadata Filtering</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>text expression language方式：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">vectorStore.similaritySearch(SearchRequest
+	.query("The World")
+  	.withTopK(TOP_K)
+  	.withSimilarityThreshold(SIMILARITY_THRESHOLD)
+  	.withFilterExpression("country in ['UK', 'NL'] &amp;&amp; year &gt;= 2020"));</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>programmatically expression Dsl方式：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">var builder = new FilterExpressionBuilder();
+
+vectorStore.similaritySearch(SearchRequest
+  	.query("The World")
+	.withTopK(TOP_K)
+  	.withSimilarityThreshold(SIMILARITY_THRESHOLD)
+  	.withFilterExpression(b.and(
+     	builder.in("country", "UK", "NL"),
+     	builder.gte("year", 2020)).build()));</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>可移植的过滤器表达式portable filter expression会自动<br>
+转换为专有的(proprietary)Weaviate where过滤器，如：<br>
+<mark>country in ['UK', 'NL'] &amp;&amp; year &gt;= 2020</mark></p>
+</li>
+<li>
+<p>转换为：Weaviate GraphQL where filter expression：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-graphql hljs" data-lang="graphql">operator:And
+   operands:
+      [{
+         operator:Or
+         operands:
+            [{
+               path:["meta_country"]
+               operator:Equal
+               valueText:"UK"
+            },
+            {
+               path:["meta_country"]
+               operator:Equal
+               valueText:"NL"
+            }]
+      },
+      {
+         path:["meta_year"]
+         operator:GreaterThanEqual
+         valueNumber:2020
+      }]</code></pre>
+</div>
+</div>
+</div>
+</div>
+	</article>
+  </div>
+</main>
+</div>
+		<footer class="footer">
+	<div class="footer-main">
+  		<figure class="footer-brand">
+
+			Authored in AsciiDoc <br />
+			Produced by Antora and Asciidoctor
+		</figure>
+  	</div>
+  
+	<div class="footer-legal">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		<p>Copyright © 2024 Elf</p>
+
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+</footer>
+
+<script id="site-script" src="../../../../_/js/site.js" data-ui-root-path="../../../../_"></script>
+<script async src="../../../../_/js/vendor/highlight.js"></script>
+<script async src="../../../../_/js/vendor/highlight.bundle.js"></script>
+
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  messageStyle: "none",
+  tex2jax: { inlineMath: [["\\(", "\\)"]], displayMath: [["\\[", "\\]"]], ignoreClass: "nostem|nolatexmath" },
+  asciimath2jax: { delimiters: [["\\$", "\\$"]], ignoreClass: "nostem|noasciimath" },
+  TeX: { equationNumbers: { autoNumber: "none" } }
+})
+MathJax.Hub.Register.StartupHook("AsciiMath Jax Ready", function () {
+  MathJax.InputJax.AsciiMath.postfilterHooks.Add(function (data, node) {
+    if ((node = data.script.parentNode) && (node = node.parentNode) && node.classList.contains("stemblock")) {
+      data.math.root.display = "block"
+    }
+    return data
+  })
+})
+</script>
+  </body>
+
+</html>

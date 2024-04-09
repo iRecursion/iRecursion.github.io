@@ -1,0 +1,1375 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>AsciiDoc | AsciiDoc</title>
+    
+    
+    
+	<link rel="stylesheet" href="../../../../_/css/site.css">
+	    
+    <meta name="generator" content="Antora 3.1.7">
+    <meta property="og:description" content="documentation page for Makeshift.">
+    <meta property="og:site_name" content="Asciidoctor Doc">
+    <meta property="og:title" content="Makeshift - ">
+    <meta name="page-spec" content="ms:Kafka:Fundamental/KafkaTheory.adoc">
+
+<link rel="stylesheet" href="../../../../_/css/retrieve.css">
+    <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+    	
+    		<a class="navbar-item logo" >
+				<img src="../../../../_/img/asciidoctor-logo.svg">
+			</a>
+
+  			<a class="navbar-item title">AsciiDoc</a>
+    	</div>
+    	
+        <div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+				 
+		            <div id="main">
+		                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+			            </div>
+			        </section>
+				
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active is-loading" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">Makeshift</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Spring AI</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Solitary</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/AIConcept.html">AI Concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/SpringAIDependency.html">Spring AI Dependency</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/SpringAIProperty.html">Spring AI Property</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/GenericModel.html">Generic Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/Prompt.html">Prompt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/OutputParser.html">Output Parser</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/EtlPipeline.html">Etl Pipeline</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/ImageGeneration.html">Image Generation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/FunctionCalling.html">Function Calling</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/EvaluationTesting.html">Evaluation Testing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/TestContainer.html">Test Container</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Chat Completion</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/ChatCompletion/ChatCompletion.html">Chat Completion</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/ChatCompletion/Ollama.html">Ollama</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/ChatCompletion/HuggingFace.html">Hugging Face</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Embedding</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/Embedding.html">Embedding</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/Ollama.html">Ollama</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/PostgresML.html">Postgres ML</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/TransformerOnnx.html">Transformer Onnx</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Vector Store</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/VectorExplanation.html">Vector Explanation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/VectorStore.html">Vector Store</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Neo4j.html">Neo4j</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Redis.html">Redis</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Chroma.html">Chroma</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Milvus.html">Milvus</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Qdrant.html">Qdrant</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Elastic.html">Elastic</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Weaviate.html">Weaviate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Pgv.html">Postgres Vector</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Environment</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Virtualization</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Virtualization/HyperVConfigurer.html">HyperV Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Virtualization/UbuntuConfigurer.html">Ubuntu Configurer</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Containerization</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Containerization/DockerFundamental.html">Docker Fundamental</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Containerization/K8SInstallation.html">K8S Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Containerization/K8SExtension.html">K8S Extension</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">DevOps</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/DevOps/NexusInstallation.html">Nexus Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/DevOps/JenkinsInstallation.html">Jenkins Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Pom Template</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/PomTemplate/FlattenLifecycle.html">Flatten Lifecycle</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/PomTemplate/JakartaSpecification.html">Jakarta Specification</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Language</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Language/GraalWin.html">Graal Win</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Language/CondaJupyter.html">Conda Jupyter</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Language/LuaInstallation.html">Lua Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Language/RustInstallation.html">Rust Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Language/RustConfiguration.html">Rust Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Language/GroovyInstallation.html">Groovy Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Message</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Message/KafkaInstallation.html">Kafka Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Message/PulsarInstallation.html">Pulsar Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Discovery</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Discovery/NacosInstallation.html">Nacos Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Store</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Store/PowerDesigner.html">Power Designer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Store/MongoInstallation.html">Mongo Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Store/MySQLInstallation.html">MySQL Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Store/ElasticInstallation.html">Elastic Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Store/PostgresInstallation.html">Postgres Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Store/AeroSpikeInstallation.html">AeroSpike Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Store/RedisStackInstallation.html">Redis Stack Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Security</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Security/KeycloakInstallation.html">Keycloak Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Practical Case</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/PracticalCase/MongoCase.html">Mongo Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/PracticalCase/ElasticCase.html">Elastic Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/PracticalCase/MySqlTuning.html">MySql Tuning</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/PracticalCase/KeycloakCase.html">Keycloak Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/PracticalCase/TinkerpopCase.html">Tinkerpop Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/PracticalCase/PgvSimilarity.html">Pgv Similarity</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/PracticalCase/BookmarkCase.html">Bookmark Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/PracticalCase/AirflowDagCase.html">Airflow Dag Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/PracticalCase/ModularizingCase.html">Modularizing Case</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Processing</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Processing/FlinkInstallation.html">Flink Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Assortment</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Assortment/CommonAssortment.html">Common Assortment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Assortment/TechniqueAssortment.html">Technique Assortment</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Periphery</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Periphery/RssFeed.html">Rss Feed</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Kafka</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Fundamental</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="KafkaEco.html">Kafka Eco</a>
+  </li>
+  <li class="nav-item is-current-url" data-depth="3">
+    <a class="nav-link" href="KafkaTheory.html">Kafka Theory</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+  <script>
+;(function () {
+  var panel = document.querySelector('.nav-panel-menu')
+  var page
+  var hash = window.location.hash
+  if (hash) {
+    if (~hash.indexOf('%')) hash = decodeURIComponent(hash)
+    if (~hash.indexOf('"')) hash = hash.replace(/(?=")/g, '\\')
+    var link = panel.querySelector('.nav-link[href="' + hash + '"]')
+    if (link) page = link.parentNode
+    else if ((page = panel.querySelector('.is-current-url'))) page.classList.add('is-provisional')
+  } else {
+    page = panel.querySelector('.is-current-url')
+  }
+  if (page) {
+    var ancestor = page
+    while ((ancestor = ancestor.parentNode) && ancestor !== panel) {
+      if (ancestor.className === 'nav-item') ancestor.classList.add('is-current-path', 'is-active')
+    }
+    page.classList.add('is-current-page', 'is-active')
+    if (panel.scrollHeight > panel.clientHeight) {
+      var panelRect = panel.getBoundingClientRect()
+      var linkRect = page.querySelector('.nav-link').getBoundingClientRect()
+      panel.scrollTop += Math.round(linkRect.top - panelRect.top - (panelRect.height - linkRect.height) * 0.5)
+    }
+  } else {
+    panel.scrollTop = 0
+  }
+  panel.classList.remove('is-loading')
+})()
+  </script>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Makeshift</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../../index.html">Makeshift</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../index.html" 
+  	class="home-link" title="Home"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">Makeshift</a></li>
+    <li>Kafka</li>
+    <li>Fundamental</li>
+    <li><a href="KafkaTheory.html">Kafka Theory</a></li>
+  </ul>
+</nav>
+
+</div>
+  <div class="content">
+<aside class="toc sidebar" 
+	data-title="Content" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc ms">
+	<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_roundup">1. Roundup</a></li>
+<li><a href="#_topic">2. Topic</a></li>
+<li><a href="#_producer">3. Producer</a></li>
+<li><a href="#_consumer">4. Consumer</a></li>
+<li><a href="#_group_and_offset">5. Group and Offset</a></li>
+<li><a href="#_broker">6. Broker</a></li>
+<li><a href="#_topic_replication">7. Topic Replication</a></li>
+<li><a href="#_zookeeper">8. Zookeeper</a></li>
+<li><a href="#_kraft_mode">9. KRaft Mode</a></li>
+<li><a href="#_topic_2">10. Topic</a></li>
+<li><a href="#_partition">11. Partition</a></li>
+<li><a href="#_offset">12. Offset</a></li>
+<li><a href="#_producer_2">13. Producer</a></li>
+<li><a href="#_producer_message_key">14. Producer Message key</a></li>
+<li><a href="#_message_serializer">15. Message Serializer</a></li>
+<li><a href="#_message_key_hashing">16. Message Key Hashing</a></li>
+<li><a href="#_consumer_2">17. Consumer</a></li>
+<li><a href="#_consumer_deserializer">18. Consumer Deserializer</a></li>
+<li><a href="#_consumer_group">19. Consumer Group</a></li>
+<li><a href="#_consumer_inactive">20. Consumer Inactive</a></li>
+<li><a href="#_topic_consumer_relationship">21. Topic Consumer Relationship</a></li>
+<li><a href="#_consumer_offset">22. Consumer Offset</a></li>
+<li><a href="#_consumer_delivery_semantic">23. Consumer Delivery Semantic</a>
+<ul class="sectlevel2">
+<li><a href="#_at_least_once">23.1. At Least Once</a></li>
+<li><a href="#_at_most_once">23.2. At Most Once</a></li>
+<li><a href="#_exactly_once">23.3. Exactly Once</a></li>
+</ul>
+</li>
+<li><a href="#_kafka_broker">24. Kafka Broker</a></li>
+<li><a href="#_broker_and_topic">25. Broker and Topic</a></li>
+<li><a href="#_broker_discovery">26. Broker Discovery</a></li>
+<li><a href="#_topic_replication_factor">27. Topic Replication Factor</a></li>
+<li><a href="#_partition_leader_concept">28. Partition Leader Concept</a></li>
+<li><a href="#_default_behavior">29. Default Behavior</a></li>
+<li><a href="#_consumer_replica_fetching">30. Consumer Replica Fetching</a></li>
+<li><a href="#_producer_ack">31. Producer Ack</a></li>
+<li><a href="#_topic_durability">32. Topic Durability</a></li>
+<li><a href="#_zookeeper_2">33. Zookeeper</a></li>
+<li><a href="#_kafka_kraft">34. Kafka KRaft</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_roundup"><a class="anchor" href="#_roundup"></a>1. Roundup</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Concept/Fundamental/KafkaComponentRoundup.png" alt="KafkaComponentRoundup">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_topic"><a class="anchor" href="#_topic"></a>2. Topic</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Concept/Fundamental/KafkaTopic.png" alt="KafkaTopic">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>与数据库使用表来组织和分割数据集类似，Kafka使用主题来组织消息；</p>
+</li>
+<li>
+<p>主题通过名称来识别，如日志主题，其中可能包含应用程序的日志消息，<br>
+而订单主题可能包含应用程序的订单数据；</p>
+</li>
+<li>
+<p>主题由名称标识(identify by topic name)，消息格式(msg format)<br>
+可为任何类型；消息的序列(msg sequence)称为数据流(data stream)；</p>
+</li>
+<li>
+<p>与数据库表不同，主题不可查询queryable，必须创建生产者来向主题发送数据，<br>
+而消费者则按顺序从主题中读取数据(read data from topic in order)；</p>
+</li>
+<li>
+<p>主题中数据默认存储一周(也成为默认消息保留期，可配置，default msg retention period)；</p>
+</li>
+<li>
+<p>此删除旧数据的机制确保kafka集群不会随时间推移，回收主题而耗尽磁盘；<br>
+run out of disk space by recycling topic over time；</p>
+</li>
+<li>
+<p>kafka中的主题不可变(immutable，immutability)，一旦数据写入分区，则无法更改；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_producer"><a class="anchor" href="#_producer"></a>3. Producer</h2>
+<div class="sectionbody">
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>TODO TODO TODO TODO TODO TODO TODO TODO</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_consumer"><a class="anchor" href="#_consumer"></a>4. Consumer</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Theory/TopicPartitionOffset.png" alt="TopicPartitionOffset">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_group_and_offset"><a class="anchor" href="#_group_and_offset"></a>5. Group and Offset</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Consumer Group and Consumer Offset</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_broker"><a class="anchor" href="#_broker"></a>6. Broker</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_topic_replication"><a class="anchor" href="#_topic_replication"></a>7. Topic Replication</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_zookeeper"><a class="anchor" href="#_zookeeper"></a>8. Zookeeper</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_kraft_mode"><a class="anchor" href="#_kraft_mode"></a>9. KRaft Mode</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_topic_2"><a class="anchor" href="#_topic_2"></a>10. Topic</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_partition"><a class="anchor" href="#_partition"></a>11. Partition</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>主题可拆分成分区(split in partition)，如1000个分区，每个主题可有任意多个分区；</p>
+</li>
+<li>
+<p>除非提供key，否则数据将随机分配给分区(assign randomly to partition)；</p>
+</li>
+<li>
+<p>数据只保存有限的时间，默认一周，此选项可配置；</p>
+</li>
+<li>
+<p>每个分区中的消息都按顺序(order)排列，</p>
+</li>
+<li>
+<p>只有在一个分区内，而不是跨分区(across partition)，才能保证顺序(order)；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_offset"><a class="anchor" href="#_offset"></a>12. Offset</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>分区中每条消息都获得一个增量Id(incremental id),称为偏移量(offset)；</p>
+</li>
+<li>
+<p>偏移量只对特定分区有意义，如分区A中偏移量3，不表示与分区B中偏移量3是相同数据；</p>
+</li>
+<li>
+<p>即便删除以前的消息，偏移量也不会重复使用；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_producer_2"><a class="anchor" href="#_producer_2"></a>13. Producer</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>生产者将数据写入主题(由分区组成)，生产者知道要写入哪个分区(及Kafka代理拥有它)；</p>
+</li>
+<li>
+<p>若kafka broker failure，生产者将自动恢复(automatically recover)；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_producer_message_key"><a class="anchor" href="#_producer_message_key"></a>14. Producer Message key</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Theory/Producer.png" alt="Producer">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Theory/ProducerMsgKey.png" alt="ProducerMsgKey">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Theory/KafkaMsgAnatomy.png" alt="KafkaMsgAnatomy">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>生产者可选择发送带有key的消息(String,Number,Binary等)；</p>
+</li>
+<li>
+<p>若key = null，则循环发送数据(分区1，分区2，分区3……)；</p>
+</li>
+<li>
+<p>若key != null，则该键的所有消息将始终转到同一partition(hashing)；</p>
+</li>
+<li>
+<p>若需对特定字段(如product_id)进行消息排序，则通常会发送key；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_message_serializer"><a class="anchor" href="#_message_serializer"></a>15. Message Serializer</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Theory/MsgSerializer.png" alt="MsgSerializer">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>kafka只接受来自生产者的字节(byte)输入，并将字节作为输出发送给消费者；</p>
+</li>
+<li>
+<p>消息序列化(serialization)意味着将对象/数据转换为(transforming into)字节；</p>
+</li>
+<li>
+<p>序列化用于消息的key和value，常用序列化器(serializer)有：<br>
+String(包括Json)，Int，Float，Avro，Protocol Buffer；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_message_key_hashing"><a class="anchor" href="#_message_key_hashing"></a>16. Message Key Hashing</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Theory/MsgKeyHashing.png" alt="MsgKeyHashing">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>kafka分区器(partitioner)是代码逻辑，它获取记录并确定将其发送到哪个分区；</p>
+</li>
+<li>
+<p>Key Hashing是确定key到分区映射的过程，<br>
+在默认的partitioner中，使用murmur2算法对key进行hash；</p>
+</li>
+<li>
+<p>targetPartition = Math.abs(Utils.murmur2(keyBytes)) % (numPartitions - 1)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_consumer_2"><a class="anchor" href="#_consumer_2"></a>17. Consumer</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Theory/Consumer.png" alt="Consumer">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>消费者从主题(通过名称标识)读取数据：拉取模型(pull model)；</p>
+</li>
+<li>
+<p>消费者自动(automatically)知道要从哪个broker读取信息；</p>
+</li>
+<li>
+<p>若代理发生故障(in case of broker failure)，消费者知道如何恢复(recover)；</p>
+</li>
+<li>
+<p>每个分区内的数据按偏移量从低到高的顺序读取(read in order)；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_consumer_deserializer"><a class="anchor" href="#_consumer_deserializer"></a>18. Consumer Deserializer</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Theory/ConsumerDeserializer.png" alt="ConsumerDeserializer">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>反序列化(deserialize)是将字节转换为对象/数据(object/data)；</p>
+</li>
+<li>
+<p>用于消息的key和value，常用的反序列化器(deserializer)：<br>
+String(包括Json)，Int，Float，Avro，Protocol Buffer；</p>
+</li>
+<li>
+<p>序列化和反序列化类型在主题生命周期内不得更改，而是创建新主题；</p>
+</li>
+<li>
+<p>serialization/deserialization type must not change<br>
+during topic lifecycle，create new topic instead；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_consumer_group"><a class="anchor" href="#_consumer_group"></a>19. Consumer Group</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Theory/ConsumerGroup.png" alt="ConsumerGroup">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>应用程序中所有消费者作为消费者组读取数据；</p>
+</li>
+<li>
+<p>组内的每个消费者都从独占分区(exclusive partition)中读取；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_consumer_inactive"><a class="anchor" href="#_consumer_inactive"></a>20. Consumer Inactive</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Theory/ConsumerGroupInactiveConsumer.png" alt="ConsumerGroupInactiveConsumer">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>消费者组：若消费者太多，多于分区，则一些消费者将处于不活动状态(inactive)；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_topic_consumer_relationship"><a class="anchor" href="#_topic_consumer_relationship"></a>21. Topic Consumer Relationship</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Theory/TopicConsumerManyToMany.png" alt="TopicConsumerManyToMany">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>同一主题有多个消费者组是可接受的；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_consumer_offset"><a class="anchor" href="#_consumer_offset"></a>22. Consumer Offset</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Theory/ConsumerOffset.png" alt="ConsumerOffset">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>kafka存储消费者组已读取的偏移量，<br>
+store offset at consumer group has been reading；</p>
+</li>
+<li>
+<p>提交的(commit)偏移量位于名为 <mark>__consumer_offsets</mark> 的主题中；</p>
+</li>
+<li>
+<p>当组中消费者处理(process)完从kafka收到的数据时，它应定期提交偏移量，<br>
+kafka broker将写入 <mark>__consumer_offsets</mark> ，而不是组本身；</p>
+</li>
+<li>
+<p>periodically committing offset，kafka broker<br>
+write to __consumer_offsets,not group itself；</p>
+</li>
+<li>
+<p>若消费者死亡(die)，因提交的消费者偏移量，它将能够从上次停止的位置读回；</p>
+</li>
+<li>
+<p>able to read back from where it left off<br>
+thanks to committed consumer offset</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_consumer_delivery_semantic"><a class="anchor" href="#_consumer_delivery_semantic"></a>23. Consumer Delivery Semantic</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>默认，Java消费者将自动提交偏移量(at least once)，<br>
+若选择手动提交，则有三种投递语义；</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_at_least_once"><a class="anchor" href="#_at_least_once"></a>23.1. At Least Once</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>至少一次，通常是首选(usually preferred)；</p>
+</li>
+<li>
+<p>消息处理后提交偏移量，若处理出错，消息将被重新读取；</p>
+</li>
+<li>
+<p>这将导致消息的重复处理，确保我们的处理幂等(idempotent)；<br>
+幂等：即再次处理消息不会影响我们的系统；</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_at_most_once"><a class="anchor" href="#_at_most_once"></a>23.2. At Most Once</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>最多一次，收到消息后立即提交偏移量</p>
+</li>
+<li>
+<p>若处理出错，一些消息将会丢失，即消息不会被再次读取；</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_exactly_once"><a class="anchor" href="#_exactly_once"></a>23.3. Exactly Once</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>精确一次</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Entry</th>
+<th class="tableblock halign-left valign-top">Memo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kafka &#8658; kafka workflow</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">use transactional api(easy with kafka stream api)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kafka &#8658; external system workflow</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">use idempotent consumer</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_kafka_broker"><a class="anchor" href="#_kafka_broker"></a>24. Kafka Broker</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>kafka集群由多个broker(server)组成(is composed of)；</p>
+</li>
+<li>
+<p>每个broker由其Id(整数)标识；</p>
+</li>
+<li>
+<p>每个broker都包含一定的主题分区(certain topic partition)；</p>
+</li>
+<li>
+<p>连接到任何broker(称为bootstrap broker)后，将连接到整个集群<br>
+(entire cluster)，kafka客户端有智能机制(smart mechanic)；</p>
+</li>
+<li>
+<p>开始时最好的数量是3个broker，但一些大型集群超过100个集群；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_broker_and_topic"><a class="anchor" href="#_broker_and_topic"></a>25. Broker and Topic</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Theory/BrokerTopic.png" alt="BrokerTopic">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>具有3个分区的Topic-A和具有2个分区的Topic-B；</p>
+</li>
+<li>
+<p>注：数据是分布式的，Broker 103没有任何Topic-B数据；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_broker_discovery"><a class="anchor" href="#_broker_discovery"></a>26. Broker Discovery</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Theory/BrokerDiscovery.png" alt="BrokerDiscovery">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>每个kafka broker也成为bootstrap server；</p>
+</li>
+<li>
+<p>即意味着我们只需连接到一个broker；</p>
+</li>
+<li>
+<p>kafka客户端将知道如何连接到整个集群(智能客户端)；</p>
+</li>
+<li>
+<p>每个broker都了解所有broker，topic和partition(metadata元数据)；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_topic_replication_factor"><a class="anchor" href="#_topic_replication_factor"></a>27. Topic Replication Factor</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Theory/TopicReplicationFactorA.png" alt="TopicReplicationFactorA">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>主题的复制因子(replication factor)应该大于1，通常在2和3之间；</p>
+</li>
+<li>
+<p>这样某broker发生故障(down)，另一个代理可提供数据(serve data)；</p>
+</li>
+<li>
+<p>如具有2个分区，且复制因子为2的主题A；</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Theory/TopicReplicationFactorB.png" alt="TopicReplicationFactorB">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>我们失去(lose) broker 102，结果：broker101和103仍然可提供数据；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_partition_leader_concept"><a class="anchor" href="#_partition_leader_concept"></a>28. Partition Leader Concept</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Theory/PartitionLeaderConcept.png" alt="PartitionLeaderConcept">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>在任何时候，只有一个broker可成为给定分区的领导者；</p>
+</li>
+<li>
+<p>生产者智能想分区领导者发送数据，其它broker将复制(replicate)数据；</p>
+</li>
+<li>
+<p>故每个分区有一个领导者和多个ISR(同步副本，in-sync replica)；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_default_behavior"><a class="anchor" href="#_default_behavior"></a>29. Default Behavior</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Theory/DefaultBehaviorWithLeader.png" alt="DefaultBehaviorWithLeader">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>领导者的默认生产者和消费者行为，<br>
+default producer and consumer behavior with leader</p>
+</li>
+<li>
+<p>producer只能向分区的Leader Broker写入数据；</p>
+</li>
+<li>
+<p>默认：Consumer将从Leader Broker中读取分区信息；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_consumer_replica_fetching"><a class="anchor" href="#_consumer_replica_fetching"></a>30. Consumer Replica Fetching</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Theory/ConsumerReplicaFetching.png" alt="ConsumerReplicaFetching">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>可将消费者配置为从最近的副本读取，<br>
+configure consumer to read from closest replica；</p>
+</li>
+<li>
+<p>若使用云，有助于improve latency，并降低网络成本；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_producer_ack"><a class="anchor" href="#_producer_ack"></a>31. Producer Ack</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Theory/ProducerAcknowledgement.png" alt="ProducerAcknowledgement">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>生产者可选择接受数据写入的确认；<br>
+choose to receive acknowledgment of data write；</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-right valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Memo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">acks=0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">生产者不会等待确认(可能数据丢失)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">acks=1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">生产者将等待领导者确认(有限的数据丢失)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">acks=all</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Leader + Replica确认(无数据丢失)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_topic_durability"><a class="anchor" href="#_topic_durability"></a>32. Topic Durability</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Theory/TopicDurability.png" alt="TopicDurability">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>对主题复制因子(replication factor)为3的情况，<br>
+主题数据持久性(topic data durability)可承受(withstand)2个broker丢失(loss)；</p>
+</li>
+<li>
+<p>通常，对N的复制因子，可永久丢失最多(permanently lose up to)<br>
+(N - 1)个broker，但仍然可恢复数据；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_zookeeper_2"><a class="anchor" href="#_zookeeper_2"></a>33. Zookeeper</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Zookeeper管理broker(保存broker列表)；</p>
+</li>
+<li>
+<p>Zookeeper帮助执行分区的领导者选举，<br>
+performing leader election for partition；</p>
+</li>
+<li>
+<p>Zookeeper向Kafka发送通知(notification)，以应对发生变化(in case of change)，<br>
+如：new topic，broker die，broker come up，delete topic等；</p>
+</li>
+<li>
+<p>Kafka 3.X可使用Kafka Raft代替Zookeeper，Kafka 4.X将删除Zookeepr；</p>
+</li>
+<li>
+<p>Zookeeper设计为与奇数(odd)数量的服务器(如1，3，5，7……)一起运行；</p>
+</li>
+<li>
+<p>Zookeeper有个领导者leader(write)，其余服务器是follower(read)；</p>
+</li>
+<li>
+<p>Zookeeper不存储消费者偏移量(consumer offset)；</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Theory/ZookeeperClusterEnsemble.png" alt="ZookeeperClusterEnsemble">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Zookeeper安全性也弱于Kafka，另勿使用Zookeeper<br>
+作为Kafka客户端或连接到Kafka的其它程序的配置中心；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_kafka_kraft"><a class="anchor" href="#_kafka_kraft"></a>34. Kafka KRaft</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Theory/KRaftArchitecture.png" alt="KRaftArchitecture">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Theory/TwoMillionPartitionChart.png" alt="TwoMillionPartitionChart">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>当Kafka集群超过10w个分区时，Zookeeper面临扩展性(scaling issue)问题；</p>
+</li>
+<li>
+<p>删除Zookeeper，可扩展到数百万个分区(scale to millions of partition)，</p>
+</li>
+<li>
+<p>更易maintain和setup，提高稳定性stability，更易监控，管理等；</p>
+</li>
+<li>
+<p>整个系统的单一安全模型，从kafka启动的单一进程，更快的控制器关闭和恢复时间；<br>
+controller shutdown and recovery time；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+	</article>
+  </div>
+</main>
+</div>
+		<footer class="footer">
+	<div class="footer-main">
+  		<figure class="footer-brand">
+
+			Authored in AsciiDoc <br />
+			Produced by Antora and Asciidoctor
+		</figure>
+  	</div>
+  
+	<div class="footer-legal">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		<p>Copyright © 2024 Elf</p>
+
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+</footer>
+
+<script id="site-script" src="../../../../_/js/site.js" data-ui-root-path="../../../../_"></script>
+<script async src="../../../../_/js/vendor/highlight.js"></script>
+<script async src="../../../../_/js/vendor/highlight.bundle.js"></script>
+
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  messageStyle: "none",
+  tex2jax: { inlineMath: [["\\(", "\\)"]], displayMath: [["\\[", "\\]"]], ignoreClass: "nostem|nolatexmath" },
+  asciimath2jax: { delimiters: [["\\$", "\\$"]], ignoreClass: "nostem|noasciimath" },
+  TeX: { equationNumbers: { autoNumber: "none" } }
+})
+MathJax.Hub.Register.StartupHook("AsciiMath Jax Ready", function () {
+  MathJax.InputJax.AsciiMath.postfilterHooks.Add(function (data, node) {
+    if ((node = data.script.parentNode) && (node = node.parentNode) && node.classList.contains("stemblock")) {
+      data.math.root.display = "block"
+    }
+    return data
+  })
+})
+</script>
+  </body>
+
+</html>

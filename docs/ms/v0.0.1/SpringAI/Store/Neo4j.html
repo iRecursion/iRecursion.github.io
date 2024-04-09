@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>AsciiDoc | AsciiDoc</title>
+    
+    
+    
+	<link rel="stylesheet" href="../../../../_/css/site.css">
+	    
+    <meta name="generator" content="Antora 3.1.7">
+    <meta property="og:description" content="documentation page for Makeshift.">
+    <meta property="og:site_name" content="Asciidoctor Doc">
+    <meta property="og:title" content="Makeshift - ">
+    <meta name="page-spec" content="ms:SpringAI:Store/Neo4j.adoc">
+
+<link rel="stylesheet" href="../../../../_/css/retrieve.css">
+    <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+    	
+    		<a class="navbar-item logo" >
+				<img src="../../../../_/img/asciidoctor-logo.svg">
+			</a>
+
+  			<a class="navbar-item title">AsciiDoc</a>
+    	</div>
+    	
+        <div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+				 
+		            <div id="main">
+		                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+			            </div>
+			        </section>
+				
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active is-loading" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">Makeshift</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Spring AI</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Solitary</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Solitary/AIConcept.html">AI Concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Solitary/SpringAIDependency.html">Spring AI Dependency</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Solitary/SpringAIProperty.html">Spring AI Property</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Solitary/GenericModel.html">Generic Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Solitary/Prompt.html">Prompt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Solitary/OutputParser.html">Output Parser</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Solitary/EtlPipeline.html">Etl Pipeline</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Solitary/ImageGeneration.html">Image Generation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Solitary/FunctionCalling.html">Function Calling</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Solitary/EvaluationTesting.html">Evaluation Testing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Solitary/TestContainer.html">Test Container</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Chat Completion</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ChatCompletion/ChatCompletion.html">Chat Completion</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ChatCompletion/Ollama.html">Ollama</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ChatCompletion/HuggingFace.html">Hugging Face</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Embedding</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Embedding/Embedding.html">Embedding</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Embedding/Ollama.html">Ollama</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Embedding/PostgresML.html">Postgres ML</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Embedding/TransformerOnnx.html">Transformer Onnx</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Vector Store</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="VectorExplanation.html">Vector Explanation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="VectorStore.html">Vector Store</a>
+  </li>
+  <li class="nav-item is-current-url" data-depth="3">
+    <a class="nav-link" href="Neo4j.html">Neo4j</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Redis.html">Redis</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Chroma.html">Chroma</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Milvus.html">Milvus</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Qdrant.html">Qdrant</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Elastic.html">Elastic</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Weaviate.html">Weaviate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Pgv.html">Postgres Vector</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Environment</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Virtualization</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Virtualization/HyperVConfigurer.html">HyperV Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Virtualization/UbuntuConfigurer.html">Ubuntu Configurer</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Containerization</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Containerization/DockerFundamental.html">Docker Fundamental</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Containerization/K8SInstallation.html">K8S Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Containerization/K8SExtension.html">K8S Extension</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">DevOps</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/DevOps/NexusInstallation.html">Nexus Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/DevOps/JenkinsInstallation.html">Jenkins Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Pom Template</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/PomTemplate/FlattenLifecycle.html">Flatten Lifecycle</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/PomTemplate/JakartaSpecification.html">Jakarta Specification</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Language</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Language/GraalWin.html">Graal Win</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Language/CondaJupyter.html">Conda Jupyter</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Language/LuaInstallation.html">Lua Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Language/RustInstallation.html">Rust Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Language/RustConfiguration.html">Rust Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Language/GroovyInstallation.html">Groovy Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Message</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Message/KafkaInstallation.html">Kafka Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Message/PulsarInstallation.html">Pulsar Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Discovery</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Discovery/NacosInstallation.html">Nacos Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Store</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Store/PowerDesigner.html">Power Designer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Store/MongoInstallation.html">Mongo Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Store/MySQLInstallation.html">MySQL Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Store/ElasticInstallation.html">Elastic Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Store/PostgresInstallation.html">Postgres Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Store/AeroSpikeInstallation.html">AeroSpike Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Store/RedisStackInstallation.html">Redis Stack Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Security</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Security/KeycloakInstallation.html">Keycloak Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Practical Case</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/PracticalCase/MongoCase.html">Mongo Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/PracticalCase/ElasticCase.html">Elastic Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/PracticalCase/MySqlTuning.html">MySql Tuning</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/PracticalCase/KeycloakCase.html">Keycloak Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/PracticalCase/TinkerpopCase.html">Tinkerpop Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/PracticalCase/PgvSimilarity.html">Pgv Similarity</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/PracticalCase/BookmarkCase.html">Bookmark Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/PracticalCase/AirflowDagCase.html">Airflow Dag Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/PracticalCase/ModularizingCase.html">Modularizing Case</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Processing</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Processing/FlinkInstallation.html">Flink Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Assortment</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Assortment/CommonAssortment.html">Common Assortment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Assortment/TechniqueAssortment.html">Technique Assortment</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Periphery</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Environment/Periphery/RssFeed.html">Rss Feed</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Kafka</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Fundamental</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Fundamental/KafkaEco.html">Kafka Eco</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Fundamental/KafkaTheory.html">Kafka Theory</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+  <script>
+;(function () {
+  var panel = document.querySelector('.nav-panel-menu')
+  var page
+  var hash = window.location.hash
+  if (hash) {
+    if (~hash.indexOf('%')) hash = decodeURIComponent(hash)
+    if (~hash.indexOf('"')) hash = hash.replace(/(?=")/g, '\\')
+    var link = panel.querySelector('.nav-link[href="' + hash + '"]')
+    if (link) page = link.parentNode
+    else if ((page = panel.querySelector('.is-current-url'))) page.classList.add('is-provisional')
+  } else {
+    page = panel.querySelector('.is-current-url')
+  }
+  if (page) {
+    var ancestor = page
+    while ((ancestor = ancestor.parentNode) && ancestor !== panel) {
+      if (ancestor.className === 'nav-item') ancestor.classList.add('is-current-path', 'is-active')
+    }
+    page.classList.add('is-current-page', 'is-active')
+    if (panel.scrollHeight > panel.clientHeight) {
+      var panelRect = panel.getBoundingClientRect()
+      var linkRect = page.querySelector('.nav-link').getBoundingClientRect()
+      panel.scrollTop += Math.round(linkRect.top - panelRect.top - (panelRect.height - linkRect.height) * 0.5)
+    }
+  } else {
+    panel.scrollTop = 0
+  }
+  panel.classList.remove('is-loading')
+})()
+  </script>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Makeshift</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../../index.html">Makeshift</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../index.html" 
+  	class="home-link" title="Home"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">Makeshift</a></li>
+    <li>Spring AI</li>
+    <li>Vector Store</li>
+    <li><a href="Neo4j.html">Neo4j</a></li>
+  </ul>
+</nav>
+
+</div>
+  <div class="content">
+<aside class="toc sidebar" 
+	data-title="Content" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc ms">
+	<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_introduction">1. Introduction</a></li>
+<li><a href="#_prerequisite">2. Prerequisite</a></li>
+<li><a href="#_config">3. Config</a></li>
+<li><a href="#_metadata_filtering">4. Metadata Filtering</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_introduction"><a class="anchor" href="#_introduction"></a>1. Introduction</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Neo4jVectorStore存储document embedding并执行similarity search，</p>
+</li>
+<li>
+<p>Neo4j是开源图数据库，是完全事务性数据库(ACID)，由节点node<br>
+和关系relationship组成，允许对复杂数据保持高查询性能；</p>
+</li>
+<li>
+<p>Neo4j的向量搜索允许用户从大数据集中查询vector embedding，<br>
+embedding是数据对象的数字表示，如文本、图像、音频或文档；</p>
+</li>
+<li>
+<p>embedding可存储在Node属性上，用db.index.vector.queryNodes()查询，<br>
+索引由Lucene支持，用Hierarchical Navigable Small World Graph(HNSW)<br>
+对向量字段执行k近似最近邻(k-ANN)查询(k approximate nearest neighbor)；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_prerequisite"><a class="anchor" href="#_prerequisite"></a>2. Prerequisite</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">docker run \
+	--name neo4j \
+	-p 7474:7474 -p 7687:7687 \
+	--privileged=true \
+	--net network-common \
+	-e NEO4J_AUTH=neo4j/neo4j_cipher \
+	-v /elf/neo4j/data:/data \
+	-v /elf/neo4j/log:/logs \
+	-v /elf/neo4j/conf:/conf \
+	-itd neo4j:5.18.1</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://192.168.0.123:7474" class="bare">http://192.168.0.123:7474</a><br>
+neo4j://用作集群，bolt://协议用作neo4j单实例</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Entry</th>
+<th class="tableblock halign-left valign-top">Default Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Connect Url</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">neo4j://192.168.0.123:7687</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Database</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">neo4j</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Authentication Type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Userame/Password</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Userame</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">neo4j</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Password</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">neo4j_cipher</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>使用dump-config来dump初始化的配置文件</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">docker run --rm \
+    -v /elf/neo4j/conf:/conf \
+    -itd neo4j:5.18.1 dump-config</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>修改默认配置：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">NEO4J_server_memory_pagecache_size=512M
+NEO4J_server_memory_heap_max__size=512M
+
+-e NEO4J_dbms_memory_pagecache_size=4G \
+
+# 让配置文件目录具有写权限：
+chown neo4j:neo4j /elf/neo4j/conf</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>相关连接：<br>
+<a href="https://neo4j.com/docs/operations-manual/current/docker/configuration/" class="bare">https://neo4j.com/docs/operations-manual/current/docker/configuration/</a><br>
+<a href="https://neo4j.com/docs/operations-manual/current/configuration/ports/" class="bare">https://neo4j.com/docs/operations-manual/current/configuration/ports/</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_config"><a class="anchor" href="#_config"></a>3. Config</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Bean
+EmbeddingClient embeddingClient() {
+	//可使用其它实现
+    return new OllamaEmbeddingClient(null);
+}
+
+@Bean
+Driver driver() {
+    return GraphDatabase.driver("neo4j://192.168.0.123:7687",
+        AuthTokens.basic("neo4j", "neo4j_cipher"));
+}
+
+# 使用Neo4jVectorStore
+@Autowired
+private Neo4jVectorStore  nvs;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_metadata_filtering"><a class="anchor" href="#_metadata_filtering"></a>4. Metadata Filtering</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>text expression language方式：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">var textExpression = "author in ['john', 'jill'] &amp;&amp; 'article_type' == 'blog'";
+vectorStore.similaritySearch(SearchRequest.defaults()
+    .withQuery("The World")
+    .withTopK(TOP_K)
+    .withSimilarityThreshold(SIMILARITY_THRESHOLD)
+    .withFilterExpression(textExpression));</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>programmatically Filter.Expression Dsl方式：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">var builder = new FilterExpressionBuilder();
+vectorStore.similaritySearch(SearchRequest.defaults()
+    .withQuery("The World")
+    .withTopK(TOP_K)
+    .withSimilarityThreshold(SIMILARITY_THRESHOLD)
+    .withFilterExpression(b.and(
+		builder.in("john", "jill"),
+		builder.eq("article_type", "blog")).build()));</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>这些(portable) filter expression可自动转换为<br>
+proprietary Neo4j WHERE filter expression：</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>portable filter expression：<br>
+author in ['john', 'jill'] &amp;&amp; 'article_type' == 'blog'</p>
+</li>
+<li>
+<p>proprietary Neo4j filter format：<br>
+node.<code>metadata.author</code> IN ["john","jill"] AND node.<code>metadata.'article_type'</code> = "blog"</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+	</article>
+  </div>
+</main>
+</div>
+		<footer class="footer">
+	<div class="footer-main">
+  		<figure class="footer-brand">
+
+			Authored in AsciiDoc <br />
+			Produced by Antora and Asciidoctor
+		</figure>
+  	</div>
+  
+	<div class="footer-legal">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		<p>Copyright © 2024 Elf</p>
+
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+</footer>
+
+<script id="site-script" src="../../../../_/js/site.js" data-ui-root-path="../../../../_"></script>
+<script async src="../../../../_/js/vendor/highlight.js"></script>
+<script async src="../../../../_/js/vendor/highlight.bundle.js"></script>
+
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  messageStyle: "none",
+  tex2jax: { inlineMath: [["\\(", "\\)"]], displayMath: [["\\[", "\\]"]], ignoreClass: "nostem|nolatexmath" },
+  asciimath2jax: { delimiters: [["\\$", "\\$"]], ignoreClass: "nostem|noasciimath" },
+  TeX: { equationNumbers: { autoNumber: "none" } }
+})
+MathJax.Hub.Register.StartupHook("AsciiMath Jax Ready", function () {
+  MathJax.InputJax.AsciiMath.postfilterHooks.Add(function (data, node) {
+    if ((node = data.script.parentNode) && (node = node.parentNode) && node.classList.contains("stemblock")) {
+      data.math.root.display = "block"
+    }
+    return data
+  })
+})
+</script>
+  </body>
+
+</html>

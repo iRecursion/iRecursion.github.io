@@ -1,0 +1,1984 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>AsciiDoc | AsciiDoc</title>
+    
+    
+    
+	<link rel="stylesheet" href="../../../../_/css/site.css">
+	    
+    <meta name="generator" content="Antora 3.1.7">
+    <meta property="og:description" content="documentation page for Makeshift.">
+    <meta property="og:site_name" content="Asciidoctor Doc">
+    <meta property="og:title" content="Makeshift - ">
+    <meta name="page-spec" content="ms:Environment:PracticalCase/PgvSimilarity.adoc">
+
+<link rel="stylesheet" href="../../../../_/css/retrieve.css">
+    <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+    	
+    		<a class="navbar-item logo" >
+				<img src="../../../../_/img/asciidoctor-logo.svg">
+			</a>
+
+  			<a class="navbar-item title">AsciiDoc</a>
+    	</div>
+    	
+        <div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+				 
+		            <div id="main">
+		                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+			            </div>
+			        </section>
+				
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active is-loading" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">Makeshift</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Spring AI</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Solitary</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/AIConcept.html">AI Concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/SpringAIDependency.html">Spring AI Dependency</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/SpringAIProperty.html">Spring AI Property</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/GenericModel.html">Generic Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/Prompt.html">Prompt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/OutputParser.html">Output Parser</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/EtlPipeline.html">Etl Pipeline</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/ImageGeneration.html">Image Generation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/FunctionCalling.html">Function Calling</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/EvaluationTesting.html">Evaluation Testing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/TestContainer.html">Test Container</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Chat Completion</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/ChatCompletion/ChatCompletion.html">Chat Completion</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/ChatCompletion/Ollama.html">Ollama</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/ChatCompletion/HuggingFace.html">Hugging Face</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Embedding</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/Embedding.html">Embedding</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/Ollama.html">Ollama</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/PostgresML.html">Postgres ML</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/TransformerOnnx.html">Transformer Onnx</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Vector Store</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/VectorExplanation.html">Vector Explanation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/VectorStore.html">Vector Store</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Neo4j.html">Neo4j</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Redis.html">Redis</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Chroma.html">Chroma</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Milvus.html">Milvus</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Qdrant.html">Qdrant</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Elastic.html">Elastic</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Weaviate.html">Weaviate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Pgv.html">Postgres Vector</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Environment</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Virtualization</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Virtualization/HyperVConfigurer.html">HyperV Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Virtualization/UbuntuConfigurer.html">Ubuntu Configurer</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Containerization</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Containerization/DockerFundamental.html">Docker Fundamental</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Containerization/K8SInstallation.html">K8S Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Containerization/K8SExtension.html">K8S Extension</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">DevOps</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../DevOps/NexusInstallation.html">Nexus Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../DevOps/JenkinsInstallation.html">Jenkins Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Pom Template</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../PomTemplate/FlattenLifecycle.html">Flatten Lifecycle</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../PomTemplate/JakartaSpecification.html">Jakarta Specification</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Language</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/GraalWin.html">Graal Win</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/CondaJupyter.html">Conda Jupyter</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/LuaInstallation.html">Lua Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/RustInstallation.html">Rust Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/RustConfiguration.html">Rust Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/GroovyInstallation.html">Groovy Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Message</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Message/KafkaInstallation.html">Kafka Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Message/PulsarInstallation.html">Pulsar Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Discovery</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Discovery/NacosInstallation.html">Nacos Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Store</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Store/PowerDesigner.html">Power Designer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Store/MongoInstallation.html">Mongo Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Store/MySQLInstallation.html">MySQL Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Store/ElasticInstallation.html">Elastic Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Store/PostgresInstallation.html">Postgres Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Store/AeroSpikeInstallation.html">AeroSpike Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Store/RedisStackInstallation.html">Redis Stack Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Security</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Security/KeycloakInstallation.html">Keycloak Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Practical Case</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="MongoCase.html">Mongo Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ElasticCase.html">Elastic Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="MySqlTuning.html">MySql Tuning</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="KeycloakCase.html">Keycloak Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="TinkerpopCase.html">Tinkerpop Case</a>
+  </li>
+  <li class="nav-item is-current-url" data-depth="3">
+    <a class="nav-link" href="PgvSimilarity.html">Pgv Similarity</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="BookmarkCase.html">Bookmark Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="AirflowDagCase.html">Airflow Dag Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ModularizingCase.html">Modularizing Case</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Processing</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Processing/FlinkInstallation.html">Flink Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Assortment</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Assortment/CommonAssortment.html">Common Assortment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Assortment/TechniqueAssortment.html">Technique Assortment</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Periphery</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Periphery/RssFeed.html">Rss Feed</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Kafka</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Fundamental</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Fundamental/KafkaEco.html">Kafka Eco</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Fundamental/KafkaTheory.html">Kafka Theory</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+  <script>
+;(function () {
+  var panel = document.querySelector('.nav-panel-menu')
+  var page
+  var hash = window.location.hash
+  if (hash) {
+    if (~hash.indexOf('%')) hash = decodeURIComponent(hash)
+    if (~hash.indexOf('"')) hash = hash.replace(/(?=")/g, '\\')
+    var link = panel.querySelector('.nav-link[href="' + hash + '"]')
+    if (link) page = link.parentNode
+    else if ((page = panel.querySelector('.is-current-url'))) page.classList.add('is-provisional')
+  } else {
+    page = panel.querySelector('.is-current-url')
+  }
+  if (page) {
+    var ancestor = page
+    while ((ancestor = ancestor.parentNode) && ancestor !== panel) {
+      if (ancestor.className === 'nav-item') ancestor.classList.add('is-current-path', 'is-active')
+    }
+    page.classList.add('is-current-page', 'is-active')
+    if (panel.scrollHeight > panel.clientHeight) {
+      var panelRect = panel.getBoundingClientRect()
+      var linkRect = page.querySelector('.nav-link').getBoundingClientRect()
+      panel.scrollTop += Math.round(linkRect.top - panelRect.top - (panelRect.height - linkRect.height) * 0.5)
+    }
+  } else {
+    panel.scrollTop = 0
+  }
+  panel.classList.remove('is-loading')
+})()
+  </script>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Makeshift</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../../index.html">Makeshift</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../index.html" 
+  	class="home-link" title="Home"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">Makeshift</a></li>
+    <li>Environment</li>
+    <li>Practical Case</li>
+    <li><a href="PgvSimilarity.html">Pgv Similarity</a></li>
+  </ul>
+</nav>
+
+</div>
+  <div class="content">
+<aside class="toc sidebar" 
+	data-title="Content" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc ms">
+	<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_entry">1. Entry</a>
+<ul class="sectlevel2">
+<li><a href="#_enable_extension">1.1. Enable Extension</a></li>
+<li><a href="#_create_vector">1.2. Create Vector</a></li>
+<li><a href="#_insert_vector">1.3. Insert Vector</a></li>
+<li><a href="#_nearest_neighbor">1.4. Nearest Neighbor</a></li>
+</ul>
+</li>
+<li><a href="#_storing">2. Storing</a>
+<ul class="sectlevel2">
+<li><a href="#_vector_column">2.1. Vector Column</a></li>
+<li><a href="#_insert_vector_2">2.2. Insert Vector</a></li>
+<li><a href="#_load_vector">2.3. Load Vector</a></li>
+<li><a href="#_upsert_vector">2.4. Upsert Vector</a></li>
+<li><a href="#_update_vector">2.5. Update Vector</a></li>
+<li><a href="#_delete_vector">2.6. Delete Vector</a></li>
+</ul>
+</li>
+<li><a href="#_distance">3. Distance</a>
+<ul class="sectlevel2">
+<li><a href="#_get_distance">3.1. Get Distance</a></li>
+<li><a href="#_inner_product">3.2. Inner Product</a></li>
+<li><a href="#_cosine_similarity">3.3. Cosine Similarity</a></li>
+</ul>
+</li>
+<li><a href="#_aggregate">4. Aggregate</a>
+<ul class="sectlevel2">
+<li><a href="#_average_vector">4.1. Average Vector</a></li>
+<li><a href="#_average_vector_group">4.2. Average Vector Group</a></li>
+</ul>
+</li>
+<li><a href="#_indexing">5. Indexing</a></li>
+<li><a href="#_hnsw">6. HNSW</a>
+<ul class="sectlevel2">
+<li><a href="#_hnsw_entry">6.1. HNSW Entry</a></li>
+<li><a href="#_index_option">6.2. Index Option</a></li>
+<li><a href="#_query_option">6.3. Query Option</a></li>
+<li><a href="#_index_build_time">6.4. Index Build Time</a></li>
+<li><a href="#_indexing_progress">6.5. Indexing Progress</a></li>
+</ul>
+</li>
+<li><a href="#_ivfflat">7. IVFFlat</a>
+<ul class="sectlevel2">
+<li><a href="#_query_option_2">7.1. Query Option</a></li>
+<li><a href="#_index_build_time_2">7.2. Index Build Time</a></li>
+<li><a href="#_indexing_progress_2">7.3. Indexing Progress</a></li>
+</ul>
+</li>
+<li><a href="#_filtering">8. Filtering</a>
+<ul class="sectlevel2">
+<li><a href="#_where_nearest_neighbor">8.1. Where Nearest Neighbor</a></li>
+<li><a href="#_where_exact_search">8.2. Where Exact Search</a></li>
+<li><a href="#_partial_index">8.3. Partial Index</a></li>
+<li><a href="#_partitioning">8.4. Partitioning</a></li>
+</ul>
+</li>
+<li><a href="#_hybrid_search">9. Hybrid Search</a></li>
+<li><a href="#_performance">10. Performance</a>
+<ul class="sectlevel2">
+<li><a href="#_tuning">10.1. Tuning</a></li>
+<li><a href="#_loading">10.2. Loading</a></li>
+<li><a href="#_indexing_2">10.3. Indexing</a></li>
+<li><a href="#_querying">10.4. Querying</a>
+<ul class="sectlevel3">
+<li><a href="#_exact_search">10.4.1. Exact Search</a></li>
+<li><a href="#_approximate_search">10.4.2. Approximate Search</a></li>
+</ul>
+</li>
+<li><a href="#_vacuuming">10.5. Vacuuming</a></li>
+</ul>
+</li>
+<li><a href="#_monitoring">11. Monitoring</a>
+<ul class="sectlevel2">
+<li><a href="#_monitoring_performance">11.1. Monitoring Performance</a></li>
+<li><a href="#_monitoring_recall">11.2. Monitoring Recall</a></li>
+</ul>
+</li>
+<li><a href="#_scaling">12. Scaling</a></li>
+<li><a href="#_language">13. Language</a></li>
+<li><a href="#_faq">14. Faq</a>
+<ul class="sectlevel2">
+<li><a href="#_common">14.1. Common</a></li>
+<li><a href="#_column_mix_dimension">14.2. Column Mix Dimension</a></li>
+<li><a href="#_vector_precision">14.3. Vector Precision</a></li>
+<li><a href="#_index_fit_into_memory">14.4. Index Fit Into Memory</a></li>
+</ul>
+</li>
+<li><a href="#_troubleshooting">15. Troubleshooting</a>
+<ul class="sectlevel2">
+<li><a href="#_index_not_working">15.1. Index Not Working</a></li>
+<li><a href="#_parallel_table_scan">15.2. Parallel Table Scan</a></li>
+<li><a href="#_hnsw_index">15.3. Hnsw Index</a></li>
+<li><a href="#_ivfflat_index">15.4. IvfFlat Index</a></li>
+</ul>
+</li>
+<li><a href="#_reference">16. Reference</a>
+<ul class="sectlevel2">
+<li><a href="#_vector_type">16.1. Vector Type</a></li>
+<li><a href="#_vector_operator">16.2. Vector Operator</a></li>
+<li><a href="#_vector_function">16.3. Vector Function</a></li>
+<li><a href="#_aggregate_function">16.4. Aggregate Function</a></li>
+</ul>
+</li>
+<li><a href="#_upgrading">17. Upgrading</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_entry"><a class="anchor" href="#_entry"></a>1. Entry</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_enable_extension"><a class="anchor" href="#_enable_extension"></a>1.1. Enable Extension</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">/* 在每一个数据库执行一次 */
+create extension vector;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_create_vector"><a class="anchor" href="#_create_vector"></a>1.2. Create Vector</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">/* create vector column with 3 dimension */
+
+create table order_item (
+	id bigserial primary key,
+	embedding vector(3)
+);</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_insert_vector"><a class="anchor" href="#_insert_vector"></a>1.3. Insert Vector</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">insert into order_item (embedding) values ('[1,2,3]'),('[4,5,6]');</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_nearest_neighbor"><a class="anchor" href="#_nearest_neighbor"></a>1.4. Nearest Neighbor</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">/* get nearest neighbor by L2 distance */
+select * from order_item order by embedding &lt;-&gt; '[3,1,2]' limit 5;</code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>支持inner product (&lt;#&gt;) and cosine distance (&lt;&#8658;)</p>
+</li>
+<li>
+<p>&lt;#&gt; 返回 negative inner product，<br>
+因Postgres在operator上只支持asc order index scan</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_storing"><a class="anchor" href="#_storing"></a>2. Storing</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_vector_column"><a class="anchor" href="#_vector_column"></a>2.1. Vector Column</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">/* create table with vector column */
+
+create table order_item(
+	id bigserial primary key,
+	embedding vector(3)
+);
+
+/* add vector column to existing table */
+alter table order_item add column embedding vector(3);</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_insert_vector_2"><a class="anchor" href="#_insert_vector_2"></a>2.2. Insert Vector</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">insert into order_item(embedding) values ('[1,2,3]'),('[4,5,6]');</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_load_vector"><a class="anchor" href="#_load_vector"></a>2.3. Load Vector</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">/* 或load vector in bulk using copy(example) */
+copy order_item(embedding) from stdin with(format binary);</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_upsert_vector"><a class="anchor" href="#_upsert_vector"></a>2.4. Upsert Vector</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">insert into order_item(id, embedding)
+	 values (1, '[1,2,3]'),(2, '[4,5,6]') on conflict
+	 (id) do update set embedding = excluded.embedding;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_update_vector"><a class="anchor" href="#_update_vector"></a>2.5. Update Vector</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">update order_item set embedding = '[1,2,3]' where id = 1;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_delete_vector"><a class="anchor" href="#_delete_vector"></a>2.6. Delete Vector</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">delete from order_item where id = 1;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_distance"><a class="anchor" href="#_distance"></a>3. Distance</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_get_distance"><a class="anchor" href="#_get_distance"></a>3.1. Get Distance</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">select embedding &lt;-&gt; '[3,1,2]' as distance from order_item;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_inner_product"><a class="anchor" href="#_inner_product"></a>3.2. Inner Product</h3>
+<div class="paragraph">
+<p>For</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">/* inner product multiply by -1， &lt;#&gt; 返回negative inner product) */
+
+select (embedding &lt;#&gt; '[3,1,2]') * -1 as inner_product from order_item;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_cosine_similarity"><a class="anchor" href="#_cosine_similarity"></a>3.3. Cosine Similarity</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">/* cosine similarity，use 1 - cosine distance */
+
+select 1 - (embedding &lt;=&gt; '[3,1,2]') as cosine_similarity from order_item;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_aggregate"><a class="anchor" href="#_aggregate"></a>4. Aggregate</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_average_vector"><a class="anchor" href="#_average_vector"></a>4.1. Average Vector</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">select avg(embedding) from order_item;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_average_vector_group"><a class="anchor" href="#_average_vector_group"></a>4.2. Average Vector Group</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">select category_id, avg(embedding) from order_item group by category_id;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_indexing"><a class="anchor" href="#_indexing"></a>5. Indexing</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>精确的最近邻居搜索：exact nearest neighbor search，<br>
+近似最近邻搜索：approximate nearest neighbor search</p>
+</li>
+<li>
+<p>Postgres Vector默认执行精确的最近邻居搜索，提供完美召回recall，<br>
+可添加索引来使用近似最近邻搜索，用召回换取速度(trade recall for speed)</p>
+</li>
+<li>
+<p>与典型(typical)索引不同，添加近似(approximate)索引后，<br>
+将看到不同的搜索结果，<mark>支持的索引类型：HNSW和IVFFlat</mark>；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_hnsw"><a class="anchor" href="#_hnsw"></a>6. HNSW</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_hnsw_entry"><a class="anchor" href="#_hnsw_entry"></a>6.1. HNSW Entry</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>HNSW索引创建多层图multilayer graph，它具有比IVFFlat更好的查询性能<br>
+(在权衡速度 - 召回方面in term of speed-recall tradeoff)，<br>
+但构建时间较慢slower build time，使用更多内存use more memory；</p>
+</li>
+<li>
+<p>另因没像IVFFlat这样的训练步骤，故可在表中没有任何数据的情况下创建索引；</p>
+</li>
+<li>
+<p>可对多达2000个维度的向量进行索引；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">/* L2 distance */
+create index on order_item using hnsw (embedding vector_l2_ops);
+
+/* inner product */
+create index on order_item using hnsw (embedding vector_ip_ops);
+
+/* cosine distance */
+create index on order_item using hnsw (embedding vector_cosine_ops);</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_index_option"><a class="anchor" href="#_index_option"></a>6.2. Index Option</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>指定HNSW参数：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>m：每层的最大连接数，默认16</p>
+</li>
+<li>
+<p>ef_construction：构建图的动态候选列表的大小，默认64，<br>
+dynamic candidate list size for constructing graph</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>ef_construction值越高，以<br>
+<mark>index build time / insert speed</mark> 为代价cost提供更好的recall。</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">create index on order_item using hnsw (embedding vector_l2_ops)
+	with (m = 16, ef_construction = 64);</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_query_option"><a class="anchor" href="#_query_option"></a>6.3. Query Option</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>指定要搜索的动态候选列表的大小，默认40，<br>
+dynamic candidate list size for search</p>
+</li>
+<li>
+<p>更高的值以速度为代价提供更好的recall，<br>
+higher value provide better recall at cost of speed</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>﻿* 在事务内部使用set local为单个查询设置它，<br>
+  set local inside transaction to set it for single query</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">/* 指定要搜索的动态候选列表的大小 */
+set hnsw.ef_search = 100;
+
+begin;
+set local hnsw.ef_search = 100;
+select ……
+commit;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_index_build_time"><a class="anchor" href="#_index_build_time"></a>6.4. Index Build Time</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>当图适合fit maintenance_work_mem时，索引构建速度明显significantly加快；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">set maintenance_work_mem = '8GB';</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>当图不在适合fit时，会显示一条通知：</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Entry</th>
+<th class="tableblock halign-left valign-top">Memo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NOTICE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">在100000个tuple后，hnsw图不再fit maintenance_work_mem</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DETAIL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Building将花费更多take significantly的时间</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">HINT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">增加maintenance_work_mem以加快构建速度</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>不要将maintenance_work_mem设置得太高，以免耗尽exhaust服务器内存；</p>
+</li>
+<li>
+<p>与其它索引类型一样，在加载初始数据后创建索引会更快；<br>
+从v0.6.0开始，可通过增加parallel worker(默认2个)来加快索引创建速度；</p>
+</li>
+<li>
+<p>对large number worker，还需增加max_paralle_workers，默认8；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">-- plus leader
+set max_parallel_maintenance_workers = 7;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_indexing_progress"><a class="anchor" href="#_indexing_progress"></a>6.5. Indexing Progress</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>HNSW phase：initializing，loading tuple；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">select phase,round(100.0 * blocks_done / nullif(blocks_total,0),1)
+	as "%" from pg_stat_progress_create_index;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ivfflat"><a class="anchor" href="#_ivfflat"></a>7. IVFFlat</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>IVFFlat索引将向量划分为divide into多个列表，<br>
+然后搜索这些列表中最接近closest查询向量的子集；</p>
+</li>
+<li>
+<p>与HNSW相比，它具有更快的构建时间和更少的内存使用，但查询性能较低<br>
+(权衡召回速度方面，in terms of speed-recall tradeoff)；</p>
+</li>
+<li>
+<p>实现良好召回recall的三个关要素：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>在表中有一些数据后创建索引；<br>
+create index after table has some data</p>
+</li>
+<li>
+<p>查询时，指定适当数量的probe，越高对recall越好，<br>
+越低对speed越好，最好从sqrt(listSize)开始；<br>
+<a href="https://github.com/pgvector/pgvector?tab=readme-ov-file#query-options" class="bare">https://github.com/pgvector/pgvector?tab=readme-ov-file#query-options</a></p>
+</li>
+<li>
+<p>选择适当数量的列表，好的开始位置：</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Formula</th>
+<th class="tableblock halign-left valign-top">Memo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><mark>rowCount / 1000</mark></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">up to 1M row</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><mark>sqrt(rowCount)</mark></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">over 1M row</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>为要使用的每个距离函数each distance function添加一个索引，<br>
+可对多达2000个维度dimension的向量vector进行索引；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">-- L2 distance
+create index on order_item using
+	ivfflat (embedding vector_l2_ops) with (lists = 100);
+
+-- inner product
+create index on order_item using
+	ivfflat (embedding vector_ip_ops) with (lists = 100);
+
+-- cosine distance
+create index on order_item using
+	ivfflat (embedding vector_cosine_ops) with (lists = 100);</code></pre>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_query_option_2"><a class="anchor" href="#_query_option_2"></a>7.1. Query Option</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>指定probe数，默认为1；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">set ivfflat.probes = 10;</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>精确近邻搜索：exact nearest neighbor search</p>
+</li>
+<li>
+<p>更高的值以速度为代价提供更好的召回recall，且可将其设置为精确近邻搜索的列表数量，<br>
+此时planner不会使用索引，at which point planner won&#8217;t use index；</p>
+</li>
+<li>
+<p>为单个查询在事务内部设置：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">begin;
+set local ivfflat.probes = 10;
+select ……
+commit;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_index_build_time_2"><a class="anchor" href="#_index_build_time_2"></a>7.2. Index Build Time</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>增加parallel worker number(默认为2)以加快speed up大型表上的索引创建速度；</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>﻿* 对large worker number，还需增加max_parallel_workers，默认为8；</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">-- plus leader
+set max_parallel_maintenance_workers = 7;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_indexing_progress_2"><a class="anchor" href="#_indexing_progress_2"></a>7.3. Indexing Progress</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>IVFFlat phase：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>initializing</p>
+</li>
+<li>
+<p>performing k-means</p>
+</li>
+<li>
+<p>assigning tuple</p>
+</li>
+<li>
+<p>loading tuple</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>% only populate during loading tuple phase</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">select phase,
+	round(100.0 * tuples_done / nullif(tuples_total,0),1) as "%"
+	from pg_stat_progress_create_index;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_filtering"><a class="anchor" href="#_filtering"></a>8. Filtering</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_where_nearest_neighbor"><a class="anchor" href="#_where_nearest_neighbor"></a>8.1. Where Nearest Neighbor</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">-- 用where子句为最近邻居nearest neighbor查询建立索引：
+
+select * from order_item where category_id = 123
+	order by embedding &lt;-&gt; '[3,1,2]' limit 5;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_where_exact_search"><a class="anchor" href="#_where_exact_search"></a>8.2. Where Exact Search</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">-- 在一或多个where列创建索引以精确搜索exact search：
+
+create index on order_item(category_id);</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_partial_index"><a class="anchor" href="#_partial_index"></a>8.3. Partial Index</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">-- 或向量列上的部分索引partial index以近似approximate搜索：
+
+create index on order_item using
+	hnsw(embedding vector_l2_ops) where (category_id = 123);</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_partitioning"><a class="anchor" href="#_partitioning"></a>8.4. Partitioning</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">-- 用分区partitioning对where列的许多不同值进行近似approximate搜索：
+
+create table order_item(
+	embedding vector(3),
+	category_id int
+)partition by list(category_id);</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_hybrid_search"><a class="anchor" href="#_hybrid_search"></a>9. Hybrid Search</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>与Postgres全文搜索合用进行混合搜索；<br>
+<a href="https://www.postgresql.org/docs/current/textsearch-intro.html" class="bare">https://www.postgresql.org/docs/current/textsearch-intro.html</a></p>
+</li>
+<li>
+<p>可用Reciprocal Rank Fusion或cross-encoder来组合结果；<br>
+<a href="https://github.com/pgvector/pgvector-python/blob/master/examples/hybrid_search_rrf.py" class="bare">https://github.com/pgvector/pgvector-python/blob/master/examples/hybrid_search_rrf.py</a><br>
+<a href="https://github.com/pgvector/pgvector-python/blob/master/examples/hybrid_search.py" class="bare">https://github.com/pgvector/pgvector-python/blob/master/examples/hybrid_search.py</a></p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">select id,content from order_item,plainto_tsquery('hello search') query
+    where textsearch @@ query order by ts_rank_cd(textsearch,query) desc limit 5;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_performance"><a class="anchor" href="#_performance"></a>10. Performance</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_tuning"><a class="anchor" href="#_tuning"></a>10.1. Tuning</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>使用像PgTune类似的工具来设置Postgres服务器参数的初始值<br>
+<a href="https://pgtune.leopard.in.ua" class="bare">https://pgtune.leopard.in.ua</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_loading"><a class="anchor" href="#_loading"></a>10.2. Loading</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>使用copy以bulk loading data，在加载初始化数据后，添加任何索引以获得最佳性能；<br>
+<a href="https://github.com/pgvector/pgvector-python/blob/master/examples/bulk_loading.py" class="bare">https://github.com/pgvector/pgvector-python/blob/master/examples/bulk_loading.py</a></p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">copy order_item(embedding) from stdin with(format binary);</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_indexing_2"><a class="anchor" href="#_indexing_2"></a>10.3. Indexing</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>HNSW和IVFFlat索引的构建时间：<br>
+<a href="https://github.com/pgvector/pgvector?tab=readme-ov-file#index-build-time" class="bare">https://github.com/pgvector/pgvector?tab=readme-ov-file#index-build-time</a><br>
+<a href="https://github.com/pgvector/pgvector?tab=readme-ov-file#index-build-time-1" class="bare">https://github.com/pgvector/pgvector?tab=readme-ov-file#index-build-time-1</a></p>
+</li>
+<li>
+<p>在生产环境，并发创建索引，以规避阻塞写入，<br>
+create index concurrently to avoid blocking write；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">create index concurrently ……</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_querying"><a class="anchor" href="#_querying"></a>10.4. Querying</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>﻿使用explain analyze调试性能</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">﻿explain analyze select * from order_item
+	order by embedding &lt;-&gt; '[3,1,2]' limit 5;</code></pre>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_exact_search"><a class="anchor" href="#_exact_search"></a>10.4.1. Exact Search</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>在没索引的情况下加快查询速度，<br>
+请增加参数max_paralle_workers_per_gather</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">set max_parallel_workers_per_gather = 4;</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>若向量被标准化为(normalized to)长度1，则使用inner product以获得最佳性能；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">select * from order_item order by embedding &lt;#&gt; '[3,1,2]' limit 5;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_approximate_search"><a class="anchor" href="#_approximate_search"></a>10.4.2. Approximate Search</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>要用IVFFlat索引加快查询速度，请增加反向列表的数量inverted list<br>
+number，以召回为代价 at the expense of recall)；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">create index on order_item using ivfflat (embedding vector_l2_ops) with (lists = 1000);</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_vacuuming"><a class="anchor" href="#_vacuuming"></a>10.5. Vacuuming</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>对HNSW索引进行Vacuuming需一段时间，通过先重新索引来加快速度；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">reindex index concurrently index_name;
+
+vacuum table_name;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_monitoring"><a class="anchor" href="#_monitoring"></a>11. Monitoring</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_monitoring_performance"><a class="anchor" href="#_monitoring_performance"></a>11.1. Monitoring Performance</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>用pg_stat_statements监控性能，确保其添加到shared_preload_libraries中；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">create extension pg_stat_statements;
+
+-- 获取最耗时TIME-CONSUMING的查询：
+select query,calls,
+	round((total_plan_time + total_exec_time) / calls) as avg_time_ms,
+    round((total_plan_time + total_exec_time) / 60000) as total_time_min
+    from pg_stat_statements order by total_plan_time + total_exec_time
+    desc limit 20;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_monitoring_recall"><a class="anchor" href="#_monitoring_recall"></a>11.2. Monitoring Recall</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>通过比较近似approximate搜索和精确exact搜索的结果来监控召回recall；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">begin;
+-- use exact search
+set local enable_indexscan = off;
+select ……
+commit;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_scaling"><a class="anchor" href="#_scaling"></a>12. Scaling</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>scale Postgres Vector的方式与scale Postgres的方式相同，<br>
+通过增加单实例上的内存，CPU，存储来scale vertically；</p>
+</li>
+<li>
+<p>使用现有工具tune parameter或monitor performance来调整参数和监控性能<br>
+<a href="https://github.com/pgvector/pgvector?tab=readme-ov-file#tuning" class="bare">https://github.com/pgvector/pgvector?tab=readme-ov-file#tuning</a><br>
+<a href="https://github.com/pgvector/pgvector?tab=readme-ov-file#monitoring" class="bare">https://github.com/pgvector/pgvector?tab=readme-ov-file#monitoring</a></p>
+</li>
+<li>
+<p>使用replicas以scale horizontally进行水平扩展，或用Citus或其它方法分片sharding；<br>
+<a href="https://www.postgresql.org/docs/current/hot-standby.html" class="bare">https://www.postgresql.org/docs/current/hot-standby.html</a><br>
+<a href="https://github.com/citusdata/citus" class="bare">https://github.com/citusdata/citus</a><br>
+<a href="https://github.com/pgvector/pgvector-python/blob/master/examples/citus.py" class="bare">https://github.com/pgvector/pgvector-python/blob/master/examples/citus.py</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_language"><a class="anchor" href="#_language"></a>13. Language</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Language</th>
+<th class="tableblock halign-left valign-top">Url</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rust</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://github.com/pgvector/pgvector-rust" class="bare">https://github.com/pgvector/pgvector-rust</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Java</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://github.com/pgvector/pgvector-java" class="bare">https://github.com/pgvector/pgvector-java</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Python</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://github.com/pgvector/pgvector-python" class="bare">https://github.com/pgvector/pgvector-python</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_faq"><a class="anchor" href="#_faq"></a>14. Faq</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_common"><a class="anchor" href="#_common"></a>14.1. Common</h3>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><mark>单表可存储多少向量?</mark>：</p>
+</li>
+<li>
+<p>Postgres中非分区表的默认限制为32TB，<br>
+一个分区表(partition)可有数千个这样大小的分区；</p>
+</li>
+<li>
+<p><mark>是否支持复制?</mark>：</p>
+</li>
+<li>
+<p>支持，Postgres Vector使用预写日志WAL(write-ahead log)，<br>
+它允许复制和时间点恢复replication and point-in-time recovery；</p>
+</li>
+<li>
+<p><mark>若想索引草果2000个维度的向量该咋办?</mark>：</p>
+</li>
+<li>
+<p>建议降维﻿：use dimensionality reduction；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_column_mix_dimension"><a class="anchor" href="#_column_mix_dimension"></a>14.2. Column Mix Dimension</h3>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><mark>可将不同维度的向量存储在同一列中吗?</mark>：</p>
+</li>
+<li>
+<p>可使用向量作为类型use vector as type (instead of vector(3))；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">create table embeddings(
+	model_id bigint,
+	item_id bigint,
+	embedding vector,
+	primary key (model_id,item_id)
+);</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>但只能对具有相同维数的行创建索引(使用expression and partial indexing)：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">create index on embeddings using
+	hnsw ((embedding::vector(3)) vector_l2_ops)
+	where (model_id = 123);
+
+-- 查询方式：
+select * from embeddings where model_id = 123
+	order by embedding::vector(3) &lt;-&gt; '[3,1,2]' limit 5;</code></pre>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_vector_precision"><a class="anchor" href="#_vector_precision"></a>14.3. Vector Precision</h3>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><mark>可更精确precision的存储向量吗?</mark>：</p>
+</li>
+<li>
+<p>可使用double precision[]或numeric[]类型来存储精度更高的向量；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">create table order_item(
+	id bigserial primary key,
+	embedding double precision[]
+);
+
+-- use {} instead of [] for Postgres array
+insert into order_item (embedding) values('{1,2,3}'),('{4,5,6}');</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>可选Optionally，添加检查约束，以确保数据可转换为<br>
+向量类型并具有预期的维度expected dimension；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">alter table order_item add
+	check(vector_dims(embedding::vector) = 3);</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>使用表达式索引进行索引(以较低的精度)，<br>
+expression indexing to index(at lower precision)；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">create index on order_item using
+	hnsw ((embedding::vector(3)) vector_l2_ops);
+
+select * from order_item order by embedding::vector(3) &lt;-&gt; '[3,1,2]' limit 5;</code></pre>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_index_fit_into_memory"><a class="anchor" href="#_index_fit_into_memory"></a>14.4. Index Fit Into Memory</h3>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>﻿* <mark>索引是否需要纳入内存?index need to fit into memory?</mark>：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>不需要，但与其它索引类型一样，若这样做，可能得到更好的性能，获取索引大小：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">select pg_size_pretty(pg_relation_size('index_name'));</code></pre>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_troubleshooting"><a class="anchor" href="#_troubleshooting"></a>15. Troubleshooting</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_index_not_working"><a class="anchor" href="#_index_not_working"></a>15.1. Index Not Working</h3>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><mark>为何查询不使用索引</mark>：</p>
+</li>
+<li>
+<p>﻿查询需要有order by和limit，order by必须是距离运算符<br>
+distance operator的结果而非表达式expression；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">-- index
+order by embedding &lt;=&gt; '[3,1,2]' limit 5;
+
+-- no index
+order by 1 - (embedding &lt;=&gt; '[3,1,2]') desc limit 5;
+
+-- 鼓励如下方式(planner )查询：
+begin;
+set local enable_seqscan = off;
+select ……
+commit;
+
+-- 另若表很小，则表扫描可能会更快</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_parallel_table_scan"><a class="anchor" href="#_parallel_table_scan"></a>15.2. Parallel Table Scan</h3>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><mark>为何查询不使用并行表扫描parallel table scan</mark>：</p>
+</li>
+<li>
+<p>planner在成本估算中没考虑out-of-line storage，<br>
+这使串行扫描看起来更便宜，可通过以下方式降低查询的并行扫描成本：</p>
+</li>
+<li>
+<p>或choose to store vector inline；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">begin;
+set local min_parallel_table_scan_size = 1;
+set local parallel_setup_cost = 1;
+select ……
+commit;
+
+-- choose to store vector inline
+alter table order_item alter column embedding set storage plain;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_hnsw_index"><a class="anchor" href="#_hnsw_index"></a>15.3. Hnsw Index</h3>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>为何添加HNSW索引后查询的结果更少there less result?</p>
+</li>
+<li>
+<p>结果受到动态候选列表大小dynamic candidate list size<br>
+(hnsw.ef_search)的限制，因查询中的dead tuple<br>
+或过滤条件filtering condition，结果可能更少；</p>
+</li>
+<li>
+<p>建议将hnsw.ef_search设置为至少查询limit的两倍，<br>
+若需500个以上的结果，请使用IVFFlat索引；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ivfflat_index"><a class="anchor" href="#_ivfflat_index"></a>15.4. IvfFlat Index</h3>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>为何添加IVFFlat索引后查询的结果更少there less result?</p>
+</li>
+<li>
+<p>对列表的数量来说，创建索引的数据可能太少，删除索引，直到表中有更多数据为止；</p>
+</li>
+<li>
+<p>结果也可能受probe的数量限制(ivfflat.probes)；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">drop index index_name;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_reference"><a class="anchor" href="#_reference"></a>16. Reference</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_vector_type"><a class="anchor" href="#_vector_type"></a>16.1. Vector Type</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>每个向量占(4 * dimensionNumber +8)字节存储，每个元素都是单精度浮点数，<br>
+如同Postgres中的real type，所有元素都必须是有限的(finite)，<br>
+如没NaN，Infinity，-Infinity，向量最多可有16000个维度；</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_vector_operator"><a class="anchor" href="#_vector_operator"></a>16.2. Vector Operator</h3>
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Operator</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>+</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">element-wise addition</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>-</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">element-wise subtraction</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>*</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">element-wise multiplication</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>&lt;&#8594;</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">euclidean distance</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>&lt;#&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">negative inner product</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>&lt;&#8658;</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cosine distance</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_vector_function"><a class="anchor" href="#_vector_function"></a>16.3. Vector Function</h3>
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Function</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><mark>cosine_distance(vector, vector) → double precision</mark></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cosine distance</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><mark>inner_product(vector, vector) → double precision</mark></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">inner product</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><mark>l2_distance(vector, vector) → double precision</mark></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">euclidean distance</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><mark>l1_distance(vector, vector) → double precision</mark></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">taxicab distance</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><mark>vector_dims(vector) → integer</mark></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dimension number</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><mark>vector_norm(vector) → double precision</mark></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">euclidean norm</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_aggregate_function"><a class="anchor" href="#_aggregate_function"></a>16.4. Aggregate Function</h3>
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Function</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><mark>avg(vector) → vector</mark></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">average</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><mark>sum(vector) → vector</mark></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sum</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_upgrading"><a class="anchor" href="#_upgrading"></a>17. Upgrading</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">-- 在每个数据库执行以下操作，以执行upgrade：
+alter extension vector update;
+
+-- 查询当前数据库vector版本
+select extversion from pg_extension where extname = 'vector';</code></pre>
+</div>
+</div>
+</div>
+</div>
+	</article>
+  </div>
+</main>
+</div>
+		<footer class="footer">
+	<div class="footer-main">
+  		<figure class="footer-brand">
+
+			Authored in AsciiDoc <br />
+			Produced by Antora and Asciidoctor
+		</figure>
+  	</div>
+  
+	<div class="footer-legal">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		<p>Copyright © 2024 Elf</p>
+
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+</footer>
+
+<script id="site-script" src="../../../../_/js/site.js" data-ui-root-path="../../../../_"></script>
+<script async src="../../../../_/js/vendor/highlight.js"></script>
+<script async src="../../../../_/js/vendor/highlight.bundle.js"></script>
+
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  messageStyle: "none",
+  tex2jax: { inlineMath: [["\\(", "\\)"]], displayMath: [["\\[", "\\]"]], ignoreClass: "nostem|nolatexmath" },
+  asciimath2jax: { delimiters: [["\\$", "\\$"]], ignoreClass: "nostem|noasciimath" },
+  TeX: { equationNumbers: { autoNumber: "none" } }
+})
+MathJax.Hub.Register.StartupHook("AsciiMath Jax Ready", function () {
+  MathJax.InputJax.AsciiMath.postfilterHooks.Add(function (data, node) {
+    if ((node = data.script.parentNode) && (node = node.parentNode) && node.classList.contains("stemblock")) {
+      data.math.root.display = "block"
+    }
+    return data
+  })
+})
+</script>
+  </body>
+
+</html>
