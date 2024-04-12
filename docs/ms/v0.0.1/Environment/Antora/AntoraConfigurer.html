@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> :: AsciiDoc</title>
+    <meta name="generator" content="Antora 3.1.7">
+    
+<link rel="stylesheet" href="../../../../_/css/site.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/asciidoc.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
+
+<link rel="stylesheet" href="../../../../_/css/style/windows-10.css">
+
+    <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+  			
+	            <div id="main" style="place-content: center;">
+	                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+		            </div>
+		        </section>
+    	</div>
+    	
+        <div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+				 
+				
+				
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container" data-component="ms" data-version="v0.0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">Makeshift</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Spring AI</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Solitary</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/AIConcept.html">AI Concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/SpringAIDependency.html">Spring AI Dependency</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/SpringAIProperty.html">Spring AI Property</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/GenericModel.html">Generic Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/Prompt.html">Prompt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/OutputParser.html">Output Parser</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/EtlPipeline.html">Etl Pipeline</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/ImageGeneration.html">Image Generation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/FunctionCalling.html">Function Calling</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/EvaluationTesting.html">Evaluation Testing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/TestContainer.html">Test Container</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Chat Completion</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/ChatCompletion/ChatCompletion.html">Chat Completion</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/ChatCompletion/Ollama.html">Ollama</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/ChatCompletion/HuggingFace.html">Hugging Face</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Embedding</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/Embedding.html">Embedding</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/Ollama.html">Ollama</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/PostgresML.html">Postgres ML</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/TransformerOnnx.html">Transformer Onnx</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Vector Store</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/VectorExplanation.html">Vector Explanation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/VectorStore.html">Vector Store</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Neo4j.html">Neo4j</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Redis.html">Redis</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Chroma.html">Chroma</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Milvus.html">Milvus</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Qdrant.html">Qdrant</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Elastic.html">Elastic</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Weaviate.html">Weaviate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Pgv.html">Postgres Vector</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Environment</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Antora</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Markdown.html">Markdown</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="NodeInstallation.html">Node Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="AsciidoctorInstallation.html">Asciidoctor Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="AsciidoctorConfigurer.html">Asciidoctor Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="AntoraInstallation.html">Antora Installation</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="AntoraConfigurer.html">Antora Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="AntoraUI.html">Antora UI</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Virtualization</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Virtualization/HyperVConfigurer.html">HyperV Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Virtualization/UbuntuConfigurer.html">Ubuntu Configurer</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Containerization</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Containerization/DockerFundamental.html">Docker Fundamental</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Containerization/K8SInstallation.html">K8S Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Containerization/K8SExtension.html">K8S Extension</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">DevOps</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../DevOps/NexusInstallation.html">Nexus Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../DevOps/JenkinsInstallation.html">Jenkins Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Pom Template</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../PomTemplate/FlattenLifecycle.html">Flatten Lifecycle</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../PomTemplate/JakartaSpecification.html">Jakarta Specification</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Language</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/GraalWin.html">Graal Win</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/CondaJupyter.html">Conda Jupyter</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/LuaInstallation.html">Lua Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/RustInstallation.html">Rust Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/RustConfiguration.html">Rust Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/GroovyInstallation.html">Groovy Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Message</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Message/KafkaInstallation.html">Kafka Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Message/PulsarInstallation.html">Pulsar Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Discovery</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Discovery/NacosInstallation.html">Nacos Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Store</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Store/PowerDesigner.html">Power Designer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Store/MongoInstallation.html">Mongo Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Store/MySQLInstallation.html">MySQL Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Store/ElasticInstallation.html">Elastic Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Store/PostgresInstallation.html">Postgres Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Store/AeroSpikeInstallation.html">AeroSpike Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Store/RedisStackInstallation.html">Redis Stack Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Security</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Security/KeycloakInstallation.html">Keycloak Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Practical Case</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../PracticalCase/MongoCase.html">Mongo Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../PracticalCase/ElasticCase.html">Elastic Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../PracticalCase/MySqlTuning.html">MySql Tuning</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../PracticalCase/KeycloakCase.html">Keycloak Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../PracticalCase/TinkerpopCase.html">Tinkerpop Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../PracticalCase/PgvSimilarity.html">Pgv Similarity</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../PracticalCase/BookmarkCase.html">Bookmark Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../PracticalCase/AirflowDagCase.html">Airflow Dag Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../PracticalCase/ModularizingCase.html">Modularizing Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../PracticalCase/HightlightingCase.html">Hightlighting Case</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Processing</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Processing/FlinkInstallation.html">Flink Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Assortment</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Assortment/CommonAssortment.html">Common Assortment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Assortment/TechniqueAssortment.html">Technique Assortment</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Periphery</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Periphery/RssFeed.html">Rss Feed</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Kafka</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Fundamental</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Fundamental/KafkaEco.html">Kafka Eco</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Fundamental/KafkaTheory.html">Kafka Theory</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Makeshift</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">Makeshift</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+	<div class="toolbar" role="navigation">
+	<button class="nav-toggle"></button>
+	
+		<a href="../../index.html" 
+			class="home-link">
+		</a>
+
+	<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">Makeshift</a></li>
+    <li>Environment</li>
+    <li>Antora</li>
+    <li><a href="AntoraConfigurer.html">Antora Configurer</a></li>
+  </ul>
+</nav>
+		</div>
+	
+	<div class="content">
+			<aside class="toc sidebar" 
+	data-title="Contents" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+			<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_include">1. Include</a></li>
+<li><a href="#_line_number">2. Line Number</a></li>
+<li><a href="#_emoji">3. Emoji</a></li>
+<li><a href="#_mathjax">4. MathJax</a></li>
+<li><a href="#_asciidoctor_kroki">5. asciidoctor-kroki</a></li>
+<li><a href="#_pdf">6. Pdf</a></li>
+<li><a href="#_code_block">7. Code Block</a></li>
+<li><a href="#_lunr_retrieve">8. Lunr Retrieve</a></li>
+<li><a href="#_tab">9. Tab</a></li>
+<li><a href="#_antora_operation">10. Antora Operation</a></li>
+<li><a href="#_antora_github">11. Antora Github</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_include"><a class="anchor" href="#_include"></a>1. Include</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><mark>include::ROOT:partial$Header.adoc[]</mark></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_line_number"><a class="anchor" href="#_line_number"></a>2. Line Number</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">asciidoc:
+  sourcemap: true</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>antora --asciidoc-sourcemap --fetch antora-playbook.yml</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_emoji"><a class="anchor" href="#_emoji"></a>3. Emoji</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">npm i -g @asciidoctor/core asciidoctor-emoji</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">asciidoc:
+  extensions:
+  - asciidoctor-emoji</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">emoji:bear[5x]
+
+emoji:heart[5x]</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_mathjax"><a class="anchor" href="#_mathjax"></a>4. MathJax</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://asciimath.org/#syntax" class="bare">https://asciimath.org/#syntax</a></p>
+</li>
+<li>
+<p><a href="https://docs.mathjax.org/en/latest/" class="bare">https://docs.mathjax.org/en/latest/</a></p>
+</li>
+<li>
+<p><a href="https://gitlab.com/djencks/asciidoctor-mathjax.js" class="bare">https://gitlab.com/djencks/asciidoctor-mathjax.js</a></p>
+</li>
+<li>
+<p>asciidoctor-mathjax提供Asciidoctor.js扩展，<br>
+使用Mathjax 3 JavaScript在服务器端呈现AsciiMath和LaTeX；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">npm i -g @djencks/asciidoctor-mathjax</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">asciidoc:
+  attributes:
+    stem: 'asciimath'
+  extensions:
+  - '@djencks/asciidoctor-mathjax'</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">****
+stem:[\vec{A} * \vec{B} = A_1B_1 + A_2B_2]
+****</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_asciidoctor_kroki"><a class="anchor" href="#_asciidoctor_kroki"></a>5. asciidoctor-kroki</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Asciidoctor使用Kroki转换diagram到图片的extension</p>
+</li>
+<li>
+<p><a href="https://www.npmjs.com/package/asciidoctor-kroki" class="bare">https://www.npmjs.com/package/asciidoctor-kroki</a></p>
+</li>
+<li>
+<p>asciidoctor-kroki替代已过时的asciidoctor-plantuml</p>
+</li>
+<li>
+<p>可使用kroki-fetch-diagram属性在Kroki构建的时间来下载图像，<br>
+即在浏览页面时将不再依赖Kroki,但在Antora中,当前与嵌入式svg图像不兼容</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># 用于Asciidoctor
+gem install asciidoctor-kroki
+
+asciidoctor -r asciidoctor-kroki fileName.adoc
+
+# 用于Antora
+npm i -g asciidoctor asciidoctor-kroki
+
+# docker方式：https://hub.docker.com/r/yuzutech/kroki
+# https://docs.kroki.io/kroki/setup/configuration
+docker pull yuzutech/kroki:0.22.0</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">asciidoc:
+  extensions:
+    - asciidoctor-kroki
+  attributes:
+    # kroki-server-url: http://192.168.0.123:9500
+    kroki-fetch-diagram: true
+    kroki-default-format: svg</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_pdf"><a class="anchor" href="#_pdf"></a>6. Pdf</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://gitlab.com/antora/antora-assembler" class="bare">https://gitlab.com/antora/antora-assembler</a></p>
+</li>
+<li>
+<p><a href="https://www.npmjs.com/package/@antora/pdf-extension" class="bare">https://www.npmjs.com/package/@antora/pdf-extension</a></p>
+</li>
+<li>
+<p><a href="https://docs.asciidoctor.org/pdf-converter/latest/theme" class="bare">https://docs.asciidoctor.org/pdf-converter/latest/theme</a></p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">gem install text-hyphen
+
+gem install asciidoctor-pdf
+
+asciidoctor-pdf fileName.adoc
+
+asciidoctor -r asciidoctor-pdf fileName.adoc
+
+npm i -g @antora/pdf-extension</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>在antora-playbook.yaml同级目录创建antora-assembler.yaml</p>
+</li>
+<li>
+<p>并通过antora-assembler.yaml来指定pdf-theme.yaml和font</p>
+</li>
+<li>
+<p>antora --extension @antora/pdf-extension antora-playbook.yml</p>
+</li>
+<li>
+<p>antora-playbook.yaml</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml"># antora-playbook.yaml
+
+asciidoc:
+  attributes:
+    source-highlighter: highlight.js
+    # module/version/fileName：osp/v0.0.1/osp-adoc.pdf
+    attachmentsdir: .
+asciidoc:
+  attributes:
+
+antora:
+  extensions:
+  - '@antora/pdf-extension'
+  - require: '@antora/lunr-extension'
+    index_latest_only: true
+    #languages: [en, cn]</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">📄 antora-assembler.yaml
+📄 antora-playbook.yaml
+📂 aui-external
+  📂 Cjk
+    📄 cjk-theme.yml
+    📄 NotoSansCJKsc-VF.ttf
+    📄 NotoSansMonoCJKsc-VF.ttf</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>antora-assembler.yaml</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">root_level: 0
+component_versions: '*'
+asciidoc:
+  attributes:
+    source-highlighter: highlight.js
+    pdf-theme: ./aui-external/Cjk/cjk-theme.yml</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>cjk-theme.yaml</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">extends: default
+font:
+  catalog:
+    merge: true
+    Noto Sans CN: D:/Install/Dev/workspace/AsciiDoc/asciidoc-antora/asciidoc-generator/External/Cjk/NotoSansCJKsc-VF.ttf
+    Noto Sans Mono CN: D:/Install/Dev/workspace/AsciiDoc/asciidoc-antora/asciidoc-generator/External/Cjk/NotoSansMonoCJKsc-VF.ttf
+  fallbacks:
+  - Noto Serif
+base:
+  text-align: left
+  font-family: Noto Sans CN
+codespan:
+  font-family: Noto Sans Mono CN
+kbd:
+  font-family: $codespan-font-family
+code:
+  font-family: $codespan-font-family</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_code_block"><a class="anchor" href="#_code_block"></a>7. Code Block</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">npm install highlight.js -g</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Antora在AsciiDoc处理器默认使用highlight.js高亮代码块；</p>
+</li>
+<li>
+<p>要禁用(turn off )syntax highlighting：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">asciidoc:
+  attributes:
+    source-highlighter: ~</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>﻿* 若改为软取消设置(soft unset)，如值设置为false，<br>
+  则允许各页面选择性的重新打开(turn on)syntax highlighting；</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>默认：Antora会高亮显示一组受限制的语言，以最大限度地减小支持资产文件的大小，<br>
+可在自己的UI Bundle添加或删除对语言的支持，具体执行以下步骤：</p>
+</li>
+<li>
+<p>src/js/vendor/highlight.bundle.js，增删registerLanguage语句，如：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">hljs.registerLanguage('asciidoc',require('highlight.js/lib/languages/asciidoc'))
+hljs.registerLanguage('bash', require('highlight.js/lib/languages/bash'))
+hljs.registerLanguage('shell', require('highlight.js/lib/languages/shell'))
+hljs.registerLanguage('sql', require('highlight.js/lib/languages/sql'))
+hljs.registerLanguage('protobuf', require('highlight.js/lib/languages/protobuf'))
+hljs.registerLanguage('ini', require('highlight.js/lib/languages/ini'))
+hljs.registerLanguage('rust', require('highlight.js/lib/languages/rust'))
+hljs.registerLanguage('java', require('highlight.js/lib/languages/java'))
+hljs.registerLanguage('python', require('highlight.js/lib/languages/python'))
+hljs.registerLanguage('groovy', require('highlight.js/lib/languages/groovy'))
+hljs.registerLanguage('javascript', require('highlight.js/lib/languages/javascript'))
+hljs.registerLanguage('ini', require('highlight.js/lib/languages/ini'))
+hljs.registerLanguage('properties', require('highlight.js/lib/languages/properties'))
+hljs.registerLanguage('gradle', require('highlight.js/lib/languages/gradle'))
+hljs.registerLanguage('json', require('highlight.js/lib/languages/json'))
+hljs.registerLanguage('xml', require('highlight.js/lib/languages/xml'))
+hljs.registerLanguage('yaml', require('highlight.js/lib/languages/yaml'))
+hljs.registerLanguage('dockerfile', require('highlight.js/lib/languages/dockerfile'))
+hljs.registerLanguage('css', require('highlight.js/lib/languages/css'))</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>另需highlight.js支持相对应的语言，具体参考github：</p>
+</li>
+<li>
+<p><a href="https://github.com/highlightjs/highlight.js/tree/9-18-stable/src/languages" target="_blank" rel="noopener">highlight.js Supporting Language</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_lunr_retrieve"><a class="anchor" href="#_lunr_retrieve"></a>8. Lunr Retrieve</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>各种jieba版本，与node版本不匹配，甚至有从v16到v20的，<br>
+中文无分词效果，中文无分词效果，中文无分词效果，坐等社区维护；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">npm i -g @antora/lunr-extension
+
+npm i -g @node-rs/jieba</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>footer-scripts.hbs</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">{{#if env.SITE_SEARCH_PROVIDER}}
+{{&gt; search-scripts}}
+{{/if}}</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>header-content.hbs</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;div class="navbar-item has-dropdown is-hoverable"&gt;
+	&lt;div class="navbar-link"&gt;
+		{{#if env.SITE_SEARCH_PROVIDER}}
+	    	&lt;div class="navbar-item search hide-for-print"&gt;
+	        	&lt;div id="search-field" class="field"&gt;
+	          		&lt;label for="search-input"&gt;&lt;/label&gt;
+	          		&lt;input id="search-input" type="text"
+	          			placeholder="Type To Retrieving..."
+	          			{{#if page.home}} autofocus{{/if}} /&gt;
+	        	&lt;/div&gt;
+	      	&lt;/div&gt;
+		{{/if}}
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>antora-playbook.yaml</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">antora:
+  extensions:
+  - require: '@antora/lunr-extension'
+    index_latest_only: true
+    #languages: [en, cn]</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_tab"><a class="anchor" href="#_tab"></a>9. Tab</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/asciidoctor/asciidoctor-tabs" class="bare">https://github.com/asciidoctor/asciidoctor-tabs</a></p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">gem install asciidoctor-tabs
+
+asciidoctor -r asciidoctor-tabs fileName.adoc
+
+npm i -D -g @asciidoctor/tabs</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_antora_operation"><a class="anchor" href="#_antora_operation"></a>10. Antora Operation</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">echo off
+cls
+chcp 65001
+
+set BASE_URL=D:/Install/Antora/AsciiDoc
+
+set ANTORA_URL=%BASE_URL%/asciidoc-generator/
+set SITE_URL=%BASE_URL%/asciidoc-distro/docs/index.html
+
+d:
+cd %ANTORA_URL%
+
+rem --extension @antora/pdf-extension
+rem --extension @antora/lunr-extension
+
+rem -r asciidoctor-pdf
+rem -r @djencks/asciidoctor-mathjax
+
+rem --fetch antora-playbook.yml
+
+antora antora-playbook.yml &amp; start %SITE_URL%</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_antora_github"><a class="anchor" href="#_antora_github"></a>11. Antora Github</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>创建仓库username.github.io：iRecursion.github.io</p>
+</li>
+<li>
+<p>仓库根目录下创建/docs目录，用于存放antora生成的文件</p>
+</li>
+<li>
+<p>在/docs目录下创建.nojekyll，此文件可空内容，<br>
+<a href="https://docs.antora.org/antora/latest/publish-to-github-pages/" class="bare">https://docs.antora.org/antora/latest/publish-to-github-pages/</a></p>
+</li>
+<li>
+<p>点击仓库 &#8594; Settings &#8594; Pages(左侧)<br>
+&#8594; 可选择分支，文件夹，自定义域名，取消发布站点</p>
+</li>
+<li>
+<p><a href="https://iRecursion.github.io" class="bare">https://iRecursion.github.io</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+	</div>
+</main>
+</div>
+		<footer class="footer">
+	
+	
+	
+	<div class="footer-thanks">
+		Authored in AsciiDoc
+		<br /><br />
+		Produced by Antora and Asciidoctor
+  	</div>
+  
+	<div class="footer-legal" style="text-align:center">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br /><br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		Copyright © 2024 Elf
+		<br /><br />
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+	
+</footer><script id="site-script" src="../../../../_/js/site.js" 
+	data-ui-root-path="../../../../_"></script>
+
+<script async src="../../../../_/js/vendor/highlight.js"></script>
+<script async src="../../../../_/js/vendor/highlight.bundle.js"></script>
+
+
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+
+<script>hljs.highlightAll();</script>  	</body>
+</html>
