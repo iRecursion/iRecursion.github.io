@@ -5,15 +5,14 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title> :: AsciiDoc</title>
     <meta name="generator" content="Antora 3.1.7">
-    
+
 <link rel="stylesheet" href="../../../../_/css/site.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/asciidoc.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
 
-<link rel="stylesheet" href="../../../../_/css/style/windows-10.css">
-
+<link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
     <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   	</head>
   	
@@ -334,6 +333,9 @@
     <span class="nav-text">Practical Case</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="KafkaEntryCase.html">Kafka Entry Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="MongoCase.html">Mongo Case</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -359,9 +361,6 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="ModularizingCase.html">Modularizing Case</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="HightlightingCase.html">Hightlighting Case</a>
   </li>
 </ul>
   </li>
@@ -413,7 +412,49 @@
     <a class="nav-link" href="../../Kafka/Fundamental/KafkaEco.html">Kafka Eco</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../Kafka/Fundamental/KafkaTheory.html">Kafka Theory</a>
+    <a class="nav-link" href="../../Kafka/Fundamental/KafkaTopic.html">Kafka Topic</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Fundamental/KafkaProducer.html">Kafka Producer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Fundamental/KafkaConsumer.html">Kafka Consumer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Fundamental/GroupOffset.html">Group Offset</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Fundamental/KafkaBroker.html">Kafka Broker</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Fundamental/TopicReplication.html">Topic Replication</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Fundamental/KafkaKRaft.html">KafkaK Raft</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Cli</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Cli/TopicCli.html">Topic Cli</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Cli/ProducerCli.html">Producer Cli</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Cli/ConsumerCli.html">Consumer Cli</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Cli/ConsumerInGroupCli.html">Group Cli</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Cli/ConsumerGroupManagementCli.html">Group Management Cli</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Cli/ConnectCli.html">Connect Cli</a>
   </li>
 </ul>
   </li>
@@ -546,7 +587,7 @@
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">📒 src/main/resources
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">📒 src/main/resources
   📂 conf
     📄 remote-objects.yaml
   📂 META-INF/spring/
@@ -622,7 +663,7 @@ public class TinkerpopRepository {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
 com.elf.dp.tinkerpop.config.GremlinClusterAutoConfiguration</code></pre>
 </div>
 </div>
@@ -864,7 +905,7 @@ public class Entry {
 <h3 id="_安装gremlin_python"><a class="anchor" href="#_安装gremlin_python"></a>5.1. 安装Gremlin-Python</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">pip install gremlinpython==3.5.3</code></pre>
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">pip install gremlinpython==3.5.3</code></pre>
 </div>
 </div>
 </div>

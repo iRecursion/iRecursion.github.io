@@ -5,15 +5,14 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title> :: AsciiDoc</title>
     <meta name="generator" content="Antora 3.1.7">
-    
+
 <link rel="stylesheet" href="../../../../_/css/site.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/asciidoc.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
 
-<link rel="stylesheet" href="../../../../_/css/style/windows-10.css">
-
+<link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
     <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   	</head>
   	
@@ -334,6 +333,9 @@
     <span class="nav-text">Practical Case</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../PracticalCase/KafkaEntryCase.html">Kafka Entry Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../PracticalCase/MongoCase.html">Mongo Case</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -359,9 +361,6 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../PracticalCase/ModularizingCase.html">Modularizing Case</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../PracticalCase/HightlightingCase.html">Hightlighting Case</a>
   </li>
 </ul>
   </li>
@@ -413,7 +412,49 @@
     <a class="nav-link" href="../../Kafka/Fundamental/KafkaEco.html">Kafka Eco</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../Kafka/Fundamental/KafkaTheory.html">Kafka Theory</a>
+    <a class="nav-link" href="../../Kafka/Fundamental/KafkaTopic.html">Kafka Topic</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Fundamental/KafkaProducer.html">Kafka Producer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Fundamental/KafkaConsumer.html">Kafka Consumer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Fundamental/GroupOffset.html">Group Offset</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Fundamental/KafkaBroker.html">Kafka Broker</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Fundamental/TopicReplication.html">Topic Replication</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Fundamental/KafkaKRaft.html">KafkaK Raft</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Cli</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Cli/TopicCli.html">Topic Cli</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Cli/ProducerCli.html">Producer Cli</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Cli/ConsumerCli.html">Consumer Cli</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Cli/ConsumerInGroupCli.html">Group Cli</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Cli/ConsumerGroupManagementCli.html">Group Management Cli</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Cli/ConnectCli.html">Connect Cli</a>
   </li>
 </ul>
   </li>
@@ -515,7 +556,7 @@
 </table>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">apt install net-tools -y
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">apt install net-tools -y
 
 vim /etc/netplan/00-installer-config.yaml
 
@@ -561,7 +602,7 @@ netplan apply</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">sudo -s
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">sudo -s
 
 sudo passwd root
 
@@ -577,7 +618,7 @@ sudo reboot now</code></pre>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">vim /etc/ssh/sshd_config
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">vim /etc/ssh/sshd_config
 
 PermitRootLogin yes
 
@@ -598,7 +639,7 @@ systemctl restart sshd</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">deb http://mirrors.aliyun.com/ubuntu/ jammy main restricted universe multiverse
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">deb http://mirrors.aliyun.com/ubuntu/ jammy main restricted universe multiverse
 deb-src http://mirrors.aliyun.com/ubuntu/ jammy main restricted universe multiverse
 deb http://mirrors.aliyun.com/ubuntu/ jammy-security main restricted universe multiverse
 deb-src http://mirrors.aliyun.com/ubuntu/ jammy-security main restricted universe multiverse
@@ -658,7 +699,7 @@ deb http://cn.archive.ubuntu.com/ubuntu jammy-security multiverse</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">timedatectl set-timezone Asia/Shanghai &amp;&amp; \
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">timedatectl set-timezone Asia/Shanghai &amp;&amp; \
 	timedatectl set-local-rtc 1 &amp;&amp; \
 	hwclock --localtime --systohc &amp;&amp; \
 	systemctl restart rsyslog &amp;&amp; timedatectl status
@@ -732,7 +773,7 @@ LANG是定义系统主语系的变量,LC_ALL是定义整体语系的变量,<br>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">$ vim /etc/default/locale
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">$ vim /etc/default/locale
 
 LANG=zh_CN.UTF-8
 LANGUAGE=zh_CN:zh
@@ -782,7 +823,7 @@ ENV LC_ALL zh_CN.UTF-8</code></pre>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell"># 系统信息
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># 系统信息
 cat /etc/issue &amp;&amp; uname -omr
 
 # 系统更新

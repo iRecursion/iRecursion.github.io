@@ -5,15 +5,14 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title> :: AsciiDoc</title>
     <meta name="generator" content="Antora 3.1.7">
-    
+
 <link rel="stylesheet" href="../../../../_/css/site.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/asciidoc.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
 
-<link rel="stylesheet" href="../../../../_/css/style/windows-10.css">
-
+<link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
     <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   	</head>
   	
@@ -334,6 +333,9 @@
     <span class="nav-text">Practical Case</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../PracticalCase/KafkaEntryCase.html">Kafka Entry Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../PracticalCase/MongoCase.html">Mongo Case</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -359,9 +361,6 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../PracticalCase/ModularizingCase.html">Modularizing Case</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../PracticalCase/HightlightingCase.html">Hightlighting Case</a>
   </li>
 </ul>
   </li>
@@ -413,7 +412,49 @@
     <a class="nav-link" href="../../Kafka/Fundamental/KafkaEco.html">Kafka Eco</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../Kafka/Fundamental/KafkaTheory.html">Kafka Theory</a>
+    <a class="nav-link" href="../../Kafka/Fundamental/KafkaTopic.html">Kafka Topic</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Fundamental/KafkaProducer.html">Kafka Producer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Fundamental/KafkaConsumer.html">Kafka Consumer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Fundamental/GroupOffset.html">Group Offset</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Fundamental/KafkaBroker.html">Kafka Broker</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Fundamental/TopicReplication.html">Topic Replication</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Fundamental/KafkaKRaft.html">KafkaK Raft</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Cli</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Cli/TopicCli.html">Topic Cli</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Cli/ProducerCli.html">Producer Cli</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Cli/ConsumerCli.html">Consumer Cli</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Cli/ConsumerInGroupCli.html">Group Cli</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Cli/ConsumerGroupManagementCli.html">Group Management Cli</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Cli/ConnectCli.html">Connect Cli</a>
   </li>
 </ul>
   </li>
@@ -543,7 +584,7 @@ systemctl daemon-reload &amp;&amp; systemctl restart docker</code></pre>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell"># 拉取镜像：docker pull OPTION NAME[:TAG]
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># 拉取镜像：docker pull OPTION NAME[:TAG]
 docker pull mysql:8.2.0
 
 # 标签镜像：docker tag SRC[:TAG] DEST_IMAGE[:TAG]
@@ -563,7 +604,7 @@ docker load &lt; ./tarball.tar</code></pre>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell"># 删除镜像
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># 删除镜像
 docker rmi -f $(docker images)
 
 # 删除退出状态容器
@@ -592,7 +633,7 @@ docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' mysq
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">docker run \
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">docker run \
 	--name gitlab \
 	-p 8080:80 \
 	--privileged=true \
@@ -619,7 +660,7 @@ docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' mysq
 <h3 id="_推送镜像"><a class="anchor" href="#_推送镜像"></a>5.1. 推送镜像</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell"># 拉取镜像
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># 拉取镜像
 docker pull mysql:8.2.0
 
 # 登录到Harbor：docker login &lt;harbor_address&gt;
@@ -640,7 +681,7 @@ docker push 192.168.0.123/specification/mysql:8.2.0</code></pre>
 <h3 id="_拉取镜像"><a class="anchor" href="#_拉取镜像"></a>5.2. 拉取镜像</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell"># 登录到Harbor：docker login &lt;harbor_address&gt;
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># 登录到Harbor：docker login &lt;harbor_address&gt;
 docker login http://192.168.0.123
 
 # 拉取镜像：docker pull &lt;harbor_address&gt;/namespace/target_image
@@ -652,7 +693,7 @@ docker pull 192.168.0.123/specification/mysql:8.2.0</code></pre>
 <h3 id="_tag_save"><a class="anchor" href="#_tag_save"></a>5.3. Tag Save</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">docker tag gitlab/gitlab-ce:16.6.2-ce.0 gitlab:16.6.2.0 &amp;&amp; \
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">docker tag gitlab/gitlab-ce:16.6.2-ce.0 gitlab:16.6.2.0 &amp;&amp; \
 	docker tag docker.elastic.co/kibana/kibana:8.11.2 kibana:8.11.2 &amp;&amp; \
 	docker tag docker.elastic.co/elasticsearch/elasticsearch:8.11.2 es:8.11.2 &amp;&amp; \
 	docker save -o ./gitlab16620.tar gitlab:16.6.2.0 &amp;&amp; \
@@ -672,7 +713,7 @@ docker load &lt; ./gitlab16620.tar &amp;&amp; \
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell"># 本地镜像复制到远程
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># 本地镜像复制到远程
 scp -r /elf/local/tarball.tar root@192.168.1.120:/elf/remote/
 
 # 远程镜像复制到本地
@@ -692,7 +733,7 @@ scp -r root@192.168.1.120:/elf/remote/ /elf/local/</code></pre>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell"># 主机复制到容器 docker cp &lt;source&gt; &lt;container&gt;:&lt;destination&gt;
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># 主机复制到容器 docker cp &lt;source&gt; &lt;container&gt;:&lt;destination&gt;
 
 # 容器复制到主机 docker cp &lt;container&gt;:&lt;source&gt; &lt;destination&gt;
 docker cp es8:/usr/share/elasticsearch/config/certs/http_ca.crt /elf/http_ca.crt</code></pre>
@@ -705,7 +746,7 @@ docker cp es8:/usr/share/elasticsearch/config/certs/http_ca.crt /elf/http_ca.crt
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">docker network create network-common
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">docker network create network-common
 
 # docker network create -d bridge network-common
 

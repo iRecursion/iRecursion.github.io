@@ -5,15 +5,14 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title> :: AsciiDoc</title>
     <meta name="generator" content="Antora 3.1.7">
-    
+
 <link rel="stylesheet" href="../../../../_/css/site.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/asciidoc.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
 
-<link rel="stylesheet" href="../../../../_/css/style/windows-10.css">
-
+<link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
     <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   	</head>
   	
@@ -334,6 +333,9 @@
     <span class="nav-text">Practical Case</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../PracticalCase/KafkaEntryCase.html">Kafka Entry Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../PracticalCase/MongoCase.html">Mongo Case</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -359,9 +361,6 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../PracticalCase/ModularizingCase.html">Modularizing Case</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../PracticalCase/HightlightingCase.html">Hightlighting Case</a>
   </li>
 </ul>
   </li>
@@ -413,7 +412,49 @@
     <a class="nav-link" href="../../Kafka/Fundamental/KafkaEco.html">Kafka Eco</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../Kafka/Fundamental/KafkaTheory.html">Kafka Theory</a>
+    <a class="nav-link" href="../../Kafka/Fundamental/KafkaTopic.html">Kafka Topic</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Fundamental/KafkaProducer.html">Kafka Producer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Fundamental/KafkaConsumer.html">Kafka Consumer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Fundamental/GroupOffset.html">Group Offset</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Fundamental/KafkaBroker.html">Kafka Broker</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Fundamental/TopicReplication.html">Topic Replication</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Fundamental/KafkaKRaft.html">KafkaK Raft</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Cli</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Cli/TopicCli.html">Topic Cli</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Cli/ProducerCli.html">Producer Cli</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Cli/ConsumerCli.html">Consumer Cli</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Cli/ConsumerInGroupCli.html">Group Cli</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Cli/ConsumerGroupManagementCli.html">Group Management Cli</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Cli/ConnectCli.html">Connect Cli</a>
   </li>
 </ul>
   </li>
@@ -478,10 +519,11 @@
 <li><a href="#_asciidoctor_kroki">5. asciidoctor-kroki</a></li>
 <li><a href="#_pdf">6. Pdf</a></li>
 <li><a href="#_code_block">7. Code Block</a></li>
-<li><a href="#_lunr_retrieve">8. Lunr Retrieve</a></li>
-<li><a href="#_tab">9. Tab</a></li>
-<li><a href="#_antora_operation">10. Antora Operation</a></li>
-<li><a href="#_antora_github">11. Antora Github</a></li>
+<li><a href="#_highlight_css_recommendation">8. Highlight Css Recommendation</a></li>
+<li><a href="#_lunr_retrieve">9. Lunr Retrieve</a></li>
+<li><a href="#_tab">10. Tab</a></li>
+<li><a href="#_antora_operation">11. Antora Operation</a></li>
+<li><a href="#_antora_github">12. Antora Github</a></li>
 </ul>
 </div>
 <div class="sect1">
@@ -519,7 +561,7 @@
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">npm i -g @asciidoctor/core asciidoctor-emoji</code></pre>
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">npm i -g @asciidoctor/core asciidoctor-emoji</code></pre>
 </div>
 </div>
 <div class="listingblock">
@@ -560,7 +602,7 @@ emoji:heart[5x]</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">npm i -g @djencks/asciidoctor-mathjax</code></pre>
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">npm i -g @djencks/asciidoctor-mathjax</code></pre>
 </div>
 </div>
 <div class="listingblock">
@@ -574,7 +616,7 @@ emoji:heart[5x]</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">****
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">****
 stem:[\vec{A} * \vec{B} = A_1B_1 + A_2B_2]
 ****</code></pre>
 </div>
@@ -696,7 +738,7 @@ antora:
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">📄 antora-assembler.yaml
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">📄 antora-assembler.yaml
 📄 antora-playbook.yaml
 📂 aui-external
   📂 Cjk
@@ -828,7 +870,34 @@ hljs.registerLanguage('css', require('highlight.js/lib/languages/css'))</code></
 </div>
 </div>
 <div class="sect1">
-<h2 id="_lunr_retrieve"><a class="anchor" href="#_lunr_retrieve"></a>8. Lunr Retrieve</h2>
+<h2 id="_highlight_css_recommendation"><a class="anchor" href="#_highlight_css_recommendation"></a>8. Highlight Css Recommendation</h2>
+<div class="sectionbody">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>atelier-dune，unikitty-light，macintosh，green-screen，<br>
+vs，google-light，marrakesh，papercolor-dark，github-new，<br>
+cupertino，atelier-forest-light，material-vivid，one-light，<br>
+1c-light，fruit-soda，dirtysea，github，gradient-light，pico，<br>
+papercolor-light，nnfx-light，xcode，equilibrium-gray-light，<br>
+stackoverflow-light，ia-light，intellij-light，atelier-cave，<br>
+summerfruit-light，atelier-dune-light，atelier-seaside-light，<br>
+harmonic16-light，panda-syntax-light，atelier-sulphurpool-light，<br>
+paraiso，brogrammer，humanoid-light，atom-one-light，atelier-forest，</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_lunr_retrieve"><a class="anchor" href="#_lunr_retrieve"></a>9. Lunr Retrieve</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
@@ -903,7 +972,7 @@ npm i -g @node-rs/jieba</code></pre>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_tab"><a class="anchor" href="#_tab"></a>9. Tab</h2>
+<h2 id="_tab"><a class="anchor" href="#_tab"></a>10. Tab</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
@@ -924,7 +993,7 @@ npm i -D -g @asciidoctor/tabs</code></pre>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_antora_operation"><a class="anchor" href="#_antora_operation"></a>10. Antora Operation</h2>
+<h2 id="_antora_operation"><a class="anchor" href="#_antora_operation"></a>11. Antora Operation</h2>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
@@ -954,7 +1023,7 @@ antora antora-playbook.yml &amp; start %SITE_URL%</code></pre>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_antora_github"><a class="anchor" href="#_antora_github"></a>11. Antora Github</h2>
+<h2 id="_antora_github"><a class="anchor" href="#_antora_github"></a>12. Antora Github</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>

@@ -5,15 +5,14 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title> :: AsciiDoc</title>
     <meta name="generator" content="Antora 3.1.7">
-    
+
 <link rel="stylesheet" href="../../../../_/css/site.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/asciidoc.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
 
-<link rel="stylesheet" href="../../../../_/css/style/windows-10.css">
-
+<link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
     <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   	</head>
   	
@@ -334,6 +333,9 @@
     <span class="nav-text">Practical Case</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../PracticalCase/KafkaEntryCase.html">Kafka Entry Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../PracticalCase/MongoCase.html">Mongo Case</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -359,9 +361,6 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../PracticalCase/ModularizingCase.html">Modularizing Case</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../PracticalCase/HightlightingCase.html">Hightlighting Case</a>
   </li>
 </ul>
   </li>
@@ -413,7 +412,49 @@
     <a class="nav-link" href="../../Kafka/Fundamental/KafkaEco.html">Kafka Eco</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../Kafka/Fundamental/KafkaTheory.html">Kafka Theory</a>
+    <a class="nav-link" href="../../Kafka/Fundamental/KafkaTopic.html">Kafka Topic</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Fundamental/KafkaProducer.html">Kafka Producer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Fundamental/KafkaConsumer.html">Kafka Consumer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Fundamental/GroupOffset.html">Group Offset</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Fundamental/KafkaBroker.html">Kafka Broker</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Fundamental/TopicReplication.html">Topic Replication</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Fundamental/KafkaKRaft.html">KafkaK Raft</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Cli</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Cli/TopicCli.html">Topic Cli</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Cli/ProducerCli.html">Producer Cli</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Cli/ConsumerCli.html">Consumer Cli</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Cli/ConsumerInGroupCli.html">Group Cli</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Cli/ConsumerGroupManagementCli.html">Group Management Cli</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Cli/ConnectCli.html">Connect Cli</a>
   </li>
 </ul>
   </li>
@@ -599,7 +640,7 @@
 <h3 id="_hosts"><a class="anchor" href="#_hosts"></a>2.2. hosts</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">vim /etc/hosts
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">vim /etc/hosts
 
 192.168.1.121	k8s-master
 192.168.1.122	k8s-worker</code></pre>
@@ -610,7 +651,7 @@
 <h3 id="_更新环境"><a class="anchor" href="#_更新环境"></a>2.3. 更新环境</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">apt update</code></pre>
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">apt update</code></pre>
 </div>
 </div>
 </div>
@@ -618,7 +659,7 @@
 <h3 id="_disable_swap"><a class="anchor" href="#_disable_swap"></a>2.4. Disable Swap</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">swapoff -a &amp;&amp; sed -i -e '/swap/d' /etc/fstab
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">swapoff -a &amp;&amp; sed -i -e '/swap/d' /etc/fstab
 
 # vim /etc/fstab
 # 注释swap.img行
@@ -635,7 +676,7 @@ swapon --show &amp;&amp; free -mh</code></pre>
 <h3 id="_关闭防火墙"><a class="anchor" href="#_关闭防火墙"></a>2.5. 关闭防火墙</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell"># 生产慎用
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># 生产慎用
 ufw disable &amp;&amp; ufw status</code></pre>
 </div>
 </div>
@@ -644,7 +685,7 @@ ufw disable &amp;&amp; ufw status</code></pre>
 <h3 id="_network_traffic"><a class="anchor" href="#_network_traffic"></a>2.6. Network Traffic</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">cat &lt;&lt;EOF | tee /etc/modules-load.d/k8s.conf
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">cat &lt;&lt;EOF | tee /etc/modules-load.d/k8s.conf
 overlay
 br_netfilter
 EOF</code></pre>
@@ -652,7 +693,7 @@ EOF</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">modprobe overlay &amp;&amp; modprobe br_netfilter
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">modprobe overlay &amp;&amp; modprobe br_netfilter
 
 lsmod | grep br_netfilter &amp;&amp; lsmod | grep overlay</code></pre>
 </div>
@@ -662,7 +703,7 @@ lsmod | grep br_netfilter &amp;&amp; lsmod | grep overlay</code></pre>
 <h3 id="_ip_forward"><a class="anchor" href="#_ip_forward"></a>2.7. IP Forward</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">cat &lt;&lt;EOF | tee /etc/sysctl.d/k8s.conf
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">cat &lt;&lt;EOF | tee /etc/sysctl.d/k8s.conf
 net.bridge.bridge-nf-call-iptables = 1
 net.bridge.bridge-nf-call-ip6tables = 1
 net.ipv4.ip_forward = 1
@@ -671,7 +712,7 @@ EOF</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">sysctl --system</code></pre>
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">sysctl --system</code></pre>
 </div>
 </div>
 </div>
@@ -704,7 +745,7 @@ EOF</code></pre>
 <h3 id="_依赖组件"><a class="anchor" href="#_依赖组件"></a>3.1. 依赖组件</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">apt update &amp;&amp; apt install -y apt-transport-https ca-certificates curl</code></pre>
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">apt update &amp;&amp; apt install -y apt-transport-https ca-certificates curl</code></pre>
 </div>
 </div>
 </div>
@@ -712,7 +753,7 @@ EOF</code></pre>
 <h3 id="_密钥与源"><a class="anchor" href="#_密钥与源"></a>3.2. 密钥与源</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">#curl -fsSL https://packages.cloud.google.com/apt/doc/apt-key.gpg | \
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">#curl -fsSL https://packages.cloud.google.com/apt/doc/apt-key.gpg | \
 #	gpg --dearmor -o /etc/apt/keyrings/kubernetes-archive-keyring.gpg
 
 #echo "deb [signed-by=/etc/apt/keyrings/kubernetes-archive-keyring.gpg] \
@@ -735,7 +776,7 @@ echo "deb [signed-by=/etc/apt/keyrings/kubernetes-archive-keyring.gpg] \
 <h3 id="_安装kube工具"><a class="anchor" href="#_安装kube工具"></a>3.3. 安装kube工具</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell"># apt install -y kubelet=1.27.4-00 kubeadm=1.27.4-00 kubectl=1.27.4-00
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># apt install -y kubelet=1.27.4-00 kubeadm=1.27.4-00 kubectl=1.27.4-00
 apt update &amp;&amp; apt install -y kubelet kubeadm kubectl
 
 # 阻止自动更新
@@ -747,7 +788,7 @@ apt-mark hold kubelet kubeadm kubectl</code></pre>
 <h3 id="_查看版本"><a class="anchor" href="#_查看版本"></a>3.4. 查看版本</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell"># 指定格式yaml或json
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># 指定格式yaml或json
 
 kubectl version --output=json --client &amp;&amp; \
 	kubeadm version --output=json &amp;&amp; kubelet --version</code></pre>
@@ -758,7 +799,7 @@ kubectl version --output=json --client &amp;&amp; \
 <h3 id="_开机启动"><a class="anchor" href="#_开机启动"></a>3.5. 开机启动</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">systemctl enable kubelet</code></pre>
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">systemctl enable kubelet</code></pre>
 </div>
 </div>
 </div>
@@ -771,7 +812,7 @@ kubectl version --output=json --client &amp;&amp; \
 <h3 id="_生成配置文件"><a class="anchor" href="#_生成配置文件"></a>4.1. 生成配置文件</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">containerd config default |tee /etc/containerd/config.toml</code></pre>
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">containerd config default |tee /etc/containerd/config.toml</code></pre>
 </div>
 </div>
 </div>
@@ -807,7 +848,7 @@ kubectl version --output=json --client &amp;&amp; \
 <h3 id="_开机自启动"><a class="anchor" href="#_开机自启动"></a>4.3. 开机自启动</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">systemctl daemon-reload &amp;&amp; \
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">systemctl daemon-reload &amp;&amp; \
 	systemctl restart containerd &amp;&amp; \
 	systemctl enable containerd</code></pre>
 </div>
@@ -822,7 +863,7 @@ kubectl version --output=json --client &amp;&amp; \
 <h3 id="_生成初始化配置"><a class="anchor" href="#_生成初始化配置"></a>5.1. 生成初始化配置</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">kubeadm config print init-defaults &gt; kubeadm.conf</code></pre>
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">kubeadm config print init-defaults &gt; kubeadm.conf</code></pre>
 </div>
 </div>
 </div>
@@ -910,7 +951,7 @@ imageRepository: registry.k8s.io 修改为：<br>
 <h3 id="_master初始化"><a class="anchor" href="#_master初始化"></a>5.3. Master初始化</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">kubeadm init --config=kubeadm.conf --v=6
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">kubeadm init --config=kubeadm.conf --v=6
 
 # 若初始化失败，则重置
 kubeadm reset</code></pre>
@@ -918,7 +959,7 @@ kubeadm reset</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell"># 无需操作此步骤，仅供参考
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># 无需操作此步骤，仅供参考
 kubeadm init \
 	--apiserver-advertise-address=192.168.1.121 \
 	--image-repository registry.aliyuncs.com/google_containers \
@@ -933,7 +974,7 @@ kubeadm init \
 <h3 id="_配置kubectl"><a class="anchor" href="#_配置kubectl"></a>5.4. 配置kubectl</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">mkdir -p $HOME/.kube &amp;&amp; \
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">mkdir -p $HOME/.kube &amp;&amp; \
 	cp -i /etc/kubernetes/admin.conf $HOME/.kube/config &amp;&amp; \
 	chown $(id -u):$(id -g) $HOME/.kube/config
 
@@ -973,7 +1014,7 @@ export KUBECONFIG=/etc/kubernetes/admin.conf</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">kubeadm token create --print-join-command</code></pre>
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">kubeadm token create --print-join-command</code></pre>
 </div>
 </div>
 <div class="ulist">
@@ -985,7 +1026,7 @@ export KUBECONFIG=/etc/kubernetes/admin.conf</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">kubeadm join 192.168.1.121:6443 --token 40q6kz.b05lx4s099nku2r9 \
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">kubeadm join 192.168.1.121:6443 --token 40q6kz.b05lx4s099nku2r9 \
 	--discovery-token-ca-cert-hash \
 	sha256:4fa9ffe9c07b42edc5f286359b6661d1e2798c73a3d63fe33ade9cb808c8154a</code></pre>
 </div>
@@ -1003,7 +1044,7 @@ worker节点相同目录，再在worker节点执行如下命令(非root)：</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">scp -r root@192.168.1.121:/etc/kubernetes/admin.conf /etc/kubernetes/
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">scp -r root@192.168.1.121:/etc/kubernetes/admin.conf /etc/kubernetes/
 
 mkdir -p $HOME/.kube &amp;&amp; \
 	cp -i /etc/kubernetes/admin.conf $HOME/.kube/config &amp;&amp; \
@@ -1025,7 +1066,7 @@ export KUBECONFIG=/etc/kubernetes/admin.conf</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell"># kubectl get nodes
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># kubectl get nodes
 NAME         STATUS   ROLES           AGE   VERSION
 k8s-master   Ready    control-plane   31m   v1.27.4
 k8s-worker   Ready    &lt;none&gt;          12m   v1.27.4
@@ -1054,7 +1095,7 @@ kubectl cluster-info</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">kubectl label nodes &lt;node-name&gt; &lt;label-key&gt;=&lt;label-value&gt;
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">kubectl label nodes &lt;node-name&gt; &lt;label-key&gt;=&lt;label-value&gt;
 kubectl label nodes k8s-worker node-role.kubernetes.io/control-plane=control-plane
 kubectl label nodes k8s-worker node-role.kubernetes.io/worker=worker
 kubectl label nodes k8s-worker node-role.kubernetes.io/worker1=worker1
@@ -1071,7 +1112,7 @@ kubectl label nodes k8s-worker node-role.kubernetes.io/worker2=worker2</code></p
 <h3 id="_kubelet日志"><a class="anchor" href="#_kubelet日志"></a>7.1. kubelet日志</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">tail -f /var/log/syslog</code></pre>
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">tail -f /var/log/syslog</code></pre>
 </div>
 </div>
 <div class="ulist">
@@ -1085,7 +1126,7 @@ kubelet会定时尝试连接k8s api server，直到成功。</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell"># tail -f /var/log/syslog
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># tail -f /var/log/syslog
 Started kubelet: The Kubernetes Node Agent.
 "command failed" err="failed to load kubelet config file, error:
 	failed to load Kubelet config file /var/lib/kubelet/config.yaml,

@@ -5,15 +5,14 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title> :: AsciiDoc</title>
     <meta name="generator" content="Antora 3.1.7">
-    
+
 <link rel="stylesheet" href="../../../../_/css/site.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/asciidoc.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
 
-<link rel="stylesheet" href="../../../../_/css/style/windows-10.css">
-
+<link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
     <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   	</head>
   	
@@ -334,6 +333,9 @@
     <span class="nav-text">Practical Case</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../PracticalCase/KafkaEntryCase.html">Kafka Entry Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../PracticalCase/MongoCase.html">Mongo Case</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -359,9 +361,6 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../PracticalCase/ModularizingCase.html">Modularizing Case</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../PracticalCase/HightlightingCase.html">Hightlighting Case</a>
   </li>
 </ul>
   </li>
@@ -413,7 +412,49 @@
     <a class="nav-link" href="../../Kafka/Fundamental/KafkaEco.html">Kafka Eco</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../Kafka/Fundamental/KafkaTheory.html">Kafka Theory</a>
+    <a class="nav-link" href="../../Kafka/Fundamental/KafkaTopic.html">Kafka Topic</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Fundamental/KafkaProducer.html">Kafka Producer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Fundamental/KafkaConsumer.html">Kafka Consumer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Fundamental/GroupOffset.html">Group Offset</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Fundamental/KafkaBroker.html">Kafka Broker</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Fundamental/TopicReplication.html">Topic Replication</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Fundamental/KafkaKRaft.html">KafkaK Raft</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Cli</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Cli/TopicCli.html">Topic Cli</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Cli/ProducerCli.html">Producer Cli</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Cli/ConsumerCli.html">Consumer Cli</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Cli/ConsumerInGroupCli.html">Group Cli</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Cli/ConsumerGroupManagementCli.html">Group Management Cli</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Kafka/Cli/ConnectCli.html">Connect Cli</a>
   </li>
 </ul>
   </li>
@@ -472,8 +513,14 @@
 <div id="toctitle"></div>
 <ul class="sectlevel1">
 <li><a href="#_introduction">1. Introduction</a></li>
-<li><a href="#_install_on_docker">2. Install on Docker</a></li>
-<li><a href="#_install_on_linux">3. Install On Linux</a></li>
+<li><a href="#_install_on_docker">2. Install on Docker</a>
+<ul class="sectlevel2">
+<li><a href="#_generate_clusterid">2.1. Generate ClusterId</a></li>
+<li><a href="#_docker_compose_yaml">2.2. docker-compose.yaml</a></li>
+</ul>
+</li>
+<li><a href="#_start_kafka">3. Start Kafka</a></li>
+<li><a href="#_install_on_linux">4. Install On Linux</a></li>
 </ul>
 </div>
 <div class="sect1">
@@ -485,7 +532,7 @@
 <p>推荐使用Conduktor(带UI)创建Cloud Kafka Cluster；</p>
 </li>
 <li>
-<p>不建议Windows下使用KRaft模式，因可能无法删除主题；</p>
+<p>不建议Windows下使用KRaft模式，如可能无法删除主题等诸多问题；</p>
 </li>
 <li>
 <p><a href="https://www.kafkatool.com" target="_blank" rel="noopener">Kafka Ultimate UI Tool</a></p>
@@ -506,16 +553,75 @@
 <div class="sect1">
 <h2 id="_install_on_docker"><a class="anchor" href="#_install_on_docker"></a>2. Install on Docker</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="_generate_clusterid"><a class="anchor" href="#_generate_clusterid"></a>2.1. Generate ClusterId</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">docker run \
-	--name kafka \
-	-p 9092:9092 \
-	--privileged=true \
-	--net network-common \
-	-v /elf/kafka/config:/mnt/shared/config  \
-	-itd apache/kafka:3.7.0</code></pre>
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># generate kafka clusterId
+
+./kafka-storage.sh random-uuid
+
+cat /proc/sys/kernel/random/uuid | tr -d '-' | base64 | cut -b 1-22
+
+uuidgen --time | tr -d '-' | base64 | cut -b 1-22</code></pre>
 </div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_docker_compose_yaml"><a class="anchor" href="#_docker_compose_yaml"></a>2.2. docker-compose.yaml</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>镜像选择：apache/kafka:3.7.0或confluentinc/cp-kafka:7.6.1</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">version: '3.8'
+services:
+  kafka:
+    image: apache/kafka:3.7.0
+    container_name: kafka
+    privileged: true
+    hostname: kafka
+    ports:
+      - "9092:9092"
+    environment:
+      KAFKA_NODE_ID: 1
+      KAFKA_CONTROLLER_LISTENER_NAMES: 'CONTROLLER'
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: 'CONTROLLER:PLAINTEXT,INTERNAL:PLAINTEXT,EXTERNAL:PLAINTEXT'
+      KAFKA_LISTENERS: 'INTERNAL://kafka:29092,CONTROLLER://kafka:29093,EXTERNAL://0.0.0.0:9092'
+      KAFKA_ADVERTISED_LISTENERS: 'INTERNAL://kafka:29092,EXTERNAL://192.168.0.123:9092'
+      KAFKA_INTER_BROKER_LISTENER_NAME: 'INTERNAL'
+      KAFKA_CONTROLLER_QUORUM_VOTERS: '1@kafka:29093'
+      KAFKA_PROCESS_ROLES: 'broker,controller'
+      KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 3
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+      CLUSTER_ID: 'MmUzZTMyMWVhMjFhNDAyNG'
+      KAFKA_LOG_DIRS: '/tmp/kraft-combined-logs'
+networks:
+  default:
+    name: network-common
+    external: true</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_start_kafka"><a class="anchor" href="#_start_kafka"></a>3. Start Kafka</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>docker compose up -d</p>
+</li>
+<li>
+<p><a href="https://www.confluent.io/blog/kafka-client-cannot-connect-to-broker-on-aws-on-docker-etc" class="bare">https://www.confluent.io/blog/kafka-client-cannot-connect-to-broker-on-aws-on-docker-etc</a></p>
+</li>
+</ul>
 </div>
 <table class="tableblock frame-all grid-all stripes-even fit-content">
 <colgroup>
@@ -553,7 +659,7 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="_install_on_linux"><a class="anchor" href="#_install_on_linux"></a>3. Install On Linux</h2>
+<h2 id="_install_on_linux"><a class="anchor" href="#_install_on_linux"></a>4. Install On Linux</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
@@ -570,7 +676,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">.bin/kafka-storage.sh format -t &lt;uuid&gt; -c ~/config/kraft/server.properties</code></pre>
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">.bin/kafka-storage.sh format -t &lt;uuid&gt; -c ~/config/kraft/server.properties</code></pre>
 </div>
 </div>
 <div class="ulist">
@@ -586,7 +692,7 @@ log.dirs中的目录，默认为/tmp/kraft-combined-logs；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">./bin/kafka-server-start.sh ~/config/kraft/server.properties</code></pre>
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">./bin/kafka-server-start.sh ~/config/kraft/server.properties</code></pre>
 </div>
 </div>
 <div class="ulist">
