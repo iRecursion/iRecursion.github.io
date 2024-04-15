@@ -795,7 +795,8 @@ a+.breadcrumbs {
     }
 }
 .doc h1, .doc h2, .doc h3, .doc h4, .doc h5, .doc h6 {
-    color: #191919;
+    /*color: #191919;*/
+    color: fuchsia;
     font-weight: 400;
     -ms-hyphens: none;
     hyphens: none;
