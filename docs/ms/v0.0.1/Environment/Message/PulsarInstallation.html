@@ -595,7 +595,7 @@ docker pull apachepulsar/pulsar-manager:v0.4.0 &amp;&amp; \
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-prop hljs" data-lang="prop">spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+<pre class="highlightjs highlight"><code class="language-properties hljs" data-lang="properties">spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.datasource.url=jdbc:postgresql://192.168.0.123:3306/pulsar_manager
 spring.datasource.username=root
 spring.datasource.password=cipher</code></pre>
@@ -603,7 +603,7 @@ spring.datasource.password=cipher</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-proper hljs" data-lang="proper">docker run \
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">docker run \
 	--name pulsar-manager \
 	-p 9527:9527 -p 7750:7750 \
 	--privileged=true \

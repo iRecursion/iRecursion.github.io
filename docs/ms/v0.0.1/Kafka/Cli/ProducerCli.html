@@ -509,7 +509,142 @@
   <div class="toc-menu"></div>
 </aside>
 			<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_prerequisite">1. Prerequisite</a></li>
+<li><a href="#_produce_msg">2. Produce Msg</a></li>
+<li><a href="#_note">3. Note</a></li>
+<li><a href="#_from_file">4. From File</a></li>
+<li><a href="#_with_key">5. With Key</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_prerequisite"><a class="anchor" href="#_prerequisite"></a>1. Prerequisite</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">./kafka-topics.sh \
+	--bootstrap-server 192.168.0.123:9092  \
+	--topic topic-elf --create \
+	--partitions 3 --replication-factor 1</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_produce_msg"><a class="anchor" href="#_produce_msg"></a>2. Produce Msg</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">./kafka-console-producer.sh --bootstrap-server 192.168.0.123:9092 \
+	--topic topic-elf
 
+&gt; produce pal
+&gt; the second msg
+
+
+kafka-console-producer.sh --bootstrap-server localhost:9092</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_note"><a class="anchor" href="#_note"></a>3. Note</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>默认，消息使用null key发送；</p>
+</li>
+<li>
+<p>具有所提供名称的主题应存在，若指定主题不存在，<br>
+则将使用默认分区数和复制因子，创建提供名称的新主题；</p>
+</li>
+<li>
+<p>这些由config/server.properties的broker-side设置：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-properties hljs" data-lang="properties">auto.create.topics.enable=true
+num.partitions=1
+default.replication.factor=1</code></pre>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Entry</th>
+<th class="tableblock halign-left valign-top">Memo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">--compression-codec</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">启用消息压缩，默认gzip，可选值：none，gzip，snappy，lz4，zstd</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">--producer-property</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">传入任何生产者属性，如：acks=all</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">--request-required-acks</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">直接设置ack的替代方法</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_from_file"><a class="anchor" href="#_from_file"></a>4. From File</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># topic-input.txt
+
+produce pal
+the second msg</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">./kafka-console-producer.sh --bootstrap-server 192.168.0.123:9092 \
+	--topic topic-elf &lt; topic-input.txt</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_with_key"><a class="anchor" href="#_with_key"></a>5. With Key</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>默认：发送到主题的消息，将产生带有null key的消息；</p>
+</li>
+<li>
+<p>必须使用属性parse.key和key.separator，来将key和消息一起发送；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># 此处使用:作为分隔符
+./kafka-console-producer.sh --bootstrap-server 192.168.0.123:9092 \
+	--topic topic-elf --property parse.key=true --property key.separator=:
+
+&gt;entry key:entry value
+&gt;name:elf</code></pre>
+</div>
+</div>
+</div>
+</div>
 </article>
 	</div>
 </main>

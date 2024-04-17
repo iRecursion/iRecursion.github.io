@@ -512,117 +512,43 @@
 <div id="toc" class="toc">
 <div id="toctitle"></div>
 <ul class="sectlevel1">
-<li><a href="#_introduction">1. Introduction</a></li>
-<li><a href="#_install_on_docker">2. Install on Docker</a>
-<ul class="sectlevel2">
-<li><a href="#_generate_clusterid">2.1. Generate ClusterId</a></li>
-<li><a href="#_docker_compose_yaml">2.2. docker-compose.yaml</a></li>
-</ul>
-</li>
-<li><a href="#_start_kafka">3. Start Kafka</a></li>
-<li><a href="#_install_on_linux">4. Install On Linux</a></li>
+<li><a href="#_prerequisite">1. Prerequisite</a></li>
+<li><a href="#_property_variable">2. Property Variable</a></li>
+<li><a href="#_generate_clusterid">3. Generate ClusterId</a></li>
+<li><a href="#_environment_variable">4. Environment Variable</a></li>
+<li><a href="#_schema_registry">5. Schema Registry</a></li>
+<li><a href="#_compose_standalone">6. Compose Standalone</a></li>
+<li><a href="#_compose_cluster">7. Compose Cluster</a></li>
+<li><a href="#_install_on_linux">8. Install On Linux</a></li>
 </ul>
 </div>
 <div class="sect1">
-<h2 id="_introduction"><a class="anchor" href="#_introduction"></a>1. Introduction</h2>
+<h2 id="_prerequisite"><a class="anchor" href="#_prerequisite"></a>1. Prerequisite</h2>
 <div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>推荐使用Conduktor(带UI)创建Cloud Kafka Cluster；</p>
-</li>
-<li>
-<p>不建议Windows下使用KRaft模式，如可能无法删除主题等诸多问题；</p>
-</li>
-<li>
-<p><a href="https://www.kafkatool.com" target="_blank" rel="noopener">Kafka Ultimate UI Tool</a></p>
-</li>
-<li>
-<p><a href="https://www.conduktor.io" target="_blank" rel="noopener">Kafka Universal Tooling</a></p>
-</li>
-<li>
-<p><a href="https://docs.kafka-eagle.org" target="_blank" rel="noopener">Kafka Cluster Monitor</a></p>
-</li>
-<li>
-<p><a href="https://github.com/vran-dev/PrettyZoo" target="_blank" rel="noopener">Zookeeper Pretty GUI</a></p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_install_on_docker"><a class="anchor" href="#_install_on_docker"></a>2. Install on Docker</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_generate_clusterid"><a class="anchor" href="#_generate_clusterid"></a>2.1. Generate ClusterId</h3>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># generate kafka clusterId
-
-./kafka-storage.sh random-uuid
-
-cat /proc/sys/kernel/random/uuid | tr -d '-' | base64 | cut -b 1-22
-
-uuidgen --time | tr -d '-' | base64 | cut -b 1-22</code></pre>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_docker_compose_yaml"><a class="anchor" href="#_docker_compose_yaml"></a>2.2. docker-compose.yaml</h3>
 <div class="ulist">
 <ul>
 <li>
 <p>镜像选择：apache/kafka:3.7.0或confluentinc/cp-kafka:7.6.1</p>
 </li>
+<li>
+<p>schema-registry可选，docker compose up -d；</p>
+</li>
+<li>
+<p><a href="https://www.confluent.io/blog/kafka-client-cannot-connect-to-broker-on-aws-on-docker-etc/" class="bare">https://www.confluent.io/blog/kafka-client-cannot-connect-to-broker-on-aws-on-docker-etc/</a></p>
+</li>
+<li>
+<p>不建议Windows下使用KRaft模式，如可能无法删除主题等诸多问题；</p>
+</li>
+<li>
+<p>常用工具：kafkatool，conduktor，kafka-eagle，PrettyZoo，</p>
+</li>
 </ul>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">version: '3.8'
-services:
-  kafka:
-    image: apache/kafka:3.7.0
-    container_name: kafka
-    privileged: true
-    hostname: kafka
-    ports:
-      - "9092:9092"
-    environment:
-      KAFKA_NODE_ID: 1
-      KAFKA_CONTROLLER_LISTENER_NAMES: 'CONTROLLER'
-      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: 'CONTROLLER:PLAINTEXT,INTERNAL:PLAINTEXT,EXTERNAL:PLAINTEXT'
-      KAFKA_LISTENERS: 'INTERNAL://kafka:29092,CONTROLLER://kafka:29093,EXTERNAL://0.0.0.0:9092'
-      KAFKA_ADVERTISED_LISTENERS: 'INTERNAL://kafka:29092,EXTERNAL://192.168.0.123:9092'
-      KAFKA_INTER_BROKER_LISTENER_NAME: 'INTERNAL'
-      KAFKA_CONTROLLER_QUORUM_VOTERS: '1@kafka:29093'
-      KAFKA_PROCESS_ROLES: 'broker,controller'
-      KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
-      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 3
-      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
-      CLUSTER_ID: 'MmUzZTMyMWVhMjFhNDAyNG'
-      KAFKA_LOG_DIRS: '/tmp/kraft-combined-logs'
-networks:
-  default:
-    name: network-common
-    external: true</code></pre>
-</div>
-</div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_start_kafka"><a class="anchor" href="#_start_kafka"></a>3. Start Kafka</h2>
+<h2 id="_property_variable"><a class="anchor" href="#_property_variable"></a>2. Property Variable</h2>
 <div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>docker compose up -d</p>
-</li>
-<li>
-<p><a href="https://www.confluent.io/blog/kafka-client-cannot-connect-to-broker-on-aws-on-docker-etc" class="bare">https://www.confluent.io/blog/kafka-client-cannot-connect-to-broker-on-aws-on-docker-etc</a></p>
-</li>
-</ul>
-</div>
 <table class="tableblock frame-all grid-all stripes-even fit-content">
 <colgroup>
 <col>
@@ -649,17 +575,279 @@ networks:
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_generate_clusterid"><a class="anchor" href="#_generate_clusterid"></a>3. Generate ClusterId</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># generate  clusterId
+
+./kafka-storage.sh random-uuid
+
+cat /proc/sys/kernel/random/uuid | tr -d '-' | base64 | cut -b 1-22
+
+uuidgen --time | tr -d '-' | base64 | cut -b 1-22</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_environment_variable"><a class="anchor" href="#_environment_variable"></a>4. Environment Variable</h2>
+<div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://www.conduktor.io/kafka/starting-kafka" class="bare">https://www.conduktor.io/kafka/starting-kafka</a></p>
+<p><mark>KAFKA_NODE_ID</mark>：Kafka节点唯一标识(uniquely identifying)；</p>
+</li>
+<li>
+<p><mark>KAFKA_CONTROLLER_LISTENER_NAMES</mark>：<br>
+控制器名称，逗号分隔，KRaft模式必须设置，因默认PLAINTEXT协议；</p>
+</li>
+<li>
+<p><mark>KAFKA_LISTENER_SECURITY_PROTOCOL_MAP</mark>：<br>
+将监听器名称映射到响应的安全协议，为未经身份认证且未加密的PLAINTEXT<br>
+安全协议分配三个监听器(CONTROLLER，INTERNAL，EXTERNAL)；</p>
+</li>
+<li>
+<p><mark>KAFKA_LISTENERS</mark>：服务器监听的地址</p>
+<div class="ulist">
+<ul>
+<li>
+<p><mark>CONTROLLER</mark>：controller quorum communication；</p>
+</li>
+<li>
+<p><mark>INTERNAL</mark>：internal communication between DATA PLANE broker<br>
+及与broker位于同一网络上的客户端(如Schema Registry)；</p>
+</li>
+<li>
+<p><mark>EXTERNAL</mark>：用于与broker网络外部的客户端通信，<br>
+如连接到Docker中运行的Kafka集群的计算机上运行的应用程序；</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><mark>KAFKA_ADVERTISED_LISTENERS</mark>：<br>
+address advertised to client，若未设置，则默认KAFKA_LISTENERS；</p>
+</li>
+<li>
+<p><mark>KAFKA_CONTROLLER_QUORUM_VOTERS</mark>：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>逗号分隔的controller voter(控制器投票者)列表；</p>
+</li>
+<li>
+<p>格式：{controllerId}@{controllerHost}:{controllerPort}；</p>
+</li>
+<li>
+<p>quorum中controller使用29093端口；</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><mark>KAFKA_PROCESS_ROLES</mark>：指定节点的角色：broker，controller，both；</p>
+</li>
+<li>
+<p><mark>CLUSTER_ID</mark>：集群的唯一16字节Base64 Uuid；</p>
+</li>
+<li>
+<p><mark>KAFKA_LOG_DIRS</mark>：存储日志文件的以逗号分隔的目录列表；</p>
+</li>
+<li>
+<p><mark>KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS</mark>：<br>
+当第一个成员(member)加入空组(empty group)时，GroupCoordinator<br>
+用于启动初始重新平衡(start initial rebalance)的延迟(delay)；</p>
+</li>
+<li>
+<p><mark>KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR</mark>：<br>
+__kafka_offsets的复制因子，该主题存储提交的偏移量，<br>
+默认为1，但我们在3个broker集群中调整为3；</p>
+</li>
+<li>
+<p><mark>KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR</mark>：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>__transaction_state的复制因子，<br>
+该主题存储事务状态，并在第一次请求事务Api时自动创建；</p>
+</li>
+<li>
+<p>复制因子是节点的数量，包括Leader；</p>
+</li>
+<li>
+<p>主机端口9092，9093，9094映射到容器的端口9092，<br>
+使broker网络外部的Kafka客户端能够连接到集群；</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>每个Kafka节点的其它KRaft属性可使用server.properties配置，<br>
+在Docker Compose中设置属性时，请记住使用"KAFKA_"前缀；</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_install_on_linux"><a class="anchor" href="#_install_on_linux"></a>4. Install On Linux</h2>
+<h2 id="_schema_registry"><a class="anchor" href="#_schema_registry"></a>5. Schema Registry</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><mark>SCHEMA_REGISTRY_HOST_NAME</mark>：advertised host name，<br>
+Schema Registry的多个实例间相互通信(intercommunication)所必须；</p>
+</li>
+<li>
+<p><mark>SCHEMA_REGISTRY_KAFKASTORE_BOOTSTRAP_SERVERS</mark>：<br>
+要连接到的Kafka broker的列表；</p>
+</li>
+<li>
+<p><mark>SCHEMA_REGISTRY_LISTNERS</mark>：默认默认http://0.0.0.0.8081，<br>
+支持Http或Https的Api请求的监听器的逗号分隔列表；</p>
+</li>
+<li>
+<p>其它属性：https://docs.confluent.io/platform/current/schema-registry/installation/config.html</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_compose_standalone"><a class="anchor" href="#_compose_standalone"></a>6. Compose Standalone</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">version: '3.8'
+services:
+  kafka:
+    image: apache/kafka:3.7.0
+    container_name: kafka
+    privileged: true
+    hostname: kafka
+    ports:
+      - "9092:9092"
+    environment:
+      KAFKA_NODE_ID: 1
+      KAFKA_CONTROLLER_LISTENER_NAMES: 'CONTROLLER'
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: 'CONTROLLER:PLAINTEXT,INTERNAL:PLAINTEXT,EXTERNAL:PLAINTEXT'
+      KAFKA_LISTENERS: 'INTERNAL://kafka:29092,CONTROLLER://kafka:29093,EXTERNAL://0.0.0.0:9092'
+      KAFKA_ADVERTISED_LISTENERS: 'INTERNAL://kafka:29092,EXTERNAL://192.168.0.123:9092'
+      KAFKA_INTER_BROKER_LISTENER_NAME: 'INTERNAL'
+      KAFKA_CONTROLLER_QUORUM_VOTERS: '1@kafka:29093'
+      KAFKA_PROCESS_ROLES: 'broker,controller'
+      KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 3
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+      CLUSTER_ID: 'YWU3MzE1YmVmYzhiMTFlZT'
+      KAFKA_LOG_DIRS: '/tmp/kafka-log'
+networks:
+  default:
+    name: network-common
+    external: true</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_compose_cluster"><a class="anchor" href="#_compose_cluster"></a>7. Compose Cluster</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">version: '3.8'
+services:
+  kafka1:
+    image: apache/kafka:3.7.0
+    container_name: kafka1
+    hostname: kafka1
+    ports:
+      - "9092:9092"
+    environment:
+      KAFKA_NODE_ID: 1
+      KAFKA_CONTROLLER_LISTENER_NAMES: 'CONTROLLER'
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: 'CONTROLLER:PLAINTEXT,INTERNAL:PLAINTEXT,EXTERNAL:PLAINTEXT'
+      KAFKA_LISTENERS: 'INTERNAL://kafka1:29092,CONTROLLER://kafka1:29093,EXTERNAL://0.0.0.0:9092'
+      KAFKA_ADVERTISED_LISTENERS: 'INTERNAL://kafka1:29092,EXTERNAL://localhost:9092'
+      KAFKA_INTER_BROKER_LISTENER_NAME: 'INTERNAL'
+      KAFKA_CONTROLLER_QUORUM_VOTERS: '1@kafka1:29093,2@kafka2:29093,3@kafka3:29093'
+      KAFKA_PROCESS_ROLES: 'broker,controller'
+      KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 3
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 3
+      CLUSTER_ID: 'OTUxOTAzMTJmYzhiMTFlZT'
+      KAFKA_LOG_DIRS: '/tmp/kafka-log'
+
+  kafka2:
+    image: apache/kafka:3.7.0
+    container_name: kafka2
+    hostname: kafka2
+    ports:
+      - "9093:9093"
+    environment:
+      KAFKA_NODE_ID: 2
+      KAFKA_CONTROLLER_LISTENER_NAMES: 'CONTROLLER'
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: 'CONTROLLER:PLAINTEXT,INTERNAL:PLAINTEXT,EXTERNAL:PLAINTEXT'
+      KAFKA_LISTENERS: 'INTERNAL://kafka2:29092,CONTROLLER://kafka2:29093,EXTERNAL://0.0.0.0:9093'
+      KAFKA_ADVERTISED_LISTENERS: 'INTERNAL://kafka2:29092,EXTERNAL://localhost:9093'
+      KAFKA_INTER_BROKER_LISTENER_NAME: 'INTERNAL'
+      KAFKA_CONTROLLER_QUORUM_VOTERS: '1@kafka1:29093,2@kafka2:29093,3@kafka3:29093'
+      KAFKA_PROCESS_ROLES: 'broker,controller'
+      KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 3
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 3
+      CLUSTER_ID: 'OTUxOTAzMTJmYzhiMTFlZT'
+      KAFKA_LOG_DIRS: '/tmp/kafka-log'
+
+  kafka3:
+    image: apache/kafka:3.7.0
+    container_name: kafka3
+    hostname: kafka3
+    ports:
+      - "9094:9094"
+    environment:
+      KAFKA_NODE_ID: 3
+      KAFKA_CONTROLLER_LISTENER_NAMES: 'CONTROLLER'
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: 'CONTROLLER:PLAINTEXT,INTERNAL:PLAINTEXT,EXTERNAL:PLAINTEXT'
+      KAFKA_LISTENERS: 'INTERNAL://kafka3:29092,CONTROLLER://kafka3:29093,EXTERNAL://0.0.0.0:9094'
+      KAFKA_ADVERTISED_LISTENERS: 'INTERNAL://kafka3:29092,EXTERNAL://localhost:9094'
+      KAFKA_INTER_BROKER_LISTENER_NAME: 'INTERNAL'
+      KAFKA_CONTROLLER_QUORUM_VOTERS: '1@kafka1:29093,2@kafka2:29093,3@kafka3:29093'
+      KAFKA_PROCESS_ROLES: 'broker,controller'
+      KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 3
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 3
+      CLUSTER_ID: 'OTUxOTAzMTJmYzhiMTFlZT'
+      KAFKA_LOG_DIRS: '/tmp/kafka-log'
+
+  schema-registry:
+    image: confluentinc/cp-schema-registry:7.6.1
+    container_name: schema-registry
+    hostname: schema-registry
+    ports:
+      - "8081:8081"
+    environment:
+      SCHEMA_REGISTRY_HOST_NAME: schema-registry
+      SCHEMA_REGISTRY_KAFKASTORE_BOOTSTRAP_SERVERS: 'kafka1:29092,kafka2:29092,kafka3:29092'
+      SCHEMA_REGISTRY_LISTENERS: 'http://0.0.0.0:8081'
+    depends_on:
+      - kafka1
+      - kafka2
+      - kafka3
+
+networks:
+  default:
+    name: network-common
+    external: true</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_install_on_linux"><a class="anchor" href="#_install_on_linux"></a>8. Install On Linux</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>

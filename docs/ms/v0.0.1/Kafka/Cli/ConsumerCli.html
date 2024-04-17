@@ -509,7 +509,166 @@
   <div class="toc-menu"></div>
 </aside>
 			<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_prerequisite">1. Prerequisite</a></li>
+<li><a href="#_consume_msg">2. Consume Msg</a></li>
+<li><a href="#_option">3. Option</a></li>
+<li><a href="#_show_key_value">4. Show Key Value</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_prerequisite"><a class="anchor" href="#_prerequisite"></a>1. Prerequisite</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">./kafka-console-consumer.sh \
+	--bootstrap-server 192.168.0.123:9092 \
+	--topic topic-elf --create \
+	--partitions 3 --replication-factor 1</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_consume_msg"><a class="anchor" href="#_consume_msg"></a>2. Consume Msg</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># 消费未来消息
+./kafka-console-consumer.sh --bootstrap-server 192.168.0.123:9092 \
+	--topic topic-elf
 
+# 消费所有历史消息及未来消息
+./kafka-console-consumer.sh --bootstrap-server 192.168.0.123:9092 \
+	--topic topic-elf --from-beginning</code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>消费者将保持打开状态，直到退出，并将继续在屏幕上显示消息；</p>
+</li>
+<li>
+<p>它假设所有传入的消息都可反序列化为文本(字符串)；</p>
+</li>
+<li>
+<p>默认：Kafka Console Consumer不显示key或任何分区信息；</p>
+</li>
+<li>
+<p>消息只在分区级别内排序，因一个主题可能由多个分区创建，<br>
+若只有单分区，则看到的消息总是排序的；</p>
+</li>
+<li>
+<p>若没任何输出，但主题中有数据，请不要忘记使用&#8212;&#8203;from-beginning选项；</p>
+</li>
+<li>
+<p>若需读取历史数据，请使用&#8212;&#8203;from-beginning选项，<br>
+否则只能显示和读取未来的数据，忌用&#8212;&#8203;zookeeper选项；</p>
+</li>
+<li>
+<p>默认，消息不会显示key或元数据信息，若主题不存在，则会默认自动创建；</p>
+</li>
+<li>
+<p>可使用逗号分隔的列表或模式，一次使用多个主题；</p>
+</li>
+<li>
+<p>若未指定消费者组Id，则会生产随机消费者组；</p>
+</li>
+<li>
+<p>若消息未按顺序显示，请记住消息的顺序是分区级别，而非主题级别；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_option"><a class="anchor" href="#_option"></a>3. Option</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Entry</th>
+<th class="tableblock halign-left valign-top">Memo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">--from-beginning</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">读取所有历史消息，及未来信息</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">--formatter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">以特定格式显示消息</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">--consumer-property</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">传入任何消费者属性，如allow.auto.create.topics</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">--group</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">默认会选择随机消费者组Id，可覆盖(override)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">--max-messages</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">退出前消耗的最大消息数</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">--partition</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">只想从特定分区消费</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_show_key_value"><a class="anchor" href="#_show_key_value"></a>4. Show Key Value</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>默认：仅显示kafka record value，使用此命令可显示key和value；</p>
+</li>
+<li>
+<p>使用格式化程序kafka.tools.DefaultMessageFormatter，<br>
+并使用属性print.timestamp=true，print.key=true，print.value=true：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">./kafka-console-consumer.sh --bootstrap-server 192.168.0.123:9092 \
+	--topic topic-elf --formatter kafka.tools.DefaultMessageFormatter \
+	--property print.timestamp=true --property print.key=true \
+	--property print.value=true --from-beginning</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>其它属性：print.partition，print.offset，print.headers，<br>
+key.separator，line.separator，headers.separator；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </article>
 	</div>
 </main>
