@@ -364,10 +364,20 @@
 <li><a href="#_网络配置">1. 网络配置</a></li>
 <li><a href="#_账户设置">2. 账户设置</a></li>
 <li><a href="#_ssh设置">3. SSH设置</a></li>
-<li><a href="#_安装源设置">4. 安装源设置</a></li>
-<li><a href="#_时间同步">5. 时间同步</a></li>
-<li><a href="#_语言环境">6. 语言环境</a></li>
-<li><a href="#_系统与硬件">7. 系统与硬件</a></li>
+<li><a href="#_mirror_source">4. Mirror Source</a></li>
+<li><a href="#_ubuntu_jammy">5. Ubuntu Jammy</a></li>
+<li><a href="#_ubuntu_noble">6. Ubuntu Noble</a>
+<ul class="sectlevel2">
+<li><a href="#_type">6.1. Type</a></li>
+<li><a href="#_uri">6.2. URI</a></li>
+<li><a href="#_suite">6.3. Suite</a></li>
+<li><a href="#_component">6.4. Component</a></li>
+<li><a href="#_sign_by">6.5. Sign By</a></li>
+</ul>
+</li>
+<li><a href="#_时间同步">7. 时间同步</a></li>
+<li><a href="#_语言环境">8. 语言环境</a></li>
+<li><a href="#_系统与硬件">9. 系统与硬件</a></li>
 </ul>
 </div>
 <div class="sect1">
@@ -477,12 +487,39 @@ systemctl restart sshd</code></pre>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_安装源设置"><a class="anchor" href="#_安装源设置"></a>4. 安装源设置</h2>
+<h2 id="_mirror_source"><a class="anchor" href="#_mirror_source"></a>4. Mirror Source</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-right valign-top">Ubuntu Version</th>
+<th class="tableblock halign-left valign-top">Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Ubuntu 24.04 Noble</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><mark>vim /etc/apt/sources.list.d/ubuntu.sources</mark></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Ubuntu 22.04 Jammy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><mark>vim /etc/apt/sources.list</mark></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ubuntu_jammy"><a class="anchor" href="#_ubuntu_jammy"></a>5. Ubuntu Jammy</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p><code>vim /etc/apt/sources.list</code></p>
+<p><mark>vim /etc/apt/sources.list</mark></p>
 </li>
 </ul>
 </div>
@@ -535,7 +572,218 @@ deb http://cn.archive.ubuntu.com/ubuntu jammy-security multiverse</code></pre>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_时间同步"><a class="anchor" href="#_时间同步"></a>5. 时间同步</h2>
+<h2 id="_ubuntu_noble"><a class="anchor" href="#_ubuntu_noble"></a>6. Ubuntu Noble</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><mark>vim /etc/apt/sources.list.d/ubuntu.sources</mark></p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">Types: deb deb-src
+URIs: https://mirrors.aliyun.com/ubuntu/
+Suites: noble noble-updates noble-backports noble-security noble-proposed
+Components: main restricted universe multiverse
+Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
+
+Types: deb deb-src
+URIs: https://mirrors.tuna.tsinghua.edu.cn/ubuntu/
+Suites: noble noble-updates noble-backports noble-security noble-proposed
+Components: main restricted universe multiverse
+Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
+
+Types: deb deb-src
+URIs: http://mirrors.163.com/ubuntu/
+Suites: noble noble-updates noble-backports noble-security noble-proposed
+Components: main restricted universe multiverse
+Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
+
+Types: deb deb-src
+URIs: https://mirrors.ustc.edu.cn/ubuntu/
+Suites: noble noble-updates noble-backports noble-security noble-proposed
+Components: main restricted universe multiverse
+Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
+
+Types: deb
+URIs: http://cn.archive.ubuntu.com/ubuntu/
+Suites: noble noble-updates noble-backports
+Components: main restricted universe multiverse
+Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
+
+Types: deb
+URIs: http://security.ubuntu.com/ubuntu/
+Suites: noble-security
+Components: main restricted universe multiverse
+Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg</code></pre>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_type"><a class="anchor" href="#_type"></a>6.1. Type</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>指定存储库的格式；</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Entry</th>
+<th class="tableblock halign-left valign-top">Memo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">deb</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">预编译并准备安装的二进制包</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">deb-src</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">需编译的源码包</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_uri"><a class="anchor" href="#_uri"></a>6.2. URI</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>指定apt系统将从中获取包的位置</p>
+</li>
+<li>
+<p><a href="http://cn.archive.ubuntu.com/ubuntu/" class="bare">http://cn.archive.ubuntu.com/ubuntu/</a></p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Entry</th>
+<th class="tableblock halign-left valign-top">Memo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cn.*</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">指向Ubuntu包归档的中国镜像</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">security.*</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">专门用于安全更新</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_suite"><a class="anchor" href="#_suite"></a>6.3. Suite</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>指与Ubuntu发布周期的不同版本或Stage对齐的特定软件包集</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Entry</th>
+<th class="tableblock halign-left valign-top">Memo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">noble</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">初始版本包</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">noble-updates</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">更新包</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">noble-backports</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">向后移植backport</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">noble-security</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">安全漏洞</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_component"><a class="anchor" href="#_component"></a>6.4. Component</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>存储库中按支持状态或许可组织包的类别</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Entry</th>
+<th class="tableblock halign-left valign-top">Memo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">main</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">拥有Ubuntu支持的免费和开源软件</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">restricted</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">包含Ubuntu支持的专有驱动程序和软件</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">universe</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">包括community-maintained免费和开源软件</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">multiverse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">软件可能非免费或非开源，且不受Ubuntu官方团队支持</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_sign_by"><a class="anchor" href="#_sign_by"></a>6.5. Sign By</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>指向包含用于验证软件包真实性的公钥的密钥环文件，官方的Ubuntu存档签名密钥</p>
+</li>
+<li>
+<p>/usr/share/keyrings/ubuntu-archive-keyring.gpg</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_时间同步"><a class="anchor" href="#_时间同步"></a>7. 时间同步</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
@@ -548,7 +796,13 @@ deb http://cn.archive.ubuntu.com/ubuntu jammy-security multiverse</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">timedatectl set-timezone Asia/Shanghai &amp;&amp; \
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># Ubuntu 24.04
+timedatectl set-timezone Asia/Shanghai &amp;&amp; \
+	timedatectl set-local-rtc 1 &amp;&amp; \
+	systemctl restart rsyslog &amp;&amp; timedatectl status
+
+# Ubuntu 22.04
+timedatectl set-timezone Asia/Shanghai &amp;&amp; \
 	timedatectl set-local-rtc 1 &amp;&amp; \
 	hwclock --localtime --systohc &amp;&amp; \
 	systemctl restart rsyslog &amp;&amp; timedatectl status
@@ -594,7 +848,7 @@ tzselect =&gt; Asia =&gt; China =&gt; BeiJing =&gt; Yes
 </div>
 </div>
 <div class="sect1">
-<h2 id="_语言环境"><a class="anchor" href="#_语言环境"></a>6. 语言环境</h2>
+<h2 id="_语言环境"><a class="anchor" href="#_语言环境"></a>8. 语言环境</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
@@ -668,7 +922,7 @@ ENV LC_ALL zh_CN.UTF-8</code></pre>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_系统与硬件"><a class="anchor" href="#_系统与硬件"></a>7. 系统与硬件</h2>
+<h2 id="_系统与硬件"><a class="anchor" href="#_系统与硬件"></a>9. 系统与硬件</h2>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
