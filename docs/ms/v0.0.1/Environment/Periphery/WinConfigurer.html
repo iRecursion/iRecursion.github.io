@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> :: AsciiDoc</title>
+    <meta name="generator" content="Antora 3.1.7">
+
+<link rel="stylesheet" href="../../../../_/css/site.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/asciidoc.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+    <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+  			
+	            <div id="main" style="place-content: center;">
+	                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+		            </div>
+		        </section>
+    	</div>
+    	
+        <div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container" data-component="ms" data-version="v0.0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">AsciiDoc Makeshift</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Environment</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Antora</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Antora/Markdown.html">Markdown</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Antora/NodeInstallation.html">Node Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Antora/AsciidoctorInstallation.html">Asciidoctor Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Antora/AsciidoctorConfigurer.html">Asciidoctor Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Antora/AntoraInstallation.html">Antora Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Antora/AntoraConfigurer.html">Antora Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Operation</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Operation/HyperVConfigurer.html">HyperV Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Operation/UbuntuConfigurer.html">Ubuntu Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Operation/DockerFundamental.html">Docker Fundamental</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Operation/K8SInstallation.html">K8S Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Operation/K8SExtension.html">K8S Extension</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Operation/NexusInstallation.html">Nexus Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Operation/JenkinsInstallation.html">Jenkins Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Language</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/GraalWin.html">Graal Win</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/CondaJupyter.html">Conda Jupyter</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/LuaInstallation.html">Lua Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/RustInstallation.html">Rust Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/RustConfiguration.html">Rust Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/GroovyInstallation.html">Groovy Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Mixture</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Mixture/FlinkInstallation.html">Flink Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Mixture/NacosInstallation.html">Nacos Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Mixture/KeycloakInstallation.html">Keycloak Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Mixture/KafkaInstallation.html">Kafka Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Mixture/PulsarInstallation.html">Pulsar Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Mixture/ElasticInstallation.html">ElasticSearch Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Mixture/OpenSearchInstallation.html">OpenSearch Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Store</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Store/PowerDesigner.html">Power Designer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Store/MongoInstallation.html">Mongo Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Store/MySQLInstallation.html">MySQL Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Store/PostgresInstallation.html">Postgres Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Store/AeroSpikeInstallation.html">AeroSpike Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Store/RedisStackInstallation.html">Redis Stack Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Case</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Case/KafkaEntryCase.html">Kafka Entry Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Case/MongoCase.html">Mongo Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Case/ElasticCase.html">Elastic Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Case/MySqlTuning.html">MySql Tuning</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Case/KeycloakCase.html">Keycloak Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Case/TinkerpopCase.html">Tinkerpop Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Case/PgvSimilarity.html">Pgv Similarity</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Case/BookmarkCase.html">Bookmark Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Case/AirflowDagCase.html">Airflow Dag Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Case/ModularizingCase.html">Modularizing Case</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Periphery</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="RssFeed.html">Rss Feed</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ViewPoint.html">ViewPoint</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="FlattenLifecycle.html">Flatten Lifecycle</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="JakartaSpecification.html">Jakarta Specification</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="CommonAssortment.html">Common Assortment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="TechniqueAssortment.html">Technique Assortment</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">AsciiDoc Makeshift</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <div class="title"><a href="../../../../ai/v0.0.1/index.html">AsciiDoc AI</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../ai/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../../kafka/v0.0.1/index.html">AsciiDoc Kafka</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../kafka/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">AsciiDoc Makeshift</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+	<div class="toolbar" role="navigation">
+	<button class="nav-toggle"></button>
+	
+		<a href="../../../../ai/v0.0.1/index.html" 
+			class="home-link">
+		</a>
+
+	<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+		</div>
+	
+	<div class="content">
+			<aside class="toc sidebar" 
+	data-title="Contents" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+			<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_add_user">1. Add User</a></li>
+<li><a href="#_show_second">2. Show Second</a></li>
+<li><a href="#_relocation">3. Relocation</a></li>
+<li><a href="#_start_menu">4. Start Menu</a></li>
+<li><a href="#_windows_terminal">5. Windows Terminal</a></li>
+<li><a href="#_super_control_panel">6. Super Control Panel</a></li>
+<li><a href="#_tree">7. Tree</a></li>
+<li><a href="#_win_d_invalidity">8. Win + D Invalidity</a></li>
+<li><a href="#_uninstall_software">9. Uninstall Software</a></li>
+<li><a href="#_site_engagement">10. Site Engagement</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_add_user"><a class="anchor" href="#_add_user"></a>1. Add User</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>win + r &#8658; netplwiz &#8658; 添加<br>
+&#8658; 不使用Microsoft账户登录(不推荐)  &#8658; 本地帐户</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_show_second"><a class="anchor" href="#_show_second"></a>2. Show Second</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>设置 &#8658; 个性化 &#8658; 任务栏 &#8658; 任务栏行为 &#8658; 在系统托盘时钟中显示秒数</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_relocation"><a class="anchor" href="#_relocation"></a>3. Relocation</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>C:\Users\Administrator\Desktop</p>
+</li>
+<li>
+<p>右键 &#8594; 属性 &#8594; 属性 &#8594; 位置 &#8594; 移动</p>
+</li>
+<li>
+<p>D:\Install\FreeSystem\Desktop</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_start_menu"><a class="anchor" href="#_start_menu"></a>4. Start Menu</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>C:\ProgramData\Microsoft\Windows\Start Menu\Programs</p>
+</li>
+<li>
+<p>C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs</p>
+</li>
+<li>
+<p>PATH：C:\Program Files\Common Files\Oracle\Java\javapath</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_windows_terminal"><a class="anchor" href="#_windows_terminal"></a>5. Windows Terminal</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>win + r &#8658; wt.exe</p>
+</li>
+<li>
+<p>添加新配置文件 &#8658; 从命令提示符复制配置文件</p>
+</li>
+<li>
+<p>名称修改为Git Bash</p>
+</li>
+<li>
+<p>命令行修改为D:\Install\Dev\Git\bin\bash.exe</p>
+</li>
+<li>
+<p>图标修改为D:\Install\FreeSystem\Ico\GitBash.png</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_super_control_panel"><a class="anchor" href="#_super_control_panel"></a>6. Super Control Panel</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>创建文件夹，取名如下：</p>
+</li>
+<li>
+<p><mark>GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}</mark></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_tree"><a class="anchor" href="#_tree"></a>7. Tree</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>tree /F /A DIRECTORY_PATH</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_win_d_invalidity"><a class="anchor" href="#_win_d_invalidity"></a>8. Win + D Invalidity</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>regsvr32 /n /i:u shell32；</p>
+</li>
+<li>
+<p>restart computer；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_uninstall_software"><a class="anchor" href="#_uninstall_software"></a>9. Uninstall Software</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Win + I &#8658; 应用 &#8658; 已安装的应用 &#8658; 卸载</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_site_engagement"><a class="anchor" href="#_site_engagement"></a>10. Site Engagement</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Chrome站点参与度：chrome://site-engagement</p>
+</li>
+<li>
+<p>只能定时清理：chrome://settings/clearBrowserData</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+	</div>
+</main>
+</div>
+		<footer class="footer">
+	
+	
+	
+	<div class="footer-thanks">
+		Authored in AsciiDoc
+		<br /><br />
+		Produced by Antora and Asciidoctor
+  	</div>
+  
+	<div class="footer-legal" style="text-align:center">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br /><br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		Copyright © 2024 Elf
+		<br /><br />
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+	
+</footer><script id="site-script" src="../../../../_/js/site.js" 
+	data-ui-root-path="../../../../_"></script>
+
+<script async src="../../../../_/js/vendor/highlight.js"></script>
+<script async src="../../../../_/js/vendor/highlight.bundle.js"></script>
+
+
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+
+<script>hljs.highlightAll();</script>  	</body>
+</html>

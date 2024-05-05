@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> :: AsciiDoc</title>
+    <meta name="generator" content="Antora 3.1.7">
+
+<link rel="stylesheet" href="../../../../_/css/site.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/asciidoc.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+    <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+  			
+	            <div id="main" style="place-content: center;">
+	                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+		            </div>
+		        </section>
+    	</div>
+    	
+        <div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container" data-component="ai" data-version="v0.0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">AsciiDoc AI</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Spring AI</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Solitary</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/AIConcept.html">AI Concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/SpringAIDependency.html">Spring AI Dependency</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/SpringAIProperty.html">Spring AI Property</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/GenericModel.html">Generic Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/Prompt.html">Prompt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/OutputParser.html">Output Parser</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/EtlPipeline.html">Etl Pipeline</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/ImageGeneration.html">Image Generation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/FunctionCalling.html">Function Calling</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/EvaluationTesting.html">Evaluation Testing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/TestContainer.html">Test Container</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Chat Completion</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/ChatCompletion/ChatCompletion.html">Chat Completion</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/ChatCompletion/Ollama.html">Ollama</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/ChatCompletion/HuggingFace.html">Hugging Face</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Embedding</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/Embedding.html">Embedding</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/Ollama.html">Ollama</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/PostgresML.html">Postgres ML</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/TransformerOnnx.html">Transformer Onnx</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Vector Store</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/VectorExplanation.html">Vector Explanation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/VectorStore.html">Vector Store</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Neo4j.html">Neo4j</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Redis.html">Redis</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Chroma.html">Chroma</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Milvus.html">Milvus</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Qdrant.html">Qdrant</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Elastic.html">Elastic</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Weaviate.html">Weaviate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Pgv.html">Postgres Vector</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Case</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Case/SpringAICase.html">Spring AI Case</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">ML</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Fundamental</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/AIIntro.html">AI Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/MLIntro.html">ML Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/DLIntro.html">DL Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/LlmIntro.html">LLM Intro</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">LLM</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">FullStack</span>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="PromptEngineering.html">Prompt Engineering</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="PromptEngineeringCase.html">Prompt Engineering Case</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">AsciiDoc AI</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">AsciiDoc AI</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../../kafka/v0.0.1/index.html">AsciiDoc Kafka</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../kafka/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../../ms/v0.0.1/index.html">AsciiDoc Makeshift</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../ms/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+	<div class="toolbar" role="navigation">
+	<button class="nav-toggle"></button>
+	
+		<a href="../../index.html" 
+			class="home-link">
+		</a>
+
+	<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">AsciiDoc AI</a></li>
+    <li>LLM</li>
+    <li>FullStack</li>
+    <li><a href="PromptEngineering.html">Prompt Engineering</a></li>
+  </ul>
+</nav>
+		</div>
+	
+	<div class="content">
+			<aside class="toc sidebar" 
+	data-title="Contents" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+			<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_definition">1. Definition</a></li>
+<li><a href="#_prompt_purpuse">2. Prompt Purpuse</a></li>
+<li><a href="#_prompt_tuning">3. Prompt Tuning</a></li>
+<li><a href="#_prompt_constitution">4. Prompt Constitution</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_definition"><a class="anchor" href="#_definition"></a>1. Definition</h2>
+<div class="sectionbody">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>提示工程也称指令工程，Prompt是发给大模型的指令；</p>
+</li>
+<li>
+<p>如(讲个笑话)，(用Java画一朵花)等；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_prompt_purpuse"><a class="anchor" href="#_prompt_purpuse"></a>2. Prompt Purpuse</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>A：获得具体问题的具体结果，如：我该学AI还是量子计算？</p>
+</li>
+<li>
+<p>B：固化一套Prompt到程序中，成为系统功能的一部分；<br>
+如：每天生成日报，基于公司知识库的问答等；</p>
+</li>
+<li>
+<p>A可通过ChatGpt，ChatAll类界面操作，B就需代码，专注后者，因B相对更难；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_prompt_tuning"><a class="anchor" href="#_prompt_tuning"></a>3. Prompt Tuning</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="../_images/FullStack/PromptEngineering/VersionListA.jpg" alt="VersionListA">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/FullStack/PromptEngineering/VersionListB.jpg" alt="VersionListB">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>找到好的prompt是持续迭代的过程，需不断调优；</p>
+</li>
+<li>
+<p>初稿，修改版，完成版，确定版，最后确定版，终极确定版、最终极确定版，绝对不改版……</p>
+</li>
+<li>
+<p>若知道训练数据是咋样的，那参考训练数据来构造prompt是最好的；</p>
+<div class="ulist">
+<ul>
+<li>
+<p>你知道他爱看历史剧，就跟他聊历史剧；</p>
+</li>
+<li>
+<p>你知道他是老阿里，就跟他聊阿里黑话，商业互捧；</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>不知道训练数据：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>看Ta是否主动告诉我们，如已知：OpenAI GPT对Markdown友好，Claude对Xml友好；</p>
+</li>
+<li>
+<p>只能不断尝试；尝试是常用方法，有运气因素，故门槛低、落地难；</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>高质量Prompt核心要点：具体、丰富、少歧义；</p>
+</li>
+<li>
+<p>若更换底层大模型，建议Prompt重新调优；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_prompt_constitution"><a class="anchor" href="#_prompt_constitution"></a>4. Prompt Constitution</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>===</p>
+</div>
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-right valign-top">Entry</th>
+<th class="tableblock halign-left valign-top">Memo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Instruction</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">specific task or instruction model to perform</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Context</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">external info or additional context steer model to better response</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Input Data</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">input or question we interest to find response for</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Output Indicator</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">output type or format</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>Role 角色：给AI定义最匹配任务的角色，如：你是一个工程师；<br>
+非必要，但约定俗成添加，会更有效</p>
+</li>
+<li>
+<p>instruction 指令：对任务进行描述(任务是干什么)；</p>
+</li>
+<li>
+<p>Context 上下文：给出与任务相关的其它北京信息，尤其在多轮交互中；</p>
+</li>
+<li>
+<p>Example例子：必要时给出举例，学术中称为one-shot learning，few shot learning，<br>
+或in-context learning，实践证明其对输出正确性有帮助</p>
+</li>
+<li>
+<p>Input 输入：任务的输入信息，在提示词中明确的标识出输入</p>
+</li>
+<li>
+<p>Output 输出：输出的格式描述，以便后继模块自动解析模型的输出结果，如json或xml；</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>大模型对Prompt开头和结尾的内容更敏感；</p>
+</li>
+<li>
+<p>故先定义角色，即在开头把问题域收窄，减少二义性；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><a href="https://blog.csdn.net/qq128252/article/details/133775725" class="bare">https://blog.csdn.net/qq128252/article/details/133775725</a><br>
+<a href="https://zhuanlan.zhihu.com/p/619590249" class="bare">https://zhuanlan.zhihu.com/p/619590249</a><br>
+<a href="https://zhuanlan.zhihu.com/p/615197354" class="bare">https://zhuanlan.zhihu.com/p/615197354</a><br>
+<a href="https://www.lijigang.com/posts/chatgpt-prompt-structure/" class="bare">https://www.lijigang.com/posts/chatgpt-prompt-structure/</a><br>
+<a href="https://xie.infoq.cn/article/7b2381b690027b4d9ff18cada" class="bare">https://xie.infoq.cn/article/7b2381b690027b4d9ff18cada</a><br>
+<a href="https://www.comet.com/site/blog/prompt-engineering/" class="bare">https://www.comet.com/site/blog/prompt-engineering/</a><br>
+<a href="https://rajanieshkaushikk.com/2023/06/24/unleashing-the-power-of-azure-openai-and-service-embedding-for-unstructured-document-search/" class="bare">https://rajanieshkaushikk.com/2023/06/24/unleashing-the-power-of-azure-openai-and-service-embedding-for-unstructured-document-search/</a><br>
+<a href="https://blog.stackademic.com/the-art-of-prompt-engineering-5717ff589226" class="bare">https://blog.stackademic.com/the-art-of-prompt-engineering-5717ff589226</a><br>
+<a href="https://www.analyticsvidhya.com/blog/2023/06/what-is-prompt-engineering/" class="bare">https://www.analyticsvidhya.com/blog/2023/06/what-is-prompt-engineering/</a><br>
+<a href="https://www.visual-design.net/post/llm-prompt-engineering-techniques-for-knowledge-graph" class="bare">https://www.visual-design.net/post/llm-prompt-engineering-techniques-for-knowledge-graph</a><br>
+<a href="https://zhuanlan.zhihu.com/p/642277430" class="bare">https://zhuanlan.zhihu.com/p/642277430</a><br>
+<a href="https://github.com/phodal/prompt-patterns" class="bare">https://github.com/phodal/prompt-patterns</a><br>
+<a href="https://www.53ai.com/news/qianyanjishu/379.html" class="bare">https://www.53ai.com/news/qianyanjishu/379.html</a><br>
+<a href="https://gptpmt.com/foundation/structured" class="bare">https://gptpmt.com/foundation/structured</a><br>
+<a href="https://juejin.cn/post/7284885060338139155" class="bare">https://juejin.cn/post/7284885060338139155</a><br>
+<a href="https://prompt-patterns.phodal.com/design-pattern.analogy2.html" class="bare">https://prompt-patterns.phodal.com/design-pattern.analogy2.html</a><br>
+<a href="https://prompt-engineering.xiniushu.com/guides/guidelines" class="bare">https://prompt-engineering.xiniushu.com/guides/guidelines</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://developers.google.com/machine-learning/resources/prompt-eng" class="bare">https://developers.google.com/machine-learning/resources/prompt-eng</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.geeky-gadgets.com/harnessing-the-power-of-the-rice-framework-for-perfect-chatgpt-prompts/" class="bare">https://www.geeky-gadgets.com/harnessing-the-power-of-the-rice-framework-for-perfect-chatgpt-prompts/</a></p>
+</div>
+<div class="paragraph">
+<p>角色 指示 上下文 例子 输入 输出<br>
+Role Instruction Context Example Input Output</p>
+</div>
+</div>
+</div>
+</article>
+	</div>
+</main>
+</div>
+		<footer class="footer">
+	
+	
+	
+	<div class="footer-thanks">
+		Authored in AsciiDoc
+		<br /><br />
+		Produced by Antora and Asciidoctor
+  	</div>
+  
+	<div class="footer-legal" style="text-align:center">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br /><br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		Copyright © 2024 Elf
+		<br /><br />
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+	
+</footer><script id="site-script" src="../../../../_/js/site.js" 
+	data-ui-root-path="../../../../_"></script>
+
+<script async src="../../../../_/js/vendor/highlight.js"></script>
+<script async src="../../../../_/js/vendor/highlight.bundle.js"></script>
+
+
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+
+<script>hljs.highlightAll();</script>  	</body>
+</html>

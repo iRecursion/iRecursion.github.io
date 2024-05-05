@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> :: AsciiDoc</title>
+    <meta name="generator" content="Antora 3.1.7">
+
+<link rel="stylesheet" href="../../../../_/css/site.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/asciidoc.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+    <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+  			
+	            <div id="main" style="place-content: center;">
+	                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+		            </div>
+		        </section>
+    	</div>
+    	
+        <div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container" data-component="ai" data-version="v0.0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">AsciiDoc AI</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Spring AI</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Solitary</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/AIConcept.html">AI Concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/SpringAIDependency.html">Spring AI Dependency</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/SpringAIProperty.html">Spring AI Property</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/GenericModel.html">Generic Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/Prompt.html">Prompt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/OutputParser.html">Output Parser</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/EtlPipeline.html">Etl Pipeline</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/ImageGeneration.html">Image Generation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/FunctionCalling.html">Function Calling</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/EvaluationTesting.html">Evaluation Testing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/TestContainer.html">Test Container</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Chat Completion</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/ChatCompletion/ChatCompletion.html">Chat Completion</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/ChatCompletion/Ollama.html">Ollama</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/ChatCompletion/HuggingFace.html">Hugging Face</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Embedding</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/Embedding.html">Embedding</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/Ollama.html">Ollama</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/PostgresML.html">Postgres ML</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/TransformerOnnx.html">Transformer Onnx</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Vector Store</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/VectorExplanation.html">Vector Explanation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/VectorStore.html">Vector Store</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Neo4j.html">Neo4j</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Redis.html">Redis</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Chroma.html">Chroma</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Milvus.html">Milvus</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Qdrant.html">Qdrant</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Elastic.html">Elastic</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Weaviate.html">Weaviate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Pgv.html">Postgres Vector</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Case</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Case/SpringAICase.html">Spring AI Case</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">ML</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Fundamental</span>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="AIIntro.html">AI Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="MLIntro.html">ML Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="DLIntro.html">DL Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="LlmIntro.html">LLM Intro</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">LLM</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">FullStack</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../LLM/FullStack/PromptEngineering.html">Prompt Engineering</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../LLM/FullStack/PromptEngineeringCase.html">Prompt Engineering Case</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">AsciiDoc AI</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">AsciiDoc AI</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../../kafka/v0.0.1/index.html">AsciiDoc Kafka</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../kafka/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../../ms/v0.0.1/index.html">AsciiDoc Makeshift</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../ms/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+	<div class="toolbar" role="navigation">
+	<button class="nav-toggle"></button>
+	
+		<a href="../../index.html" 
+			class="home-link">
+		</a>
+
+	<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">AsciiDoc AI</a></li>
+    <li>ML</li>
+    <li>Fundamental</li>
+    <li><a href="AIIntro.html">AI Intro</a></li>
+  </ul>
+</nav>
+		</div>
+	
+	<div class="content">
+			<aside class="toc sidebar" 
+	data-title="Contents" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+			<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_intro">1. Intro</a></li>
+<li><a href="#_human_intelligence">2. Human Intelligence</a></li>
+<li><a href="#_computer_vision">3. Computer Vision</a></li>
+<li><a href="#_speech_recognition">4. Speech Recognition</a></li>
+<li><a href="#_human_vs_computer">5. Human vs Computer</a></li>
+<li><a href="#_ai_tribe">6. AI Tribe</a></li>
+<li><a href="#_approximate_reasoning">7. Approximate Reasoning</a></li>
+<li><a href="#_ai_workflow_vs_human">8. AI Workflow vs Human</a></li>
+<li><a href="#_ai_type">9. AI Type</a></li>
+<li><a href="#_common_sense_reasoning">10. Common Sense Reasoning</a></li>
+<li><a href="#_ml_area">11. ML Area</a></li>
+<li><a href="#_modeling_concept">12. Modeling Concept</a></li>
+<li><a href="#_pro_and_con">13. Pro and Con</a></li>
+<li><a href="#_ai_dilemma">14. AI Dilemma</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_intro"><a class="anchor" href="#_intro"></a>1. Intro</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>AI：simulation of human intelligence process by computer</p>
+</li>
+<li>
+<p>AI &#8658; ML &#8658; DL &#8658; GAI &#8658; LM</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_human_intelligence"><a class="anchor" href="#_human_intelligence"></a>2. Human Intelligence</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Entry</th>
+<th class="tableblock halign-left valign-top">Memo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock"><mark>Perception Based：第一层次：透过五感感知</mark></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Perception</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">five sense</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock"><mark>Brain Based：第二层次：大脑思维</mark></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Learning</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">acquire and organize info</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reasoning</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">use info and rule to reach conclusion</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Self-Correction</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">correct rule if they failed</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock"><mark>Example：Language Learning</mark></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Receptive Skill</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Easier，如：Read，Listen</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Productive Skill</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Harder，如：Write，Speak</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_computer_vision"><a class="anchor" href="#_computer_vision"></a>3. Computer Vision</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Fundamental/AIIntro/ComputerVisionLake.png" alt="Computer Vision Lake">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Fundamental/AIIntro/LincolnPixelLabelNumber.png" alt="Lincoln Pixel Label Number">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_speech_recognition"><a class="anchor" href="#_speech_recognition"></a>4. Speech Recognition</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Entry</th>
+<th class="tableblock halign-left valign-top">Memo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">用心良苦</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">两只老虎</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">It&#8217;s hard to recognize speech</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">It&#8217;s hard to wreck a nice beach</p></td>
+</tr>
+</tbody>
+</table>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Fundamental/AIIntro/SpeechRecognitionHelloWorld.png" alt="Speech Recognition Hello World">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Fundamental/AIIntro/AudioProcessingExample.png" alt="Audio Processing Example">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_human_vs_computer"><a class="anchor" href="#_human_vs_computer"></a>5. Human vs Computer</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Entry</th>
+<th class="tableblock halign-left valign-top">Memo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock"><mark>human are good at</mark></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">perception and understanding</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">观察和理解</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">reasoning and decision making</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">推理和决策</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">common sense and world model</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">常识</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">association</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">联想能力</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">robustness</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">不容易被破坏，计算机拔电即关机，人缺胳膊少腿，也可推理</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock"><mark>computer are good at</mark></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">number crunching (𝜋<sup>1/3</sup> = ?)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">数字运算</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">exact pattern matching</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">精确模式匹配</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ai_tribe"><a class="anchor" href="#_ai_tribe"></a>6. AI Tribe</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-right valign-top">Entry</th>
+<th class="tableblock halign-left valign-top">Memo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Symbolist</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Inverse Deduction</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Connectionist</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Neural Network and Backpropagation</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Evolutionary</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Genetic Programming</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Bayesian</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Probabilistic Inference</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Analogizer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kernel Machine</p></td>
+</tr>
+</tbody>
+</table>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Fundamental/AIIntro/AITribe.jpeg" alt="AI Tribe">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_approximate_reasoning"><a class="anchor" href="#_approximate_reasoning"></a>7. Approximate Reasoning</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>近似推理：AI分支(Branch)</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-right valign-top">Entry</th>
+<th class="tableblock halign-left valign-top">Memo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-right valign-top" colspan="2"><p class="tableblock"><mark>Uncertainty Type</mark></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Probability</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">客观事实</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Possibility</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">主观认定</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>很多主观认定，无法讲出来，或无法界定</p>
+</li>
+<li>
+<p>approximate reasoning goal：uncertainty reasoning and aggregation<br>
+近似推理目标：不确定性推理和聚合</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Fundamental/AIIntro/ApproximateReasoning.png" alt="Approximate Reasoning">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>左边：是臭水，喝了会拉肚子</p>
+</li>
+<li>
+<p>右边，有可能是好的矿泉水，也可能放了砒霜，80%的几率活着</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ai_workflow_vs_human"><a class="anchor" href="#_ai_workflow_vs_human"></a>8. AI Workflow vs Human</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">* <mark>Input：Perception</mark><br>
+* text，speech，audio，image，video</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p><mark>CPU/Brain: Decision Making or Reasoning</mark></p>
+</li>
+<li>
+<p>rule induction</p>
+</li>
+<li>
+<p>uncertainty propagation</p>
+</li>
+<li>
+<p>theorem proving</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p><mark>Output</mark></p>
+</li>
+<li>
+<p>text summarization</p>
+</li>
+<li>
+<p>chatbot</p>
+</li>
+<li>
+<p>text to speech synthesis</p>
+</li>
+<li>
+<p>multimedia rendering</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ai_type"><a class="anchor" href="#_ai_type"></a>9. AI Type</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Narrow AI：AI for specific task</p>
+</li>
+<li>
+<p>Broad AI：AI for wide range of task</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Requirement：world model and common sense reasoning</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_common_sense_reasoning"><a class="anchor" href="#_common_sense_reasoning"></a>10. Common Sense Reasoning</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>in world model：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>computer how to know common sense?</p>
+</li>
+<li>
+<p>how does it reasoning using common sense?</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>build world model difficulty since ambiguity everywhere：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>olive oil，coconut oil，baby oil?</p>
+</li>
+<li>
+<p>look at the dog with one eye；</p>
+</li>
+<li>
+<p>tone sandhi (连续变调：母老虎，老喜买五百把小雨伞给李总理)</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ml_area"><a class="anchor" href="#_ml_area"></a>11. ML Area</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-right valign-top">Entry</th>
+<th class="tableblock halign-left valign-top">Memo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Classification</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">given object assign category，定性，输出categorical</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Regression</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">given object predict real-value，定量，输出numerical</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Ranking</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">排序，order object according to criterion</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Clustering</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">partition data into homogeneous group</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Dimensionality Reduction</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">降维，find low-dimensional manifold preserving data property</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Density Estimation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">预估密度，learning probability density function according to sample data</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_modeling_concept"><a class="anchor" href="#_modeling_concept"></a>12. Modeling Concept</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>given desired i/o pair(training set) of form (x1, &#8230;&#8203;, xn; y)，<br>
+construct model to match i/o pair</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Fundamental/AIIntro/ModelingConcept.png" alt="Modeling Concept">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Modeling Step</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Entry</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Memo</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><mark>structure identification 结构定义</mark></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">input selection，model complexity</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><mark>parameter identification 参数定义</mark></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">optimal parameter</p></td>
+</tr>
+</tbody>
+</table>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Fundamental/AIIntro/ModelingExample.png" alt="Modeling Example">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_pro_and_con"><a class="anchor" href="#_pro_and_con"></a>13. Pro and Con</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>1966年，Marvin Minsky开始做Computer Vision，直到2010年</p>
+</div>
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-right valign-top">Entry</th>
+<th class="tableblock halign-left valign-top">Memo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">AI Application Domain</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Finance，HealthCare，Retail，Manufacturing</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">AI Missing Profession</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Financial Analyst，Physician，Lawyer，<br>
+ Teacher，Accountant，Driver，Developer</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ai_dilemma"><a class="anchor" href="#_ai_dilemma"></a>14. AI Dilemma</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Race/Color Discrimination</p>
+</li>
+<li>
+<p>Race/Color Bias</p>
+</li>
+<li>
+<p>Ethic and Morality</p>
+</li>
+<li>
+<p>Explainability and Trustability</p>
+</li>
+<li>
+<p>Innocent Mistake</p>
+</li>
+<li>
+<p>DeepNude DeepFake</p>
+</li>
+<li>
+<p>……</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+	</div>
+</main>
+</div>
+		<footer class="footer">
+	
+	
+	
+	<div class="footer-thanks">
+		Authored in AsciiDoc
+		<br /><br />
+		Produced by Antora and Asciidoctor
+  	</div>
+  
+	<div class="footer-legal" style="text-align:center">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br /><br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		Copyright © 2024 Elf
+		<br /><br />
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+	
+</footer><script id="site-script" src="../../../../_/js/site.js" 
+	data-ui-root-path="../../../../_"></script>
+
+<script async src="../../../../_/js/vendor/highlight.js"></script>
+<script async src="../../../../_/js/vendor/highlight.bundle.js"></script>
+
+
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+
+<script>hljs.highlightAll();</script>  	</body>
+</html>

@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> :: AsciiDoc</title>
+    <meta name="generator" content="Antora 3.1.7">
+
+<link rel="stylesheet" href="../../../../_/css/site.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/asciidoc.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+    <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+  			
+	            <div id="main" style="place-content: center;">
+	                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+		            </div>
+		        </section>
+    	</div>
+    	
+        <div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container" data-component="ai" data-version="v0.0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">AsciiDoc AI</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Spring AI</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Solitary</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/AIConcept.html">AI Concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/SpringAIDependency.html">Spring AI Dependency</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/SpringAIProperty.html">Spring AI Property</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/GenericModel.html">Generic Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/Prompt.html">Prompt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/OutputParser.html">Output Parser</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/EtlPipeline.html">Etl Pipeline</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/ImageGeneration.html">Image Generation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/FunctionCalling.html">Function Calling</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/EvaluationTesting.html">Evaluation Testing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/TestContainer.html">Test Container</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Chat Completion</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/ChatCompletion/ChatCompletion.html">Chat Completion</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/ChatCompletion/Ollama.html">Ollama</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/ChatCompletion/HuggingFace.html">Hugging Face</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Embedding</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/Embedding.html">Embedding</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/Ollama.html">Ollama</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/PostgresML.html">Postgres ML</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/TransformerOnnx.html">Transformer Onnx</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Vector Store</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/VectorExplanation.html">Vector Explanation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/VectorStore.html">Vector Store</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Neo4j.html">Neo4j</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Redis.html">Redis</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Chroma.html">Chroma</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Milvus.html">Milvus</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Qdrant.html">Qdrant</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Elastic.html">Elastic</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Weaviate.html">Weaviate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Pgv.html">Postgres Vector</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Case</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Case/SpringAICase.html">Spring AI Case</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">ML</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Fundamental</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/AIIntro.html">AI Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/MLIntro.html">ML Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/DLIntro.html">DL Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/LlmIntro.html">LLM Intro</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">LLM</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">FullStack</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="PromptEngineering.html">Prompt Engineering</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="PromptEngineeringCase.html">Prompt Engineering Case</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">AsciiDoc AI</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">AsciiDoc AI</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../../kafka/v0.0.1/index.html">AsciiDoc Kafka</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../kafka/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../../ms/v0.0.1/index.html">AsciiDoc Makeshift</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../ms/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+	<div class="toolbar" role="navigation">
+	<button class="nav-toggle"></button>
+	
+		<a href="../../index.html" 
+			class="home-link">
+		</a>
+
+	<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">AsciiDoc AI</a></li>
+    <li>LLM</li>
+    <li>FullStack</li>
+    <li><a href="PromptEngineeringCase.html">Prompt Engineering Case</a></li>
+  </ul>
+</nav>
+		</div>
+	
+	<div class="content">
+			<aside class="toc sidebar" 
+	data-title="Contents" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+			<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_business_scenario">1. Business Scenario</a></li>
+<li><a href="#_dialogue_system_module">2. Dialogue System Module</a></li>
+<li><a href="#_construct_environment">3. Construct Environment</a></li>
+<li><a href="#_implement_nlu">4. Implement NLU</a>
+<ul class="sectlevel2">
+<li><a href="#_任务描述_输入">4.1. 任务描述 + 输入</a></li>
+<li><a href="#_约定输出格式">4.2. 约定输出格式</a></li>
+<li><a href="#_更精细定义描述">4.3. 更精细定义描述</a></li>
+<li><a href="#_加入例子_输出更稳定">4.4. 加入例子 输出更稳定</a></li>
+</ul>
+</li>
+<li><a href="#_implement_context_dst">5. Implement Context DST</a></li>
+<li><a href="#_nlg_and_dialogue_strategy">6. NLG and Dialogue Strategy</a></li>
+<li><a href="#_implement_by_openai_api">7. Implement By OpenAI Api</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_business_scenario"><a class="anchor" href="#_business_scenario"></a>1. Business Scenario</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>流量包产品：办理流量包的智能客服，帮用户选套餐；</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">套餐名称</th>
+<th class="tableblock halign-left valign-top">流量(G/月)</th>
+<th class="tableblock halign-left valign-top">价格(元/月)</th>
+<th class="tableblock halign-left valign-top">适用人群</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">经济套餐</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">50</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">无限制</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">畅游套餐</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">100</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">180</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">无限制</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">无限套餐</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1000</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">300</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">无限制</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">校园套餐</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">200</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">150</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">在校生</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_dialogue_system_module"><a class="anchor" href="#_dialogue_system_module"></a>2. Dialogue System Module</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="../_images/FullStack/PromptEngineering/DialogueFlow.png" alt="DialogueFlow">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/FullStack/PromptEngineering/DialogueSystemModule.png" alt="DialogueSystemModule">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_construct_environment"><a class="anchor" href="#_construct_environment"></a>3. Construct Environment</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">import os
+from openai import OpenAI
+
+from dotenv import load_dotenv,
+	find_dotenv = load_dotenv(find_dotenv())
+
+client = OpenAI(
+    api_key=os.getenv("OPENAI_API_KEY"),
+    base_url=os.getenv("OPENAI_BASE_URL")
+)
+
+# 基于prompt生成文本
+def get_completion(prompt,model="gpt-3.5-turbo"):
+    messages = [{"role": "user", "content": prompt}]
+    response = client.chat.completions.create(
+        model=model,
+        messages=messages,
+        temperature=0,
+    )
+    return response.choices[0].message.content</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_implement_nlu"><a class="anchor" href="#_implement_nlu"></a>4. Implement NLU</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_任务描述_输入"><a class="anchor" href="#_任务描述_输入"></a>4.1. 任务描述 + 输入</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python"># 任务描述
+instruction =
+	"""
+		你的任务是识别用户对手机流量套餐产品的选择条件。
+		每种流量套餐产品包含三个属性：名称，月费价格，月流量。
+		根据用户输入，识别用户在上述三种属性上的倾向。
+	"""
+
+# 用户输入
+input_text =
+	"""
+		办个100G的套餐。
+	"""
+
+# prompt 模版
+prompt =
+	f"""
+		{instruction}
+
+		用户输入：
+		{input_text}
+	"""
+
+response = get_completion(prompt)
+print(response)</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>根据用户输入，可以得出以下结论：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>名称：用户倾向于选择100G的套餐，因此名称可能包含"100G"或类似的关键词；</p>
+</li>
+<li>
+<p>月费价格：用户没有提及对月费价格的倾向，因此无法确定用户对月费价格的选择条件；</p>
+</li>
+<li>
+<p>月流量：用户明确表示希望办理100G的套餐，因此用户对月流量的选择条件是100G或更高的流量；</p>
+</li>
+<li>
+<p>综述，用户对手机流量套餐产品的选择条件是名称中包含"100G"或类似的关键词，及月流量为100G或更高；</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_约定输出格式"><a class="anchor" href="#_约定输出格式"></a>4.2. 约定输出格式</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python"># 输出描述
+output_format =
+	"""
+		以json格式输出
+	"""
+
+# 微调模板
+prompt =
+	f"""
+		{instruction}
+
+		{output_format}
+
+		用户输入：
+		{input_text}
+	"""
+
+response = get_completion(prompt)
+print(response)</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+	"名称": "100G套餐",
+  	"月费价格": "未知",
+  	"月流量": "100G"
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_更精细定义描述"><a class="anchor" href="#_更精细定义描述"></a>4.3. 更精细定义描述</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">instruction =
+	"""
+		你的任务是识别用户对手机流量套餐产品的选择条件。
+		每种流量套餐产品包含三个属性：名称(name)，月费价格(price)，月流量(data)。
+		根据用户输入，识别用户在上述三种属性上的倾向。
+	"""
+
+# 输出描述
+output_format =
+	"""
+		以json格式输出：
+		1：name字段的取值为string类型，取值必须为以下之一：经济套餐、畅游套餐、无限套餐、校园套餐或null；
+
+		2：price字段的取值为一个结构体或null，包含两个字段：
+		(1) operator，string类型，取值范围：'&lt;='（小于等于）, '&gt;=' (大于等于), '=='（等于）
+		(2) value，int类型
+
+		3：data字段的取值为取值为一个结构体或null，包含两个字段：
+		(1) operator，string类型，取值范围：'&lt;='（小于等于）, '&gt;=' (大于等于), '=='（等于）
+		(2) value，int类型或string类型，string类型只能是'无上限'
+
+		4：用户的意图可以包含按price或data排序，以sort字段标识，取值为一个结构体：
+		(1) 结构体中以"ordering"="descend"表示按降序排序，以"value"字段存储待排序的字段
+		(2) 结构体中以"ordering"="ascend"表示按升序排序，以"value"字段存储待排序的字段
+
+		只输出中只包含用户提及的字段，不要猜测任何用户未直接提及的字段，不输出值为null的字段；
+	"""
+
+# input_text = "我要无限量套餐"
+# input_text = "有没有便宜的套餐"
+input_text = "办个100G以上的套餐"
+
+prompt =
+	f"""
+		{instruction}
+
+		{output_format}
+
+		用户输入：
+		{input_text}
+	"""
+
+response = get_completion(prompt)
+print(response)</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+  	"data": {
+    	"operator": "&gt;=",
+    	"value": 100
+  	}
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_加入例子_输出更稳定"><a class="anchor" href="#_加入例子_输出更稳定"></a>4.4. 加入例子 输出更稳定</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">examples =
+	"""
+		便宜的套餐：{"sort":{"ordering"="ascend","value"="price"}}
+		有没有不限流量的：{"data":{"operator":"==","value":"无上限"}}
+		流量大的：{"sort":{"ordering"="descend","value"="data"}}
+		100G以上流量的套餐最便宜的是哪个：{"sort":{"ordering"="ascend","value"="price"},"data":{"operator":"&gt;=","value":100}}
+		月费不超过200的：{"price":{"operator":"&lt;=","value":200}}
+		就要月费180那个套餐：{"price":{"operator":"==","value":180}}
+		经济套餐：{"name":"经济套餐"}
+	"""
+
+# input_text = "有没有土豪套餐"
+# input_text = "办个200G的套餐"
+# input_text = "有没有流量大的套餐"
+# input_text = "200元以下，流量大的套餐有啥"
+# input_text = "你说那个10G的套餐，叫啥名字"
+input_text = "有没有便宜的套餐"
+
+prompt =
+	f"""
+		{instruction}
+
+		{output_format}
+
+		例如：
+		{examples}
+
+		用户输入：
+		{input_text}
+	"""
+
+response = get_completion(prompt)
+print(response)</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+    "sort": {
+        "ordering": "ascend",
+        "value": "price"
+    }
+}</code></pre>
+</div>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>给例子，很常用，效果特别好；</p>
+</li>
+<li>
+<p>改变习惯，优先用prompt解决问题</p>
+</li>
+<li>
+<p>用好prompt可减轻预处理和后处理的工作量和复杂度；</p>
+</li>
+<li>
+<p>一切问题先尝试试用prompt解决，往往有四两拨千斤的效果</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_implement_context_dst"><a class="anchor" href="#_implement_context_dst"></a>5. Implement Context DST</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>在Prompt中加入上下文</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">instruction =
+	"""
+		你的任务是识别用户对手机流量套餐产品的选择条件；
+		每种流量套餐产品包含三个属性：名称(name)，月费价格(price)，月流量(data)；
+		根据对话上下文，识别用户在上述属性上的倾向。识别结果要包含整个对话的信息；
+	"""
+
+# 输出描述
+output_format =
+	"""
+		以json格式输出：
+		1：name字段的取值为string类型，取值必须为以下之一：经济套餐、畅游套餐、无限套餐、校园套餐 或 null；
+
+		2：price字段的取值为一个结构体 或 null，包含两个字段：
+		(1) operator, string类型，取值范围：'&lt;='（小于等于）, '&gt;=' (大于等于), '=='（等于）
+		(2) value, int类型
+
+		3：data字段的取值为取值为一个结构体 或 null，包含两个字段：
+		(1) operator, string类型，取值范围：'&lt;='（小于等于）, '&gt;=' (大于等于), '=='（等于）
+		(2) value, int类型或string类型，string类型只能是'无上限'
+
+		4：用户的意图可以包含按price或data排序，以sort字段标识，取值为一个结构体：
+		(1) 结构体中以"ordering"="descend"表示按降序排序，以"value"字段存储待排序的字段
+		(2) 结构体中以"ordering"="ascend"表示按升序排序，以"value"字段存储待排序的字段
+
+		只输出中只包含用户提及的字段，不要猜测任何用户未直接提及的字段。不要输出值为null的字段。
+	"""
+
+# do not output nulll-valued field!
+
+examples =
+	"""
+		客服：有什么可以帮您
+		用户：100G套餐有什么
+
+		{"data":{"operator":"&gt;=","value":100}}
+
+		客服：有什么可以帮您
+		用户：100G套餐有什么
+		客服：我们现在有无限套餐，不限流量，月费300元
+		用户：太贵了，有200元以内的不
+
+		{"data":{"operator":"&gt;=","value":100},"price":{"operator":"&lt;=","value":200}}
+
+		客服：有什么可以帮您
+		用户：便宜的套餐有什么
+		客服：我们现在有经济套餐，每月50元，10G流量
+		用户：100G以上的有什么
+
+		{"data":{"operator":"&gt;=","value":100},"sort":{"ordering"="ascend","value"="price"}}
+
+		客服：有什么可以帮您
+		用户：100G以上的套餐有什么
+		客服：我们现在有畅游套餐，流量100G，月费180元
+		用户：流量最多的呢
+
+		{"sort":{"ordering"="descend","value"="data"},"data":{"operator":"&gt;=","value":100}}
+	"""
+
+# input_text="哪个便宜"
+# input_text="无限量哪个多少钱"
+input_text = "流量最大的多少钱"
+
+context =
+	f"""
+		客服：有什么可以帮您
+		用户：有什么100G以上的套餐推荐
+		客服：我们有畅游套餐和无限套餐，您有什么价格倾向吗
+		用户：{input_text}
+	"""
+
+prompt =
+	f"""
+		{instruction}
+
+		{output_format}
+
+		{examples}
+
+		{context}
+	"""
+
+response = get_completion(prompt)
+print(response)</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{"sort":{"ordering"="descend","value"="data"},"data":{"operator":"&gt;=","value":100}}</code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>A：用Prompt实现DST不是唯一选择</p>
+<div class="ulist">
+<ul>
+<li>
+<p>优点：节省开发量</p>
+</li>
+<li>
+<p>缺点：调优相对复杂，最好用动态例子，讲Embedding时再review这个点；</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>也可用Prompt实现NLU，用传统方法维护DST</p>
+<div class="ulist">
+<ul>
+<li>
+<p>优点：DST环节可控性更高</p>
+</li>
+<li>
+<p>缺点：需结合业务know-how设计状态更新机制(解冲突)</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_nlg_and_dialogue_strategy"><a class="anchor" href="#_nlg_and_dialogue_strategy"></a>6. NLG and Dialogue Strategy</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>先把刚才的能力串起来，构建简单的客服机器人</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">import os
+import json
+import copy
+
+from openai import OpenAI
+from dotenv import load_dotenv,
+	find_dotenv = load_dotenv(find_dotenv())
+
+client = OpenAI(
+    api_key=os.getenv("OPENAI_API_KEY"),
+    base_url=os.getenv("OPENAI_BASE_URL")
+)
+
+instruction =
+	"""
+		你的任务是识别用户对手机流量套餐产品的选择条件。
+		每种流量套餐产品包含三个属性：名称(name)，月费价格(price)，月流量(data)。
+		根据用户输入，识别用户在上述三种属性上的倾向。
+	"""
+
+# 输出描述
+output_format =
+	"""
+		以json格式输出：
+		1：name字段的取值为string类型，取值必须为以下之一：经济套餐、畅游套餐、无限套餐、校园套餐 或 null；
+
+		2：price字段的取值为一个结构体 或 null，包含两个字段：
+		(1) operator, string类型，取值范围：'&lt;='（小于等于）, '&gt;=' (大于等于), '=='（等于）
+		(2) value, int类型
+
+		3：data字段的取值为取值为一个结构体 或 null，包含两个字段：
+		(1) operator, string类型，取值范围：'&lt;='（小于等于）, '&gt;=' (大于等于), '=='（等于）
+		(2) value, int类型或string类型，string类型只能是'无上限'
+
+		4：用户的意图可以包含按price或data排序，以sort字段标识，取值为一个结构体：
+		(1) 结构体中以"ordering"="descend"表示按降序排序，以"value"字段存储待排序的字段
+		(2) 结构体中以"ordering"="ascend"表示按升序排序，以"value"字段存储待排序的字段
+
+		只输出中只包含用户提及的字段，不要猜测任何用户未直接提及的字段。不要输出值为null的字段。
+	"""
+
+# do not output nulll-valued field!
+
+examples =
+	"""
+		便宜的套餐：{"sort":{"ordering"="ascend","value"="price"}}
+		有没有不限流量的：{"data":{"operator":"==","value":"无上限"}}
+		流量大的：{"sort":{"ordering"="descend","value"="data"}}
+		100G以上流量的套餐最便宜的是哪个：{"sort":{"ordering"="ascend","value"="price"},"data":{"operator":"&gt;=","value":100}}
+		月费不超过200的：{"price":{"operator":"&lt;=","value":200}}
+		就要月费180那个套餐：{"price":{"operator":"==","value":180}}
+		经济套餐：{"name":"经济套餐"}
+	"""
+
+
+class NLU:
+    def __init__(self):
+        self.prompt_template = f"{instruction}\n\n{output_format}\n\n{examples}\n\n用户输入：\n__INPUT__"
+
+    def _get_completion(self, prompt, model="gpt-3.5-turbo"):
+        messages = [{"role": "user", "content": prompt}]
+        response = client.chat.completions.create(
+            model=model,
+            messages=messages,
+            temperature=0,  # 模型输出的随机性，0 表示随机性最小
+        )
+        semantics = json.loads(response.choices[0].message.content)
+        return {k: v for k, v in semantics.items() if v}
+
+    def parse(self, user_input):
+        prompt = self.prompt_template.replace("__INPUT__", user_input)
+        return self._get_completion(prompt)
+
+
+class DST:
+    def __init__(self):
+        pass
+
+    def update(self, state, nlu_semantics):
+        if "name" in nlu_semantics:
+            state.clear()
+        if "sort" in nlu_semantics:
+            slot = nlu_semantics["sort"]["value"]
+            if slot in state and state[slot]["operator"] == "==":
+                del state[slot]
+        for k, v in nlu_semantics.items():
+            state[k] = v
+        return state
+
+
+class MockedDB:
+    def __init__(self):
+        self.data = [
+            {"name": "经济套餐", "price": 50, "data": 10, "requirement": None},
+            {"name": "畅游套餐", "price": 180, "data": 100, "requirement": None},
+            {"name": "无限套餐", "price": 300, "data": 1000, "requirement": None},
+            {"name": "校园套餐", "price": 150, "data": 200, "requirement": "在校生"},
+        ]
+
+    def retrieve(self, **kwargs):
+        records = []
+        for r in self.data:
+            select = True
+            if r["requirement"]:
+                if "status" not in kwargs or kwargs["status"] != r["requirement"]:
+                    continue
+            for k, v in kwargs.items():
+                if k == "sort":
+                    continue
+                if k == "data" and v["value"] == "无上限":
+                    if r[k] != 1000:
+                        select = False
+                        break
+                if "operator" in v:
+                    if not eval(str(r[k])+v["operator"]+str(v["value"])):
+                        select = False
+                        break
+                elif str(r[k]) != str(v):
+                    select = False
+                    break
+            if select:
+                records.append(r)
+        if len(records) &lt;= 1:
+            return records
+        key = "price"
+        reverse = False
+        if "sort" in kwargs:
+            key = kwargs["sort"]["value"]
+            reverse = kwargs["sort"]["ordering"] == "descend"
+        return sorted(records, key=lambda x: x[key], reverse=reverse)
+
+
+class DialogManager:
+    def __init__(self, prompt_templates):
+        self.state = {}
+        self.session = [
+            {
+                "role": "system",
+                "content": "你是一个手机流量套餐的客服代表，你叫小瓜。可以帮助用户选择最合适的流量套餐产品。"
+            }
+        ]
+        self.nlu = NLU()
+        self.dst = DST()
+        self.db = MockedDB()
+        self.prompt_templates = prompt_templates
+
+    def _wrap(self, user_input, records):
+        if records:
+            prompt = self.prompt_templates["recommand"].replace(
+                "__INPUT__", user_input)
+            r = records[0]
+            for k, v in r.items():
+                prompt = prompt.replace(f"__{k.upper()}__", str(v))
+        else:
+            prompt = self.prompt_templates["not_found"].replace(
+                "__INPUT__", user_input)
+            for k, v in self.state.items():
+                if "operator" in v:
+                    prompt = prompt.replace(
+                        f"__{k.upper()}__", v["operator"]+str(v["value"]))
+                else:
+                    prompt = prompt.replace(f"__{k.upper()}__", str(v))
+        return prompt
+
+    def _call_chatgpt(self, prompt, model="gpt-3.5-turbo"):
+        session = copy.deepcopy(self.session)
+        session.append({"role": "user", "content": prompt})
+        response = client.chat.completions.create(
+            model=model,
+            messages=session,
+            temperature=0,
+        )
+        return response.choices[0].message.content
+
+    def run(self, user_input):
+        # 调用NLU获得语义解析
+        semantics = self.nlu.parse(user_input)
+        print("===semantics===")
+        print(semantics)
+
+        # 调用DST更新多轮状态
+        self.state = self.dst.update(self.state, semantics)
+        print("===state===")
+        print(self.state)
+
+        # 根据状态检索DB，获得满足条件的候选
+        records = self.db.retrieve(**self.state)
+
+        # 拼装prompt调用chatgpt
+        prompt_for_chatgpt = self._wrap(user_input, records)
+        print("===gpt-prompt===")
+        print(prompt_for_chatgpt)
+
+        # 调用chatgpt获得回复
+        response = self._call_chatgpt(prompt_for_chatgpt)
+
+        # 将当前用户输入和系统回复维护入chatgpt的session
+        self.session.append({"role": "user", "content": user_input})
+        self.session.append({"role": "assistant", "content": response})
+        return response</code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><mark>将垂直知识加入prompt，以使其准确回答</mark></p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">prompt_templates = {
+    "recommand": "用户说：__INPUT__ \n\n向用户介绍如下产品：__NAME__，月费__PRICE__元，每月流量__DATA__G。",
+    "not_found": "用户说：__INPUT__ \n\n没有找到满足__PRICE__元价位__DATA__G流量的产品，询问用户是否有其他选择倾向。"
+}
+
+dm = DialogManager(prompt_templates)</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python"># response = dm.run("流量大的")
+response = dm.run("300太贵了，200元以内有吗")
+print("===response===")
+print(response)</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">===semantics===
+{'price': {'operator': '&lt;=', 'value': 200}}
+===state===
+{'price': {'operator': '&lt;=', 'value': 200}}
+===gpt-prompt===
+用户说：300太贵了，200元以内有吗
+
+向用户介绍如下产品：经济套餐，月费50元，每月流量10G。
+===response===
+小瓜：您好！对于您的需求，我们有一个经济套餐，每月只需支付50元，就可以享受10G的流量。这个套餐非常适合您预算在200元以内的需求。您可以考虑一下这个套餐，如果有其他问题或者需要更多选择，我可以为您提供更多的信息。</code></pre>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><mark>增加约束：改变语气、口吻</mark></p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">ext = "很口语，亲切一些。不用说“抱歉”。直接给出回答，不用在前面加“小瓜说：”。NO COMMENTS. NO ACKNOWLEDGEMENTS."
+prompt_templates = {k: v+ext for k, v in prompt_templates.items()}
+
+dm = DialogManager(prompt_templates)</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python"># response = dm.run("流量大的")
+response = dm.run("300太贵了，200元以内有吗")
+print("===response===")
+print(response)</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># response = dm.run("流量大的")
+response = dm.run("300太贵了，200元以内有吗")
+print("===response===")
+print(response)</code></pre>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><mark>用例子实现统一口径</mark></p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">ext = "\n\n遇到类似问题，请参照以下回答：\n问：流量包太贵了\n答：亲，我们都是全省统一价哦。"
+prompt_templates = {k: v+ext for k, v in prompt_templates.items()}
+
+dm = DialogManager(prompt_templates)</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">response = dm.run("这流量包太贵了")
+print("===response===")
+print(response)</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">===semantics===
+{'sort': {'ordering': 'ascend', 'value': 'price'}}
+===state===
+{'sort': {'ordering': 'ascend', 'value': 'price'}}
+===gpt-prompt===
+用户说：这流量包太贵了
+
+向用户介绍如下产品：经济套餐，月费50元，每月流量10G。很口语，亲切一些。不用说“抱歉”。直接给出回答，不用在前面加“小瓜说：”。NO COMMENTS. NO ACKNOWLEDGEMENTS.
+
+遇到类似问题，请参照以下回答：
+问：流量包太贵了
+答：亲，我们都是全省统一价哦。
+===response===
+答：亲，我们都是全省统一价哦。不过我可以为您推荐我们的经济套餐，每月只需支付50元，就可以享受10G的流量哦。这个套餐非常实惠，适合轻度使用流量的用户。您可以考虑一下哦。如果您有其他需求，我也可以帮您找到更适合您的套餐</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>此处例子可根据用户输入不同而动态添加，具体方法在以后RAG和Embedding部分；</p>
+</li>
+<li>
+<p><mark>高阶作业，尝试自己通过NLU和Policy实现给在校生推荐"校园套餐"</mark>；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_implement_by_openai_api"><a class="anchor" href="#_implement_by_openai_api"></a>7. Implement By OpenAI Api</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">import os
+from openai import OpenAI
+from dotenv import load_dotenv,
+	find_dotenv = load_dotenv(find_dotenv())
+
+client = OpenAI(
+    api_key=os.getenv("OPENAI_API_KEY"),
+    base_url=os.getenv("OPENAI_BASE_URL")
+)
+
+session = [
+    {
+        "role": "system",
+        "content": """
+你是一个手机流量套餐的客服代表，你叫小瓜。可以帮助用户选择最合适的流量套餐产品。可以选择的套餐包括：
+经济套餐，月费50元，10G流量；
+畅游套餐，月费180元，100G流量；
+无限套餐，月费300元，1000G流量；
+校园套餐，月费150元，200G流量，仅限在校生。
+"""
+    }
+]
+
+def get_completion(prompt, model="gpt-3.5-turbo"):
+    session.append({"role": "user", "content": prompt})
+    response = client.chat.completions.create(
+        model=model,
+        messages=session,
+        temperature=0,
+    )
+    msg = response.choices[0].message.content
+    session.append({"role": "assistant", "content": msg})
+    return msg
+
+
+get_completion("有没有土豪套餐？")
+get_completion("多少钱？")
+get_completion("给我办一个")
+
+//用易读格式打印对话历史
+print(json.dumps(session, indent=4, ensure_ascii=False))</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">    {
+        "role": "assistant",
+        "content": "很抱歉，我们暂时没有土豪套餐。但是我们有无限套餐，它提供1000G的流量，适合大流量用户。如果您有其他需求，我可以帮您选择其他适合的套餐。"
+    },
+    {
+        "role": "user",
+        "content": "多少钱？"
+    },
+    {
+        "role": "assistant",
+        "content": "无限套餐的月费是300元。它提供1000G的流量，适合大流量用户。如果您有其他需求，我可以帮您选择其他适合的套餐。"
+    },
+    {
+        "role": "user",
+        "content": "给我办一个"
+    },
+    {
+        "role": "assistant",
+        "content": "好的，请问您的手机号码是多少？我将为您办理无限套餐。"
+    }
+]</code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>OpenAI方案相对简单得多；</p>
+</li>
+<li>
+<p>大模型应用架构师想什么?</p>
+<div class="ulist">
+<ul>
+<li>
+<p>怎样能更准确?答：让更多的环节可控</p>
+</li>
+<li>
+<p>怎样能更省钱?答：减少prompt长度</p>
+</li>
+<li>
+<p>怎样让系统简单好维护?</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python"></code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python"></code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python"></code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python"></code></pre>
+</div>
+</div>
+</div>
+</div>
+</article>
+	</div>
+</main>
+</div>
+		<footer class="footer">
+	
+	
+	
+	<div class="footer-thanks">
+		Authored in AsciiDoc
+		<br /><br />
+		Produced by Antora and Asciidoctor
+  	</div>
+  
+	<div class="footer-legal" style="text-align:center">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br /><br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		Copyright © 2024 Elf
+		<br /><br />
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+	
+</footer><script id="site-script" src="../../../../_/js/site.js" 
+	data-ui-root-path="../../../../_"></script>
+
+<script async src="../../../../_/js/vendor/highlight.js"></script>
+<script async src="../../../../_/js/vendor/highlight.bundle.js"></script>
+
+
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+
+<script>hljs.highlightAll();</script>  	</body>
+</html>

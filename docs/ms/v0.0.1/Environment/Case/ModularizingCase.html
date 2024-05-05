@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> :: AsciiDoc</title>
+    <meta name="generator" content="Antora 3.1.7">
+
+<link rel="stylesheet" href="../../../../_/css/site.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/asciidoc.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+    <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+  			
+	            <div id="main" style="place-content: center;">
+	                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+		            </div>
+		        </section>
+    	</div>
+    	
+        <div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container" data-component="ms" data-version="v0.0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">AsciiDoc Makeshift</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Environment</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Antora</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Antora/Markdown.html">Markdown</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Antora/NodeInstallation.html">Node Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Antora/AsciidoctorInstallation.html">Asciidoctor Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Antora/AsciidoctorConfigurer.html">Asciidoctor Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Antora/AntoraInstallation.html">Antora Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Antora/AntoraConfigurer.html">Antora Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Operation</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Operation/HyperVConfigurer.html">HyperV Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Operation/UbuntuConfigurer.html">Ubuntu Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Operation/DockerFundamental.html">Docker Fundamental</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Operation/K8SInstallation.html">K8S Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Operation/K8SExtension.html">K8S Extension</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Operation/NexusInstallation.html">Nexus Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Operation/JenkinsInstallation.html">Jenkins Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Language</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/GraalWin.html">Graal Win</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/CondaJupyter.html">Conda Jupyter</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/LuaInstallation.html">Lua Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/RustInstallation.html">Rust Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/RustConfiguration.html">Rust Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/GroovyInstallation.html">Groovy Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Mixture</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Mixture/FlinkInstallation.html">Flink Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Mixture/NacosInstallation.html">Nacos Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Mixture/KeycloakInstallation.html">Keycloak Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Mixture/KafkaInstallation.html">Kafka Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Mixture/PulsarInstallation.html">Pulsar Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Mixture/ElasticInstallation.html">ElasticSearch Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Mixture/OpenSearchInstallation.html">OpenSearch Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Store</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Store/PowerDesigner.html">Power Designer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Store/MongoInstallation.html">Mongo Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Store/MySQLInstallation.html">MySQL Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Store/PostgresInstallation.html">Postgres Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Store/AeroSpikeInstallation.html">AeroSpike Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Store/RedisStackInstallation.html">Redis Stack Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Case</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="KafkaEntryCase.html">Kafka Entry Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="MongoCase.html">Mongo Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ElasticCase.html">Elastic Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="MySqlTuning.html">MySql Tuning</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="KeycloakCase.html">Keycloak Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="TinkerpopCase.html">Tinkerpop Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="PgvSimilarity.html">Pgv Similarity</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="BookmarkCase.html">Bookmark Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="AirflowDagCase.html">Airflow Dag Case</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="ModularizingCase.html">Modularizing Case</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Periphery</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Periphery/RssFeed.html">Rss Feed</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Periphery/ViewPoint.html">ViewPoint</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Periphery/FlattenLifecycle.html">Flatten Lifecycle</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Periphery/JakartaSpecification.html">Jakarta Specification</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Periphery/CommonAssortment.html">Common Assortment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Periphery/TechniqueAssortment.html">Technique Assortment</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">AsciiDoc Makeshift</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <div class="title"><a href="../../../../ai/v0.0.1/index.html">AsciiDoc AI</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../ai/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../../kafka/v0.0.1/index.html">AsciiDoc Kafka</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../kafka/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">AsciiDoc Makeshift</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+	<div class="toolbar" role="navigation">
+	<button class="nav-toggle"></button>
+	
+		<a href="../../../../ai/v0.0.1/index.html" 
+			class="home-link">
+		</a>
+
+	<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">AsciiDoc Makeshift</a></li>
+    <li>Environment</li>
+    <li>Case</li>
+    <li><a href="ModularizingCase.html">Modularizing Case</a></li>
+  </ul>
+</nav>
+		</div>
+	
+	<div class="content">
+			<aside class="toc sidebar" 
+	data-title="Contents" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+			<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_preface">1. Preface</a></li>
+<li><a href="#_创建模块">2. 创建模块</a>
+<ul class="sectlevel2">
+<li><a href="#_componentscan">2.1. @ComponentScan</a></li>
+<li><a href="#_bean">2.2. @Bean</a></li>
+<li><a href="#_conditionalon">2.3. @ConditionalOn</a></li>
+</ul>
+</li>
+<li><a href="#_导入模块">3. 导入模块</a>
+<ul class="sectlevel2">
+<li><a href="#_import">3.1. @Import</a></li>
+<li><a href="#_enable">3.2. @Enable*</a></li>
+<li><a href="#_auto_configuration">3.3. Auto-Configuration</a></li>
+</ul>
+</li>
+<li><a href="#_配置属性">4. 配置属性</a>
+<ul class="sectlevel2">
+<li><a href="#_yaml配置">4.1. Yaml配置</a></li>
+<li><a href="#_属性配置">4.2. 属性配置</a></li>
+<li><a href="#_启用属性配置">4.3. 启用属性配置</a></li>
+</ul>
+</li>
+<li><a href="#_导入策略">5. 导入策略</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_preface"><a class="anchor" href="#_preface"></a>1. Preface</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>说到灵活性，可扩展，有很多方式，spi，热拔插等；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_创建模块"><a class="anchor" href="#_创建模块"></a>2. 创建模块</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>创建模块分为@Configuration和@ConditionalOn方式；</p>
+</li>
+<li>
+<p>@Configuration = @ComponentScan + @Bean；</p>
+</li>
+<li>
+<p>@ConditionalOn粒度更细；</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_componentscan"><a class="anchor" href="#_componentscan"></a>2.1. @ComponentScan</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Configuration
+@ComponentScan(basePackages = "com.elf.logger")
+public class LoggerModuleConfiguration {}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_bean"><a class="anchor" href="#_bean"></a>2.2. @Bean</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Configuration
+public class LoggerModuleConfiguration {
+	@Bean
+  	public LoggerService loggerSerivce(){
+    	return new Bean();
+  	}
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_conditionalon"><a class="anchor" href="#_conditionalon"></a>2.3. @ConditionalOn</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>若com.elf.logger.enabled设置为false，此模块将完全禁用</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Configuration
+@ConditionalOnProperty(name = "com.elf.logger.enabled",
+    havingValue = "true", matchIfMissing = true)
+public class LoggerModuleConfiguration {
+  	//@Bean definition
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_导入模块"><a class="anchor" href="#_导入模块"></a>3. 导入模块</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_import"><a class="anchor" href="#_import"></a>3.1. @Import</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>创建模块后，使用@Import导入到应用，<br>
+这将导入LoggerModuleConfiguration类和附带的所有Bean，<br>
+不管是由@ComponentScan或@Bean注解声明的；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Import
+@SpringBootApplication
+@Import(LoggerModuleConfiguration.class)
+public class PartyApplication {}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_enable"><a class="anchor" href="#_enable"></a>3.2. @Enable*</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>如同@EnableScheduling,我们需先定义@EnableLoggerModule注解；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Retention(RetentionPolicy.RUNTIME)
+@Target({ElementType.TYPE})
+@Documented
+@Import(LoggerModuleConfiguration.class)
+@Configuration
+public @interface EnableLoggerModule {}</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>使用@Enable*注解</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@SpringBootApplication
+@EnableLoggerModule
+public class PartyApplication {}</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>@EnableLoggerModule是对@Import的包装，<br>
+包含多个配置的模块，把配置聚合到单模块更便捷；</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_auto_configuration"><a class="anchor" href="#_auto_configuration"></a>3.3. Auto-Configuration</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>自动加载模块来代替硬注入(hard-wiring)代码</p>
+</li>
+<li>
+<p>classpath创建META-INF/spring.factories</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.elf.logger.LoggerModuleConfiguration</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_配置属性"><a class="anchor" href="#_配置属性"></a>4. 配置属性</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_yaml配置"><a class="anchor" href="#_yaml配置"></a>4.1. Yaml配置</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">elf:
+  uom:
+    defaultCurrencyCode: CNY</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_属性配置"><a class="anchor" href="#_属性配置"></a>4.2. 属性配置</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>@ConfigurationProperties</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@ConfigurationProperties(prefix = "elf.uom")
+public class UomProperties {
+
+	private String defaultCurrencyCode = "CNY";
+
+	public String getDefaultCurrencyCode() {
+		return defaultCurrencyCode;
+	}
+
+	public void setDefaultCurrencyCode(String defaultCurrencyCode) {
+		this.defaultCurrencyCode = defaultCurrencyCode;
+	}
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_启用属性配置"><a class="anchor" href="#_启用属性配置"></a>4.3. 启用属性配置</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>@EnableConfigurationProperties</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@RestController
+@RequestMapping("/uom")
+@EnableConfigurationProperties({
+	UomProperties.class
+})
+public class UomController{
+
+	private UomProperties uomProperties;
+
+	@Autowired
+	public UomController(UomProperties uomProperties) {
+		this.uomProperties = uomProperties;
+	}
+
+	@PostMapping("/getUomCode")
+	public ResponseEntity&lt;String&gt; getUomCode() {
+    	String currencyCode = uomProperties.getDefaultCurrencyCode();
+    	return new ResponseEntity&lt;&gt;(currencyCode, HttpStatus.OK);
+	}
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_导入策略"><a class="anchor" href="#_导入策略"></a>5. 导入策略</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>@Import 业务模块</p>
+</li>
+<li>
+<p>Auto-Configuration 技术模块：<br>
+如日志，异常捕获，授权，监控等</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+	</div>
+</main>
+</div>
+		<footer class="footer">
+	
+	
+	
+	<div class="footer-thanks">
+		Authored in AsciiDoc
+		<br /><br />
+		Produced by Antora and Asciidoctor
+  	</div>
+  
+	<div class="footer-legal" style="text-align:center">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br /><br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		Copyright © 2024 Elf
+		<br /><br />
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+	
+</footer><script id="site-script" src="../../../../_/js/site.js" 
+	data-ui-root-path="../../../../_"></script>
+
+<script async src="../../../../_/js/vendor/highlight.js"></script>
+<script async src="../../../../_/js/vendor/highlight.bundle.js"></script>
+
+
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+
+<script>hljs.highlightAll();</script>  	</body>
+</html>

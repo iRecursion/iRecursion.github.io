@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> :: AsciiDoc</title>
+    <meta name="generator" content="Antora 3.1.7">
+
+<link rel="stylesheet" href="../../../../_/css/site.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/asciidoc.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+    <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+  			
+	            <div id="main" style="place-content: center;">
+	                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+		            </div>
+		        </section>
+    	</div>
+    	
+        <div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container" data-component="ms" data-version="v0.0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">AsciiDoc Makeshift</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Environment</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Antora</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Antora/Markdown.html">Markdown</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Antora/NodeInstallation.html">Node Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Antora/AsciidoctorInstallation.html">Asciidoctor Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Antora/AsciidoctorConfigurer.html">Asciidoctor Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Antora/AntoraInstallation.html">Antora Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Antora/AntoraConfigurer.html">Antora Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Operation</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Operation/HyperVConfigurer.html">HyperV Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Operation/UbuntuConfigurer.html">Ubuntu Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Operation/DockerFundamental.html">Docker Fundamental</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Operation/K8SInstallation.html">K8S Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Operation/K8SExtension.html">K8S Extension</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Operation/NexusInstallation.html">Nexus Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Operation/JenkinsInstallation.html">Jenkins Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Language</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/GraalWin.html">Graal Win</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/CondaJupyter.html">Conda Jupyter</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/LuaInstallation.html">Lua Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/RustInstallation.html">Rust Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/RustConfiguration.html">Rust Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/GroovyInstallation.html">Groovy Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Mixture</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Mixture/FlinkInstallation.html">Flink Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Mixture/NacosInstallation.html">Nacos Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Mixture/KeycloakInstallation.html">Keycloak Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Mixture/KafkaInstallation.html">Kafka Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Mixture/PulsarInstallation.html">Pulsar Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Mixture/ElasticInstallation.html">ElasticSearch Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Mixture/OpenSearchInstallation.html">OpenSearch Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Store</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Store/PowerDesigner.html">Power Designer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Store/MongoInstallation.html">Mongo Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Store/MySQLInstallation.html">MySQL Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Store/PostgresInstallation.html">Postgres Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Store/AeroSpikeInstallation.html">AeroSpike Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Store/RedisStackInstallation.html">Redis Stack Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Case</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="KafkaEntryCase.html">Kafka Entry Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="MongoCase.html">Mongo Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ElasticCase.html">Elastic Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="MySqlTuning.html">MySql Tuning</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="KeycloakCase.html">Keycloak Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="TinkerpopCase.html">Tinkerpop Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="PgvSimilarity.html">Pgv Similarity</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="BookmarkCase.html">Bookmark Case</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="AirflowDagCase.html">Airflow Dag Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ModularizingCase.html">Modularizing Case</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Periphery</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Periphery/RssFeed.html">Rss Feed</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Periphery/ViewPoint.html">ViewPoint</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Periphery/FlattenLifecycle.html">Flatten Lifecycle</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Periphery/JakartaSpecification.html">Jakarta Specification</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Periphery/CommonAssortment.html">Common Assortment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Periphery/TechniqueAssortment.html">Technique Assortment</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">AsciiDoc Makeshift</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <div class="title"><a href="../../../../ai/v0.0.1/index.html">AsciiDoc AI</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../ai/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../../kafka/v0.0.1/index.html">AsciiDoc Kafka</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../kafka/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">AsciiDoc Makeshift</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+	<div class="toolbar" role="navigation">
+	<button class="nav-toggle"></button>
+	
+		<a href="../../../../ai/v0.0.1/index.html" 
+			class="home-link">
+		</a>
+
+	<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">AsciiDoc Makeshift</a></li>
+    <li>Environment</li>
+    <li>Case</li>
+    <li><a href="AirflowDagCase.html">Airflow Dag Case</a></li>
+  </ul>
+</nav>
+		</div>
+	
+	<div class="content">
+			<aside class="toc sidebar" 
+	data-title="Contents" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+			<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_email_dag">1. Email Dag</a></li>
+<li><a href="#_ml_dag">2. ML Dag</a></li>
+<li><a href="#_practical_dag">3. Practical Dag</a></li>
+<li><a href="#_call_4pd_dag">4. Call 4Pd Dag</a></li>
+<li><a href="#_hdfs_dag">5. Hdfs Dag</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_email_dag"><a class="anchor" href="#_email_dag"></a>1. Email Dag</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">from airflow.operators.email import EmailOperator
+from datetime import datetime, timedelta
+from airflow import DAG
+
+default_args = {
+    'owner': 'airflow',
+    'depends_on_past': False,
+    'email': ['ns975@126.com'],
+    'email_on_failure': False,
+    'email_on_retry': False,
+    'retries': 1,
+    'retry_delay': timedelta(minutes=5)
+}
+with DAG(
+    dag_id='airflow_email',
+    default_args=default_args,
+    description='simple email description',
+    schedule_interval=timedelta(days=1),
+    start_date=datetime(2022,9,27),
+    catchup=False
+) as dag:
+    send_email_notification= EmailOperator(
+        task_id="airflow_email_test",
+        to= "ns975@126.com",
+        subject="AirFlow发送邮件",
+        html_content="&lt;h2&gt;Mail Content: 邮件内容"
+    )
+if __name__ == '__main__ ':
+  dag.cli()</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ml_dag"><a class="anchor" href="#_ml_dag"></a>2. ML Dag</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">from airflow import DAG
+from airflow.operators.python import PythonOperator, BranchPythonOperator
+from airflow.operators.bash import BashOperator
+
+from datetime import datetime
+from random import randint
+
+def _choosing_best_model(ti):
+    accuracies = ti.xcom_pull(task_ids=[
+        'training_model_A',
+        'training_model_B',
+        'training_model_C'
+        ])
+    if max(accuracies) &gt; 8:
+        return 'accurate'
+    return 'inaccurate'
+
+def _training_model(model):
+    return randint(1, 10)
+
+with DAG("airflow-ml",
+    start_date=datetime(2021, 1 ,1),
+    schedule_interval='*/30 * * * * *',
+    catchup=False) as dag:
+
+    training_model_tasks = [
+        PythonOperator(
+            task_id=f"training_model_{model_id}",
+            python_callable=_training_model,
+            op_kwargs={
+                "model": model_id
+            }
+        ) for model_id in ['A', 'B', 'C']
+    ]
+
+    choosing_best_model = BranchPythonOperator(
+        task_id="choosing_best_model",
+        python_callable=_choosing_best_model
+    )
+
+    accurate = BashOperator(
+        task_id="accurate",
+        bash_command="echo 'accurate'"
+    )
+
+    inaccurate = BashOperator(
+        task_id="inaccurate",
+        bash_command=" echo 'inaccurate'"
+    )
+
+    training_model_tasks &gt;&gt; choosing_best_model &gt;&gt; [accurate, inaccurate]</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_practical_dag"><a class="anchor" href="#_practical_dag"></a>3. Practical Dag</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">#! /usr/bin/env python3
+# -*- coding: utf-8 -*-
+# creator: elf
+
+from airflow import DAG
+from datetime import datetime
+from datetime import timedelta
+import pendulum
+
+import base64
+import logging
+
+from airflow.operators.python import PythonOperator
+from airflow.providers.ssh.operators.ssh import SSHOperator
+from airflow.operators.empty import EmptyOperator
+
+# Exceptions
+from airflow.exceptions import AirflowFailException
+
+local_tz = pendulum.timezone("Asia/Shanghai")
+
+"""
+decode base64 xcom output from SSHOperator
+"""
+def decode_msg(task_name, ti):
+    msg = ti.xcom_pull(task_ids=task_name)
+    print(msg)
+    return base64.b64decode(msg).decode()
+
+"""
+fail job if decode number less than threshold
+"""
+def validate_job(task_name, threshold, ti):
+    number = int(ti.xcom_pull(task_ids=task_name))
+    logging.info(f"Number generated is: {number}")
+    if number &lt; threshold:
+        raise AirflowFailException(f"Number {number} is smaller than threshold {threshold}, unlucky.")
+    else:
+        logging.info(f"NUmber {number} is larger than or equal to threshold {threshold}, job continues.")
+
+default_args = {
+    'owner': 'airflow',
+    'email': ['ns975@126.com'],
+    'email_on_retry': False,
+    'email_on_failure': True,
+    'retries': 1,
+    'retry_delay': timedelta(seconds=10),
+    'start_date': datetime(2022,7,10,16,0,0,0,local_tz),
+    'do_xcom_push': True,
+}
+
+with DAG(
+    'dag_ssh',
+    default_args=default_args,
+    start_date=datetime(2022,7,10,16,0,0,0,tzinfo = local_tz),
+    schedule_interval=None,
+    catchup = False,
+) as dag:
+    start = EmptyOperator(task_id='start')
+    end = EmptyOperator(task_id='end')
+    ssh = SSHOperator(
+        task_id='ssh',
+        ssh_conn_id='connection_ssh',
+        command='echo $RANDOM',
+    )
+    decode = PythonOperator(
+        task_id='decode',
+        python_callable=decode_msg,
+        op_args=[
+            'ssh',
+        ],
+    )
+    validate = PythonOperator(
+        task_id='validate',
+        python_callable=validate_job,
+        op_args=[
+            'decode',
+            10000,
+        ]
+    )
+    start &gt;&gt; ssh &gt;&gt; decode &gt;&gt; validate &gt;&gt; end</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_call_4pd_dag"><a class="anchor" href="#_call_4pd_dag"></a>4. Call 4Pd Dag</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">from airflow.models.dag import DAG
+from airflow.operators.bash import BashOperator
+# from airflow.operators.python import PythonOperator
+
+from datetime import datetime, timedelta
+one_days_ago = datetime.combine(
+    datetime.today() - timedelta(1),datetime.min.time())
+
+default_args = {
+    'owner': 'airflow',
+    'depends_on_past': False,
+    'start_date': one_days_ago,
+    'email': ['ns975@126.com'],
+    'email_on_failure': False,
+    'email_on_retry': False,
+    'retries': 1,
+    'retry_delay': timedelta(minutes=5)
+  }
+
+dag = DAG(
+    dag_id='pd-hdfs',
+    default_args=default_args,
+    schedule_interval='*/5  * * * *',
+)
+
+t1 = BashOperator(
+    task_id='airflow-scheduing',
+    bash_command='python /opt/airflow/dags/pd_hdfs.py',
+    dag=dag)
+
+t1</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_hdfs_dag"><a class="anchor" href="#_hdfs_dag"></a>5. Hdfs Dag</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">import time
+import datetime
+import requests
+import json
+
+# headers 头需要改一下
+headers = {
+    "Access-Key": "",
+    "Content-Type": "",
+    "X-Prophet-Workspace-Id": "",
+}
+
+# 修改开始日期
+dayFrom = datetime.date.today()
+# tableslipName = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+# starDcdate = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+# 自定义测试
+tableslipName = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+starDcdate = ""
+endDcdate = ""
+
+# 数据库链接 需要改
+databaseInfo = {
+    "host": "",
+    ".........": "......"
+}
+
+# 表名和信息需要改
+database2TableName = {
+    "oracle": {
+        "TbaleName" : ["命名空间", "where条件中的时间字段"]
+    }
+}
+
+# 地址需要改
+host = "http://172.253.66.115:40121"
+
+def import_over(groupPrn):
+    # 这个url是需要自己抓包
+    url = host + "/telamon/v1/tableGroups/tables?prn=" + groupPrn + "&amp;offset=0&amp;limit=5&amp;well=1"
+    response = requests.get(url,headers=headers)
+    lineNum = response.json()["data"]["list"][0]["lineNum"]
+    return False if lineNum == None else True
+
+def getTableSchema(query_schema_dict):
+    url = host + "/telamon/v1/data/jdbc/preview"
+    response = requests.post(url, None, query_schema_dict, headers=headers)
+    return response.json()["data"]["schema"]
+
+def getGroupSchema(groupprn):
+    url = host + "/telamon/v1/tableGroups?prn=" + groupprn
+    response = requests.get(url, headers=headers)
+    try:
+        return response.json()["data"]["list"][0]["schema"]
+    except:
+        return ["1"]
+
+def is_group_exist(group_name):
+    # group_name 数据组名字
+    url = host + "/telamon/v1/tableGroups?prn=" + group_name
+    response = requests.get(url, headers=headers)
+    resp_json = response.json()
+
+    if len(resp_json["data"]["list"]) != 0:
+        return True
+    else:
+        create_group(group_name)
+
+def create_group(group_prn):
+    # url抓包
+    url = host + "/telamon/v1/table-groups?well=1"
+    param_dict = {"prn": group_prn, "catalogPath": "Data/Untitled/CWPZ"}
+    bodys = json.dumps(param_dict)
+    response = requests.post(url, headers=headers, data=bodys)
+    return response
+
+def import_data_fromdatabase(parm_dict):
+    # url抓包
+    url = host + "/telamon/v1/data/jdbc?/well=1"
+    parm_json = json.dumps(parm_dict)
+    is_group_exist(parm_dict["dataTarget"]["groupPrn"])
+    response = requests.post(url, headers=headers, data=parm_json)
+    return response
+
+def diffSchemaQuery(schemaSou , schemaDst):
+    dafault_value = {
+        "String": " ' ' ",
+        "Double": 0.0,
+        "BigInt": 0,
+    }
+
+    schemaSoutmp = []
+    for t in schemaSou:
+        schemaSoutmp.append(t.get('name'))
+
+    schemaDsttmp = []
+    for t in schemaDst:
+        if t.get('name') in schemaSoutmp:
+            schemaDsttmp.append(t.get('name'))
+        else:
+            extr_name = t.get('name')
+            extr_name_type = t.get('type')
+            extr_name_defvale = dafault_value.get(extr_name_type)
+            schemaDsttmp.append(" {} as {}".format(extr_name_defvale, extr_name))
+
+    query1 = ','.join(schemaDsttmp)
+    return ' ' + query1 + ' '
+
+def getDataInfo2Hdfs():
+    tableIndex = 1
+    param_dict = {}
+    schema = {}
+    datavaseSchema = ""
+    quweSQL = ""
+    for (database, tableProperties) in database2TableName.items():
+        for (tableName, property) in tableProperties.items():
+            print(dayFrom.strftime("%Y%m%d%H%M%S") + "INFO: " + str(tableIndex) + ".tableName: " + tableName)
+            tableIndex = tableIndex + 1
+            dataSource = {}
+            dataTarget = {}
+
+            query_schema_dict = databaseInfo["oracle"]
+            query_schema_dict["type"] = "oracle"
+            dataSource["dbname"] = databaseInfo["oracle"]["dbname"]
+            dataSource["username"] = databaseInfo["oracle"]["username"]
+            dataSource["password"] = databaseInfo["oracle"]["password"]
+            dataSource["port"] = databaseInfo["oracle"]["port"]
+            dataSource["type"] = "oracle"
+            dataSource["schemaPattern"] = property[0].replace(".", "").upper()
+
+            oracleSchema = getTableSchema(query_schema_dict)
+            sageSchema = getGroupSchema("CWPZ/CWPZ_LR_CM_groupv2.table-group") # 传入数据组prn
+            colnames = diffSchemaQuery(oracleSchema, sageSchema)
+
+            dataSource["module"] = "teamon"
+            dataSource["encoding"] = "utf-8"
+            dataSource["host"] = query_schema_dict["host"]
+            dataSource["table"] = tableName
+            dataSource["sql"] = ""
+            dataSource["sqlTable"] = "t1"
+
+            if not property[1]:
+                querySQL = "select" + colnames + "from" + datavaseSchema + tableName
+            elif property[1] == "examine_value":
+                querySQL = "select * from " + datavaseSchema + tableName + "where" + property[1] + "where条件"
+            else:querySQL = "select" + colnames + "from" + datavaseSchema + tableName + "where" + property[1] + "&gt;" +starDcdate + "and" + property[1] + "&lt;" + endDcdate + "and 条件判断"
+
+            dataSource["sqoopParams"] = {"-m": "8", "--query": querySQL}
+            param_dict["dataSource"] = dataSource
+            # 这个地方配置里面必须所有都是"",不能有''
+            param_dict["config"] = {"advabce_config": "{\"-m\":\"4\",\"mapreduc.job.reduces\":\"2\".\"mapreduce.map.memory.mb\":\"5120\",\"mapreduce.map.java.opts\":\"-Xmx3840M\",\"mapreduce.reduce.memory.mb\":\"5120\",\"mapreduce.reduce.java.opts\":\"-Xmx3840M\"}"}
+            dataTarget["format"] = "parquet"
+
+            dataTarget["schema"] = sageSchema
+            groupPrnTmp = "数据组prn"
+            dataTarget["prn"] = groupPrnTmp + '/' + tableName + "_" + tableslipName + ".table"
+            dataTarget["catalogPath"] = "Data/Untitled/CWPZ"
+            dataTarget["groupPrn"] = groupPrnTmp
+            dataTarget["dataTarget"] = dataTarget
+
+            res = import_data_fromdatabase(param_dict)
+            time.sleep(60)
+            is_over = import_over(groupPrnTmp)
+            while not is_over:
+                print('import orealce to ee not over')
+                time.sleep(90)
+                is_over = import_over(groupPrnTmp)
+            print("import over ..................")
+
+if __name__== "__main__":
+    getDataInfo2Hdfs()</code></pre>
+</div>
+</div>
+</div>
+</div>
+</article>
+	</div>
+</main>
+</div>
+		<footer class="footer">
+	
+	
+	
+	<div class="footer-thanks">
+		Authored in AsciiDoc
+		<br /><br />
+		Produced by Antora and Asciidoctor
+  	</div>
+  
+	<div class="footer-legal" style="text-align:center">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br /><br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		Copyright © 2024 Elf
+		<br /><br />
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+	
+</footer><script id="site-script" src="../../../../_/js/site.js" 
+	data-ui-root-path="../../../../_"></script>
+
+<script async src="../../../../_/js/vendor/highlight.js"></script>
+<script async src="../../../../_/js/vendor/highlight.bundle.js"></script>
+
+
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+
+<script>hljs.highlightAll();</script>  	</body>
+</html>

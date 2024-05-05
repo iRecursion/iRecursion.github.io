@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> :: AsciiDoc</title>
+    <meta name="generator" content="Antora 3.1.7">
+
+<link rel="stylesheet" href="../../../../_/css/site.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/asciidoc.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+    <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+  			
+	            <div id="main" style="place-content: center;">
+	                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+		            </div>
+		        </section>
+    	</div>
+    	
+        <div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container" data-component="ai" data-version="v0.0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">AsciiDoc AI</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Spring AI</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Solitary</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/AIConcept.html">AI Concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/SpringAIDependency.html">Spring AI Dependency</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/SpringAIProperty.html">Spring AI Property</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/GenericModel.html">Generic Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/Prompt.html">Prompt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/OutputParser.html">Output Parser</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/EtlPipeline.html">Etl Pipeline</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/ImageGeneration.html">Image Generation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/FunctionCalling.html">Function Calling</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/EvaluationTesting.html">Evaluation Testing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/TestContainer.html">Test Container</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Chat Completion</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/ChatCompletion/ChatCompletion.html">Chat Completion</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/ChatCompletion/Ollama.html">Ollama</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/ChatCompletion/HuggingFace.html">Hugging Face</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Embedding</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/Embedding.html">Embedding</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/Ollama.html">Ollama</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/PostgresML.html">Postgres ML</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/TransformerOnnx.html">Transformer Onnx</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Vector Store</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/VectorExplanation.html">Vector Explanation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/VectorStore.html">Vector Store</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Neo4j.html">Neo4j</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Redis.html">Redis</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Chroma.html">Chroma</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Milvus.html">Milvus</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Qdrant.html">Qdrant</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Elastic.html">Elastic</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Weaviate.html">Weaviate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Pgv.html">Postgres Vector</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Case</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Case/SpringAICase.html">Spring AI Case</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">ML</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Fundamental</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="AIIntro.html">AI Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="MLIntro.html">ML Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="DLIntro.html">DL Intro</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="LlmIntro.html">LLM Intro</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">LLM</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">FullStack</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../LLM/FullStack/PromptEngineering.html">Prompt Engineering</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../LLM/FullStack/PromptEngineeringCase.html">Prompt Engineering Case</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">AsciiDoc AI</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">AsciiDoc AI</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../../kafka/v0.0.1/index.html">AsciiDoc Kafka</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../kafka/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../../ms/v0.0.1/index.html">AsciiDoc Makeshift</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../ms/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+	<div class="toolbar" role="navigation">
+	<button class="nav-toggle"></button>
+	
+		<a href="../../index.html" 
+			class="home-link">
+		</a>
+
+	<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">AsciiDoc AI</a></li>
+    <li>ML</li>
+    <li>Fundamental</li>
+    <li><a href="LlmIntro.html">LLM Intro</a></li>
+  </ul>
+</nav>
+		</div>
+	
+	<div class="content">
+			<aside class="toc sidebar" 
+	data-title="Contents" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+			<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_intro">1. Intro</a></li>
+<li><a href="#_token">2. Token</a></li>
+<li><a href="#_business_architecture">3. Business Architecture</a>
+<ul class="sectlevel2">
+<li><a href="#_embedding">3.1. Embedding</a></li>
+<li><a href="#_copilot">3.2. Copilot</a></li>
+<li><a href="#_agent">3.3. Agent</a></li>
+</ul>
+</li>
+<li><a href="#_technical_architecture">4. Technical Architecture</a>
+<ul class="sectlevel2">
+<li><a href="#_prompt">4.1. Prompt</a></li>
+<li><a href="#_agent_function_calling">4.2. Agent + Function Calling</a></li>
+<li><a href="#_embedding_vector_db">4.3. Embedding + Vector DB</a></li>
+<li><a href="#_fine_tuning">4.4. Fine Tuning</a></li>
+</ul>
+</li>
+<li><a href="#_chatall">5. ChatAll</a></li>
+<li><a href="#_roundup">6. Roundup</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_intro"><a class="anchor" href="#_intro"></a>1. Intro</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-right valign-top">Entry</th>
+<th class="tableblock halign-left valign-top">Url</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">ChatGPT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://chat.openai.com" class="bare">https://chat.openai.com</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">文心一言</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://yiyan.baidu.com" class="bare">https://yiyan.baidu.com</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">讯飞星火</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://xinghuo.xfyun.cn" class="bare">https://xinghuo.xfyun.cn</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">智谱清言</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://chatglm.cn" class="bare">https://chatglm.cn</a></p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>大语言模型：LargeLanguage Model</p>
+</li>
+<li>
+<p>大模型生成结果：根据上下文，猜下一个词的概率，此算法叫transformer；<br>
+OpenAI的接口叫Completion，如Spring AI中叫Chat Completion Api；</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Fundamental/LlmIntro/LlmAutoRegressive.gif" alt="LlmAutoRegressive">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Fundamental/LlmIntro/LlmCompletionTransformer.svg" alt="LlmCompletionTransformer">
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">import openai
+import os
+
+from dotenv import load dotenv,
+	find dotenv = load dotenv(find dotev())
+
+openai.api key = os.getenv('OPENAI API KEY')
+prompt ="今天朕要"
+
+response = openai.Completion.create(
+	model="gpt-3.5-turbo-instruct"
+	prompt = prompt,
+	max tokens = 100
+	temperature = 0.5,
+	stream = True
+)
+
+for chunk in response:
+	print(chunk.choices[0].text,end='')</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><mark>temperature：控制输出的随机性randomness</mark>，温度越大，思维越广；</p>
+</li>
+<li>
+<p>范围0~2，默认1或0.7，取决于选择的模型，越高时更多随机输出，<br>
+越接近零，则值的确定性更强deterministic</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_token"><a class="anchor" href="#_token"></a>2. Token</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><mark>token，是大模型处理的最小单位，可能是一个字或单词</mark>，如我，I，也可能是中文词，<br>
+如我们，major in，还可能是半个或三分之一个汉字或单词，想想Unicode的存储方式；</p>
+</li>
+<li>
+<p>大模型在开训前，需先训练tokenizer模型，把所有的文本切成token；</p>
+</li>
+<li>
+<p>Open AI首席科学家llya Sutskever：<br>
+数字Digital/Artificial神经网络各人脑的生物Biological神经网络，<br>
+在数学原理mathematical principle上是一样的；</p>
+</li>
+<li>
+<p>我们可把AI当成一个独立的生物个体来沟通，交互等；</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Fundamental/LlmIntro/AnnVsBnn.png" alt="AnnVsBnn">
+</div>
+</div>
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-right valign-top">Biological Neuron</th>
+<th class="tableblock halign-left valign-top">Artificial Neuron</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Cell Nucleus (Soma) 细胞核</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Node 节点</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Dendrite 树突</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input 输入</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Synapse (神经元)突触</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Weight or Interconnection 权重或互联</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Axon 轴突</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Output 输出</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_business_architecture"><a class="anchor" href="#_business_architecture"></a>3. Business Architecture</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>大模型技术：A：训练基础大模型和B：建造大模型应用；</p>
+</li>
+<li>
+<p>大模型应用技术：门槛低，落地难；</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Fundamental/LlmIntro/LlmBusinessArchitecture.png" alt="LlmBusinessArchitecture">
+</div>
+</div>
+<div class="sect2">
+<h3 id="_embedding"><a class="anchor" href="#_embedding"></a>3.1. Embedding</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Embedding：此模式下，人占绝大多数，AI只做极少数部分的任务；</p>
+</li>
+<li>
+<p>系统有很多任务，只有某一环节/任务嵌入(参与)进来，如人脸识别</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_copilot"><a class="anchor" href="#_copilot"></a>3.2. Copilot</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Copilot：副驾驶，人和AI各占一半，两边协作同时把任务完成，<br>
+最后由人拍板，啥可行，啥不可行，AI帮助我们提升效率；</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_agent"><a class="anchor" href="#_agent"></a>3.3. Agent</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>智能体模式，完全由AI来决定接下来要干啥，人类似于管理者，只提出问题，<br>
+和最终拍板负责，其中的所有细节都由团队成员/AI负责完成；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_technical_architecture"><a class="anchor" href="#_technical_architecture"></a>4. Technical Architecture</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_prompt"><a class="anchor" href="#_prompt"></a>4.1. Prompt</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Prompt：发给大模型的指令</p>
+</li>
+<li>
+<p>就像某易回合制游戏，你一回合，我一回合，你再一回合，我再一回合……</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Fundamental/LlmIntro/ArchitecturePrompt.png" alt="ArchitecturePrompt">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_agent_function_calling"><a class="anchor" href="#_agent_function_calling"></a>4.2. Agent + Function Calling</h3>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Fundamental/LlmIntro/ArchitectureAgentFunctionCalling.png" alt="ArchitectureAgentFunctionCalling">
+</div>
+</div>
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-right valign-top">Entry</th>
+<th class="tableblock halign-left valign-top">Memo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Agent</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AI主动提要求</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Function Calling</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AI要求执行某个函数</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">场景案例</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">你问五一去哪玩，他反问你有几天假？</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_embedding_vector_db"><a class="anchor" href="#_embedding_vector_db"></a>4.3. Embedding + Vector DB</h3>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Fundamental/LlmIntro/ArchitectureEmbeddingVectorDB.png" alt="ArchitectureEmbeddingVectorDB">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Embedding：主要解决相似度判断的问题，如谐音梗联想，<br>
+具体可参考Spring AI Vector Store章节；</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-right valign-top">Entry</th>
+<th class="tableblock halign-left valign-top">Memo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Embedding</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">把文字转换为更易于相似度计算的编码，此编码称为向量</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">向量数据库</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">把向量存储，方便查找</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">向量搜索</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">根据输入向量，找到相似的向量</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">场景案例</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">考试时，看到一道题，到书上找到相关内容，<br>
+ 再结合题目组成答案，打小抄，而结果也可能不好；</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_fine_tuning"><a class="anchor" href="#_fine_tuning"></a>4.4. Fine Tuning</h3>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Fundamental/LlmIntro/ArchitectureFineTuning.png" alt="ArchitectureFineTuning">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>努力学习考试内容，长期记住，活学活用</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_chatall"><a class="anchor" href="#_chatall"></a>5. ChatAll</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/sunner/ChatALL/releases" class="bare">https://github.com/sunner/ChatALL/releases</a></p>
+</li>
+<li>
+<p>删除目录可重置ChatALL；</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-right valign-top">Platform</th>
+<th class="tableblock halign-left valign-top">Location</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Windows</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C:\Users\&lt;user&gt;\AppData\Roaming\chatall\</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Linux</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/home/&lt;user&gt;/.config/chatall/</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">macOS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/Users/&lt;user&gt;/Library/Application Support/chatall/</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_roundup"><a class="anchor" href="#_roundup"></a>6. Roundup</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Fundamental/LlmIntro/LlmAppDevBokV141.png" alt="LlmAppDevBokV141">
+</div>
+</div>
+</div>
+</div>
+</article>
+	</div>
+</main>
+</div>
+		<footer class="footer">
+	
+	
+	
+	<div class="footer-thanks">
+		Authored in AsciiDoc
+		<br /><br />
+		Produced by Antora and Asciidoctor
+  	</div>
+  
+	<div class="footer-legal" style="text-align:center">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br /><br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		Copyright © 2024 Elf
+		<br /><br />
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+	
+</footer><script id="site-script" src="../../../../_/js/site.js" 
+	data-ui-root-path="../../../../_"></script>
+
+<script async src="../../../../_/js/vendor/highlight.js"></script>
+<script async src="../../../../_/js/vendor/highlight.bundle.js"></script>
+
+
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+
+<script>hljs.highlightAll();</script>  	</body>
+</html>
