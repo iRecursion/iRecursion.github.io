@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> :: AsciiDoc</title>
+    <meta name="generator" content="Antora 3.1.7">
+
+<link rel="stylesheet" href="../../../../_/css/site.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/asciidoc.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+    <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+  			
+	            <div id="main" style="place-content: center;">
+	                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+		            </div>
+		        </section>
+    	</div>
+    	
+        <div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container" data-component="ai" data-version="v0.0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">AsciiDoc AI</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Spring AI</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Solitary</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/AIConcept.html">AI Concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/SpringAIDependency.html">Spring AI Dependency</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/SpringAIProperty.html">Spring AI Property</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/GenericModel.html">Generic Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/Prompt.html">Prompt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/OutputParser.html">Output Parser</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/EtlPipeline.html">Etl Pipeline</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/ImageGeneration.html">Image Generation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/FunctionCalling.html">Function Calling</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/EvaluationTesting.html">Evaluation Testing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/TestContainer.html">Test Container</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Chat Completion</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/ChatCompletion/ChatCompletion.html">Chat Completion</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/ChatCompletion/Ollama.html">Ollama</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/ChatCompletion/HuggingFace.html">Hugging Face</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Embedding</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/Embedding.html">Embedding</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/Ollama.html">Ollama</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/PostgresML.html">Postgres ML</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/TransformerOnnx.html">Transformer Onnx</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Vector Store</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/VectorExplanation.html">Vector Explanation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/VectorStore.html">Vector Store</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Neo4j.html">Neo4j</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Redis.html">Redis</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Chroma.html">Chroma</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Milvus.html">Milvus</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Qdrant.html">Qdrant</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Elastic.html">Elastic</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Weaviate.html">Weaviate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Pgv.html">Postgres Vector</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Case</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Case/SpringAICase.html">Spring AI Case</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Open AI</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Solitary</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Solitary/OpenAIIntro.html">OpenAI Intro</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Model</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Capability</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="TextGeneration.html">Text Generation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="FunctionCalling.html">Function Calling</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Embedding.html">Embedding</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="FineTuning.html">Fine Tuning</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ImageGeneration.html">Image Generation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Vision.html">Vision</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="TextToSpeech.html">Text To Speech</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="SpeechToText.html">Speech To Text</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Moderation.html">Moderation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Assistant</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Guide</span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">ML</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Fundamental</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/AIIntro.html">AI Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/MLIntro.html">ML Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/DLIntro.html">DL Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/LlmIntro.html">LLM Intro</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">LLM</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">FullStack</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../LLM/FullStack/PromptEngineering.html">Prompt Engineering</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../LLM/FullStack/PromptEngineeringCase.html">Prompt Engineering Case</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">AsciiDoc AI</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">AsciiDoc AI</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../../kafka/v0.0.1/index.html">AsciiDoc Kafka</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../kafka/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../../ms/v0.0.1/index.html">AsciiDoc Makeshift</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../ms/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+	<div class="toolbar" role="navigation">
+	<button class="nav-toggle"></button>
+	
+		<a href="../../index.html" 
+			class="home-link">
+		</a>
+
+	<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">AsciiDoc AI</a></li>
+    <li>Open AI</li>
+    <li>Capability</li>
+    <li><a href="TextToSpeech.html">Text To Speech</a></li>
+  </ul>
+</nav>
+		</div>
+	
+	<div class="content">
+			<aside class="toc sidebar" 
+	data-title="Contents" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+			<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_intro">1. Intro</a></li>
+<li><a href="#_quick_start">2. Quick Start</a></li>
+<li><a href="#_audio_quality">3. Audio Quality</a></li>
+<li><a href="#_voice_option">4. Voice Option</a></li>
+<li><a href="#_output_format">5. Output Format</a>
+<ul class="sectlevel2">
+<li><a href="#_opus">5.1. Opus</a></li>
+<li><a href="#_aac">5.2. AAC</a></li>
+<li><a href="#_flac">5.3. FLAC</a></li>
+<li><a href="#_wav">5.4. WAV</a></li>
+<li><a href="#_pcm">5.5. PCM</a></li>
+</ul>
+</li>
+<li><a href="#_streaming_realtime_audio">6. Streaming RealTime Audio</a></li>
+<li><a href="#_faq">7. Faq</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_intro"><a class="anchor" href="#_intro"></a>1. Intro</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>将文本转换为逼真的语音，turn text into lifelike spoken audio；</p>
+</li>
+<li>
+<p>基于TTS(文本转语音text-to-speech)模型的语音端点speech endpoint；</p>
+</li>
+<li>
+<p>有6中内置语言，可叙述一篇博客文章，制作多语言的语音音频，用流式传输提供实时音频输出；</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>注：使用政策要求向最终用户明确披露clear disclosure，<br>
+他们听到的TTS语音是AI生成的，而非人类的声音；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_quick_start"><a class="anchor" href="#_quick_start"></a>2. Quick Start</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>语音端点speech endpoint接受三个关键输入：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>A：模型 model；</p>
+</li>
+<li>
+<p>B：应转换为音频的文本 text should turn into audio；</p>
+</li>
+<li>
+<p>C：用于音频生成的语音 voice used for audio generation；</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">from pathlib import Path
+from openai import OpenAI
+
+client = OpenAI()
+
+speech_file_path = Path(__file__).parent / "speech.mp3"
+response = client.audio.speech.create(
+  	model="tts-1",
+  	voice="alloy",
+  	input="wonderful day for tts!"
+)
+
+response.stream_to_file(speech_file_path)</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_audio_quality"><a class="anchor" href="#_audio_quality"></a>3. Audio Quality</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>对实时应用，标准 tts-1 模型提供最低延迟latency，但质量低于 tts-1-hd 模型；</p>
+</li>
+<li>
+<p>因音频audio的生成方式，tts-1 在某些情况下可能会生成比 tts-1-hd 更静态的内容；</p>
+</li>
+<li>
+<p>在某些情况下，根据我们的收听设备listening device和个人individual<br>
+person的不同，音频可能没明显的差异noticeable difference；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_voice_option"><a class="anchor" href="#_voice_option"></a>4. Voice Option</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>尝试不同的声音experiment with different voice：<br>
+alloy，echo，fable，onyx，nova，shimmer；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_output_format"><a class="anchor" href="#_output_format"></a>5. Output Format</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>mp3(默认)，opus，aac，flac，pcm；</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_opus"><a class="anchor" href="#_opus"></a>5.1. Opus</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>用于互联网流媒体和通信，低延迟；</p>
+</li>
+<li>
+<p>for internet streaming and communication，low latency；</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_aac"><a class="anchor" href="#_aac"></a>5.2. AAC</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>用于数字音频压缩，YouTube，Android，iOS首选；</p>
+</li>
+<li>
+<p>for digital audio compression，preferr by YouTube，Android，iOS；</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_flac"><a class="anchor" href="#_flac"></a>5.3. FLAC</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>用于无损音频压缩，受音频爱好者存档的青睐；</p>
+</li>
+<li>
+<p>for lossless audio compression，<br>
+favor by audio enthusiast for archiving</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_wav"><a class="anchor" href="#_wav"></a>5.4. WAV</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>未压缩的wav音频，适合低延迟应用，以避免解码开销；</p>
+</li>
+<li>
+<p>uncompressed wav audio，suitable for low-latency<br>
+application to avoid decoding overhead；</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_pcm"><a class="anchor" href="#_pcm"></a>5.5. PCM</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>：与wav类似，但包含24kHz的原始样本(16位有符号、低端)，没标头；</p>
+</li>
+<li>
+<p>similar to wav but containing raw sample in 24kHz<br>
+(16-bit signed，low-endian)，without header；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_streaming_realtime_audio"><a class="anchor" href="#_streaming_realtime_audio"></a>6. Streaming RealTime Audio</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Speech Api使用块传输编码提供对实时音频流的支持，即可在生成完整文件前可访问音频；</p>
+</li>
+<li>
+<p>real time audio streaming using chunk transfer encoding；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">from openai import OpenAI
+
+client = OpenAI()
+
+response = client.audio.speech.create(
+	model="tts-1",
+    voice="alloy",
+    input="hello world，streaming test!",
+)
+
+response.stream_to_file("streaming-tts.mp3")</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_faq"><a class="anchor" href="#_faq"></a>7. Faq</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>控制生成的音频的情感范围，control generated audio emotional range；</p>
+</li>
+<li>
+<p>没直接的机制来控制所生成的音频的情感输出，某些因素可能会影响输出音频，<br>
+如大小写或语法，但对这些因素的内部测试产生不同的结果；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+	</div>
+</main>
+</div>
+		<footer class="footer">
+	
+	
+	
+	<div class="footer-thanks">
+		Authored in AsciiDoc
+		<br /><br />
+		Produced by Antora and Asciidoctor
+  	</div>
+  
+	<div class="footer-legal" style="text-align:center">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br /><br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		Copyright © 2024 Elf
+		<br /><br />
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+	
+</footer><script id="site-script" src="../../../../_/js/site.js" 
+	data-ui-root-path="../../../../_"></script>
+
+<script async src="../../../../_/js/vendor/highlight.js"></script>
+<script async src="../../../../_/js/vendor/highlight.bundle.js"></script>
+
+
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+
+<script>hljs.highlightAll();</script>  	</body>
+</html>

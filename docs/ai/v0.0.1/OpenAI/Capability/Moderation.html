@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> :: AsciiDoc</title>
+    <meta name="generator" content="Antora 3.1.7">
+
+<link rel="stylesheet" href="../../../../_/css/site.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/asciidoc.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+    <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+  			
+	            <div id="main" style="place-content: center;">
+	                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+		            </div>
+		        </section>
+    	</div>
+    	
+        <div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container" data-component="ai" data-version="v0.0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">AsciiDoc AI</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Spring AI</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Solitary</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/AIConcept.html">AI Concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/SpringAIDependency.html">Spring AI Dependency</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/SpringAIProperty.html">Spring AI Property</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/GenericModel.html">Generic Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/Prompt.html">Prompt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/OutputParser.html">Output Parser</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/EtlPipeline.html">Etl Pipeline</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/ImageGeneration.html">Image Generation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/FunctionCalling.html">Function Calling</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/EvaluationTesting.html">Evaluation Testing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/TestContainer.html">Test Container</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Chat Completion</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/ChatCompletion/ChatCompletion.html">Chat Completion</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/ChatCompletion/Ollama.html">Ollama</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/ChatCompletion/HuggingFace.html">Hugging Face</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Embedding</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/Embedding.html">Embedding</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/Ollama.html">Ollama</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/PostgresML.html">Postgres ML</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/TransformerOnnx.html">Transformer Onnx</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Vector Store</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/VectorExplanation.html">Vector Explanation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/VectorStore.html">Vector Store</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Neo4j.html">Neo4j</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Redis.html">Redis</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Chroma.html">Chroma</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Milvus.html">Milvus</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Qdrant.html">Qdrant</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Elastic.html">Elastic</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Weaviate.html">Weaviate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Pgv.html">Postgres Vector</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Case</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Case/SpringAICase.html">Spring AI Case</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Open AI</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Solitary</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Solitary/OpenAIIntro.html">OpenAI Intro</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Model</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Capability</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="TextGeneration.html">Text Generation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="FunctionCalling.html">Function Calling</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Embedding.html">Embedding</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="FineTuning.html">Fine Tuning</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ImageGeneration.html">Image Generation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Vision.html">Vision</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="TextToSpeech.html">Text To Speech</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="SpeechToText.html">Speech To Text</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="Moderation.html">Moderation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Assistant</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Guide</span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">ML</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Fundamental</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/AIIntro.html">AI Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/MLIntro.html">ML Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/DLIntro.html">DL Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/LlmIntro.html">LLM Intro</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">LLM</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">FullStack</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../LLM/FullStack/PromptEngineering.html">Prompt Engineering</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../LLM/FullStack/PromptEngineeringCase.html">Prompt Engineering Case</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">AsciiDoc AI</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">AsciiDoc AI</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../../kafka/v0.0.1/index.html">AsciiDoc Kafka</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../kafka/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../../ms/v0.0.1/index.html">AsciiDoc Makeshift</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../ms/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+	<div class="toolbar" role="navigation">
+	<button class="nav-toggle"></button>
+	
+		<a href="../../index.html" 
+			class="home-link">
+		</a>
+
+	<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">AsciiDoc AI</a></li>
+    <li>Open AI</li>
+    <li>Capability</li>
+    <li><a href="Moderation.html">Moderation</a></li>
+  </ul>
+</nav>
+		</div>
+	
+	<div class="content">
+			<aside class="toc sidebar" 
+	data-title="Contents" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+			<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_model_classify">1. Model Classify</a>
+<ul class="sectlevel2">
+<li><a href="#_hate">1.1. hate</a></li>
+<li><a href="#_hatethreatening">1.2. hate/threatening</a></li>
+<li><a href="#_harassment">1.3. harassment</a></li>
+<li><a href="#_harassmentthreatening">1.4. harassment/threatening</a></li>
+<li><a href="#_self_harm">1.5. self-harm</a></li>
+<li><a href="#_self_harmintent">1.6. self-harm/intent</a></li>
+<li><a href="#_self_harminstructions">1.7. self-harm/instructions</a></li>
+<li><a href="#_sexual">1.8. sexual</a></li>
+<li><a href="#_sexualminors">1.9. sexual/minors</a></li>
+<li><a href="#_violence">1.10. violence</a></li>
+<li><a href="#_violencegraphic">1.11. violence/graphic</a></li>
+</ul>
+</li>
+<li><a href="#_quick_start">2. Quick Start</a>
+<ul class="sectlevel2">
+<li><a href="#_flagged">2.1. flagged</a></li>
+<li><a href="#_categories">2.2. categories</a></li>
+<li><a href="#_category_scores">2.3. category_scores</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_model_classify"><a class="anchor" href="#_model_classify"></a>1. Model Classify</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>审核端点(moderation endpoint)：<br>
+可用于检查文本是否具有潜在危害potentially harmful；</p>
+</li>
+<li>
+<p>工程师可使用它来识别可能有害的内容并采取行动，如过滤；</p>
+</li>
+<li>
+<p>大多工程师可免费使用moderation endpoint，为获得更高的准确度accuracy，<br>
+请尝试将长文本分割成较小的块，每个块少于2000个字符；</p>
+</li>
+<li>
+<p>splitting long text piece into<br>
+smaller chunk each less than 2000 character；</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_hate"><a class="anchor" href="#_hate"></a>1.1. hate</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>content that expresse，incite，promote hate<br>
+based on race，gender，ethnicity，religion，<br>
+nationality，sexual orientation，disability status，caste；</p>
+</li>
+<li>
+<p>表达、煽动或宣扬基于种族、性别、民族、宗教、国籍、性取向、残疾状况或种姓的仇恨的内容；</p>
+</li>
+<li>
+<p>针对非受保护群体(如棋手)的仇恨内容属于骚扰，<br>
+hateful content aimed at<br>
+non-protected group(chess player) is harassment；</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_hatethreatening"><a class="anchor" href="#_hatethreatening"></a>1.2. hate/threatening</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>仇恨内容还包括基于种族、性别、民族、宗教、国籍、性取向、<br>
+残疾状况或种姓对目标群体实施暴力或严重伤害；</p>
+</li>
+<li>
+<p>hateful content that also include violence or<br>
+serious harm toward target group based on race，gender，ethnicity，<br>
+religion，nationality，sexual orientation，disability status，caste；</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_harassment"><a class="anchor" href="#_harassment"></a>1.3. harassment</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>content that expresse，incite，<br>
+promote harassing language toward any target；</p>
+</li>
+<li>
+<p>对任何目标表达、煽动或宣扬骚扰性语言的内容；</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_harassmentthreatening"><a class="anchor" href="#_harassmentthreatening"></a>1.4. harassment/threatening</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>骚扰内容还包括对任何目标的暴力或严重伤害；</p>
+</li>
+<li>
+<p>harassment content that also include<br>
+violence or serious harm toward any target；</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_self_harm"><a class="anchor" href="#_self_harm"></a>1.5. self-harm</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>content that promote，encourage，depict act of self-harm，<br>
+such as suicide，cutting，eating disorder；</p>
+</li>
+<li>
+<p>宣扬、鼓励或描述自残行为的内容，如自杀、自残和饮食失调；</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_self_harmintent"><a class="anchor" href="#_self_harmintent"></a>1.6. self-harm/intent</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>说话者表示他们正在或打算进行自残行为的内容，例如自杀、割伤和饮食失调；</p>
+</li>
+<li>
+<p>content where speaker expresse that they are engaging or intend to<br>
+engage in act of self-harm，such as suicide，cutting，eating disorder；</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_self_harminstructions"><a class="anchor" href="#_self_harminstructions"></a>1.7. self-harm/instructions</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>content that encourage performing act of self-harm，<br>
+such as suicide，cutting， eating disorder，<br>
+or that give instruction or advice on how to commit such act；</p>
+</li>
+<li>
+<p>鼓励进行自残行为：(如自杀、割伤和饮食失调)的内容，<br>
+或提供有关如何实施此类行为的说明或建议的内容；</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sexual"><a class="anchor" href="#_sexual"></a>1.8. sexual</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>旨在引起性兴奋的内容，如性活动的描述，或宣传性服务(不包括性教育和健康)；</p>
+</li>
+<li>
+<p>content meant to arouse sexual excitement，<br>
+such as description of sexual activity，<br>
+or promote sexual service(excluding sex education and wellness)；</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sexualminors"><a class="anchor" href="#_sexualminors"></a>1.9. sexual/minors</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>涉及18岁以下个人的色情内容；</p>
+</li>
+<li>
+<p>sexual content include individual who under 18 year old；</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_violence"><a class="anchor" href="#_violence"></a>1.10. violence</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>描述死亡、暴力或身体伤害的内容；</p>
+</li>
+<li>
+<p>content that depict death，violence，physical injury；</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_violencegraphic"><a class="anchor" href="#_violencegraphic"></a>1.11. violence/graphic</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>以图形细节描述死亡、暴力或身体伤害的内容；</p>
+</li>
+<li>
+<p>content depict death，violence，physical injury in graphic detail；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_quick_start"><a class="anchor" href="#_quick_start"></a>2. Quick Start</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>要获取一段文本的分类，请向审核端点发出请求，<br>
+to obtain classification for text piece；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">curl https://api.openai.com/v1/moderations \
+	-X POST \
+  	-H "Content-Type: application/json" \
+  	-H "Authorization: Bearer $OPENAI_API_KEY" \
+  	-d '{"input": "sample text"}'</code></pre>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_flagged"><a class="anchor" href="#_flagged"></a>2.1. flagged</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>若模型将内容分类为潜在有害则设置为true，否则设置为false；</p>
+</li>
+<li>
+<p>set to true if model classify content<br>
+as potentially harmful，false otherwise；</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_categories"><a class="anchor" href="#_categories"></a>2.2. categories</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>包含每个类别违规标志的字典；</p>
+</li>
+<li>
+<p>对每个类别，若模型将相应类别标记为违规，则值为true，否则为false；</p>
+</li>
+<li>
+<p>contain dictionary of per-category violation flag，for each category；</p>
+</li>
+<li>
+<p>true if model flag corresponding category as violate，false otherwise；</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_category_scores"><a class="anchor" href="#_category_scores"></a>2.3. category_scores</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>包含模型输出的每个类别原始分数的字典，表示模型对输入违反OpenAI该类别策略的置信度；</p>
+</li>
+<li>
+<p>值范围：0 ~ 1，值越高即置信度越高，分数不应被解释为概率；</p>
+</li>
+<li>
+<p>contain dictionary of per-category raw score output by model；</p>
+</li>
+<li>
+<p>denoting model confidence input violate OpenAI policy for category；</p>
+</li>
+<li>
+<p>value scope：0 ~ 1，higher value denote higher confidence，<br>
+score should not be interprete as probability；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+    "id": "modr-XXXXX",
+    "model": "text-moderation-007",
+    "results": [
+        {
+            "flagged": true,
+            "categories": {
+                "sexual": false,
+                "hate": false,
+                "harassment": false,
+                "self-harm": false,
+                "sexual/minors": false,
+                "hate/threatening": false,
+                "violence/graphic": false,
+                "self-harm/intent": false,
+                "self-harm/instructions": false,
+                "harassment/threatening": true,
+                "violence": true
+            },
+            "category_scores": {
+                "sexual": 1.2282071e-6,
+                "hate": 0.010696256,
+                "harassment": 0.29842457,
+                "self-harm": 1.5236925e-8,
+                "sexual/minors": 5.7246268e-8,
+                "hate/threatening": 0.0060676364,
+                "violence/graphic": 4.435014e-6,
+                "self-harm/intent": 8.098441e-10,
+                "self-harm/instructions": 2.8498655e-11,
+                "harassment/threatening": 0.63055265,
+                "violence": 0.99011886
+            }
+        }
+    ]
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+	</div>
+</main>
+</div>
+		<footer class="footer">
+	
+	
+	
+	<div class="footer-thanks">
+		Authored in AsciiDoc
+		<br /><br />
+		Produced by Antora and Asciidoctor
+  	</div>
+  
+	<div class="footer-legal" style="text-align:center">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br /><br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		Copyright © 2024 Elf
+		<br /><br />
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+	
+</footer><script id="site-script" src="../../../../_/js/site.js" 
+	data-ui-root-path="../../../../_"></script>
+
+<script async src="../../../../_/js/vendor/highlight.js"></script>
+<script async src="../../../../_/js/vendor/highlight.bundle.js"></script>
+
+
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+
+<script>hljs.highlightAll();</script>  	</body>
+</html>

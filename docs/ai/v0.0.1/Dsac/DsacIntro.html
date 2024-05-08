@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> :: AsciiDoc</title>
+    <meta name="generator" content="Antora 3.1.7">
+
+<link rel="stylesheet" href="../../../_/css/site.css">
+
+<link rel="stylesheet" href="../../../_/css/vendor/asciidoc.css">
+
+<link rel="stylesheet" href="../../../_/css/vendor/extra.css">
+
+<link rel="stylesheet" href="../../../_/css/vendor/vs.css">
+    <link rel="icon" href="../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+  			
+	            <div id="main" style="place-content: center;">
+	                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+		            </div>
+		        </section>
+    	</div>
+    	
+        <div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container" data-component="ai" data-version="v0.0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../index.html">AsciiDoc AI</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Spring AI</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Solitary</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../SpringAI/Solitary/AIConcept.html">AI Concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../SpringAI/Solitary/SpringAIDependency.html">Spring AI Dependency</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../SpringAI/Solitary/SpringAIProperty.html">Spring AI Property</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../SpringAI/Solitary/GenericModel.html">Generic Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../SpringAI/Solitary/Prompt.html">Prompt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../SpringAI/Solitary/OutputParser.html">Output Parser</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../SpringAI/Solitary/EtlPipeline.html">Etl Pipeline</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../SpringAI/Solitary/ImageGeneration.html">Image Generation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../SpringAI/Solitary/FunctionCalling.html">Function Calling</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../SpringAI/Solitary/EvaluationTesting.html">Evaluation Testing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../SpringAI/Solitary/TestContainer.html">Test Container</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Chat Completion</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../SpringAI/ChatCompletion/ChatCompletion.html">Chat Completion</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../SpringAI/ChatCompletion/Ollama.html">Ollama</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../SpringAI/ChatCompletion/HuggingFace.html">Hugging Face</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Embedding</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../SpringAI/Embedding/Embedding.html">Embedding</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../SpringAI/Embedding/Ollama.html">Ollama</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../SpringAI/Embedding/PostgresML.html">Postgres ML</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../SpringAI/Embedding/TransformerOnnx.html">Transformer Onnx</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Vector Store</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../SpringAI/Store/VectorExplanation.html">Vector Explanation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../SpringAI/Store/VectorStore.html">Vector Store</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../SpringAI/Store/Neo4j.html">Neo4j</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../SpringAI/Store/Redis.html">Redis</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../SpringAI/Store/Chroma.html">Chroma</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../SpringAI/Store/Milvus.html">Milvus</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../SpringAI/Store/Qdrant.html">Qdrant</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../SpringAI/Store/Elastic.html">Elastic</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../SpringAI/Store/Weaviate.html">Weaviate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../SpringAI/Store/Pgv.html">Postgres Vector</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Case</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../SpringAI/Case/SpringAICase.html">Spring AI Case</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Open AI</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Solitary</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../OpenAI/Solitary/OpenAIIntro.html">OpenAI Intro</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Model</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Capability</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../OpenAI/Capability/TextGeneration.html">Text Generation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../OpenAI/Capability/FunctionCalling.html">Function Calling</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../OpenAI/Capability/Embedding.html">Embedding</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../OpenAI/Capability/FineTuning.html">Fine Tuning</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../OpenAI/Capability/ImageGeneration.html">Image Generation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../OpenAI/Capability/Vision.html">Vision</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../OpenAI/Capability/TextToSpeech.html">Text To Speech</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../OpenAI/Capability/SpeechToText.html">Speech To Text</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../OpenAI/Capability/Moderation.html">Moderation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Assistant</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Guide</span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">ML</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Fundamental</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ML/Fundamental/AIIntro.html">AI Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ML/Fundamental/MLIntro.html">ML Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ML/Fundamental/DLIntro.html">DL Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ML/Fundamental/LlmIntro.html">LLM Intro</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">LLM</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">FullStack</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../LLM/FullStack/PromptEngineering.html">Prompt Engineering</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../LLM/FullStack/PromptEngineeringCase.html">Prompt Engineering Case</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">AsciiDoc AI</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../index.html">AsciiDoc AI</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../kafka/v0.0.1/index.html">AsciiDoc Kafka</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../kafka/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../ms/v0.0.1/index.html">AsciiDoc Makeshift</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../ms/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+	<div class="toolbar" role="navigation">
+	<button class="nav-toggle"></button>
+	
+		<a href="../index.html" 
+			class="home-link">
+		</a>
+
+	<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+		</div>
+	
+	<div class="content">
+			<aside class="toc sidebar" 
+	data-title="Contents" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+			<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_data_structure">1. Data Structure</a></li>
+<li><a href="#_algorithm">2. Algorithm</a></li>
+<li><a href="#_classifier">3. Classifier</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_data_structure"><a class="anchor" href="#_data_structure"></a>1. Data Structure</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>01 Computational Time Complexity</p>
+</li>
+<li>
+<p>02 Space Complexity</p>
+</li>
+<li>
+<p>03 Array</p>
+</li>
+<li>
+<p>04 List</p>
+</li>
+<li>
+<p>05 ArrayList</p>
+</li>
+<li>
+<p>06 Iteration</p>
+</li>
+<li>
+<p>07 CopyOnWriteArrayList</p>
+</li>
+<li>
+<p>08 LinkedList</p>
+</li>
+<li>
+<p>09 Vector：Historical，使用Collections.synchronizedList()</p>
+</li>
+<li>
+<p>10 Stack：Historical，ConcurrentLinkedDeque</p>
+</li>
+<li>
+<p>11 Sorting List</p>
+</li>
+<li>
+<p>12 Set</p>
+</li>
+<li>
+<p>13 TreeSet</p>
+</li>
+<li>
+<p>14 ConcurrentSkipListSet</p>
+</li>
+<li>
+<p>15 CopyOnWriteArraySet</p>
+</li>
+<li>
+<p>16 Hashing</p>
+</li>
+<li>
+<p>17 HashSet</p>
+</li>
+<li>
+<p>18 ConcurrentHashMap.newKeySet()</p>
+</li>
+<li>
+<p>19 HashMap</p>
+</li>
+<li>
+<p>20 ConcurrentHashMap</p>
+</li>
+<li>
+<p>21 TreeMap</p>
+</li>
+<li>
+<p>22 ConcurrentSkipListMap</p>
+</li>
+<li>
+<p>23 Hashtable：Historical Use ConcurrentHashMap</p>
+</li>
+<li>
+<p>24 LinkedHashMap and LinkedHashSet</p>
+</li>
+<li>
+<p>25 Highly Specialize Collection：<br>
+EnumSet EnumMap IdentityHashMap Properties WeakHashMap</p>
+</li>
+<li>
+<p>26 ArrayDeque</p>
+</li>
+<li>
+<p>27 LinkedBlockingQueue and LinkedBlockingDeque</p>
+</li>
+<li>
+<p>28 ArrayBlockingQueue</p>
+</li>
+<li>
+<p>29 Highly Specialize Queue：<br>
+DelayQueue SynchronousQueue LinkedTransferQueue</p>
+</li>
+<li>
+<p>30 PriorityQueue and PriorityBlockingQueue</p>
+</li>
+<li>
+<p>31 java.util.Collections</p>
+</li>
+<li>
+<p>32 java.util.Arrays</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_algorithm"><a class="anchor" href="#_algorithm"></a>2. Algorithm</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_classifier"><a class="anchor" href="#_classifier"></a>3. Classifier</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+</article>
+	</div>
+</main>
+</div>
+		<footer class="footer">
+	
+	
+	
+	<div class="footer-thanks">
+		Authored in AsciiDoc
+		<br /><br />
+		Produced by Antora and Asciidoctor
+  	</div>
+  
+	<div class="footer-legal" style="text-align:center">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br /><br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		Copyright © 2024 Elf
+		<br /><br />
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+	
+</footer><script id="site-script" src="../../../_/js/site.js" 
+	data-ui-root-path="../../../_"></script>
+
+<script async src="../../../_/js/vendor/highlight.js"></script>
+<script async src="../../../_/js/vendor/highlight.bundle.js"></script>
+
+
+<script src="../../../_/js/vendor/lunr.js"></script>
+<script src="../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../.." data-snippet-length="100" data-stylesheet="../../../_/css/search.css"></script>
+<script async src="../../../search-index.js"></script>
+
+<script>hljs.highlightAll();</script>  	</body>
+</html>
