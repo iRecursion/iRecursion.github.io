@@ -348,6 +348,18 @@
 <ul class="sectlevel1">
 <li><a href="#_intro">1. Intro</a></li>
 <li><a href="#_quick_start">2. Quick Start</a></li>
+<li><a href="#_upload_base64_encode_img">3. Upload Base64 Encode Img</a></li>
+<li><a href="#_multiple_image_input">4. Multiple Image Input</a></li>
+<li><a href="#_fidelity_image_understanding">5. Fidelity Image Understanding</a>
+<ul class="sectlevel2">
+<li><a href="#_low">5.1. low</a></li>
+<li><a href="#_high">5.2. high</a></li>
+</ul>
+</li>
+<li><a href="#_managing_image">6. Managing Image</a></li>
+<li><a href="#_limitation">7. Limitation</a></li>
+<li><a href="#_calculating_cost">8. Calculating Cost</a></li>
+<li><a href="#_faq">9. Faq</a></li>
 </ul>
 </div>
 <div class="sect1">
@@ -423,6 +435,250 @@ print(response.choices[0])</code></pre>
 </li>
 <li>
 <p>当探索视觉理解可应用于那些用例时，务必牢记模型的局限性；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_upload_base64_encode_img"><a class="anchor" href="#_upload_base64_encode_img"></a>3. Upload Base64 Encode Img</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>若本地有一个图像或一组图像，则可将它们以Base64编码格式传递给模型：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">import base64
+import requests
+
+api_key = "YOUR_OPENAI_API_KEY"
+
+def encode_image(image_path):
+  with open(image_path, "rb") as image_file:
+    return base64.b64encode(image_file.read()).decode('utf-8')
+
+image_path = "path_to_your_image.jpg"
+base64_image = encode_image(image_path)
+
+headers = {
+  	"Content-Type": "application/json",
+  	"Authorization": f"Bearer {api_key}"
+}
+
+payload = {
+  	"model": "gpt-4-turbo",
+  	"messages": [{
+      	"role": "user",
+      	"content": [{
+          	"type": "text",
+          	"text": "What’s in this image?"
+    	},{
+          	"type": "image_url",
+          	"image_url": {
+            	"url": f"data:image/jpeg;base64,{base64_image}"
+          	}
+        }]
+	}],
+  	"max_tokens": 300
+}
+
+response = requests.post("https://api.openai.com/v1/chat/completions",headers=headers,json=payload)
+print(response.json())</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_multiple_image_input"><a class="anchor" href="#_multiple_image_input"></a>4. Multiple Image Input</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Chat Completion Api能接收并处理采用Base64编码格式或图像Url<br>
+形式的多个图像输入，该模型将处理每张图像并使用所有图像的信息来回答问题；</p>
+</li>
+<li>
+<p>此处模型显示同一图像的两个副本，且可独立回答有关两个或每个图像的问题；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">from openai import OpenAI
+
+client = OpenAI()
+response = client.chat.completions.create(
+  	model="gpt-4-turbo",
+  	messages=[{
+      	"role": "user",
+      	"content": [{
+          	"type": "text",
+          	"text": "What are in these images? Is there any difference between them?",
+    	},{
+          	"type": "image_url",
+          	"image_url": {
+            	"url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Gfp-wisconsin-madison-the-nature-boardwalk.jpg/2560px-Gfp-wisconsin-madison-the-nature-boardwalk.jpg",
+          	},
+        },{
+          	"type": "image_url",
+          	"image_url": {
+            	"url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Gfp-wisconsin-madison-the-nature-boardwalk.jpg/2560px-Gfp-wisconsin-madison-the-nature-boardwalk.jpg",
+          	},
+        },
+      ],
+	}],
+  	max_tokens=300,
+)
+print(response.choices[0])</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_fidelity_image_understanding"><a class="anchor" href="#_fidelity_image_understanding"></a>5. Fidelity Image Understanding</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>通过控制细节参数(三个选项：low，high，auto)，可控制模型如何处理图像并生成其文本理解；</p>
+</li>
+<li>
+<p>默认模型将使用auto，该设置将查看图像输入尺寸并决定是否应使用low或high；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">from openai import OpenAI
+
+client = OpenAI()
+
+response = client.chat.completions.create(
+  	model="gpt-4-turbo",
+  	messages=[{
+      	"role": "user",
+      	"content": [{"type": "text", "text": "What’s in this image?"},
+        	{
+          		"type": "image_url",
+          		"image_url": {
+	            	"url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Gfp-wisconsin-madison-the-nature-boardwalk.jpg/2560px-Gfp-wisconsin-madison-the-nature-boardwalk.jpg",
+	            	"detail": "high"
+          		},
+        	},
+      	],
+    }],
+  	max_tokens=300,
+)
+
+print(response.choices[0].message.content)</code></pre>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_low"><a class="anchor" href="#_low"></a>5.1. low</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>将启用低分辨率模式low res(resolution) mode；</p>
+</li>
+<li>
+<p>该模型将收到图像的低分辨率512px * 512px版本，并以65个token的预算表示该图像；</p>
+</li>
+<li>
+<p>使Api能返回更快的响应，并在不需高细节的用例中消耗更少的input token；</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_high"><a class="anchor" href="#_high"></a>5.2. high</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>将启高分辨率模式high res(resolution) mode；</p>
+</li>
+<li>
+<p>该模式首先允许模型查看低分辨率图像，然后根据输入图像大小将输入图像创建为512px<br>
+正方形的详细裁剪crop，每个详细裁剪crop使用两倍的token预算，总计129个token；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_managing_image"><a class="anchor" href="#_managing_image"></a>6. Managing Image</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>与Assistant Api不同，Chat Completion Api没状态，即必须自己管理传递给模型的<br>
+消息(包括图像)，若想多次将相同的图像传递给模型，则每次向Api发出请求时都必须传递该图像；</p>
+</li>
+<li>
+<p>对长时间运行的对话，建议通过url而非Base64传递图像，<br>
+还可通过提前将图像尺寸缩小到小于预期的最大尺寸来改善模型的延迟；</p>
+</li>
+<li>
+<p>对低分辨率模式，预计图像尺寸为512px * 512px，<br>
+对高分辨率模式，图像的短边应小于768px，长边应小于2000px；</p>
+</li>
+<li>
+<p>图像经模型处理后，将从OpenAI服务器中删除且不会被保留，<br>
+不使用通过OpenAI Api上传的数据来训练模型；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_limitation"><a class="anchor" href="#_limitation"></a>7. Limitation</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_calculating_cost"><a class="anchor" href="#_calculating_cost"></a>8. Calculating Cost</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_faq"><a class="anchor" href="#_faq"></a>9. Faq</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>目前不支持GPT-4来微调(fine-tune)image capability；</p>
+</li>
+<li>
+<p>不可用使用GPT-4生成图像，可使用dall-e-3生成图像，<br>
+并使用gpt-4-turbo来理解图像(understand image)；</p>
+</li>
+<li>
+<p>支持上传的图像文件类型：png，jpg，jpeg，webp，gif；</p>
+</li>
+<li>
+<p>上传图像大小限制：每张图像最大20MB；</p>
+</li>
+<li>
+<p>用户不能删除上传的图像，在模型处理完图像后，会自动删除该图像；</p>
+</li>
+<li>
+<p>在token级别处理图像，处理的每个图像<br>
+都会计入每分钟token(TPM：token per minute)的限制，</p>
+</li>
+<li>
+<p>带有Vision的GPT-4不可以理解图像元数据，模型不接受图像元数据；</p>
+</li>
+<li>
+<p>若图像不清楚ambiguous或不明确unclear，模型将尽力解释，但结果可能不太准确；</p>
+</li>
+<li>
+<p>好的经验法则：若普通人无法以低/高分辨率模式下使用的分辨率看到图像中的信息，那模型也看不到；</p>
 </li>
 </ul>
 </div>
