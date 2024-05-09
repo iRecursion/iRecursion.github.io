@@ -191,32 +191,32 @@
     <button class="nav-item-toggle"></button>
     <span class="nav-text">Capability</span>
 <ul class="nav-list">
-  <li class="nav-item is-current-page" data-depth="3">
-    <a class="nav-link" href="TextGeneration.html">Text Generation</a>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Capability/TextGeneration.html">Text Generation</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="FunctionCalling.html">Function Calling</a>
+    <a class="nav-link" href="../Capability/FunctionCalling.html">Function Calling</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="Embedding.html">Embedding</a>
+    <a class="nav-link" href="../Capability/Embedding.html">Embedding</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="FineTuning.html">Fine Tuning</a>
+    <a class="nav-link" href="../Capability/FineTuning.html">Fine Tuning</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="ImageGeneration.html">Image Generation</a>
+    <a class="nav-link" href="../Capability/ImageGeneration.html">Image Generation</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="Vision.html">Vision</a>
+    <a class="nav-link" href="../Capability/Vision.html">Vision</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="TextToSpeech.html">Text To Speech</a>
+    <a class="nav-link" href="../Capability/TextToSpeech.html">Text To Speech</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="SpeechToText.html">Speech To Text</a>
+    <a class="nav-link" href="../Capability/SpeechToText.html">Speech To Text</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="Moderation.html">Moderation</a>
+    <a class="nav-link" href="../Capability/Moderation.html">Moderation</a>
   </li>
 </ul>
   </li>
@@ -252,31 +252,31 @@
     <span class="nav-text">Guide TODO</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Guide/PromptEngineering.html">Prompt Engineering</a>
+    <a class="nav-link" href="PromptEngineering.html">Prompt Engineering</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Guide/ProductionBestPractice.html">Production Best Practice</a>
+    <a class="nav-link" href="ProductionBestPractice.html">Production Best Practice</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Guide/SafetyBestPractice.html">Safety Best Practice</a>
+    <a class="nav-link" href="SafetyBestPractice.html">Safety Best Practice</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="LatencyOptimization.html">Latency Optimization</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Guide/LatencyOptimization.html">Latency Optimization</a>
+    <a class="nav-link" href="RateLimit.html">Rate Limit</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Guide/RateLimit.html">Rate Limit</a>
+    <a class="nav-link" href="Batch.html">Batch</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Guide/Batch.html">Batch</a>
+    <a class="nav-link" href="ErrorCode.html">Error Code</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Guide/ErrorCode.html">Error Code</a>
+    <a class="nav-link" href="Library.html">Library</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Guide/Library.html">Library</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Guide/Deprecation.html">Deprecation</a>
+    <a class="nav-link" href="Deprecation.html">Deprecation</a>
   </li>
 </ul>
   </li>
@@ -384,8 +384,8 @@
   <ul>
     <li><a href="../../index.html">AsciiDoc AI</a></li>
     <li>Open AI</li>
-    <li>Capability</li>
-    <li><a href="TextGeneration.html">Text Generation</a></li>
+    <li>Guide TODO</li>
+    <li><a href="LatencyOptimization.html">Latency Optimization</a></li>
   </ul>
 </nav>
 		</div>
@@ -401,13 +401,18 @@
 <div id="toctitle"></div>
 <ul class="sectlevel1">
 <li><a href="#_intro">1. Intro</a></li>
-<li><a href="#_chat_completion">2. Chat Completion</a></li>
-<li><a href="#_json_mode">3. Json Mode</a></li>
-<li><a href="#_reproducible_output">4. Reproducible Output</a></li>
-<li><a href="#_managing_token">5. Managing Token</a></li>
-<li><a href="#_parameter_detail">6. Parameter Detail</a></li>
-<li><a href="#_completions_api_legacy">7. Completions Api Legacy</a></li>
-<li><a href="#_faq">8. Faq</a></li>
+<li><a href="#_seven_principle">2. Seven Principle</a>
+<ul class="sectlevel2">
+<li><a href="#_process_token_faster">2.1. Process Token Faster</a></li>
+<li><a href="#_generate_fewer_token">2.2. Generate Fewer Token</a></li>
+<li><a href="#_use_fewer_input_token">2.3. Use Fewer Input Token</a></li>
+<li><a href="#_make_fewer_request">2.4. Make Fewer Request</a></li>
+<li><a href="#_parallelize">2.5. Parallelize</a></li>
+<li><a href="#_make_user_wait_less">2.6. Make User Wait Less</a></li>
+<li><a href="#_dont_default_to_llm">2.7. Don&#8217;t Default to LLM</a></li>
+</ul>
+</li>
+<li><a href="#_example">3. Example</a></li>
 </ul>
 </div>
 <div class="sect1">
@@ -417,43 +422,40 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="_chat_completion"><a class="anchor" href="#_chat_completion"></a>2. Chat Completion</h2>
+<h2 id="_seven_principle"><a class="anchor" href="#_seven_principle"></a>2. Seven Principle</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="_process_token_faster"><a class="anchor" href="#_process_token_faster"></a>2.1. Process Token Faster</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_generate_fewer_token"><a class="anchor" href="#_generate_fewer_token"></a>2.2. Generate Fewer Token</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_use_fewer_input_token"><a class="anchor" href="#_use_fewer_input_token"></a>2.3. Use Fewer Input Token</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_make_fewer_request"><a class="anchor" href="#_make_fewer_request"></a>2.4. Make Fewer Request</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_parallelize"><a class="anchor" href="#_parallelize"></a>2.5. Parallelize</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_make_user_wait_less"><a class="anchor" href="#_make_user_wait_less"></a>2.6. Make User Wait Less</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_dont_default_to_llm"><a class="anchor" href="#_dont_default_to_llm"></a>2.7. Don&#8217;t Default to LLM</h3>
 
 </div>
 </div>
-<div class="sect1">
-<h2 id="_json_mode"><a class="anchor" href="#_json_mode"></a>3. Json Mode</h2>
-<div class="sectionbody">
-
-</div>
 </div>
 <div class="sect1">
-<h2 id="_reproducible_output"><a class="anchor" href="#_reproducible_output"></a>4. Reproducible Output</h2>
-<div class="sectionbody">
-
-</div>
-</div>
-<div class="sect1">
-<h2 id="_managing_token"><a class="anchor" href="#_managing_token"></a>5. Managing Token</h2>
-<div class="sectionbody">
-
-</div>
-</div>
-<div class="sect1">
-<h2 id="_parameter_detail"><a class="anchor" href="#_parameter_detail"></a>6. Parameter Detail</h2>
-<div class="sectionbody">
-
-</div>
-</div>
-<div class="sect1">
-<h2 id="_completions_api_legacy"><a class="anchor" href="#_completions_api_legacy"></a>7. Completions Api Legacy</h2>
-<div class="sectionbody">
-
-</div>
-</div>
-<div class="sect1">
-<h2 id="_faq"><a class="anchor" href="#_faq"></a>8. Faq</h2>
+<h2 id="_example"><a class="anchor" href="#_example"></a>3. Example</h2>
 <div class="sectionbody">
 
 </div>
