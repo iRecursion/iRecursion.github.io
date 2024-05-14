@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
     <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   	</head>
   	
@@ -42,6 +44,37 @@
     <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
     <h3 class="title"><a href="../../index.html">AsciiDoc AI</a></h3>
 <ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">ML</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Fundamental</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/AILearningPath.html">AI Learning Path</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/AIIntro.html">AI Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/DLBasicConcept.html">DL Basic Concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/ModelTrainingConcept.html">Model Training Concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/LlmIntro.html">LLM Intro</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
@@ -288,34 +321,6 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <span class="nav-text">ML</span>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">Fundamental</span>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../ML/Fundamental/AIIntro.html">AI Intro</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../ML/Fundamental/MLIntro.html">ML Intro</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../ML/Fundamental/DLIntro.html">DL Intro</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../ML/Fundamental/LlmIntro.html">LLM Intro</a>
-  </li>
-</ul>
-  </li>
-</ul>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="0">
-<ul class="nav-list">
-  <li class="nav-item" data-depth="1">
-    <button class="nav-item-toggle"></button>
     <span class="nav-text">LLM</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
@@ -329,6 +334,50 @@
     <a class="nav-link" href="../../LLM/FullStack/PromptEngineeringCase.html">Prompt Engineering Case</a>
   </li>
 </ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Science</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Math</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Science/Math/Algebra.html">Algebra</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Physic</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Solitary</span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Dsac</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Data Structure</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Algorithm</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Classifier</span>
   </li>
 </ul>
   </li>
@@ -436,7 +485,7 @@ embedding是数据对象的数字表示，如文本、图像、音频或文档�
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">docker run \
+<pre class="highlight"><code class="language-bash" data-lang="bash">docker run \
 	--name neo4j \
 	-p 7474:7474 -p 7687:7687 \
 	--privileged=true \
@@ -499,7 +548,7 @@ neo4j://用作集群，bolt://协议用作neo4j单实例</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">docker run --rm \
+<pre class="highlight"><code class="language-bash" data-lang="bash">docker run --rm \
     -v /elf/neo4j/conf:/conf \
     -itd neo4j:5.18.1 dump-config</code></pre>
 </div>
@@ -513,7 +562,7 @@ neo4j://用作集群，bolt://协议用作neo4j单实例</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">NEO4J_server_memory_pagecache_size=512M
+<pre class="highlight"><code class="language-bash" data-lang="bash">NEO4J_server_memory_pagecache_size=512M
 NEO4J_server_memory_heap_max__size=512M
 
 -e NEO4J_dbms_memory_pagecache_size=4G \
@@ -538,7 +587,7 @@ chown neo4j:neo4j /elf/neo4j/conf</code></pre>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Bean
+<pre class="highlight"><code class="language-java" data-lang="java">@Bean
 EmbeddingClient embeddingClient() {
 	//可使用其它实现
     return new OllamaEmbeddingClient(null);
@@ -569,7 +618,7 @@ private Neo4jVectorStore  nvs;</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">var textExpression = "author in ['john', 'jill'] &amp;&amp; 'article_type' == 'blog'";
+<pre class="highlight"><code class="language-java" data-lang="java">var textExpression = "author in ['john', 'jill'] &amp;&amp; 'article_type' == 'blog'";
 vectorStore.similaritySearch(SearchRequest.defaults()
     .withQuery("The World")
     .withTopK(TOP_K)
@@ -586,7 +635,7 @@ vectorStore.similaritySearch(SearchRequest.defaults()
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">var builder = new FilterExpressionBuilder();
+<pre class="highlight"><code class="language-java" data-lang="java">var builder = new FilterExpressionBuilder();
 vectorStore.similaritySearch(SearchRequest.defaults()
     .withQuery("The World")
     .withTopK(TOP_K)
@@ -672,5 +721,8 @@ node.<code>metadata.author</code> IN ["john","jill"] AND node.<code>metadata.'ar
 <script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
 <script async src="../../../../search-index.js"></script>
 
-<script>hljs.highlightAll();</script>  	</body>
+<script>hljs.highlightAll();</script>
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
 </html>

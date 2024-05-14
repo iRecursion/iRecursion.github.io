@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> :: AsciiDoc</title>
+    <meta name="generator" content="Antora 3.1.7">
+
+<link rel="stylesheet" href="../../../../_/css/site.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/asciidoc.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
+    <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+  			
+	            <div id="main" style="place-content: center;">
+	                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+		            </div>
+		        </section>
+    	</div>
+    	
+        <div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container" data-component="ai" data-version="v0.0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">AsciiDoc AI</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">ML</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Fundamental</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="AILearningPath.html">AI Learning Path</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="AIIntro.html">AI Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="DLBasicConcept.html">DL Basic Concept</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="ModelTrainingConcept.html">Model Training Concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="LlmIntro.html">LLM Intro</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Spring AI</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Solitary</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/AIConcept.html">AI Concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/SpringAIDependency.html">Spring AI Dependency</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/SpringAIProperty.html">Spring AI Property</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/GenericModel.html">Generic Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/Prompt.html">Prompt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/OutputParser.html">Output Parser</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/EtlPipeline.html">Etl Pipeline</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/ImageGeneration.html">Image Generation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/FunctionCalling.html">Function Calling</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/EvaluationTesting.html">Evaluation Testing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/TestContainer.html">Test Container</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Chat Completion</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/ChatCompletion/ChatCompletion.html">Chat Completion</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/ChatCompletion/Ollama.html">Ollama</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/ChatCompletion/HuggingFace.html">Hugging Face</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Embedding</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/Embedding.html">Embedding</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/Ollama.html">Ollama</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/PostgresML.html">Postgres ML</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/TransformerOnnx.html">Transformer Onnx</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Vector Store</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/VectorExplanation.html">Vector Explanation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/VectorStore.html">Vector Store</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Neo4j.html">Neo4j</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Redis.html">Redis</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Chroma.html">Chroma</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Milvus.html">Milvus</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Qdrant.html">Qdrant</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Elastic.html">Elastic</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Weaviate.html">Weaviate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Pgv.html">Postgres Vector</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Case</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Case/SpringAICase.html">Spring AI Case</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Open AI</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Solitary</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Solitary/OpenAIIntro.html">OpenAI Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Solitary/OpenAIModel.html">OpenAI Model</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Capability</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Capability/TextGeneration.html">Text Generation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Capability/FunctionCalling.html">Function Calling</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Capability/Embedding.html">Embedding</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Capability/FineTuning.html">Fine Tuning</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Capability/ImageGeneration.html">Image Generation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Capability/Vision.html">Vision</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Capability/TextToSpeech.html">Text To Speech</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Capability/SpeechToText.html">Speech To Text</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Capability/Moderation.html">Moderation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Assistant TODO</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Assistant/AssistantOverview.html">Assistant Overview</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Assistant/AssistantWork.html">Assistant Work</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Assistant/FileSearch.html">File Search</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Assistant/CodeInterpreter.html">Code Interpreter</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Assistant/FunctionCalling.html">Function Calling</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Assistant/MigrationGuide.html">Migration Guide</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Assistant/NewFeature.html">New Feature</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Guide TODO</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Guide/PromptEngineering.html">Prompt Engineering</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Guide/ProductionBestPractice.html">Production Best Practice</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Guide/SafetyBestPractice.html">Safety Best Practice</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Guide/LatencyOptimization.html">Latency Optimization</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Guide/RateLimit.html">Rate Limit</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Guide/Batch.html">Batch</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Guide/ErrorCode.html">Error Code</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Guide/Library.html">Library</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Guide/Deprecation.html">Deprecation</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">LLM</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">FullStack</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../LLM/FullStack/PromptEngineering.html">Prompt Engineering</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../LLM/FullStack/PromptEngineeringCase.html">Prompt Engineering Case</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Science</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Math</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Science/Math/Algebra.html">Algebra</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Physic</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Solitary</span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Dsac</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Data Structure</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Algorithm</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Classifier</span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">AsciiDoc AI</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">AsciiDoc AI</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../../kafka/v0.0.1/index.html">AsciiDoc Kafka</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../kafka/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../../ms/v0.0.1/index.html">AsciiDoc Makeshift</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../ms/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+	<div class="toolbar" role="navigation">
+	<button class="nav-toggle"></button>
+	
+		<a href="../../index.html" 
+			class="home-link">
+		</a>
+
+	<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">AsciiDoc AI</a></li>
+    <li>ML</li>
+    <li>Fundamental</li>
+    <li><a href="ModelTrainingConcept.html">Model Training Concept</a></li>
+  </ul>
+</nav>
+		</div>
+	
+	<div class="content">
+			<aside class="toc sidebar" 
+	data-title="Contents" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+			<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_explanation">1. Explanation</a></li>
+<li><a href="#_ml_flow">2. ML Flow</a>
+<ul class="sectlevel2">
+<li><a href="#_task_flow">2.1. Task Flow</a></li>
+<li><a href="#_train_basic_flow">2.2. Train Basic Flow</a></li>
+<li><a href="#_train_detail_flow">2.3. Train Detail Flow</a></li>
+</ul>
+</li>
+<li><a href="#_gradient">3. Gradient</a></li>
+<li><a href="#_forward_propagation">4. Forward Propagation</a></li>
+<li><a href="#_back_propagation">5. Back Propagation</a></li>
+<li><a href="#_learning_rate">6. Learning Rate</a></li>
+<li><a href="#_batch_size">7. Batch Size</a></li>
+<li><a href="#_activation_function">8. Activation Function</a>
+<ul class="sectlevel2">
+<li><a href="#_af_intro">8.1. AF Intro</a></li>
+<li><a href="#_af_sigmoid">8.2. AF sigmoid</a></li>
+<li><a href="#_af_softmax_tanh">8.3. AF softmax tanh</a></li>
+<li><a href="#_af_relu">8.4. AF ReLU</a></li>
+<li><a href="#_af_relu_variant">8.5. AF ReLU Variant</a></li>
+<li><a href="#_af_swish">8.6. AF Swish</a></li>
+</ul>
+</li>
+<li><a href="#_loss_function">9. Loss Function</a>
+<ul class="sectlevel2">
+<li><a href="#_lf_intro">9.1. LF Intro</a></li>
+<li><a href="#_mse">9.2. MSE</a></li>
+<li><a href="#_mae">9.3. MAE</a></li>
+<li><a href="#_cross_entropy_loss">9.4. Cross Entropy Loss</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_explanation"><a class="anchor" href="#_explanation"></a>1. Explanation</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Fundamental/ModelTrainingConcept/TermList.jpg" alt="TermList">
+</div>
+</div>
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-right valign-top">Entry</th>
+<th class="tableblock halign-left valign-top">Memo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">样本</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">一条数据</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">特征</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">被观测对象的可测量特性，如西瓜的颜色、纹路等</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">特征向量</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">用一个d维向量表征一个样本的所有或部分特征</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">标签(label)/真实值</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">样本特征对应的真实类型或真实取值，即正确答案</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">数据集 Dataset</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">多条样本组成的集合</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">训练集 Training</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">用于训练模型的数据集合</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">评估集 Validation/Evaluation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">用于在训练过程中周期性评估模型效果的数据集合</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">测试集 Test</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">用于在训练完成后评估最终模型效果的数据集合</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">模型</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">可从数据中学习到的，可实现特定功能/映射的函数</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">误差/损失</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">样本真实值与预测值间的误差</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">预测值</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">样本输入模型后输出的结果</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">模型训练</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">使用训练数据集对模型参数迭代更新</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">模型收敛</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">任意输入样本对应的预测结果与真实标签间的误差趋于稳定</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">模型评估</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">使用测试数据和评估指标对训练完成的模型的效果进行评估</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">模型推理/预测</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">使用训练好的模型对数据进行预测</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">模型部署</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">使用服务加载训练好的模型，对外提供推理服务</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ml_flow"><a class="anchor" href="#_ml_flow"></a>2. ML Flow</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_task_flow"><a class="anchor" href="#_task_flow"></a>2.1. Task Flow</h3>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Fundamental/ModelTrainingConcept/MLTaskFlow.jpg" alt="MLTaskFlow">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_train_basic_flow"><a class="anchor" href="#_train_basic_flow"></a>2.2. Train Basic Flow</h3>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Fundamental/ModelTrainingConcept/TrainBasicFlow.jpg" alt="TrainBasicFlow">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_train_detail_flow"><a class="anchor" href="#_train_detail_flow"></a>2.3. Train Detail Flow</h3>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Fundamental/ModelTrainingConcept/TrainDetailFlow.jpg" alt="TrainDetailFlow">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>激活函数：每一层先经过激活函数；</p>
+</li>
+<li>
+<p>前向传播：逐层带入，计算，带入，计算……，上一层结果作为下一层的输入；</p>
+</li>
+<li>
+<p>损失函数；</p>
+</li>
+<li>
+<p>噪声；</p>
+</li>
+<li>
+<p>反向传播：逐层求回去，更新每一层，对每一层计算梯度，更新每一层的参数；</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-right valign-top">Entry</th>
+<th class="tableblock halign-left valign-top">Memo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Batch Size</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">训练数据集切成多个数据切片，一次性输入到模型的数据或样本的条数</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Step</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">一次梯度更新的过程</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Epoch</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">模型完成一次完整训练集的训练</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_gradient"><a class="anchor" href="#_gradient"></a>3. Gradient</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>梯度：一个向量(矢量)，<mark>函数在一点处沿着该点的梯度方向变化最快，变化率最大</mark>；</p>
+</li>
+<li>
+<p>换而言之，自变量沿着梯度方向变化，能使因变量(函数值)变化最大；</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Fundamental/ModelTrainingConcept/Gradient.jpg" alt="Gradient">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_forward_propagation"><a class="anchor" href="#_forward_propagation"></a>4. Forward Propagation</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Fundamental/ModelTrainingConcept/ForwardPropagation.png" alt="ForwardPropagation">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_back_propagation"><a class="anchor" href="#_back_propagation"></a>5. Back Propagation</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Fundamental/ModelTrainingConcept/BackPropagation.png" alt="BackPropagation">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_learning_rate"><a class="anchor" href="#_learning_rate"></a>6. Learning Rate</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>学习率：决定模型参数的更新幅度，学习率越高，模型参数更新越激进，<br>
+即相同Loss对模型参数产生的调整幅度越大，反之越越小；</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Fundamental/ModelTrainingConcept/LearningRateA.jpg" alt="LearningRateA">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>若学习率太小，会导致网络loss下降非常慢；若学习率太大，那参数更新的幅度就非常大，<br>
+产生振荡，导致网络收敛到局部最优点，或loss 不降反增；</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Fundamental/ModelTrainingConcept/LearningRateB.jpg" alt="LearningRateB">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_batch_size"><a class="anchor" href="#_batch_size"></a>7. Batch Size</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>一次向模型输入的数据数量，Batch Size越大，模型一次处理的数据量越大，<br>
+能更快的运行完一个Epoch，反之运行完一个Epoch越慢；</p>
+</li>
+<li>
+<p>因模型一次是根据一个Batch Size的数据计算Loss，再更新模型参数，若Batch Size过小，<br>
+单个Batch可能与整个数据的分布有较大差异，会带来较大的噪声，导致模型难收敛；</p>
+</li>
+<li>
+<p>另Batch Size越大，模型单个Step加载的数据量越大，<br>
+对GPU显存的占用也越大，当GPU显存不充足，较大的Batch Size会导致OOM，<br>
+故需针对实际的硬件情况，设置合理的Batch Size取值；</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Fundamental/ModelTrainingConcept/BatchSize.jpg" alt="BatchSize">
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>在合理范围内，更大的Batch Size：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>提高内存利用率，提高并行化效率；</p>
+</li>
+<li>
+<p>一个Epoch所需的迭代次数变少，减少训练时间；</p>
+</li>
+<li>
+<p>梯度计算更稳定，训练曲线更平滑，下降方向更准，能取得更好的效果；</p>
+</li>
+<li>
+<p>对传统模型，在较多场景中，较小的Batch Size能取得更好的模型性能；；</p>
+</li>
+<li>
+<p>对于大模型，往往更大的Batch Size能取得更好的性能；</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_activation_function"><a class="anchor" href="#_activation_function"></a>8. Activation Function</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_af_intro"><a class="anchor" href="#_af_intro"></a>8.1. AF Intro</h3>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Fundamental/ModelTrainingConcept/ActivationFunction/ActivationFunctionA.jpg" alt="ActivationFunctionA">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Fundamental/ModelTrainingConcept/ActivationFunction/ActivationFunctionB.jpg" alt="ActivationFunctionB">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><mark>线性函数：一次函数的别称</mark>；</p>
+</li>
+<li>
+<p><mark>非线性函数：函数图像不是一条直线的函数</mark>；</p>
+</li>
+<li>
+<p>非线性函数包括：指数函数、幂函数、对数函数、<br>
+多项式函数等等基本初等函数及他们组成的复合函数；</p>
+</li>
+<li>
+<p><mark>激活函数：多层神经网络的基础，保证多层网络不退化成线性网络</mark>；</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Fundamental/ModelTrainingConcept/ActivationFunction/ActivationFunctionC.jpg" alt="ActivationFunctionC">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><mark>神经网络：⇢ 输入 * 权重 ⇢ 输出</mark></p>
+</li>
+<li>
+<p>线性模型的表达能力不够，激活函数使神经网络可逼近其他的任何非线性函数，<br>
+可使神经网络应用到更多非线性模型中；</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Fundamental/ModelTrainingConcept/ActivationFunction/ActivationFunctionD.jpg" alt="ActivationFunctionD">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Fundamental/ModelTrainingConcept/ActivationFunction/ActivationFunctionE.jpg" alt="ActivationFunctionE">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_af_sigmoid"><a class="anchor" href="#_af_sigmoid"></a>8.2. AF sigmoid</h3>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Fundamental/ModelTrainingConcept/ActivationFunction/AFSigMoidA.png" alt="AFSigMoidA">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Fundamental/ModelTrainingConcept/ActivationFunction/AFSigMoidB.png" alt="AFSigMoidB">
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><mark>sigmoid函数具有软饱和特性</mark>；</p>
+</li>
+<li>
+<p>在正负饱和区的梯度都接近于0，只在0附近有比较好的激活特性；</p>
+</li>
+<li>
+<p>sigmoid导数值最大0.25，即反向传播过程中，每层至少有75%的损失，<br>
+使当sigmoid被用在隐藏层时，<mark>会导致梯度消失</mark> (一般5层内就会产生)；</p>
+</li>
+<li>
+<p>梯度都消失了，我还更新啥参数，导致神经网络在一定时间内得不到好的发展；</p>
+</li>
+<li>
+<p>函数输出不以0为中心，<mark>即输出均值不为0</mark>，会导致参数更新效率降低；</p>
+</li>
+<li>
+<p>sigmoid函数涉及 <mark>指数运算</mark>，导致计算速度较慢；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>希望激活函数输出均值为0：</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Fundamental/ModelTrainingConcept/ActivationFunction/AFSigMoidC.png" alt="AFSigMoidC">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_af_softmax_tanh"><a class="anchor" href="#_af_softmax_tanh"></a>8.3. AF softmax tanh</h3>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Fundamental/ModelTrainingConcept/ActivationFunction/AFSoftMaxTanh.png" alt="AFSoftMaxTanh">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_af_relu"><a class="anchor" href="#_af_relu"></a>8.4. AF ReLU</h3>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Fundamental/ModelTrainingConcept/ActivationFunction/AFReLU.png" alt="AFReLU">
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><mark>ReLU：分段线性函数，是非线性函数</mark>；</p>
+</li>
+<li>
+<p><mark>ReLU是发明DL的重要突破，ReLU不存在梯度消失问题</mark>；</p>
+</li>
+<li>
+<p><mark>ReLU计算成本低，收敛速度比sigmoid快6倍</mark>；</p>
+</li>
+<li>
+<p>函数输出不以0为中心，<mark>即输出均值不为0</mark>，会导致参数更新效率降低；</p>
+</li>
+<li>
+<p><mark>存在dead ReLU问题</mark>，即输入ReLU有负值时，<br>
+ReLU输出为0，梯度在反向传播期间无法流动，导致权重不会更新；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_af_relu_variant"><a class="anchor" href="#_af_relu_variant"></a>8.5. AF ReLU Variant</h3>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Fundamental/ModelTrainingConcept/ActivationFunction/AFLeakyReLUElu.png" alt="AFLeakyReLUElu">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_af_swish"><a class="anchor" href="#_af_swish"></a>8.6. AF Swish</h3>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Fundamental/ModelTrainingConcept/ActivationFunction/AFSwish.png" alt="AFSwish">
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>参数不变情况下，将模型中ReLU替换为Swish，<mark>模型性能提升</mark>；</p>
+</li>
+<li>
+<p><mark>Swish无上界</mark>，不会出现梯度饱和；</p>
+</li>
+<li>
+<p><mark>Swish有下界</mark>，不会出现dead ReLU问题；</p>
+</li>
+<li>
+<p><mark>Swish处处连续可导</mark>；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_loss_function"><a class="anchor" href="#_loss_function"></a>9. Loss Function</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_lf_intro"><a class="anchor" href="#_lf_intro"></a>9.1. LF Intro</h3>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Fundamental/ModelTrainingConcept/LossFunction/LossFunctionA.jpg" alt="LossFunctionA">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>损失函数：<mark>度量模型的预测值f(x)与真实值Y的差异程度</mark> (损失值)的运算函数，它是 <mark>非负实值函数</mark>；</p>
+</li>
+<li>
+<p>损失函数仅用于模型训练阶段，得到损失值后，通过反向传播来更新参数，<br>
+从而降低预测值与真实值间的损失值，从而提升模型性能；</p>
+</li>
+<li>
+<p>整个模型训练的过程，<mark>即在通过不断更新参数，使损失函数不断逼近全局最优点(全局最小值)</mark>；</p>
+</li>
+<li>
+<p>不同类型的任务会定义不同的损失函数，如回归任务中的MAE、MSE，分类任务中的交叉熵损失等；</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_mse"><a class="anchor" href="#_mse"></a>9.2. MSE</h3>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Fundamental/ModelTrainingConcept/LossFunction/LFMse.jpg" alt="LFMse">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>均方误差：Mean Squared Error，MSE，也称平方损失或L2 Loss；<br>
+常用在最小二乘法中，思想：使各训练点到最优拟合线的距离最小(平方和最小)；</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_mae"><a class="anchor" href="#_mae"></a>9.3. MAE</h3>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Fundamental/ModelTrainingConcept/LossFunction/LFMae.jpg" alt="LFMae">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>平均绝对误差：Mean Absolute Error，MAE，<br>
+是所有单个观测值与算术平均值的绝对值的平均，也称L1 Loss，常用于回归问题中；</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_cross_entropy_loss"><a class="anchor" href="#_cross_entropy_loss"></a>9.4. Cross Entropy Loss</h3>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Fundamental/ModelTrainingConcept/LossFunction/LFCrossEntropyLoss.jpg" alt="LFCrossEntropyLoss">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>交叉熵损失：log函数是很多损失函数中的重要组成部分，对log函数，<br>
+默认的底数a是e，即损失函数中使用的log函数默认a &gt; 1；</p>
+</li>
+<li>
+<p>二分类：其中，Y<sub>i</sub>为样本i的真实标签，正类为1，负类为0；p表示样本i预测为正类的概率；</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Fundamental/ModelTrainingConcept/LossFunction/LFCelBinary.jpg" alt="LFCelBinary">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>多分类：其中，M为类别数量；y符号函数，<br>
+样本i真实类别等于c则为1，否则为0；预测样本i属于类别c的预测概率；</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Fundamental/ModelTrainingConcept/LossFunction/LFCelMulti.jpg" alt="LFCelMulti">
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>若有一个二分类任务，正类为1，负类为0，存在一个正样本A，<br>
+当模型输出其为正类的概率为0.8时，交叉熵损失为：</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><mark>loss = -(1 * log(0.8) + 0 * log(0.2)) = -log(0.8) = 0.0969</mark></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>当模型输出其为正类的概率为0.5时，交叉熵损失为：</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><mark>loss = -(1 * log(0.5) + 0 * log(0.5)) = -log(0.5) = 0.3010</mark></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>故当模型预测的误差越大时，交叉熵损失函数计算得到的损失越大；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>假设分类任务有3种类别A，B，C，有三个样本，其中sample 1类型为C，<br>
+smaple 2类型为B，sample 3类型为A，对sample 1；</p>
+</li>
+<li>
+<p>当模型预测概率不同时，求损失SL：Sample Loss：</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">样本名称</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">类别A概率</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">类别B概率</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">类别C概率</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sample 1_1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.4</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sample 1_2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.05</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.8</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><mark>SL<sub>1-1</sub> = - (0 * log0.3 + 0 * log0.3 + 1 * log0.4) = 0.91</mark><br>
+<mark>SL<sub>1-2</sub> = - (0 * log0.05 + 0 * log0.15 + 1 * log0.8) = 0.097</mark></p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>04 - 0.33.36</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</article>
+	</div>
+</main>
+</div>
+		<footer class="footer">
+	
+	
+	
+	<div class="footer-thanks">
+		Authored in AsciiDoc
+		<br /><br />
+		Produced by Antora and Asciidoctor
+  	</div>
+  
+	<div class="footer-legal" style="text-align:center">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br /><br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		Copyright © 2024 Elf
+		<br /><br />
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+	
+</footer><script id="site-script" src="../../../../_/js/site.js" 
+	data-ui-root-path="../../../../_"></script>
+
+<script async src="../../../../_/js/vendor/highlight.js"></script>
+<script async src="../../../../_/js/vendor/highlight.bundle.js"></script>
+
+
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+
+<script>hljs.highlightAll();</script>
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
+</html>

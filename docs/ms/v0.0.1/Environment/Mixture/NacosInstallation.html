@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
     <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   	</head>
   	
@@ -71,16 +73,10 @@
     <a class="nav-link" href="../Antora/AntoraConfigurer.html">Antora Configurer</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
+    <a class="nav-link" href="../Antora/AntoraHighlight.html">Antora Highlight</a>
   </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">DataStructure</span>
-<ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../DataStructure/DataStructureOutline.html">Data Structure Outline</a>
+    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
   </li>
 </ul>
   </li>
@@ -122,6 +118,9 @@
     <a class="nav-link" href="../Language/CondaJupyter.html">Conda Jupyter</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/GoInstallation.html">Go Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Language/LuaInstallation.html">Lua Installation</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -132,6 +131,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Language/GroovyInstallation.html">Groovy Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/JavaFxInstallation.html">JavaFx Installation</a>
   </li>
 </ul>
   </li>
@@ -350,7 +352,7 @@
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">docker pull nacos/nacos-server:v2.2.3
+<pre class="highlight"><code class="language-bash" data-lang="bash">docker pull nacos/nacos-server:v2.2.3
 
 mkdir -p /elf/nacos/{log,conf,data}</code></pre>
 </div>
@@ -395,7 +397,7 @@ mkdir -p /elf/nacos/{log,conf,data}</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-properties hljs" data-lang="properties">spring.datasource.platform=mysql
+<pre class="highlight"><code class="language-properties" data-lang="properties">spring.datasource.platform=mysql
 db.num=1
 db.url.0=jdbc:mysql://192.168.0.123:3306/elf?characterEncoding=utf8&amp;connectTimeout=1000&amp;socketTimeout=3000&amp;autoReconnect=true&amp;useUnicode=true&amp;useSSL=false&amp;serverTimezone=Asia/Shanghai
 db.user.0=root
@@ -416,7 +418,7 @@ db.password.0=cipher</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-properties hljs" data-lang="properties">nacos.core.auth.enabled=true
+<pre class="highlight"><code class="language-properties" data-lang="properties">nacos.core.auth.enabled=true
 
 nacos.core.auth.server.identity.key=nacos_user
 nacos.core.auth.server.identity.value=nacos_cipher
@@ -431,7 +433,7 @@ nacos.core.auth.plugin.nacos.token.secret.key=SecretKey0123456789012345678901234
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">docker run \
+<pre class="highlight"><code class="language-bash" data-lang="bash">docker run \
 --name nacos \
 -p 8848:8848 \
 -p 9848:9848 \
@@ -507,5 +509,8 @@ nacos - nacos</p>
 <script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
 <script async src="../../../../search-index.js"></script>
 
-<script>hljs.highlightAll();</script>  	</body>
+<script>hljs.highlightAll();</script>
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
 </html>

@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
     <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   	</head>
   	
@@ -70,17 +72,11 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="AntoraConfigurer.html">Antora Configurer</a>
   </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="AntoraHighlight.html">Antora Highlight</a>
+  </li>
   <li class="nav-item is-current-page" data-depth="3">
     <a class="nav-link" href="AntoraUI.html">Antora UI</a>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">DataStructure</span>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../DataStructure/DataStructureOutline.html">Data Structure Outline</a>
   </li>
 </ul>
   </li>
@@ -122,6 +118,9 @@
     <a class="nav-link" href="../Language/CondaJupyter.html">Conda Jupyter</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/GoInstallation.html">Go Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Language/LuaInstallation.html">Lua Installation</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -132,6 +131,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Language/GroovyInstallation.html">Groovy Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/JavaFxInstallation.html">JavaFx Installation</a>
   </li>
 </ul>
   </li>
@@ -361,7 +363,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;link rel="icon" href="{{{siteRootPath}}}/favicon.ico" type="image/x-icon"&gt;</code></pre>
+<pre class="highlight"><code class="language-html" data-lang="html">&lt;link rel="icon" href="{{{siteRootPath}}}/favicon.ico" type="image/x-icon"&gt;</code></pre>
 </div>
 </div>
 </div>
@@ -383,7 +385,7 @@ admonition-warn-jenkins.svg放置到img目录</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">.doc .admonitionblock td.icon i.icon-caution::before {
+<pre class="highlight"><code class="language-css" data-lang="css">.doc .admonitionblock td.icon i.icon-caution::before {
   	background-image: url(../img/admonition-caution-docker.svg);
 }
 .doc .admonitionblock td.icon i.icon-caution {
@@ -426,7 +428,7 @@ admonition-warn-jenkins.svg放置到img目录</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;link rel="stylesheet" href="{{uiRootPath}}/css/extra.css"&gt;</code></pre>
+<pre class="highlight"><code class="language-html" data-lang="html">&lt;link rel="stylesheet" href="{{uiRootPath}}/css/extra.css"&gt;</code></pre>
 </div>
 </div>
 <div class="ulist">
@@ -438,7 +440,7 @@ admonition-warn-jenkins.svg放置到img目录</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">{{#if env.SITE_SEARCH_PROVIDER}}
+<pre class="highlight"><code class="language-html" data-lang="html">{{#if env.SITE_SEARCH_PROVIDER}}
     &lt;div id="main"&gt;
             &lt;input id="search-input" type="text" placeholder="Type for Retrieving..."&gt;
         &lt;/div&gt;
@@ -455,7 +457,7 @@ admonition-warn-jenkins.svg放置到img目录</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">#main {
+<pre class="highlight"><code class="language-css" data-lang="css">#main {
 	float: left;
     width: 255px;
     height: 60px;
@@ -497,7 +499,7 @@ input[type="text"] {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css"># new style
+<pre class="highlight"><code class="language-css" data-lang="css"># new style
 .article{
 	background: #fafafa;
 }
@@ -551,7 +553,7 @@ footer.footer {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">.doc .admonitionblock td.content {
+<pre class="highlight"><code class="language-css" data-lang="css">.doc .admonitionblock td.content {
     border: 2px #80ea6e solid;
 }
 
@@ -571,7 +573,7 @@ footer.footer {
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">body-3d-a{
+<pre class="highlight"><code class="language-css" data-lang="css">body-3d-a{
     text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
         0 3px 0 #ccc, 0 4px 0 #ccc,
         0 5px 0 #ccc, 0 6px 0 #ccc,
@@ -627,7 +629,7 @@ body,#search-input{
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">.home-link {
+<pre class="highlight"><code class="language-css" data-lang="css">.home-link {
   	background: url(../img/Home.svg) no-repeat 50%/100% 100%;
 }
 
@@ -682,5 +684,8 @@ body,#search-input{
 <script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
 <script async src="../../../../search-index.js"></script>
 
-<script>hljs.highlightAll();</script>  	</body>
+<script>hljs.highlightAll();</script>
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
 </html>

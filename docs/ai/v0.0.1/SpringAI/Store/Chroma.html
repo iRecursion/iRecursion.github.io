@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
     <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   	</head>
   	
@@ -42,6 +44,37 @@
     <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
     <h3 class="title"><a href="../../index.html">AsciiDoc AI</a></h3>
 <ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">ML</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Fundamental</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/AILearningPath.html">AI Learning Path</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/AIIntro.html">AI Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/DLBasicConcept.html">DL Basic Concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/ModelTrainingConcept.html">Model Training Concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/LlmIntro.html">LLM Intro</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
@@ -288,34 +321,6 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <span class="nav-text">ML</span>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">Fundamental</span>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../ML/Fundamental/AIIntro.html">AI Intro</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../ML/Fundamental/MLIntro.html">ML Intro</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../ML/Fundamental/DLIntro.html">DL Intro</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../ML/Fundamental/LlmIntro.html">LLM Intro</a>
-  </li>
-</ul>
-  </li>
-</ul>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="0">
-<ul class="nav-list">
-  <li class="nav-item" data-depth="1">
-    <button class="nav-item-toggle"></button>
     <span class="nav-text">LLM</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
@@ -329,6 +334,50 @@
     <a class="nav-link" href="../../LLM/FullStack/PromptEngineeringCase.html">Prompt Engineering Case</a>
   </li>
 </ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Science</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Math</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Science/Math/Algebra.html">Algebra</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Physic</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Solitary</span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Dsac</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Data Structure</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Algorithm</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Classifier</span>
   </li>
 </ul>
   </li>
@@ -434,7 +483,7 @@
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">docker run \
+<pre class="highlight"><code class="language-bash" data-lang="bash">docker run \
 	--name chroma \
 	-p 8000:8000 \
 	--privileged=true \
@@ -456,7 +505,7 @@
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
   	&lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
   	&lt;artifactId&gt;spring-ai-chroma-store&lt;/artifactId&gt;
 &lt;/dependency&gt;</code></pre>
@@ -472,7 +521,7 @@ RestTemplate实例，并使用它来创建ChromaApi实例：</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Bean
+<pre class="highlight"><code class="language-java" data-lang="java">@Bean
 RestTemplate restTemplate() {
    return new RestTemplate();
 }
@@ -504,7 +553,7 @@ ChromaApi.withBasicAuth(&lt;userName&gt;,&lt;password&gt;)来设置凭据；</p>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Bean
+<pre class="highlight"><code class="language-java" data-lang="java">@Bean
 VectorStore chromaVectorStore(EmbeddingClient client,ChromaApi api) {
 	return new ChromaVectorStore(client,api,"TestCollection");
 }</code></pre>
@@ -512,7 +561,7 @@ VectorStore chromaVectorStore(EmbeddingClient client,ChromaApi api) {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">List&lt;Document&gt; documentList = List.of(
+<pre class="highlight"><code class="language-java" data-lang="java">List&lt;Document&gt; documentList = List.of(
 	new Document("Spring AI rocks!! Spring AI rocks!! Spring AI rocks!! Spring AI rocks!! Spring AI rocks!!", Map.of("meta1", "meta1")),
 	new Document("The World is Big and Salvation Lurks Around the Corner"),
 	new Document("You walk forward facing the past and you turn back toward the future.", Map.of("meta2", "meta2")));
@@ -536,7 +585,7 @@ List&lt;Document&gt; resultList = vectorStore.similaritySearch("Spring");</code>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">vectorStore.similaritySearch(
+<pre class="highlight"><code class="language-java" data-lang="java">vectorStore.similaritySearch(
 	SearchRequest.defaults()
 	    .withQuery("The World")
 	    .withTopK(TOP_K)
@@ -553,7 +602,7 @@ List&lt;Document&gt; resultList = vectorStore.similaritySearch("Spring");</code>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">var builder = new FilterExpressionBuilder();
+<pre class="highlight"><code class="language-java" data-lang="java">var builder = new FilterExpressionBuilder();
 
 vectorStore.similaritySearch(SearchRequest.defaults()
 	.withQuery("The World")
@@ -580,7 +629,7 @@ vectorStore.similaritySearch(SearchRequest.defaults()
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{"$and":[
+<pre class="highlight"><code class="language-json" data-lang="json">{"$and":[
 	{"author": {"$in": ["john", "jill"]}},
 	{"article_type":{"$eq":"blog"}}]
 }</code></pre>
@@ -631,5 +680,8 @@ vectorStore.similaritySearch(SearchRequest.defaults()
 <script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
 <script async src="../../../../search-index.js"></script>
 
-<script>hljs.highlightAll();</script>  	</body>
+<script>hljs.highlightAll();</script>
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
 </html>

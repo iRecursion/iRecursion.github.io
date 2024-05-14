@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
     <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   	</head>
   	
@@ -42,6 +44,37 @@
     <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
     <h3 class="title"><a href="../../index.html">AsciiDoc AI</a></h3>
 <ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">ML</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Fundamental</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/AILearningPath.html">AI Learning Path</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/AIIntro.html">AI Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/DLBasicConcept.html">DL Basic Concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/ModelTrainingConcept.html">Model Training Concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/LlmIntro.html">LLM Intro</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
@@ -288,34 +321,6 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <span class="nav-text">ML</span>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">Fundamental</span>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../ML/Fundamental/AIIntro.html">AI Intro</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../ML/Fundamental/MLIntro.html">ML Intro</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../ML/Fundamental/DLIntro.html">DL Intro</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../ML/Fundamental/LlmIntro.html">LLM Intro</a>
-  </li>
-</ul>
-  </li>
-</ul>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="0">
-<ul class="nav-list">
-  <li class="nav-item" data-depth="1">
-    <button class="nav-item-toggle"></button>
     <span class="nav-text">LLM</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
@@ -329,6 +334,50 @@
     <a class="nav-link" href="../../LLM/FullStack/PromptEngineeringCase.html">Prompt Engineering Case</a>
   </li>
 </ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Science</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Math</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Science/Math/Algebra.html">Algebra</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Physic</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Solitary</span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Dsac</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Data Structure</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Algorithm</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Classifier</span>
   </li>
 </ul>
   </li>
@@ -401,26 +450,307 @@
 <div id="toctitle"></div>
 <ul class="sectlevel1">
 <li><a href="#_intro">1. Intro</a></li>
-<li><a href="#_usage">2. Usage</a></li>
-<li><a href="#_language_specific_tip">3. Language Specific Tip</a></li>
+<li><a href="#_usage">2. Usage</a>
+<ul class="sectlevel2">
+<li><a href="#_generation">2.1. Generation</a></li>
+<li><a href="#_prompting">2.2. Prompting</a></li>
+<li><a href="#_edit_dalle2_only">2.3. Edit DallE2 Only)</a></li>
+<li><a href="#_variation_dalle2_only">2.4. Variation DallE2 Only</a></li>
+<li><a href="#_content_moderation">2.5. Content Moderation</a></li>
+</ul>
+</li>
+<li><a href="#_language_specific_tip">3. Language Specific Tip</a>
+<ul class="sectlevel2">
+<li><a href="#_via_in_memory_img_data">3.1. Via In Memory Img Data</a></li>
+<li><a href="#_operating_on_img_data">3.2. Operating on Img Data</a></li>
+<li><a href="#_error_handling">3.3. Error Handling</a></li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="sect1">
 <h2 id="_intro"><a class="anchor" href="#_intro"></a>1. Intro</h2>
 <div class="sectionbody">
-
+<div class="ulist">
+<ul>
+<li>
+<p>用DallE生成或操作manipulate图像；</p>
+</li>
+<li>
+<p>A：根据文本提示(text prompt)从头开始创建图像，DallE3和DallE2；</p>
+</li>
+<li>
+<p>B：根据新的文本提示，通过让模型替换预先存在的图像的某些区域来创建图像的编辑版本，仅限DallE2；</p>
+</li>
+<li>
+<p>C：创建现有图像的变体variation，仅限DallE2；</p>
+</li>
+<li>
+<p>使用DallE3：https://chatgpt.com；</p>
+</li>
+<li>
+<p>使用DallE2：https://labs.openai.com；</p>
+</li>
+</ul>
+</div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_usage"><a class="anchor" href="#_usage"></a>2. Usage</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="_generation"><a class="anchor" href="#_generation"></a>2.1. Generation</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>图像生成端点允许根据文本提示创建原始图像，用DallE3时，<br>
+图像的尺寸可为1024 * 1024、1024 * 1792或1792 * 1024像素；</p>
+</li>
+<li>
+<p>默认：图像以标准质量生成，但使用DallE3时，可设置质量：<br>
+"hd"以增强细节；方形square，标准质量的图像生成速度最快；</p>
+</li>
+<li>
+<p>可使用DallE3一次请求一个图像(通过发送并行请求更多图像)，<br>
+或带有n参数的DallE2一次最多请求10个图像；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python">from openai import OpenAI
+client = OpenAI()
 
+response = client.images.generate(
+  	model="dall-e-3",
+  	prompt="white siamese cat",
+  	size="1024x1024",
+  	quality="standard",
+  	n=1,
+)
+image_url = response.data[0].url</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_prompting"><a class="anchor" href="#_prompting"></a>2.2. Prompting</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>DallE3模型采用提供的默认提示，并出于安全原因自动重写它，并添加更多细节；</p>
+</li>
+<li>
+<p>虽目前无法禁用此功能，但可通过在提示中添加以下内容来使用提示来使输出更接近所请求的图像：<br>
+需测试该工具如何使用极其简单的提示来工作，不要添加任何细节，只需按原样使用即可：</p>
+</li>
+<li>
+<p>更新后的提示在数据响应对象的revised_prompt字段中可见；</p>
+</li>
+<li>
+<p>使用response_format参数，每个图像都可作为URL或Base64数据返回，URL将在一小时后过期；</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_edit_dalle2_only"><a class="anchor" href="#_edit_dalle2_only"></a>2.3. Edit DallE2 Only)</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>图像编辑端点也称修复(inpainting)，允许通过上传图像和指示应<br>
+替换那些区域的mask indicating来编辑或扩展(extend)图像；</p>
+</li>
+<li>
+<p>mask indicate的透明区域transparent area指示应编辑图像的位置，<br>
+且提示应描述完整的图像，而不仅仅是擦除的区域erased area；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python">from openai import OpenAI
+client = OpenAI()
+
+response = client.images.edit((
+  	model="dall-e-2",
+  	image=open("sunlit_lounge.png", "rb"),
+  	mask=open("mask.png", "rb"),
+  	prompt="A sunlit indoor lounge area with a pool containing a flamingo",
+  	n=1,
+  	size="1024x1024"
+)
+image_url = response.data[0].url</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>上传的图像和mask必须都是大小小于4MB的方形png图像，且尺寸(dimension)必须相同，<br>
+生成输出时不会使用遮罩的非透明区域，故它们不一定需像上面的案例一样与原始图像匹配；</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_variation_dalle2_only"><a class="anchor" href="#_variation_dalle2_only"></a>2.4. Variation DallE2 Only</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>图像变体端点允许生成给定图像的变体；</p>
+</li>
+<li>
+<p>类似于编辑端点，输入图像必须是png格式，且小于4MB；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python">from openai import OpenAI
+client = OpenAI()
+
+response = client.images.create_variation(
+  	model="dall-e-2",
+  	image=open("corgi_and_cat_paw.png", "rb"),
+  	n=1,
+  	size="1024x1024"
+)
+
+image_url = response.data[0].url</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_content_moderation"><a class="anchor" href="#_content_moderation"></a>2.5. Content Moderation</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>提示和图像会基于content policy过滤，若提示或图像被标记(flag)将返回错误；</p>
+</li>
+</ul>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_language_specific_tip"><a class="anchor" href="#_language_specific_tip"></a>3. Language Specific Tip</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="_via_in_memory_img_data"><a class="anchor" href="#_via_in_memory_img_data"></a>3.1. Via In Memory Img Data</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>一般使用open函数从磁盘读取图像数据，某些情况下可能会将图像数据存储在内存中，<br>
+使用存储在BytesIO对象中的图像数据的Api调用：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python">from io import BytesIO
+from openai import OpenAI
+client = OpenAI()
 
+# BytesIO object that contain image data
+byte_stream: BytesIO = [your image data]
+byte_array = byte_stream.getvalue()
+response = client.images.create_variation(
+  	image=byte_array,
+  	n=1,
+  	model="dall-e-2",
+  	size="1024x1024"
+)</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_operating_on_img_data"><a class="anchor" href="#_operating_on_img_data"></a>3.2. Operating on Img Data</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>将图像传递给Api；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python">from io import BytesIO
+from PIL import Image
+from openai import OpenAI
+client = OpenAI()
+
+# read image from disk and resize
+image = Image.open("image.png")
+width, height = 256, 256
+image = image.resize((width, height))
+
+# convert image to BytesIO object
+byte_stream = BytesIO()
+image.save(byte_stream, format='PNG')
+byte_array = byte_stream.getvalue()
+
+response = client.images.create_variation(
+  	image=byte_array,
+  	n=1,
+  	model="dall-e-2",
+  	size="1024x1024"
+)</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_error_handling"><a class="anchor" href="#_error_handling"></a>3.3. Error Handling</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>因输入无效，速率限制或其它问题，api请求可能返回错误，error可通过<br>
+try&#8230;&#8203; except语句来处理，错误详细信息可在e.error中找到：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python">import openai
+from openai import OpenAI
+client = OpenAI()
+
+try:
+  	response = client.images.create_variation(
+    	image=open("image_edit_mask.png", "rb"),
+    	n=1,
+    	model="dall-e-2",
+    	size="1024x1024"
+  	)
+  	print(response.data[0].url)
+except openai.OpenAIError as e:
+  	print(e.http_status)
+  	print(e.error)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>===</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python"></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>===</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python"></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>===</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python"></code></pre>
+</div>
+</div>
+</div>
 </div>
 </div>
 </article>
@@ -466,5 +796,8 @@
 <script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
 <script async src="../../../../search-index.js"></script>
 
-<script>hljs.highlightAll();</script>  	</body>
+<script>hljs.highlightAll();</script>
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
 </html>

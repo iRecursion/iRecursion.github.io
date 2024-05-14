@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
     <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   	</head>
   	
@@ -42,6 +44,37 @@
     <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
     <h3 class="title"><a href="../../index.html">AsciiDoc AI</a></h3>
 <ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">ML</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Fundamental</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/AILearningPath.html">AI Learning Path</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/AIIntro.html">AI Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/DLBasicConcept.html">DL Basic Concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/ModelTrainingConcept.html">Model Training Concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/LlmIntro.html">LLM Intro</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
@@ -288,34 +321,6 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <span class="nav-text">ML</span>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">Fundamental</span>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../ML/Fundamental/AIIntro.html">AI Intro</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../ML/Fundamental/MLIntro.html">ML Intro</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../ML/Fundamental/DLIntro.html">DL Intro</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../ML/Fundamental/LlmIntro.html">LLM Intro</a>
-  </li>
-</ul>
-  </li>
-</ul>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="0">
-<ul class="nav-list">
-  <li class="nav-item" data-depth="1">
-    <button class="nav-item-toggle"></button>
     <span class="nav-text">LLM</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
@@ -329,6 +334,50 @@
     <a class="nav-link" href="../../LLM/FullStack/PromptEngineeringCase.html">Prompt Engineering Case</a>
   </li>
 </ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Science</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Math</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Science/Math/Algebra.html">Algebra</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Physic</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Solitary</span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Dsac</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Data Structure</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Algorithm</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Classifier</span>
   </li>
 </ul>
   </li>
@@ -471,7 +520,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">docker run \
+<pre class="highlight"><code class="language-bash" data-lang="bash">docker run \
 	--name qdrant \
 	-p 6333:6333 \
 	--privileged=true \
@@ -482,7 +531,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">-v /elf/qdrant/config/custom_config.yaml:/qdrant/config/custom_config.yaml \
+<pre class="highlight"><code class="language-bash" data-lang="bash">-v /elf/qdrant/config/custom_config.yaml:/qdrant/config/custom_config.yaml \
 
 -v /elf/qdrant/config/custom_config.yaml:/qdrant/config/custom_config.yaml \
 -itd qdrant/qdrant:v1.8.1 \
@@ -522,7 +571,7 @@
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
     &lt;groupId&gt;io.qdrant&lt;/groupId&gt;
     &lt;artifactId&gt;client&lt;/artifactId&gt;
     &lt;version&gt;1.8.0&lt;/version&gt;
@@ -542,7 +591,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">spring:
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">spring:
   ai:
     vectorstore:
       qdrant:
@@ -563,7 +612,7 @@
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Autowired
+<pre class="highlight"><code class="language-java" data-lang="java">@Autowired
 VectorStore vectorStore;
 
 List &lt;Document&gt; documentList = List.of(
@@ -597,7 +646,7 @@ leverage generic，portable metadata filter；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">var expression = "author in ['john', 'jill'] &amp;&amp; article_type == 'blog'";
+<pre class="highlight"><code class="language-java" data-lang="java">var expression = "author in ['john', 'jill'] &amp;&amp; article_type == 'blog'";
 
 vectorStore.similaritySearch(
     SearchRequest.defaults()
@@ -616,7 +665,7 @@ vectorStore.similaritySearch(
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">var builder = new FilterExpressionBuilder();
+<pre class="highlight"><code class="language-java" data-lang="java">var builder = new FilterExpressionBuilder();
 
 vectorStore.similaritySearch(SearchRequest.defaults()
     .withQuery("The World")
@@ -689,7 +738,7 @@ vectorStore.similaritySearch(SearchRequest.defaults()
 <h3 id="_initialize_client"><a class="anchor" href="#_initialize_client"></a>7.1. Initialize Client</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">import io.qdrant.client.QdrantClient;
+<pre class="highlight"><code class="language-java" data-lang="java">import io.qdrant.client.QdrantClient;
 import io.qdrant.client.QdrantGrpcClient;
 
 var client = new QdrantClient(
@@ -701,7 +750,7 @@ var client = new QdrantClient(
 <h3 id="_create_collection"><a class="anchor" href="#_create_collection"></a>7.2. Create Collection</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">import io.qdrant.client.grpc.Collections.Distance;
+<pre class="highlight"><code class="language-java" data-lang="java">import io.qdrant.client.grpc.Collections.Distance;
 import io.qdrant.client.grpc.Collections.VectorParams;
 
 client.createCollectionAsync("test_collection",
@@ -714,7 +763,7 @@ client.createCollectionAsync("test_collection",
 <h3 id="_add_vector"><a class="anchor" href="#_add_vector"></a>7.3. Add Vector</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">import java.util.List;
+<pre class="highlight"><code class="language-java" data-lang="java">import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ExecutionException;
 
@@ -761,7 +810,7 @@ System.out.println(operationInfo);</code></pre>
 <h3 id="_run_query"><a class="anchor" href="#_run_query"></a>7.4. Run Query</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">var gRpcClient = QdrantGrpcClient.newBuilder("192.168.0.123",6334,false).build();
+<pre class="highlight"><code class="language-java" data-lang="java">var gRpcClient = QdrantGrpcClient.newBuilder("192.168.0.123",6334,false).build();
 var client = new QdrantClient(gRpcClient);
 
 List&lt;ScoredPoint&gt; searchResult = client.searchAsync(
@@ -780,7 +829,7 @@ System.out.println(searchResult);</code></pre>
 <h3 id="_add_filter"><a class="anchor" href="#_add_filter"></a>7.5. Add Filter</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">var gRpcClient = QdrantGrpcClient.newBuilder("192.168.0.123",6334,false).build();
+<pre class="highlight"><code class="language-java" data-lang="java">var gRpcClient = QdrantGrpcClient.newBuilder("192.168.0.123",6334,false).build();
 var client = new QdrantClient(gRpcClient);
 
 List&lt;ScoredPoint&gt; searchResult = client.searchAsync(
@@ -841,5 +890,8 @@ System.out.println(searchResult);</code></pre>
 <script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
 <script async src="../../../../search-index.js"></script>
 
-<script>hljs.highlightAll();</script>  	</body>
+<script>hljs.highlightAll();</script>
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
 </html>

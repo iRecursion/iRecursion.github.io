@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
     <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   	</head>
   	
@@ -71,16 +73,10 @@
     <a class="nav-link" href="../Antora/AntoraConfigurer.html">Antora Configurer</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
+    <a class="nav-link" href="../Antora/AntoraHighlight.html">Antora Highlight</a>
   </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">DataStructure</span>
-<ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../DataStructure/DataStructureOutline.html">Data Structure Outline</a>
+    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
   </li>
 </ul>
   </li>
@@ -122,6 +118,9 @@
     <a class="nav-link" href="../Language/CondaJupyter.html">Conda Jupyter</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/GoInstallation.html">Go Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Language/LuaInstallation.html">Lua Installation</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -132,6 +131,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Language/GroovyInstallation.html">Groovy Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/JavaFxInstallation.html">JavaFx Installation</a>
   </li>
 </ul>
   </li>
@@ -360,7 +362,7 @@
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;jakarta.version&gt;10.0.0&lt;/jakarta.version&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;jakarta.version&gt;10.0.0&lt;/jakarta.version&gt;
 
 &lt;dependency&gt;
     &lt;groupId&gt;jakarta.platform&lt;/groupId&gt;
@@ -405,7 +407,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
     &lt;groupId&gt;jakarta.annotation&lt;/groupId&gt;
     &lt;artifactId&gt;jakarta.annotation-api&lt;/artifactId&gt;
     &lt;version&gt;2.1.1&lt;/version&gt;
@@ -429,7 +431,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
     &lt;groupId&gt;jakarta.activation&lt;/groupId&gt;
     &lt;artifactId&gt;jakarta.activation-api&lt;/artifactId&gt;
     &lt;version&gt;2.1.2&lt;/version&gt;
@@ -461,7 +463,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
     &lt;groupId&gt;jakarta.mail&lt;/groupId&gt;
     &lt;artifactId&gt;jakarta.mail-api&lt;/artifactId&gt;
     &lt;version&gt;2.1.2&lt;/version&gt;
@@ -489,7 +491,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
     &lt;groupId&gt;jakarta.authentication&lt;/groupId&gt;
     &lt;artifactId&gt;jakarta.authentication-api&lt;/artifactId&gt;
     &lt;version&gt;3.0.0&lt;/version&gt;
@@ -513,7 +515,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
     &lt;groupId&gt;jakarta.authorization&lt;/groupId&gt;
     &lt;artifactId&gt;jakarta.authorization-api&lt;/artifactId&gt;
     &lt;version&gt;2.1.0&lt;/version&gt;
@@ -543,7 +545,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
     &lt;groupId&gt;jakarta.security.enterprise&lt;/groupId&gt;
     &lt;artifactId&gt;jakarta.security.enterprise-api&lt;/artifactId&gt;
     &lt;version&gt;3.0.0&lt;/version&gt;
@@ -570,7 +572,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
     &lt;groupId&gt;jakarta.json&lt;/groupId&gt;
     &lt;artifactId&gt;jakarta.json-api&lt;/artifactId&gt;
     &lt;version&gt;2.1.1&lt;/version&gt;
@@ -597,7 +599,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
     &lt;groupId&gt;jakarta.json.bind&lt;/groupId&gt;
     &lt;artifactId&gt;jakarta.json.bind-api&lt;/artifactId&gt;
     &lt;version&gt;3.0.0&lt;/version&gt;
@@ -627,7 +629,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
     &lt;groupId&gt;jakarta.jms&lt;/groupId&gt;
     &lt;artifactId&gt;jakarta.jms-api&lt;/artifactId&gt;
     &lt;version&gt;3.1.0&lt;/version&gt;
@@ -648,7 +650,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
     &lt;groupId&gt;jakarta.websocket&lt;/groupId&gt;
     &lt;artifactId&gt;jakarta.websocket-api&lt;/artifactId&gt;
     &lt;version&gt;2.1.0&lt;/version&gt;
@@ -687,7 +689,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
     &lt;groupId&gt;jakarta.transaction&lt;/groupId&gt;
     &lt;artifactId&gt;jakarta.transaction-api&lt;/artifactId&gt;
     &lt;version&gt;2.0.0&lt;/version&gt;
@@ -714,7 +716,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
     &lt;groupId&gt;jakarta.persistence&lt;/groupId&gt;
     &lt;artifactId&gt;jakarta.persistence-api&lt;/artifactId&gt;
     &lt;version&gt;3.1.0&lt;/version&gt;
@@ -738,7 +740,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
     &lt;groupId&gt;jakarta.enterprise.concurrent&lt;/groupId&gt;
     &lt;artifactId&gt;jakarta.enterprise.concurrent-api&lt;/artifactId&gt;
     &lt;version&gt;3.0.0&lt;/version&gt;
@@ -759,7 +761,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
     &lt;groupId&gt;jakarta.faces&lt;/groupId&gt;
     &lt;artifactId&gt;jakarta.faces-api&lt;/artifactId&gt;
     &lt;version&gt;4.0.1&lt;/version&gt;
@@ -804,7 +806,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
     &lt;groupId&gt;jakarta.servlet.jsp&lt;/groupId&gt;
     &lt;artifactId&gt;jakarta.servlet.jsp-api&lt;/artifactId&gt;
     &lt;version&gt;3.1.1&lt;/version&gt;
@@ -832,7 +834,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
     &lt;groupId&gt;jakarta.servlet.jsp.jstl&lt;/groupId&gt;
     &lt;artifactId&gt;jakarta.servlet.jsp.jstl-api&lt;/artifactId&gt;
     &lt;version&gt;3.0.0&lt;/version&gt;
@@ -859,7 +861,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
     &lt;groupId&gt;jakarta.el&lt;/groupId&gt;
     &lt;artifactId&gt;jakarta.el-api&lt;/artifactId&gt;
     &lt;version&gt;5.0.0&lt;/version&gt;
@@ -886,7 +888,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
     &lt;groupId&gt;jakarta.servlet&lt;/groupId&gt;
     &lt;artifactId&gt;jakarta.servlet-api&lt;/artifactId&gt;
     &lt;version&gt;6.0.0&lt;/version&gt;
@@ -911,7 +913,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
     &lt;groupId&gt;jakarta.mvc&lt;/groupId&gt;
     &lt;artifactId&gt;jakarta.mvc-api&lt;/artifactId&gt;
     &lt;version&gt;2.1.0&lt;/version&gt;
@@ -953,7 +955,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
     &lt;groupId&gt;jakarta.interceptor&lt;/groupId&gt;
     &lt;artifactId&gt;jakarta.interceptor-api&lt;/artifactId&gt;
     &lt;version&gt;2.1.0&lt;/version&gt;
@@ -986,7 +988,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
     &lt;groupId&gt;jakarta.annotation&lt;/groupId&gt;
     &lt;artifactId&gt;jakarta.annotation-api&lt;/artifactId&gt;
     &lt;version&gt;2.0.0&lt;/version&gt;
@@ -1007,7 +1009,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
     &lt;groupId&gt;jakarta.ejb&lt;/groupId&gt;
     &lt;artifactId&gt;jakarta.ejb-api&lt;/artifactId&gt;
     &lt;version&gt;4.0.0&lt;/version&gt;
@@ -1028,7 +1030,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
     &lt;groupId&gt;jakarta.inject&lt;/groupId&gt;
     &lt;artifactId&gt;jakarta.inject-api&lt;/artifactId&gt;
     &lt;version&gt;2.0.1&lt;/version&gt;
@@ -1049,7 +1051,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
     &lt;groupId&gt;jakarta.enterprise&lt;/groupId&gt;
     &lt;artifactId&gt;jakarta.enterprise.cdi-api&lt;/artifactId&gt;
     &lt;version&gt;4.0.1&lt;/version&gt;
@@ -1073,7 +1075,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
     &lt;groupId&gt;jakarta.validation&lt;/groupId&gt;
     &lt;artifactId&gt;jakarta.validation-api&lt;/artifactId&gt;
     &lt;version&gt;3.0.0&lt;/version&gt;
@@ -1100,7 +1102,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
     &lt;groupId&gt;jakarta.xml.bind&lt;/groupId&gt;
     &lt;artifactId&gt;jakarta.xml.bind-api&lt;/artifactId&gt;
     &lt;version&gt;4.0.0&lt;/version&gt;
@@ -1130,7 +1132,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
     &lt;groupId&gt;jakarta.xml.ws&lt;/groupId&gt;
     &lt;artifactId&gt;jakarta.xml.ws-api&lt;/artifactId&gt;
     &lt;version&gt;4.0.0&lt;/version&gt;
@@ -1157,7 +1159,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
     &lt;groupId&gt;jakarta.ws.rs&lt;/groupId&gt;
     &lt;artifactId&gt;jakarta.ws.rs-api&lt;/artifactId&gt;
     &lt;version&gt;3.1.0&lt;/version&gt;
@@ -1193,7 +1195,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
     &lt;groupId&gt;jakarta.jws&lt;/groupId&gt;
     &lt;artifactId&gt;jakarta.jws-api&lt;/artifactId&gt;
     &lt;version&gt;3.0.0&lt;/version&gt;
@@ -1220,7 +1222,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
     &lt;groupId&gt;jakarta.xml.soap&lt;/groupId&gt;
     &lt;artifactId&gt;jakarta.xml.soap-api&lt;/artifactId&gt;
     &lt;version&gt;3.0.0&lt;/version&gt;
@@ -1259,7 +1261,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
     &lt;groupId&gt;jakarta.resource&lt;/groupId&gt;
     &lt;artifactId&gt;jakarta.resource-api&lt;/artifactId&gt;
     &lt;version&gt;2.1.0&lt;/version&gt;
@@ -1358,5 +1360,8 @@
 <script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
 <script async src="../../../../search-index.js"></script>
 
-<script>hljs.highlightAll();</script>  	</body>
+<script>hljs.highlightAll();</script>
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
 </html>

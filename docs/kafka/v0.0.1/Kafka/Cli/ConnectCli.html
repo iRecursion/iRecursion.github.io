@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
     <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   	</head>
   	
@@ -369,7 +371,7 @@ Cassandra，HBase，MongoDB，Redis等；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">./kafka-topics.sh \
+<pre class="highlight"><code class="language-bash" data-lang="bash">./kafka-topics.sh \
 	--bootstrap-server 192.168.0.123:9092  \
 	--topic wikipedia.recentchange --create \
 	--partitions 3 --replication-factor 1</code></pre>
@@ -385,7 +387,7 @@ topic dead letter queue for catching any error；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">./kafka-topics.sh --bootstrap-server 192.168.0.123:9092 \
+<pre class="highlight"><code class="language-bash" data-lang="bash">./kafka-topics.sh --bootstrap-server 192.168.0.123:9092 \
 	--topic wikipedia.dlq --create --partitions 3 --replication-factor 1</code></pre>
 </div>
 </div>
@@ -401,7 +403,7 @@ topic dead letter queue for catching any error；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">/kafka370/connectors ls -R kafka-connect-sse
+<pre class="highlight"><code class="language-bash" data-lang="bash">/kafka370/connectors ls -R kafka-connect-sse
 
 ./kafka-connect-sse: connector.properties \
 	kafka-connect-sse-1.0-jar-with-dependencies.jar</code></pre>
@@ -416,7 +418,7 @@ topic dead letter queue for catching any error；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-properties hljs" data-lang="properties">name=sse-source-connector
+<pre class="highlight"><code class="language-properties" data-lang="properties">name=sse-source-connector
 tasks.max=1
 connector.class=com.github.cjmatta.kafka.connect.sse.ServerSentEventsSourceConnector
 topic=wikipedia.recentchange
@@ -434,7 +436,7 @@ errors.deadletterqueue.topic.name=wikipedia.dlq</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-properties hljs" data-lang="properties">key.converter=org.apache.kafka.connect.json.JsonConverter
+<pre class="highlight"><code class="language-properties" data-lang="properties">key.converter=org.apache.kafka.connect.json.JsonConverter
 value.converter=org.apache.kafka.connect.json.JsonConverter
 key.converter.schemas.enable=true
 value.converter.schemas.enable=true
@@ -459,7 +461,7 @@ plugin.path=/elf/kafka370/connectors</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">connect-standalone.sh /kafka370/config/connect-standalone.properties \
+<pre class="highlight"><code class="language-bash" data-lang="bash">connect-standalone.sh /kafka370/config/connect-standalone.properties \
 	~/kafka370/connectors/kafka-connect-sse/connector.properties
 
 ./kafka-console-consumer.sh --bootstrap-server 192.168.0.123:9092 \
@@ -511,5 +513,8 @@ plugin.path=/elf/kafka370/connectors</code></pre>
 <script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
 <script async src="../../../../search-index.js"></script>
 
-<script>hljs.highlightAll();</script>  	</body>
+<script>hljs.highlightAll();</script>
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
 </html>

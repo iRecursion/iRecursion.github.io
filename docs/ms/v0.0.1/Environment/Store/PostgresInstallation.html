@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
     <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   	</head>
   	
@@ -71,16 +73,10 @@
     <a class="nav-link" href="../Antora/AntoraConfigurer.html">Antora Configurer</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
+    <a class="nav-link" href="../Antora/AntoraHighlight.html">Antora Highlight</a>
   </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">DataStructure</span>
-<ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../DataStructure/DataStructureOutline.html">Data Structure Outline</a>
+    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
   </li>
 </ul>
   </li>
@@ -122,6 +118,9 @@
     <a class="nav-link" href="../Language/CondaJupyter.html">Conda Jupyter</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/GoInstallation.html">Go Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Language/LuaInstallation.html">Lua Installation</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -132,6 +131,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Language/GroovyInstallation.html">Groovy Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/JavaFxInstallation.html">JavaFx Installation</a>
   </li>
 </ul>
   </li>
@@ -327,7 +329,7 @@
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">docker run \
+<pre class="highlight"><code class="language-bash" data-lang="bash">docker run \
 	--name pg \
 	-p 5432:5432 \
 	--privileged=true \
@@ -346,7 +348,7 @@
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">docker run \
+<pre class="highlight"><code class="language-bash" data-lang="bash">docker run \
 	--name pgv \
 	-p 5432:5432 \
 	--privileged=true \
@@ -385,7 +387,7 @@ apt install postgresql-16-pgvector，并重启postgres容器；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">--shm-size=1g</code></pre>
+<pre class="highlight"><code class="language-bash" data-lang="bash">--shm-size=1g</code></pre>
 </div>
 </div>
 </td>
@@ -401,7 +403,7 @@ apt install postgresql-16-pgvector，并重启postgres容器；</p>
 <td class="content">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># Enable Assertion
+<pre class="highlight"><code class="language-bash" data-lang="bash"># Enable Assertion
 PG_CFLAGS="-DUSE_ASSERT_CHECKING"
 
 # Enable Benchmarking
@@ -447,7 +449,7 @@ PG_CFLAGS="-DIVFFLAT_KMEANS_DEBUG"</code></pre>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">mkdir -p /data/docker/pgadmin/{data,logs}
+<pre class="highlight"><code class="language-bash" data-lang="bash">mkdir -p /data/docker/pgadmin/{data,logs}
 
 mkdir -p /elf/PgAdmin/{data,log} &amp;&amp; \
 	chown  -R 5050:5050 /elf/PgAdmin</code></pre>
@@ -455,7 +457,7 @@ mkdir -p /elf/PgAdmin/{data,log} &amp;&amp; \
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">docker run \
+<pre class="highlight"><code class="language-bash" data-lang="bash">docker run \
 	--name pga \
 	-p 5050:80 \
 	--privileged=true \
@@ -507,7 +509,7 @@ mkdir -p /elf/PgAdmin/{data,log} &amp;&amp; \
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># listen_addresses = '127.0.0.1'
+<pre class="highlight"><code class="language-bash" data-lang="bash"># listen_addresses = '127.0.0.1'
 listen_addresses = '*'
 
 # port = 5432
@@ -615,5 +617,8 @@ port = 5432</code></pre>
 <script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
 <script async src="../../../../search-index.js"></script>
 
-<script>hljs.highlightAll();</script>  	</body>
+<script>hljs.highlightAll();</script>
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
 </html>

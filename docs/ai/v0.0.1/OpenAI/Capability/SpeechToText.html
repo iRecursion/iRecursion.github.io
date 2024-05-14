@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
     <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   	</head>
   	
@@ -42,6 +44,37 @@
     <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
     <h3 class="title"><a href="../../index.html">AsciiDoc AI</a></h3>
 <ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">ML</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Fundamental</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/AILearningPath.html">AI Learning Path</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/AIIntro.html">AI Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/DLBasicConcept.html">DL Basic Concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/ModelTrainingConcept.html">Model Training Concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/LlmIntro.html">LLM Intro</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
@@ -288,34 +321,6 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <span class="nav-text">ML</span>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">Fundamental</span>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../ML/Fundamental/AIIntro.html">AI Intro</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../ML/Fundamental/MLIntro.html">ML Intro</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../ML/Fundamental/DLIntro.html">DL Intro</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../ML/Fundamental/LlmIntro.html">LLM Intro</a>
-  </li>
-</ul>
-  </li>
-</ul>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="0">
-<ul class="nav-list">
-  <li class="nav-item" data-depth="1">
-    <button class="nav-item-toggle"></button>
     <span class="nav-text">LLM</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
@@ -329,6 +334,50 @@
     <a class="nav-link" href="../../LLM/FullStack/PromptEngineeringCase.html">Prompt Engineering Case</a>
   </li>
 </ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Science</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Math</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Science/Math/Algebra.html">Algebra</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Physic</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Solitary</span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Dsac</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Data Structure</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Algorithm</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Classifier</span>
   </li>
 </ul>
   </li>
@@ -463,7 +512,7 @@ translate and transcribe audio into english；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">from openai import OpenAI
+<pre class="highlight"><code class="language-python" data-lang="python">from openai import OpenAI
 client = OpenAI()
 
 audio_file= open("/path/to/file/audio.mp3", "rb")
@@ -483,7 +532,7 @@ print(transcription.text)</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+<pre class="highlight"><code class="language-json" data-lang="json">{
   	"text": "Imagine the wildest idea that you've ever had,
   		and you're curious about how it might scale to
   		something that's a 100, a 1,000 times bigger."
@@ -499,7 +548,7 @@ print(transcription.text)</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">from openai import OpenAI
+<pre class="highlight"><code class="language-python" data-lang="python">from openai import OpenAI
 client = OpenAI()
 
 audio_file = open("/path/to/file/speech.mp3", "rb")
@@ -526,7 +575,7 @@ print(transcription.text)</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">from openai import OpenAI
+<pre class="highlight"><code class="language-python" data-lang="python">from openai import OpenAI
 client = OpenAI()
 
 audio_file= open("/path/to/file/german.mp3", "rb")
@@ -539,7 +588,7 @@ print(translation.text)</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">hello,my name is elf and I come from China,where are you heading today?
+<pre class="highlight"><code class="language-bash" data-lang="bash">hello,my name is elf and I come from China,where are you heading today?
 
 We only support translation into English at this time.</code></pre>
 </div>
@@ -570,7 +619,7 @@ which allow for removal of specific frame tied to individual word；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">from openai import OpenAI
+<pre class="highlight"><code class="language-python" data-lang="python">from openai import OpenAI
 client = OpenAI()
 
 audio_file = open("speech.mp3", "rb")
@@ -611,7 +660,7 @@ break it up into chunk of 25 MB；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">from pydub import AudioSegment
+<pre class="highlight"><code class="language-python" data-lang="python">from pydub import AudioSegment
 
 song = AudioSegment.from_mp3("good_morning.mp3")
 
@@ -751,7 +800,7 @@ recognize uncommon word or acronym</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">from openai import OpenAI
+<pre class="highlight"><code class="language-python" data-lang="python">from openai import OpenAI
 client = OpenAI()
 
 audio_file = open("/path/to/file/speech.mp3", "rb")
@@ -790,7 +839,7 @@ print(transcription.text)</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">system_prompt =
+<pre class="highlight"><code class="language-python" data-lang="python">system_prompt =
 	"You are a helpful assistant for the company ZyntriQix.
 	Your task is to correct any spelling discrepancies in the transcribed text.
 	Make sure that the names of the following products are spelled correctly:
@@ -865,5 +914,8 @@ corrected_text = generate_corrected_transcript(0,system_prompt,fake_company_file
 <script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
 <script async src="../../../../search-index.js"></script>
 
-<script>hljs.highlightAll();</script>  	</body>
+<script>hljs.highlightAll();</script>
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
 </html>

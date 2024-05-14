@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
     <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   	</head>
   	
@@ -71,16 +73,10 @@
     <a class="nav-link" href="../Antora/AntoraConfigurer.html">Antora Configurer</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
+    <a class="nav-link" href="../Antora/AntoraHighlight.html">Antora Highlight</a>
   </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">DataStructure</span>
-<ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../DataStructure/DataStructureOutline.html">Data Structure Outline</a>
+    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
   </li>
 </ul>
   </li>
@@ -122,6 +118,9 @@
     <a class="nav-link" href="../Language/CondaJupyter.html">Conda Jupyter</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/GoInstallation.html">Go Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Language/LuaInstallation.html">Lua Installation</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -132,6 +131,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Language/GroovyInstallation.html">Groovy Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/JavaFxInstallation.html">JavaFx Installation</a>
   </li>
 </ul>
   </li>
@@ -373,7 +375,7 @@
 <h3 id="_componentscan"><a class="anchor" href="#_componentscan"></a>2.1. @ComponentScan</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Configuration
+<pre class="highlight"><code class="language-java" data-lang="java">@Configuration
 @ComponentScan(basePackages = "com.elf.logger")
 public class LoggerModuleConfiguration {}</code></pre>
 </div>
@@ -383,7 +385,7 @@ public class LoggerModuleConfiguration {}</code></pre>
 <h3 id="_bean"><a class="anchor" href="#_bean"></a>2.2. @Bean</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Configuration
+<pre class="highlight"><code class="language-java" data-lang="java">@Configuration
 public class LoggerModuleConfiguration {
 	@Bean
   	public LoggerService loggerSerivce(){
@@ -404,7 +406,7 @@ public class LoggerModuleConfiguration {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Configuration
+<pre class="highlight"><code class="language-java" data-lang="java">@Configuration
 @ConditionalOnProperty(name = "com.elf.logger.enabled",
     havingValue = "true", matchIfMissing = true)
 public class LoggerModuleConfiguration {
@@ -431,7 +433,7 @@ public class LoggerModuleConfiguration {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Import
+<pre class="highlight"><code class="language-java" data-lang="java">@Import
 @SpringBootApplication
 @Import(LoggerModuleConfiguration.class)
 public class PartyApplication {}</code></pre>
@@ -449,7 +451,7 @@ public class PartyApplication {}</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Retention(RetentionPolicy.RUNTIME)
+<pre class="highlight"><code class="language-java" data-lang="java">@Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.TYPE})
 @Documented
 @Import(LoggerModuleConfiguration.class)
@@ -466,7 +468,7 @@ public @interface EnableLoggerModule {}</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@SpringBootApplication
+<pre class="highlight"><code class="language-java" data-lang="java">@SpringBootApplication
 @EnableLoggerModule
 public class PartyApplication {}</code></pre>
 </div>
@@ -494,7 +496,7 @@ public class PartyApplication {}</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+<pre class="highlight"><code class="language-java" data-lang="java">org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
   com.elf.logger.LoggerModuleConfiguration</code></pre>
 </div>
 </div>
@@ -508,7 +510,7 @@ public class PartyApplication {}</code></pre>
 <h3 id="_yaml配置"><a class="anchor" href="#_yaml配置"></a>4.1. Yaml配置</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">elf:
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">elf:
   uom:
     defaultCurrencyCode: CNY</code></pre>
 </div>
@@ -525,7 +527,7 @@ public class PartyApplication {}</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@ConfigurationProperties(prefix = "elf.uom")
+<pre class="highlight"><code class="language-java" data-lang="java">@ConfigurationProperties(prefix = "elf.uom")
 public class UomProperties {
 
 	private String defaultCurrencyCode = "CNY";
@@ -552,7 +554,7 @@ public class UomProperties {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@RestController
+<pre class="highlight"><code class="language-java" data-lang="java">@RestController
 @RequestMapping("/uom")
 @EnableConfigurationProperties({
 	UomProperties.class
@@ -636,5 +638,8 @@ public class UomController{
 <script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
 <script async src="../../../../search-index.js"></script>
 
-<script>hljs.highlightAll();</script>  	</body>
+<script>hljs.highlightAll();</script>
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
 </html>

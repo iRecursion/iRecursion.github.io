@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
     <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   	</head>
   	
@@ -71,16 +73,10 @@
     <a class="nav-link" href="../Antora/AntoraConfigurer.html">Antora Configurer</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
+    <a class="nav-link" href="../Antora/AntoraHighlight.html">Antora Highlight</a>
   </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">DataStructure</span>
-<ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../DataStructure/DataStructureOutline.html">Data Structure Outline</a>
+    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
   </li>
 </ul>
   </li>
@@ -122,6 +118,9 @@
     <a class="nav-link" href="../Language/CondaJupyter.html">Conda Jupyter</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/GoInstallation.html">Go Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Language/LuaInstallation.html">Lua Installation</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -132,6 +131,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Language/GroovyInstallation.html">Groovy Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/JavaFxInstallation.html">JavaFx Installation</a>
   </li>
 </ul>
   </li>
@@ -351,7 +353,7 @@
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;properties&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;properties&gt;
 	&lt;janus.version&gt;1.0.0&lt;/janus.version&gt;
 	&lt;tinkerpop.version&gt;3.7.0&lt;/tinkerpop.version&gt;
 &lt;/properties&gt;
@@ -391,7 +393,7 @@
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">📒 src/main/resources
+<pre class="highlight"><code class="language-bash" data-lang="bash">📒 src/main/resources
   📂 conf
     📄 remote-objects.yaml
   📂 META-INF/spring/
@@ -408,7 +410,7 @@
 <h3 id="_tinkerpopproperties"><a class="anchor" href="#_tinkerpopproperties"></a>3.1. TinkerpopProperties</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">import org.springframework.boot.context.properties.ConfigurationProperties;
+<pre class="highlight"><code class="language-java" data-lang="java">import org.springframework.boot.context.properties.ConfigurationProperties;
 
 @ConfigurationProperties(prefix = "io.os.tinkerpop")
 public class TinkerpopProperties{
@@ -437,7 +439,7 @@ public class TinkerpopProperties{
 <h3 id="_tinkerpoprepository"><a class="anchor" href="#_tinkerpoprepository"></a>3.2. TinkerpopRepository</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">import org.apache.tinkerpop.gremlin.driver.Client;
+<pre class="highlight"><code class="language-java" data-lang="java">import org.apache.tinkerpop.gremlin.driver.Client;
 import org.apache.tinkerpop.gremlin.process.traversal.dsl.graph.GraphTraversalSource;
 import org.springframework.stereotype.Repository;
 
@@ -467,13 +469,13 @@ public class TinkerpopRepository {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+<pre class="highlight"><code class="language-bash" data-lang="bash">org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
 com.elf.dp.tinkerpop.config.GremlinClusterAutoConfiguration</code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">import org.apache.tinkerpop.gremlin.driver.Client;
+<pre class="highlight"><code class="language-java" data-lang="java">import org.apache.tinkerpop.gremlin.driver.Client;
 import org.apache.tinkerpop.gremlin.driver.Cluster;
 import org.apache.tinkerpop.gremlin.driver.remote.DriverRemoteConnection;
 import org.apache.tinkerpop.gremlin.process.remote.RemoteConnection;
@@ -552,7 +554,7 @@ org.apache.tinkerpop.gremlin.driver.ser.GryoMessageSerializerV1d0</p>
 <h3 id="_引入starter"><a class="anchor" href="#_引入starter"></a>4.1. 引入starter</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
 	&lt;groupId&gt;io.os.starter&lt;/groupId&gt;
 	&lt;artifactId&gt;starter-tinkerpop&lt;/artifactId&gt;
 &lt;/dependency&gt;</code></pre>
@@ -563,7 +565,7 @@ org.apache.tinkerpop.gremlin.driver.ser.GryoMessageSerializerV1d0</p>
 <h3 id="_remote_objects_yaml"><a class="anchor" href="#_remote_objects_yaml"></a>4.2. remote-objects.yaml</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">hosts: [192.168.9.111]
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">hosts: [192.168.9.111]
 port: 8182
 serializer: {
     className: org.apache.tinkerpop.gremlin.driver.ser.GryoMessageSerializerV3d0,
@@ -580,7 +582,7 @@ connectionPool: {maxContentLength: 6553600}</code></pre>
 <h3 id="_application_yaml"><a class="anchor" href="#_application_yaml"></a>4.3. application.yaml</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">server:
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">server:
   port: 8080
   servlet:
     context-path: /tinkerpop
@@ -601,7 +603,7 @@ io:
 <h3 id="_repository"><a class="anchor" href="#_repository"></a>4.4. Repository</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">import java.util.List;
+<pre class="highlight"><code class="language-java" data-lang="java">import java.util.List;
 import java.util.Map;
 
 import org.apache.tinkerpop.gremlin.driver.Client;
@@ -627,7 +629,7 @@ public class LineageRepository extends TinkerpopRepository{
 <h3 id="_connector"><a class="anchor" href="#_connector"></a>4.5. Connector</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">import java.lang.invoke.MethodHandles;
+<pre class="highlight"><code class="language-java" data-lang="java">import java.lang.invoke.MethodHandles;
 import java.util.List;
 import java.util.Map;
 import org.apache.tinkerpop.gremlin.driver.Cluster;
@@ -680,7 +682,7 @@ public class TinkerpopConnector {
 <h3 id="_entry"><a class="anchor" href="#_entry"></a>4.6. Entry</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@SpringBootApplication
+<pre class="highlight"><code class="language-java" data-lang="java">@SpringBootApplication
 @EnableConfigurationProperties(value = {
 	TinkerpopProperties.class
 })
@@ -709,7 +711,7 @@ public class Entry {
 <h3 id="_安装gremlin_python"><a class="anchor" href="#_安装gremlin_python"></a>5.1. 安装Gremlin-Python</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">pip install gremlinpython==3.5.3</code></pre>
+<pre class="highlight"><code class="language-bash" data-lang="bash">pip install gremlinpython==3.5.3</code></pre>
 </div>
 </div>
 </div>
@@ -717,7 +719,7 @@ public class Entry {
 <h3 id="_导入相关包"><a class="anchor" href="#_导入相关包"></a>5.2. 导入相关包</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">from gremlin_python import statics
+<pre class="highlight"><code class="language-python" data-lang="python">from gremlin_python import statics
 from gremlin_python.structure.graph import Graph
 from gremlin_python.process.graph_traversal import __
 from gremlin_python.driver.driver_remote_connection import DriverRemoteConnection</code></pre>
@@ -728,7 +730,7 @@ from gremlin_python.driver.driver_remote_connection import DriverRemoteConnectio
 <h3 id="_graphtraversalsource"><a class="anchor" href="#_graphtraversalsource"></a>5.3. GraphTraversalSource</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">from gremlin_python.process.anonymous_traversal_source import traversal
+<pre class="highlight"><code class="language-python" data-lang="python">from gremlin_python.process.anonymous_traversal_source import traversal
 connection = DriverRemoteConnection('ws://localhost:8182/gremlin','g')
 g = traversal().withRemote(connection)</code></pre>
 </div>
@@ -738,7 +740,7 @@ g = traversal().withRemote(connection)</code></pre>
 <h3 id="_执行遍历"><a class="anchor" href="#_执行遍历"></a>5.4. 执行遍历</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">age = g.V().has('name','elf').values('age').next()
+<pre class="highlight"><code class="language-python" data-lang="python">age = g.V().has('name','elf').values('age').next()
 print('elf is {} years old.'.format(age))</code></pre>
 </div>
 </div>
@@ -788,5 +790,8 @@ print('elf is {} years old.'.format(age))</code></pre>
 <script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
 <script async src="../../../../search-index.js"></script>
 
-<script>hljs.highlightAll();</script>  	</body>
+<script>hljs.highlightAll();</script>
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
 </html>

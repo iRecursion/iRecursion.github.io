@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
     <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   	</head>
   	
@@ -71,16 +73,10 @@
     <a class="nav-link" href="../Antora/AntoraConfigurer.html">Antora Configurer</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
+    <a class="nav-link" href="../Antora/AntoraHighlight.html">Antora Highlight</a>
   </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">DataStructure</span>
-<ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../DataStructure/DataStructureOutline.html">Data Structure Outline</a>
+    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
   </li>
 </ul>
   </li>
@@ -122,6 +118,9 @@
     <a class="nav-link" href="CondaJupyter.html">Conda Jupyter</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="GoInstallation.html">Go Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="LuaInstallation.html">Lua Installation</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -132,6 +131,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="GroovyInstallation.html">Groovy Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="JavaFxInstallation.html">JavaFx Installation</a>
   </li>
 </ul>
   </li>
@@ -346,7 +348,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">python -V &amp;&amp; pip -V
+<pre class="highlight"><code class="language-bash" data-lang="bash">python -V &amp;&amp; pip -V
 
 Python 3.12.3
 pip 24.0</code></pre>
@@ -360,13 +362,13 @@ pip 24.0</code></pre>
 <div class="ulist">
 <ul>
 <li>
-<p>Conda是开源包和环境管理系统，此处选择Python3.11版本；</p>
+<p>Conda是开源包和环境管理系统，此处选择Python3.12版本；</p>
 </li>
 <li>
 <p><a href="https://repo.anaconda.com/miniconda/" class="bare">https://repo.anaconda.com/miniconda/</a></p>
 </li>
 <li>
-<p>Miniconda3-py311_24.1.2-0-Windows-x86_64.exe</p>
+<p>Miniconda3-py312_24.3.0-0-Windows-x86_64.exe</p>
 </li>
 <li>
 <p>PATH：D:\Install\Dev\Conda\condabin</p>
@@ -378,7 +380,7 @@ pip 24.0</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">conda --version &amp;&amp; conda info --envs
+<pre class="highlight"><code class="language-bash" data-lang="bash">conda --version &amp;&amp; conda info --envs
 
 conda 	24.1.2
 base    D:\Install\Dev\Conda</code></pre>
@@ -401,7 +403,7 @@ base    D:\Install\Dev\Conda</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">conda install anaconda-navigator -y</code></pre>
+<pre class="highlight"><code class="language-bash" data-lang="bash">conda install anaconda-navigator -y</code></pre>
 </div>
 </div>
 <div class="ulist">
@@ -414,6 +416,9 @@ base    D:\Install\Dev\Conda</code></pre>
 </li>
 <li>
 <p>向下滚动滑轮，选择安装JupyterLab，点击Launch启动</p>
+</li>
+<li>
+<p>Anaconda Navigator界面字体过小，设置环境变量：QT_SCALE_FACTOR=1.5</p>
 </li>
 </ul>
 </div>
@@ -436,7 +441,7 @@ base    D:\Install\Dev\Conda</code></pre>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># PowerShell执行
+<pre class="highlight"><code class="language-bash" data-lang="bash"># PowerShell执行
 
 @('data','config','search','runtime','notebook','workspace') |
     ForEach-Object {
@@ -461,7 +466,7 @@ base    D:\Install\Dev\Conda</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bat hljs" data-lang="bat">@echo 请以管理员身份运行
+<pre class="highlight"><code class="language-bat" data-lang="bat">@echo 请以管理员身份运行
 
 setx /M JUPYTER_BASE "D:/Install/Dev/workspace/jupyter-module"
 
@@ -488,7 +493,7 @@ pause</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">pip install jupyterlab jupyterlab-language-pack-zh-CN</code></pre>
+<pre class="highlight"><code class="language-python" data-lang="python">pip install jupyterlab jupyterlab-language-pack-zh-CN</code></pre>
 </div>
 </div>
 </div>
@@ -498,7 +503,7 @@ pause</code></pre>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">cd d:
+<pre class="highlight"><code class="language-bash" data-lang="bash">cd d:
 
 jupyter-lab --generate-config
 
@@ -526,7 +531,7 @@ c.ServerApp.allow_origin = '*'
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">cd D:\Install\Dev\workspace\jupyter-module
+<pre class="highlight"><code class="language-bash" data-lang="bash">cd D:\Install\Dev\workspace\jupyter-module
 
 jupyter-lab
 
@@ -540,7 +545,7 @@ jupyter-lab
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">http://127.0.0.1:12345/lab
+<pre class="highlight"><code class="language-bash" data-lang="bash">http://127.0.0.1:12345/lab
 
 键入token并设置密码：elf
 
@@ -556,7 +561,7 @@ http://127.0.0.1:12345/lab，输入密码elf登录后操作</code></pre>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">$ jupyter -h
+<pre class="highlight"><code class="language-bash" data-lang="bash">$ jupyter -h
 $ jupyter --version
 $ jupyter --paths
 
@@ -584,7 +589,7 @@ jupyter notebook --version &amp;&amp; jupyter lab --version</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># rustc 1.75.0
+<pre class="highlight"><code class="language-bash" data-lang="bash"># rustc 1.75.0
 rustc --version
 
 
@@ -619,7 +624,7 @@ juyter lab kernelspec list</code></pre>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># 因Conda Navigator可页面安装，故此选项可选
+<pre class="highlight"><code class="language-bash" data-lang="bash"># 因Conda Navigator可页面安装，故此选项可选
 # conda install -c conda-forge jupyterlab -y
 
 # Optional：注意版本适配，ValueError: The extension "jupyterlab-plotly"
@@ -646,7 +651,7 @@ conda install -c conda-forge nodejs=18.18.2 -y</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-rust hljs" data-lang="rust">fn main(){
+<pre class="highlight"><code class="language-rust" data-lang="rust">fn main(){
 	println!("Hello, world!");
 }
 main();</code></pre>
@@ -659,7 +664,7 @@ main();</code></pre>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">echo off
+<pre class="highlight"><code class="language-bash" data-lang="bash">echo off
 cls
 chcp 65001
 
@@ -731,5 +736,8 @@ jupyter-lab</code></pre>
 <script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
 <script async src="../../../../search-index.js"></script>
 
-<script>hljs.highlightAll();</script>  	</body>
+<script>hljs.highlightAll();</script>
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
 </html>

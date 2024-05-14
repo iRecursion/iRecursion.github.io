@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
     <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   	</head>
   	
@@ -575,7 +577,7 @@ SASL SCRAM，SASL GSSAPI (Kerberos)，SASL OAUTHBEARER；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">./kafka-acls.sh --topic product-price --producer \
+<pre class="highlight"><code class="language-bash" data-lang="bash">./kafka-acls.sh --topic product-price --producer \
 	--bootstrap-server 192.168.0.123:9092 \
 	--add --allow-principal User:elf</code></pre>
 </div>
@@ -637,5 +639,8 @@ Zookeepper(Zookeeper.set.acl=true)，否则任何用户都可进入并编辑ACL�
 <script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
 <script async src="../../../../search-index.js"></script>
 
-<script>hljs.highlightAll();</script>  	</body>
+<script>hljs.highlightAll();</script>
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
 </html>

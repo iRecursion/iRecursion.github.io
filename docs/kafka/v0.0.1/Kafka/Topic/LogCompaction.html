@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
     <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   	</head>
   	
@@ -762,7 +764,7 @@ log compaction仅发生在closed segment；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">./kafka-topics.sh --bootstrap-server 192.168.0.123:9092 \
+<pre class="highlight"><code class="language-bash" data-lang="bash">./kafka-topics.sh --bootstrap-server 192.168.0.123:9092 \
 	--create --topic employee-salary \
     --partitions 1 --replication-factor 1 \
     --config cleanup.policy=compact \
@@ -779,7 +781,7 @@ log compaction仅发生在closed segment；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">./kafka-topics.sh --bootstrap-server 192.168.0.123:9092 \
+<pre class="highlight"><code class="language-bash" data-lang="bash">./kafka-topics.sh --bootstrap-server 192.168.0.123:9092 \
 	--describe --topic employee-salary</code></pre>
 </div>
 </div>
@@ -792,7 +794,7 @@ log compaction仅发生在closed segment；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">./kafka-console-consumer.sh --bootstrap-server 192.168.0.123:9092 \
+<pre class="highlight"><code class="language-bash" data-lang="bash">./kafka-console-consumer.sh --bootstrap-server 192.168.0.123:9092 \
 	--topic employee-salary \
     --from-beginning \
     --property print.key=true \
@@ -809,7 +811,7 @@ log compaction仅发生在closed segment；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">./kafka-console-producer.sh --bootstrap-server 192.168.0.123:9092 \
+<pre class="highlight"><code class="language-bash" data-lang="bash">./kafka-console-producer.sh --bootstrap-server 192.168.0.123:9092 \
     --topic employee-salary \
     --property parse.key=true \
     --property key.separator=,</code></pre>
@@ -824,7 +826,7 @@ log compaction仅发生在closed segment；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">elf,salary: 10000
+<pre class="highlight"><code class="language-bash" data-lang="bash">elf,salary: 10000
 pal,salary: 20000
 bob,salary: 20000
 elf,salary: 25000
@@ -841,7 +843,7 @@ elf,salary: 30000</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">fly,salary: 0</code></pre>
+<pre class="highlight"><code class="language-bash" data-lang="bash">fly,salary: 0</code></pre>
 </div>
 </div>
 <div class="ulist">
@@ -854,7 +856,7 @@ elf,salary: 30000</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">bob,salary: 20000
+<pre class="highlight"><code class="language-bash" data-lang="bash">bob,salary: 20000
 pal,salary: 30000
 elf,salary: 30000
 fly,salary: 0</code></pre>
@@ -913,5 +915,8 @@ fly,salary: 0</code></pre>
 <script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
 <script async src="../../../../search-index.js"></script>
 
-<script>hljs.highlightAll();</script>  	</body>
+<script>hljs.highlightAll();</script>
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
 </html>

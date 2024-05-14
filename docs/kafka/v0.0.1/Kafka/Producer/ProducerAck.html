@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
     <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   	</head>
   	
@@ -597,7 +599,7 @@ ISR broker(含leader)必须响应respond他们拥有数据；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">./kafka-topics.sh --bootstrap-server 192.168.0.123:9092 \
+<pre class="highlight"><code class="language-bash" data-lang="bash">./kafka-topics.sh --bootstrap-server 192.168.0.123:9092 \
 	--topic topic-config --create \
 	--partitions 3 --replication-factor 1</code></pre>
 </div>
@@ -611,7 +613,7 @@ ISR broker(含leader)必须响应respond他们拥有数据；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">./kafka-topics.sh --bootstrap-server 192.168.0.123:9092 \
+<pre class="highlight"><code class="language-bash" data-lang="bash">./kafka-topics.sh --bootstrap-server 192.168.0.123:9092 \
 	--describe --topic topic-config</code></pre>
 </div>
 </div>
@@ -624,7 +626,7 @@ ISR broker(含leader)必须响应respond他们拥有数据；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">./kafka-configs.sh --bootstrap-server 192.168.0.123:9092 \
+<pre class="highlight"><code class="language-bash" data-lang="bash">./kafka-configs.sh --bootstrap-server 192.168.0.123:9092 \
 	--alter --entity-type topics --entity-name topic-config \
 	--add-config min.insync.replicas=2</code></pre>
 </div>
@@ -638,7 +640,7 @@ ISR broker(含leader)必须响应respond他们拥有数据；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">./kafka-topics.sh --bootstrap-server 192.168.0.123:9092 \
+<pre class="highlight"><code class="language-bash" data-lang="bash">./kafka-topics.sh --bootstrap-server 192.168.0.123:9092 \
 	--describe --topic topic-config</code></pre>
 </div>
 </div>
@@ -654,7 +656,7 @@ ISR broker(含leader)必须响应respond他们拥有数据；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">./kafka-configs.sh --bootstrap-server 192.168.0.123:9092 \
+<pre class="highlight"><code class="language-bash" data-lang="bash">./kafka-configs.sh --bootstrap-server 192.168.0.123:9092 \
 	--alter --entity-type topics --entity-name topic-config \
 	--delete-config min.insync.replicas</code></pre>
 </div>
@@ -668,7 +670,7 @@ ISR broker(含leader)必须响应respond他们拥有数据；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">./kafka-topics.sh --bootstrap-server 192.168.0.123:9092 \
+<pre class="highlight"><code class="language-bash" data-lang="bash">./kafka-topics.sh --bootstrap-server 192.168.0.123:9092 \
 	--describe --topic topic-config</code></pre>
 </div>
 </div>
@@ -691,7 +693,7 @@ ISR broker(含leader)必须响应respond他们拥有数据；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-properties hljs" data-lang="properties"># config/server.properties
+<pre class="highlight"><code class="language-properties" data-lang="properties"># config/server.properties
 
 min.insync.replicas = 2</code></pre>
 </div>
@@ -716,7 +718,7 @@ min.insync.replicas = 2</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">./kafka-configs.sh --bootstrap-server 192.168.0.123:9092 \
+<pre class="highlight"><code class="language-bash" data-lang="bash">./kafka-configs.sh --bootstrap-server 192.168.0.123:9092 \
 	--alter --entity-type brokers --entity-default \
 	--add-config min.insync.replicas=2</code></pre>
 </div>
@@ -730,7 +732,7 @@ min.insync.replicas = 2</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">./kafka-configs.sh --bootstrap-server 192.168.0.123:9092 \
+<pre class="highlight"><code class="language-bash" data-lang="bash">./kafka-configs.sh --bootstrap-server 192.168.0.123:9092 \
 	--describe --entity-type brokers --entity-default
 
 Default configs for brokers in the cluster are:
@@ -747,7 +749,7 @@ Default configs for brokers in the cluster are:
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">./kafka-configs.sh --bootstrap-server 192.168.0.123:9092 \
+<pre class="highlight"><code class="language-bash" data-lang="bash">./kafka-configs.sh --bootstrap-server 192.168.0.123:9092 \
 	--alter --entity-type brokers --entity-default \
 	--delete-config min.insync.replicas</code></pre>
 </div>
@@ -761,7 +763,7 @@ Default configs for brokers in the cluster are:
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">./kafka-configs.sh --bootstrap-server 192.168.0.123:9092 \
+<pre class="highlight"><code class="language-bash" data-lang="bash">./kafka-configs.sh --bootstrap-server 192.168.0.123:9092 \
 	--describe --entity-type brokers --entity-default</code></pre>
 </div>
 </div>
@@ -811,5 +813,8 @@ Default configs for brokers in the cluster are:
 <script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
 <script async src="../../../../search-index.js"></script>
 
-<script>hljs.highlightAll();</script>  	</body>
+<script>hljs.highlightAll();</script>
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
 </html>

@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
     <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   	</head>
   	
@@ -323,7 +325,7 @@
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
     &lt;groupId&gt;org.apache.kafka&lt;/groupId&gt;
     &lt;artifactId&gt;kafka-clients&lt;/artifactId&gt;
 &lt;/dependency&gt;
@@ -341,7 +343,7 @@
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public interface KafkaConst {
+<pre class="highlight"><code class="language-java" data-lang="java">public interface KafkaConst {
 
 	String TX_ID = "kafka-tx-id";
 	String TOPIC_NAME = "product-price";
@@ -357,7 +359,7 @@
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">import java.util.HashMap;
+<pre class="highlight"><code class="language-java" data-lang="java">import java.util.HashMap;
 import java.util.Map;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
@@ -415,7 +417,7 @@ public final class KafkaUtil {
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">import java.util.Arrays;
+<pre class="highlight"><code class="language-java" data-lang="java">import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ExecutionException;
@@ -450,7 +452,7 @@ public class ElfKafkaAdmin {
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">import java.lang.invoke.MethodHandles;
+<pre class="highlight"><code class="language-java" data-lang="java">import java.lang.invoke.MethodHandles;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 import org.apache.kafka.clients.producer.KafkaProducer;
@@ -524,7 +526,7 @@ public class ElfKafkaProducer {
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">import java.time.Duration;
+<pre class="highlight"><code class="language-java" data-lang="java">import java.time.Duration;
 import java.util.Collections;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
 
@@ -588,7 +590,7 @@ public class ElfKafkaConsumer {
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public class KafkaDemonstrator {
+<pre class="highlight"><code class="language-java" data-lang="java">public class KafkaDemonstrator {
 
 	public static void main(String[] sa) throws InterruptedException, ExecutionException {
 		ElfKafkaAdmin.createTopic(KafkaConst.TOPIC_NAME,2,(short)1);
@@ -646,5 +648,8 @@ public class ElfKafkaConsumer {
 <script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
 <script async src="../../../../search-index.js"></script>
 
-<script>hljs.highlightAll();</script>  	</body>
+<script>hljs.highlightAll();</script>
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
 </html>

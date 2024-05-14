@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
     <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   	</head>
   	
@@ -71,16 +73,10 @@
     <a class="nav-link" href="../Antora/AntoraConfigurer.html">Antora Configurer</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
+    <a class="nav-link" href="../Antora/AntoraHighlight.html">Antora Highlight</a>
   </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">DataStructure</span>
-<ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../DataStructure/DataStructureOutline.html">Data Structure Outline</a>
+    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
   </li>
 </ul>
   </li>
@@ -122,6 +118,9 @@
     <a class="nav-link" href="../Language/CondaJupyter.html">Conda Jupyter</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/GoInstallation.html">Go Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Language/LuaInstallation.html">Lua Installation</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -132,6 +131,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Language/GroovyInstallation.html">Groovy Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/JavaFxInstallation.html">JavaFx Installation</a>
   </li>
 </ul>
   </li>
@@ -342,7 +344,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">mkdir -p {/elf/es/.cache,/elf/es/data,/elf/es/logs} &amp;&amp; \
+<pre class="highlight"><code class="language-bash" data-lang="bash">mkdir -p {/elf/es/.cache,/elf/es/data,/elf/es/logs} &amp;&amp; \
 	chmod 777 -R /elf/es</code></pre>
 </div>
 </div>
@@ -353,7 +355,7 @@
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">docker run --name es7 \
+<pre class="highlight"><code class="language-bash" data-lang="bash">docker run --name es7 \
 	--net network-common \
 	-p 9200:9200 -p 9300:9300 \
 	--privileged=true \
@@ -378,7 +380,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+<pre class="highlight"><code class="language-json" data-lang="json">{
   "name" : "516266baebb4",
   "cluster_name" : "docker-cluster",
   "cluster_uuid" : "7GMURjAVRZinou21XMNYpQ",
@@ -404,7 +406,7 @@
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">docker run --name es8 \
+<pre class="highlight"><code class="language-bash" data-lang="bash">docker run --name es8 \
 	-m 1GB \
     -e ES_JAVA_OPTS="-Xms1024m -Xmx1024m" \
 	--net network-common \
@@ -424,7 +426,7 @@
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">docker exec -it es8 /usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic --interactive
+<pre class="highlight"><code class="language-bash" data-lang="bash">docker exec -it es8 /usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic --interactive
 
 y
 
@@ -453,7 +455,7 @@ es8es8 - es8es8</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+<pre class="highlight"><code class="language-json" data-lang="json">{
   "name" : "f7308049be08",
   "cluster_name" : "docker-cluster",
   "cluster_uuid" : "YcdyuNUVSkuJuFzLXbpIFg",
@@ -479,7 +481,7 @@ es8es8 - es8es8</code></pre>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">docker run --name kibana \
+<pre class="highlight"><code class="language-bash" data-lang="bash">docker run --name kibana \
 	--net network-common \
 	-p 5601:5601 \
 	--privileged=true \
@@ -493,7 +495,7 @@ es8es8 - es8es8</code></pre>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">docker exec -it es8 /usr/share/elasticsearch/bin/elasticsearch-create-enrollment-token -s kibana
+<pre class="highlight"><code class="language-bash" data-lang="bash">docker exec -it es8 /usr/share/elasticsearch/bin/elasticsearch-create-enrollment-token -s kibana
 
 eyJ2ZXIiOiI4LjEyLjIiLCJhZHIiOlsiMTcyLjE4LjAuMjo5MjAwIl0sImZnciI6IjRjZDc0MWVhYzdkMzczZTJiMTdjNGQ1YjNjNTg5N2ZlMjhjNzE1MDRiNDc0OGI2Njc4OWFjYTZhODVmMjRiNDIiLCJrZXkiOiJfeE54R0k0QlVHTVI1WXB1S2hXSzpIV0FEWUlvN1RXTzFiYm8xSTd1SHlnIn0=</code></pre>
 </div>
@@ -527,7 +529,7 @@ eyJ2ZXIiOiI4LjEyLjIiLCJhZHIiOlsiMTcyLjE4LjAuMjo5MjAwIl0sImZnciI6IjRjZDc0MWVhYzdk
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">docker exec -it es8 /bin/bash
+<pre class="highlight"><code class="language-bash" data-lang="bash">docker exec -it es8 /bin/bash
 
 find $(pwd) -name 'http_ca.crt'
 
@@ -583,5 +585,8 @@ docker cp es8:/usr/share/elasticsearch/config/certs/http_ca.crt /elf/http_ca.crt
 <script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
 <script async src="../../../../search-index.js"></script>
 
-<script>hljs.highlightAll();</script>  	</body>
+<script>hljs.highlightAll();</script>
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
 </html>

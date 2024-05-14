@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
     <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   	</head>
   	
@@ -71,16 +73,10 @@
     <a class="nav-link" href="AntoraConfigurer.html">Antora Configurer</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="AntoraUI.html">Antora UI</a>
+    <a class="nav-link" href="AntoraHighlight.html">Antora Highlight</a>
   </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">DataStructure</span>
-<ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../DataStructure/DataStructureOutline.html">Data Structure Outline</a>
+    <a class="nav-link" href="AntoraUI.html">Antora UI</a>
   </li>
 </ul>
   </li>
@@ -122,6 +118,9 @@
     <a class="nav-link" href="../Language/CondaJupyter.html">Conda Jupyter</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/GoInstallation.html">Go Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Language/LuaInstallation.html">Lua Installation</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -132,6 +131,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Language/GroovyInstallation.html">Groovy Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/JavaFxInstallation.html">JavaFx Installation</a>
   </li>
 </ul>
   </li>
@@ -379,7 +381,7 @@
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-markdown hljs" data-lang="markdown">&lt;!-- comment --&gt;
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">&lt;!-- comment --&gt;
 
 [//]: # (comment)
 
@@ -394,7 +396,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">select * from party</code></pre>
+<pre class="highlight"><code class="language-sql" data-lang="sql">select * from party</code></pre>
 </div>
 </div>
 </div>
@@ -413,7 +415,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-markdown hljs" data-lang="markdown">1. Pal
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">1. Pal
 2. Elf
 3. Lua</code></pre>
 </div>
@@ -433,7 +435,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-markdown hljs" data-lang="markdown">* Red
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">* Red
 + Green
 - Blue</code></pre>
 </div>
@@ -450,7 +452,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-markdown hljs" data-lang="markdown">+ Elf
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">+ Elf
 + Cpp
 + Java
    1. Thread
@@ -479,7 +481,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-markdown hljs" data-lang="markdown">- [ ] hello
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">- [ ] hello
 - [ ] world
 - [ ] end</code></pre>
 </div>
@@ -496,7 +498,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-markdown hljs" data-lang="markdown">姓名|技能|排行
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">姓名|技能|排行
 --|:--:|--:
 刘备|哭|大哥
 关羽|打|二哥
@@ -519,7 +521,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-markdown hljs" data-lang="markdown">`single line code`</code></pre>
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">`single line code`</code></pre>
 </div>
 </div>
 </div>
@@ -534,7 +536,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-markdown hljs" data-lang="markdown">```
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">```
 System.exit(-1);
 ```</code></pre>
 </div>
@@ -544,7 +546,7 @@ System.exit(-1);
 <h3 id="_原样显示"><a class="anchor" href="#_原样显示"></a>5.3. 原样显示</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-markdown hljs" data-lang="markdown">`&lt;pre&gt;`和`&lt;code&gt;`</code></pre>
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">`&lt;pre&gt;`和`&lt;code&gt;`</code></pre>
 </div>
 </div>
 </div>
@@ -552,7 +554,7 @@ System.exit(-1);
 <h3 id="_语法高亮推荐"><a class="anchor" href="#_语法高亮推荐"></a>5.4. 语法高亮,推荐</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-markdown hljs" data-lang="markdown">``` key
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">``` key
 code segment
 ```
 
@@ -566,7 +568,7 @@ make &amp;&amp; make install
 <h4 id="_常用高亮语言"><a class="anchor" href="#_常用高亮语言"></a>5.4.1. 常用高亮语言</h4>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-markdown hljs" data-lang="markdown">Key|Language
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">Key|Language
 --:|:--
 asciidoc|*.adoc
 bash|*.sh,*.bash
@@ -608,7 +610,7 @@ yaml|*.yaml,*.yml</code></pre>
 <h3 id="_image_图片"><a class="anchor" href="#_image_图片"></a>6.1. Image 图片</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-markdown hljs" data-lang="markdown">![alt text](img url "Optional title")
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">![alt text](img url "Optional title")
 ![Security](https://ico.ooopic.com/ajax/iconpng/?id=186750.png "安全")
 
 子路径
@@ -626,7 +628,7 @@ yaml|*.yaml,*.yml</code></pre>
 <h3 id="_hyper_link_超链接"><a class="anchor" href="#_hyper_link_超链接"></a>6.2. Hyper Link 超链接</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-markdown hljs" data-lang="markdown">(title是英文双引号,可选项):[超链接名](超链接地址 ''超链接title'')
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">(title是英文双引号,可选项):[超链接名](超链接地址 ''超链接title'')
 [百度](http://baidu.com "百度")
 &lt;a href="超链接地址" target="_blank"&gt;超链接名&lt;/a&gt;
 &lt;a href="http://baidu.com" target="_blank"&gt;百度&lt;/a&gt;</code></pre>
@@ -644,7 +646,7 @@ yaml|*.yaml,*.yml</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-markdown hljs" data-lang="markdown">&lt;http://www.baidu.com&gt;
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">&lt;http://www.baidu.com&gt;
 &lt;address@email.com&gt;</code></pre>
 </div>
 </div>
@@ -653,7 +655,7 @@ yaml|*.yaml,*.yml</code></pre>
 <h3 id="_anchor_锚点"><a class="anchor" href="#_anchor_锚点"></a>6.4. Anchor 锚点</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-markdown hljs" data-lang="markdown">[锚点说明](hashtag(#)anchorId);
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">[锚点说明](hashtag(#)anchorId);
 &lt;h1 id="anchorId"&gt;目标锚点&lt;/h1&gt;</code></pre>
 </div>
 </div>
@@ -674,7 +676,7 @@ yaml|*.yaml,*.yml</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-markdown hljs" data-lang="markdown">**加粗**</code></pre>
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">**加粗**</code></pre>
 </div>
 </div>
 </div>
@@ -689,7 +691,7 @@ yaml|*.yaml,*.yml</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-markdown hljs" data-lang="markdown">*斜体*</code></pre>
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">*斜体*</code></pre>
 </div>
 </div>
 </div>
@@ -704,7 +706,7 @@ yaml|*.yaml,*.yml</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-markdown hljs" data-lang="markdown">***斜体与加粗***</code></pre>
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">***斜体与加粗***</code></pre>
 </div>
 </div>
 </div>
@@ -719,7 +721,7 @@ yaml|*.yaml,*.yml</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-markdown hljs" data-lang="markdown">~~删除线~~</code></pre>
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">~~删除线~~</code></pre>
 </div>
 </div>
 </div>
@@ -727,7 +729,7 @@ yaml|*.yaml,*.yml</code></pre>
 <h3 id="_discoloration_变色"><a class="anchor" href="#_discoloration_变色"></a>7.5. Discoloration 变色</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-markdown hljs" data-lang="markdown">$\color{red}{红色}$
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">$\color{red}{红色}$
 &lt;font color=silver&gt;银灰色&lt;/font&gt;
 $\color{#0000FF}{蓝色}$</code></pre>
 </div>
@@ -749,7 +751,7 @@ $\color{#0000FF}{蓝色}$</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-markdown hljs" data-lang="markdown">High Level Title
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">High Level Title
 ================
 
 Low Level Title
@@ -768,7 +770,7 @@ Low Level Title
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-markdown hljs" data-lang="markdown"># H1 Title
+<pre class="highlight"><code class="language-markdown" data-lang="markdown"># H1 Title
 ## H2 Title
 ### H3 Title
 #### H4 Title
@@ -791,7 +793,7 @@ Low Level Title
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-markdown hljs" data-lang="markdown"># H1 Title ######
+<pre class="highlight"><code class="language-markdown" data-lang="markdown"># H1 Title ######
 ## H2 Title #####
 ### H3 Title ####
 #### H4 Title ###
@@ -811,7 +813,7 @@ Low Level Title
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-markdown hljs" data-lang="markdown">&gt; all features are available free of charge.
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">&gt; all features are available free of charge.
 &gt; It is a full version: no hidden payments,demo versions,or limitations.
 
 &gt; all features are available free of charge.
@@ -830,7 +832,7 @@ Low Level Title
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-markdown hljs" data-lang="markdown">&gt; This is the first level of quoting.
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">&gt; This is the first level of quoting.
 &gt;
 &gt;&gt; This is nested blockquote.
 &gt;
@@ -871,7 +873,7 @@ Low Level Title
 <h3 id="_换行"><a class="anchor" href="#_换行"></a>9.1. 换行</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-markdown hljs" data-lang="markdown">`&lt;br&gt;`</code></pre>
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">`&lt;br&gt;`</code></pre>
 </div>
 </div>
 </div>
@@ -892,7 +894,7 @@ Low Level Title
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-markdown hljs" data-lang="markdown">「 AT&amp;T」 =&gt; 「AT&amp;amp;T」   4 &lt; 5 =&gt; 4 &amp;lt; 5
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">「 AT&amp;T」 =&gt; 「AT&amp;amp;T」   4 &lt; 5 =&gt; 4 &amp;lt; 5
 &amp; =&gt; https://www.google.com/search?num=30&amp;amp;q=elf&amp;amp;tbm=isch</code></pre>
 </div>
 </div>
@@ -901,7 +903,7 @@ Low Level Title
 <h3 id="_版权符号"><a class="anchor" href="#_版权符号"></a>9.3. 版权符号©</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-markdown hljs" data-lang="markdown">&amp;copy;
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">&amp;copy;
 
 &lt;div class="footer"&gt;
   &amp;copy; 2020 Elf Corporation
@@ -954,5 +956,8 @@ Low Level Title
 <script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
 <script async src="../../../../search-index.js"></script>
 
-<script>hljs.highlightAll();</script>  	</body>
+<script>hljs.highlightAll();</script>
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
 </html>

@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
     <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   	</head>
   	
@@ -71,16 +73,10 @@
     <a class="nav-link" href="../Antora/AntoraConfigurer.html">Antora Configurer</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
+    <a class="nav-link" href="../Antora/AntoraHighlight.html">Antora Highlight</a>
   </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">DataStructure</span>
-<ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../DataStructure/DataStructureOutline.html">Data Structure Outline</a>
+    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
   </li>
 </ul>
   </li>
@@ -122,6 +118,9 @@
     <a class="nav-link" href="../Language/CondaJupyter.html">Conda Jupyter</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/GoInstallation.html">Go Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Language/LuaInstallation.html">Lua Installation</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -132,6 +131,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Language/GroovyInstallation.html">Groovy Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/JavaFxInstallation.html">JavaFx Installation</a>
   </li>
 </ul>
   </li>
@@ -327,9 +329,9 @@
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">docker pull mysql:8.2.0
+<pre class="highlight"><code class="language-bash" data-lang="bash">docker pull mysql:8.4.0
 
-mkdir -p /elf/mysql/conf &amp;&amp; \
+mkdir -p /elf/mysql/{conf,data} &amp;&amp; \
 	cd /elf/mysql/conf &amp;&amp; \
 	vim /elf/mysql/conf/my.cnf</code></pre>
 </div>
@@ -341,13 +343,7 @@ mkdir -p /elf/mysql/conf &amp;&amp; \
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-properties hljs" data-lang="properties">[mysqld]
-explicit_defaults_for_timestamp=1</code></pre>
-</div>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-properties hljs" data-lang="properties">[mysqld]
+<pre class="highlight"><code class="language-properties" data-lang="properties">[mysqld]
 
 # 服务端端口
 port=3306
@@ -357,6 +353,10 @@ basedir=/elf/mysql
 
 # mysql 数据目录
 datadir=/elf/mysql/data
+
+lc_messages_dir=/usr/share/mysql
+
+lc_messages=zh_CN
 
 # 允许最大连接数
 max_connections=1000
@@ -370,16 +370,8 @@ character-set-server=utf8mb4
 # 存储引擎
 default-storage-engine=InnoDB
 
-# 密码插件
-default_authentication_plugin=mysql_native_password
-
 # sql语句是否敏感:1:不敏感
 lower_case_table_names = 1
-
-lock_wait_timeout = 3600
-
-tmp_table_size = 64M
-max_heap_table_size = 64M
 
 # 严格的日期时间类型
 explicit_defaults_for_timestamp=1
@@ -400,20 +392,25 @@ default-character-set=utf8mb4</code></pre>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">docker run \
+<pre class="highlight"><code class="language-bash" data-lang="bash">docker run \
 	--name mysql \
 	-p 3306:3306 \
 	--privileged=true \
 	--net network-common \
 	-v /elf/mysql/data:/var/lib/mysql \
-	-v /elf/mysql/log:/var/log/mysql \
 	-v /elf/mysql/conf:/etc/mysql/conf.d \
-	-v /elf/mysql/mysql-files:/var/lib/mysql-files/ \
 	-e MYSQL_ROOT_PASSWORD=cipher \
-	-e --character-set-server=utf8mb4 \
-	-e --collation-server=utf8mb4_unicode_ci \
-	-itd mysql:8.2.0</code></pre>
+	-itd mysql:8.4.0 \
+	--character-set-server=utf8mb4 \
+	--collation-server=utf8mb4_unicode_ci</code></pre>
 </div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><mark>此处不使用配置文件，因升级ubuntu24.04，8.4不工作</mark>；</p>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -422,7 +419,7 @@ default-character-set=utf8mb4</code></pre>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">docker exec -it mysql bash
+<pre class="highlight"><code class="language-bash" data-lang="bash">docker exec -it mysql bash
 
 mysql -u root -p
 
@@ -480,5 +477,8 @@ flush privileges;</code></pre>
 <script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
 <script async src="../../../../search-index.js"></script>
 
-<script>hljs.highlightAll();</script>  	</body>
+<script>hljs.highlightAll();</script>
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
 </html>

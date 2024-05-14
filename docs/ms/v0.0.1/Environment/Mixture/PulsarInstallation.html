@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
     <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   	</head>
   	
@@ -71,16 +73,10 @@
     <a class="nav-link" href="../Antora/AntoraConfigurer.html">Antora Configurer</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
+    <a class="nav-link" href="../Antora/AntoraHighlight.html">Antora Highlight</a>
   </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">DataStructure</span>
-<ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../DataStructure/DataStructureOutline.html">Data Structure Outline</a>
+    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
   </li>
 </ul>
   </li>
@@ -122,6 +118,9 @@
     <a class="nav-link" href="../Language/CondaJupyter.html">Conda Jupyter</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/GoInstallation.html">Go Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Language/LuaInstallation.html">Lua Installation</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -132,6 +131,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Language/GroovyInstallation.html">Groovy Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/JavaFxInstallation.html">JavaFx Installation</a>
   </li>
 </ul>
   </li>
@@ -345,7 +347,7 @@
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">docker pull apachepulsar/pulsar:3.1.0 &amp;&amp; \
+<pre class="highlight"><code class="language-bash" data-lang="bash">docker pull apachepulsar/pulsar:3.1.0 &amp;&amp; \
 	docker tag apachepulsar/pulsar:3.1.0 pulsar:3.1.0 &amp;&amp; \
 	docker save -o ./pulsar3.1.0.tar pulsar:3.1.0 &amp;&amp; \
 	docker load &lt; ./pulsar3.1.0.tar
@@ -363,7 +365,7 @@ docker pull apachepulsar/pulsar-manager:v0.4.0 &amp;&amp; \
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">docker run \
+<pre class="highlight"><code class="language-bash" data-lang="bash">docker run \
 	--name pulsar \
 	-p 6650:6650 -p 8080:8080 \
 	--privileged=true \
@@ -399,7 +401,7 @@ docker pull apachepulsar/pulsar-manager:v0.4.0 &amp;&amp; \
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-properties hljs" data-lang="properties">spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+<pre class="highlight"><code class="language-properties" data-lang="properties">spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.datasource.url=jdbc:postgresql://192.168.0.123:3306/pulsar_manager
 spring.datasource.username=root
 spring.datasource.password=cipher</code></pre>
@@ -407,7 +409,7 @@ spring.datasource.password=cipher</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">docker run \
+<pre class="highlight"><code class="language-bash" data-lang="bash">docker run \
 	--name pulsar-manager \
 	-p 9527:9527 -p 7750:7750 \
 	--privileged=true \
@@ -418,7 +420,7 @@ spring.datasource.password=cipher</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">CSRF_TOKEN=$(curl http://192.168.0.123:7750/pulsar-manager/csrf-token)
+<pre class="highlight"><code class="language-bash" data-lang="bash">CSRF_TOKEN=$(curl http://192.168.0.123:7750/pulsar-manager/csrf-token)
 curl \
    -H 'X-XSRF-TOKEN: $CSRF_TOKEN' \
    -H 'Cookie: XSRF-TOKEN=$CSRF_TOKEN;' \
@@ -480,5 +482,8 @@ admin - pulsar</p>
 <script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
 <script async src="../../../../search-index.js"></script>
 
-<script>hljs.highlightAll();</script>  	</body>
+<script>hljs.highlightAll();</script>
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
 </html>

@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
     <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   	</head>
   	
@@ -71,16 +73,10 @@
     <a class="nav-link" href="AntoraConfigurer.html">Antora Configurer</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="AntoraUI.html">Antora UI</a>
+    <a class="nav-link" href="AntoraHighlight.html">Antora Highlight</a>
   </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">DataStructure</span>
-<ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../DataStructure/DataStructureOutline.html">Data Structure Outline</a>
+    <a class="nav-link" href="AntoraUI.html">Antora UI</a>
   </li>
 </ul>
   </li>
@@ -122,6 +118,9 @@
     <a class="nav-link" href="../Language/CondaJupyter.html">Conda Jupyter</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/GoInstallation.html">Go Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Language/LuaInstallation.html">Lua Installation</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -132,6 +131,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Language/GroovyInstallation.html">Groovy Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/JavaFxInstallation.html">JavaFx Installation</a>
   </li>
 </ul>
   </li>
@@ -369,7 +371,7 @@ command_one运行不成功，出错才运行command_two</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">node -v &amp;&amp; npm -v
+<pre class="highlight"><code class="language-bash" data-lang="bash">node -v &amp;&amp; npm -v
 
 v20.12.2
 10.5.0</code></pre>
@@ -400,7 +402,7 @@ v20.12.2
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">PATH：D:\Install\Antora\Node
+<pre class="highlight"><code class="language-bash" data-lang="bash">PATH：D:\Install\Antora\Node
 
 npm config set cache "D:/Install/Antora/Node/NodeCache"
 
@@ -416,7 +418,7 @@ npm config set prefix "D:/Install/Antora/Node"</code></pre>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">npm config list -l
+<pre class="highlight"><code class="language-bash" data-lang="bash">npm config list -l
 
 npm config list --json
 
@@ -430,7 +432,7 @@ npm config list</code></pre>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">npm config get &lt;key&gt; ...
+<pre class="highlight"><code class="language-bash" data-lang="bash">npm config get &lt;key&gt; ...
 
 npm config get cache prefix registry</code></pre>
 </div>
@@ -442,7 +444,7 @@ npm config get cache prefix registry</code></pre>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">npm config delete &lt;key&gt; ...
+<pre class="highlight"><code class="language-bash" data-lang="bash">npm config delete &lt;key&gt; ...
 
 npm config delete cache prefix</code></pre>
 </div>
@@ -454,7 +456,7 @@ npm config delete cache prefix</code></pre>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">npm config set &lt;key&gt;=&lt;value&gt;...
+<pre class="highlight"><code class="language-bash" data-lang="bash">npm config set &lt;key&gt;=&lt;value&gt;...
 
 npm config set cache "D:/Install/Antora/Node/NodeCache"
 
@@ -490,7 +492,7 @@ npm config set registry https://registry.npm.taobao.org</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># 本地安装
+<pre class="highlight"><code class="language-bash" data-lang="bash"># 本地安装
 npm i packageName@version
 
 # 全局安装
@@ -507,7 +509,7 @@ npm i packageName@version --save</code></pre>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># 本地安装目录
+<pre class="highlight"><code class="language-bash" data-lang="bash"># 本地安装目录
 npm root
 
 # 全局安装目录
@@ -521,7 +523,7 @@ npm root -g</code></pre>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># 本地卸载
+<pre class="highlight"><code class="language-bash" data-lang="bash"># 本地卸载
 npm uninstall packageName
 
 # 全局卸载
@@ -535,7 +537,7 @@ npm uninstall packageName -g</code></pre>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># 本地更新包
+<pre class="highlight"><code class="language-bash" data-lang="bash"># 本地更新包
 npm update packageName
 
 # 全局更新包
@@ -549,7 +551,7 @@ npm update packageName -g</code></pre>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># 查看本地已安装包列表
+<pre class="highlight"><code class="language-bash" data-lang="bash"># 查看本地已安装包列表
 npm ls
 
 # 查看全局已安装包列表
@@ -565,7 +567,7 @@ npm ls --depth=0 &amp;&amp; npm ls -g --depth=0</code></pre>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">npm config set registry https://registry.npm.taobao.org
+<pre class="highlight"><code class="language-bash" data-lang="bash">npm config set registry https://registry.npm.taobao.org
 
 npm config get registry</code></pre>
 </div>
@@ -577,7 +579,7 @@ npm config get registry</code></pre>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">npm cache clean --force</code></pre>
+<pre class="highlight"><code class="language-bash" data-lang="bash">npm cache clean --force</code></pre>
 </div>
 </div>
 </div>
@@ -587,7 +589,7 @@ npm config get registry</code></pre>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">npm prefix &amp;&amp; npm prefix -g
+<pre class="highlight"><code class="language-bash" data-lang="bash">npm prefix &amp;&amp; npm prefix -g
 
 # bin文件链接到
 ${PREFIX}/bin
@@ -644,5 +646,8 @@ ${PREFIX}/lib/node_modules</code></pre>
 <script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
 <script async src="../../../../search-index.js"></script>
 
-<script>hljs.highlightAll();</script>  	</body>
+<script>hljs.highlightAll();</script>
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
 </html>

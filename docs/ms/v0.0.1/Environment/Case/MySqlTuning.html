@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
     <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   	</head>
   	
@@ -71,16 +73,10 @@
     <a class="nav-link" href="../Antora/AntoraConfigurer.html">Antora Configurer</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
+    <a class="nav-link" href="../Antora/AntoraHighlight.html">Antora Highlight</a>
   </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">DataStructure</span>
-<ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../DataStructure/DataStructureOutline.html">Data Structure Outline</a>
+    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
   </li>
 </ul>
   </li>
@@ -122,6 +118,9 @@
     <a class="nav-link" href="../Language/CondaJupyter.html">Conda Jupyter</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/GoInstallation.html">Go Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Language/LuaInstallation.html">Lua Installation</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -132,6 +131,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Language/GroovyInstallation.html">Groovy Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/JavaFxInstallation.html">JavaFx Installation</a>
   </li>
 </ul>
   </li>
@@ -346,7 +348,7 @@
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">set persist default storage engine "InnoDB";
+<pre class="highlight"><code class="language-sql" data-lang="sql">set persist default storage engine "InnoDB";
 
 set persist only disabled storage engines="MyISAM";</code></pre>
 </div>
@@ -358,7 +360,7 @@ set persist only disabled storage engines="MyISAM";</code></pre>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">util.loadDump("/opt/dump",{threads:32})
+<pre class="highlight"><code class="language-sql" data-lang="sql">util.loadDump("/opt/dump",{threads:32})
 util.dumpInstance("/opt/dump/",{threads: 32})
 
 util.loadDump()
@@ -374,7 +376,7 @@ util.dumpInstance()</code></pre>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">start mysqld with --disable-log-bin
+<pre class="highlight"><code class="language-sql" data-lang="sql">start mysqld with --disable-log-bin
 
 alter instance disable innodb redo_log;
 set global innodb_extend_and initialize=0FF;
@@ -396,7 +398,7 @@ set global innodb_max_dirty_pages_pct_lwm=10;</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">util.copyInstance('mysql://elf@192.168.0.123',
+<pre class="highlight"><code class="language-sql" data-lang="sql">util.copyInstance('mysql://elf@192.168.0.123',
 	{"compatibility":["force innodb","skip invalid accounts"],
 	threads: 32}
 )</code></pre>
@@ -419,7 +421,7 @@ set global innodb_max_dirty_pages_pct_lwm=10;</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">set persist sql_generate_invisible_primary_key=1;</code></pre>
+<pre class="highlight"><code class="language-sql" data-lang="sql">set persist sql_generate_invisible_primary_key=1;</code></pre>
 </div>
 </div>
 </div>
@@ -439,7 +441,7 @@ set global innodb_max_dirty_pages_pct_lwm=10;</code></pre>
 <h3 id="_unuse_index"><a class="anchor" href="#_unuse_index"></a>6.1. Unuse Index</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">select
+<pre class="highlight"><code class="language-sql" data-lang="sql">select
 	database_name,table_name, t1.index_name,
 	format_bytes(stat_value * @@innodb_page_size) size
 
@@ -460,7 +462,7 @@ order by stat_value desc;</code></pre>
 <h3 id="_dumplicate_index"><a class="anchor" href="#_dumplicate_index"></a>6.2. Dumplicate Index</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">select
+<pre class="highlight"><code class="language-sql" data-lang="sql">select
 	t2.*,format_bytes(stat_value * @@innodb_page_size) size
 
 from mysql.innodb_index_stats t1
@@ -480,7 +482,7 @@ order by stat_value desc</code></pre>
 <h3 id="_missing_index"><a class="anchor" href="#_missing_index"></a>6.3. Missing Index</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">select * from sys.schema_tables_with_full_table_scans;
+<pre class="highlight"><code class="language-sql" data-lang="sql">select * from sys.schema_tables_with_full_table_scans;
 
 select * from sys.statements_with_full_table_scans
 	where db='students' and query like '%customers%'</code></pre>
@@ -501,7 +503,7 @@ select * from sys.statements_with_full_table_scans
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">alter table large_tbl drop index strange_idx;
+<pre class="highlight"><code class="language-sql" data-lang="sql">alter table large_tbl drop index strange_idx;
 
 alter table large_tbl alter index strange_idx invisible;</code></pre>
 </div>
@@ -525,7 +527,7 @@ innodb_ddl_buffer_size缓冲区大小耦合，若有快速存储和多CPU核，<
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">alter table booking
+<pre class="highlight"><code class="language-sql" data-lang="sql">alter table booking
 add index idx_2(flight_id,seat,passenger_id);
 
 # 默认设定：
@@ -560,7 +562,7 @@ alter table booking add index idx_2(flight_id,seat,passenger_id);</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">select /*+ max_execution_time(5000)*/sleep(10);</code></pre>
+<pre class="highlight"><code class="language-sql" data-lang="sql">select /*+ max_execution_time(5000)*/sleep(10);</code></pre>
 </div>
 </div>
 </div>
@@ -570,7 +572,7 @@ alter table booking add index idx_2(flight_id,seat,passenger_id);</code></pre>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">select
+<pre class="highlight"><code class="language-sql" data-lang="sql">select
 	schema_name,exec_count,query_sample_text,
 	format_pico_time(total_latency)tot_lat,
 	format_pico_time(total_latency/exec_count) latency_per_call
@@ -599,7 +601,7 @@ order by(total_latency/exec_count) desc limit 1</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-properties hljs" data-lang="properties">innodb_dedicated_server=1</code></pre>
+<pre class="highlight"><code class="language-properties" data-lang="properties">innodb_dedicated_server=1</code></pre>
 </div>
 </div>
 </div>
@@ -621,7 +623,7 @@ InnoDB缓冲池的内容Dump到Disk，并在启动时Load</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">innodb_buffer_pool_dump_at_shutdown=1
+<pre class="highlight"><code class="language-sql" data-lang="sql">innodb_buffer_pool_dump_at_shutdown=1
 innodb_buffer_pool_load_at_startup=1
 
 create event automatic_bufferpool_dump
@@ -645,7 +647,7 @@ set global_innodb_buffer_pool_dump_now=on;</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">set persist_innodb_adaptive_hash_index = 0;</code></pre>
+<pre class="highlight"><code class="language-sql" data-lang="sql">set persist_innodb_adaptive_hash_index = 0;</code></pre>
 </div>
 </div>
 </div>
@@ -662,7 +664,7 @@ set global_innodb_buffer_pool_dump_now=on;</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">show global status like 'innodb_buffer_pool_read%s';</code></pre>
+<pre class="highlight"><code class="language-sql" data-lang="sql">show global status like 'innodb_buffer_pool_read%s';</code></pre>
 </div>
 </div>
 </div>
@@ -672,7 +674,7 @@ set global_innodb_buffer_pool_dump_now=on;</code></pre>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">select
+<pre class="highlight"><code class="language-sql" data-lang="sql">select
 	concat(format(b.num*100.0 / a.num,2),'%')DiskReadRatio
 from(
 	select
@@ -698,7 +700,7 @@ from(
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">yum -y install gperftools-libs
+<pre class="highlight"><code class="language-bash" data-lang="bash">yum -y install gperftools-libs
 
 EDITOR=vi systemctl edit mysqld
 
@@ -721,7 +723,7 @@ Environment="LD_PRELOAD=/usr/lib64/libtcmalloc_minimal.so.4"</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">set persist_only skip_name_resolve=l;</code></pre>
+<pre class="highlight"><code class="language-sql" data-lang="sql">set persist_only skip_name_resolve=l;</code></pre>
 </div>
 </div>
 </div>
@@ -769,5 +771,8 @@ Environment="LD_PRELOAD=/usr/lib64/libtcmalloc_minimal.so.4"</code></pre>
 <script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
 <script async src="../../../../search-index.js"></script>
 
-<script>hljs.highlightAll();</script>  	</body>
+<script>hljs.highlightAll();</script>
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
 </html>

@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
     <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   	</head>
   	
@@ -42,6 +44,37 @@
     <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
     <h3 class="title"><a href="../../index.html">AsciiDoc AI</a></h3>
 <ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">ML</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Fundamental</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/AILearningPath.html">AI Learning Path</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/AIIntro.html">AI Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/DLBasicConcept.html">DL Basic Concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/ModelTrainingConcept.html">Model Training Concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/LlmIntro.html">LLM Intro</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
@@ -288,34 +321,6 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <span class="nav-text">ML</span>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">Fundamental</span>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../ML/Fundamental/AIIntro.html">AI Intro</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../ML/Fundamental/MLIntro.html">ML Intro</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../ML/Fundamental/DLIntro.html">DL Intro</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../ML/Fundamental/LlmIntro.html">LLM Intro</a>
-  </li>
-</ul>
-  </li>
-</ul>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="0">
-<ul class="nav-list">
-  <li class="nav-item" data-depth="1">
-    <button class="nav-item-toggle"></button>
     <span class="nav-text">LLM</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
@@ -329,6 +334,50 @@
     <a class="nav-link" href="../../LLM/FullStack/PromptEngineeringCase.html">Prompt Engineering Case</a>
   </li>
 </ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Science</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Math</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Science/Math/Algebra.html">Algebra</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Physic</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Solitary</span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Dsac</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Data Structure</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Algorithm</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Classifier</span>
   </li>
 </ul>
   </li>
@@ -412,43 +461,332 @@
 <div class="sect1">
 <h2 id="_intro"><a class="anchor" href="#_intro"></a>1. Intro</h2>
 <div class="sectionbody">
-
+<div class="ulist">
+<ul>
+<li>
+<p>如何将大型语言模型连接到外部工具，<br>
+connect large language model to external tool；</p>
+</li>
+<li>
+<p>在Api调用中，可描述函数(describe function)，<br>
+并让模型智能的intelligently选择输出包含调用一或多个函数的参数的json对象；</p>
+</li>
+<li>
+<p>Chat Completions Api不会调用该函数，<br>
+相反模型会生成json，看使用它来调用代码中的函数；</p>
+</li>
+<li>
+<p>最新模型gpt-3.5-turbo-0125和gpt-4-turbo-preview经过训练，<br>
+可检测何时应调用函数(取决于输入)并使用符合函数签名的json进行响应；</p>
+</li>
+<li>
+<p>此能力也带来潜在风险，建议在代表用户采取影响世界的行动<br>
+(如发送右键，在线发布内容，购买等)之前构建用户确认流程；</p>
+</li>
+</ul>
+</div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_common_use_case"><a class="anchor" href="#_common_use_case"></a>2. Common Use Case</h2>
 <div class="sectionbody">
-
+<div class="ulist">
+<ul>
+<li>
+<p>函数调用使我们能更可靠地reliably从模型中获取结构化数据；</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>A：创建通过调用外部Api回答问题的助手，<br>
+create assistant answer question by calling external Api：</p>
+</li>
+<li>
+<p>如定义send_email(to:string,body:string)或<br>
+get_current_weather(location:string,unit:'celsius'|'fahrenheit')之类的函数；</p>
+</li>
+<li>
+<p>B：将自然语言转换为Api调用：如转换"谁是我的主要(top)客户"：<br>
+get_customers(min_revenue:int,created_before:string,limit:int)并调用我们的内部Api；</p>
+</li>
+<li>
+<p>C：从文本中提取结构化数据：</p>
+</li>
+<li>
+<p>如定义名为extract_data(name:string,birthday:string)<br>
+或sql_query(query:string)的函数；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>函数调用的基本步骤顺序：</p>
+</li>
+<li>
+<p>A：使用用户查询和函数参数中定义的一组函数来调用模型，call model with<br>
+user query and set of function define in function parameter；</p>
+</li>
+<li>
+<p>B：模型可选择调用一或多个函数；那内容将是一个符合<br>
+自定义schema的字符串化json对象(注：模型可能会产生参数)；</p>
+</li>
+<li>
+<p>C：在代码中将字符串解析为json，并使用提供的参数(若存在)调用函数；</p>
+</li>
+<li>
+<p>D：通过将函数响应作为新消息附加来再次调用模型，并让模型将结果汇总返回给用户；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_support_model"><a class="anchor" href="#_support_model"></a>3. Support Model</h2>
 <div class="sectionbody">
-
+<div class="ulist">
+<ul>
+<li>
+<p>支持函数调用的模型：gpt-4-turbo、gpt-4-turbo-2024-04-09、<br>
+gpt-4-turbo-preview、gpt-4-0125-preview、<br>
+gpt-4-1106-preview、gpt-4、gpt-4-0613、gpt-3.5-turbo、<br>
+gpt-3.5-turbo-0125、gpt-3.5-turbo-1106和gpt-3.5-turbo-0613；</p>
+</li>
+<li>
+<p>支持并行函数调用的模型：gpt-4-turbo、gpt-4-turbo-2024-04-09、<br>
+gpt-4-turbo-preview、gpt-4-0125-preview、<br>
+gpt-4-1106-preview、gpt-3.5-turbo-0125和gpt-3.5-turbo-1106；</p>
+</li>
+</ul>
+</div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_function_calling_behavior"><a class="anchor" href="#_function_calling_behavior"></a>4. Function Calling Behavior</h2>
 <div class="sectionbody">
-
+<div class="paragraph">
+<p>The default behavior for tool_choice is tool_choice: "auto". This lets the model decide whether to call functions and, if so, which functions to call.</p>
+</div>
+<div class="paragraph">
+<p>We offer three ways to customize the default behavior depending on your use case:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>To force the model to always call one or more functions, you can set tool_choice: "required". The model will then select which function(s) to call.
+To force the model to call only one specific function, you can set tool_choice: {"type": "function", "function": {"name": "my_function"}}.
+To disable function calling and force the model to only generate a user-facing message, you can set tool_choice: "none".</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>tool_choice的默认行为：tool_choice: "auto"，<br>
+即让模型决定是否调用函数，若调用，则调用哪些函数；</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>自定义默认行为：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>强制模型始终调用一或多个函数，<br>
+可设置tool_choice: "required"，然后模型将选择要调用的函数；</p>
+</li>
+<li>
+<p>强制模型仅调用某特定函数，可做如下设置：</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">tool_choice:
+	{
+		"type": "function",
+		"function": {
+			"name": "my_function"
+		}
+	}</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>要禁用函数调用并强制模型仅生成面向用户的消息，可设置 tool_choice: "none"；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_parallel_function_calling"><a class="anchor" href="#_parallel_function_calling"></a>5. Parallel Function Calling</h2>
 <div class="sectionbody">
-
+<div class="ulist">
+<ul>
+<li>
+<p>模型同时执行多个函数调用的能力，允许并行解决这些函数调用<br>
+的效果effect和结果result，若函数需很长时间，这尤其有用；</p>
+</li>
+<li>
+<p>且可减少Api的往返次数，如模型可能会调用函数来同时获取3个不同位置的天气，<br>
+这将导致在tool_calls数组中产生一条包含3个函数调用的消息，每个函数调用都有一个Id；</p>
+</li>
+<li>
+<p>要响应这些函数调用，请向对话中添加3条新消息，每条消息都包含<br>
+一个函数调用的结果，并使用tool_call_id引用tool_calls中的Id；</p>
+</li>
+</ul>
+</div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_multiple_function_call"><a class="anchor" href="#_multiple_function_call"></a>6. Multiple Function Call</h2>
 <div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python">from openai import OpenAI
+import json
 
+client = OpenAI()
+
+# dummy function hard code to return the same weather
+# in production,this could be our backend api or external api
+def get_current_weather(location, unit="fahrenheit"):
+
+    """Get the current weather in a given location"""
+
+    if "shanghai" in location.lower():
+        return json.dumps({"location": "Shanghai", "temperature": "10", "unit": unit})
+    elif "san francisco" in location.lower():
+        return json.dumps({"location": "San Francisco", "temperature": "72", "unit": unit})
+    elif "paris" in location.lower():
+        return json.dumps({"location": "Paris", "temperature": "22", "unit": unit})
+    else:
+        return json.dumps({"location": location, "temperature": "unknown"})
+
+def run_conversation():
+    # Step A: send conversation and available functions to model
+    messages = [{"role": "user", "content": "What's the weather like in San Francisco, Shanghai, and Paris?"}]
+    tools = [
+        {
+            "type": "function",
+            "function": {
+                "name": "get_current_weather",
+                "description": "Get the current weather in a given location",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "location": {
+                            "type": "string",
+                            "description": "The city and state, e.g. San Francisco, CA",
+                        },
+                        "unit": {"type": "string", "enum": ["celsius", "fahrenheit"]},
+                    },
+                    "required": ["location"],
+                },
+            },
+        }
+    ]
+    response = client.chat.completions.create(
+        model="gpt-3.5-turbo-0125",
+        messages=messages,
+        tools=tools,
+        tool_choice="auto",  # auto is default, but we'll be explicit
+    )
+    response_message = response.choices[0].message
+    tool_calls = response_message.tool_calls
+
+    # Step B: check if the model wanted to call a function
+    if tool_calls:
+
+        # Step C: call function
+        # Note: the JSON response may not always be valid; be sure to handle errors
+        available_functions = {
+            "get_current_weather": get_current_weather,
+        }  # only one function in this example, but you can have multiple
+        messages.append(response_message)  # extend conversation with assistant's reply
+        # Step D: send the info for each function call and function response to the model
+        for tool_call in tool_calls:
+            function_name = tool_call.function.name
+            function_to_call = available_functions[function_name]
+            function_args = json.loads(tool_call.function.arguments)
+            function_response = function_to_call(
+                location=function_args.get("location"),
+                unit=function_args.get("unit"),
+            )
+            messages.append(
+                {
+                    "tool_call_id": tool_call.id,
+                    "role": "tool",
+                    "name": function_name,
+                    "content": function_response,
+                }
+            )  # extend conversation with function response
+        second_response = client.chat.completions.create(
+            model="gpt-3.5-turbo-0125",
+            messages=messages,
+        )  # get a new response from the model where it can see the function response
+        return second_response
+print(run_conversation())</code></pre>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_token"><a class="anchor" href="#_token"></a>7. Token</h2>
 <div class="sectionbody">
-
+<div class="ulist">
+<ul>
+<li>
+<p>在底层，函数按照模型训练过的语法注入到系统消息中，即函数会根据模型的<br>
+上下文限制进行计数count，<br>
+并作为输入token进行计费，若遇到上下文限制，建议限制函数的数量或为函数参数提供的文档的长度；</p>
+</li>
+<li>
+<p>若已定义许多函数，还可使用微调来减少使用的token数量；</p>
+</li>
+</ul>
+</div>
 </div>
 </div>
 </article>
@@ -494,5 +832,8 @@
 <script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
 <script async src="../../../../search-index.js"></script>
 
-<script>hljs.highlightAll();</script>  	</body>
+<script>hljs.highlightAll();</script>
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
 </html>

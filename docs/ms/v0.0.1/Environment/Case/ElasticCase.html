@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
     <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   	</head>
   	
@@ -71,16 +73,10 @@
     <a class="nav-link" href="../Antora/AntoraConfigurer.html">Antora Configurer</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
+    <a class="nav-link" href="../Antora/AntoraHighlight.html">Antora Highlight</a>
   </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">DataStructure</span>
-<ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../DataStructure/DataStructureOutline.html">Data Structure Outline</a>
+    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
   </li>
 </ul>
   </li>
@@ -122,6 +118,9 @@
     <a class="nav-link" href="../Language/CondaJupyter.html">Conda Jupyter</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/GoInstallation.html">Go Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Language/LuaInstallation.html">Lua Installation</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -132,6 +131,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Language/GroovyInstallation.html">Groovy Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/JavaFxInstallation.html">JavaFx Installation</a>
   </li>
 </ul>
   </li>
@@ -367,7 +369,7 @@
 <h3 id="_添加依赖"><a class="anchor" href="#_添加依赖"></a>1.2. 添加依赖</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependencies&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependencies&gt;
 	&lt;dependency&gt;
 		&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
 		&lt;artifactId&gt;spring-boot-starter-data-elasticsearch&lt;/artifactId&gt;
@@ -408,7 +410,7 @@
 <h3 id="_工具类"><a class="anchor" href="#_工具类"></a>1.3. 工具类</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">package io.os.es.kit;
+<pre class="highlight"><code class="language-java" data-lang="java">package io.os.es.kit;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -519,7 +521,7 @@ public class ElasticClient {
 <h3 id="_测试代码"><a class="anchor" href="#_测试代码"></a>1.4. 测试代码</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">import java.io.IOException;
+<pre class="highlight"><code class="language-java" data-lang="java">import java.io.IOException;
 import java.lang.invoke.MethodHandles;
 import org.apache.http.HttpHost;
 import org.slf4j.Logger;
@@ -585,7 +587,7 @@ public class Tester {
 <h3 id="_project_structure"><a class="anchor" href="#_project_structure"></a>2.1. Project Structure</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">📄 pom.xml
+<pre class="highlight"><code class="language-bash" data-lang="bash">📄 pom.xml
 📂 src
   📂 main
     📂 java
@@ -606,7 +608,7 @@ public class Tester {
 <h3 id="_dependency"><a class="anchor" href="#_dependency"></a>2.2. Dependency</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependencies&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependencies&gt;
 	&lt;dependency&gt;
 		&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
 		&lt;artifactId&gt;spring-boot-starter-data-elasticsearch&lt;/artifactId&gt;
@@ -641,7 +643,7 @@ public class Tester {
 <h3 id="_application_yaml"><a class="anchor" href="#_application_yaml"></a>2.3. application.yaml</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">spring:
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">spring:
   elasticsearch:
     username: elastic
     password: es8es8
@@ -662,7 +664,7 @@ public class Tester {
 <h3 id="_configuration"><a class="anchor" href="#_configuration"></a>2.4. Configuration</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">package io.os.es.config;
+<pre class="highlight"><code class="language-java" data-lang="java">package io.os.es.config;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -740,7 +742,7 @@ public class ElasticConfig extends ElasticsearchConfiguration {
 <h3 id="_controller"><a class="anchor" href="#_controller"></a>2.5. Controller</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">import java.io.IOException;
+<pre class="highlight"><code class="language-java" data-lang="java">import java.io.IOException;
 import java.lang.invoke.MethodHandles;
 import java.util.UUID;
 import org.slf4j.Logger;
@@ -782,7 +784,7 @@ public class ElasticController {
 <h3 id="_entry"><a class="anchor" href="#_entry"></a>2.6. Entry</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">import org.springframework.boot.SpringApplication;
+<pre class="highlight"><code class="language-java" data-lang="java">import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
@@ -804,7 +806,7 @@ public class ElasticEntry {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">2023-12-10T11:02:54.544+08:00 ERROR 40672 i.o.e.c.ElasticController
+<pre class="highlight"><code class="language-bash" data-lang="bash">2023-12-10T11:02:54.544+08:00 ERROR 40672 i.o.e.c.ElasticController
 	create index:CreateIndexResponse:
 {"index":"26726252-8571-416a-b47a-47a6dc2124b2","shards_acknowledged":true,"acknowledged":true}</code></pre>
 </div>
@@ -819,7 +821,7 @@ public class ElasticEntry {
 <h3 id="_imperative_client"><a class="anchor" href="#_imperative_client"></a>3.1. Imperative Client</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Configuration
+<pre class="highlight"><code class="language-java" data-lang="java">@Configuration
 public class ImperativeElasticConfig
 	extends ElasticsearchConfiguration {}
 
@@ -841,7 +843,7 @@ JsonpMapper jsonpMapper;</code></pre>
 <h3 id="_reactive_client"><a class="anchor" href="#_reactive_client"></a>3.2. Reactive Client</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Configuration
+<pre class="highlight"><code class="language-java" data-lang="java">@Configuration
 public class ReactiveElasticConfig
 	extends ReactiveElasticsearchConfiguration {}
 
@@ -899,7 +901,7 @@ JsonpMapper jsonpMapper;</code></pre>
 <h3 id="_employee"><a class="anchor" href="#_employee"></a>5.1. Employee</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Document(indexName = "employee", createIndex = true)
+<pre class="highlight"><code class="language-java" data-lang="java">@Document(indexName = "employee", createIndex = true)
 public class Employee {
 
     @Id
@@ -942,7 +944,7 @@ public class Employee {
 <h3 id="_controller_2"><a class="anchor" href="#_controller_2"></a>5.2. Controller</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">import org.springframework.beans.factory.annotation.Autowired;
+<pre class="highlight"><code class="language-java" data-lang="java">import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.elasticsearch.core.ElasticsearchOperations;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -1008,7 +1010,7 @@ public class EmployeeController {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+<pre class="highlight"><code class="language-json" data-lang="json">{
     "name":"elf",
     "salary":"666"
 }</code></pre>
@@ -1023,7 +1025,7 @@ public class EmployeeController {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+<pre class="highlight"><code class="language-json" data-lang="json">{
     "employeeId": "9KQfHI4BwaDO2KMCR8eQ",
     "name":"lml",
     "salary":"666"
@@ -1086,5 +1088,8 @@ public class EmployeeController {
 <script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
 <script async src="../../../../search-index.js"></script>
 
-<script>hljs.highlightAll();</script>  	</body>
+<script>hljs.highlightAll();</script>
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
 </html>

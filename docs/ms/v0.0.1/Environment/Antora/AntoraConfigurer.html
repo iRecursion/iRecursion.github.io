@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
     <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   	</head>
   	
@@ -71,16 +73,10 @@
     <a class="nav-link" href="AntoraConfigurer.html">Antora Configurer</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="AntoraUI.html">Antora UI</a>
+    <a class="nav-link" href="AntoraHighlight.html">Antora Highlight</a>
   </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">DataStructure</span>
-<ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../DataStructure/DataStructureOutline.html">Data Structure Outline</a>
+    <a class="nav-link" href="AntoraUI.html">Antora UI</a>
   </li>
 </ul>
   </li>
@@ -122,6 +118,9 @@
     <a class="nav-link" href="../Language/CondaJupyter.html">Conda Jupyter</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/GoInstallation.html">Go Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Language/LuaInstallation.html">Lua Installation</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -132,6 +131,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Language/GroovyInstallation.html">Groovy Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/JavaFxInstallation.html">JavaFx Installation</a>
   </li>
 </ul>
   </li>
@@ -322,13 +324,11 @@
 <li><a href="#_mathjax">4. MathJax</a></li>
 <li><a href="#_asciidoctor_kroki">5. asciidoctor-kroki</a></li>
 <li><a href="#_pdf">6. Pdf</a></li>
-<li><a href="#_code_block">7. Code Block</a></li>
-<li><a href="#_highlight_css_recommendation">8. Highlight Css Recommendation</a></li>
-<li><a href="#_lunr_retrieve">9. Lunr Retrieve</a></li>
-<li><a href="#_tab">10. Tab</a></li>
-<li><a href="#_antora_operation">11. Antora Operation</a></li>
-<li><a href="#_antora_github">12. Antora Github</a></li>
-<li><a href="#_trackback">13. Trackback</a></li>
+<li><a href="#_lunr_retrieve">7. Lunr Retrieve</a></li>
+<li><a href="#_tab">8. Tab</a></li>
+<li><a href="#_antora_operation">9. Antora Operation</a></li>
+<li><a href="#_antora_github">10. Antora Github</a></li>
+<li><a href="#_trackback">11. Trackback</a></li>
 </ul>
 </div>
 <div class="sect1">
@@ -348,7 +348,7 @@
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">asciidoc:
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">asciidoc:
   sourcemap: true</code></pre>
 </div>
 </div>
@@ -366,19 +366,19 @@
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">npm i -g @asciidoctor/core asciidoctor-emoji</code></pre>
+<pre class="highlight"><code class="language-bash" data-lang="bash">npm i -g @asciidoctor/core asciidoctor-emoji</code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">asciidoc:
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">asciidoc:
   extensions:
   - asciidoctor-emoji</code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">emoji:bear[5x]
+<pre class="highlight"><code class="language-asciidoc" data-lang="asciidoc">emoji:bear[5x]
 
 emoji:heart[5x]</code></pre>
 </div>
@@ -407,12 +407,12 @@ emoji:heart[5x]</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">npm i -g @djencks/asciidoctor-mathjax</code></pre>
+<pre class="highlight"><code class="language-bash" data-lang="bash">npm i -g @djencks/asciidoctor-mathjax</code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">asciidoc:
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">asciidoc:
   attributes:
     stem: 'asciimath'
   extensions:
@@ -421,7 +421,7 @@ emoji:heart[5x]</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">****
+<pre class="highlight"><code class="language-bash" data-lang="bash">****
 stem:[\vec{A} * \vec{B} = A_1B_1 + A_2B_2]
 ****</code></pre>
 </div>
@@ -450,7 +450,7 @@ stem:[\vec{A} * \vec{B} = A_1B_1 + A_2B_2]
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># 用于Asciidoctor
+<pre class="highlight"><code class="language-bash" data-lang="bash"># 用于Asciidoctor
 gem install asciidoctor-kroki
 
 asciidoctor -r asciidoctor-kroki fileName.adoc
@@ -465,7 +465,7 @@ docker pull yuzutech/kroki:0.22.0</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">asciidoc:
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">asciidoc:
   extensions:
     - asciidoctor-kroki
   attributes:
@@ -494,7 +494,7 @@ docker pull yuzutech/kroki:0.22.0</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">gem install text-hyphen
+<pre class="highlight"><code class="language-bash" data-lang="bash">gem install text-hyphen
 
 gem install asciidoctor-pdf
 
@@ -523,7 +523,7 @@ npm i -g @antora/pdf-extension</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml"># antora-playbook.yaml
+<pre class="highlight"><code class="language-yaml" data-lang="yaml"># antora-playbook.yaml
 
 asciidoc:
   attributes:
@@ -543,7 +543,7 @@ antora:
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">📄 antora-assembler.yaml
+<pre class="highlight"><code class="language-bash" data-lang="bash">📄 antora-assembler.yaml
 📄 antora-playbook.yaml
 📂 aui-external
   📂 Cjk
@@ -561,7 +561,7 @@ antora:
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">root_level: 0
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">root_level: 0
 component_versions: '*'
 asciidoc:
   attributes:
@@ -578,7 +578,7 @@ asciidoc:
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">extends: default
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">extends: default
 font:
   catalog:
     merge: true
@@ -600,109 +600,7 @@ code:
 </div>
 </div>
 <div class="sect1">
-<h2 id="_code_block"><a class="anchor" href="#_code_block"></a>7. Code Block</h2>
-<div class="sectionbody">
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">npm install highlight.js -g</code></pre>
-</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Antora在AsciiDoc处理器默认使用highlight.js高亮代码块；</p>
-</li>
-<li>
-<p>要禁用(turn off )syntax highlighting：</p>
-</li>
-</ul>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">asciidoc:
-  attributes:
-    source-highlighter: ~</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>﻿* 若改为软取消设置(soft unset)，如值设置为false，<br>
-  则允许各页面选择性的重新打开(turn on)syntax highlighting；</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>默认：Antora会高亮显示一组受限制的语言，以最大限度地减小支持资产文件的大小，<br>
-可在自己的UI Bundle添加或删除对语言的支持，具体执行以下步骤：</p>
-</li>
-<li>
-<p>src/js/vendor/highlight.bundle.js，增删registerLanguage语句，如：</p>
-</li>
-</ul>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">hljs.registerLanguage('asciidoc',require('highlight.js/lib/languages/asciidoc'))
-hljs.registerLanguage('bash', require('highlight.js/lib/languages/bash'))
-hljs.registerLanguage('shell', require('highlight.js/lib/languages/shell'))
-hljs.registerLanguage('sql', require('highlight.js/lib/languages/sql'))
-hljs.registerLanguage('protobuf', require('highlight.js/lib/languages/protobuf'))
-hljs.registerLanguage('ini', require('highlight.js/lib/languages/ini'))
-hljs.registerLanguage('rust', require('highlight.js/lib/languages/rust'))
-hljs.registerLanguage('java', require('highlight.js/lib/languages/java'))
-hljs.registerLanguage('python', require('highlight.js/lib/languages/python'))
-hljs.registerLanguage('groovy', require('highlight.js/lib/languages/groovy'))
-hljs.registerLanguage('javascript', require('highlight.js/lib/languages/javascript'))
-hljs.registerLanguage('ini', require('highlight.js/lib/languages/ini'))
-hljs.registerLanguage('properties', require('highlight.js/lib/languages/properties'))
-hljs.registerLanguage('gradle', require('highlight.js/lib/languages/gradle'))
-hljs.registerLanguage('json', require('highlight.js/lib/languages/json'))
-hljs.registerLanguage('xml', require('highlight.js/lib/languages/xml'))
-hljs.registerLanguage('yaml', require('highlight.js/lib/languages/yaml'))
-hljs.registerLanguage('dockerfile', require('highlight.js/lib/languages/dockerfile'))
-hljs.registerLanguage('css', require('highlight.js/lib/languages/css'))</code></pre>
-</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>另需highlight.js支持相对应的语言，具体参考github：</p>
-</li>
-<li>
-<p><a href="https://github.com/highlightjs/highlight.js/tree/9-18-stable/src/languages" target="_blank" rel="noopener">highlight.js Supporting Language</a></p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_highlight_css_recommendation"><a class="anchor" href="#_highlight_css_recommendation"></a>8. Highlight Css Recommendation</h2>
-<div class="sectionbody">
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>atelier-dune，unikitty-light，macintosh，green-screen，<br>
-vs，google-light，marrakesh，papercolor-dark，github-new，<br>
-cupertino，atelier-forest-light，material-vivid，one-light，<br>
-1c-light，fruit-soda，dirtysea，github，gradient-light，pico，<br>
-papercolor-light，nnfx-light，xcode，equilibrium-gray-light，<br>
-stackoverflow-light，ia-light，intellij-light，atelier-cave，<br>
-summerfruit-light，atelier-dune-light，atelier-seaside-light，<br>
-harmonic16-light，panda-syntax-light，atelier-sulphurpool-light，<br>
-paraiso，brogrammer，humanoid-light，atom-one-light，atelier-forest，</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_lunr_retrieve"><a class="anchor" href="#_lunr_retrieve"></a>9. Lunr Retrieve</h2>
+<h2 id="_lunr_retrieve"><a class="anchor" href="#_lunr_retrieve"></a>7. Lunr Retrieve</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
@@ -714,7 +612,7 @@ paraiso，brogrammer，humanoid-light，atom-one-light，atelier-forest，</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">npm i -g @antora/lunr-extension
+<pre class="highlight"><code class="language-bash" data-lang="bash">npm i -g @antora/lunr-extension
 
 npm i -g @node-rs/jieba</code></pre>
 </div>
@@ -728,7 +626,7 @@ npm i -g @node-rs/jieba</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">{{#if env.SITE_SEARCH_PROVIDER}}
+<pre class="highlight"><code class="language-html" data-lang="html">{{#if env.SITE_SEARCH_PROVIDER}}
 {{&gt; search-scripts}}
 {{/if}}</code></pre>
 </div>
@@ -742,7 +640,7 @@ npm i -g @node-rs/jieba</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;div class="navbar-item has-dropdown is-hoverable"&gt;
+<pre class="highlight"><code class="language-html" data-lang="html">&lt;div class="navbar-item has-dropdown is-hoverable"&gt;
 	&lt;div class="navbar-link"&gt;
 		{{#if env.SITE_SEARCH_PROVIDER}}
 	    	&lt;div class="navbar-item search hide-for-print"&gt;
@@ -767,7 +665,7 @@ npm i -g @node-rs/jieba</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">antora:
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">antora:
   extensions:
   - require: '@antora/lunr-extension'
     index_latest_only: true
@@ -777,7 +675,7 @@ npm i -g @node-rs/jieba</code></pre>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_tab"><a class="anchor" href="#_tab"></a>10. Tab</h2>
+<h2 id="_tab"><a class="anchor" href="#_tab"></a>8. Tab</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
@@ -791,7 +689,7 @@ npm i -g @node-rs/jieba</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">npm uninstall asciidoctor@3.0.4 -g
+<pre class="highlight"><code class="language-bash" data-lang="bash">npm uninstall asciidoctor@3.0.4 -g
 
 npm uninstall @asciidoctor/core@3.0.4 -g
 
@@ -802,7 +700,7 @@ npm i -g @asciidoctor/core@2.2.7</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">gem install asciidoctor-tabs
+<pre class="highlight"><code class="language-bash" data-lang="bash">gem install asciidoctor-tabs
 
 asciidoctor -r asciidoctor-tabs fileName.adoc
 
@@ -812,11 +710,11 @@ npm i -D -g @asciidoctor/tabs</code></pre>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_antora_operation"><a class="anchor" href="#_antora_operation"></a>11. Antora Operation</h2>
+<h2 id="_antora_operation"><a class="anchor" href="#_antora_operation"></a>9. Antora Operation</h2>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">echo off
+<pre class="highlight"><code class="language-bash" data-lang="bash">echo off
 cls
 chcp 65001
 
@@ -842,7 +740,7 @@ antora antora-playbook.yml &amp; start %SITE_URL%</code></pre>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_antora_github"><a class="anchor" href="#_antora_github"></a>12. Antora Github</h2>
+<h2 id="_antora_github"><a class="anchor" href="#_antora_github"></a>10. Antora Github</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
@@ -868,7 +766,7 @@ antora antora-playbook.yml &amp; start %SITE_URL%</code></pre>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_trackback"><a class="anchor" href="#_trackback"></a>13. Trackback</h2>
+<h2 id="_trackback"><a class="anchor" href="#_trackback"></a>11. Trackback</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
@@ -973,5 +871,8 @@ antora antora-playbook.yml &amp; start %SITE_URL%</code></pre>
 <script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
 <script async src="../../../../search-index.js"></script>
 
-<script>hljs.highlightAll();</script>  	</body>
+<script>hljs.highlightAll();</script>
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
 </html>

@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
     <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   	</head>
   	
@@ -42,6 +44,37 @@
     <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
     <h3 class="title"><a href="../../index.html">AsciiDoc AI</a></h3>
 <ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">ML</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Fundamental</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/AILearningPath.html">AI Learning Path</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/AIIntro.html">AI Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/DLBasicConcept.html">DL Basic Concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/ModelTrainingConcept.html">Model Training Concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/LlmIntro.html">LLM Intro</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
@@ -288,34 +321,6 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <span class="nav-text">ML</span>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">Fundamental</span>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../ML/Fundamental/AIIntro.html">AI Intro</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../ML/Fundamental/MLIntro.html">ML Intro</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../ML/Fundamental/DLIntro.html">DL Intro</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../ML/Fundamental/LlmIntro.html">LLM Intro</a>
-  </li>
-</ul>
-  </li>
-</ul>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="0">
-<ul class="nav-list">
-  <li class="nav-item" data-depth="1">
-    <button class="nav-item-toggle"></button>
     <span class="nav-text">LLM</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
@@ -329,6 +334,50 @@
     <a class="nav-link" href="PromptEngineeringCase.html">Prompt Engineering Case</a>
   </li>
 </ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Science</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Math</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Science/Math/Algebra.html">Algebra</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Physic</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Solitary</span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Dsac</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Data Structure</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Algorithm</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Classifier</span>
   </li>
 </ul>
   </li>
@@ -490,7 +539,7 @@
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">import os
+<pre class="highlight"><code class="language-python" data-lang="python">import os
 from openai import OpenAI
 
 from dotenv import load_dotenv,
@@ -521,7 +570,7 @@ def get_completion(prompt,model="gpt-3.5-turbo"):
 <h3 id="_任务描述_输入"><a class="anchor" href="#_任务描述_输入"></a>4.1. 任务描述 + 输入</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python"># 任务描述
+<pre class="highlight"><code class="language-python" data-lang="python"># 任务描述
 instruction =
 	"""
 		你的任务是识别用户对手机流量套餐产品的选择条件。
@@ -576,7 +625,7 @@ print(response)</code></pre>
 <h3 id="_约定输出格式"><a class="anchor" href="#_约定输出格式"></a>4.2. 约定输出格式</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python"># 输出描述
+<pre class="highlight"><code class="language-python" data-lang="python"># 输出描述
 output_format =
 	"""
 		以json格式输出
@@ -599,7 +648,7 @@ print(response)</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+<pre class="highlight"><code class="language-json" data-lang="json">{
 	"名称": "100G套餐",
   	"月费价格": "未知",
   	"月流量": "100G"
@@ -611,7 +660,7 @@ print(response)</code></pre>
 <h3 id="_更精细定义描述"><a class="anchor" href="#_更精细定义描述"></a>4.3. 更精细定义描述</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">instruction =
+<pre class="highlight"><code class="language-python" data-lang="python">instruction =
 	"""
 		你的任务是识别用户对手机流量套餐产品的选择条件。
 		每种流量套餐产品包含三个属性：名称(name)，月费价格(price)，月流量(data)。
@@ -659,7 +708,7 @@ print(response)</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+<pre class="highlight"><code class="language-json" data-lang="json">{
   	"data": {
     	"operator": "&gt;=",
     	"value": 100
@@ -672,7 +721,7 @@ print(response)</code></pre>
 <h3 id="_加入例子_输出更稳定"><a class="anchor" href="#_加入例子_输出更稳定"></a>4.4. 加入例子 输出更稳定</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">examples =
+<pre class="highlight"><code class="language-python" data-lang="python">examples =
 	"""
 		便宜的套餐：{"sort":{"ordering"="ascend","value"="price"}}
 		有没有不限流量的：{"data":{"operator":"==","value":"无上限"}}
@@ -709,7 +758,7 @@ print(response)</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+<pre class="highlight"><code class="language-json" data-lang="json">{
     "sort": {
         "ordering": "ascend",
         "value": "price"
@@ -759,7 +808,7 @@ print(response)</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">instruction =
+<pre class="highlight"><code class="language-python" data-lang="python">instruction =
 	"""
 		你的任务是识别用户对手机流量套餐产品的选择条件；
 		每种流量套餐产品包含三个属性：名称(name)，月费价格(price)，月流量(data)；
@@ -847,7 +896,7 @@ print(response)</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{"sort":{"ordering"="descend","value"="data"},"data":{"operator":"&gt;=","value":100}}</code></pre>
+<pre class="highlight"><code class="language-json" data-lang="json">{"sort":{"ordering"="descend","value"="data"},"data":{"operator":"&gt;=","value":100}}</code></pre>
 </div>
 </div>
 <div class="admonitionblock tip">
@@ -905,7 +954,7 @@ print(response)</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">import os
+<pre class="highlight"><code class="language-python" data-lang="python">import os
 import json
 import copy
 
@@ -1123,7 +1172,7 @@ class DialogManager:
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">prompt_templates = {
+<pre class="highlight"><code class="language-python" data-lang="python">prompt_templates = {
     "recommand": "用户说：__INPUT__ \n\n向用户介绍如下产品：__NAME__，月费__PRICE__元，每月流量__DATA__G。",
     "not_found": "用户说：__INPUT__ \n\n没有找到满足__PRICE__元价位__DATA__G流量的产品，询问用户是否有其他选择倾向。"
 }
@@ -1133,7 +1182,7 @@ dm = DialogManager(prompt_templates)</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python"># response = dm.run("流量大的")
+<pre class="highlight"><code class="language-python" data-lang="python"># response = dm.run("流量大的")
 response = dm.run("300太贵了，200元以内有吗")
 print("===response===")
 print(response)</code></pre>
@@ -1141,7 +1190,7 @@ print(response)</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">===semantics===
+<pre class="highlight"><code class="language-bash" data-lang="bash">===semantics===
 {'price': {'operator': '&lt;=', 'value': 200}}
 ===state===
 {'price': {'operator': '&lt;=', 'value': 200}}
@@ -1173,7 +1222,7 @@ print(response)</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">ext = "很口语，亲切一些。不用说“抱歉”。直接给出回答，不用在前面加“小瓜说：”。NO COMMENTS. NO ACKNOWLEDGEMENTS."
+<pre class="highlight"><code class="language-python" data-lang="python">ext = "很口语，亲切一些。不用说“抱歉”。直接给出回答，不用在前面加“小瓜说：”。NO COMMENTS. NO ACKNOWLEDGEMENTS."
 prompt_templates = {k: v+ext for k, v in prompt_templates.items()}
 
 dm = DialogManager(prompt_templates)</code></pre>
@@ -1181,7 +1230,7 @@ dm = DialogManager(prompt_templates)</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python"># response = dm.run("流量大的")
+<pre class="highlight"><code class="language-python" data-lang="python"># response = dm.run("流量大的")
 response = dm.run("300太贵了，200元以内有吗")
 print("===response===")
 print(response)</code></pre>
@@ -1189,7 +1238,7 @@ print(response)</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># response = dm.run("流量大的")
+<pre class="highlight"><code class="language-bash" data-lang="bash"># response = dm.run("流量大的")
 response = dm.run("300太贵了，200元以内有吗")
 print("===response===")
 print(response)</code></pre>
@@ -1215,7 +1264,7 @@ print(response)</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">ext = "\n\n遇到类似问题，请参照以下回答：\n问：流量包太贵了\n答：亲，我们都是全省统一价哦。"
+<pre class="highlight"><code class="language-python" data-lang="python">ext = "\n\n遇到类似问题，请参照以下回答：\n问：流量包太贵了\n答：亲，我们都是全省统一价哦。"
 prompt_templates = {k: v+ext for k, v in prompt_templates.items()}
 
 dm = DialogManager(prompt_templates)</code></pre>
@@ -1223,14 +1272,14 @@ dm = DialogManager(prompt_templates)</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">response = dm.run("这流量包太贵了")
+<pre class="highlight"><code class="language-python" data-lang="python">response = dm.run("这流量包太贵了")
 print("===response===")
 print(response)</code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">===semantics===
+<pre class="highlight"><code class="language-bash" data-lang="bash">===semantics===
 {'sort': {'ordering': 'ascend', 'value': 'price'}}
 ===state===
 {'sort': {'ordering': 'ascend', 'value': 'price'}}
@@ -1267,7 +1316,7 @@ print(response)</code></pre>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">import os
+<pre class="highlight"><code class="language-python" data-lang="python">import os
 from openai import OpenAI
 from dotenv import load_dotenv,
 	find_dotenv = load_dotenv(find_dotenv())
@@ -1312,7 +1361,7 @@ print(json.dumps(session, indent=4, ensure_ascii=False))</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">    {
+<pre class="highlight"><code class="language-json" data-lang="json">    {
         "role": "assistant",
         "content": "很抱歉，我们暂时没有土豪套餐。但是我们有无限套餐，它提供1000G的流量，适合大流量用户。如果您有其他需求，我可以帮您选择其他适合的套餐。"
     },
@@ -1371,22 +1420,22 @@ print(json.dumps(session, indent=4, ensure_ascii=False))</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python"></code></pre>
+<pre class="highlight"><code class="language-python" data-lang="python"></code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python"></code></pre>
+<pre class="highlight"><code class="language-python" data-lang="python"></code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python"></code></pre>
+<pre class="highlight"><code class="language-python" data-lang="python"></code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python"></code></pre>
+<pre class="highlight"><code class="language-python" data-lang="python"></code></pre>
 </div>
 </div>
 </div>
@@ -1434,5 +1483,8 @@ print(json.dumps(session, indent=4, ensure_ascii=False))</code></pre>
 <script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
 <script async src="../../../../search-index.js"></script>
 
-<script>hljs.highlightAll();</script>  	</body>
+<script>hljs.highlightAll();</script>
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
 </html>

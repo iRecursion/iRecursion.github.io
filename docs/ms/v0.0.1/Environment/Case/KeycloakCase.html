@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
     <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   	</head>
   	
@@ -71,16 +73,10 @@
     <a class="nav-link" href="../Antora/AntoraConfigurer.html">Antora Configurer</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
+    <a class="nav-link" href="../Antora/AntoraHighlight.html">Antora Highlight</a>
   </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">DataStructure</span>
-<ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../DataStructure/DataStructureOutline.html">Data Structure Outline</a>
+    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
   </li>
 </ul>
   </li>
@@ -122,6 +118,9 @@
     <a class="nav-link" href="../Language/CondaJupyter.html">Conda Jupyter</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/GoInstallation.html">Go Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Language/LuaInstallation.html">Lua Installation</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -132,6 +131,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Language/GroovyInstallation.html">Groovy Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/JavaFxInstallation.html">JavaFx Installation</a>
   </li>
 </ul>
   </li>
@@ -349,7 +351,7 @@ spring-security-oauth2-resource-server</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
     &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
     &lt;artifactId&gt;spring-boot-starter-oauth2-client&lt;/artifactId&gt;
 &lt;/dependency&gt;
@@ -410,7 +412,7 @@ oauth2ResourceServer()在转发到下游服务前验证访问令牌；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Configuration
+<pre class="highlight"><code class="language-java" data-lang="java">@Configuration
 @EnableWebFluxSecurity
 public class SecurityConfig {
 
@@ -444,7 +446,7 @@ choose authorization grant type and scope；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">spring:
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">spring:
   security:
     oauth2:
       resourceserver:
@@ -473,7 +475,7 @@ choose authorization grant type and scope；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@GetMapping(value = "/token")
+<pre class="highlight"><code class="language-java" data-lang="java">@GetMapping(value = "/token")
 public Mono&lt;String&gt; getHome(
 	@RegisteredOAuth2AuthorizedClient OAuth2AuthorizedClient client) {
     return Mono.just(client.getAccessToken().getTokenValue());
@@ -494,7 +496,7 @@ TokenRelay GatewayFilter将OAuth2访问令牌转发到其代理的服务的下�
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">server:
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">server:
   port: 8060
 spring:
   application:
@@ -539,7 +541,7 @@ spring-security-oauth2-jose(jwt令牌解码)；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Configuration
+<pre class="highlight"><code class="language-java" data-lang="java">@Configuration
 @EnableWebSecurity
 public class SecurityConfig {
 
@@ -579,7 +581,7 @@ public class SecurityConfig {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@RestController
+<pre class="highlight"><code class="language-java" data-lang="java">@RestController
 @RequestMapping("/callee")
 public class CalleeController {
 
@@ -603,7 +605,7 @@ public class CalleeController {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@RestController
+<pre class="highlight"><code class="language-java" data-lang="java">@RestController
 @RequestMapping("/caller")
 public class CallerController {
 
@@ -645,7 +647,7 @@ credential，但它将自动在Authorization header中propagate该令牌；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@SpringBootApplication
+<pre class="highlight"><code class="language-java" data-lang="java">@SpringBootApplication
 public class CallerEntry {
 
 	public static void main(String[] sa) {
@@ -707,7 +709,7 @@ eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJIX2taUW1MeFl0M3dxNU1rdG9NQUc3
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">*   Trying [::1]:8060...
+<pre class="highlight"><code class="language-bash" data-lang="bash">*   Trying [::1]:8060...
 * Connected to localhost (::1) port 8060
 &gt; GET /callee/ping HTTP/1.1
 &gt; Host: localhost:8060
@@ -754,7 +756,7 @@ Scope List：[SCOPE_openid, SCOPE_email, SCOPE_profile, SCOPE_cs-elf]</code></pr
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">package io.os.security.keycloak.gateway;
+<pre class="highlight"><code class="language-java" data-lang="java">package io.os.security.keycloak.gateway;
 
 @RestController
 @RequestMapping("/callee")
@@ -785,7 +787,7 @@ public class CalleeController {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
+<pre class="highlight"><code class="language-java" data-lang="java">@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
 @Testcontainers
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class GatewayEntryTest {
@@ -823,7 +825,7 @@ public class GatewayEntryTest {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Test
+<pre class="highlight"><code class="language-java" data-lang="java">@Test
 @Order(1)
 void shouldBeRedirectedToLoginPage() {
     webTestClient.get().uri("/callee/ping")
@@ -843,7 +845,7 @@ Kecloak将生成并返回访问令牌</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Test
+<pre class="highlight"><code class="language-java" data-lang="java">@Test
 @Order(2)
 void shouldObtainAccessToken() throws URISyntaxException {
     URI authorizationURI = new URIBuilder(keycloak.getAuthServerUrl()
@@ -880,7 +882,7 @@ void shouldObtainAccessToken() throws URISyntaxException {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Test
+<pre class="highlight"><code class="language-java" data-lang="java">@Test
 @Order(3)
 void shouldReturnToken() {
     webTestClient.get().uri("/callee/ping")
@@ -936,5 +938,8 @@ void shouldReturnToken() {
 <script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
 <script async src="../../../../search-index.js"></script>
 
-<script>hljs.highlightAll();</script>  	</body>
+<script>hljs.highlightAll();</script>
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
 </html>

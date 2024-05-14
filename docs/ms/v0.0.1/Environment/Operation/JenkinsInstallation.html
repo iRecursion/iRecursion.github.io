@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
     <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   	</head>
   	
@@ -71,16 +73,10 @@
     <a class="nav-link" href="../Antora/AntoraConfigurer.html">Antora Configurer</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
+    <a class="nav-link" href="../Antora/AntoraHighlight.html">Antora Highlight</a>
   </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">DataStructure</span>
-<ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../DataStructure/DataStructureOutline.html">Data Structure Outline</a>
+    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
   </li>
 </ul>
   </li>
@@ -122,6 +118,9 @@
     <a class="nav-link" href="../Language/CondaJupyter.html">Conda Jupyter</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/GoInstallation.html">Go Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Language/LuaInstallation.html">Lua Installation</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -132,6 +131,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Language/GroovyInstallation.html">Groovy Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/JavaFxInstallation.html">JavaFx Installation</a>
   </li>
 </ul>
   </li>
@@ -349,7 +351,7 @@ UnknownHostException: updates.jenkins.io</p>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">mkdir -p /elf/jenkins/jenkins-master \
+<pre class="highlight"><code class="language-bash" data-lang="bash">mkdir -p /elf/jenkins/jenkins-master \
 	&amp;&amp; chmod 777 -R /elf/jenkins/jenkins-master</code></pre>
 </div>
 </div>
@@ -360,7 +362,7 @@ UnknownHostException: updates.jenkins.io</p>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">docker run \
+<pre class="highlight"><code class="language-bash" data-lang="bash">docker run \
 	--name jenkins-master \
 	--privileged=true \
 	--net network-common \
@@ -377,7 +379,7 @@ UnknownHostException: updates.jenkins.io</p>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">docker logs -f jenkins-master
+<pre class="highlight"><code class="language-bash" data-lang="bash">docker logs -f jenkins-master
 
 5fe80e2a13e248388a46a6921a70621e
 
@@ -417,7 +419,7 @@ UnknownHostException: updates.jenkins.io</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">docker exec jenkins-master cat \
+<pre class="highlight"><code class="language-bash" data-lang="bash">docker exec jenkins-master cat \
 	/var/jenkins_home/secrets/initialAdminPassword
 
 docker stop jenkins-master &amp;&amp; docker remove jenkins-master</code></pre>
@@ -460,7 +462,7 @@ docker stop jenkins-master &amp;&amp; docker remove jenkins-master</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">wget https://download.oracle.com/java/17/latest/jdk-17_linux-x64_bin.tar.gz
+<pre class="highlight"><code class="language-bash" data-lang="bash">wget https://download.oracle.com/java/17/latest/jdk-17_linux-x64_bin.tar.gz
 
 tar -zxvf jdk-17_linux-x64_bin.tar.gz -C /elf/ &amp;&amp; mv ./jdk-17.0.9 ./jdk17
 
@@ -504,7 +506,7 @@ source /etc/profile</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">echo 25aef4033456fff46e0a49e282b340ebd93e8309b5413852f06fb01f8be61a1d &gt; secret-file
+<pre class="highlight"><code class="language-bash" data-lang="bash">echo 25aef4033456fff46e0a49e282b340ebd93e8309b5413852f06fb01f8be61a1d &gt; secret-file
 curl -sO http://192.168.0.123:8080/jnlpJars/agent.jar
 java -jar agent.jar -jnlpUrl http://192.168.0.123:8080/computer/jenkins%2Dagent%2D01/jenkins-agent.jnlp \
 	-secret @secret-file -workDir "/elf/jenkins/jenkins-agent"</code></pre>
@@ -519,7 +521,7 @@ java -jar agent.jar -jnlpUrl http://192.168.0.123:8080/computer/jenkins%2Dagent%
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">vim /elf/jenkins/start-agent.sh
+<pre class="highlight"><code class="language-bash" data-lang="bash">vim /elf/jenkins/start-agent.sh
 
 echo 25aef4033456fff46e0a49e282b340ebd93e8309b5413852f06fb01f8be61a1d &gt; secret-file
 curl -sO http://192.168.0.123:8080/jnlpJars/agent.jar
@@ -672,5 +674,8 @@ nohup java -jar agent.jar -jnlpUrl http://192.168.0.123:8080/computer/jenkins%2D
 <script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
 <script async src="../../../../search-index.js"></script>
 
-<script>hljs.highlightAll();</script>  	</body>
+<script>hljs.highlightAll();</script>
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
 </html>

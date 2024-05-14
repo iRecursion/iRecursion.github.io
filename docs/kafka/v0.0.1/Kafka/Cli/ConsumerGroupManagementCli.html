@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
     <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   	</head>
   	
@@ -346,7 +348,7 @@ to latest最晚，to specific offset特定偏移，shift by(偏移)……</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># 此命令可观察消费者组的当前偏移量，也可查看是否有活动成员
+<pre class="highlight"><code class="language-bash" data-lang="bash"># 此命令可观察消费者组的当前偏移量，也可查看是否有活动成员
 
 ./kafka-consumer-groups.sh --bootstrap-server 192.168.0.123:9092 \
 	--describe --group elf-app</code></pre>
@@ -367,7 +369,7 @@ position in order to read topic entirely again；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># 可看到，新的偏移量均为0
+<pre class="highlight"><code class="language-bash" data-lang="bash"># 可看到，新的偏移量均为0
 ./kafka-consumer-groups.sh --bootstrap-server 192.168.0.123:9092 \
 	--group elf-app --reset-offsets --to-earliest --execute --topic topic-elf</code></pre>
 </div>
@@ -381,7 +383,7 @@ position in order to read topic entirely again；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">./kafka-console-consumer.sh --bootstrap-server 192.168.0.123:9092 \
+<pre class="highlight"><code class="language-bash" data-lang="bash">./kafka-console-consumer.sh --bootstrap-server 192.168.0.123:9092 \
 	--topic topic-elf --group elf-app</code></pre>
 </div>
 </div>
@@ -403,7 +405,7 @@ position in order to read topic entirely again；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">./kafka-consumer-groups.sh --bootstrap-server 192.168.0.123:9092 \
+<pre class="highlight"><code class="language-bash" data-lang="bash">./kafka-consumer-groups.sh --bootstrap-server 192.168.0.123:9092 \
 	--describe --group elf-app</code></pre>
 </div>
 </div>
@@ -416,7 +418,7 @@ position in order to read topic entirely again；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">./kafka-consumer-groups.sh --bootstrap-server 192.168.0.123:9092 \
+<pre class="highlight"><code class="language-bash" data-lang="bash">./kafka-consumer-groups.sh --bootstrap-server 192.168.0.123:9092 \
 	--group elf-app --reset-offsets --shift-by -2 --execute --topic topic-elf</code></pre>
 </div>
 </div>
@@ -429,7 +431,7 @@ position in order to read topic entirely again；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">./kafka-console-consumer.sh --bootstrap-server 192.168.0.123:9092 \
+<pre class="highlight"><code class="language-bash" data-lang="bash">./kafka-console-consumer.sh --bootstrap-server 192.168.0.123:9092 \
 	--topic topic-elf --group elf-app</code></pre>
 </div>
 </div>
@@ -504,7 +506,7 @@ assignment strategy和协调员Id(coordinatorId)；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># 列出消费者组状态
+<pre class="highlight"><code class="language-bash" data-lang="bash"># 列出消费者组状态
 ./kafka-console-consumer.sh --bootstrap-server 192.168.0.123:9092 \
 	--list --state
 
@@ -520,7 +522,7 @@ assignment strategy和协调员Id(coordinatorId)；</p>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">./kafka-consumer-groups.sh --bootstrap-server 192.168.0.123:9092 \
+<pre class="highlight"><code class="language-bash" data-lang="bash">./kafka-consumer-groups.sh --bootstrap-server 192.168.0.123:9092 \
 	--delete --group elf-app</code></pre>
 </div>
 </div>
@@ -533,7 +535,7 @@ assignment strategy和协调员Id(coordinatorId)；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">./kafka-consumer-groups.sh --bootstrap-server 192.168.0.123:9092 \
+<pre class="highlight"><code class="language-bash" data-lang="bash">./kafka-consumer-groups.sh --bootstrap-server 192.168.0.123:9092 \
 	--delete-offsets --group elf-app --topic topic-elf</code></pre>
 </div>
 </div>
@@ -582,5 +584,8 @@ assignment strategy和协调员Id(coordinatorId)；</p>
 <script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
 <script async src="../../../../search-index.js"></script>
 
-<script>hljs.highlightAll();</script>  	</body>
+<script>hljs.highlightAll();</script>
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
 </html>

@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
     <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   	</head>
   	
@@ -71,16 +73,10 @@
     <a class="nav-link" href="../Antora/AntoraConfigurer.html">Antora Configurer</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
+    <a class="nav-link" href="../Antora/AntoraHighlight.html">Antora Highlight</a>
   </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">DataStructure</span>
-<ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../DataStructure/DataStructureOutline.html">Data Structure Outline</a>
+    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
   </li>
 </ul>
   </li>
@@ -122,6 +118,9 @@
     <a class="nav-link" href="CondaJupyter.html">Conda Jupyter</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="GoInstallation.html">Go Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="LuaInstallation.html">Lua Installation</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -132,6 +131,9 @@
   </li>
   <li class="nav-item is-current-page" data-depth="3">
     <a class="nav-link" href="GroovyInstallation.html">Groovy Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="JavaFxInstallation.html">JavaFx Installation</a>
   </li>
 </ul>
   </li>
@@ -358,7 +360,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
     &lt;groupId&gt;org.apache.groovy&lt;/groupId&gt;
     &lt;artifactId&gt;groovy-bom&lt;/artifactId&gt;
     &lt;version&gt;4.0.17&lt;/version&gt;
@@ -419,7 +421,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">int method(String arg) {
+<pre class="highlight"><code class="language-java" data-lang="java">int method(String arg) {
     return 1;
 }
 int method(Object arg) {
@@ -453,7 +455,7 @@ assertEquals(1, result);
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">int[] shorthand = {1, 2, 3};
+<pre class="highlight"><code class="language-java" data-lang="java">int[] shorthand = {1, 2, 3};
 
 int[] longhand = new int[] {4, 5, 6};</code></pre>
 </div>
@@ -467,7 +469,7 @@ int[] longhand = new int[] {4, 5, 6};</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">int[] groovy = [1, 2, 3]
+<pre class="highlight"><code class="language-groovy" data-lang="groovy">int[] groovy = [1, 2, 3]
 
 def groovy3Plus = new int[] {1, 2, 3}</code></pre>
 </div>
@@ -486,7 +488,7 @@ def groovy3Plus = new int[] {1, 2, 3}</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">class Person {
+<pre class="highlight"><code class="language-groovy" data-lang="groovy">class Person {
     String name
 }</code></pre>
 </div>
@@ -500,7 +502,7 @@ def groovy3Plus = new int[] {1, 2, 3}</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">class Person {
+<pre class="highlight"><code class="language-groovy" data-lang="groovy">class Person {
     @PackageScope String name
 }</code></pre>
 </div>
@@ -520,7 +522,7 @@ def groovy3Plus = new int[] {1, 2, 3}</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">import java.io.BufferedReader;
+<pre class="highlight"><code class="language-java" data-lang="java">import java.io.BufferedReader;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
@@ -546,7 +548,7 @@ public class Arm{
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">new File('filePath').eachLine('UTF-8') {
+<pre class="highlight"><code class="language-groovy" data-lang="groovy">new File('filePath').eachLine('UTF-8') {
    println it
 }
 
@@ -575,7 +577,7 @@ new File('filePath').eachLine('UTF-8',){reader -&gt;
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">class A {
+<pre class="highlight"><code class="language-groovy" data-lang="groovy">class A {
     static class B {}
 }
 
@@ -591,7 +593,7 @@ new A.B()</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">import java.util.concurrent.CountDownLatch
+<pre class="highlight"><code class="language-groovy" data-lang="groovy">import java.util.concurrent.CountDownLatch
 import java.util.concurrent.TimeUnit
 
 CountDownLatch called = new CountDownLatch(1)
@@ -613,13 +615,13 @@ assert called.await(10, TimeUnit.SECONDS)</code></pre>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">Runnable run = () -&gt; System.out.println("Run");
+<pre class="highlight"><code class="language-java" data-lang="java">Runnable run = () -&gt; System.out.println("Run");
 list.forEach(System.out::println);</code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">Runnable run = { println 'run' }
+<pre class="highlight"><code class="language-groovy" data-lang="groovy">Runnable run = { println 'run' }
 list.each { println it }
 list.each(this.println())</code></pre>
 </div>
@@ -656,7 +658,7 @@ Java编译器编译具有含$字符的Str类，Groovy可能编译失败；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">assert 'c'.class == String
+<pre class="highlight"><code class="language-groovy" data-lang="groovy">assert 'c'.class == String
 assert "c".class == String
 assert "c${1}".class in GString</code></pre>
 </div>
@@ -671,7 +673,7 @@ assert "c${1}".class in GString</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">char a = 'a'
+<pre class="highlight"><code class="language-groovy" data-lang="groovy">char a = 'a'
 assert Character.digit(a, 16) == 10: 'But Groovy does boxing'
 assert Character.digit((char) 'a', 16) == 10
 
@@ -694,7 +696,7 @@ Groovy样式强制转换更宽松(lenient)，<br>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">// for single char strings, both are the same
+<pre class="highlight"><code class="language-groovy" data-lang="groovy">// for single char strings, both are the same
 assert ((char) "c").class == Character
 assert ("c" as char).class == Character
 
@@ -743,7 +745,7 @@ groovy中==表示所有地方相等(equality)；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public class Main {
+<pre class="highlight"><code class="language-java" data-lang="java">public class Main {
 
    float f1 = 1.0f;
    Float f2 = 2.0f;
@@ -761,7 +763,7 @@ groovy中==表示所有地方相等(equality)；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">class Main {
+<pre class="highlight"><code class="language-groovy" data-lang="groovy">class Main {
 
     float f1 = 1.0f
     Float f2 = 2.0f
@@ -788,7 +790,7 @@ assert new Main().calc() == 3.0</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public class Main {
+<pre class="highlight"><code class="language-java" data-lang="java">public class Main {
     public float z1 = 0.0f;
 
     public static void main(String[] args){
@@ -800,7 +802,7 @@ assert new Main().calc() == 3.0</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">class Main {
+<pre class="highlight"><code class="language-groovy" data-lang="groovy">class Main {
     float z1 = 0.0f
 }
 assert !(new Main().z1.equals(1.0f))</code></pre>
@@ -808,7 +810,7 @@ assert !(new Main().z1.equals(1.0f))</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">int i
+<pre class="highlight"><code class="language-groovy" data-lang="groovy">int i
 m(i)
 
 void m(long l) {
@@ -851,7 +853,7 @@ void m(Integer i) {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># Primitive Type
+<pre class="highlight"><code class="language-bash" data-lang="bash"># Primitive Type
 jshell&gt; float f1 = 0.0f
 f1 ==&gt; 0.0
 
@@ -874,7 +876,7 @@ $3 ==&gt; false</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">float f1 = 0.0f
+<pre class="highlight"><code class="language-groovy" data-lang="groovy">float f1 = 0.0f
 float f2 = -0.0f
 Float f3 = 0.0f
 Float f4 = -0.0f
@@ -910,7 +912,7 @@ assert f3.equalsIgnoreZeroSign(f4)</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">var var = [def:1,as:2,in:3,trait:4]</code></pre>
+<pre class="highlight"><code class="language-groovy" data-lang="groovy">var var = [def:1,as:2,in:3,trait:4]</code></pre>
 </div>
 </div>
 </div>
@@ -958,5 +960,8 @@ assert f3.equalsIgnoreZeroSign(f4)</code></pre>
 <script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
 <script async src="../../../../search-index.js"></script>
 
-<script>hljs.highlightAll();</script>  	</body>
+<script>hljs.highlightAll();</script>
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
 </html>

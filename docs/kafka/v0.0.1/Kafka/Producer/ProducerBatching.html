@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
     <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   	</head>
   	
@@ -409,7 +411,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">// 高吞吐生产者以延迟和cpu利用率为代价
+<pre class="highlight"><code class="language-java" data-lang="java">// 高吞吐生产者以延迟和cpu利用率为代价
 properties.setProperty(ProducerConfig.COMPRESSION_TYPE_CONFIG, "snappy");
 
 properties.setProperty(ProducerConfig.LINGER_MS_CONFIG,"20");
@@ -463,5 +465,8 @@ properties.setProperty(ProducerConfig.BATCH_SIZE_CONFIG,Integer.toString(32*1024
 <script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
 <script async src="../../../../search-index.js"></script>
 
-<script>hljs.highlightAll();</script>  	</body>
+<script>hljs.highlightAll();</script>
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
 </html>

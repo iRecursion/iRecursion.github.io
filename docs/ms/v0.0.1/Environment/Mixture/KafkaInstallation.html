@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
     <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   	</head>
   	
@@ -71,16 +73,10 @@
     <a class="nav-link" href="../Antora/AntoraConfigurer.html">Antora Configurer</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
+    <a class="nav-link" href="../Antora/AntoraHighlight.html">Antora Highlight</a>
   </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">DataStructure</span>
-<ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../DataStructure/DataStructureOutline.html">Data Structure Outline</a>
+    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
   </li>
 </ul>
   </li>
@@ -122,6 +118,9 @@
     <a class="nav-link" href="../Language/CondaJupyter.html">Conda Jupyter</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/GoInstallation.html">Go Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Language/LuaInstallation.html">Lua Installation</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -132,6 +131,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Language/GroovyInstallation.html">Groovy Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/JavaFxInstallation.html">JavaFx Installation</a>
   </li>
 </ul>
   </li>
@@ -407,7 +409,7 @@
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># generate  clusterId
+<pre class="highlight"><code class="language-bash" data-lang="bash"># generate  clusterId
 
 ./kafka-storage.sh random-uuid
 
@@ -560,7 +562,7 @@ Schema Registry的多个实例间相互通信(intercommunication)所必须；</p
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">version: '3.8'
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">version: '3.8'
 services:
   kafka:
     image: apache/kafka:3.7.0
@@ -620,7 +622,7 @@ networks:
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">docker compose up -d
+<pre class="highlight"><code class="language-bash" data-lang="bash">docker compose up -d
 
 docker exec -it kafka /bin/bash
 
@@ -631,7 +633,7 @@ vi server.properties</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-properties hljs" data-lang="properties">#controller.quorum.voters=1@localhost:9093
+<pre class="highlight"><code class="language-properties" data-lang="properties">#controller.quorum.voters=1@localhost:9093
 controller.quorum.voters=1@192.168.0.123:9093
 
 #listeners=PLAINTEXT://:9092,CONTROLLER://:9093
@@ -643,7 +645,7 @@ advertised.listeners=PLAINTEXT_HOST://192.168.0.123:9092,PLAINTEXT://kafka:19092
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">docker compose stop
+<pre class="highlight"><code class="language-bash" data-lang="bash">docker compose stop
 
 docker compose start</code></pre>
 </div>
@@ -668,7 +670,7 @@ docker compose start</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">.bin/kafka-storage.sh format -t &lt;uuid&gt; -c ~/config/kraft/server.properties</code></pre>
+<pre class="highlight"><code class="language-bash" data-lang="bash">.bin/kafka-storage.sh format -t &lt;uuid&gt; -c ~/config/kraft/server.properties</code></pre>
 </div>
 </div>
 <div class="ulist">
@@ -684,7 +686,7 @@ log.dirs中的目录，默认为/tmp/kraft-combined-logs；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">./bin/kafka-server-start.sh ~/config/kraft/server.properties</code></pre>
+<pre class="highlight"><code class="language-bash" data-lang="bash">./bin/kafka-server-start.sh ~/config/kraft/server.properties</code></pre>
 </div>
 </div>
 <div class="ulist">
@@ -742,5 +744,8 @@ log.dirs中的目录，默认为/tmp/kraft-combined-logs；</p>
 <script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
 <script async src="../../../../search-index.js"></script>
 
-<script>hljs.highlightAll();</script>  	</body>
+<script>hljs.highlightAll();</script>
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
 </html>

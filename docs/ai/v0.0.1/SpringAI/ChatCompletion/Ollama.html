@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
     <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   	</head>
   	
@@ -42,6 +44,37 @@
     <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
     <h3 class="title"><a href="../../index.html">AsciiDoc AI</a></h3>
 <ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">ML</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Fundamental</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/AILearningPath.html">AI Learning Path</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/AIIntro.html">AI Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/DLBasicConcept.html">DL Basic Concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/ModelTrainingConcept.html">Model Training Concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ML/Fundamental/LlmIntro.html">LLM Intro</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
@@ -288,34 +321,6 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <span class="nav-text">ML</span>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">Fundamental</span>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../ML/Fundamental/AIIntro.html">AI Intro</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../ML/Fundamental/MLIntro.html">ML Intro</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../ML/Fundamental/DLIntro.html">DL Intro</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../ML/Fundamental/LlmIntro.html">LLM Intro</a>
-  </li>
-</ul>
-  </li>
-</ul>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="0">
-<ul class="nav-list">
-  <li class="nav-item" data-depth="1">
-    <button class="nav-item-toggle"></button>
     <span class="nav-text">LLM</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
@@ -329,6 +334,50 @@
     <a class="nav-link" href="../../LLM/FullStack/PromptEngineeringCase.html">Prompt Engineering Case</a>
   </li>
 </ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Science</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Math</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Science/Math/Algebra.html">Algebra</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Physic</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Solitary</span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Dsac</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Data Structure</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Algorithm</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Classifier</span>
   </li>
 </ul>
   </li>
@@ -426,7 +475,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">docker run \
+<pre class="highlight"><code class="language-bash" data-lang="bash">docker run \
 	--name ollama \
 	-p 11434:11434 \
 	--privileged=true \
@@ -442,7 +491,7 @@
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">docker exec -it ollama ollama run llama2
+<pre class="highlight"><code class="language-bash" data-lang="bash">docker exec -it ollama ollama run llama2
 
 docker exec -it ollama ollama run llama2-chinese</code></pre>
 </div>
@@ -454,7 +503,7 @@ docker exec -it ollama ollama run llama2-chinese</code></pre>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">root@docker:/elf# docker exec -it ollama ollama run llama2
+<pre class="highlight"><code class="language-bash" data-lang="bash">root@docker:/elf# docker exec -it ollama ollama run llama2
 pulling manifest
 pulling 8934d96d3f08... 100% ▕███████████████████████████████████████████████████████████████████████████████████████████████████████▏ 3.8 GB
 pulling 8c17c2ebb0ea... 100% ▕███████████████████████████████████████████████████████████████████████████████████████████████████████▏ 7.0 KB
@@ -470,14 +519,14 @@ success</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">&gt;&gt;&gt; hi
+<pre class="highlight"><code class="language-bash" data-lang="bash">&gt;&gt;&gt; hi
 Hello! It's nice to meet you. Is there something
 	I can help you with or would you like to chat?</code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">&gt;&gt;&gt; one plus one?
+<pre class="highlight"><code class="language-bash" data-lang="bash">&gt;&gt;&gt; one plus one?
 One plus one is equal to two.
 
 &gt;&gt;&gt; Send a message (/? for help)</code></pre>
@@ -501,7 +550,7 @@ One plus one is equal to two.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
    &lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
    &lt;artifactId&gt;spring-ai-ollama-spring-boot-starter&lt;/artifactId&gt;
 &lt;/dependency&gt;</code></pre>
@@ -534,7 +583,7 @@ spring.ai.ollama.chat.options.*属性配置默认选项；</p>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
 	&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
 	&lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;
 &lt;/dependency&gt;
@@ -547,7 +596,7 @@ spring.ai.ollama.chat.options.*属性配置默认选项；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">spring:
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">spring:
   ai:
     ollama:
       base-url: http://192.168.0.123:11434
@@ -562,7 +611,7 @@ spring.ai.ollama.chat.options.*属性配置默认选项；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">import java.util.Map;
+<pre class="highlight"><code class="language-java" data-lang="java">import java.util.Map;
 import org.springframework.ai.chat.ChatResponse;
 import org.springframework.ai.chat.messages.UserMessage;
 import org.springframework.ai.chat.prompt.Prompt;
@@ -656,7 +705,7 @@ public class OllamaChatEntry {
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+<pre class="highlight"><code class="language-json" data-lang="json">{
     "result": {
         "output": {
             "content": "\nSure! Here are 5 famous pirates and their names:\n\n1. Blackbeard - born Edward Teach, was a notorious English pirate who operated in the Caribbean during the early 18th century.\n2. Captain Kidd - also known as William Kidd, was a Scottish sailor who turned to piracy in the late 17th and early 18th centuries. He is best known for his alleged treasure hoard, which has never been found.\n3. Calico Jack Rackham - born John Rackham, was an English pirate who operated in the Caribbean during the early 18th century. He is best known for having two female crew members, Anne Bonny and Mary Read, who disguised themselves as men to join his crew.\n4. Henry Morgan - was a Welsh pirate and privateer who operated in the Caribbean during the late 17th and early 18th centuries. He is best known for his raids on Spanish colonies and his eventual knighting by King Charles II.\n5. Bartholomew Roberts - born Bart Roberts, was a Welsh pirate who operated in the Caribbean during the early 18th century. He is considered one of the most successful pirates in history, with over 400 ships captured during his career.",
@@ -727,7 +776,7 @@ public class OllamaChatEntry {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">var ollamaApi = new OllamaApi("HOST:PORT");
+<pre class="highlight"><code class="language-java" data-lang="java">var ollamaApi = new OllamaApi("HOST:PORT");
 
 // Sync request
 var request = ChatRequest.builder("orca-mini")
@@ -803,5 +852,8 @@ Flux&lt;ChatResponse&gt; streamingResponse = ollamaApi.streamingChat(request2);<
 <script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
 <script async src="../../../../search-index.js"></script>
 
-<script>hljs.highlightAll();</script>  	</body>
+<script>hljs.highlightAll();</script>
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
 </html>

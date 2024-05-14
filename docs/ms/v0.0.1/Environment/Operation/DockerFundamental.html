@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
     <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   	</head>
   	
@@ -71,16 +73,10 @@
     <a class="nav-link" href="../Antora/AntoraConfigurer.html">Antora Configurer</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
+    <a class="nav-link" href="../Antora/AntoraHighlight.html">Antora Highlight</a>
   </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">DataStructure</span>
-<ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../DataStructure/DataStructureOutline.html">Data Structure Outline</a>
+    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
   </li>
 </ul>
   </li>
@@ -122,6 +118,9 @@
     <a class="nav-link" href="../Language/CondaJupyter.html">Conda Jupyter</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/GoInstallation.html">Go Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Language/LuaInstallation.html">Lua Installation</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -132,6 +131,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Language/GroovyInstallation.html">Groovy Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/JavaFxInstallation.html">JavaFx Installation</a>
   </li>
 </ul>
   </li>
@@ -356,7 +358,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">{
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">{
   "registry-mirrors": [
     "https://mirror.baidubce.com",
     "https://dockerproxy.com",
@@ -388,7 +390,7 @@ systemctl daemon-reload &amp;&amp; systemctl restart docker</code></pre>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># 拉取镜像：docker pull OPTION NAME[:TAG]
+<pre class="highlight"><code class="language-bash" data-lang="bash"># 拉取镜像：docker pull OPTION NAME[:TAG]
 docker pull mysql:8.2.0
 
 # 标签镜像：docker tag SRC[:TAG] DEST_IMAGE[:TAG]
@@ -408,7 +410,7 @@ docker load &lt; ./tarball.tar</code></pre>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># 删除镜像
+<pre class="highlight"><code class="language-bash" data-lang="bash"># 删除镜像
 docker rmi -f $(docker images)
 
 # 删除退出状态容器
@@ -437,7 +439,7 @@ docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' mysq
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">docker run \
+<pre class="highlight"><code class="language-bash" data-lang="bash">docker run \
 	--name gitlab \
 	-p 8080:80 \
 	--privileged=true \
@@ -464,7 +466,7 @@ docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' mysq
 <h3 id="_推送镜像"><a class="anchor" href="#_推送镜像"></a>5.1. 推送镜像</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># 拉取镜像
+<pre class="highlight"><code class="language-bash" data-lang="bash"># 拉取镜像
 docker pull mysql:8.2.0
 
 # 登录到Harbor：docker login &lt;harbor_address&gt;
@@ -485,7 +487,7 @@ docker push 192.168.0.123/specification/mysql:8.2.0</code></pre>
 <h3 id="_拉取镜像"><a class="anchor" href="#_拉取镜像"></a>5.2. 拉取镜像</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># 登录到Harbor：docker login &lt;harbor_address&gt;
+<pre class="highlight"><code class="language-bash" data-lang="bash"># 登录到Harbor：docker login &lt;harbor_address&gt;
 docker login http://192.168.0.123
 
 # 拉取镜像：docker pull &lt;harbor_address&gt;/namespace/target_image
@@ -497,7 +499,7 @@ docker pull 192.168.0.123/specification/mysql:8.2.0</code></pre>
 <h3 id="_tag_save"><a class="anchor" href="#_tag_save"></a>5.3. Tag Save</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">docker tag gitlab/gitlab-ce:16.6.2-ce.0 gitlab:16.6.2.0 &amp;&amp; \
+<pre class="highlight"><code class="language-bash" data-lang="bash">docker tag gitlab/gitlab-ce:16.6.2-ce.0 gitlab:16.6.2.0 &amp;&amp; \
 	docker tag docker.elastic.co/kibana/kibana:8.11.2 kibana:8.11.2 &amp;&amp; \
 	docker tag docker.elastic.co/elasticsearch/elasticsearch:8.11.2 es:8.11.2 &amp;&amp; \
 	docker save -o ./gitlab16620.tar gitlab:16.6.2.0 &amp;&amp; \
@@ -517,7 +519,7 @@ docker load &lt; ./gitlab16620.tar &amp;&amp; \
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># 本地镜像复制到远程
+<pre class="highlight"><code class="language-bash" data-lang="bash"># 本地镜像复制到远程
 scp -r /elf/local/tarball.tar root@192.168.1.120:/elf/remote/
 
 # 远程镜像复制到本地
@@ -537,7 +539,7 @@ scp -r root@192.168.1.120:/elf/remote/ /elf/local/</code></pre>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># 主机复制到容器 docker cp &lt;source&gt; &lt;container&gt;:&lt;destination&gt;
+<pre class="highlight"><code class="language-bash" data-lang="bash"># 主机复制到容器 docker cp &lt;source&gt; &lt;container&gt;:&lt;destination&gt;
 
 # 容器复制到主机 docker cp &lt;container&gt;:&lt;source&gt; &lt;destination&gt;
 docker cp es8:/usr/share/elasticsearch/config/certs/http_ca.crt /elf/http_ca.crt</code></pre>
@@ -550,7 +552,7 @@ docker cp es8:/usr/share/elasticsearch/config/certs/http_ca.crt /elf/http_ca.crt
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">docker network create network-common
+<pre class="highlight"><code class="language-bash" data-lang="bash">docker network create network-common
 
 # docker network create -d bridge network-common
 
@@ -604,5 +606,8 @@ docker cp es8:/usr/share/elasticsearch/config/certs/http_ca.crt /elf/http_ca.crt
 <script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
 <script async src="../../../../search-index.js"></script>
 
-<script>hljs.highlightAll();</script>  	</body>
+<script>hljs.highlightAll();</script>
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
 </html>

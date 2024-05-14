@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
     <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   	</head>
   	
@@ -71,16 +73,10 @@
     <a class="nav-link" href="../Antora/AntoraConfigurer.html">Antora Configurer</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
+    <a class="nav-link" href="../Antora/AntoraHighlight.html">Antora Highlight</a>
   </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">DataStructure</span>
-<ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../DataStructure/DataStructureOutline.html">Data Structure Outline</a>
+    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
   </li>
 </ul>
   </li>
@@ -122,6 +118,9 @@
     <a class="nav-link" href="../Language/CondaJupyter.html">Conda Jupyter</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/GoInstallation.html">Go Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Language/LuaInstallation.html">Lua Installation</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -132,6 +131,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Language/GroovyInstallation.html">Groovy Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/JavaFxInstallation.html">JavaFx Installation</a>
   </li>
 </ul>
   </li>
@@ -429,7 +431,7 @@
 <h3 id="_enable_extension"><a class="anchor" href="#_enable_extension"></a>1.1. Enable Extension</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">/* 在每一个数据库执行一次 */
+<pre class="highlight"><code class="language-sql" data-lang="sql">/* 在每一个数据库执行一次 */
 create extension vector;</code></pre>
 </div>
 </div>
@@ -438,7 +440,7 @@ create extension vector;</code></pre>
 <h3 id="_create_vector"><a class="anchor" href="#_create_vector"></a>1.2. Create Vector</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">/* create vector column with 3 dimension */
+<pre class="highlight"><code class="language-sql" data-lang="sql">/* create vector column with 3 dimension */
 
 create table order_item (
 	id bigserial primary key,
@@ -451,7 +453,7 @@ create table order_item (
 <h3 id="_insert_vector"><a class="anchor" href="#_insert_vector"></a>1.3. Insert Vector</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">insert into order_item (embedding) values ('[1,2,3]'),('[4,5,6]');</code></pre>
+<pre class="highlight"><code class="language-sql" data-lang="sql">insert into order_item (embedding) values ('[1,2,3]'),('[4,5,6]');</code></pre>
 </div>
 </div>
 </div>
@@ -459,7 +461,7 @@ create table order_item (
 <h3 id="_nearest_neighbor"><a class="anchor" href="#_nearest_neighbor"></a>1.4. Nearest Neighbor</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">/* get nearest neighbor by L2 distance */
+<pre class="highlight"><code class="language-sql" data-lang="sql">/* get nearest neighbor by L2 distance */
 select * from order_item order by embedding &lt;-&gt; '[3,1,2]' limit 5;</code></pre>
 </div>
 </div>
@@ -495,7 +497,7 @@ select * from order_item order by embedding &lt;-&gt; '[3,1,2]' limit 5;</code><
 <h3 id="_vector_column"><a class="anchor" href="#_vector_column"></a>2.1. Vector Column</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">/* create table with vector column */
+<pre class="highlight"><code class="language-sql" data-lang="sql">/* create table with vector column */
 
 create table order_item(
 	id bigserial primary key,
@@ -511,7 +513,7 @@ alter table order_item add column embedding vector(3);</code></pre>
 <h3 id="_insert_vector_2"><a class="anchor" href="#_insert_vector_2"></a>2.2. Insert Vector</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">insert into order_item(embedding) values ('[1,2,3]'),('[4,5,6]');</code></pre>
+<pre class="highlight"><code class="language-sql" data-lang="sql">insert into order_item(embedding) values ('[1,2,3]'),('[4,5,6]');</code></pre>
 </div>
 </div>
 </div>
@@ -519,7 +521,7 @@ alter table order_item add column embedding vector(3);</code></pre>
 <h3 id="_load_vector"><a class="anchor" href="#_load_vector"></a>2.3. Load Vector</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">/* 或load vector in bulk using copy(example) */
+<pre class="highlight"><code class="language-sql" data-lang="sql">/* 或load vector in bulk using copy(example) */
 copy order_item(embedding) from stdin with(format binary);</code></pre>
 </div>
 </div>
@@ -528,7 +530,7 @@ copy order_item(embedding) from stdin with(format binary);</code></pre>
 <h3 id="_upsert_vector"><a class="anchor" href="#_upsert_vector"></a>2.4. Upsert Vector</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">insert into order_item(id, embedding)
+<pre class="highlight"><code class="language-sql" data-lang="sql">insert into order_item(id, embedding)
 	 values (1, '[1,2,3]'),(2, '[4,5,6]') on conflict
 	 (id) do update set embedding = excluded.embedding;</code></pre>
 </div>
@@ -538,7 +540,7 @@ copy order_item(embedding) from stdin with(format binary);</code></pre>
 <h3 id="_update_vector"><a class="anchor" href="#_update_vector"></a>2.5. Update Vector</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">update order_item set embedding = '[1,2,3]' where id = 1;</code></pre>
+<pre class="highlight"><code class="language-sql" data-lang="sql">update order_item set embedding = '[1,2,3]' where id = 1;</code></pre>
 </div>
 </div>
 </div>
@@ -546,7 +548,7 @@ copy order_item(embedding) from stdin with(format binary);</code></pre>
 <h3 id="_delete_vector"><a class="anchor" href="#_delete_vector"></a>2.6. Delete Vector</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">delete from order_item where id = 1;</code></pre>
+<pre class="highlight"><code class="language-sql" data-lang="sql">delete from order_item where id = 1;</code></pre>
 </div>
 </div>
 </div>
@@ -559,18 +561,15 @@ copy order_item(embedding) from stdin with(format binary);</code></pre>
 <h3 id="_get_distance"><a class="anchor" href="#_get_distance"></a>3.1. Get Distance</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">select embedding &lt;-&gt; '[3,1,2]' as distance from order_item;</code></pre>
+<pre class="highlight"><code class="language-sql" data-lang="sql">select embedding &lt;-&gt; '[3,1,2]' as distance from order_item;</code></pre>
 </div>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_inner_product"><a class="anchor" href="#_inner_product"></a>3.2. Inner Product</h3>
-<div class="paragraph">
-<p>For</p>
-</div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">/* inner product multiply by -1， &lt;#&gt; 返回negative inner product) */
+<pre class="highlight"><code class="language-sql" data-lang="sql">/* inner product multiply by -1， &lt;#&gt; 返回negative inner product) */
 
 select (embedding &lt;#&gt; '[3,1,2]') * -1 as inner_product from order_item;</code></pre>
 </div>
@@ -580,7 +579,7 @@ select (embedding &lt;#&gt; '[3,1,2]') * -1 as inner_product from order_item;</c
 <h3 id="_cosine_similarity"><a class="anchor" href="#_cosine_similarity"></a>3.3. Cosine Similarity</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">/* cosine similarity，use 1 - cosine distance */
+<pre class="highlight"><code class="language-sql" data-lang="sql">/* cosine similarity，use 1 - cosine distance */
 
 select 1 - (embedding &lt;=&gt; '[3,1,2]') as cosine_similarity from order_item;</code></pre>
 </div>
@@ -595,7 +594,7 @@ select 1 - (embedding &lt;=&gt; '[3,1,2]') as cosine_similarity from order_item;
 <h3 id="_average_vector"><a class="anchor" href="#_average_vector"></a>4.1. Average Vector</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">select avg(embedding) from order_item;</code></pre>
+<pre class="highlight"><code class="language-sql" data-lang="sql">select avg(embedding) from order_item;</code></pre>
 </div>
 </div>
 </div>
@@ -603,7 +602,7 @@ select 1 - (embedding &lt;=&gt; '[3,1,2]') as cosine_similarity from order_item;
 <h3 id="_average_vector_group"><a class="anchor" href="#_average_vector_group"></a>4.2. Average Vector Group</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">select category_id, avg(embedding) from order_item group by category_id;</code></pre>
+<pre class="highlight"><code class="language-sql" data-lang="sql">select category_id, avg(embedding) from order_item group by category_id;</code></pre>
 </div>
 </div>
 </div>
@@ -652,7 +651,7 @@ select 1 - (embedding &lt;=&gt; '[3,1,2]') as cosine_similarity from order_item;
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">/* L2 distance */
+<pre class="highlight"><code class="language-sql" data-lang="sql">/* L2 distance */
 create index on order_item using hnsw (embedding vector_l2_ops);
 
 /* inner product */
@@ -689,7 +688,7 @@ dynamic candidate list size for constructing graph</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">create index on order_item using hnsw (embedding vector_l2_ops)
+<pre class="highlight"><code class="language-sql" data-lang="sql">create index on order_item using hnsw (embedding vector_l2_ops)
 	with (m = 16, ef_construction = 64);</code></pre>
 </div>
 </div>
@@ -714,7 +713,7 @@ higher value provide better recall at cost of speed</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">/* 指定要搜索的动态候选列表的大小 */
+<pre class="highlight"><code class="language-sql" data-lang="sql">/* 指定要搜索的动态候选列表的大小 */
 set hnsw.ef_search = 100;
 
 begin;
@@ -735,7 +734,7 @@ commit;</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">set maintenance_work_mem = '8GB';</code></pre>
+<pre class="highlight"><code class="language-sql" data-lang="sql">set maintenance_work_mem = '8GB';</code></pre>
 </div>
 </div>
 <div class="ulist">
@@ -787,7 +786,7 @@ commit;</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">-- plus leader
+<pre class="highlight"><code class="language-sql" data-lang="sql">-- plus leader
 set max_parallel_maintenance_workers = 7;</code></pre>
 </div>
 </div>
@@ -803,7 +802,7 @@ set max_parallel_maintenance_workers = 7;</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">select phase,round(100.0 * blocks_done / nullif(blocks_total,0),1)
+<pre class="highlight"><code class="language-sql" data-lang="sql">select phase,round(100.0 * blocks_done / nullif(blocks_total,0),1)
 	as "%" from pg_stat_progress_create_index;</code></pre>
 </div>
 </div>
@@ -876,7 +875,7 @@ create index after table has some data</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">-- L2 distance
+<pre class="highlight"><code class="language-sql" data-lang="sql">-- L2 distance
 create index on order_item using
 	ivfflat (embedding vector_l2_ops) with (lists = 100);
 
@@ -900,7 +899,7 @@ create index on order_item using
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">set ivfflat.probes = 10;</code></pre>
+<pre class="highlight"><code class="language-sql" data-lang="sql">set ivfflat.probes = 10;</code></pre>
 </div>
 </div>
 <div class="ulist">
@@ -919,7 +918,7 @@ create index on order_item using
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">begin;
+<pre class="highlight"><code class="language-sql" data-lang="sql">begin;
 set local ivfflat.probes = 10;
 select ……
 commit;</code></pre>
@@ -940,7 +939,7 @@ commit;</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">-- plus leader
+<pre class="highlight"><code class="language-sql" data-lang="sql">-- plus leader
 set max_parallel_maintenance_workers = 7;</code></pre>
 </div>
 </div>
@@ -975,7 +974,7 @@ set max_parallel_maintenance_workers = 7;</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">select phase,
+<pre class="highlight"><code class="language-sql" data-lang="sql">select phase,
 	round(100.0 * tuples_done / nullif(tuples_total,0),1) as "%"
 	from pg_stat_progress_create_index;</code></pre>
 </div>
@@ -990,7 +989,7 @@ set max_parallel_maintenance_workers = 7;</code></pre>
 <h3 id="_where_nearest_neighbor"><a class="anchor" href="#_where_nearest_neighbor"></a>8.1. Where Nearest Neighbor</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">-- 用where子句为最近邻居nearest neighbor查询建立索引：
+<pre class="highlight"><code class="language-sql" data-lang="sql">-- 用where子句为最近邻居nearest neighbor查询建立索引：
 
 select * from order_item where category_id = 123
 	order by embedding &lt;-&gt; '[3,1,2]' limit 5;</code></pre>
@@ -1001,7 +1000,7 @@ select * from order_item where category_id = 123
 <h3 id="_where_exact_search"><a class="anchor" href="#_where_exact_search"></a>8.2. Where Exact Search</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">-- 在一或多个where列创建索引以精确搜索exact search：
+<pre class="highlight"><code class="language-sql" data-lang="sql">-- 在一或多个where列创建索引以精确搜索exact search：
 
 create index on order_item(category_id);</code></pre>
 </div>
@@ -1011,7 +1010,7 @@ create index on order_item(category_id);</code></pre>
 <h3 id="_partial_index"><a class="anchor" href="#_partial_index"></a>8.3. Partial Index</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">-- 或向量列上的部分索引partial index以近似approximate搜索：
+<pre class="highlight"><code class="language-sql" data-lang="sql">-- 或向量列上的部分索引partial index以近似approximate搜索：
 
 create index on order_item using
 	hnsw(embedding vector_l2_ops) where (category_id = 123);</code></pre>
@@ -1022,7 +1021,7 @@ create index on order_item using
 <h3 id="_partitioning"><a class="anchor" href="#_partitioning"></a>8.4. Partitioning</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">-- 用分区partitioning对where列的许多不同值进行近似approximate搜索：
+<pre class="highlight"><code class="language-sql" data-lang="sql">-- 用分区partitioning对where列的许多不同值进行近似approximate搜索：
 
 create table order_item(
 	embedding vector(3),
@@ -1051,7 +1050,7 @@ create table order_item(
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">select id,content from order_item,plainto_tsquery('hello search') query
+<pre class="highlight"><code class="language-sql" data-lang="sql">select id,content from order_item,plainto_tsquery('hello search') query
     where textsearch @@ query order by ts_rank_cd(textsearch,query) desc limit 5;</code></pre>
 </div>
 </div>
@@ -1083,7 +1082,7 @@ create table order_item(
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">copy order_item(embedding) from stdin with(format binary);</code></pre>
+<pre class="highlight"><code class="language-sql" data-lang="sql">copy order_item(embedding) from stdin with(format binary);</code></pre>
 </div>
 </div>
 </div>
@@ -1104,7 +1103,7 @@ create index concurrently to avoid blocking write；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">create index concurrently ……</code></pre>
+<pre class="highlight"><code class="language-sql" data-lang="sql">create index concurrently ……</code></pre>
 </div>
 </div>
 </div>
@@ -1119,7 +1118,7 @@ create index concurrently to avoid blocking write；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">﻿explain analyze select * from order_item
+<pre class="highlight"><code class="language-sql" data-lang="sql">﻿explain analyze select * from order_item
 	order by embedding &lt;-&gt; '[3,1,2]' limit 5;</code></pre>
 </div>
 </div>
@@ -1135,7 +1134,7 @@ create index concurrently to avoid blocking write；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">set max_parallel_workers_per_gather = 4;</code></pre>
+<pre class="highlight"><code class="language-bash" data-lang="bash">set max_parallel_workers_per_gather = 4;</code></pre>
 </div>
 </div>
 <div class="ulist">
@@ -1147,7 +1146,7 @@ create index concurrently to avoid blocking write；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">select * from order_item order by embedding &lt;#&gt; '[3,1,2]' limit 5;</code></pre>
+<pre class="highlight"><code class="language-sql" data-lang="sql">select * from order_item order by embedding &lt;#&gt; '[3,1,2]' limit 5;</code></pre>
 </div>
 </div>
 </div>
@@ -1163,7 +1162,7 @@ number，以召回为代价 at the expense of recall)；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">create index on order_item using ivfflat (embedding vector_l2_ops) with (lists = 1000);</code></pre>
+<pre class="highlight"><code class="language-sql" data-lang="sql">create index on order_item using ivfflat (embedding vector_l2_ops) with (lists = 1000);</code></pre>
 </div>
 </div>
 </div>
@@ -1179,7 +1178,7 @@ number，以召回为代价 at the expense of recall)；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">reindex index concurrently index_name;
+<pre class="highlight"><code class="language-sql" data-lang="sql">reindex index concurrently index_name;
 
 vacuum table_name;</code></pre>
 </div>
@@ -1201,7 +1200,7 @@ vacuum table_name;</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">create extension pg_stat_statements;
+<pre class="highlight"><code class="language-sql" data-lang="sql">create extension pg_stat_statements;
 
 -- 获取最耗时TIME-CONSUMING的查询：
 select query,calls,
@@ -1223,7 +1222,7 @@ select query,calls,
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">begin;
+<pre class="highlight"><code class="language-sql" data-lang="sql">begin;
 -- use exact search
 set local enable_indexscan = off;
 select ……
@@ -1350,7 +1349,7 @@ commit;</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">create table embeddings(
+<pre class="highlight"><code class="language-sql" data-lang="sql">create table embeddings(
 	model_id bigint,
 	item_id bigint,
 	embedding vector,
@@ -1367,7 +1366,7 @@ commit;</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">create index on embeddings using
+<pre class="highlight"><code class="language-sql" data-lang="sql">create index on embeddings using
 	hnsw ((embedding::vector(3)) vector_l2_ops)
 	where (model_id = 123);
 
@@ -1402,7 +1401,7 @@ select * from embeddings where model_id = 123
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">create table order_item(
+<pre class="highlight"><code class="language-sql" data-lang="sql">create table order_item(
 	id bigserial primary key,
 	embedding double precision[]
 );
@@ -1421,7 +1420,7 @@ insert into order_item (embedding) values('{1,2,3}'),('{4,5,6}');</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">alter table order_item add
+<pre class="highlight"><code class="language-sql" data-lang="sql">alter table order_item add
 	check(vector_dims(embedding::vector) = 3);</code></pre>
 </div>
 </div>
@@ -1435,7 +1434,7 @@ expression indexing to index(at lower precision)；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">create index on order_item using
+<pre class="highlight"><code class="language-sql" data-lang="sql">create index on order_item using
 	hnsw ((embedding::vector(3)) vector_l2_ops);
 
 select * from order_item order by embedding::vector(3) &lt;-&gt; '[3,1,2]' limit 5;</code></pre>
@@ -1467,7 +1466,7 @@ select * from order_item order by embedding::vector(3) &lt;-&gt; '[3,1,2]' limit
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">select pg_size_pretty(pg_relation_size('index_name'));</code></pre>
+<pre class="highlight"><code class="language-sql" data-lang="sql">select pg_size_pretty(pg_relation_size('index_name'));</code></pre>
 </div>
 </div>
 </td>
@@ -1506,7 +1505,7 @@ distance operator的结果而非表达式expression；</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">-- index
+<pre class="highlight"><code class="language-sql" data-lang="sql">-- index
 order by embedding &lt;=&gt; '[3,1,2]' limit 5;
 
 -- no index
@@ -1551,7 +1550,7 @@ commit;
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">begin;
+<pre class="highlight"><code class="language-sql" data-lang="sql">begin;
 set local min_parallel_table_scan_size = 1;
 set local parallel_setup_cost = 1;
 select ……
@@ -1620,7 +1619,7 @@ alter table order_item alter column embedding set storage plain;</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">drop index index_name;</code></pre>
+<pre class="highlight"><code class="language-sql" data-lang="sql">drop index index_name;</code></pre>
 </div>
 </div>
 </div>
@@ -1755,7 +1754,7 @@ alter table order_item alter column embedding set storage plain;</code></pre>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">-- 在每个数据库执行以下操作，以执行upgrade：
+<pre class="highlight"><code class="language-sql" data-lang="sql">-- 在每个数据库执行以下操作，以执行upgrade：
 alter extension vector update;
 
 -- 查询当前数据库vector版本
@@ -1807,5 +1806,8 @@ select extversion from pg_extension where extname = 'vector';</code></pre>
 <script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
 <script async src="../../../../search-index.js"></script>
 
-<script>hljs.highlightAll();</script>  	</body>
+<script>hljs.highlightAll();</script>
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
 </html>

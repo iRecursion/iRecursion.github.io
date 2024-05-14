@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
     <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   	</head>
   	
@@ -71,16 +73,10 @@
     <a class="nav-link" href="../Antora/AntoraConfigurer.html">Antora Configurer</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Antora/AntoraHighlight.html">Antora Highlight</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">DataStructure</span>
-<ul class="nav-list">
-  <li class="nav-item is-current-page" data-depth="3">
-    <a class="nav-link" href="DataStructureOutline.html">Data Structure Outline</a>
   </li>
 </ul>
   </li>
@@ -116,22 +112,28 @@
     <span class="nav-text">Language</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Language/GraalWin.html">Graal Win</a>
+    <a class="nav-link" href="GraalWin.html">Graal Win</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Language/CondaJupyter.html">Conda Jupyter</a>
+    <a class="nav-link" href="CondaJupyter.html">Conda Jupyter</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="GoInstallation.html">Go Installation</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Language/LuaInstallation.html">Lua Installation</a>
+    <a class="nav-link" href="LuaInstallation.html">Lua Installation</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Language/RustInstallation.html">Rust Installation</a>
+    <a class="nav-link" href="RustInstallation.html">Rust Installation</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Language/RustConfiguration.html">Rust Configuration</a>
+    <a class="nav-link" href="RustConfiguration.html">Rust Configuration</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Language/GroovyInstallation.html">Groovy Installation</a>
+    <a class="nav-link" href="GroovyInstallation.html">Groovy Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="JavaFxInstallation.html">JavaFx Installation</a>
   </li>
 </ul>
   </li>
@@ -300,8 +302,8 @@
   <ul>
     <li><a href="../../index.html">AsciiDoc Makeshift</a></li>
     <li>Environment</li>
-    <li>DataStructure</li>
-    <li><a href="DataStructureOutline.html">Data Structure Outline</a></li>
+    <li>Language</li>
+    <li><a href="GoInstallation.html">Go Installation</a></li>
   </ul>
 </nav>
 		</div>
@@ -316,123 +318,195 @@
 <div id="toc" class="toc">
 <div id="toctitle"></div>
 <ul class="sectlevel1">
-<li><a href="#_intro">1. Intro</a></li>
+<li><a href="#_setup_go_lang">1. Setup Go Lang</a></li>
+<li><a href="#_environment_variable">2. Environment Variable</a></li>
+<li><a href="#_liteide">3. LiteIde</a></li>
+<li><a href="#_entry_case">4. Entry Case</a></li>
+<li><a href="#_go_env">5. go env</a></li>
 </ul>
 </div>
 <div class="sect1">
-<h2 id="_intro"><a class="anchor" href="#_intro"></a>1. Intro</h2>
+<h2 id="_setup_go_lang"><a class="anchor" href="#_setup_go_lang"></a>1. Setup Go Lang</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p>Computational Time Complexity</p>
+<p>Download Go Win V1.22.3 Amd64</p>
 </li>
 <li>
-<p>Space Complexity</p>
-</li>
-<li>
-<p>Arrays</p>
-</li>
-<li>
-<p>Lists</p>
-</li>
-<li>
-<p>ArrayList</p>
-</li>
-<li>
-<p>Iteration</p>
-</li>
-<li>
-<p>CopyOnWriteArrayList</p>
-</li>
-<li>
-<p>LinkedList</p>
-</li>
-<li>
-<p>Vector</p>
-</li>
-<li>
-<p>Stack</p>
-</li>
-<li>
-<p>Sorting Lists</p>
-</li>
-<li>
-<p>Sets</p>
-</li>
-<li>
-<p>TreeSet</p>
-</li>
-<li>
-<p>ConcurrentSkipListSet</p>
-</li>
-<li>
-<p>CopyOnWriteArraySet</p>
-</li>
-<li>
-<p>Hashing</p>
-</li>
-<li>
-<p>HashSet</p>
-</li>
-<li>
-<p>ConcurrentHashMap.newKeySet()</p>
-</li>
-<li>
-<p>Maps</p>
-</li>
-<li>
-<p>HashMap</p>
-</li>
-<li>
-<p>ConcurrentHashMap</p>
-</li>
-<li>
-<p>TreeMap</p>
-</li>
-<li>
-<p>ConcurrentSkipListMap</p>
-</li>
-<li>
-<p>Hashtable</p>
-</li>
-<li>
-<p>LinkedHashMap and LinkedHashSet</p>
-</li>
-<li>
-<p>Highly Specialize Collection：EnumSet，EnumMap，IdentityHashMap，Properties，WeakHashMap</p>
-</li>
-<li>
-<p>Queues and Deques</p>
-</li>
-<li>
-<p>ConcurrentLinkedQueue and ConcurrentLinkedDeque</p>
-</li>
-<li>
-<p>ArrayDeque</p>
-</li>
-<li>
-<p>BlockingQueues</p>
-</li>
-<li>
-<p>LinkedBlockingQueue and LinkedBlockingDeque</p>
-</li>
-<li>
-<p>ArrayBlockingQueue</p>
-</li>
-<li>
-<p>Highly specialized queues: DelayQueue, SynchronousQueue, LinkedTransferQueue</p>
-</li>
-<li>
-<p>PriorityQueue and PriorityBlockingQueue</p>
-</li>
-<li>
-<p>java.util.Collections</p>
-</li>
-<li>
-<p>java.util.Arrays</p>
+<p>Unzip to D:/Install/FreeDev/Go1223WinAmd64</p>
 </li>
 </ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">go version
+
+go version go1.22.3 windows/amd64</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_environment_variable"><a class="anchor" href="#_environment_variable"></a>2. Environment Variable</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<caption class="title">User Envrionment</caption>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-right valign-top">Entry</th>
+<th class="tableblock halign-left valign-top">Memo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">GOROOT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">D:/Install/FreeDev/Go1223WinAmd64</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">GOPATH</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">D:/Install/Dev/GoSpasce</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">PATH</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">%GOROOT%\bin</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">GOBIN</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">%GOROOT%\bin</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_liteide"><a class="anchor" href="#_liteide"></a>3. LiteIde</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>工具 &#8658; 编辑当前环境 &#8658; System：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties">GOROOT=D:/Install/FreeDev/Go1223WinAmd64
+GOBIN=D:/Install/FreeDev/Go1223WinAmd64/bin
+GOARCH=amd64
+GOOS=windows
+CGO_ENABLED=1
+
+PATH=%GOBIN%;%GOROOT%\bin;%PATH%</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>不要设置GOCACHE和GOENV</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_entry_case"><a class="anchor" href="#_entry_case"></a>4. Entry Case</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>新建 &#8658; Go1 Command Project &#8658; 点击BR来构建和运行代码</p>
+</li>
+<li>
+<p>名称：com/elf/product/ProductPrice</p>
+</li>
+<li>
+<p>位置：D:\Install\Dev\GoSpasce\src\com\elf\product\ProductPrice；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-go" data-lang="go">package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	fmt.Println("Hello World!")
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">D:/Install/FreeDev/Go1223WinAmd64/bin/go.exe build
+	[D:/Install/Dev/GoSpasce/src/com/elf/product/ProductPrice]
+
+成功: 进程退出代码 0.
+
+D:/Install/Dev/GoSpasce/src/com/elf/product/ProductPrice/ProductPrice.exe
+	[D:/Install/Dev/GoSpasce/src/com/elf/product/ProductPrice]
+
+Hello World!
+
+成功: 进程退出代码 0.</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_go_env"><a class="anchor" href="#_go_env"></a>5. go env</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">$ go env
+
+set GO111MODULE=auto
+set GOARCH=amd64
+set GOBIN=D:\Install\FreeDev\Go1223WinAmd64\bin
+set GOCACHE=C:\Users\Administrator\AppData\Local\go-build
+set GOENV=C:\Users\Administrator\AppData\Roaming\go\env
+set GOEXE=.exe
+set GOEXPERIMENT=
+set GOFLAGS=
+set GOHOSTARCH=amd64
+set GOHOSTOS=windows
+set GOINSECURE=
+set GOMODCACHE=D:\Install\Dev\GoSpasce\pkg\mod
+set GONOPROXY=
+set GONOSUMDB=
+set GOOS=windows
+set GOPATH=D:/Install/Dev/GoSpasce
+set GOPRIVATE=
+set GOPROXY=https://proxy.golang.org,direct
+set GOROOT=D:\Install\FreeDev\Go1223WinAmd64
+set GOSUMDB=sum.golang.org
+set GOTMPDIR=
+set GOTOOLCHAIN=auto
+set GOTOOLDIR=D:\Install\FreeDev\Go1223WinAmd64\pkg\tool\windows_amd64
+set GOVCS=
+set GOVERSION=go1.22.3
+set GCCGO=gccgo
+set GOAMD64=v1
+set AR=ar
+set CC=gcc
+set CXX=g++
+set CGO_ENABLED=0
+set GOMOD=
+set GOWORK=
+set CGO_CFLAGS=-O2 -g
+set CGO_CPPFLAGS=
+set CGO_CXXFLAGS=-O2 -g
+set CGO_FFLAGS=-O2 -g
+set CGO_LDFLAGS=-O2 -g
+set PKG_CONFIG=pkg-config
+set GOGCCFLAGS=-m64 -fno-caret-diagnostics -Qunused-arguments -Wl,--no-gc-sections -fmessage-length=0 -ffile-prefix-map=C:\Users\ADMINI~1\AppData\Local\Temp\go-build455096475=/tmp/go-build -gno-record-gcc-switches</code></pre>
+</div>
 </div>
 </div>
 </div>
@@ -479,5 +553,8 @@
 <script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
 <script async src="../../../../search-index.js"></script>
 
-<script>hljs.highlightAll();</script>  	</body>
+<script>hljs.highlightAll();</script>
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
 </html>

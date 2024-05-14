@@ -39,6 +39,7 @@
   hljs.registerLanguage('yaml', require('highlight.js/lib/languages/yaml'))
   hljs.registerLanguage('properties', require('highlight.js/lib/languages/properties'))
   
+  hljs.registerLanguage('go', require('highlight.js/lib/languages/go'))
   hljs.registerLanguage('sql', require('highlight.js/lib/languages/sql'))
   hljs.registerLanguage('css', require('highlight.js/lib/languages/css'))
   hljs.registerLanguage('java', require('highlight.js/lib/languages/java'))

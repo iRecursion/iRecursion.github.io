@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
 
 <link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
     <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   	</head>
   	
@@ -71,16 +73,10 @@
     <a class="nav-link" href="../Antora/AntoraConfigurer.html">Antora Configurer</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
+    <a class="nav-link" href="../Antora/AntoraHighlight.html">Antora Highlight</a>
   </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">DataStructure</span>
-<ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../DataStructure/DataStructureOutline.html">Data Structure Outline</a>
+    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
   </li>
 </ul>
   </li>
@@ -122,6 +118,9 @@
     <a class="nav-link" href="../Language/CondaJupyter.html">Conda Jupyter</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/GoInstallation.html">Go Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Language/LuaInstallation.html">Lua Installation</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -132,6 +131,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../Language/GroovyInstallation.html">Groovy Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Language/JavaFxInstallation.html">JavaFx Installation</a>
   </li>
 </ul>
   </li>
@@ -370,7 +372,7 @@
 </table>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">apt install net-tools -y
+<pre class="highlight"><code class="language-bash" data-lang="bash">apt install net-tools -y
 
 vim /etc/netplan/00-installer-config.yaml
 
@@ -379,7 +381,7 @@ netplan apply</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">network:
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">network:
   ethernets:
     eth0:
       addresses:
@@ -416,7 +418,7 @@ netplan apply</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">sudo -s
+<pre class="highlight"><code class="language-bash" data-lang="bash">sudo -s
 
 sudo passwd root
 
@@ -432,7 +434,7 @@ sudo reboot now</code></pre>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">vim /etc/ssh/sshd_config
+<pre class="highlight"><code class="language-bash" data-lang="bash">vim /etc/ssh/sshd_config
 
 PermitRootLogin yes
 
@@ -480,7 +482,7 @@ systemctl restart sshd</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">deb http://mirrors.aliyun.com/ubuntu/ jammy main restricted universe multiverse
+<pre class="highlight"><code class="language-bash" data-lang="bash">deb http://mirrors.aliyun.com/ubuntu/ jammy main restricted universe multiverse
 deb-src http://mirrors.aliyun.com/ubuntu/ jammy main restricted universe multiverse
 deb http://mirrors.aliyun.com/ubuntu/ jammy-security main restricted universe multiverse
 deb-src http://mirrors.aliyun.com/ubuntu/ jammy-security main restricted universe multiverse
@@ -538,7 +540,7 @@ deb http://cn.archive.ubuntu.com/ubuntu jammy-security multiverse</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">Types: deb deb-src
+<pre class="highlight"><code class="language-bash" data-lang="bash">Types: deb deb-src
 URIs: https://mirrors.aliyun.com/ubuntu/
 Suites: noble noble-updates noble-backports noble-security noble-proposed
 Components: main restricted universe multiverse
@@ -751,7 +753,7 @@ Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># Ubuntu 24.04
+<pre class="highlight"><code class="language-bash" data-lang="bash"># Ubuntu 24.04
 timedatectl set-timezone Asia/Shanghai &amp;&amp; \
 	timedatectl set-local-rtc 1 &amp;&amp; \
 	systemctl restart rsyslog &amp;&amp; timedatectl status
@@ -831,7 +833,7 @@ LANG是定义系统主语系的变量,LC_ALL是定义整体语系的变量,<br>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">$ vim /etc/default/locale
+<pre class="highlight"><code class="language-bash" data-lang="bash">$ vim /etc/default/locale
 
 LANG=zh_CN.UTF-8
 LANGUAGE=zh_CN:zh
@@ -881,7 +883,7 @@ ENV LC_ALL zh_CN.UTF-8</code></pre>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># 系统信息
+<pre class="highlight"><code class="language-bash" data-lang="bash"># 系统信息
 cat /etc/issue &amp;&amp; uname -omr
 
 # 系统更新
@@ -936,5 +938,8 @@ free -hm &amp;&amp; df / -h | tail -1 &amp;&amp; grep -cE 'cpu[0-9]+' /proc/stat
 <script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
 <script async src="../../../../search-index.js"></script>
 
-<script>hljs.highlightAll();</script>  	</body>
+<script>hljs.highlightAll();</script>
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
 </html>
