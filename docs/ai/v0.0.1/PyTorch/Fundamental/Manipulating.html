@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> :: AsciiDoc</title>
+    <meta name="generator" content="Antora 3.1.7">
+
+<link rel="stylesheet" href="../../../../_/css/site.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/asciidoc.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
+    <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+  			
+	            <div id="main" style="place-content: center;">
+	                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+		            </div>
+		        </section>
+    	</div>
+    	
+        <div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container" data-component="ai" data-version="v0.0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">AsciiDoc AI</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">PyTorch</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Fundamental</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="PytorchInstallation.html">Pytorch Setup</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="TensorIntro.html">Tensor Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="InfoRetrieving.html">Info Retrieving</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="Manipulating.html">Manipulating</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ShapeError.html">Shape Error</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Indexing.html">Indexing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="TensorNumPy.html">Tensor NumPy</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Reproducibility.html">Reproducibility</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="TensorOnGpu.html">Tensor On Gpu</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Exercise.html">Exercise</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ExtraCurriculum.html">Extra Curriculum</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Workflow</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Workflow/WorkflowIntro.html">Workflow Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Workflow/DataPreparingLoading.html">Data Preparing Loading</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Workflow/BuildModel.html">Build Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Workflow/TrainModel.html">Train Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Workflow/PredictionInference.html">Prediction Inference</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Workflow/SavingLoadingModel.html">Saving Loading Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Workflow/PuttingTogether.html">Putting Together</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Workflow/Exercise.html">Exercise</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Workflow/ExtraCurriculum.html">Extra Curriculum</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Classification</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Classification/NNClassificationIntro.html">NN Classification Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Classification/NNClassificationArchitecture.html">NN Classification Architecture</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Classification/BuildingModel.html">Building Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Classification/TrainModel.html">Train Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Classification/PredictionEvaluating.html">Prediction Evaluating</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Classification/ImprovingModel.html">Improving Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Classification/NonLinearity.html">Non Linearity</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Classification/ReplicatingNonLinearityAF.html">Replicating Non Linearity AF</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Classification/PuttingTogetherMultiClass.html">Putting Together MultiClass</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Classification/EvaluationMetric.html">Evaluation Metric</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Classification/Exercise.html">Exercise</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">ComputerVision</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ComputerVision/ComputerVisionIntro.html">ComputerVisionIntro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ComputerVision/GettingDataset.html">Getting Dataset</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ComputerVision/PrepareDataLoader.html">Prepare DataLoader</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ComputerVision/BuildBaselineModel.html">Build Baseline Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ComputerVision/PredictionWithResult.html">Prediction With Result</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ComputerVision/SetupDeviceAgnosticCode.html">Setup Device Agnostic Code</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ComputerVision/BuildingNonLinearityModel.html">Building Non Linearity Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ComputerVision/BuildCnn.html">Build Cnn</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ComputerVision/CompareResultTrainingTime.html">Result and Training Time</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ComputerVision/EvaluateRandomPrediction.html">Evaluate Random Prediction</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ComputerVision/ConfusionMatrix.html">Confusion Matrix</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ComputerVision/SaveAndLoad.html">Save And Load</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ComputerVision/Exercise.html">Exercise</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ComputerVision/ExtraCurriculum.html">Extra Curriculum</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Solitary</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Solitary/PyTorchCustomDataset.html">PyTorch Custom Dataset</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Solitary/PyTorchModular.html">PyTorch Modular</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Solitary/PyTorchTransferLearning.html">PyTorch Transfer Learning</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Solitary/PyTorchExperimentTracking.html">PyTorch Experiment Tracking</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Solitary/PyTorchPaperReplicating.html">PyTorch Paper Replicating</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Solitary/PyTorchModelDeployment.html">PyTorch Model Deployment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Solitary/PyTorchV2X.html">PyTorch V2X</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Solitary/PyTorchExtraResource.html">PyTorch Extra Resource</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Solitary/PyTorchCheatSheet.html">PyTorch Cheat Sheet</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Solitary/PyTorchCommonError.html">PyTorch Common Error</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Spring AI</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Solitary</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/AIConcept.html">AI Concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/SpringAIDependency.html">Spring AI Dependency</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/SpringAIProperty.html">Spring AI Property</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/GenericModel.html">Generic Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/Prompt.html">Prompt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/OutputParser.html">Output Parser</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/EtlPipeline.html">Etl Pipeline</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/ImageGeneration.html">Image Generation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/FunctionCalling.html">Function Calling</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/EvaluationTesting.html">Evaluation Testing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/TestContainer.html">Test Container</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Chat Completion</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/ChatCompletion/ChatCompletion.html">Chat Completion</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/ChatCompletion/Ollama.html">Ollama</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/ChatCompletion/HuggingFace.html">Hugging Face</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Embedding</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/Embedding.html">Embedding</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/Ollama.html">Ollama</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/PostgresML.html">Postgres ML</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/TransformerOnnx.html">Transformer Onnx</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Vector Store</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/VectorExplanation.html">Vector Explanation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/VectorStore.html">Vector Store</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Neo4j.html">Neo4j</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Redis.html">Redis</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Chroma.html">Chroma</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Milvus.html">Milvus</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Qdrant.html">Qdrant</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Elastic.html">Elastic</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Weaviate.html">Weaviate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Pgv.html">Postgres Vector</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Case</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Case/SpringAICase.html">Spring AI Case</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Open AI</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Solitary</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Solitary/OpenAIIntro.html">OpenAI Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Solitary/OpenAIModel.html">OpenAI Model</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Capability</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Capability/TextGeneration.html">Text Generation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Capability/FunctionCalling.html">Function Calling</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Capability/Embedding.html">Embedding</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Capability/FineTuning.html">Fine Tuning</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Capability/ImageGeneration.html">Image Generation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Capability/Vision.html">Vision</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Capability/TextToSpeech.html">Text To Speech</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Capability/SpeechToText.html">Speech To Text</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Capability/Moderation.html">Moderation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Assistant TODO</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Assistant/AssistantOverview.html">Assistant Overview</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Assistant/AssistantWork.html">Assistant Work</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Assistant/FileSearch.html">File Search</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Assistant/CodeInterpreter.html">Code Interpreter</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Assistant/FunctionCalling.html">Function Calling</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Assistant/MigrationGuide.html">Migration Guide</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Assistant/NewFeature.html">New Feature</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Guide TODO</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Guide/PromptEngineering.html">Prompt Engineering</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Guide/ProductionBestPractice.html">Production Best Practice</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Guide/SafetyBestPractice.html">Safety Best Practice</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Guide/LatencyOptimization.html">Latency Optimization</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Guide/RateLimit.html">Rate Limit</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Guide/Batch.html">Batch</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Guide/ErrorCode.html">Error Code</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Guide/Library.html">Library</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Guide/Deprecation.html">Deprecation</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">LLM</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Fundamental</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../LLM/Fundamental/AILearningPath.html">AI Learning Path</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../LLM/Fundamental/PrincipalSeniorAIEngineer.html">Principal Senior AI Engineer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../LLM/Fundamental/AIIntro.html">AI Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../LLM/Fundamental/DLBasicConcept.html">DL Basic Concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../LLM/Fundamental/ModelTrainingConcept.html">Model Training Concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../LLM/Fundamental/LlmIntro.html">LLM Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../LLM/Fundamental/AIFrameworkLibrary.html">AI Framework Library</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">FullStack</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../LLM/FullStack/Algebra.html">Algebra</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../LLM/FullStack/PromptEngineering.html">Prompt Engineering</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../LLM/FullStack/PromptEngineeringCase.html">Prompt Engineering Case</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">AsciiDoc AI</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">AsciiDoc AI</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../../kafka/v0.0.1/index.html">AsciiDoc Kafka</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../kafka/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../../ms/v0.0.1/index.html">AsciiDoc Makeshift</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../ms/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+	<div class="toolbar" role="navigation">
+	<button class="nav-toggle"></button>
+	
+		<a href="../../index.html" 
+			class="home-link">
+		</a>
+
+	<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">AsciiDoc AI</a></li>
+    <li>PyTorch</li>
+    <li>Fundamental</li>
+    <li><a href="Manipulating.html">Manipulating</a></li>
+  </ul>
+</nav>
+		</div>
+	
+	<div class="content">
+			<aside class="toc sidebar" 
+	data-title="Contents" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+			<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_manipulating_tensor">1. Manipulating Tensor</a>
+<ul class="sectlevel2">
+<li><a href="#_basic_operation">1.1. Basic Operation</a></li>
+<li><a href="#_element_wise">1.2. Element Wise</a></li>
+<li><a href="#_matrix_multiplication">1.3. Matrix Multiplication</a></li>
+<li><a href="#_element_wise_vs_matrix">1.4. Element Wise VS Matrix</a></li>
+</ul>
+</li>
+<li><a href="#_matrix_multiplication_2">2. Matrix Multiplication</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_manipulating_tensor"><a class="anchor" href="#_manipulating_tensor"></a>1. Manipulating Tensor</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>数据：image，text，video，audio，protein(蛋白质) structure等；</p>
+</li>
+<li>
+<p>在DL中，数据被表示为张量，模型研究张量，对张量操作(可能百万次以上)，<br>
+以创建输入数据中模式的表示(pattern representation)；</p>
+</li>
+<li>
+<p>张量操作是神经网络的基本组成部分，如，Addition，Substraction，<br>
+Multiplication(Element Wise)，Division，Matrix Multiplication；</p>
+</li>
+<li>
+<p>以正确的方式堆叠Stacking这些构建块，可创建最复杂的神经网络；</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_basic_operation"><a class="anchor" href="#_basic_operation"></a>1.1. Basic Operation</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Addition，Substraction，Multiplication，Division；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python">tensor = torch.tensor([1, 2, 3])
+tensor + 10,tensor - 10,tensor * 10,tensor / 2,tensor</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">(tensor([11, 12, 13]),
+ tensor([-9, -8, -7]),
+ tensor([10, 20, 30]),
+ tensor([0.5000,1.0000,1.5000]),
+ tensor([1, 2, 3]))]</code></pre>
+</div>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>注：张量操作后，张量值并未改变，因张量内部的值不会改变，除非被重新分配；</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>另PyTorch提供内置函数：如torch.multiply(tensor,10)</p>
+</li>
+<li>
+<p>但通常使用像*这样的运算符号，而非torch.mul()；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_element_wise"><a class="anchor" href="#_element_wise"></a>1.2. Element Wise</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Element Wise Multiplication，each element multiply its equivalent，<br>
+每个元素与相对应的相乘：index 0&#8594;0, 1&#8594;1, 2&#8594;2；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python">print(f"tensor * tensor = tensor([1,2,3]) * tensor([1,2,3]) = {tensor * tensor}")
+
+* 输出：tensor * tensor = tensor([1,2,3]) * tensor([1,2,3]) = tensor([1,4,9])</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_matrix_multiplication"><a class="anchor" href="#_matrix_multiplication"></a>1.3. Matrix Multiplication</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>矩阵乘法：ML和DL算法(如神经网络)中最常见的操作之一是矩阵乘法；</p>
+</li>
+<li>
+<p><mark>Matrix Multiplication，即Dot Product</mark>；<br>
+<a href="https://www.mathsisfun.com/algebra/vectors-dot-product.html" class="bare">https://www.mathsisfun.com/algebra/vectors-dot-product.html</a></p>
+</li>
+<li>
+<p><a href="https://pytorch.org/docs/stable/generated/torch.matmul.html" class="bare">https://pytorch.org/docs/stable/generated/torch.matmul.html</a></p>
+</li>
+<li>
+<p>A：内部维度必须匹配：inner dimension must match；</p>
+<div class="ulist">
+<ul>
+<li>
+<p>(3, 2) @ (3, 2) 不工作；</p>
+</li>
+<li>
+<p>(2, 3) @ (3, 2) 可工作；</p>
+</li>
+<li>
+<p>(3, 2) @ (2, 3) 可工作；</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>B：结果矩阵具有外部维度的形状：resulting matrix has outer dimension shape；</p>
+<div class="ulist">
+<ul>
+<li>
+<p>(2, 3) @ (3, 2) &#8594; (2, 2)</p>
+</li>
+<li>
+<p>(3, 2) @ (2, 3) &#8594; (3, 3)</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python">ta = torch.tensor([3,2])
+
+tb = torch.tensor([2,3])
+
+tc = torch.tensor([1,2,3])
+
+torch.matmul(ta,ta),ta @ ta,ta @ tb,tc @ tc, tc * tc
+
+# 输出：(tensor(13),tensor(13),tensor(12),tensor(14),tensor([1,4,9]))</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_element_wise_vs_matrix"><a class="anchor" href="#_element_wise_vs_matrix"></a>1.4. Element Wise VS Matrix</h3>
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Operation</th>
+<th class="tableblock halign-left valign-top">Calculation</th>
+<th class="tableblock halign-left valign-top">Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Element Wise</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1*1, 2*2, 3*3] = [1, 4, 9]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tensor * tensor</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Matrix</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1*1 + 2*2 + 3*3] = [14]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tensor.matmul(tensor)</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>PyTorch实现矩阵乘法：torch.matmul()，矩阵乘法规则；</p>
+</li>
+<li>
+<p>注：Python中的@是矩阵乘法的符号，不推荐使用，<br>
+而用torch.matmul(t1,t2)，因torch.matmul()更快；</p>
+</li>
+<li>
+<p><mark>torch.mm() 等价于 torch.matmul()</mark></p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python">import torch
+tensor = torch.tensor([1,2,3])</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python">%%time
+value = 0
+for i in range(len(tensor)):
+  value += tensor[i] * tensor[i]
+value</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">CPU times: user 1.46 ms, sys: 3.29 ms, total: 4.76 ms
+Wall time: 47.3 ms
+
+tensor(14)</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python">%%time
+torch.matmul(tensor, tensor)</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">CPU times: user 1.15 ms, sys: 1.03 ms, total: 2.18 ms
+Wall time: 17.3 ms
+
+tensor(14)</code></pre>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_matrix_multiplication_2"><a class="anchor" href="#_matrix_multiplication_2"></a>2. Matrix Multiplication</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://matrixmultiplication.xyz" class="bare">http://matrixmultiplication.xyz</a></p>
+</li>
+<li>
+<p>注：像这样的矩阵乘法matrix multiplication也被称为两个矩阵matrice的点积dot product；</p>
+</li>
+<li>
+<p>神经网络充满矩阵乘法和点积，torch.nn.Linear()模块也称feed-forward layer<br>
+或fully connected layer，实现输入x和权重矩阵A之间的矩阵乘法；</p>
+</li>
+<li>
+<p><mark>y = x * A<sup>T</sup> + b</mark>；</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><mark>x</mark>：是层的输入(DL是一堆层(stack of layer)，<br>
+如torch.nn.Linear()，和其它层(on top of each other)；</p>
+</li>
+<li>
+<p><mark>A</mark>：该层创建的权重矩阵weight matrix，最初是随机数，随神经网络学习更好的表示<br>
+数据中的模式pattern，这些随机数会被调整(注意T，因权重矩阵会被转置transpose)；</p>
+</li>
+<li>
+<p><mark>b</mark>：用于稍微偏移权重和输入的偏置项，<br>
+bias term used to slightly offset weight and input；</p>
+</li>
+<li>
+<p><mark>y</mark>：输出(对输入进行操作，希望发现其中的模式)，<br>
+manipulation input in hope to discover pattern in it；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>这是线性函数linear function，如y = mx + b；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python"># since linear layer start with random weight matrix,make it reproducible
+tlf = torch.tensor([[1,2],[3,4],[5,6]],dtype=torch.float32)
+
+torch.manual_seed(42)
+
+# use matrix multiplication
+# in_feature = match inner dimension of input
+# out_feature = describe outer value
+linear = torch.nn.Linear(in_features=2,out_features=6)
+
+x = tlf
+output = linear(x)
+print(f"Input Shape: {x.shape}\n")
+print(f"Output:\n{output}\n\nOutput Shape: {output.shape}")</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">Input Shape: torch.Size([3, 2])
+
+Output:
+tensor([[2.2368, 1.2292, 0.4714, 0.3864, 0.1309, 0.9838],
+        [4.4919, 2.1970, 0.4469, 0.5285, 0.3401, 2.4777],
+        [6.7469, 3.1648, 0.4224, 0.6705, 0.5493, 3.9716]],
+       grad_fn=&lt;AddmmBackward0&gt;)
+
+Output Shape: torch.Size([3, 6])</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://marksaroufim.substack.com/p/working-class-deep-learner" class="bare">https://marksaroufim.substack.com/p/working-class-deep-learner</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+	</div>
+</main>
+</div>
+		<footer class="footer">
+	
+	
+	
+	<div class="footer-thanks">
+		Authored in AsciiDoc
+		<br /><br />
+		Produced by Antora and Asciidoctor
+  	</div>
+  
+	<div class="footer-legal" style="text-align:center">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br /><br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		Copyright © 2024 Elf
+		<br /><br />
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+	
+</footer><script id="site-script" src="../../../../_/js/site.js" 
+	data-ui-root-path="../../../../_"></script>
+
+<script async src="../../../../_/js/vendor/highlight.js"></script>
+<script async src="../../../../_/js/vendor/highlight.bundle.js"></script>
+
+
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+
+<script>hljs.highlightAll();</script>
+
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
+</html>
