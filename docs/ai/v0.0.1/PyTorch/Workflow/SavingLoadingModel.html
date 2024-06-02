@@ -610,8 +610,8 @@
 <div id="toctitle"></div>
 <ul class="sectlevel1">
 <li><a href="#_saving_and_loading">1. Saving and Loading</a></li>
-<li><a href="#_saving_model">2. Saving Model</a></li>
-<li><a href="#_loading_model">3. Loading Model</a></li>
+<li><a href="#_state_dict_saving_model">2. state_dict() Saving Model</a></li>
+<li><a href="#_state_dict_loading_model">3. state_dict() Loading Model</a></li>
 </ul>
 </div>
 <div class="sect1">
@@ -622,29 +622,301 @@
 <li>
 <p>saving and loading PyTorch model</p>
 </li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_saving_model"><a class="anchor" href="#_saving_model"></a>2. Saving Model</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
 <li>
-<p>saving model state_dict()</p>
+<p>注：pickle模块是不安全的，即应该只unpickle(load)我们信任的数据，<br>
+这也适应于加载PyTorch模型，只能使用从我们信任的来源保存的PyTorch模型；</p>
+</li>
+<li>
+<p><a href="https://docs.python.org/3/library/pickle.html" class="bare">https://docs.python.org/3/library/pickle.html</a></p>
 </li>
 </ul>
 </div>
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Method</th>
+<th class="tableblock halign-left valign-top">Memo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">torch.save</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>使用Python的pickle工具将序列化的对象保存到磁盘，可用<br>
+torch.save保存模型、张量和各种其他Python对象(如字典)；</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">torch.load</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>用pickle的unpickling功能来反序列化pickle Python对象文件；</p>
+</li>
+<li>
+<p>如模型、张量或字典，并将其加载到内存中；</p>
+</li>
+<li>
+<p>还可设置将对象加载到哪个设备(CPU、GPU等)；</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">torch.nn.Module.load_state_dict</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>用保存的state_dict()对象加载模型的参数字典model.state_dict()</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_loading_model"><a class="anchor" href="#_loading_model"></a>3. Loading Model</h2>
+<h2 id="_state_dict_saving_model"><a class="anchor" href="#_state_dict_saving_model"></a>2. state_dict() Saving Model</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p>loading model state_dict()</p>
+<p><a href="https://pytorch.org/tutorials/beginner/saving_loading_models.html#saving-loading-model-for-inference" target="_blank" rel="noopener">Saving Loading Model For Inference</a></p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>A：用pathlib模块创建目录，将模型保存到被调用的模型中；</p>
+</li>
+<li>
+<p>B：创建文件路径来保存模型；</p>
+</li>
+<li>
+<p>C：调用torch.save(obj,f)：<br>
+obj是目标模型的state_dict()，f是保存模型的文件名；</p>
+</li>
+<li>
+<p>注：PyTorch保存的模型或对象通常以.pt或.pth结尾；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python">from pathlib import Path
+
+# 1：create model directory
+MODEL_PATH = Path("ModelDir")
+MODEL_PATH.mkdir(parents=True,exist_ok=True)
+
+# 2：create model save path
+MODEL_NAME = "pytorch_workflow_model_v0.pth"
+MODEL_SAVE_PATH = MODEL_PATH / MODEL_NAME
+
+# 3：save model state dict
+print(f"Saving Model To: {MODEL_SAVE_PATH}")
+
+# only saving state_dict() only save model learned parameter
+torch.save(obj=model_0.state_dict(),f=MODEL_SAVE_PATH)</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">Saving Model To: ModelDir\pytorch_workflow_model_v0.pth</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python"># check saved file path
+!ls -l ModelDir/pytorch_workflow_model_v0.pth
+
+# ls *.pth，ls -R DirectoryName：需安装bash_kernel</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">-rw-rw-r-- 1 elf elf 1063 June 2 10:02 ModelDir/pytorch_workflow_model_v0.pth</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_state_dict_loading_model"><a class="anchor" href="#_state_dict_loading_model"></a>3. state_dict() Loading Model</h2>
+<div class="sectionbody">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>现在在ModelDir/pytorch_workflow_model_v0.pth中有保存的模型 <mark>state_dict()</mark>，<br>
+可使用 <mark>torch.nn.Module.load_state_dict(torch.load(f))</mark> 加载；</p>
+</li>
+<li>
+<p>f是保存的模型state_dict()的filepath；</p>
+</li>
+<li>
+<p>为何torch.nn.Module.load_state_dict()内部可调用torch.load()？</p>
+</li>
+<li>
+<p>因只保存了模型的state_dict()，它是学习参数的字典learned parameter dictionary，<br>
+而非整个模型，故我们首先必须用torch.load()加载state_dict()；</p>
+</li>
+<li>
+<p>然后将该state_dict()传递给模型的新实例(nn.Module的子类(subclass))；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>为何不保存整个entire模型？保存整个模型而不仅仅是state_dict()更直观intuitive；</p>
+</li>
+<li>
+<p><a href="https://pytorch.org/tutorials/beginner/saving_loading_models.html#save-load-entire-model" target="_blank" rel="noopener">Saving Loading Model For Entire Model</a></p>
+</li>
+<li>
+<p>保存整个模型的缺点：序列化的数据绑定到特定的类和保存模型时使用的确切的目录结构；<br>
+故当在其它项目中使用或重构后，代码可能以各种方式中断；</p>
+</li>
+<li>
+<p>serialize data bound to specific class and exact directory structure；</p>
+</li>
+<li>
+<p>故使用灵活的方法，只保存和加载state_dict()，基本上是模型参数的字典；</p>
+</li>
+<li>
+<p>我们通过创建LinearRegressionModel()的另一个实例来测试它，<br>
+它是torch.nn.Module的子类，故将具有内置方法 <mark>load_state_dict()</mark>；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python"># instantiate model new instance(will instantiate with random weight)
+loaded_model_0 = LinearRegressionModel()
+
+# load saved model state_dict(will update model new instance with trained weight)
+loaded_model_0.load_state_dict(torch.load(f=MODEL_SAVE_PATH))</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">&lt;All keys matched successfully&gt;</code></pre>
+</div>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><mark>看起来一切都很匹配match up，现在为测试加载的模型，将对测试数据进行推理(预测)</mark>；</p>
+</li>
+<li>
+<p>PyTorch Inference Rule：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>set model in evaluation mode：model.eval()；</p>
+</li>
+<li>
+<p>make prediction via inference mode context manager：<br>
+with torch.inference_mode(): &#8230;&#8203;；</p>
+</li>
+<li>
+<p>all prediction should made with object on the same device：<br>
+e.g. data and model on GPU only or data and model on CPU only；</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python"># 1：put loaded model into evaluation mode
+loaded_model_0.eval()
+
+# 2：use inference mode context manager to make prediction
+with torch.inference_mode():
+    # perform forward pass on test data with loaded model
+    loaded_model_pred = loaded_model_0(X_test)
+
+# compare previous model prediction with loaded model prediction(these should be the same)
+y_pred == loaded_model_pred</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">tensor([[True],
+        [True],
+        [True],
+        [True],
+        [True],
+        [True],
+        [True],
+        [True],
+        [True],
+        [True]])</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>看起来加载的模型预测和以前模型预测(保存前的预测)相同，表明模型正在按预期保存和加载；</p>
+</li>
+<li>
+<p>有很多方式可保存和加载PyTorch模型：<br>
+<a href="https://pytorch.org/tutorials/beginner/saving_loading_models.html#saving-and-loading-models" target="_blank" rel="noopener">PyTorch Guide Saving Loading Model</a></p>
 </li>
 </ul>
 </div>

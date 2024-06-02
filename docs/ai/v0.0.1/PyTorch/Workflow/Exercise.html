@@ -609,13 +609,401 @@
 <div id="toc" class="toc">
 <div id="toctitle"></div>
 <ul class="sectlevel1">
-<li><a href="#_exercise">1. Exercise</a></li>
+<li><a href="#_intro">1. Intro</a></li>
+<li><a href="#_create_dataset">2. Create Dataset</a></li>
+<li><a href="#_build_model">3. Build Model</a></li>
+<li><a href="#_loss_function_optimizer">4. Loss Function Optimizer</a></li>
+<li><a href="#_make_prediction">5. Make Prediction</a></li>
+<li><a href="#_save_model">6. Save Model</a></li>
 </ul>
 </div>
 <div class="sect1">
-<h2 id="_exercise"><a class="anchor" href="#_exercise"></a>1. Exercise</h2>
+<h2 id="_intro"><a class="anchor" href="#_intro"></a>1. Intro</h2>
 <div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>注：代码应与设备无关(device agnostic)，即可在CPU或GPU上运行；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python">import datetime
+print(f"Last Update: {datetime.datetime.now()}")
 
+import torch
+import matplotlib.pyplot as plt
+from torch import nn
+
+device = "cuda" if torch.cuda.is_available() else "cpu"
+device
+print(f"Device:: {device}")</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_create_dataset"><a class="anchor" href="#_create_dataset"></a>2. Create Dataset</h2>
+<div class="sectionbody">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>使用线性回归公式(权重 * X + 偏差)创建直线数据集；<br>
+create straight line dataset via<br>
+linear regression formula：<mark>weight * X + bias</mark></p>
+</li>
+<li>
+<p>设置权重 = 0.3 和偏差 = 0.9，总共应至少有 100 个数据点，<br>
+set weight=0.3 and bias=0.9，at least 100 datapoint total；</p>
+</li>
+<li>
+<p>将数据分为 80% 训练和 20% 测试，<br>
+split data into 80% training and 20% testing；</p>
+</li>
+<li>
+<p>绘制训练和测试数据，使其变得直观，<br>
+plot training and testing data and become visual；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python"># A：create dataset
+
+# create data parameter
+weight = 0.3
+bias = 0.9
+
+# make X and y using linear regression feature
+X = torch.arange(0,1,0.01).unsqueeze(dim = 1)
+y = weight * X + bias
+print(f"Number of X Sample: {len(X)}")
+print(f"Number of y Sample: {len(y)}")
+print(f"First 10 X &amp; y Sample:\nX: {X[:10]}\ny: {y[:10]}")
+
+# split data into training and testing
+train_split = int(len(X) * 0.8)
+X_train = X[:train_split]
+y_train = y[:train_split]
+X_test = X[train_split:]
+y_test = y[train_split:]
+len(X_train),len(y_train),len(X_test),len(y_test)
+
+# plot training and testing data
+def plot_prediction(train_data = X_train,
+                 train_labels = y_train,
+                 test_data = X_test,
+                 test_labels = y_test,
+                 prediction = None):
+  plt.figure(figsize = (10,7))
+  plt.scatter(train_data,train_labels,c = 'b',s = 4,label = "Training Data")
+  plt.scatter(test_data,test_labels,c = 'g',s = 4,label = "Testing Data")
+
+  if prediction is not None:
+    plt.scatter(test_data,prediction,c = 'r',s = 4,label = "Prediction")
+  plt.legend(prop = {"size" : 14})
+plot_prediction()</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_build_model"><a class="anchor" href="#_build_model"></a>3. Build Model</h2>
+<div class="sectionbody">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>build pytorch model by subclassing nn.Module；</p>
+</li>
+<li>
+<p>里面应是随机初始化的参数，其中require_grad=True，一个用于权重，一个用于偏差；</p>
+</li>
+<li>
+<p>randomly initialize nn.Parameter() with requires_grad=True，<br>
+one for weight and one for bias；</p>
+</li>
+<li>
+<p>实现forward()来计算在 <mark>创建数据集章节</mark> 中创建数据集时使用的线性回归函数；</p>
+</li>
+<li>
+<p>implment forward() to compute linear regression<br>
+function used to <mark>Chapter Create Dataset</mark></p>
+</li>
+<li>
+<p>构建construct模型后，创建它的一个实例并检查其state_dict()，<br>
+make instance of it and check its state_dict()；</p>
+</li>
+<li>
+<p>注：可使用nn.Linear()替代nn.Parameter()；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python"># B：build model
+# create PyTorch linear regression model by subclassing nn.Module
+## Option 1
+class LinearRegressionModel(nn.Module):
+  def __init__(self):
+    super().__init__()
+    self.weight = nn.Parameter(data=torch.randn(1,requires_grad=True,dtype=torch.float))
+    self.bias = nn.Parameter(data=torch.randn(1,requires_grad=True,dtype=torch.float))
+  def forward(self, x):
+    return self.weight * x + self.bias
+
+# ## Option 2
+# class LinearRegressionModel(nn.Module):
+#   def __init__(self):
+#     super().__init__()
+#     self.linear_layer = nn.Linear(in_features = 1,out_features = 1)
+#   def forward(self,x : torch.Tensor) -&gt; torch.Tensor:
+#     return self.linear_layer(x)
+
+torch.manual_seed(42)
+model_1 = LinearRegressionModel()
+model_1,model_1.state_dict()
+
+next(model_1.parameters()).device
+
+# instantiate model and put it to target device
+model_1.to(device)
+list(model_1.parameters())</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_loss_function_optimizer"><a class="anchor" href="#_loss_function_optimizer"></a>4. Loss Function Optimizer</h2>
+<div class="sectionbody">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>用nn.L1Loss()创建损失函数，用torch.optim.SGD(param,lr)创建优化器；</p>
+</li>
+<li>
+<p>create loss function and optimizer via nn.L1Loss()<br>
+and torch.optim.SGD(param,lr) respectively；</p>
+</li>
+<li>
+<p>将优化器的学习率设置为0.01，且要优化的参数应该是我们在<br>
+<mark>构建模型章节</mark> 中创建的模型中的模型参数；</p>
+</li>
+<li>
+<p>set optimizer learning rate to 0.01 and parameter to optimize；</p>
+</li>
+<li>
+<p>编写训练循环，以执行300个epoch的适当训练步骤，write training loop<br>
+to perform appropriate training step for 300 epoch；</p>
+</li>
+<li>
+<p>训练循环应该每20个epoch在测试数据集上测试模型，<br>
+training loop should test model on test dataset every 20 epoch；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python"># C：loss function and optimizer
+# create loss function and optimizer
+loss_fn = nn.L1Loss()
+optimizer = torch.optim.SGD(params = model_1.parameters(),lr = 0.01)
+
+# Training loop
+# Train model for 300 epoch
+torch.manual_seed(42)
+
+epoch = 300
+
+# send data to target device
+X_train = X_train.to(device)
+X_test = X_test.to(device)
+y_train = y_train.to(device)
+y_test = y_test.to(device)
+
+for e in range(epoch):
+  ### Training
+
+  # Put model in train mode
+  model_1.train()
+
+  # 1. Forward pass
+  y_pred = model_1(X_train)
+
+  # 2. Calculate loss
+  loss = loss_fn(y_pred,y_train)
+
+  # 3. Zero gradients
+  optimizer.zero_grad()
+
+  # 4. Backpropagation
+  loss.backward()
+
+  # 5. Step the optimizer
+  optimizer.step()
+
+  ### Perform testing every 20 epochs
+  if epoch % 20 == 0:
+    # Put model in evaluation mode and setup inference context
+    model_1.eval()
+    with torch.inference_mode():
+      # 1. Forward pass
+      y_preds = model_1(X_test)
+      # 2. Calculate test loss
+      test_loss = loss_fn(y_preds,y_test)
+      # Print out what's happening
+      print(f"Epoch: {e} | Train loss: {loss:.3f} | Test loss: {test_loss:.3f}")</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_make_prediction"><a class="anchor" href="#_make_prediction"></a>5. Make Prediction</h2>
+<div class="sectionbody">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>使用经过训练的模型对测试数据进行预测，<br>
+make prediction with trained model on test data；</p>
+</li>
+<li>
+<p>将这些预测与原始训练和测试数据进行可视化，visualize<br>
+prediction against original training and testing data；</p>
+</li>
+<li>
+<p><mark>注：若想用未启用CUDA的库，如matplotlib绘图，则可能需确保预测不在GPU上</mark>；</p>
+</li>
+<li>
+<p>note：need to make sure prediction are not on GPU if we want to<br>
+use non-CUDA-enabled library such as matplotlib to plot；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python"># D：Make Prediction
+
+# Make predictions with model
+model_1.eval()
+
+with torch.inference_mode():
+  y_pred = model_1(X_test)
+y_pred
+
+# y_preds.cpu()
+
+# ploy prediction (these may need to be on a specific device)
+plot_prediction(prediction = y_pred.cpu())</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_save_model"><a class="anchor" href="#_save_model"></a>6. Save Model</h2>
+<div class="sectionbody">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>将经过训练的模型的state_dict()保存到文件中，<br>
+save trained model state_dict() to file；</p>
+</li>
+<li>
+<p>在构建模型章节中创建的模型类创建一个新实例，并加载刚刚保存到其中的state_dict()，<br>
+用加载的模型对测试数据预测，并确认它们与预测章节中的原始模型预测相匹配；</p>
+</li>
+<li>
+<p>create model new instance class from <mark>Chapter Build Model</mark><br>
+and load in state_dict() we just saved to it；</p>
+</li>
+<li>
+<p>perform prediction on test data with loaded model and confirm<br>
+they match original model prediction from <mark>Chapter Make Prediction</mark>；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python"># E:save model
+from pathlib import Path
+
+# 1. Create models directory
+MODEL_PATH = Path("model")
+MODEL_PATH.mkdir(parents = True,exist_ok = True)
+# 2. Create model save path
+MODEL_NAME = "01_pytorch_model"
+MODEL_SAVE_PATH = MODEL_PATH / MODEL_NAME
+# 3. Save the model state dict
+print(f"Saving model to {MODEL_SAVE_PATH}")
+torch.save(obj = model_1.state_dict(),f = MODEL_SAVE_PATH)
+
+# Create new instance of model and load saved
+# state dict (make sure to put it on the target device)
+loaded_model = LinearRegressionModel()
+loaded_model.load_state_dict(torch.load(f = MODEL_SAVE_PATH))
+loaded_model.to(device)
+
+# Make predictions with loaded model and compare them to the previous
+y_pred_new = loaded_model(X_test)
+print(y_pred == y_pred_new)
+
+print(loaded_model.state_dict())</code></pre>
+</div>
+</div>
 </div>
 </div>
 </article>

@@ -620,7 +620,98 @@
 <li>
 <p>making prediction with trained PyTorch model (inference)；</p>
 </li>
+<li>
+<p>一旦已训练某模型，可用来做预测，在训练/测试循环之外执行此操作的步骤相似；</p>
+</li>
 </ul>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>用Pytorch预测也称执行推理，需记住三件事：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>将模型设置为评估模式：<br>
+set model in evaluation mode (model.eval())；</p>
+</li>
+<li>
+<p>使用推理模式上下文管理器进行预测：torch.inference_mode(): ……，<br>
+make prediction via inference mode context manager；</p>
+</li>
+<li>
+<p>所有预测都应使用同一设备上的对象进行，如仅GPU或仅CPU上的数据和模型；</p>
+</li>
+<li>
+<p>all prediction should be made with object on the same device，<br>
+e.g. data and model on GPU only or data and model on CPU only；</p>
+</li>
+<li>
+<p>前两项确保PyTorch在训练过程中在幕后使用的所有有用的计算和设置都关闭，<br>
+但这些计算和设置不是推理所必须的，这会导致更快的计算，第三个确保不会遇到跨设备错误；</p>
+</li>
+<li>
+<p>helpful calculation and settings PyTorch use<br>
+behind scene during training but aren&#8217;t necessary for<br>
+inference are turn off，run into cross-device error；</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>现再次使用已训练过的模型进行预测；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python"># 1：set model in evaluation mode
+model_0.eval()
+
+# 2：setup inference mode context manager
+with torch.inference_mode():
+  # 3：make sure calculation are done with model and data on
+  # the same device,in our case,we haven't setup device-agnostic
+  # code yet so our data and model are on the CPU by default.
+  # model_0.to(device)
+  # X_test = X_test.to(device)
+  y_pred = model_0(X_test)
+print(y_pred)
+
+plot_prediction(prediction=y_pred)
+
+plt.savefig("PredictionWithTrainedModelInference.svg")</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">tensor([[0.8141],
+        [0.8256],
+        [0.8372],
+        [0.8488],
+        [0.8603],
+        [0.8719],
+        [0.8835],
+        [0.8950],
+        [0.9066],
+        [0.9182]])</code></pre>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Workflow/PredictionWithTrainedModelInference.svg" alt="PredictionWithTrainedModelInference">
+</div>
 </div>
 </div>
 </div>

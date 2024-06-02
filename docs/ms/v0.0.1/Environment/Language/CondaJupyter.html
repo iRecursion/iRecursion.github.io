@@ -334,6 +334,13 @@
 <li><a href="#_rust_verification">14. Rust Verification</a></li>
 <li><a href="#_jupyter_starter">15. Jupyter Starter</a></li>
 <li><a href="#_jupyter_loader">16. Jupyter Loader</a></li>
+<li><a href="#_jupyter_execute_command">17. Jupyter Execute Command</a>
+<ul class="sectlevel2">
+<li><a href="#_via_magic_command">17.1. Via Magic Command</a></li>
+<li><a href="#_via_subprocess_module">17.2. Via Subprocess Module</a></li>
+</ul>
+</li>
+<li><a href="#_bash_kernel">18. Bash Kernel</a></li>
 </ul>
 </div>
 <div class="sect1">
@@ -690,6 +697,63 @@ jupyter-lab</code></pre>
 <p>D:\Install\Dev\workspace\jupyter-module\notebook</p>
 </li>
 </ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_jupyter_execute_command"><a class="anchor" href="#_jupyter_execute_command"></a>17. Jupyter Execute Command</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Execute Terminal Command in Jupyter Notebook</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_via_magic_command"><a class="anchor" href="#_via_magic_command"></a>17.1. Via Magic Command</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">!ls
+
+!pip install numpy</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_via_subprocess_module"><a class="anchor" href="#_via_subprocess_module"></a>17.2. Via Subprocess Module</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python">import subprocess
+
+result = subprocess.run(['ls', '-l'], stdout=subprocess.PIPE)
+print(result.stdout.decode())</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python">import subprocess
+
+result = subprocess.run(['./script.sh'],input=b'yes\n',encoding='utf-8',stdout=subprocess.PIPE)
+print(result.stdout)</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_bash_kernel"><a class="anchor" href="#_bash_kernel"></a>18. Bash Kernel</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">!pip install bash_kernel
+
+!python -m bash_kernel.install
+
+ls *.pth
+
+ls -R DirectoryName</code></pre>
+</div>
 </div>
 </div>
 </div>
