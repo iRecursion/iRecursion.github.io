@@ -257,6 +257,18 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
+    <span class="nav-text">Appendice</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Appendice/TestContainer.html">Test Container</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Appendice/DockerCompose.html">Docker Compose</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
     <span class="nav-text">Solitary</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
@@ -290,7 +302,7 @@
     <a class="nav-link" href="EvaluationTesting.html">Evaluation Testing</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="TestContainer.html">Test Container</a>
+    <a class="nav-link" href="Multimodality.html">Multimodality</a>
   </li>
 </ul>
   </li>
@@ -606,7 +618,156 @@
   <div class="toc-menu"></div>
 </aside>
 			<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_evaluation_testing">1. Evaluation Testing</a></li>
+<li><a href="#_relevancyevaluator">2. RelevancyEvaluator</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_evaluation_testing"><a class="anchor" href="#_evaluation_testing"></a>1. Evaluation Testing</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>测试AI应用需评估生成的内容，以确保AI模型没有产生幻觉响应；</p>
+</li>
+<li>
+<p>Testing AI App require evaluating generate content to<br>
+ensure AI model has not produce hallucinated response；</p>
+</li>
+<li>
+<p>评估响应的一种方法：对AI模型本身进行评估，<br>
+选择最佳AI模型评估，该模型可能与用于生成响应的模型不同；</p>
+</li>
+<li>
+<p>Evaluator接口评估响应：</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Attribute</th>
+<th class="tableblock halign-left valign-top">Memo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">userText</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">raw input from  user</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dataList</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">contextual data，such as from RAG，append to raw input</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">chatResponse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">model response</p></td>
+</tr>
+</tbody>
+</table>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">@FunctionalInterface
+public interface Evaluator {
+    EvaluationResponse evaluate(EvaluationRequest evaluationRequest)
+}
 
+public class EvaluationRequest {
+
+	private final String userText;
+
+	private final List&lt;Content&gt; dataList;
+
+	private final ChatResponse chatResponse;
+
+	public EvaluationRequest(String userText,
+		List&lt;Content&gt; dataList,ChatResponse chatResponse) {
+		this.userText = userText;
+		this.dataList = dataList;
+		this.chatResponse = chatResponse;
+	}
+
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_relevancyevaluator"><a class="anchor" href="#_relevancyevaluator"></a>2. RelevancyEvaluator</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>目前提供的实现有RelevancyEvaluator，使用AI模型进行评估evaluation；</p>
+</li>
+<li>
+<p>RelevancyEvaluator使用input(userText)<br>
+和model output(chatResponse)提出以下问题：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">Your task is to evaluate if the response for the query
+is in line with the context information provided.\n
+You have two options to answer. Either YES/ NO.\n
+Answer - YES, if the response for the query
+is in line with context information otherwise NO.\n
+Query: \n {query}\n
+Response: \n {response}\n
+Context: \n {context}\n
+Answer: "</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>JUnit测试示例，它对加载到向量存储中的Pdf文档执行RAG查询，<br>
+然后评估响应是否与用户文本相关</p>
+</li>
+<li>
+<p>evaluate if response relevant to user text；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">@Test
+void testEvaluation() {
+
+    dataController.delete();
+    dataController.load();
+
+    String userText = "What is the purpose of Carina?";
+
+    ChatResponse response = ChatClient.builder(chatModel)
+            .build().prompt()
+            .advisors(new QuestionAnswerAdvisor(vectorStore, SearchRequest.defaults()))
+            .user(userText)
+            .call()
+            .chatResponse();
+
+    var relevancyEvaluator = new RelevancyEvaluator(ChatClient.builder(chatModel));
+
+    EvaluationRequest evaluationRequest = new EvaluationRequest(userText,
+            (List&lt;Content&gt;) response.getMetadata().get(QuestionAnswerAdvisor.RETRIEVED_DOCUMENTS), response);
+
+    EvaluationResponse evaluationResponse = relevancyEvaluator.evaluate(evaluationRequest);
+
+    assertTrue(evaluationResponse.isPass(), "Response is not relevant to the question");
+
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
 </article>
 	</div>
 </main>
