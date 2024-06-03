@@ -271,11 +271,11 @@
     <button class="nav-item-toggle"></button>
     <span class="nav-text">Image</span>
 <ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Image/ImageGeneration.html">Image Generation</a>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="ImageGeneration.html">Image Generation</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Image/ZhiPuImage.html">ZhiPu Image</a>
+    <a class="nav-link" href="ZhiPuImage.html">ZhiPu Image</a>
   </li>
 </ul>
   </li>
@@ -319,20 +319,20 @@
     <button class="nav-item-toggle"></button>
     <span class="nav-text">Chat Completion</span>
 <ul class="nav-list">
-  <li class="nav-item is-current-page" data-depth="3">
-    <a class="nav-link" href="ChatCompletion.html">Chat Completion</a>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ChatCompletion/ChatCompletion.html">Chat Completion</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="Ollama.html">Ollama</a>
+    <a class="nav-link" href="../ChatCompletion/Ollama.html">Ollama</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="MiniMaxChat.html">MiniMax Chat</a>
+    <a class="nav-link" href="../ChatCompletion/MiniMaxChat.html">MiniMax Chat</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="ZhiPuChat.html">ZhiPu Chat</a>
+    <a class="nav-link" href="../ChatCompletion/ZhiPuChat.html">ZhiPu Chat</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="HuggingFace.html">Hugging Face</a>
+    <a class="nav-link" href="../ChatCompletion/HuggingFace.html">Hugging Face</a>
   </li>
 </ul>
   </li>
@@ -626,8 +626,8 @@
   <ul>
     <li><a href="../../index.html">AsciiDoc AI</a></li>
     <li>Spring AI</li>
-    <li>Chat Completion</li>
-    <li><a href="ChatCompletion.html">Chat Completion</a></li>
+    <li>Image</li>
+    <li><a href="ImageGeneration.html">Image Generation</a></li>
   </ul>
 </nav>
 		</div>
@@ -642,234 +642,203 @@
 <div id="toc" class="toc">
 <div id="toctitle"></div>
 <ul class="sectlevel1">
-<li><a href="#_chatclient">1. ChatClient</a></li>
-<li><a href="#_streamingchatclient">2. StreamingChatClient</a></li>
-<li><a href="#_prompt">3. Prompt</a></li>
-<li><a href="#_message">4. Message</a></li>
-<li><a href="#_chat_options">5. Chat Options</a></li>
-<li><a href="#_chatresponse">6. ChatResponse</a></li>
-<li><a href="#_generation">7. Generation</a></li>
-<li><a href="#_available_ri">8. Available RI</a></li>
-<li><a href="#_chat_model_api">9. Chat Model Api</a></li>
+<li><a href="#_introduction">1. Introduction</a></li>
+<li><a href="#_image_client">2. Image Client</a>
+<ul class="sectlevel2">
+<li><a href="#_imageprompt">2.1. ImagePrompt</a></li>
+<li><a href="#_imagemessage">2.2. ImageMessage</a></li>
+<li><a href="#_imageoptions">2.3. ImageOptions</a></li>
+</ul>
+</li>
+<li><a href="#_imageresponse">3. ImageResponse</a></li>
+<li><a href="#_imagegeneration">4. ImageGeneration</a></li>
 </ul>
 </div>
 <div class="sect1">
-<h2 id="_chatclient"><a class="anchor" href="#_chatclient"></a>1. ChatClient</h2>
-<div class="sectionbody">
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">public interface ChatClient
-	extends ModelClient&lt;Prompt,ChatResponse&gt; {
-
-	default String call(String message) {}
-
-	@Override
-	ChatResponse call(Prompt prompt);
-}</code></pre>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_streamingchatclient"><a class="anchor" href="#_streamingchatclient"></a>2. StreamingChatClient</h2>
+<h2 id="_introduction"><a class="anchor" href="#_introduction"></a>1. Introduction</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p>接收类似于ChatClient的Prompt请求，但使用Reactive Flux Api来流式传输响应；</p>
+<p>Image Generation Api用于与专门用于图像生成的各种AI模型交互，<br>
+使工程师在不同的图像相关模型间切换，而尽量少改代码；</p>
+</li>
+<li>
+<p>另输入封装ImagePrompt和输出处理的ImageResponse等类支持，<br>
+图像生成Api将与专用于图像生成的AI模型的通信统一，管理请求准备和响应解析的复杂性；</p>
+</li>
+<li>
+<p>Image Generation Api构建在Generic Model Api之上，提供特定于图像的抽象和实现；</p>
 </li>
 </ul>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">public interface StreamingChatClient
-	extends StreamingModelClient&lt;Prompt,ChatResponse&gt; {
-
-	@Override
-	Flux&lt;ChatResponse&gt; stream(Prompt prompt);
-}</code></pre>
-</div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_prompt"><a class="anchor" href="#_prompt"></a>3. Prompt</h2>
+<h2 id="_image_client"><a class="anchor" href="#_image_client"></a>2. Image Client</h2>
 <div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>Prompt是ModelRequest，封装Message对象和可选模型请求选项的列表</p>
-</li>
-</ul>
-</div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">public class Prompt implements ModelRequest&lt;List&lt;Message&gt;&gt; {
+<pre class="highlight"><code class="language-java" data-lang="java">@FunctionalInterface
+public interface ImageClient extends ModelClient&lt;ImagePrompt,ImageResponse&gt; {
 
-	private final List&lt;Message&gt; messageList;
+	ImageResponse call(ImagePrompt request);
 
-	private ChatOptions modelOptions;
-
-	@Override
-	public ChatOptions getOptions() {..}
-
-	@Override
-	public List&lt;Message&gt; getInstructions() {...}
 }</code></pre>
 </div>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_message"><a class="anchor" href="#_message"></a>4. Message</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="_imageprompt"><a class="anchor" href="#_imageprompt"></a>2.1. ImagePrompt</h3>
 <div class="ulist">
 <ul>
 <li>
-<p>Message接口封装一条文本消息、一组属性(如Map)和一个称为MessageType的分类；</p>
-</li>
-<li>
-<p>消息接口有各种实现，对应于AI模型可处理的消息类别，术语MessageType可能意味特定的消息格式，<br>
-对于不使用特定角色的AI模型，UserMessage实现充当标准类别，通常表示用户生成的查询或指令；</p>
+<p>ImagePrompt是ModelRequest，封装ImageMessage对象<br>
+和可选模型请求选项的列表，optional model request option</p>
 </li>
 </ul>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">public interface Message {
+<pre class="highlight"><code class="language-java" data-lang="java">public class ImagePrompt implements ModelRequest&lt;List&lt;ImageMessage&gt;&gt; {
 
-   String getContent();
+    private final List&lt;ImageMessage&gt; messages;
 
-   Map&lt;String, Object&gt; getProperties();
-
-   MessageType getMessageType();
-}</code></pre>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_chat_options"><a class="anchor" href="#_chat_options"></a>5. Chat Options</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>可传递给AI模型的选项，ChatOptions类是ModelOptions的子类，<br>
-定义可传递给AI模型的几个可移植选项：</p>
-</li>
-<li>
-<p>另每个特定于模型的ChatClient/StreamingChatClient<br>
-实现都可有自己的选项，这些选项可传递给AI模型：</p>
-</li>
-</ul>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../_images/Chat/ChatOptionFlow.jpg" alt="ChatOptionFlow">
-</div>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">public interface ChatOptions extends ModelOptions {
-
-	Float getTemperature();
-
-	void setTemperature(Float temperature);
-
-	Float getTopP();
-
-	void setTopP(Float topP);
-
-	Integer getTopK();
-
-	void setTopK(Integer topK);
-}</code></pre>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_chatresponse"><a class="anchor" href="#_chatresponse"></a>6. ChatResponse</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>ChatResponse类保存AI模型的输出，每个Generation实例包含单个提示可能产生的多个输出<br>
-中的一个，ChatResponse类还携带AI模型响应的ChatResponseMetadata元数据；</p>
-</li>
-</ul>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">public class ChatResponse implements ModelResponse&lt;Generation&gt; {
-
-    private final ChatResponseMetadata chatResponseMetadata;
-	private final List&lt;Generation&gt; generations;
-
-	@Override
-	public ChatResponseMetadata getMetadata() {...}
+	private ImageOptions imageModelOptions;
 
     @Override
-	public List&lt;Generation&gt; getResults() {...}
+	public List&lt;ImageMessage&gt; getInstructions() {...}
 
-    // other methods omitted
+	@Override
+	public ImageOptions getOptions() {...}
+
 }</code></pre>
 </div>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_generation"><a class="anchor" href="#_generation"></a>7. Generation</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="_imagemessage"><a class="anchor" href="#_imagemessage"></a>2.2. ImageMessage</h3>
 <div class="ulist">
 <ul>
 <li>
-<p>Generation类从ModelResult扩展而来，输出辅助消息响应和有关此结果的相关元数据</p>
+<p>ImageMessage类封装要使用的文本及文本在影响生成的图像时应该具有的权重，<br>
+对支持权重的模型，可正positive可负negative</p>
 </li>
 </ul>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">public class Generation implements ModelResult&lt;AssistantMessage&gt; {
+<pre class="highlight"><code class="language-java" data-lang="java">public class ImageMessage {
 
-	private AssistantMessage assistantMessage;
-	private ChatGenerationMetadata chatGenerationMetadata;
+	private String text;
 
-	@Override
-	public AssistantMessage getOutput() {}
+	private Float weight;
 
-	@Override
-	public ChatGenerationMetadata getMetadata() {}
+    public String getText() {...}
+
+	public Float getWeight() {...}
+
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_imageoptions"><a class="anchor" href="#_imageoptions"></a>2.3. ImageOptions</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>可传递给图像生成模型的选项，ImageOptions类扩展ModelOptions接口，用于定义可传递给AI模型<br>
+的几个可移植选项；另每个特定于模型的ImageClient实现都可有自己的选项，这些选项可传递给AI模型；</p>
+</li>
+<li>
+<p>如OpenAI图像生成模型有自己的选项，如质量quality、风格style等；允许工程师<br>
+在启动应用时使用特定于模型的选项，然后在运行时使用ImagePrompt覆盖这些选项；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">public interface ImageOptions extends ModelOptions {
+
+	Integer getN();
+
+	String getModel();
+
+	Integer getWidth();
+
+	Integer getHeight();
+
+	//openai：url or base64，stability ai：byte[] or base64
+	String getResponseFormat(); //
 
 }</code></pre>
 </div>
 </div>
 </div>
 </div>
+</div>
 <div class="sect1">
-<h2 id="_available_ri"><a class="anchor" href="#_available_ri"></a>8. Available RI</h2>
+<h2 id="_imageresponse"><a class="anchor" href="#_imageresponse"></a>3. ImageResponse</h2>
 <div class="sectionbody">
-<div class="imageblock">
+<div class="listingblock">
 <div class="content">
-<img src="../_images/Chat/ChatCompletionClient.jpg" alt="ChatCompletionClient">
+<pre class="highlight"><code class="language-java" data-lang="java">public class ImageResponse implements ModelResponse&lt;ImageGeneration&gt; {
+
+	private final ImageResponseMetadata imageResponseMetadata;
+
+	private final List&lt;ImageGeneration&gt; imageGenerations;
+
+	@Override
+	public ImageGeneration getResult() {
+		//get the first result
+	}
+
+	@Override
+	public List&lt;ImageGeneration&gt; getResults() {...}
+
+	@Override
+	public ImageResponseMetadata getMetadata() {...}
+
+}</code></pre>
 </div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>ImageResponse类hold AI模型的输出，每个ImageGeneration<br>
+实例都包含单个提示可能potentially产生的多个输出中的一个；</p>
+</li>
+<li>
+<p>ImageResponse类还携带有关AI模型响应的ImageResponseMetadata元数据；</p>
+</li>
+</ul>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_chat_model_api"><a class="anchor" href="#_chat_model_api"></a>9. Chat Model Api</h2>
+<h2 id="_imagegeneration"><a class="anchor" href="#_imagegeneration"></a>4. ImageGeneration</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p>Spring AI Chat Completion Api构建在Spring AI<br>
-Generic Model Api之上，提供特定于Chat的抽象和实现；</p>
+<p>ImageGeneration类从ModelResult扩展，表示输出响应和有关此结果的相关元数据；</p>
 </li>
 </ul>
 </div>
-<div class="imageblock">
+<div class="listingblock">
 <div class="content">
-<img src="../_images/Chat/ChatApi.jpg" alt="ChatApi">
+<pre class="highlight"><code class="language-java" data-lang="java">public class ImageGeneration implements ModelResult&lt;Image&gt; {
+
+	private ImageGenerationMetadata imageGenerationMetadata;
+
+	private Image image;
+
+    @Override
+	public Image getOutput() {...}
+
+	@Override
+	public ImageGenerationMetadata getMetadata() {...}
+
+}</code></pre>
 </div>
 </div>
 </div>

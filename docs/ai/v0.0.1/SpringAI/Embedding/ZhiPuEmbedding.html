@@ -319,20 +319,20 @@
     <button class="nav-item-toggle"></button>
     <span class="nav-text">Chat Completion</span>
 <ul class="nav-list">
-  <li class="nav-item is-current-page" data-depth="3">
-    <a class="nav-link" href="ChatCompletion.html">Chat Completion</a>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ChatCompletion/ChatCompletion.html">Chat Completion</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="Ollama.html">Ollama</a>
+    <a class="nav-link" href="../ChatCompletion/Ollama.html">Ollama</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="MiniMaxChat.html">MiniMax Chat</a>
+    <a class="nav-link" href="../ChatCompletion/MiniMaxChat.html">MiniMax Chat</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="ZhiPuChat.html">ZhiPu Chat</a>
+    <a class="nav-link" href="../ChatCompletion/ZhiPuChat.html">ZhiPu Chat</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="HuggingFace.html">Hugging Face</a>
+    <a class="nav-link" href="../ChatCompletion/HuggingFace.html">Hugging Face</a>
   </li>
 </ul>
   </li>
@@ -341,22 +341,22 @@
     <span class="nav-text">Embedding</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Embedding/Embedding.html">Embedding</a>
+    <a class="nav-link" href="Embedding.html">Embedding</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Embedding/Ollama.html">Ollama</a>
+    <a class="nav-link" href="Ollama.html">Ollama</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Embedding/PostgresML.html">Postgres ML</a>
+    <a class="nav-link" href="PostgresML.html">Postgres ML</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Embedding/TransformerOnnx.html">Transformer Onnx</a>
+    <a class="nav-link" href="TransformerOnnx.html">Transformer Onnx</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Embedding/MiniMaxEmbedding.html">MiniMax Embedding</a>
+    <a class="nav-link" href="MiniMaxEmbedding.html">MiniMax Embedding</a>
   </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Embedding/ZhiPuEmbedding.html">ZhiPu Embedding</a>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="ZhiPuEmbedding.html">ZhiPu Embedding</a>
   </li>
 </ul>
   </li>
@@ -626,8 +626,8 @@
   <ul>
     <li><a href="../../index.html">AsciiDoc AI</a></li>
     <li>Spring AI</li>
-    <li>Chat Completion</li>
-    <li><a href="ChatCompletion.html">Chat Completion</a></li>
+    <li>Embedding</li>
+    <li><a href="ZhiPuEmbedding.html">ZhiPu Embedding</a></li>
   </ul>
 </nav>
 		</div>
@@ -639,241 +639,7 @@
   <div class="toc-menu"></div>
 </aside>
 			<article class="doc">
-<div id="toc" class="toc">
-<div id="toctitle"></div>
-<ul class="sectlevel1">
-<li><a href="#_chatclient">1. ChatClient</a></li>
-<li><a href="#_streamingchatclient">2. StreamingChatClient</a></li>
-<li><a href="#_prompt">3. Prompt</a></li>
-<li><a href="#_message">4. Message</a></li>
-<li><a href="#_chat_options">5. Chat Options</a></li>
-<li><a href="#_chatresponse">6. ChatResponse</a></li>
-<li><a href="#_generation">7. Generation</a></li>
-<li><a href="#_available_ri">8. Available RI</a></li>
-<li><a href="#_chat_model_api">9. Chat Model Api</a></li>
-</ul>
-</div>
-<div class="sect1">
-<h2 id="_chatclient"><a class="anchor" href="#_chatclient"></a>1. ChatClient</h2>
-<div class="sectionbody">
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">public interface ChatClient
-	extends ModelClient&lt;Prompt,ChatResponse&gt; {
 
-	default String call(String message) {}
-
-	@Override
-	ChatResponse call(Prompt prompt);
-}</code></pre>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_streamingchatclient"><a class="anchor" href="#_streamingchatclient"></a>2. StreamingChatClient</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>接收类似于ChatClient的Prompt请求，但使用Reactive Flux Api来流式传输响应；</p>
-</li>
-</ul>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">public interface StreamingChatClient
-	extends StreamingModelClient&lt;Prompt,ChatResponse&gt; {
-
-	@Override
-	Flux&lt;ChatResponse&gt; stream(Prompt prompt);
-}</code></pre>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_prompt"><a class="anchor" href="#_prompt"></a>3. Prompt</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>Prompt是ModelRequest，封装Message对象和可选模型请求选项的列表</p>
-</li>
-</ul>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">public class Prompt implements ModelRequest&lt;List&lt;Message&gt;&gt; {
-
-	private final List&lt;Message&gt; messageList;
-
-	private ChatOptions modelOptions;
-
-	@Override
-	public ChatOptions getOptions() {..}
-
-	@Override
-	public List&lt;Message&gt; getInstructions() {...}
-}</code></pre>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_message"><a class="anchor" href="#_message"></a>4. Message</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>Message接口封装一条文本消息、一组属性(如Map)和一个称为MessageType的分类；</p>
-</li>
-<li>
-<p>消息接口有各种实现，对应于AI模型可处理的消息类别，术语MessageType可能意味特定的消息格式，<br>
-对于不使用特定角色的AI模型，UserMessage实现充当标准类别，通常表示用户生成的查询或指令；</p>
-</li>
-</ul>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">public interface Message {
-
-   String getContent();
-
-   Map&lt;String, Object&gt; getProperties();
-
-   MessageType getMessageType();
-}</code></pre>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_chat_options"><a class="anchor" href="#_chat_options"></a>5. Chat Options</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>可传递给AI模型的选项，ChatOptions类是ModelOptions的子类，<br>
-定义可传递给AI模型的几个可移植选项：</p>
-</li>
-<li>
-<p>另每个特定于模型的ChatClient/StreamingChatClient<br>
-实现都可有自己的选项，这些选项可传递给AI模型：</p>
-</li>
-</ul>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../_images/Chat/ChatOptionFlow.jpg" alt="ChatOptionFlow">
-</div>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">public interface ChatOptions extends ModelOptions {
-
-	Float getTemperature();
-
-	void setTemperature(Float temperature);
-
-	Float getTopP();
-
-	void setTopP(Float topP);
-
-	Integer getTopK();
-
-	void setTopK(Integer topK);
-}</code></pre>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_chatresponse"><a class="anchor" href="#_chatresponse"></a>6. ChatResponse</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>ChatResponse类保存AI模型的输出，每个Generation实例包含单个提示可能产生的多个输出<br>
-中的一个，ChatResponse类还携带AI模型响应的ChatResponseMetadata元数据；</p>
-</li>
-</ul>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">public class ChatResponse implements ModelResponse&lt;Generation&gt; {
-
-    private final ChatResponseMetadata chatResponseMetadata;
-	private final List&lt;Generation&gt; generations;
-
-	@Override
-	public ChatResponseMetadata getMetadata() {...}
-
-    @Override
-	public List&lt;Generation&gt; getResults() {...}
-
-    // other methods omitted
-}</code></pre>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_generation"><a class="anchor" href="#_generation"></a>7. Generation</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>Generation类从ModelResult扩展而来，输出辅助消息响应和有关此结果的相关元数据</p>
-</li>
-</ul>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">public class Generation implements ModelResult&lt;AssistantMessage&gt; {
-
-	private AssistantMessage assistantMessage;
-	private ChatGenerationMetadata chatGenerationMetadata;
-
-	@Override
-	public AssistantMessage getOutput() {}
-
-	@Override
-	public ChatGenerationMetadata getMetadata() {}
-
-}</code></pre>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_available_ri"><a class="anchor" href="#_available_ri"></a>8. Available RI</h2>
-<div class="sectionbody">
-<div class="imageblock">
-<div class="content">
-<img src="../_images/Chat/ChatCompletionClient.jpg" alt="ChatCompletionClient">
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_chat_model_api"><a class="anchor" href="#_chat_model_api"></a>9. Chat Model Api</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>Spring AI Chat Completion Api构建在Spring AI<br>
-Generic Model Api之上，提供特定于Chat的抽象和实现；</p>
-</li>
-</ul>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../_images/Chat/ChatApi.jpg" alt="ChatApi">
-</div>
-</div>
-</div>
-</div>
 </article>
 	</div>
 </main>
