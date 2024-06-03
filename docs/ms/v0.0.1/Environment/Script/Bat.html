@@ -54,8 +54,8 @@
     <button class="nav-item-toggle"></button>
     <span class="nav-text">Script</span>
 <ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../Script/Bat.html">Bat</a>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="Bat.html">Bat</a>
   </li>
 </ul>
   </li>
@@ -238,22 +238,22 @@
     <span class="nav-text">Periphery</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="RssFeed.html">Rss Feed</a>
+    <a class="nav-link" href="../Periphery/RssFeed.html">Rss Feed</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="ViewPoint.html">ViewPoint</a>
+    <a class="nav-link" href="../Periphery/ViewPoint.html">ViewPoint</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="FlattenLifecycle.html">Flatten Lifecycle</a>
+    <a class="nav-link" href="../Periphery/FlattenLifecycle.html">Flatten Lifecycle</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="JakartaSpecification.html">Jakarta Specification</a>
+    <a class="nav-link" href="../Periphery/JakartaSpecification.html">Jakarta Specification</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="CommonAssortment.html">Common Assortment</a>
+    <a class="nav-link" href="../Periphery/CommonAssortment.html">Common Assortment</a>
   </li>
-  <li class="nav-item is-current-page" data-depth="3">
-    <a class="nav-link" href="TechniqueAssortment.html">Technique Assortment</a>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Periphery/TechniqueAssortment.html">Technique Assortment</a>
   </li>
 </ul>
   </li>
@@ -311,8 +311,8 @@
   <ul>
     <li><a href="../../index.html">AsciiDoc Makeshift</a></li>
     <li>Environment</li>
-    <li>Periphery</li>
-    <li><a href="TechniqueAssortment.html">Technique Assortment</a></li>
+    <li>Script</li>
+    <li><a href="Bat.html">Bat</a></li>
   </ul>
 </nav>
 		</div>
@@ -327,75 +327,142 @@
 <div id="toc" class="toc">
 <div id="toctitle"></div>
 <ul class="sectlevel1">
-<li><a href="#_eclipse_project_test">1. Eclipse Project Test</a></li>
-<li><a href="#_mvn_system">2. Mvn System</a></li>
-<li><a href="#_redis_max_memory">3. Redis Max Memory</a></li>
+<li><a href="#_antora_generator">1. Antora Generator</a></li>
+<li><a href="#_jupyter_pytorch">2. Jupyter Pytorch</a></li>
+<li><a href="#_common_tool">3. Common Tool</a></li>
+<li><a href="#_enable_group_policy">4. Enable Group Policy</a></li>
+<li><a href="#_enable_hyperv">5. Enable HyperV</a></li>
 </ul>
 </div>
 <div class="sect1">
-<h2 id="_eclipse_project_test"><a class="anchor" href="#_eclipse_project_test"></a>1. Eclipse Project Test</h2>
+<h2 id="_antora_generator"><a class="anchor" href="#_antora_generator"></a>1. Antora Generator</h2>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;classpathentry kind="src" output="target/test-classes" path="src/test/java"&gt;
-	&lt;attributes&gt;
-	    &lt;attribute name="optional" value="true"/&gt;
-	    &lt;attribute name="maven.pomderived" value="true"/&gt;
-	    &lt;attribute name="test" value="true"/&gt;
-  	&lt;/attributes&gt;
-&lt;/classpathentry&gt;
+<pre class="highlight"><code class="language-bash" data-lang="bash">echo off
+cls
+chcp 65001
 
-&lt;classpathentry kind="src" output="target/test-classes" path="src/test/resources"&gt;
-  	&lt;attributes&gt;
-	    &lt;attribute name="optional" value="true"/&gt;
-	    &lt;attribute name="maven.pomderived" value="true"/&gt;
-	    &lt;attribute name="test" value="true"/&gt;
-  	&lt;/attributes&gt;
-&lt;/classpathentry&gt;</code></pre>
+set BASE_URL=D:/Install/Antora/AsciiDoc
+
+set ANTORA_URL=%BASE_URL%/asciidoc-generator/
+set SITE_URL=%BASE_URL%/asciidoc-distro/docs/index.html
+
+d:
+cd %ANTORA_URL%
+
+rem --extension @antora/pdf-extension
+rem --extension @antora/lunr-extension
+
+rem -r asciidoctor-pdf
+rem -r @djencks/asciidoctor-mathjax
+
+rem --fetch antora-playbook.yml
+
+antora antora-playbook.yml &amp; start %SITE_URL%</code></pre>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_mvn_system"><a class="anchor" href="#_mvn_system"></a>2. Mvn System</h2>
+<h2 id="_jupyter_pytorch"><a class="anchor" href="#_jupyter_pytorch"></a>2. Jupyter Pytorch</h2>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
-    &lt;groupId&gt;com.elf&lt;/groupId&gt;
-    &lt;artifactId&gt;system-jar&lt;/artifactId&gt;
-    &lt;version&gt;1.0.0&lt;/version&gt;
-    &lt;scope&gt;system&lt;/scope&gt;
-    &lt;systemPath&gt;${project.basedir}/library/elf.jar&lt;/systemPath&gt;
-&lt;/dependency&gt;
+<pre class="highlight"><code class="language-bash" data-lang="bash">echo off
+cls
+chcp 65001
 
-&lt;resources&gt;
-    &lt;resource&gt;
-        &lt;directory&gt;lib&lt;/directory&gt;
-        &lt;targetPath&gt;/BOOT-INF/lib/&lt;/targetPath&gt;
-        &lt;includes&gt;
-            &lt;include&gt;**/*.jar&lt;/include&gt;
-        &lt;/includes&gt;
-    &lt;/resource&gt;
-&lt;/resources&gt;</code></pre>
+set JUPYTER_URL=D:/Install/Dev/workspace/jupyter-module
+
+d:
+cd %JUPYTER_URL%
+
+rem 设置Conda环境变量
+rem set CONDA_PATH=D:/Install/Dev/Conda
+
+rem 添加Conda的脚本路径到系统变量
+rem set PATH=%PATH%;%CONDA_PATH%\Scripts\
+
+call conda activate PyTorch
+
+call jupyter lab
+
+pause</code></pre>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_redis_max_memory"><a class="anchor" href="#_redis_max_memory"></a>3. Redis Max Memory</h2>
+<h2 id="_common_tool"><a class="anchor" href="#_common_tool"></a>3. Common Tool</h2>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-bash" data-lang="bash">config set maxmemory
-100MB
+<pre class="highlight"><code class="language-bash" data-lang="bash">echo off
+cls
+chcp 65001
 
-config get maxmemory
+:menu
+echo.
 
-vi /etc/redis/redis.conf
-maxmemory 100MB
+echo ==========
+echo 请选择任务类型：
+echo ==========
 
-systemctl restart redis.service</code></pre>
+echo 1 - Notepad
+echo 2 - Calculator
+echo 9 - Exit
+echo.
+
+set /p m=请输入数字，并回车：
+if %m%==1 goto note
+if %m%==2 goto calc
+if %m%==9 goto eof
+
+:note
+cd %windir%\system32\notepad.exe
+start notepad.exe
+goto menu
+
+:calc
+cd %windir%\system32\calc.exe
+start calc.exe
+goto menu</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_enable_group_policy"><a class="anchor" href="#_enable_group_policy"></a>4. Enable Group Policy</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">@echo off
+pushd "%~dp0"
+
+dir /b %SystemRoot%\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientExtensions-Package~3*.mum &gt;List.txt
+dir /b %SystemRoot%\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientTools-Package~3*.mum &gt;&gt;List.txt
+
+for /f %%i in ('findstr /i . List.txt 2^&gt;nul') do dism /online /norestart /add-package:"%SystemRoot%\servicing\Packages\%%i"
+pause</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_enable_hyperv"><a class="anchor" href="#_enable_hyperv"></a>5. Enable HyperV</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">pushd "%~dp0"
+
+dir /b %SystemRoot%\servicing\Packages\*Hyper-V*.mum &gt;hyper-v.txt
+
+for /f %%i in ('findstr /i . hyper-v.txt 2^&gt;nul') do dism /online /norestart /add-package:"%SystemRoot%\servicing\Packages\%%i"
+
+del hyper-v.txt
+
+Dism /online /enable-feature /featurename:Microsoft-Hyper-V-All /LimitAccess /ALL</code></pre>
 </div>
 </div>
 </div>
