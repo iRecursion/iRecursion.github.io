@@ -1147,7 +1147,12 @@ Executing transaction: done
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-python" data-lang="python">conda activate YoloV8</code></pre>
+<pre class="highlight"><code class="language-python" data-lang="python">conda activate YoloV8
+
+conda install jupyter ipykernel numpy pandas matplotlib -y
+
+# 安装失败可打开新的终端，激活YoloV8后再次安装
+python -m ipykernel install --user --name=YoloV8 --display-name="Python YoloV8"</code></pre>
 </div>
 </div>
 </div>
