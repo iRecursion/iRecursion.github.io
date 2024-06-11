@@ -1,0 +1,1592 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> :: AsciiDoc</title>
+    <meta name="generator" content="Antora 3.1.7">
+
+<link rel="stylesheet" href="../../../../_/css/site.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/asciidoc.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
+    <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+  			
+	            <div id="main" style="place-content: center;">
+	                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+		            </div>
+		        </section>
+    	</div>
+    	
+        <div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container" data-component="ai" data-version="v0.0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">AsciiDoc AI</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Spring AI</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Solitary</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/SpringAIStructure.html">Spring AI Structure</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/AIConcept.html">AI Concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/SpringAIDependency.html">Spring AI Dependency</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/SpringAIProperty.html">Spring AI Property</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/GenericModel.html">Generic Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/Prompt.html">Prompt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/OutputParser.html">Output Parser</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/EtlPipeline.html">Etl Pipeline</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/FunctionCalling.html">Function Calling</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/EvaluationTesting.html">Evaluation Testing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/Multimodality.html">Multimodality</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Chat Completion</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/ChatCompletion/ChatCompletion.html">Chat Completion</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/ChatCompletion/Ollama.html">Ollama</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/ChatCompletion/MiniMaxChat.html">MiniMax Chat</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/ChatCompletion/ZhiPuChat.html">ZhiPu Chat</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/ChatCompletion/HuggingFace.html">Hugging Face</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Image</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Image/ImageGeneration.html">Image Generation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Image/ZhiPuImage.html">ZhiPu Image</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Embedding</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/Embedding.html">Embedding</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/Ollama.html">Ollama</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/PostgresML.html">Postgres ML</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/TransformerOnnx.html">Transformer Onnx</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/MiniMaxEmbedding.html">MiniMax Embedding</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/ZhiPuEmbedding.html">ZhiPu Embedding</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Vector Store</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/VectorExplanation.html">Vector Explanation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/VectorStore.html">Vector Store</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Neo4j.html">Neo4j</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Redis.html">Redis</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Chroma.html">Chroma</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Milvus.html">Milvus</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Qdrant.html">Qdrant</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Elastic.html">Elastic</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Weaviate.html">Weaviate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Pgv.html">Postgres Vector</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Appendice</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Appendice/TestContainer.html">Test Container</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Appendice/DockerCompose.html">Docker Compose</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Case</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Case/SpringAICase.html">Spring AI Case</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Yolo</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Solitary</span>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="YoloV8Installation.html">YoloV8 Setup</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">PyTorch</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">PyTorch Fundamental</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Fundamental/PytorchInstallation.html">Pytorch Setup</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Fundamental/TensorIntro.html">Tensor Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Fundamental/InfoRetrieving.html">Info Retrieving</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Fundamental/Manipulating.html">Manipulating</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Fundamental/ShapeError.html">Shape Error</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Fundamental/Indexing.html">Indexing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Fundamental/TensorNumPy.html">Tensor NumPy</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Fundamental/Reproducibility.html">Reproducibility</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Fundamental/TensorOnGpu.html">Tensor On Gpu</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Fundamental/Exercise.html">Exercise</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Fundamental/ExtraCurriculum.html">Extra Curriculum</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">PyTorch Workflow</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Workflow/WorkflowIntro.html">Workflow Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Workflow/DataPreparingLoading.html">Data Preparing Loading</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Workflow/BuildModel.html">Build Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Workflow/TrainModel.html">Train Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Workflow/PredictionInference.html">Prediction Inference</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Workflow/SavingLoadingModel.html">Saving Loading Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Workflow/PuttingTogether.html">Putting Together</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Workflow/Exercise.html">Exercise</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Workflow/ExtraCurriculum.html">Extra Curriculum</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">NN Classification</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Classification/NNClassificationIntro.html">NNC Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Classification/GettingDataReady.html">Getting Data Ready</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Classification/BuildingModel.html">Building Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Classification/TrainModel.html">Train Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Classification/PredictionEvaluating.html">Prediction Evaluating</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Classification/ImprovingModel.html">Improving Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Classification/NonLinearity.html">Non Linearity</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Classification/ReplicatingNonLinearityAF.html">Replicating Non Linearity AF</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Classification/PuttingTogetherMultiClass.html">Putting Together MultiClass</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Classification/EvaluationMetric.html">Evaluation Metric</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Classification/Exercise.html">Exercise</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Computer Vision</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ComputerVision/ComputerVisionIntro.html">ComputerVisionIntro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ComputerVision/GettingDataset.html">Getting Dataset</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ComputerVision/PrepareDataLoader.html">Prepare DataLoader</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ComputerVision/BuildBaselineModel.html">Build Baseline Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ComputerVision/PredictionWithResult.html">Prediction With Result</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ComputerVision/SetupDeviceAgnosticCode.html">Setup Device Agnostic Code</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ComputerVision/BuildingNonLinearityModel.html">Building Non Linearity Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ComputerVision/BuildCnn.html">Build Cnn</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ComputerVision/CompareResultTrainingTime.html">Result and Training Time</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ComputerVision/EvaluateRandomPrediction.html">Evaluate Random Prediction</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ComputerVision/ConfusionMatrix.html">Confusion Matrix</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ComputerVision/SaveAndLoad.html">Save And Load</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ComputerVision/Exercise.html">Exercise</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ComputerVision/ExtraCurriculum.html">Extra Curriculum</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Custom Dataset</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/CustomDataset/CustomDatasetIntro.html">Custom Dataset Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/CustomDataset/DataPreparation.html">Data Preparation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/CustomDataset/TransformingData.html">Transforming Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/CustomDataset/OptionALoadingImgDataViaImageFolder.html">Loading ImageFolder</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/CustomDataset/OptionBLoadingImgDataWithCustomDataset.html">Loading Custom Dataset</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/CustomDataset/TransformFormDataAugmentation.html">Data Augmentation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/CustomDataset/ModelATinyVGGWithoutDataAugmentation.html">Without Augmentation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/CustomDataset/LossCurve.html">Loss Curve</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/CustomDataset/ModelBTinyVGGWithDataAugmentation.html">With Augmentation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/CustomDataset/CompareModelResult.html">Compare Model Result</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/CustomDataset/PredictionOnCustomImg.html">Prediction On Custom Img</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/CustomDataset/Takeaway.html">Takeaway</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/CustomDataset/Exercise.html">Exercise</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/CustomDataset/ExtraCurriculum.html">Extra Curriculum</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">PyTorch Modular</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Modular/ModularIntro.html">Modular Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Modular/CellVSScript.html">Cell VS Script</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Modular/GettingData.html">Getting Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Modular/MakingModel.html">Making Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Modular/CombiningTrainTest.html">Combining Train Test</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Modular/SavingModel.html">Saving Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Modular/TrainingEvaluatingSaving.html">Training Evaluating Saving</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Modular/Exercise.html">Exercise</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Modular/ExtraCurriculum.html">Extra Curriculum</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Transfer Learning</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/TransferLearning/TransferLearningIntro.html">Transfer Learning Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/TransferLearning/FindPretrainedModel.html">FindPretrainedModel</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/TransferLearning/TransferLearningCover.html">Transfer Learning Cover</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/TransferLearning/SettingUp.html">Setting Up</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/TransferLearning/GettingData.html">Getting Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/TransferLearning/CreateDatasetDataLoader.html">Create Dataset DataLoader</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/TransferLearning/GettingPretrainedModel.html">Getting Pretrained Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/TransferLearning/TrainingModel.html">Training Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/TransferLearning/EvaluatingModel.html">Evaluating Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/TransferLearning/MakingPrediction.html">Making Prediction</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/TransferLearning/Takeaway.html">Takeaway</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/TransferLearning/Exercise.html">Exercise</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/TransferLearning/ExtraCurriculum.html">Extra Curriculum</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Experiment Tracking</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ExperimentTracking/TrackExperimentIntro.html">Track Experiment Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ExperimentTracking/GettingSetup.html">Getting Setup</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ExperimentTracking/GettingData.html">Getting Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ExperimentTracking/CreateDatasetDataLoader.html">Create Dataset DataLoader</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ExperimentTracking/TrainModelTrackResult.html">Train Model Track Result</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ExperimentTracking/ViewModelResult.html">View Model Result</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ExperimentTracking/HelperFunction.html">Helper Function</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ExperimentTracking/SetupModellingExperiment.html">Setup Modelling Experiment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ExperimentTracking/ViewExperiment.html">View Experiment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ExperimentTracking/LoadModelPrediction.html">Load Model Prediction</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ExperimentTracking/Takeaway.html">Takeaway</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ExperimentTracking/Exercise.html">Exercise</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Paper Replicating</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/PaperReplicating/PaperReplicatingIntro.html">Paper Replicating Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/PaperReplicating/GettingSetup.html">Getting Setup</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/PaperReplicating/GettingData.html">Getting Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/PaperReplicating/CreateDatasetDataLoader.html">Create Dataset DataLoader</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/PaperReplicating/ReplicatingViTPaper.html">Replicating ViT Paper</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/PaperReplicating/EquationAScpp.html">Equation A Scpp</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/PaperReplicating/EquationBMsa.html">Equation B MSA</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/PaperReplicating/EquationCMlp.html">Equation C MLP</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/PaperReplicating/CreateTransformerEncoder.html">Create Transformer Encoder</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/PaperReplicating/PuttingViTTogether.html">Putting ViT Together</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/PaperReplicating/SettingViTModel.html">Setting ViT Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/PaperReplicating/UsingPretrainedViT.html">Using Pretrained ViT</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/PaperReplicating/MakePrediction.html">Make Prediction</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/PaperReplicating/Takeaway.html">Takeaway</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/PaperReplicating/Exercise.html">Exercise</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/PaperReplicating/ExtraCurriculum.html">Extra Curriculum</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Model Deployment</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ModelDeployment/ModelDeploymentIntro.html">Model Deployment Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ModelDeployment/GettingSetup.html">Getting Setup</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ModelDeployment/GettingData.html">Getting Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ModelDeployment/DeploymentExperimentOutline.html">Deployment Experiment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ModelDeployment/EffNetB2FeatureExtractor.html">EffNetB2 Feature Extractor</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ModelDeployment/ViTFeatureExtractor.html">ViT Feature Extractor</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ModelDeployment/MakingPrediction.html">Making Prediction</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ModelDeployment/ComparingResultTimeSize.html">Comparing Result Time Size</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ModelDeployment/CreatingGradio.html">Creating Gradio</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ModelDeployment/TurningDemoDeployable.html">Turning Demo Deployable</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ModelDeployment/DeployingHuggingFace.html">Deploying HuggingFace</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ModelDeployment/CreatingFoodVision.html">Creating Food Vision</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ModelDeployment/TurningModelDeployable.html">Turning Model Deployable</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ModelDeployment/Takeaway.html">Takeaway</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ModelDeployment/Exercise.html">Exercise</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ModelDeployment/ExtraCurriculum.html">Extra Curriculum</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Version 2X</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Version2X/Version2XIntro.html">Version 2X Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Version2X/GettingSetup.html">Getting Setup</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Version2X/GettingGPUInfo.html">Getting GPU Info</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Version2X/SetupExperiment.html">Setup Experiment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Version2X/TimeModelSingleRun.html">Time Model Single Run</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Version2X/TimeModelMultipleRun.html">Time Model Multiple Run</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Version2X/PossibleImprovementExtension.html">Improvement Extension</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Version2X/Resource.html">Resource</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Solitary</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Solitary/PyTorchExtraResource.html">PyTorch Extra Resource</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Solitary/PyTorchCheatSheet.html">PyTorch Cheat Sheet</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Solitary/PyTorchCommonError.html">PyTorch Common Error</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">TF</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Prerequisite</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../TF/Prerequisite/TFIntroductory.html">TF Introductory</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../TF/Prerequisite/TFInstallation.html">TF Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../TF/Prerequisite/TFExtra.html">TF Extra</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Fundamental</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Guide</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">NN Regression</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">NN Classification</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">CV</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">CNN CV</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Transfer Learning</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Feature Extraction</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Fine Tuning</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Scaling Up</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Milestone Food Vision</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">NLP</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">NLP</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Milestone SkimLit</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Time Series</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Milestone Time Series</span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Open AI</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Solitary</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Solitary/OpenAIIntro.html">OpenAI Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Solitary/OpenAIModel.html">OpenAI Model</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Capability</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Capability/TextGeneration.html">Text Generation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Capability/FunctionCalling.html">Function Calling</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Capability/Embedding.html">Embedding</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Capability/FineTuning.html">Fine Tuning</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Capability/ImageGeneration.html">Image Generation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Capability/Vision.html">Vision</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Capability/TextToSpeech.html">Text To Speech</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Capability/SpeechToText.html">Speech To Text</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Capability/Moderation.html">Moderation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Assistant TODO</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Assistant/AssistantOverview.html">Assistant Overview</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Assistant/AssistantWork.html">Assistant Work</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Assistant/FileSearch.html">File Search</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Assistant/CodeInterpreter.html">Code Interpreter</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Assistant/FunctionCalling.html">Function Calling</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Assistant/MigrationGuide.html">Migration Guide</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Assistant/NewFeature.html">New Feature</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Guide TODO</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Guide/PromptEngineering.html">Prompt Engineering</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Guide/ProductionBestPractice.html">Production Best Practice</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Guide/SafetyBestPractice.html">Safety Best Practice</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Guide/LatencyOptimization.html">Latency Optimization</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Guide/RateLimit.html">Rate Limit</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Guide/Batch.html">Batch</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Guide/ErrorCode.html">Error Code</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Guide/Library.html">Library</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Guide/Deprecation.html">Deprecation</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">LLM</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Fundamental</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../LLM/Fundamental/AILearningPath.html">AI Learning Path</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../LLM/Fundamental/PrincipalSeniorAIEngineer.html">Principal Senior AI Engineer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../LLM/Fundamental/AIIntro.html">AI Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../LLM/Fundamental/DLBasicConcept.html">DL Basic Concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../LLM/Fundamental/ModelTrainingConcept.html">Model Training Concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../LLM/Fundamental/LlmIntro.html">LLM Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../LLM/Fundamental/AIFrameworkLibrary.html">AI Framework Library</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Full Stack</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../LLM/FullStack/Algebra.html">Algebra</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../LLM/FullStack/PromptEngineering.html">Prompt Engineering</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../LLM/FullStack/PromptEngineeringCase.html">Prompt Engineering Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../LLM/FullStack/FunctionCalling.html">Function Calling</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../LLM/FullStack/RagEmbedding.html">RAG Embedding</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../LLM/FullStack/AssistantApi.html">Assistant Api</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../LLM/FullStack/SemanticKernel.html">Semantic Kernel</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../LLM/FullStack/LangChain.html">LangChain</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../LLM/FullStack/AppDevToolchain.html">App Dev Toolchain</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../LLM/FullStack/AutoGpt.html">Auto Gpt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../LLM/FullStack/ProjectPad.html">Project Pad</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../LLM/FullStack/FineTuning.html">Fine Tuning</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../LLM/FullStack/MultimodalLlm.html">Multimodal LLM</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../LLM/FullStack/DeploymentDelivery.html">Deployment Delivery</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Algorithm</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">ML Algorithm</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">DL Algorithm</span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">AsciiDoc AI</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">AsciiDoc AI</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../../kafka/v0.0.1/index.html">AsciiDoc Kafka</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../kafka/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../../ms/v0.0.1/index.html">AsciiDoc Makeshift</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../ms/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+	<div class="toolbar" role="navigation">
+	<button class="nav-toggle"></button>
+	
+		<a href="../../index.html" 
+			class="home-link">
+		</a>
+
+	<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">AsciiDoc AI</a></li>
+    <li>Yolo</li>
+    <li>Solitary</li>
+    <li><a href="YoloV8Installation.html">YoloV8 Setup</a></li>
+  </ul>
+</nav>
+		</div>
+	
+	<div class="content">
+			<aside class="toc sidebar" 
+	data-title="Contents" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+			<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_conda_version">1. Conda Version</a></li>
+<li><a href="#_create_environment">2. Create Environment</a></li>
+<li><a href="#_activate_environment">3. Activate Environment</a></li>
+<li><a href="#_install_yolo_v8">4. Install Yolo V8</a></li>
+<li><a href="#_install_pytorch">5. Install PyTorch</a></li>
+<li><a href="#_install_numpy_opencv">6. Install Numpy OpenCV</a></li>
+<li><a href="#_detect_image">7. Detect Image</a></li>
+<li><a href="#_detect_video">8. Detect Video</a></li>
+<li><a href="#_output_directory">9. Output Directory</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_conda_version"><a class="anchor" href="#_conda_version"></a>1. Conda Version</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python">conda --version
+
+conda 24.4.0</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_create_environment"><a class="anchor" href="#_create_environment"></a>2. Create Environment</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python">conda create -n YoloV8 -y</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">Channels:
+ - defaults
+Platform: win-64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: D:\Install\Dev\Conda\envs\YoloV8
+
+
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate YoloV8
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_activate_environment"><a class="anchor" href="#_activate_environment"></a>3. Activate Environment</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python">conda activate YoloV8</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_install_yolo_v8"><a class="anchor" href="#_install_yolo_v8"></a>4. Install Yolo V8</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python">conda install -c conda-forge ultralytics= -y</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">Channels:
+ - conda-forge
+ - defaults
+Platform: win-64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: D:\Install\Dev\Conda\envs\YoloV8
+
+  added / updated specs:
+    - ultralytics
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    brotli-python-1.1.0        |  py312h53d5487_1         315 KB  conda-forge
+    contourpy-1.2.1            |  py312h0d7def4_0         202 KB  conda-forge
+    fonttools-4.53.0           |  py312h4389bb4_0         2.3 MB  conda-forge
+    kiwisolver-1.4.5           |  py312h0d7def4_1          54 KB  conda-forge
+    libopencv-4.9.0            |qt6_py312h5b8f1c0_615        31.4 MB  conda-forge
+    matplotlib-base-3.8.4      |  py312hfee7060_2         7.4 MB  conda-forge
+    numpy-1.26.4               |  py312h8753938_0         6.2 MB  conda-forge
+    opencv-4.9.0               |qt6_py312hfab33ed_615          55 KB  conda-forge
+    pandas-2.2.2               |  py312h72972c8_1        13.5 MB  conda-forge
+    pillow-10.3.0              |  py312h6f6a607_0        40.5 MB  conda-forge
+    pip-24.0                   |     pyhd8ed1ab_0         1.3 MB  conda-forge
+    psutil-5.9.8               |  py312he70551f_0         492 KB  conda-forge
+    py-opencv-4.9.0            |qt6_py312hb11cbc4_615         1.1 MB  conda-forge
+    python-3.12.3              |h2628c8c_0_cpython        15.4 MB  conda-forge
+    python_abi-3.12            |          4_cp312           7 KB  conda-forge
+    pyyaml-6.0.1               |  py312he70551f_1         164 KB  conda-forge
+    scipy-1.13.1               |  py312h1f4e10d_0        14.8 MB  conda-forge
+    setuptools-70.0.0          |     pyhd8ed1ab_0         472 KB  conda-forge
+    statsmodels-0.14.2         |  py312h1a27103_0        11.0 MB  conda-forge
+    tzdata-2024a               |       h0c530f3_0         117 KB  conda-forge
+    vc-14.3                    |      h8a93ad2_20          17 KB  conda-forge
+    wheel-0.43.0               |     pyhd8ed1ab_1          57 KB  conda-forge
+    ------------------------------------------------------------
+                                           Total:       146.9 MB
+
+The following NEW packages will be INSTALLED:
+
+  aom                conda-forge/win-64::aom-3.9.0-he0c23c2_0
+  brotli             conda-forge/win-64::brotli-1.1.0-hcfcfb64_1
+  brotli-bin         conda-forge/win-64::brotli-bin-1.1.0-hcfcfb64_1
+  brotli-python      conda-forge/win-64::brotli-python-1.1.0-py312h53d5487_1
+  bzip2              conda-forge/win-64::bzip2-1.0.8-hcfcfb64_5
+  ca-certificates    conda-forge/win-64::ca-certificates-2024.6.2-h56e8100_0
+  cairo              conda-forge/win-64::cairo-1.18.0-h1fef639_0
+  certifi            conda-forge/noarch::certifi-2024.6.2-pyhd8ed1ab_0
+  charset-normalizer conda-forge/noarch::charset-normalizer-3.3.2-pyhd8ed1ab_0
+  colorama           conda-forge/noarch::colorama-0.4.6-pyhd8ed1ab_0
+  contourpy          conda-forge/win-64::contourpy-1.2.1-py312h0d7def4_0
+  cycler             conda-forge/noarch::cycler-0.12.1-pyhd8ed1ab_0
+  dav1d              conda-forge/win-64::dav1d-1.2.1-hcfcfb64_0
+  double-conversion  conda-forge/win-64::double-conversion-3.3.0-h63175ca_0
+  expat              conda-forge/win-64::expat-2.6.2-h63175ca_0
+  ffmpeg             conda-forge/win-64::ffmpeg-6.1.1-gpl_h7cec250_112
+  font-ttf-dejavu-s~ conda-forge/noarch::font-ttf-dejavu-sans-mono-2.37-hab24e00_0
+  font-ttf-inconsol~ conda-forge/noarch::font-ttf-inconsolata-3.000-h77eed37_0
+  font-ttf-source-c~ conda-forge/noarch::font-ttf-source-code-pro-2.038-h77eed37_0
+  font-ttf-ubuntu    conda-forge/noarch::font-ttf-ubuntu-0.83-h77eed37_2
+  fontconfig         conda-forge/win-64::fontconfig-2.14.2-hbde0cde_0
+  fonts-conda-ecosy~ conda-forge/noarch::fonts-conda-ecosystem-1-0
+  fonts-conda-forge  conda-forge/noarch::fonts-conda-forge-1-0
+  fonttools          conda-forge/win-64::fonttools-4.53.0-py312h4389bb4_0
+  freeglut           conda-forge/win-64::freeglut-3.2.2-h63175ca_2
+  freetype           conda-forge/win-64::freetype-2.12.1-hdaf720e_2
+  graphite2          conda-forge/win-64::graphite2-1.3.13-h63175ca_1003
+  harfbuzz           conda-forge/win-64::harfbuzz-8.5.0-h81778c3_0
+  hdf5               conda-forge/win-64::hdf5-1.14.3-nompi_h2b43c12_105
+  icu                conda-forge/win-64::icu-73.2-h63175ca_0
+  idna               conda-forge/noarch::idna-3.7-pyhd8ed1ab_0
+  imath              conda-forge/win-64::imath-3.1.11-h12be248_0
+  intel-openmp       conda-forge/win-64::intel-openmp-2024.1.0-h57928b3_966
+  jasper             conda-forge/win-64::jasper-4.2.4-hcb1a123_0
+  khronos-opencl-ic~ conda-forge/win-64::khronos-opencl-icd-loader-2023.04.17-h64bf75a_1
+  kiwisolver         conda-forge/win-64::kiwisolver-1.4.5-py312h0d7def4_1
+  krb5               conda-forge/win-64::krb5-1.21.2-heb0366b_0
+  lcms2              conda-forge/win-64::lcms2-2.16-h67d730c_0
+  lerc               conda-forge/win-64::lerc-4.0.0-h63175ca_0
+  libabseil          conda-forge/win-64::libabseil-20240116.2-cxx17_h63175ca_0
+  libaec             conda-forge/win-64::libaec-1.1.3-h63175ca_0
+  libasprintf        conda-forge/win-64::libasprintf-0.22.5-h5728263_2
+  libblas            conda-forge/win-64::libblas-3.9.0-22_win64_mkl
+  libbrotlicommon    conda-forge/win-64::libbrotlicommon-1.1.0-hcfcfb64_1
+  libbrotlidec       conda-forge/win-64::libbrotlidec-1.1.0-hcfcfb64_1
+  libbrotlienc       conda-forge/win-64::libbrotlienc-1.1.0-hcfcfb64_1
+  libcblas           conda-forge/win-64::libcblas-3.9.0-22_win64_mkl
+  libclang13         conda-forge/win-64::libclang13-18.1.7-default_h97ce8ae_0
+  libcurl            conda-forge/win-64::libcurl-8.8.0-hd5e4a3a_0
+  libdeflate         conda-forge/win-64::libdeflate-1.20-hcfcfb64_0
+  libexpat           conda-forge/win-64::libexpat-2.6.2-h63175ca_0
+  libffi             conda-forge/win-64::libffi-3.4.2-h8ffe710_5
+  libgettextpo       conda-forge/win-64::libgettextpo-0.22.5-h5728263_2
+  libglib            conda-forge/win-64::libglib-2.80.2-h0df6a38_0
+  libhwloc           conda-forge/win-64::libhwloc-2.10.0-default_h8125262_1001
+  libiconv           conda-forge/win-64::libiconv-1.17-hcfcfb64_2
+  libintl            conda-forge/win-64::libintl-0.22.5-h5728263_2
+  libjpeg-turbo      conda-forge/win-64::libjpeg-turbo-3.0.0-hcfcfb64_1
+  liblapack          conda-forge/win-64::liblapack-3.9.0-22_win64_mkl
+  liblapacke         conda-forge/win-64::liblapacke-3.9.0-22_win64_mkl
+  libopencv          conda-forge/win-64::libopencv-4.9.0-qt6_py312h5b8f1c0_615
+  libopenvino        conda-forge/win-64::libopenvino-2024.1.0-hfe1841e_7
+  libopenvino-auto-~ conda-forge/win-64::libopenvino-auto-batch-plugin-2024.1.0-h04f32e0_7
+  libopenvino-auto-~ conda-forge/win-64::libopenvino-auto-plugin-2024.1.0-h04f32e0_7
+  libopenvino-heter~ conda-forge/win-64::libopenvino-hetero-plugin-2024.1.0-h372dad0_7
+  libopenvino-intel~ conda-forge/win-64::libopenvino-intel-cpu-plugin-2024.1.0-hfe1841e_7
+  libopenvino-intel~ conda-forge/win-64::libopenvino-intel-gpu-plugin-2024.1.0-hfe1841e_7
+  libopenvino-ir-fr~ conda-forge/win-64::libopenvino-ir-frontend-2024.1.0-h372dad0_7
+  libopenvino-onnx-~ conda-forge/win-64::libopenvino-onnx-frontend-2024.1.0-hdeef14f_7
+  libopenvino-paddl~ conda-forge/win-64::libopenvino-paddle-frontend-2024.1.0-hdeef14f_7
+  libopenvino-pytor~ conda-forge/win-64::libopenvino-pytorch-frontend-2024.1.0-he0c23c2_7
+  libopenvino-tenso~ conda-forge/win-64::libopenvino-tensorflow-frontend-2024.1.0-h7c40eac_7
+  libopenvino-tenso~ conda-forge/win-64::libopenvino-tensorflow-lite-frontend-2024.1.0-he0c23c2_7
+  libopus            conda-forge/win-64::libopus-1.3.1-h8ffe710_1
+  libpng             conda-forge/win-64::libpng-1.6.43-h19919ed_0
+  libprotobuf        conda-forge/win-64::libprotobuf-4.25.3-h503648d_0
+  libsqlite          conda-forge/win-64::libsqlite-3.46.0-h2466b09_0
+  libssh2            conda-forge/win-64::libssh2-1.11.0-h7dfc565_0
+  libtiff            conda-forge/win-64::libtiff-4.6.0-hddb2be6_3
+  libwebp-base       conda-forge/win-64::libwebp-base-1.4.0-hcfcfb64_0
+  libxcb             conda-forge/win-64::libxcb-1.15-hcd874cb_0
+  libxml2            conda-forge/win-64::libxml2-2.12.7-h283a6d9_1
+  libzlib            conda-forge/win-64::libzlib-1.3.1-h2466b09_1
+  m2w64-gcc-libgfor~ conda-forge/win-64::m2w64-gcc-libgfortran-5.3.0-6
+  m2w64-gcc-libs     conda-forge/win-64::m2w64-gcc-libs-5.3.0-7
+  m2w64-gcc-libs-co~ conda-forge/win-64::m2w64-gcc-libs-core-5.3.0-7
+  m2w64-gmp          conda-forge/win-64::m2w64-gmp-6.1.0-2
+  m2w64-libwinpthre~ conda-forge/win-64::m2w64-libwinpthread-git-5.0.0.4634.697f757-2
+  matplotlib-base    conda-forge/win-64::matplotlib-base-3.8.4-py312hfee7060_2
+  mkl                conda-forge/win-64::mkl-2024.1.0-h66d3029_692
+  msys2-conda-epoch  conda-forge/win-64::msys2-conda-epoch-20160418-1
+  munkres            conda-forge/noarch::munkres-1.1.4-pyh9f0ad1d_0
+  numpy              conda-forge/win-64::numpy-1.26.4-py312h8753938_0
+  opencv             conda-forge/win-64::opencv-4.9.0-qt6_py312hfab33ed_615
+  openexr            conda-forge/win-64::openexr-3.2.2-h72640d8_1
+  openh264           conda-forge/win-64::openh264-2.4.1-h63175ca_0
+  openjpeg           conda-forge/win-64::openjpeg-2.5.2-h3d672ee_0
+  openssl            conda-forge/win-64::openssl-3.3.1-h2466b09_0
+  packaging          conda-forge/noarch::packaging-24.0-pyhd8ed1ab_0
+  pandas             conda-forge/win-64::pandas-2.2.2-py312h72972c8_1
+  patsy              conda-forge/noarch::patsy-0.5.6-pyhd8ed1ab_0
+  pcre2              conda-forge/win-64::pcre2-10.43-h17e33f8_0
+  pillow             conda-forge/win-64::pillow-10.3.0-py312h6f6a607_0
+  pip                conda-forge/noarch::pip-24.0-pyhd8ed1ab_0
+  pixman             conda-forge/win-64::pixman-0.43.4-h63175ca_0
+  psutil             conda-forge/win-64::psutil-5.9.8-py312he70551f_0
+  pthread-stubs      conda-forge/win-64::pthread-stubs-0.4-hcd874cb_1001
+  pthreads-win32     conda-forge/win-64::pthreads-win32-2.9.1-hfa6e2cd_3
+  pugixml            conda-forge/win-64::pugixml-1.14-h63175ca_0
+  py-cpuinfo         conda-forge/noarch::py-cpuinfo-9.0.0-pyhd8ed1ab_0
+  py-opencv          conda-forge/win-64::py-opencv-4.9.0-qt6_py312hb11cbc4_615
+  pyparsing          conda-forge/noarch::pyparsing-3.1.2-pyhd8ed1ab_0
+  pysocks            conda-forge/noarch::pysocks-1.7.1-pyh0701188_6
+  python             conda-forge/win-64::python-3.12.3-h2628c8c_0_cpython
+  python-dateutil    conda-forge/noarch::python-dateutil-2.9.0-pyhd8ed1ab_0
+  python-tzdata      conda-forge/noarch::python-tzdata-2024.1-pyhd8ed1ab_0
+  python_abi         conda-forge/win-64::python_abi-3.12-4_cp312
+  pytz               conda-forge/noarch::pytz-2024.1-pyhd8ed1ab_0
+  pyyaml             conda-forge/win-64::pyyaml-6.0.1-py312he70551f_1
+  qt6-main           conda-forge/win-64::qt6-main-6.7.1-h9e9f2d0_2
+  requests           conda-forge/noarch::requests-2.32.3-pyhd8ed1ab_0
+  scipy              conda-forge/win-64::scipy-1.13.1-py312h1f4e10d_0
+  seaborn            conda-forge/noarch::seaborn-0.13.2-hd8ed1ab_2
+  seaborn-base       conda-forge/noarch::seaborn-base-0.13.2-pyhd8ed1ab_2
+  setuptools         conda-forge/noarch::setuptools-70.0.0-pyhd8ed1ab_0
+  six                conda-forge/noarch::six-1.16.0-pyh6c4a22f_0
+  snappy             conda-forge/win-64::snappy-1.2.0-hfb803bf_1
+  statsmodels        conda-forge/win-64::statsmodels-0.14.2-py312h1a27103_0
+done</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_install_pytorch"><a class="anchor" href="#_install_pytorch"></a>5. Install PyTorch</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python">conda install pytorch torchvision torchaudio cpuonly -c pytorch -y</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">Channels:
+ - pytorch
+ - defaults
+ - conda-forge
+Platform: win-64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: D:\Install\Dev\Conda\envs\YoloV8
+
+  added / updated specs:
+    - cpuonly
+    - pytorch
+    - torchaudio
+    - torchvision
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    mkl-2023.1.0               |   h6a75c08_48682       137.2 MB  conda-forge
+    ------------------------------------------------------------
+                                           Total:       137.2 MB
+
+The following NEW packages will be INSTALLED:
+
+  blas               pkgs/main/win-64::blas-1.0-mkl
+  cpuonly            pytorch/noarch::cpuonly-2.0-0
+  filelock           pkgs/main/win-64::filelock-3.13.1-py312haa95532_0
+  jinja2             pkgs/main/win-64::jinja2-3.1.4-py312haa95532_0
+  libuv              pkgs/main/win-64::libuv-1.44.2-h2bbff1b_0
+  markupsafe         pkgs/main/win-64::markupsafe-2.1.3-py312h2bbff1b_0
+  mpmath             pkgs/main/win-64::mpmath-1.3.0-py312haa95532_0
+  networkx           pkgs/main/win-64::networkx-3.2.1-py312haa95532_0
+  pytorch            pytorch/win-64::pytorch-2.3.1-py3.12_cpu_0
+  pytorch-mutex      pytorch/noarch::pytorch-mutex-1.0-cpu
+  sympy              pkgs/main/win-64::sympy-1.12-py312haa95532_0
+  torchaudio         pytorch/win-64::torchaudio-2.3.1-py312_cpu
+  torchvision        pytorch/win-64::torchvision-0.18.1-py312_cpu
+  typing_extensions  pkgs/main/win-64::typing_extensions-4.11.0-py312haa95532_0
+
+The following packages will be SUPERSEDED by a higher-priority channel:
+
+done</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_install_numpy_opencv"><a class="anchor" href="#_install_numpy_opencv"></a>6. Install Numpy OpenCV</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><mark>此操作可选：没open cv库</mark></p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python"># ModuleNotFoundError: No module named 'cv2'
+
+# conda install -c conda-forge numpy opencv -y</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_detect_image"><a class="anchor" href="#_detect_image"></a>7. Detect Image</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python">yolo task=detect mode=predict model=yolov8n.pt source=d:/YoloV8SampleImage.jpg</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">Downloading https://github.com/ultralytics/assets/releases/download/v8.2.0/yolov8n.pt to 'yolov8n.pt'...
+100%|██████████████████████████████████████████████████████████████| 6.23M/6.23M [02:05&lt;00:00, 51.9kB/s]
+Ultralytics YOLOv8.2.31 🚀 Python-3.12.3 torch-2.3.1 CPU (12th Gen Intel Core(TM) i7-12700H)
+YOLOv8n summary (fused): 168 layers, 3151904 parameters, 0 gradients
+
+image 1/1 d:\YoloV8SampleImage.jpg: 448x640 10 persons, 1 bus, 2 traffic lights, 2 backpacks, 2 handbags, 324.9ms
+Speed: 3.6ms preprocess, 324.9ms inference, 23.4ms postprocess per image at shape (1, 3, 448, 640)
+
+💡 Learn more at https://docs.ultralytics.com/modes/predict</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><mark>Results saved to runs\detect\predict</mark></p>
+</li>
+<li>
+<p><mark>D:\runs\detect\predict\YoloV8SampleImage.jpg</mark></p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Solitary/YoloV8SampleImage.jpg" alt="YoloV8SampleImage">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_detect_video"><a class="anchor" href="#_detect_video"></a>8. Detect Video</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python">yolo task=detect mode=predict model=yolov8n.pt source=d:/YoloV8SampleVideo.mp4</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">Ultralytics YOLOv8.2.31 🚀 Python-3.12.3 torch-2.3.1 CPU (12th Gen Intel Core(TM) i7-12700H)
+YOLOv8n summary (fused): 168 layers, 3151904 parameters, 0 gradients
+
+video 1/1 (frame 1/1314) d:\YoloV8SampleVideo.mp4: 384x640 1 car, 209.0ms
+video 1/1 (frame 2/1314) d:\YoloV8SampleVideo.mp4: 384x640 1 car, 183.8ms
+video 1/1 (frame 3/1314) d:\YoloV8SampleVideo.mp4: 384x640 1 car, 105.2ms
+video 1/1 (frame 4/1314) d:\YoloV8SampleVideo.mp4: 384x640 1 car, 198.3ms
+video 1/1 (frame 5/1314) d:\YoloV8SampleVideo.mp4: 384x640 2 cars, 196.3ms
+
+……
+
+video 1/1 (frame 1310/1314) d:\YoloV8SampleVideo.mp4: 384x640 5 cars, 1 truck, 100.1ms
+video 1/1 (frame 1311/1314) d:\YoloV8SampleVideo.mp4: 384x640 5 cars, 1 train, 1 truck, 98.2ms
+video 1/1 (frame 1312/1314) d:\YoloV8SampleVideo.mp4: 384x640 5 cars, 1 train, 97.9ms
+video 1/1 (frame 1313/1314) d:\YoloV8SampleVideo.mp4: 384x640 4 cars, 1 train, 98.1ms
+video 1/1 (frame 1314/1314) d:\YoloV8SampleVideo.mp4: 384x640 3 cars, 1 train, 99.9ms
+Speed: 2.2ms preprocess, 172.2ms inference, 4.1ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to runs\detect\predict2
+💡 Learn more at https://docs.ultralytics.com/modes/predict</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><mark>Results saved to runs\detect\predict2</mark></p>
+</li>
+<li>
+<p><mark>D:\runs\detect\predict2\YoloV8SampleVideo.avi</mark></p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Solitary/YoloV8SampleVideo.png" alt="YoloV8SampleVideo">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_output_directory"><a class="anchor" href="#_output_directory"></a>9. Output Directory</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>vi C:\Users\Administrator\AppData\Roaming\Ultralytics\settings.yaml</p>
+</li>
+<li>
+<p>修改datasets_dir和weights_dir；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">settings_version: 0.0.4
+datasets_dir: D:\datasets
+weights_dir: weights
+runs_dir: runs
+uuid: ea9d13da4cd129837398c471115598a2d3517ce1bbbdec915fb2c475c3b987d2
+sync: true
+api_key: ''
+openai_api_key: ''
+clearml: true
+comet: true
+dvc: true
+hub: true
+mlflow: true
+neptune: true
+raytune: true
+tensorboard: true
+wandb: true</code></pre>
+</div>
+</div>
+</div>
+</div>
+</article>
+	</div>
+</main>
+</div>
+		<footer class="footer">
+	
+	
+	
+	<div class="footer-thanks">
+		Authored in AsciiDoc
+		<br /><br />
+		Produced by Antora and Asciidoctor
+  	</div>
+  
+	<div class="footer-legal" style="text-align:center">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br /><br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		Copyright © 2024 Elf
+		<br /><br />
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+	
+</footer><script id="site-script" src="../../../../_/js/site.js" 
+	data-ui-root-path="../../../../_"></script>
+
+<script async src="../../../../_/js/vendor/highlight.js"></script>
+<script async src="../../../../_/js/vendor/highlight.bundle.js"></script>
+
+
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+
+<script>hljs.highlightAll();</script>
+
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
+</html>

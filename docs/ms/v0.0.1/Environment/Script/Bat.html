@@ -328,10 +328,11 @@
 <div id="toctitle"></div>
 <ul class="sectlevel1">
 <li><a href="#_antora_generator">1. Antora Generator</a></li>
-<li><a href="#_jupyter_pytorch">2. Jupyter Pytorch</a></li>
-<li><a href="#_common_tool">3. Common Tool</a></li>
-<li><a href="#_enable_group_policy">4. Enable Group Policy</a></li>
-<li><a href="#_enable_hyperv">5. Enable HyperV</a></li>
+<li><a href="#_jupyter_pytorch">2. Jupyter PyTorch</a></li>
+<li><a href="#_jupyter_yolov8">3. Jupyter YoloV8</a></li>
+<li><a href="#_common_tool">4. Common Tool</a></li>
+<li><a href="#_enable_group_policy">5. Enable Group Policy</a></li>
+<li><a href="#_enable_hyperv">6. Enable HyperV</a></li>
 </ul>
 </div>
 <div class="sect1">
@@ -365,7 +366,7 @@ antora antora-playbook.yml &amp; start %SITE_URL%</code></pre>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_jupyter_pytorch"><a class="anchor" href="#_jupyter_pytorch"></a>2. Jupyter Pytorch</h2>
+<h2 id="_jupyter_pytorch"><a class="anchor" href="#_jupyter_pytorch"></a>2. Jupyter PyTorch</h2>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
@@ -394,7 +395,103 @@ pause</code></pre>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_common_tool"><a class="anchor" href="#_common_tool"></a>3. Common Tool</h2>
+<h2 id="_jupyter_yolov8"><a class="anchor" href="#_jupyter_yolov8"></a>3. Jupyter YoloV8</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python">conda create -n YoloV8 -y
+
+# conda deactivate
+conda activate YoloV8
+
+conda install -c conda-forge ultralytics -y
+
+conda install pytorch torchvision torchaudio cpuonly -c pytorch -y</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python">yolo task=detect mode=predict model=yolov8n.pt source=d:/YoloV8SampleImage.jpg</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">(YoloV8) D:\&gt;yolo task=detect mode=predict model=yolov8n.pt source=d:/YoloV8SampleImage.jpg
+Downloading https://github.com/ultralytics/assets/releases/download/v8.2.0/yolov8n.pt to 'yolov8n.pt'...
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 6.23M/6.23M [02:05&lt;00:00, 51.9kB/s]
+Ultralytics YOLOv8.2.31 🚀 Python-3.12.3 torch-2.3.1 CPU (12th Gen Intel Core(TM) i7-12700H)
+YOLOv8n summary (fused): 168 layers, 3151904 parameters, 0 gradients
+
+image 1/1 d:\YoloV8SampleImage.jpg: 448x640 10 persons, 1 bus, 2 traffic lights, 2 backpacks, 2 handbags, 324.9ms
+Speed: 3.6ms preprocess, 324.9ms inference, 23.4ms postprocess per image at shape (1, 3, 448, 640)
+Results saved to runs\detect\predict
+💡 Learn more at https://docs.ultralytics.com/modes/predict
+
+(YoloV8) D:\&gt;
+
+
+(YoloV8) D:\&gt;yolo task=detect mode=predict model=yolov8n.pt source=d:/YoloV8SampleVideo.mp4</code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Results saved to runs\detect\predict</p>
+</li>
+<li>
+<p>D:\runs\detect\predict\YoloV8SampleImage.jpg</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>C:\Users\Administrator\AppData\Roaming\Ultralytics\settings.yaml</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>修改datasets_dir和runs_dir</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">settings_version: 0.0.4
+datasets_dir: D:\datasets
+weights_dir: weights
+runs_dir: runs
+uuid: ea9d13da4cd129837398c471115598a2d3517ce1bbbdec915fb2c475c3b987d2
+sync: true
+api_key: ''
+openai_api_key: ''
+clearml: true
+comet: true
+dvc: true
+hub: true
+mlflow: true
+neptune: true
+raytune: true
+tensorboard: true
+wandb: true</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>//// ================================</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_common_tool"><a class="anchor" href="#_common_tool"></a>4. Common Tool</h2>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
@@ -433,7 +530,7 @@ goto menu</code></pre>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_enable_group_policy"><a class="anchor" href="#_enable_group_policy"></a>4. Enable Group Policy</h2>
+<h2 id="_enable_group_policy"><a class="anchor" href="#_enable_group_policy"></a>5. Enable Group Policy</h2>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
@@ -450,7 +547,7 @@ pause</code></pre>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_enable_hyperv"><a class="anchor" href="#_enable_hyperv"></a>5. Enable HyperV</h2>
+<h2 id="_enable_hyperv"><a class="anchor" href="#_enable_hyperv"></a>6. Enable HyperV</h2>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
