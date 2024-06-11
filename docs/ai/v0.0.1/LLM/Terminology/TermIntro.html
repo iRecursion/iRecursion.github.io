@@ -1,0 +1,1874 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> :: AsciiDoc</title>
+    <meta name="generator" content="Antora 3.1.7">
+
+<link rel="stylesheet" href="../../../../_/css/site.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/asciidoc.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
+    <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+  			
+	            <div id="main" style="place-content: center;">
+	                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+		            </div>
+		        </section>
+    	</div>
+    	
+        <div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container" data-component="ai" data-version="v0.0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">AsciiDoc AI</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Spring AI</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Solitary</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/SpringAIStructure.html">Spring AI Structure</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/AIConcept.html">AI Concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/SpringAIDependency.html">Spring AI Dependency</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/SpringAIProperty.html">Spring AI Property</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/GenericModel.html">Generic Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/Prompt.html">Prompt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/OutputParser.html">Output Parser</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/EtlPipeline.html">Etl Pipeline</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/FunctionCalling.html">Function Calling</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/EvaluationTesting.html">Evaluation Testing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/Multimodality.html">Multimodality</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Chat Completion</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/ChatCompletion/ChatCompletion.html">Chat Completion</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/ChatCompletion/Ollama.html">Ollama</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/ChatCompletion/MiniMaxChat.html">MiniMax Chat</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/ChatCompletion/ZhiPuChat.html">ZhiPu Chat</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/ChatCompletion/HuggingFace.html">Hugging Face</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Image</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Image/ImageGeneration.html">Image Generation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Image/ZhiPuImage.html">ZhiPu Image</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Embedding</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/Embedding.html">Embedding</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/Ollama.html">Ollama</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/PostgresML.html">Postgres ML</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/TransformerOnnx.html">Transformer Onnx</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/MiniMaxEmbedding.html">MiniMax Embedding</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/ZhiPuEmbedding.html">ZhiPu Embedding</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Vector Store</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/VectorExplanation.html">Vector Explanation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/VectorStore.html">Vector Store</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Neo4j.html">Neo4j</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Redis.html">Redis</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Chroma.html">Chroma</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Milvus.html">Milvus</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Qdrant.html">Qdrant</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Elastic.html">Elastic</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Weaviate.html">Weaviate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Store/Pgv.html">Postgres Vector</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Appendice</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Appendice/TestContainer.html">Test Container</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Appendice/DockerCompose.html">Docker Compose</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Case</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Case/SpringAICase.html">Spring AI Case</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">PyTorch</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">PyTorch Fundamental</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Fundamental/PytorchInstallation.html">Pytorch Setup</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Fundamental/TensorIntro.html">Tensor Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Fundamental/InfoRetrieving.html">Info Retrieving</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Fundamental/Manipulating.html">Manipulating</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Fundamental/ShapeError.html">Shape Error</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Fundamental/Indexing.html">Indexing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Fundamental/TensorNumPy.html">Tensor NumPy</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Fundamental/Reproducibility.html">Reproducibility</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Fundamental/TensorOnGpu.html">Tensor On Gpu</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Fundamental/Exercise.html">Exercise</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Fundamental/ExtraCurriculum.html">Extra Curriculum</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">PyTorch Workflow</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Workflow/WorkflowIntro.html">Workflow Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Workflow/DataPreparingLoading.html">Data Preparing Loading</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Workflow/BuildModel.html">Build Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Workflow/TrainModel.html">Train Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Workflow/PredictionInference.html">Prediction Inference</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Workflow/SavingLoadingModel.html">Saving Loading Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Workflow/PuttingTogether.html">Putting Together</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Workflow/Exercise.html">Exercise</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Workflow/ExtraCurriculum.html">Extra Curriculum</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">NN Classification</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Classification/NNClassificationIntro.html">NNC Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Classification/GettingDataReady.html">Getting Data Ready</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Classification/BuildingModel.html">Building Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Classification/TrainModel.html">Train Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Classification/PredictionEvaluating.html">Prediction Evaluating</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Classification/ImprovingModel.html">Improving Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Classification/NonLinearity.html">Non Linearity</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Classification/ReplicatingNonLinearityAF.html">Replicating Non Linearity AF</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Classification/PuttingTogetherMultiClass.html">Putting Together MultiClass</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Classification/EvaluationMetric.html">Evaluation Metric</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Classification/Exercise.html">Exercise</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Computer Vision</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ComputerVision/ComputerVisionIntro.html">ComputerVisionIntro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ComputerVision/GettingDataset.html">Getting Dataset</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ComputerVision/PrepareDataLoader.html">Prepare DataLoader</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ComputerVision/BuildBaselineModel.html">Build Baseline Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ComputerVision/PredictionWithResult.html">Prediction With Result</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ComputerVision/SetupDeviceAgnosticCode.html">Setup Device Agnostic Code</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ComputerVision/BuildingNonLinearityModel.html">Building Non Linearity Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ComputerVision/BuildCnn.html">Build Cnn</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ComputerVision/CompareResultTrainingTime.html">Result and Training Time</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ComputerVision/EvaluateRandomPrediction.html">Evaluate Random Prediction</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ComputerVision/ConfusionMatrix.html">Confusion Matrix</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ComputerVision/SaveAndLoad.html">Save And Load</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ComputerVision/Exercise.html">Exercise</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ComputerVision/ExtraCurriculum.html">Extra Curriculum</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Custom Dataset</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/CustomDataset/CustomDatasetIntro.html">Custom Dataset Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/CustomDataset/DataPreparation.html">Data Preparation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/CustomDataset/TransformingData.html">Transforming Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/CustomDataset/OptionALoadingImgDataViaImageFolder.html">Loading ImageFolder</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/CustomDataset/OptionBLoadingImgDataWithCustomDataset.html">Loading Custom Dataset</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/CustomDataset/TransformFormDataAugmentation.html">Data Augmentation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/CustomDataset/ModelATinyVGGWithoutDataAugmentation.html">Without Augmentation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/CustomDataset/LossCurve.html">Loss Curve</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/CustomDataset/ModelBTinyVGGWithDataAugmentation.html">With Augmentation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/CustomDataset/CompareModelResult.html">Compare Model Result</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/CustomDataset/PredictionOnCustomImg.html">Prediction On Custom Img</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/CustomDataset/Takeaway.html">Takeaway</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/CustomDataset/Exercise.html">Exercise</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/CustomDataset/ExtraCurriculum.html">Extra Curriculum</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">PyTorch Modular</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Modular/ModularIntro.html">Modular Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Modular/CellVSScript.html">Cell VS Script</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Modular/GettingData.html">Getting Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Modular/MakingModel.html">Making Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Modular/CombiningTrainTest.html">Combining Train Test</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Modular/SavingModel.html">Saving Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Modular/TrainingEvaluatingSaving.html">Training Evaluating Saving</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Modular/Exercise.html">Exercise</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Modular/ExtraCurriculum.html">Extra Curriculum</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Transfer Learning</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/TransferLearning/TransferLearningIntro.html">Transfer Learning Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/TransferLearning/FindPretrainedModel.html">FindPretrainedModel</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/TransferLearning/TransferLearningCover.html">Transfer Learning Cover</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/TransferLearning/SettingUp.html">Setting Up</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/TransferLearning/GettingData.html">Getting Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/TransferLearning/CreateDatasetDataLoader.html">Create Dataset DataLoader</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/TransferLearning/GettingPretrainedModel.html">Getting Pretrained Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/TransferLearning/TrainingModel.html">Training Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/TransferLearning/EvaluatingModel.html">Evaluating Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/TransferLearning/MakingPrediction.html">Making Prediction</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/TransferLearning/Takeaway.html">Takeaway</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/TransferLearning/Exercise.html">Exercise</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/TransferLearning/ExtraCurriculum.html">Extra Curriculum</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Experiment Tracking</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ExperimentTracking/TrackExperimentIntro.html">Track Experiment Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ExperimentTracking/GettingSetup.html">Getting Setup</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ExperimentTracking/GettingData.html">Getting Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ExperimentTracking/CreateDatasetDataLoader.html">Create Dataset DataLoader</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ExperimentTracking/TrainModelTrackResult.html">Train Model Track Result</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ExperimentTracking/ViewModelResult.html">View Model Result</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ExperimentTracking/HelperFunction.html">Helper Function</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ExperimentTracking/SetupModellingExperiment.html">Setup Modelling Experiment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ExperimentTracking/ViewExperiment.html">View Experiment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ExperimentTracking/LoadModelPrediction.html">Load Model Prediction</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ExperimentTracking/Takeaway.html">Takeaway</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ExperimentTracking/Exercise.html">Exercise</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Paper Replicating</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/PaperReplicating/PaperReplicatingIntro.html">Paper Replicating Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/PaperReplicating/GettingSetup.html">Getting Setup</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/PaperReplicating/GettingData.html">Getting Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/PaperReplicating/CreateDatasetDataLoader.html">Create Dataset DataLoader</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/PaperReplicating/ReplicatingViTPaper.html">Replicating ViT Paper</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/PaperReplicating/EquationAScpp.html">Equation A Scpp</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/PaperReplicating/EquationBMsa.html">Equation B MSA</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/PaperReplicating/EquationCMlp.html">Equation C MLP</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/PaperReplicating/CreateTransformerEncoder.html">Create Transformer Encoder</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/PaperReplicating/PuttingViTTogether.html">Putting ViT Together</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/PaperReplicating/SettingViTModel.html">Setting ViT Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/PaperReplicating/UsingPretrainedViT.html">Using Pretrained ViT</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/PaperReplicating/MakePrediction.html">Make Prediction</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/PaperReplicating/Takeaway.html">Takeaway</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/PaperReplicating/Exercise.html">Exercise</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/PaperReplicating/ExtraCurriculum.html">Extra Curriculum</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Model Deployment</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ModelDeployment/ModelDeploymentIntro.html">Model Deployment Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ModelDeployment/GettingSetup.html">Getting Setup</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ModelDeployment/GettingData.html">Getting Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ModelDeployment/DeploymentExperimentOutline.html">Deployment Experiment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ModelDeployment/EffNetB2FeatureExtractor.html">EffNetB2 Feature Extractor</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ModelDeployment/ViTFeatureExtractor.html">ViT Feature Extractor</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ModelDeployment/MakingPrediction.html">Making Prediction</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ModelDeployment/ComparingResultTimeSize.html">Comparing Result Time Size</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ModelDeployment/CreatingGradio.html">Creating Gradio</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ModelDeployment/TurningDemoDeployable.html">Turning Demo Deployable</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ModelDeployment/DeployingHuggingFace.html">Deploying HuggingFace</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ModelDeployment/CreatingFoodVision.html">Creating Food Vision</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ModelDeployment/TurningModelDeployable.html">Turning Model Deployable</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ModelDeployment/Takeaway.html">Takeaway</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ModelDeployment/Exercise.html">Exercise</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/ModelDeployment/ExtraCurriculum.html">Extra Curriculum</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Version 2X</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Version2X/Version2XIntro.html">Version 2X Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Version2X/GettingSetup.html">Getting Setup</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Version2X/GettingGPUInfo.html">Getting GPU Info</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Version2X/SetupExperiment.html">Setup Experiment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Version2X/TimeModelSingleRun.html">Time Model Single Run</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Version2X/TimeModelMultipleRun.html">Time Model Multiple Run</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Version2X/PossibleImprovementExtension.html">Improvement Extension</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Version2X/Resource.html">Resource</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Solitary</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Solitary/PyTorchExtraResource.html">PyTorch Extra Resource</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Solitary/PyTorchCheatSheet.html">PyTorch Cheat Sheet</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../PyTorch/Solitary/PyTorchCommonError.html">PyTorch Common Error</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">TF</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Prerequisite</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../TF/Prerequisite/TFIntroductory.html">TF Introductory</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../TF/Prerequisite/TFInstallation.html">TF Installation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../TF/Prerequisite/TFExtra.html">TF Extra</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Fundamental</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Guide</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">NN Regression</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">NN Classification</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">CV</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">CNN CV</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Transfer Learning</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Feature Extraction</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Fine Tuning</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Scaling Up</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Milestone Food Vision</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">NLP</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">NLP</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Milestone SkimLit</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Time Series</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">Milestone Time Series</span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Open AI</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Solitary</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Solitary/OpenAIIntro.html">OpenAI Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Solitary/OpenAIModel.html">OpenAI Model</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Capability</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Capability/TextGeneration.html">Text Generation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Capability/FunctionCalling.html">Function Calling</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Capability/Embedding.html">Embedding</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Capability/FineTuning.html">Fine Tuning</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Capability/ImageGeneration.html">Image Generation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Capability/Vision.html">Vision</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Capability/TextToSpeech.html">Text To Speech</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Capability/SpeechToText.html">Speech To Text</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Capability/Moderation.html">Moderation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Assistant TODO</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Assistant/AssistantOverview.html">Assistant Overview</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Assistant/AssistantWork.html">Assistant Work</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Assistant/FileSearch.html">File Search</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Assistant/CodeInterpreter.html">Code Interpreter</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Assistant/FunctionCalling.html">Function Calling</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Assistant/MigrationGuide.html">Migration Guide</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Assistant/NewFeature.html">New Feature</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Guide TODO</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Guide/PromptEngineering.html">Prompt Engineering</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Guide/ProductionBestPractice.html">Production Best Practice</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Guide/SafetyBestPractice.html">Safety Best Practice</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Guide/LatencyOptimization.html">Latency Optimization</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Guide/RateLimit.html">Rate Limit</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Guide/Batch.html">Batch</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Guide/ErrorCode.html">Error Code</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Guide/Library.html">Library</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../OpenAI/Guide/Deprecation.html">Deprecation</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">LLM</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Fundamental</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Fundamental/AILearningPath.html">AI Learning Path</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Fundamental/PrincipalSeniorAIEngineer.html">Principal Senior AI Engineer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Fundamental/AIIntro.html">AI Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Fundamental/DLBasicConcept.html">DL Basic Concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Fundamental/ModelTrainingConcept.html">Model Training Concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Fundamental/LlmIntro.html">LLM Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Fundamental/AIFrameworkLibrary.html">AI Framework Library</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Full Stack</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../FullStack/Algebra.html">Algebra</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../FullStack/PromptEngineering.html">Prompt Engineering</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../FullStack/PromptEngineeringCase.html">Prompt Engineering Case</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../FullStack/FunctionCalling.html">Function Calling</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../FullStack/RagEmbedding.html">RAG Embedding</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../FullStack/AssistantApi.html">Assistant Api</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../FullStack/SemanticKernel.html">Semantic Kernel</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../FullStack/LangChain.html">LangChain</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../FullStack/AppDevToolchain.html">App Dev Toolchain</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../FullStack/AutoGpt.html">Auto Gpt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../FullStack/ProjectPad.html">Project Pad</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../FullStack/FineTuning.html">Fine Tuning</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../FullStack/MultimodalLlm.html">Multimodal LLM</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../FullStack/DeploymentDelivery.html">Deployment Delivery</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Algorithm</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">ML Algorithm</span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text">DL Algorithm</span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">AsciiDoc AI</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">AsciiDoc AI</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../../kafka/v0.0.1/index.html">AsciiDoc Kafka</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../kafka/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../../ms/v0.0.1/index.html">AsciiDoc Makeshift</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../ms/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+	<div class="toolbar" role="navigation">
+	<button class="nav-toggle"></button>
+	
+		<a href="../../index.html" 
+			class="home-link">
+		</a>
+
+	<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+		</div>
+	
+	<div class="content">
+			<aside class="toc sidebar" 
+	data-title="Contents" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+			<article class="doc">
+<div class="paragraph">
+<p><a href="https://developers.google.com/machine-learning/glossary" class="bare">https://developers.google.com/machine-learning/glossary</a><br>
+<a href="https://www.coursera.org/articles/ai-terms" class="bare">https://www.coursera.org/articles/ai-terms</a><br>
+<a href="https://www.coursera.org/resources/ai-terms" class="bare">https://www.coursera.org/resources/ai-terms</a><br>
+<a href="https://en.wikipedia.org/wiki/Glossary_of_artificial_intelligence\" class="bare">https://en.wikipedia.org/wiki/Glossary_of_artificial_intelligence\</a><br>
+<a href="https://easyaibeginner.com/artificial-intelligence-glossary-dictionary-ai/" class="bare">https://easyaibeginner.com/artificial-intelligence-glossary-dictionary-ai/</a><br>
+<a href="https://charitydigital.org.uk/topics/an-a-z-glossary-of-artificial-intelligence-terms-and-definitions-11427" class="bare">https://charitydigital.org.uk/topics/an-a-z-glossary-of-artificial-intelligence-terms-and-definitions-11427</a><br>
+<a href="https://circls.org/educatorcircls/ai-glossary" class="bare">https://circls.org/educatorcircls/ai-glossary</a><br>
+<a href="https://www.blockchain-council.org/ai/ai-glossary/?gad_source=1&amp;gclid=EAIaIQobChMI2cC84OnKhgMVfRB7Bx3yAQjzEAMYASAAEgIzyPD_BwE" class="bare">https://www.blockchain-council.org/ai/ai-glossary/?gad_source=1&amp;gclid=EAIaIQobChMI2cC84OnKhgMVfRB7Bx3yAQjzEAMYASAAEgIzyPD_BwE</a><br>
+<a href="https://www.appen.com/ai-glossary" class="bare">https://www.appen.com/ai-glossary</a><br>
+<a href="https://www.siemens.com/global/en/company/stories/artificial-intelligence/ai-glossary.html" class="bare">https://www.siemens.com/global/en/company/stories/artificial-intelligence/ai-glossary.html</a><br>
+<a href="https://www.nytimes.com/article/ai-artificial-intelligence-glossary.html" class="bare">https://www.nytimes.com/article/ai-artificial-intelligence-glossary.html</a><br>
+<a href="https://developers.google.com/machine-learning/glossary" class="bare">https://developers.google.com/machine-learning/glossary</a><br>
+<a href="https://www.hawksearch.com/glossary" class="bare">https://www.hawksearch.com/glossary</a><br>
+<a href="https://clickup.com/blog/ai-glossary/?utm_source=google-pmax&amp;utm_medium=cpc&amp;utm_campaign=gpm_cpc_ar_nnc_pro_trial_all-devices_tcpa_lp_x_all-departments_x_pmax&amp;utm_content=&amp;utm_creative=" class="bare">https://clickup.com/blog/ai-glossary/?utm_source=google-pmax&amp;utm_medium=cpc&amp;utm_campaign=gpm_cpc_ar_nnc_pro_trial_all-devices_tcpa_lp_x_all-departments_x_pmax&amp;utm_content=&amp;utm_creative=</a><em>_</em>&amp;gad_source=1&amp;gclid=EAIaIQobChMI2cC84OnKhgMVfRB7Bx3yAQjzEAAYASAAEgJhjvD_BwE<br>
+<a href="https://www.moveworks.com/us/en/resources/ai-terms-glossary" class="bare">https://www.moveworks.com/us/en/resources/ai-terms-glossary</a><br>
+<a href="https://www.expert.ai/glossary-of-ai-terms/" class="bare">https://www.expert.ai/glossary-of-ai-terms/</a><br>
+<a href="https://www.coe.int/en/web/artificial-intelligence/glossary" class="bare">https://www.coe.int/en/web/artificial-intelligence/glossary</a><br>
+<a href="https://post.parliament.uk/artificial-intelligence-ai-glossary/" class="bare">https://post.parliament.uk/artificial-intelligence-ai-glossary/</a><br>
+<a href="https://www.pagerduty.com/resources/learn/ai-glossary/" class="bare">https://www.pagerduty.com/resources/learn/ai-glossary/</a><br>
+<a href="https://www.onenet.co.nz/services/artificial-intelligence/ai-technical-glossary" class="bare">https://www.onenet.co.nz/services/artificial-intelligence/ai-technical-glossary</a><br>
+<a href="https://library.etbi.ie/ai/glossary" class="bare">https://library.etbi.ie/ai/glossary</a><br>
+<a href="https://www.onlinemanipal.com/blogs/ai-glossary-essential-artificial-intelligence-terminologies" class="bare">https://www.onlinemanipal.com/blogs/ai-glossary-essential-artificial-intelligence-terminologies</a><br>
+<a href="https://labelbox.com/ai-glossary/" class="bare">https://labelbox.com/ai-glossary/</a><br>
+<a href="https://zeo.org/ai-glossary" class="bare">https://zeo.org/ai-glossary</a><br>
+<a href="https://www.akeneo.com/ai-glossary-page/" class="bare">https://www.akeneo.com/ai-glossary-page/</a><br>
+<a href="https://www.cigionline.org/articles/cyber-security-battlefield/?utm_source=google_ads&amp;utm_medium=grant&amp;gad_source=1&amp;gclid=EAIaIQobChMI0svStuvKhgMV8wt7Bx0N5QHWEAMYASAAEgLPXfD_BwE" class="bare">https://www.cigionline.org/articles/cyber-security-battlefield/?utm_source=google_ads&amp;utm_medium=grant&amp;gad_source=1&amp;gclid=EAIaIQobChMI0svStuvKhgMV8wt7Bx0N5QHWEAMYASAAEgLPXfD_BwE</a><br>
+<a href="https://www.lightflows.co.uk/ai-glossary-of-terms-artificial-intelligence-glossary/" class="bare">https://www.lightflows.co.uk/ai-glossary-of-terms-artificial-intelligence-glossary/</a><br>
+<a href="https://shelf.io/ai-glossary/" class="bare">https://shelf.io/ai-glossary/</a><br>
+<a href="https://aiai.psu.edu/ai-glossary/" class="bare">https://aiai.psu.edu/ai-glossary/</a><br>
+<a href="https://ydata.ai/glossary" class="bare">https://ydata.ai/glossary</a><br>
+<a href="https://www.salesforce.com/blog/generative-ai-glossary/" class="bare">https://www.salesforce.com/blog/generative-ai-glossary/</a><br>
+<a href="https://www.dlt.com/sites/default/files/resource-attachments/2021-01/Ultimate-Artificial-Intelligence-Glossary-2021-Ebook.pdf" class="bare">https://www.dlt.com/sites/default/files/resource-attachments/2021-01/Ultimate-Artificial-Intelligence-Glossary-2021-Ebook.pdf</a><br>
+<a href="https://www.kordia.co.nz/artificial-intelligence-terms-explained" class="bare">https://www.kordia.co.nz/artificial-intelligence-terms-explained</a><br>
+<a href="https://www.aiforia.com/blog/ai-glossary" class="bare">https://www.aiforia.com/blog/ai-glossary</a><br>
+<a href="https://libguides.chapman.edu/AI/glossary" class="bare">https://libguides.chapman.edu/AI/glossary</a><br>
+<a href="https://www.axios.com/2023/11/23/ai-artificial-intelligence-terms-definitions-list" class="bare">https://www.axios.com/2023/11/23/ai-artificial-intelligence-terms-definitions-list</a><br>
+<a href="https://amplience.com/ai/ai-glossary/" class="bare">https://amplience.com/ai/ai-glossary/</a></p>
+</div>
+<div class="paragraph">
+<p>generative ai terminology<br>
+deep learning terminology<br>
+machine learning terminology<br>
+llm terminology<br>
+Glossary vs terminology</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Artificial Intelligence (AI): AI, or artificial intelligence, refers to the development of theories, techniques, and systems that work together to imitate the cognitive abilities of a human being. It performs tasks including understanding natural language, recognizing patterns, learning from experience, making decisions, solving problems, and more. AI techniques include machine learning, natural language processing, computer vision, and robotics, among others. The ultimate goal of AI is to create systems that can mimic or outperform human capacity in various domains. AI is not more intelligent than humans, just way faster.
+AI Bias: AI bias, also known as machine learning bias, is the tendency of AI algorithms to reflect and perpetuate human biases. During the machine learning process the algorithm may make erroneous assumptions leading to biased results. The bias and fairness of algorithms usually depends on the corpus of data they are trained on. It’s important to look for and correct any biases you find so your AI doesn’t contribute to prejudices in society.
+AI Governance: AI governance refers to the frameworks, policies, standards, and practices used to ensure AI tools and systems remain ethical, safe, and fair. From research and development to data training and implementation, AI governance is crucial for achieving compliance, trust, and efficiency.
+AI Hallucination: A hallucination happens when a Large Language Model such as a GenAI chatbot, generates outputs that are inaccurate or that aren’t based on the input data. In other words, when AIs produce realistic, yet incorrect information. Engineers must look out for these mistakes in order to moderate the hallucination while using the model. Some notable examples of AI hallucination include:
+– Google’s chatbot Gemini, incorrectly claimed that the James Webb Space Telescope took the first image of a planet outside the solar system.
+– ChatGPT invented a number of court cases to be used as legal precedents in a legal brief Steven A. Schwartz submitted in a case. The judge tried to find the cited cases, but found they did not exist.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>    AI Model: An AI model is a complex set of parameters sometimes called “weights”. A predefined machine learning architecture may execute the model, creating a program trained to recognize patterns within a specific data set. These programs are mathematical equations that use data inputs to draw conclusions about real-world processes.
+    AI Prompt: An AI prompt is any input that a user communicates to the AI to generate the intended output. A prompt can be in the form of text, a question, code snippets, or commands. With multimodal models (those that include images, videos, etc…) the prompt may contain formats other than text.The prompt is essentially the program (mostly written in natural language) that the AI model or Large Language Model interprets to produce its output.
+C
+    Chatbot: A chatbot is a computer program made to simulate real human conversations with humans over digital devices. While not all chatbots use AI, modern ones often function as complex digital assistants that use Natural Language Processing to understand user queries and provide automatic, personalized, and contextualized responses to them.
+D
+    Data Augmentation: Data augmentation is a technique commonly used in machine learning and deep learning to artificially increase the size of a dataset by applying various transformations to the existing data samples. The purpose of data augmentation is to increase the diversity of the training data, which can help improve the generalization and robustness of machine learning models. It is especially useful in scenarios where the available dataset is limited or lacks diversity.
+    Deep Learning: Deep learning is a subset of machine learning that allows AI to mimic the way human brains process complex patterns and recognize objects. It uses multi-layered neural networks where each layer helps the AI better understand data patterns. Today, deep learning has various applications, with some of the most common being data refining, fraud detection, computer vision, speech processing, and natural-language understanding.
+E
+    Explainability/Interpretability: Interpretability refers to the extent to which someone can understand how a model works and what decision it will make. In other words, how well humans can predict any AI output for a given input. Meanwhile, explainability goes beyond this to understand how the AI made the decision. These notions are crucial for trust and transparency between humans and AI systems. This remains a vast research domain since Large Language Models were not built to explain their decisions nor cite their sources.
+F
+    Fine-tuning: Fine-tuning is a technique commonly used in deep learning to refine the results of a pre-trained model – typically one that has been trained on a large dataset – by adjusting its parameters to better fit the new data or task at hand. This is done to enhance and improve a model’s capabilities without training a new model from scratch. As a result, the model will be better adapted to work for specialized use cases.
+    Fuzzy Logic: Fuzzy logic is a way to compute degrees of truth. Modern computers are built on Boolean logic which sees everything as a binary true or false. However with fuzzy logic, AI can identify a range of logical conclusions that resemble human reasoning. For example, in response to the question “Is it cold outside?” fuzzy logic allows for results like “very little, somewhat, moderately, fairly, very much” rather than a simple “yes or no”. This is useful for Natural Language Processing so the AI can understand semantic relations between concepts that are worded differently.without training a new model from scratch. As a result, the model will be better adapted to work for specialized use cases.
+G
+    Generalization: Generalization refers to a model’s ability to apply past knowledge learned from training data to new, unseen data. This determines how well the algorithm works in new settings.
+    Generative Adversarial Networks (GANs): A GAN is a type of machine learning framework that consists of two neural networks: the generator and the discriminator. The generator takes random noise as input and tries to generate data samples that resemble the real data as output. The discriminator then determines if the output is actually real or fake. This process allows the generator to fine-tune its outputs and create more authentic data. The cycle continues until the discriminator is unable to identify fake data.
+    Generative AI: Generative AI, also known as GenAI refers to a category of artificial intelligence that produces new content including text, images, audio or code, that mimics human creativity, making it a valuable tool for many industries. It uses datasets to study patterns and then create new, similar data in response to prompts. Often, GenAI uses Large Language Models to understand and/or produce natural language. Examples of GenAI platforms include ChatGPT or DALL-E2.
+    Generative Pre-trained Transformer: Generative Pre-trained Transformer, or GPT, models are a type of Large Language Model and framework for generative AI. They use a neural network architecture and deep learning techniques to create human-like, natural language text.
+H
+    Human in the Loop (HITL): HITL is a process in which humans oversee and give feedback to AI models during both the training and testing phases. This is important for ensuring models produce accurate, ethical results.
+K
+    Keyword Search: A keyword search is based on specific words typed in a query. The search engine retrieves all documents from a database that contain one or several of the keywords in the query.
+L
+    Language Models (LMs): LMs are a type of AI model that predict, comprehend, generate, and interpret human language. They use Natural Language Processing and train on large data sets to decipher human languages.
+    Large Language Models (LLMs): LLMs are the result of an algorithm whose training produces the model. During the execution of an LLM, it processes data and produces outputs from a specific input which may ask it to recognize, summarize, translate, predict, or generate content using very large datasets.Large language models can be adapted for use across a wide range of industries and fields. They’re most closely associated with generative AI. Developed by OpenAI, ChatGPT is one of the most recognizable Large Language Models.
+    LLM Gateway: The LLM Gateway refers to the technical layer between app interfaces (chatbots, virtual assistants, in-app troubleshooting, support platforms) and the Large Language Model itself.
+M
+    Machine Learning (ML): Machine learning (ML) is a subtype of AI that consumes data and algorithms to build systems and enable AI to imitate how humans learn. By continuously learning, it’s goal is to improve the accuracy of its outputs.
+N
+    Natural Language Processing (NLP): Natural Language Processing, or NLP, is a computer program’s ability to understand spoken and written human language. NLP is used as opposed to programming languages (java, C++, Python, etc.) which are not “natural”. This allows humans to successfully interact with computers using natural sentences. NLP technology is used in Fluid Topics to enhance search.
+    Neural Networks: A neural network is a type of machine learning model that replicates how the human brain functions. Its interconnected nodes or neurons are designed to process data and recognize patterns.
+P
+    Prompt Engineering: Prompt engineering is the process of creating and optimizing inputs for AI tools. Inputs are natural language text commands describing the task that the user wants the AI to perform. The goal is to refine inputs so that the AI completes a specific task or generates ideal outputs.
+    Prompt Tuning: Prompt tuning is a cost-efficient way to improve an AI model’s outputs. While fine-tuning focuses on a model’s training data, prompt-tuning is the process of reworking the instructions given to AI so that the task is more clear. As a result, the AI produces better results without retraining the model.
+    Prompt-based Learning: Prompt-based learning is a strategy within machine learning that engineers use to train Large Language Models. This is often referred to as few-shot learning. This strategy uses information from pre-trained language models so the same model can complete new tasks without needing retraining. This is useful for tasks such as text classification, machine translation, text summarization, and more.
+R
+    Recurrent Neural Networks (RNNs): RNNs are artificial neural networks that use sequential data inputs or time series data. These deep learning models are often used for language translation, Natural Language Processing, speech recognition, and image captioning.
+    Retrieval Augmented Generation (RAG): RAG is the process of enhancing the outputs of a LLM. This is done by allowing it to retrieve data from an external knowledge base. For example, Fluid Topics’s platform enhances an LLM’s outputs with your product content. As a result, the LLM has access to specific, accurate, and up-to-date information without needing retraining.
+    Role Prompting: Role prompting is a technique that prompt engineers use to control the AI output style by asking the algorithm to take on a specific role, character, or viewpoint when responding to a question or problem.
+S
+    Semantic Search: Semantic search is a data searching technique that aims to determine the intent and contextual meaning of the words a person is using for search. Fluid Topics leverages more than two decades of research and expertise in data enrichment and semantic search engine technology, which makes it the most relevant search engine for technical documentation on the market.
+T
+    Topic Modeling: Topic modeling is a technique that uses unsupervised learning to detect word clusters and phrase patterns in a document. This textual analysis is used to understand unstructured documents without the help of tags or training datasets.
+    Training: Training is an iterative process where an AI model learns from a data set. The goal is to teach the AI system how to perceive and interpret the data in order to perform a specific task, make predictions, or choose decisions.
+    Transformers: Transformers are essentially Recurrent Neural Networks (RNNs) with a special neuron layout unit called an attention unit. The architecture of transformers is useful for processing language because it can train faster and memorize a much longer context than typical RNNs (up to thousands of words). As a result, transformers allow you to process models with thousand of parameters, which was nearly impossible with a basic RNN architecture.
+Z
+    Zero-shot Prompting (aka direct prompting): Zero-shot prompting, also called direct prompting, refers to using a Large Language Model to execute a task it wasn’t trained for and without any explicit examples of the desired output. In other words, it occurs when models receive prompts that are not part of their training data, requiring them to rely on their pre-existing knowledge and natural language understanding to generate accurate results.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Algorithm: A set of rules that a machine can follow to learn how to do a task.</p>
+</div>
+<div class="paragraph">
+<p>Artificial intelligence: This refers to the general concept of machines acting in a way that simulates or mimics human intelligence. AI can have a variety of features, such as human-like communication or decision making.</p>
+</div>
+<div class="paragraph">
+<p>Autonomous: A machine is described as autonomous if it can perform its task or tasks without needing human intervention.</p>
+</div>
+<div class="paragraph">
+<p>Backward chaining: A method where the model starts with the desired output and works in reverse to find data that might support it.</p>
+</div>
+<div class="paragraph">
+<p>Bias: Assumptions made by a model that simplify the process of learning to do its assigned task. Most supervised machine learning models perform better with low bias, as these assumptions can negatively affect results.</p>
+</div>
+<div class="paragraph">
+<p>Big data: Datasets that are too large or complex to be used by traditional data processing applications.</p>
+</div>
+<div class="paragraph">
+<p>Bounding box: Commonly used in image or video tagging, this is an imaginary box drawn on visual information. The contents of the box are labeled to help a model recognize it as a distinct type of object.</p>
+</div>
+<div class="paragraph">
+<p>Chatbot: A chatbot is program that is designed to communicate with people through text or voice commands in a way that mimics human-to-human conversation.</p>
+</div>
+<div class="paragraph">
+<p>Cognitive computing: This is effectively another way to say artificial intelligence. It’s used by marketing teams at some companies to avoid the science fiction aura that sometimes surrounds AI.</p>
+</div>
+<div class="paragraph">
+<p>Computational learning theory: A field within artificial intelligence that is primarily concerned with creating and analyzing machine learning algorithms.</p>
+</div>
+<div class="paragraph">
+<p>Corpus: A large dataset of written or spoken material that can be used to train a machine to perform linguistic tasks.</p>
+</div>
+<div class="paragraph">
+<p>Data mining: The process of analyzing datasets in order to discover new patterns that might improve the model.</p>
+</div>
+<div class="paragraph">
+<p>Data science: Drawing from statistics, computer science and information science, this interdisciplinary field aims to use a variety of scientific methods, processes and systems to solve problems involving data.</p>
+</div>
+<div class="paragraph">
+<p>Dataset: A collection of related data points, usually with a uniform order and tags.</p>
+</div>
+<div class="paragraph">
+<p>Deep learning: A function of artificial intelligence that imitates the human brain by learning from the way data is structured, rather than from an algorithm that’s programmed to do one specific thing.</p>
+</div>
+<div class="paragraph">
+<p>Entity annotation: The process of labeling unstructured sentences with information so that a machine can read them. This could involve labeling all people, organizations and locations in a document, for example.</p>
+</div>
+<div class="paragraph">
+<p>Entity extraction: An umbrella term referring to the process of adding structure to data so that a machine can read it. Entity extraction may be done by humans or by a machine learning model.</p>
+</div>
+<div class="paragraph">
+<p>Forward chaining: A method in which a machine must work from a problem to find a potential solution. By analyzing a range of hypotheses, the AI must determine those that are relevant to the problem.</p>
+</div>
+<div class="paragraph">
+<p>General AI: AI that could successfully do any intellectual task that can be done by any human being. This is sometimes referred to as strong AI, although they aren’t entirely equivalent terms.</p>
+</div>
+<div class="paragraph">
+<p>Hyperparameter: Occasionally used interchangeably with parameter, although the terms have some subtle differences. Hyperparameters are values that affect the way your model learns. They are usually set manually outside the model.</p>
+</div>
+<div class="paragraph">
+<p>Intent: Commonly used in training data for chatbots and other natural language processing tasks, this is a type of label that defines the purpose or goal of what is said. For example, the intent for the phrase “turn the volume down” could be “decrease volume”.</p>
+</div>
+<div class="paragraph">
+<p>Label: A part of training data that identifies the desired output for that particular piece of data.</p>
+</div>
+<div class="paragraph">
+<p>Linguistic annotation: Tagging a dataset of sentences with the subject of each sentence, ready for some form of analysis or assessment. Common uses for linguistically annotated data include sentiment analysis and natural language processing.</p>
+</div>
+<div class="paragraph">
+<p>Machine intelligence: An umbrella term for various types of learning algorithms, including machine learning and deep learning.</p>
+</div>
+<div class="paragraph">
+<p>Machine learning: This subset of AI is particularly focused on developing algorithms that will help machines to learn and change in response to new data, without the help of a human being.</p>
+</div>
+<div class="paragraph">
+<p>Machine translation: The translation of text by an algorithm, independent of any human involvement.</p>
+</div>
+<div class="paragraph">
+<p>Model: A broad term referring to the product of AI training, created by running a machine learning algorithm on training data.</p>
+</div>
+<div class="paragraph">
+<p>Neural network: Also called a neural net, a neural network is a computer system designed to function like the human brain. Although researchers are still working on creating a machine model of the human brain, existing neural networks can perform many tasks involving speech, vision and board game strategy.</p>
+</div>
+<div class="paragraph">
+<p>Natural language generation (NLG): This refers to the process by which a machine turns structured data into text or speech that humans can understand. Essentially, NLG is concerned with what a machine writes or says as the end part of the communication process.</p>
+</div>
+<div class="paragraph">
+<p>Natural language processing (NLP): The umbrella term for any machine’s ability to perform conversational tasks, such as recognizing what is said to it, understanding the intended meaning and responding intelligibly.</p>
+</div>
+<div class="paragraph">
+<p>Natural language understanding (NLU): As a subset of natural language processing, natural language understanding deals with helping machines to recognize the intended meaning of language — taking into account its subtle nuances and any grammatical errors.</p>
+</div>
+<div class="paragraph">
+<p>Overfitting: An important AI term, overfitting is a symptom of machine learning training in which an algorithm is only able to work on or identify specific examples present in the training data. A working model should be able to use the general trends behind the data to work on new examples.</p>
+</div>
+<div class="paragraph">
+<p>Parameter: A variable inside the model that helps it to make predictions. A parameter’s value can be estimated using data and they are usually not set by the person running the model.</p>
+</div>
+<div class="paragraph">
+<p>Pattern recognition: The distinction between pattern recognition and machine learning is often blurry, but this field is basically concerned with finding trends and patterns in data.</p>
+</div>
+<div class="paragraph">
+<p>Predictive analytics: By combining data mining and machine learning, this type of analytics is built to forecast what will happen within a given timeframe based on historical data and trends.</p>
+</div>
+<div class="paragraph">
+<p>Python: A popular programming language used for general programming.</p>
+</div>
+<div class="paragraph">
+<p>Reinforcement learning: A method of teaching AI that sets a goal without specific metrics, encouraging the model to test different scenarios rather than find a single answer. Based on human feedback, the model can then manipulate the next scenario to get better results.</p>
+</div>
+<div class="paragraph">
+<p>Semantic annotation: Tagging different search queries or products with the goal of improving the relevance of a search engine.</p>
+</div>
+<div class="paragraph">
+<p>Sentiment analysis: The process of identifying and categorizing opinions in a piece of text, often with the goal of determining the writer’s attitude towards something.</p>
+</div>
+<div class="paragraph">
+<p>Strong AI: This field of research is focused on developing AI that is equal to the human mind when it comes to ability. General AI is a similar term often used interchangeably.</p>
+</div>
+<div class="paragraph">
+<p>Supervised learning: This is a type of machine learning where structured datasets, with inputs and labels, are used to train and develop an algorithm.</p>
+</div>
+<div class="paragraph">
+<p>Test data: The unlabeled data used to check that a machine learning model is able to perform its assigned task.</p>
+</div>
+<div class="paragraph">
+<p>Training data: This refers to all of the data used during the process of training a machine learning algorithm, as well as the specific dataset used for training rather than testing.</p>
+</div>
+<div class="paragraph">
+<p>Transfer learning: This method of learning involves spending time teaching a machine to do a related task, then allowing it to return to its original work with improved accuracy. One potential example of this is taking a model that analyzes sentiment in product reviews and asking it to analyze tweets for a week.</p>
+</div>
+<div class="paragraph">
+<p>Turing test: Named after Alan Turing, famed mathematician, computer scientist and logician, this tests a machine’s ability to pass for a human, particularly in the fields of language and behavior. After being graded by a human, the machine passes if its output is indistinguishable from that of human participant’s.</p>
+</div>
+<div class="paragraph">
+<p>Unsupervised learning: This is a form of training where the algorithm is asked to make inferences from datasets that don’t contain labels. These inferences are what help it to learn.</p>
+</div>
+<div class="paragraph">
+<p>Validation data: Structured like training data with an input and labels, this data is used to test a recently trained model against new data and to analyze performance, with a particular focus on checking for overfitting.</p>
+</div>
+<div class="paragraph">
+<p>Variance: The amount that the intended function of a machine learning model changes while it’s being trained. Despite being flexible, models with high variance are prone to overfitting and low predictive accuracy because they are reliant on their training data.</p>
+</div>
+<div class="paragraph">
+<p>Variation: Also called queries or utterances, these work in tandem with intents for natural language processing. The variation is what a person might say to achieve a certain purpose or goal. For example, if the intent is “pay by credit card,” the variation might be “I’d like to pay by card, please.”</p>
+</div>
+<div class="paragraph">
+<p>Weak AI: Also called narrow AI, this is a model that has a set range of skills and focuses on one particular set of tasks. Most AI currently in use is weak AI, unable to learn or perform tasks outside of its specialist skill set.</p>
+</div>
+<div class="paragraph">
+<p>ALGORITHM A set of step-by-step instructions. Computer algorithms can be simple (if it&#8217;s 3 p.m., send a reminder) or complex (identify pedestrians).<br>
+BACKPROPAGATION The way many neural nets learn. They find the difference between their output and the desired output, then adjust the calculations in reverse order of execution.<br>
+SIGN UP FOR THE SCIENCEADVISER NEWSLETTER<br>
+The latest news, commentary, and research, free to your inbox daily<br>
+BLACK BOX A description of some deep learning systems. They take an input and provide an output, but the calculations that occur in between are not easy for humans to interpret.<br>
+DEEP LEARNING How a neural network with multiple layers becomes sensitive to progressively more abstract patterns. In parsing a photo, layers might respond first to edges, then paws, then dogs.<br>
+EXPERT SYSTEM A form of AI that attempts to replicate a human&#8217;s expertise in an area, such as medical diagnosis. It combines a knowledge base with a set of hand-coded rules for applying that knowledge. Machine-learning techniques are increasingly replacing hand coding.<br>
+GENERATIVE ADVERSARIAL NETWORKS A pair of jointly trained neural networks that generates realistic new data and improves through competition. One net creates new examples (fake Picassos, say) as the other tries to detect the fakes.<br>
+MACHINE LEARNING The use of algorithms that find patterns in data without explicit instruction. A system might learn how to associate features of inputs such as images with outputs such as labels.<br>
+NATURAL LANGUAGE PROCESSING A computer&#8217;s attempt to “understand” spoken or written language. It must parse vocabulary, grammar, and intent, and allow for variation in language use. The process often involves machine learning.<br>
+NEURAL NETWORK A highly abstracted and simplified model of the human brain used in machine learning. A set of units receives pieces of an input (pixels in a photo, say), performs simple computations on them, and passes them on to the next layer of units. The final layer represents the answer.<br>
+NEUROMORPHIC CHIP A computer chip designed to act as a neural network. It can be analog, digital, or a combination.<br>
+PERCEPTRON An early type of neural network, developed in the 1950s. It received great hype but was then shown to have limitations, suppressing interest in neural nets for years.<br>
+REINFORCEMENT LEARNING A type of machine learning in which the algorithm learns by acting toward an abstract goal, such as “earn a high video game score” or “manage a factory efficiently.” During training, each effort is evaluated based on its contribution toward the goal.<br>
+STRONG AI AI that is as smart and well-rounded as a human. Some say it&#8217;s impossible. Current AI is weak, or narrow. It can play chess or drive but not both, and lacks common sense.<br>
+SUPERVISED LEARNING A type of machine learning in which the algorithm compares its outputs with the correct outputs during training. In unsupervised learning, the algorithm merely looks for patterns in a set of data.<br>
+TENSORFLOW A collection of software tools developed by Google for use in deep learning. It is open source, meaning anyone can use or improve it. Similar projects include Torch and Theano.<br>
+TRANSFER LEARNING A technique in machine learning in which an algorithm learns to perform one task, such as recognizing cars, and builds on that knowledge when learning a different but related task, such as recognizing cats.<br>
+TURING TEST A test of AI&#8217;s ability to pass as human. In Alan Turing&#8217;s original conception, an AI would be judged by its ability to converse through written text.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Artificial intelligence (AI):  An attempt to reproduce cognitive skills (such as computer vision, speech synthesis and recognition, knowledge representation, and machine learning…) that are unique to human beings – to support decision-making and automation.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Generative AI (GenAI): A subset of AI relying on deep learning techniques, targeting content creation. Using text (or voice) prompts (as inputs), it generates responses in the form of text, images, audio, music, video, code, etc.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Machine Learning:  This is a field of AI development to give machines the ability to “learn” from data, via mathematical models. Three main approaches are used: supervised learning, unsupervised learning, and reinforcement learning.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Deep Learning: This is a machine learning process using (artificial) neural networks with several layers of hidden neurons. These algorithms use a large number of parameters, and they require a very large amount of data to be trained.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Hallucinations: Generative AIs can in certain (relatively rare) cases, give “delusional” answers with no link to reality or truth. They can “invent” characters, events, dates, etc. that never existed.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Bias: An anomaly in the responses of machine learning algorithms, generally based on three different sources: data acquisition, user interaction, and/or amplification from the predictive model.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Prompt: The data input or question asked to a generative AI tool, in the form of a text question, with or without additional documents.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Algorithm: A finite, unambiguous sequence of instructions and operations to solve a class of problems.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>artificial general intelligence, or AGI: A concept that suggests a more advanced version of AI than we know today, one that can perform tasks much better than humans while also teaching and advancing its own capabilities.</p>
+</div>
+<div class="paragraph">
+<p>AI ethics: Principles aimed at preventing AI from harming humans, achieved through means like determining how AI systems should collect data or deal with bias.</p>
+</div>
+<div class="paragraph">
+<p>AI safety: An interdisciplinary field that&#8217;s concerned with the long-term impacts of AI and how it could progress suddenly to a super intelligence that could be hostile to humans.</p>
+</div>
+<div class="paragraph">
+<p>algorithm: A series of instructions that allows a computer program to learn and analyze data in a particular way, such as recognizing patterns, to then learn from it and accomplish tasks on its own.</p>
+</div>
+<div class="paragraph">
+<p>alignment: Tweaking an AI to better produce the desired outcome. This can refer to anything from moderating content to maintaining positive interactions toward humans.</p>
+</div>
+<div class="paragraph">
+<p>anthropomorphism: When humans tend to give nonhuman objects humanlike characteristics. In AI, this can include believing a chatbot is more humanlike and aware than it actually is, like believing it&#8217;s happy, sad or even sentient altogether.</p>
+</div>
+<div class="paragraph">
+<p>artificial intelligence, or AI: The use of technology to simulate human intelligence, either in computer programs or robotics. A field in computer science that aims to build systems that can perform human tasks.</p>
+</div>
+<div class="paragraph">
+<p>bias: In regards to large language models, errors resulting from the training data. This can result in falsely attributing certain characteristics to certain races or groups based on stereotypes.</p>
+</div>
+<div class="paragraph">
+<p>chatbot: A program that communicates with humans through text that simulates human language.</p>
+</div>
+<div class="paragraph">
+<p>ChatGPT: An AI chatbot developed by OpenAI that uses large language model technology.</p>
+</div>
+<div class="paragraph">
+<p>cognitive computing: Another term for artificial intelligence.</p>
+</div>
+<div class="paragraph">
+<p>data augmentation: Remixing existing data or adding a more diverse set of data to train an AI.</p>
+</div>
+<div class="paragraph">
+<p>deep learning: A method of AI, and a subfield of machine learning, that uses multiple parameters to recognize complex patterns in pictures, sound and text. The process is inspired by the human brain and uses artificial neural networks to create patterns.</p>
+</div>
+<div class="paragraph">
+<p>diffusion: A method of machine learning that takes an existing piece of data, like a photo, and adds random noise. Diffusion models train their networks to re-engineer or recover that photo.</p>
+</div>
+<div class="paragraph">
+<p>emergent behavior: When an AI model exhibits unintended abilities.</p>
+</div>
+<div class="paragraph">
+<p>end-to-end learning, or E2E: A deep learning process in which a model is instructed to perform a task from start to finish. It&#8217;s not trained to accomplish a task sequentially but instead learns from the inputs and solves it all at once.</p>
+</div>
+<div class="paragraph">
+<p>ethical considerations: An awareness of the ethical implications of AI and issues related to privacy, data usage, fairness, misuse and other safety issues.</p>
+</div>
+<div class="paragraph">
+<p>foom: Also known as fast takeoff or hard takeoff. The concept that if someone builds an AGI that it might already be too late to save humanity.</p>
+</div>
+<div class="paragraph">
+<p>generative adversarial networks, or GANs: A generative AI model composed of two neural networks to generate new data: a generator and a discriminator. The generator creates new content, and the discriminator checks to see if it&#8217;s authentic.</p>
+</div>
+<div class="paragraph">
+<p>generative AI: A content-generating technology that uses AI to create text, video, computer code or images. The AI is fed large amounts of training data, finds patterns to generate its own novel responses, which can sometimes be similar to the source material.</p>
+</div>
+<div class="paragraph">
+<p>Google Gemini: An AI chatbot by Google that functions similarly to ChatGPT but pulls information from the current web, whereas ChatGPT is limited to data until 2021 and isn&#8217;t connected to the internet.</p>
+</div>
+<div class="paragraph">
+<p>guardrails: Policies and restrictions placed on AI models to ensure data is handled responsibly and that the model doesn&#8217;t create disturbing content.</p>
+</div>
+<div class="paragraph">
+<p>hallucination: An incorrect response from AI. Can include generative AI producing answers that are incorrect but stated with confidence as if correct. The reasons for this aren&#8217;t entirely known. For example, when asking an AI chatbot, "When did Leonardo da Vinci paint the Mona Lisa?" it may respond with an incorrect statement saying, "Leonardo da Vinci painted the Mona Lisa in 1815," which is 300 years after it was actually painted.</p>
+</div>
+<div class="paragraph">
+<p>large language model, or LLM: An AI model trained on mass amounts of text data to understand language and generate novel content in human-like language.</p>
+</div>
+<div class="paragraph">
+<p>machine learning, or ML: A component in AI that allows computers to learn and make better predictive outcomes without explicit programming. Can be coupled with training sets to generate new content.</p>
+</div>
+<div class="paragraph">
+<p>Microsoft Bing: A search engine by Microsoft that can now use the technology powering ChatGPT to give AI-powered search results. It&#8217;s similar to Google Gemini in being connected to the internet.</p>
+</div>
+<div class="paragraph">
+<p>multimodal AI: A type of AI that can process multiple types of inputs, including text, images, videos and speech.</p>
+</div>
+<div class="paragraph">
+<p>natural language processing: A branch of AI that uses machine learning and deep learning to give computers the ability to understand human language, often using learning algorithms, statistical models and linguistic rules.</p>
+</div>
+<div class="paragraph">
+<p>neural network: A computational model that resembles the human brain&#8217;s structure and is meant to recognize patterns in data. Consists of interconnected nodes, or neurons, that can recognize patterns and learn over time.</p>
+</div>
+<div class="paragraph">
+<p>overfitting: Error in machine learning where it functions too closely to the training data and may only be able to identify specific examples in said data but not new data.</p>
+</div>
+<div class="paragraph">
+<p>paperclips: The Paperclip Maximiser theory, coined by philosopher Nick Boström of the University of Oxford, is a hypothetical scenario where an AI system will create as many literal paperclips as possible. In its goal to produce the maximum amount of paperclips, an AI system would hypothetically consume or convert all materials to achieve its goal. This could include dismantling other machinery to produce more paperclips, machinery that could be beneficial to humans. The unintended consequence of this AI system is that it may destroy humanity in its goal to make paperclips.</p>
+</div>
+<div class="paragraph">
+<p>parameters: Numerical values that give LLMs structure and behavior, enabling it to make predictions.</p>
+</div>
+<div class="paragraph">
+<p>prompt: The suggestion or question you enter into an AI chatbot to get a response.</p>
+</div>
+<div class="paragraph">
+<p>prompt chaining: The ability of AI to use information from previous interactions to color future responses.</p>
+</div>
+<div class="paragraph">
+<p>stochastic parrot: An analogy of LLMs that illustrates that the software doesn&#8217;t have a larger understanding of meaning behind language or the world around it, regardless of how convincing the output sounds. The phrase refers to how a parrot can mimic human words without understanding the meaning behind them.</p>
+</div>
+<div class="paragraph">
+<p>style transfer: The ability to adapt the style of one image to the content of another, allowing an AI to interpret the visual attributes of one image and use it on another. For example, taking the self-portrait of Rembrandt and re-creating it in the style of Picasso.</p>
+</div>
+<div class="paragraph">
+<p>temperature: Parameters set to control how random a language model&#8217;s output is. A higher temperature means the model takes more risks.</p>
+</div>
+<div class="paragraph">
+<p>text-to-image generation: Creating images based on textual descriptions.</p>
+</div>
+<div class="paragraph">
+<p>tokens: Small bits of written text that AI language models process to formulate their responses to your prompts. A token is equivalent to four characters in English, or about three-quarters of a word.</p>
+</div>
+<div class="paragraph">
+<p>training data: The datasets used to help AI models learn, including text, images, code or data.</p>
+</div>
+<div class="paragraph">
+<p>transformer model: A neural network architecture and deep learning model that learns context by tracking relationships in data, like in sentences or parts of images. So, instead of analyzing a sentence one word at a time, it can look at the whole sentence and understand the context.</p>
+</div>
+<div class="paragraph">
+<p>Turing test: Named after famed mathematician and computer scientist Alan Turing, it tests a machine&#8217;s ability to behave like a human. The machine passes if a human can&#8217;t distinguish the machine&#8217;s response from another human.</p>
+</div>
+<div class="paragraph">
+<p>weak AI, aka narrow AI: AI that&#8217;s focused on a particular task and can&#8217;t learn beyond its skill set. Most of today&#8217;s AI is weak AI.</p>
+</div>
+<div class="paragraph">
+<p>zero-shot learning: A test in which a model must complete a task without being given the requisite training data. An example would be recognizing a lion while only being trained on tigers.</p>
+</div>
+<div class="paragraph">
+<p>AI Hallucination: A hallucination in AI occurs when AI presents incorrect information as fact due to limitations in its training data and architecture. That&#8217;s why you should always verify anything AI generates for you.</p>
+</div>
+<div class="paragraph">
+<p>Anthropomorphism: The tendency for humans to forget AI is not human, assigning it human traits like feelings and emotions.</p>
+</div>
+<div class="paragraph">
+<p>Generative AI: Technology that creates content — including text, images, video and computer code. UT Verse is an example of generative AI.</p>
+</div>
+<div class="paragraph">
+<p>Grounding: Grounding refers to the process of linking abstract knowledge in AI systems to tangible, real-world examples.</p>
+</div>
+<div class="paragraph">
+<p>Machine Learning: Machine learning is when computer systems are trained to recognize patterns and make predictions based on those patterns. To help the system learn and improve during training, data is run through algorithms repeatedly with different input and feedback each time.</p>
+</div>
+<div class="paragraph">
+<p>Prompt: A prompt is the written instruction you give AI to find what you need. The more specific your prompt, the more likely you are to get back what you want.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Artificial Intelligence: An umbrella term that encompasses several different subcategories including generative AI.
+Machine Learning: A subfield of AI that uses algorithms trained on data sets to create self-learning models. Example: Product suggestions based on past purchases.
+Neural Networks: A type of Machine Learning that is designed to act like a human brain. Example: perform computations and transform input into something the network can use to make a decision.
+Deep Learning: Involves neural networks with multiple layers. Capable of recognizing patterns, classifying data and making predictions.
+Natural Language Processing: Capable of understanding and generating human language.
+Generative AI: A type of AI that uses natural language processing to generate new content. It focuses on classifying or identifying content based on preexisting data
+Conversational AI: a type of generative AI where human interaction is most important. This is used for chatbots and virtual assistants. For example Amazon’s Alexa.
+GPT: stands for Generative Pre-trained Transformer. It’s a type of artificial intelligence designed to generate human-like text by predicting the next word in a sequence given all the previous words within some text. GPT models are trained on a diverse range of internet text and can perform a variety of language tasks such as translation, question-answering, and content creation.
+ChatGPT: an AI chatbot developed by OpenAI (a company) that can engage in human-like conversations. It’s based on the GPT (Generative Pre-trained Transformer) architecture and is trained to understand and generate text in a conversational manner.
+Prompts: a specific input or instruction given to an AI system to generate a desired output. It acts as a guiding mechanism to direct the AI’s creativity toward a specific goal or outcome, enhancing the user’s control over what the AI produces.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Accelerator</p>
+</div>
+<div class="paragraph">
+<p>A class of microprocessor designed to accelerate AI applications.<br>
+Agents</p>
+</div>
+<div class="paragraph">
+<p>Software that can perform certain tasks independently and proactively without the need for human intervention, often utilizing a suite of tools like calculators or web browsing.</p>
+</div>
+<div class="paragraph">
+<p>AGI (Artificial General Intelligence)</p>
+</div>
+<div class="paragraph">
+<p>Though not widely agreed upon, Microsoft researchers have defined AGI as artificial intelligence that is as capable as a human at any intellectual task.<br>
+Alignment</p>
+</div>
+<div class="paragraph">
+<p>The task of ensuring that the goals of an AI system are in line with human values.<br>
+ASI (Artificial Super Intelligence)</p>
+</div>
+<div class="paragraph">
+<p>Though subject to debate, ASI is commonly defined as artificial intelligence that surpasses the capabilities of the human mind.</p>
+</div>
+<div class="paragraph">
+<p>Attention</p>
+</div>
+<div class="paragraph">
+<p>In the context of neural networks, attention mechanisms help the model focus on relevant parts of the input when producing an output.<br>
+Back Propagation</p>
+</div>
+<div class="paragraph">
+<p>An algorithm often used in training neural networks, referring to the method for computing the gradient of the loss function with respect to the weights in the network.<br>
+Bias</p>
+</div>
+<div class="paragraph">
+<p>Assumptions made by an AI model about the data. A “bias variance tradeoff” is the balance that must be achieved between assumptions a model makes about the data and the amount a model’s predictions change, given different training data. Inductive bias is the set of assumptions that a machine learning algorithm makes on the underlying distribution of the data.</p>
+</div>
+<div class="paragraph">
+<p>Chain of Thought</p>
+</div>
+<div class="paragraph">
+<p>In AI, this term is often used to describe the sequence of reasoning steps an AI model uses to arrive at a decision.<br>
+Chatbot</p>
+</div>
+<div class="paragraph">
+<p>A computer program designed to simulate human conversation through text or voice interactions. Chatbots often utilize natural language processing techniques to understand user input and provide relevant responses.</p>
+</div>
+<div class="paragraph">
+<p>ChatGPT</p>
+</div>
+<div class="paragraph">
+<p>A large-scale AI language model developed by OpenAI that generates human-like text.<br>
+CLIP (Contrastive Language–Image Pretraining)</p>
+</div>
+<div class="paragraph">
+<p>An AI model developed by OpenAI that connects images and text, allowing it to understand and generate descriptions of images.<br>
+Compute</p>
+</div>
+<div class="paragraph">
+<p>The computational resources (like CPU or GPU time) used in training or running AI models.<br>
+Convolutional Neural Network (CNN)</p>
+</div>
+<div class="paragraph">
+<p>A type of deep learning model that processes data with a grid-like topology (e.g., an image) by applying a series of filters. Such models are often used for image recognition tasks.<br>
+Data Augmentation:</p>
+</div>
+<div class="paragraph">
+<p>The process of increasing the amount and diversity of data used for training a model by adding slightly modified copies of existing data.<br>
+Deep Learning</p>
+</div>
+<div class="paragraph">
+<p>A subfield of machine learning that focuses on training neural networks with many layers, enabling learning of complex patterns.<br>
+Diffusion</p>
+</div>
+<div class="paragraph">
+<p>In AI and machine learning, a technique used for generating new data by starting with a piece of real data and adding random noise. A diffusion model is a type of generative model in which a neural network is trained to predict the reverse process when random noise is added to data. Diffusion models are used to generate new samples of data that are similar to the training data.</p>
+</div>
+<div class="paragraph">
+<p>Double Descent</p>
+</div>
+<div class="paragraph">
+<p>A phenomenon in machine learning in which model performance improves with increased complexity, then worsens, then improves again.<br>
+Embedding</p>
+</div>
+<div class="paragraph">
+<p>The representation of data in a new form, often a vector space. Similar data points have more similar embeddings.<br>
+Emergence/Emergent Behavior (“sharp left turns,” intelligence explosions)</p>
+</div>
+<div class="paragraph">
+<p>In AI, emergence refers to complex behavior arising from simple rules or interactions. “Sharp left turns” and “intelligence explosions” are speculative scenarios where AI development takes sudden and drastic shifts, often associated with the arrival of AGI.<br>
+End-to-End Learning</p>
+</div>
+<div class="paragraph">
+<p>A type of machine learning model that does not require hand-engineered features. The model is simply fed raw data and expected to learn from these inputs.<br>
+Expert Systems</p>
+</div>
+<div class="paragraph">
+<p>An application of artificial intelligence technologies that provides solutions to complex problems within a specific domain.<br>
+Explainable AI (XAI)</p>
+</div>
+<div class="paragraph">
+<p>A subfield of AI focused on creating transparent models that provide clear and understandable explanations of their decisions.<br>
+Fine-tuning</p>
+</div>
+<div class="paragraph">
+<p>The process of taking a pre-trained machine learning model that has already been trained on a large dataset and adapting it for a slightly different task or specific domain. During fine-tuning, the model’s parameters are further adjusted using a smaller, task-specific dataset, allowing it to learn task-specific patterns and improve performance on the new task.<br>
+Forward Propagation</p>
+</div>
+<div class="paragraph">
+<p>In a neural network, forward propagation is the process where input data is fed into the network and passed through each layer (from the input layer to the hidden layers and finally to the output layer) to produce the output. The network applies weights and biases to the inputs and uses activation functions to generate the final output.<br>
+Foundation Model</p>
+</div>
+<div class="paragraph">
+<p>Large AI models trained on broad data, meant to be adapted for specific tasks.<br>
+General Adversarial Network (GAN)</p>
+</div>
+<div class="paragraph">
+<p>A type of machine learning model used to generate new data similar to some existing data. It pits two neural networks against each other: a “generator,” which creates new data, and a “discriminator” which tries to distinguish that data from real data.<br>
+Generative AI</p>
+</div>
+<div class="paragraph">
+<p>A branch of AI focused on creating models that can generate new and original content, such as images, music, or text, based on patterns and examples from existing data.</p>
+</div>
+<div class="paragraph">
+<p>GPT (Generative Pretrained Transformer)</p>
+</div>
+<div class="paragraph">
+<p>A large-scale AI language model developed by OpenAI that generates human-like text.</p>
+</div>
+<div class="paragraph">
+<p>GPU (Graphics Processing Unit)</p>
+</div>
+<div class="paragraph">
+<p>A specialized type of microprocessor primarily designed to quickly render images for output to a display. GPUs are also highly efficient at performing the calculations needed to train and run neural networks.<br>
+Gradient Descent</p>
+</div>
+<div class="paragraph">
+<p>In machine learning, gradient descent is an optimization method that gradually adjusts a model’s parameters based on the direction of largest improvement in its loss function. In linear regression, for example, gradient descent helps find the best-fit line by repeatedly refining the line’s slope and intercept to minimize prediction errors.<br>
+Hallucinate/Hallucination</p>
+</div>
+<div class="paragraph">
+<p>In the context of AI, hallucination refers to the phenomenon in which a model generates content that is not based on actual data or is significantly different from reality.<br>
+Hidden Layer</p>
+</div>
+<div class="paragraph">
+<p>Layers of artificial neurons in a neural network that are not directly connected to the input or output.<br>
+Hyperparameter Tuning</p>
+</div>
+<div class="paragraph">
+<p>The process of selecting the appropriate values for the hyperparameters (parameters that are not learned from the data) of a machine learning model.<br>
+Inference</p>
+</div>
+<div class="paragraph">
+<p>The process of making predictions with a trained machine learning model.<br>
+Instruction Tuning</p>
+</div>
+<div class="paragraph">
+<p>A technique in machine learning where models are fine-tuned based on specific instructions given in the dataset.<br>
+Large Language Model (LLM)</p>
+</div>
+<div class="paragraph">
+<p>A type of AI model that can generate human-like text and is trained on a broad dataset.<br>
+Latent Space</p>
+</div>
+<div class="paragraph">
+<p>In machine learning, this term refers to the compressed representation of data that a model (like a neural network) creates. Similar data points are closer in latent space.<br>
+Loss Function (or Cost Function)</p>
+</div>
+<div class="paragraph">
+<p>A function that a machine learning model seeks to minimize during training. It quantifies how far the model’s predictions are from the true values.<br>
+Machine Learning</p>
+</div>
+<div class="paragraph">
+<p>A type of artificial intelligence that provides systems the ability to automatically learn and improve from experience without being explicitly programmed.<br>
+Mixture of Experts</p>
+</div>
+<div class="paragraph">
+<p>A machine learning technique where several specialized submodels (the “experts”) are trained, and their predictions are combined in a way that depends on the input.<br>
+Multimodal</p>
+</div>
+<div class="paragraph">
+<p>In AI, this refers to models that can understand and generate information across several types of data, such as text and images.<br>
+Natural Language Processing (NLP)</p>
+</div>
+<div class="paragraph">
+<p>A subfield of AI focused on the interaction between computers and humans through natural language. The ultimate objective of NLP is to read, decipher, understand, and make sense of human language in a valuable way.</p>
+</div>
+<div class="paragraph">
+<p>NeRF (Neural Radiance Fields)</p>
+</div>
+<div class="paragraph">
+<p>A method for creating a 3D scene from 2D images using a neural network. It can be used for photorealistic rendering, view synthesis, and more.<br>
+Neural Network</p>
+</div>
+<div class="paragraph">
+<p>A type of AI model inspired by the human brain. It consists of connected units or nodes—called neurons—that are organized in layers. A neuron takes inputs, does some computation on them, and produces an output.<br>
+Objective Function</p>
+</div>
+<div class="paragraph">
+<p>A function that a machine learning model seeks to maximize or minimize during training.<br>
+Overfitting</p>
+</div>
+<div class="paragraph">
+<p>A modeling error that occurs when a function is too closely fit to a limited set of data points, resulting in poor predictive performance when applied to unseen data.<br>
+Parameters</p>
+</div>
+<div class="paragraph">
+<p>In machine learning, parameters are the internal variables that the model uses to make predictions. They are learned from the training data during the training process. For example, in a neural network, the weights and biases are parameters.<br>
+Pre-training</p>
+</div>
+<div class="paragraph">
+<p>The initial phase of training a machine learning model where the model learns general features, patterns, and representations from the data without specific knowledge of the task it will later be applied to. This unsupervised or semi-supervised learning process enables the model to develop a foundational understanding of the underlying data distribution and extract meaningful features that can be leveraged for subsequent fine-tuning on specific tasks.<br>
+Prompt</p>
+</div>
+<div class="paragraph">
+<p>The initial context or instruction that sets the task or query for the model.<br>
+Regularization</p>
+</div>
+<div class="paragraph">
+<p>In machine learning, regularization is a technique used to prevent overfitting by adding a penalty term to the model’s loss function. This penalty discourages the model from excessively relying on complex patterns in the training data, promoting more generalizable and less prone-to-overfitting models.<br>
+Reinforcement Learning</p>
+</div>
+<div class="paragraph">
+<p>A type of machine learning where an agent learns to make decisions by taking actions in an environment to maximize some reward.<br>
+RLHF (Reinforcement Learning from Human Feedback)</p>
+</div>
+<div class="paragraph">
+<p>A method to train an AI model by learning from feedback given by humans on model outputs.</p>
+</div>
+<div class="paragraph">
+<p>Singularity</p>
+</div>
+<div class="paragraph">
+<p>In the context of AI, the singularity (also known as the technological singularity) refers to a hypothetical future point in time when technological growth becomes uncontrollable and irreversible, leading to unforeseeable changes to human civilization.<br>
+Supervised Learning</p>
+</div>
+<div class="paragraph">
+<p>A type of machine learning where the model is provided with labeled training data.</p>
+</div>
+<div class="paragraph">
+<p>Symbolic Artificial Intelligence</p>
+</div>
+<div class="paragraph">
+<p>A type of AI that utilizes symbolic reasoning to solve problems and represent knowledge.<br>
+TensorFlow</p>
+</div>
+<div class="paragraph">
+<p>An open-source machine learning platform developed by Google that is  used to build and train machine learning models.<br>
+TPU (Tensor Processing Unit)</p>
+</div>
+<div class="paragraph">
+<p>A type of microprocessor developed by Google specifically for accelerating machine learning workloads.<br>
+Training Data</p>
+</div>
+<div class="paragraph">
+<p>The dataset used to train a machine learning model.<br>
+Transfer Learning</p>
+</div>
+<div class="paragraph">
+<p>A method in machine learning where a pre-trained model is used on a new problem.<br>
+Transformer</p>
+</div>
+<div class="paragraph">
+<p>A specific type of neural network architecture used primarily for processing sequential data such as natural language. Transformers are known for their ability to handle long-range dependencies in data, thanks to a mechanism called “attention,” which allows the model to weigh the importance of different inputs when producing an output.<br>
+Underfitting</p>
+</div>
+<div class="paragraph">
+<p>A modeling error in statistics and machine learning when a statistical model or machine learning algorithm cannot adequately capture the underlying structure of the data.<br>
+Unsupervised Learning</p>
+</div>
+<div class="paragraph">
+<p>A type of machine learning where the model is not provided with labeled training data, and instead must identify patterns in the data on its own.<br>
+Validation Data</p>
+</div>
+<div class="paragraph">
+<p>A subset of the dataset used in machine learning that is separate from the training and test datasets. It’s used to tune the hyperparameters (i.e., architecture, not weights) of a model.</p>
+</div>
+<div class="paragraph">
+<p>XAI (Explainable AI)</p>
+</div>
+<div class="paragraph">
+<p>A subfield of AI focused on creating transparent models that provide clear and understandable explanations of their decisions.<br>
+Zero-shot Learning</p>
+</div>
+<div class="paragraph">
+<p>A type of machine learning where the model makes predictions for conditions not seen during training, without any fine-tuning.</p>
+</div>
+</article>
+	</div>
+</main>
+</div>
+		<footer class="footer">
+	
+	
+	
+	<div class="footer-thanks">
+		Authored in AsciiDoc
+		<br /><br />
+		Produced by Antora and Asciidoctor
+  	</div>
+  
+	<div class="footer-legal" style="text-align:center">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br /><br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		Copyright © 2024 Elf
+		<br /><br />
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+	
+</footer><script id="site-script" src="../../../../_/js/site.js" 
+	data-ui-root-path="../../../../_"></script>
+
+<script async src="../../../../_/js/vendor/highlight.js"></script>
+<script async src="../../../../_/js/vendor/highlight.bundle.js"></script>
+
+
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+
+<script>hljs.highlightAll();</script>
+
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
+</html>
