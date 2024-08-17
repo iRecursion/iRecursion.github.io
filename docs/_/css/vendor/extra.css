@@ -90,7 +90,7 @@ body,#search-input{
   	.navbar-end .navbar-item.has-dropdown:hover>a.navbar-item,
   	.navbar-end .navbar-link:hover,
   	.navbar-end>a.navbar-item:hover {
-    	background: #fafafa;
+    	background: black;
   	}
 }
 
