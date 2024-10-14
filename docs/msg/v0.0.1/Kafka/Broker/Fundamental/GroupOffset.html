@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> :: AsciiDoc</title>
+    <meta name="generator" content="Antora 3.1.7">
+
+<link rel="stylesheet" href="../../../../../_/css/site.css">
+
+<link rel="stylesheet" href="../../../../../_/css/vendor/asciidoc.css">
+
+<link rel="stylesheet" href="../../../../../_/css/vendor/extra.css">
+
+<link rel="stylesheet" href="../../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../../_/css/vendor/prism-1.29.0-coy.css">
+
+
+    <link rel="icon" href="../../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+  			
+  			<a class="navbar-item logo" target="_blank" href="">
+				<img src="../../../../../_/img/yin-yang-symbol.svg" width="100%" height="50">
+			</a>
+  			
+	            <div id="main" style="place-content: center;">
+	                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+		            </div>
+		        </section>
+    	</div>
+    	
+    	<div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Culture</div>
+          			<div class="navbar-dropdown is-right">
+            			
+			            <div class="navbar-item">Traditional Culture</div>
+			            
+			            <a class="navbar-item" target="_blank" href="../../../../../culture/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>Culture <small>传统文化</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Eco</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <a class="navbar-item" target="_blank" href="../../../../../multifariousness/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>Multifariousness <small>五花八门</small></span>
+			            </a>
+
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../../ai/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>Artificial Intelligence<small>人工智能</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../../msg/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>Messaging - Kafka <small>Kafka</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Experiment</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <div class="navbar-item">Quantum Computing</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>QC <small>量子计算...</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <div class="navbar-item">Harmony</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>CangJie <small>预览版内测...</small></span>
+			            </a>
+        			</div>
+    			</div>
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container" data-component="msg" data-version="v0.0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../../index.html">Message</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Kafka</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Broker</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Fundamental</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="KafkaEco.html">Kafka Eco</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="KafkaTopic.html">Kafka Topic</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="KafkaProducer.html">Kafka Producer</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="KafkaConsumer.html">Kafka Consumer</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="4">
+    <a class="nav-link" href="GroupOffset.html">Group Offset</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="KafkaBroker.html">Kafka Broker</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="TopicReplication.html">Topic Replication</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="KafkaKRaft.html">KafkaK Raft</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Cli</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/TopicCli.html">Topic Cli</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/ProducerCli.html">Producer Cli</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/ConsumerCli.html">Consumer Cli</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/ConsumerInGroupCli.html">Group Cli</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/ConsumerGroupManagementCli.html">Group Management Cli</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/ConnectCli.html">Connect Cli</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Topic</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/ChangeTopicConfig.html">Change Topic Config</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/TopicInternal.html">Topic Internal</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/LogRetention.html">Log Retention</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/UncleanLeaderElection.html">Unclean Leader Election</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/LogCompaction.html">Log Compaction</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/ReplicationFactorPartitionCount.html">Partition Count Factor</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/SendLargeMessage.html">Send Large Message</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/TopicNamingConvention.html">Topic Naming Convention</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Producer</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/ProducerAck.html">Producer Ack</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/ProducerRetry.html">Producer Retry</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/ProducerIdempotent.html">Producer Idempotent</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/MessageCompression.html">Message Compression</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/ProducerBatching.html">Producer Batching</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/ProducerPartitioner.html">Producer Partitioner</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/ProducerRest.html">Producer Rest</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Consumer</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Consumer/DeliverySemantic.html">Delivery Semantic</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Consumer/PollInternalThreadBehavior.html">Thread Behavior</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Consumer/AutoOffsetResetBehavior.html">Auto Offset Reset Behavior</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Consumer/ReadClosestReplica.html">Read Closest Replica</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Consumer/IncrementalRebalanceStaticGroupMembership.html">Rebalance Membership</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Administration</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Administration/BrokerClient.html">Broker Client</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Administration/KafkaSecurity.html">Kafka Security</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Administration/MonitoringOperation.html">Monitoring Operation</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Administration/KafkaCluster.html">Kafka Cluster</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Administration/MultiClusterMirrorMaker.html">Multi Cluster MirrorMaker</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Administration/AdvertisedHost.html">Advertised Host</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Programming</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Programming/KafkaProgrammingEntry.html">Kafka Entry</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Programming/WikimediaKafkaOpensearch.html">Wiki 2 Search</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Message</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <div class="title"><a href="../../../../../ai/v0.0.1/index.html">AI</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../ai/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../../../culture/v0.0.1/index.html">Culture</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../culture/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <div class="title"><a href="../../../index.html">Message</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../../../multifariousness/v0.0.1/index.html">Multifariousness</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../multifariousness/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+	<div class="toolbar" role="navigation">
+	<button class="nav-toggle"></button>
+	
+		<a href="../../../../../multifariousness/v0.0.1/index.html" 
+			class="home-link">
+		</a>
+
+	<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../../index.html">Message</a></li>
+    <li>Kafka</li>
+    <li>Broker</li>
+    <li>Fundamental</li>
+    <li><a href="GroupOffset.html">Group Offset</a></li>
+  </ul>
+</nav>
+		</div>
+	
+	<div class="content">
+			<aside class="toc sidebar" 
+	data-title="Contents" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+			<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_group_and_offset">1. Group and Offset</a></li>
+<li><a href="#_consumer_group">2. Consumer Group</a></li>
+<li><a href="#_consumer_group_id">3. Consumer Group Id</a></li>
+<li><a href="#_consumer_inactive">4. Consumer Inactive</a></li>
+<li><a href="#_consumer_offset">5. Consumer Offset</a></li>
+<li><a href="#_why_consumer_offset">6. Why Consumer Offset</a></li>
+<li><a href="#_delivery_semantic">7. Delivery Semantic</a>
+<ul class="sectlevel2">
+<li><a href="#_at_least_once">7.1. At Least Once</a></li>
+<li><a href="#_at_most_once">7.2. At Most Once</a></li>
+<li><a href="#_exactly_once">7.3. Exactly Once</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_group_and_offset"><a class="anchor" href="#_group_and_offset"></a>1. Group and Offset</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Consumer Group and Consumer Offset</p>
+</li>
+<li>
+<p>消费者可单独使用主题分区中的数据，但出于横向可扩展性<br>
+(horizontal scalability)的目的，建议将Kafka主题作为一个组使用；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_consumer_group"><a class="anchor" href="#_consumer_group"></a>2. Consumer Group</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/Broker/Consumer/ConsumerGroup.png" alt="ConsumerGroup">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>应用程序中所有消费者作为消费者组读取数据；</p>
+</li>
+<li>
+<p>组内的每个消费者都从独占分区(exclusive partition)中读取；</p>
+</li>
+<li>
+<p>属于同一应用程序并因此(therefore)执行相同<br>
+"logical job"的消费者可分组为一个Kafka消费者组；</p>
+</li>
+<li>
+<p>一个主题通常由许多分区组成(consists of)，<br>
+这些分区是Kafka消费者的一个并行单元(unit of parallelism)；</p>
+</li>
+<li>
+<p>利用消费者组的好处：该组中的消费者将协调从不同的分区中分割读取工作；<br>
+coordinate to split work of reading from different partition；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_consumer_group_id"><a class="anchor" href="#_consumer_group_id"></a>3. Consumer Group Id</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/Broker/Consumer/ConsumerGroup.png" alt="ConsumerGroup">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>指定消费者端设置group.id，以表明他们属于同一特定组；</p>
+</li>
+<li>
+<p>Consumer自动使用GroupCoordinator和ConsumerCoordinater<br>
+将消费者分配到一个分区并确保在同一组中的所有消费者间实现负载平衡；</p>
+</li>
+<li>
+<p>注：每个主题分区只分配给消费者组种的一个消费者，但消费者组中一个消费者可分配多个分区；</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/Broker/Consumer/TopicConsumerManyToMany.png" alt="TopicConsumerManyToMany">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>同一主题有多个消费者组是可接受的；</p>
+</li>
+<li>
+<p>消费者组1的消费者1已经被分配分区0和分区1，而消费者2被分配分区2和分区3，<br>
+只有消费者1从分区0和分区1接收消息，消费者2从分区2和分区3接收消息；</p>
+</li>
+<li>
+<p>从主题中读取的每个应用程序(可能由许多消费者组成)都必须指定一个<br>
+不同的group.id，意味多个应用程序(消费者组)可同时从同一主题中消费；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_consumer_inactive"><a class="anchor" href="#_consumer_inactive"></a>4. Consumer Inactive</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/Broker/Consumer/ConsumerGroupInactiveConsumer.png" alt="ConsumerGroupInactiveConsumer">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>消费者组：若消费者太多，多于分区，则一些消费者将处于不活动状态(inactive)；</p>
+</li>
+<li>
+<p>通常，某消费者组中的消费者数量与分区数量一样多；</p>
+</li>
+<li>
+<p>若想要更多的消费者获得更高的吞吐量，应在创建主题的同时<br>
+创建更多的分区，否则，一些消费者可能会保持不活跃状态；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_consumer_offset"><a class="anchor" href="#_consumer_offset"></a>5. Consumer Offset</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/Broker/Consumer/ConsumerOffset.png" alt="ConsumerOffset">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>kafka存储消费者组已读取的偏移量，<br>
+store offset at consumer group has been reading；</p>
+</li>
+<li>
+<p>提交的(commit)偏移量位于名为 <mark>__consumer_offsets</mark> 的主题中；</p>
+</li>
+<li>
+<p>当组中消费者处理(process)完从kafka收到的数据时，它应定期提交偏移量，<br>
+kafka broker将写入 <mark>__consumer_offsets</mark> ，而不是组本身；</p>
+</li>
+<li>
+<p>periodically committing offset，kafka broker<br>
+write to __consumer_offsets,not group itself；</p>
+</li>
+<li>
+<p>若消费者死亡(die)，因提交的消费者偏移量，它将能够从上次停止的位置读回；</p>
+</li>
+<li>
+<p>able to read back from where it left off<br>
+thanks to committed consumer offset</p>
+</li>
+<li>
+<p>kafka broker使用名为 \__consumer_offsets 的<br>
+内部主题来跟踪给定消费者组最后成功处理的消息；</p>
+</li>
+<li>
+<p>kafka主题中的每条消息都有一个partition Id和offset Id；</p>
+</li>
+<li>
+<p>故为"checkpoint" 消费者对主题分区的读取程度，<br>
+消费者将定期提交(commit)最新处理的消息，也称消费者偏移量；</p>
+</li>
+<li>
+<p>如上图中消费者组中消费者已经消费高达便宜4262的消息；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_why_consumer_offset"><a class="anchor" href="#_why_consumer_offset"></a>6. Why Consumer Offset</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>偏移量对应用至关重要，若Kafka客户端崩溃crash，则发生重新平衡rebalance，<br>
+且最新提交的偏移量将帮助剩余的Kafka消费者知道在哪里重新开始读取和处理消息；</p>
+</li>
+<li>
+<p>若新的消费者被添加到一个组中，则会发生另一个消费者组的重新平衡，<br>
+且消费者偏移量再次被用来通知消费者从哪里始读取数据；</p>
+</li>
+<li>
+<p>yet again leveraged to notify consumer；</p>
+</li>
+<li>
+<p>故必须定期提交消费者偏移量；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_delivery_semantic"><a class="anchor" href="#_delivery_semantic"></a>7. Delivery Semantic</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Kafka broker将确保写入 <mark>\__consumer_offsets</mark><br>
+主题(因此消费者不会直接写入该主题)；</p>
+</li>
+<li>
+<p>提交偏移量的过程并非针对所消耗的每一条消息进行(因这低效)，而是周期性的过程；</p>
+</li>
+<li>
+<p>即当提交特定的偏移量时，所有先前具有较低偏移量的消息也被视为已提交；</p>
+</li>
+<li>
+<p>当调用poll()时，每隔(默认5 ms) (auto.commit.interval.ms)，<br>
+自动提交偏移量 (enable.auto.commit=true)；</p>
+</li>
+<li>
+<p>默认，Java消费者将自动提交偏移量(at least once)，<br>
+若选择手动提交(enable.auto.commit=false)，则有三种投递语义；</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_at_least_once"><a class="anchor" href="#_at_least_once"></a>7.1. At Least Once</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>至少一次，通常是首选(usually preferred)；</p>
+</li>
+<li>
+<p>消息处理后提交偏移量，若处理出错，消息将被重新读取；</p>
+</li>
+<li>
+<p>这将导致消息的重复处理，确保我们的处理幂等(idempotent)；<br>
+幂等：即再次处理消息不会影响我们的系统；</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_at_most_once"><a class="anchor" href="#_at_most_once"></a>7.2. At Most Once</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>最多一次，收到消息后立即提交偏移量</p>
+</li>
+<li>
+<p>若处理出错，一些消息将会丢失，即消息不会被再次读取；</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_exactly_once"><a class="anchor" href="#_exactly_once"></a>7.3. Exactly Once</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>精确一次</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Entry</th>
+<th class="tableblock halign-left valign-top">Memo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kafka &#8658; kafka workflow</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">use transactional api，<br>
+ easy with kafka stream api</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kafka &#8658; external system workflow</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">use idempotent consumer</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>这只能使用事务Api来实现Kafka主题到Kafaka主题的工作流时，<br>
+启用精确一次，Kafka Stream Api简化Api的使用；<br>
+processing.guarantee=exactly_once_v2； Kafka &lt; 2.5</p>
+</li>
+<li>
+<p>对于Kafka主题到外部系统的工作流，要有效地(effectively)<br>
+实现精确一次，必须使用幂等(idempotent)消费者；</p>
+</li>
+<li>
+<p>在实践中，对Kafka消费者来说，至少一次幂等处理是<br>
+最理想(desirable)和最广泛(widely)实现的机制；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</article>
+	</div>
+</main>
+</div>
+		<footer class="footer">
+	
+	
+	
+	<div class="footer-thanks">
+		Authored in AsciiDoc
+		<br /><br />
+		Produced by Antora and Asciidoctor
+  	</div>
+  
+	<div class="footer-legal" style="text-align:center">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br /><br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		Copyright © 2024 Elf
+		<br /><br />
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+	
+</footer><script id="site-script" src="../../../../../_/js/site.js" 
+	data-ui-root-path="../../../../../_"></script>
+
+<script src="../../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../../.." data-snippet-length="100" data-stylesheet="../../../../../_/css/search.css"></script>
+<script async src="../../../../../search-index.js"></script>
+
+
+<script async src="../../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
+</html>

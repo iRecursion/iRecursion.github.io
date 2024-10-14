@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> :: AsciiDoc</title>
+    <meta name="generator" content="Antora 3.1.7">
+
+<link rel="stylesheet" href="../../../../../_/css/site.css">
+
+<link rel="stylesheet" href="../../../../../_/css/vendor/asciidoc.css">
+
+<link rel="stylesheet" href="../../../../../_/css/vendor/extra.css">
+
+<link rel="stylesheet" href="../../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../../_/css/vendor/prism-1.29.0-coy.css">
+
+
+    <link rel="icon" href="../../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+  			
+  			<a class="navbar-item logo" target="_blank" href="">
+				<img src="../../../../../_/img/yin-yang-symbol.svg" width="100%" height="50">
+			</a>
+  			
+	            <div id="main" style="place-content: center;">
+	                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+		            </div>
+		        </section>
+    	</div>
+    	
+    	<div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Culture</div>
+          			<div class="navbar-dropdown is-right">
+            			
+			            <div class="navbar-item">Traditional Culture</div>
+			            
+			            <a class="navbar-item" target="_blank" href="../../../../../culture/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>Culture <small>传统文化</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Eco</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <a class="navbar-item" target="_blank" href="../../../../../multifariousness/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>Multifariousness <small>五花八门</small></span>
+			            </a>
+
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../../ai/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>Artificial Intelligence<small>人工智能</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../../msg/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>Messaging - Kafka <small>Kafka</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Experiment</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <div class="navbar-item">Quantum Computing</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>QC <small>量子计算...</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <div class="navbar-item">Harmony</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>CangJie <small>预览版内测...</small></span>
+			            </a>
+        			</div>
+    			</div>
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container" data-component="msg" data-version="v0.0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../../index.html">Message</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Kafka</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Broker</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Fundamental</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/KafkaEco.html">Kafka Eco</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/KafkaTopic.html">Kafka Topic</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/KafkaProducer.html">Kafka Producer</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/KafkaConsumer.html">Kafka Consumer</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/GroupOffset.html">Group Offset</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/KafkaBroker.html">Kafka Broker</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/TopicReplication.html">Topic Replication</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/KafkaKRaft.html">KafkaK Raft</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Cli</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/TopicCli.html">Topic Cli</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/ProducerCli.html">Producer Cli</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/ConsumerCli.html">Consumer Cli</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/ConsumerInGroupCli.html">Group Cli</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/ConsumerGroupManagementCli.html">Group Management Cli</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/ConnectCli.html">Connect Cli</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Topic</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/ChangeTopicConfig.html">Change Topic Config</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/TopicInternal.html">Topic Internal</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/LogRetention.html">Log Retention</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/UncleanLeaderElection.html">Unclean Leader Election</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/LogCompaction.html">Log Compaction</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/ReplicationFactorPartitionCount.html">Partition Count Factor</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/SendLargeMessage.html">Send Large Message</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/TopicNamingConvention.html">Topic Naming Convention</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Producer</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/ProducerAck.html">Producer Ack</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/ProducerRetry.html">Producer Retry</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/ProducerIdempotent.html">Producer Idempotent</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/MessageCompression.html">Message Compression</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/ProducerBatching.html">Producer Batching</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/ProducerPartitioner.html">Producer Partitioner</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/ProducerRest.html">Producer Rest</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Consumer</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Consumer/DeliverySemantic.html">Delivery Semantic</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Consumer/PollInternalThreadBehavior.html">Thread Behavior</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Consumer/AutoOffsetResetBehavior.html">Auto Offset Reset Behavior</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Consumer/ReadClosestReplica.html">Read Closest Replica</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Consumer/IncrementalRebalanceStaticGroupMembership.html">Rebalance Membership</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Administration</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Administration/BrokerClient.html">Broker Client</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Administration/KafkaSecurity.html">Kafka Security</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Administration/MonitoringOperation.html">Monitoring Operation</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Administration/KafkaCluster.html">Kafka Cluster</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Administration/MultiClusterMirrorMaker.html">Multi Cluster MirrorMaker</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Administration/AdvertisedHost.html">Advertised Host</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Programming</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="KafkaProgrammingEntry.html">Kafka Entry</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="4">
+    <a class="nav-link" href="WikimediaKafkaOpensearch.html">Wiki 2 Search</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Message</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <div class="title"><a href="../../../../../ai/v0.0.1/index.html">AI</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../ai/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../../../culture/v0.0.1/index.html">Culture</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../culture/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <div class="title"><a href="../../../index.html">Message</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../../../multifariousness/v0.0.1/index.html">Multifariousness</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../multifariousness/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+	<div class="toolbar" role="navigation">
+	<button class="nav-toggle"></button>
+	
+		<a href="../../../../../multifariousness/v0.0.1/index.html" 
+			class="home-link">
+		</a>
+
+	<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../../index.html">Message</a></li>
+    <li>Kafka</li>
+    <li>Broker</li>
+    <li>Programming</li>
+    <li><a href="WikimediaKafkaOpensearch.html">Wiki 2 Search</a></li>
+  </ul>
+</nav>
+		</div>
+	
+	<div class="content">
+			<aside class="toc sidebar" 
+	data-title="Contents" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+			<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_project_structure">1. Project Structure</a></li>
+<li><a href="#_kafka_compose">2. Kafka Compose</a></li>
+<li><a href="#_kraft_server_properties">3. KRaft server.properties</a></li>
+<li><a href="#_open_search_prerequisite">4. Open Search Prerequisite</a></li>
+<li><a href="#_open_search_compose">5. Open Search Compose</a></li>
+<li><a href="#_producer_dependency">6. Producer Dependency</a></li>
+<li><a href="#_wikimediachangehandler">7. WikimediaChangeHandler</a></li>
+<li><a href="#_wikimediachangeproducer">8. WikimediaChangeProducer</a></li>
+<li><a href="#_consumer_dependency">9. Consumer Dependency</a></li>
+<li><a href="#_opensearchconsumer">10. OpenSearchConsumer</a></li>
+<li><a href="#_create_topic">11. Create Topic</a></li>
+<li><a href="#_consume_message">12. Consume Message</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_project_structure"><a class="anchor" href="#_project_structure"></a>1. Project Structure</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Wikimedia  &#8658; Kafka &#8658; Opensearch</p>
+</li>
+<li>
+<p>Java Library：OKhttp3和OkHttp EventSource；</p>
+</li>
+<li>
+<p>生产者：Wikimedia：WikimediaChangeHandler和WikimediaChangeProducer；</p>
+</li>
+<li>
+<p>消费者：Opensearch：OpenSearchConsumer，opensearch-java + httpclient5；</p>
+</li>
+<li>
+<p><mark><a href="https://stream.wikimedia.org/v2/stream/recentchange" class="bare">https://stream.wikimedia.org/v2/stream/recentchange</a></mark></p>
+</li>
+<li>
+<p><mark><a href="https://codepen.io/Krinkle/pen/BwEKgW?editors=1010" class="bare">https://codepen.io/Krinkle/pen/BwEKgW?editors=1010</a></mark></p>
+</li>
+<li>
+<p><mark><a href="https://esjewett.github.io/wm-eventsource-demo" class="bare">https://esjewett.github.io/wm-eventsource-demo</a></mark></p>
+</li>
+<li>
+<p>Rest Api使用OpenSearch Dashboard，在线可使用Bonsai.io；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_kafka_compose"><a class="anchor" href="#_kafka_compose"></a>2. Kafka Compose</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">version: '3.8'
+services:
+  kafka:
+    image: apache/kafka:3.8.0
+    container_name: kafka
+    privileged: true
+    hostname: kafka
+    ports:
+      - "9092:9092"
+    environment:
+      KAFKA_NODE_ID: 1
+      KAFKA_LOG_DIRS: '/tmp/kafka-log'
+      CLUSTER_ID: 'YWU3MzE1YmVmYzhiMTFlZT'
+
+      KAFKA_PROCESS_ROLES: 'broker,controller'
+      KAFKA_INTER_BROKER_LISTENER_NAME: 'PLAINTEXT'
+      KAFKA_CONTROLLER_LISTENER_NAMES: 'CONTROLLER'
+      KAFKA_CONTROLLER_QUORUM_VOTERS: '1@kafka:29093'
+
+      KAFKA_LISTENERS: 'CONTROLLER://:29093,PLAINTEXT_HOST://:9092,PLAINTEXT://:19092'
+      KAFKA_ADVERTISED_LISTENERS: 'PLAINTEXT_HOST://192.168.0.123:9092,PLAINTEXT://kafka:19092'
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: 'CONTROLLER:PLAINTEXT,PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT'
+
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+      KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+networks:
+  default:
+    name: network-common
+    external: true</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_kraft_server_properties"><a class="anchor" href="#_kraft_server_properties"></a>3. KRaft server.properties</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>vi /opt/kafka/config/kraft/server.properties</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties">#controller.quorum.voters=1@localhost:9093
+controller.quorum.voters=1@192.168.0.123:9093
+
+#listeners=PLAINTEXT://:9092,CONTROLLER://:9093
+listeners=CONTROLLER://:29093,PLAINTEXT_HOST://:9092,PLAINTEXT://:19092
+
+#advertised.listeners=PLAINTEXT://localhost:9092
+advertised.listeners=PLAINTEXT_HOST://192.168.0.123:9092,PLAINTEXT://kafka:19092</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_open_search_prerequisite"><a class="anchor" href="#_open_search_prerequisite"></a>4. Open Search Prerequisite</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash"># disable memory paging and swapping performance
+sudo swapoff -a
+
+# edit sysctl config
+sudo vi /etc/sysctl.conf
+
+# add line to define desired value or change exist
+vm.max_map_count=262144
+
+# reload kernel parameter using sysctl
+sudo sysctl -p
+
+# verify change
+cat /proc/sys/vm/max_map_count</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_open_search_compose"><a class="anchor" href="#_open_search_compose"></a>5. Open Search Compose</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">docker pull opensearchproject/opensearch:1.3.16 &amp;&amp; \
+	docker pull opensearchproject/opensearch-dashboards:1.3.16</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">version: '3.8'
+services:
+  opensearch:
+    image: opensearchproject/opensearch:1.3.16
+    container_name: opensearch
+    environment:
+      discovery.type: single-node
+      plugins.security.disabled: true
+      compatibility.override_main_response_version: true
+    ports:
+      - "9200:9200"
+      - "9600:9600"
+  opensearch-dashboard:
+    image: opensearchproject/opensearch-dashboards:1.3.16
+    container_name: opensearch-dashboard
+    ports:
+      - "5601:5601"
+    environment:
+      OPENSEARCH_HOSTS: '["http://opensearch:9200"]'
+      DISABLE_SECURITY_DASHBOARDS_PLUGIN: "true"</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://192.168.0.123:5601" class="bare">http://192.168.0.123:5601</a><br>
+<a href="https://192.168.0.123:9200" class="bare">https://192.168.0.123:9200</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_producer_dependency"><a class="anchor" href="#_producer_dependency"></a>6. Producer Dependency</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;properties&gt;
+	&lt;okhttp.eventsource&gt;2.7.1&lt;/okhttp.eventsource&gt;
+&lt;/properties&gt;
+
+&lt;dependency&gt;
+    &lt;groupId&gt;org.apache.kafka&lt;/groupId&gt;
+    &lt;artifactId&gt;kafka-clients&lt;/artifactId&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+    &lt;groupId&gt;com.squareup.okhttp3&lt;/groupId&gt;
+    &lt;artifactId&gt;okhttp&lt;/artifactId&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+    &lt;groupId&gt;com.launchdarkly&lt;/groupId&gt;
+    &lt;artifactId&gt;okhttp-eventsource&lt;/artifactId&gt;
+    &lt;version&gt;${okhttp.eventsource}&lt;/version&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+	&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+	&lt;artifactId&gt;spring-boot-starter-log4j2&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_wikimediachangehandler"><a class="anchor" href="#_wikimediachangehandler"></a>7. WikimediaChangeHandler</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">import com.launchdarkly.eventsource.EventHandler;
+import com.launchdarkly.eventsource.MessageEvent;
+import java.lang.invoke.MethodHandles;
+import org.apache.kafka.clients.producer.KafkaProducer;
+import org.apache.kafka.clients.producer.ProducerRecord;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+public class WikimediaChangeHandler implements EventHandler {
+
+	private static final Logger logger = LoggerFactory
+		.getLogger(MethodHandles.lookup().lookupClass());
+
+	String topic;
+	KafkaProducer&lt;String, String&gt; kafkaProducer;
+
+	public WikimediaChangeHandler(KafkaProducer&lt;String, String&gt; kafkaProducer,String topic) {
+        this.kafkaProducer = kafkaProducer;
+        this.topic = topic;
+    }
+
+    @Override
+    public void onOpen() {}
+
+    @Override
+    public void onClosed() {
+        kafkaProducer.close();
+    }
+
+    @Override
+    public void onMessage(String event, MessageEvent messageEvent) {
+    	logger.error(messageEvent.getData());
+        kafkaProducer.send(new ProducerRecord&lt;&gt;(topic, messageEvent.getData()));
+    }
+
+    @Override
+    public void onComment(String comment) {}
+
+    @Override
+    public void onError(Throwable t) {
+    	logger.error("Stream Reading Failure!", t);
+    }
+
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_wikimediachangeproducer"><a class="anchor" href="#_wikimediachangeproducer"></a>8. WikimediaChangeProducer</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">import com.launchdarkly.eventsource.EventSource;
+import com.launchdarkly.eventsource.EventHandler;
+import org.apache.kafka.clients.producer.KafkaProducer;
+import org.apache.kafka.clients.producer.ProducerConfig;
+import org.apache.kafka.common.serialization.StringSerializer;
+
+import java.net.URI;
+import java.time.Duration;
+import java.util.Properties;
+import java.util.concurrent.TimeUnit;
+
+public class WikimediaChangeProducer {
+
+	public static void main(String[] args) throws InterruptedException {
+		String bootstrapServers = "192.168.0.123:9092";
+
+	    // create Producer properties
+	    Properties properties = new Properties();
+	    properties.setProperty(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServers);
+	    properties.setProperty(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
+	    properties.setProperty(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
+
+	    KafkaProducer&lt;String, String&gt; kafkaProducer = new KafkaProducer&lt;String, String&gt;(properties);
+
+	    String topic = "wikimedia.recentchange";
+
+	    EventHandler eventHandler = new WikimediaChangeHandler(kafkaProducer, topic);
+	    String url = "https://stream.wikimedia.org/v2/stream/recentchange";
+	    EventSource.Builder builder = new EventSource.Builder(eventHandler, URI.create(url));
+
+	    builder.connectTimeout(Duration.ofMinutes(10));
+	    //注：需科学上网
+	    builder.proxy("127.0.0.1",1080);
+	    EventSource eventSource = builder.build();
+
+	    // start the producer in another thread
+	    eventSource.start();
+
+	    // we produce for 10 minutes and block the program until then
+	    TimeUnit.MINUTES.sleep(10);
+  	}
+
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_consumer_dependency"><a class="anchor" href="#_consumer_dependency"></a>9. Consumer Dependency</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;properties&gt;
+	&lt;opensearch.java&gt;2.10.1&lt;/opensearch.java&gt;
+&lt;/properties&gt;
+
+&lt;dependency&gt;
+    &lt;groupId&gt;org.opensearch.client&lt;/groupId&gt;
+    &lt;artifactId&gt;opensearch-java&lt;/artifactId&gt;
+    &lt;version&gt;${opensearch.java}&lt;/version&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+    &lt;groupId&gt;org.apache.httpcomponents.client5&lt;/groupId&gt;
+    &lt;artifactId&gt;httpclient5&lt;/artifactId&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+    &lt;groupId&gt;org.apache.kafka&lt;/groupId&gt;
+    &lt;artifactId&gt;kafka-clients&lt;/artifactId&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+	&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+	&lt;artifactId&gt;spring-boot-starter-log4j2&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_opensearchconsumer"><a class="anchor" href="#_opensearchconsumer"></a>10. OpenSearchConsumer</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">import java.io.IOException;
+import java.lang.invoke.MethodHandles;
+import java.time.Duration;
+import java.util.Arrays;
+import java.util.Properties;
+
+import org.apache.hc.client5.http.impl.nio.PoolingAsyncClientConnectionManager;
+import org.apache.hc.client5.http.impl.nio.PoolingAsyncClientConnectionManagerBuilder;
+import org.apache.hc.core5.http.HttpHost;
+import org.apache.kafka.clients.consumer.ConsumerConfig;
+import org.apache.kafka.clients.consumer.ConsumerRecord;
+import org.apache.kafka.clients.consumer.KafkaConsumer;
+import org.apache.kafka.common.serialization.StringDeserializer;
+import org.opensearch.client.opensearch.OpenSearchClient;
+import org.opensearch.client.opensearch._types.OpenSearchException;
+import org.opensearch.client.opensearch.core.IndexRequest;
+import org.opensearch.client.opensearch.core.IndexResponse;
+import org.opensearch.client.opensearch.indices.CreateIndexRequest;
+import org.opensearch.client.opensearch.indices.DeleteIndexRequest;
+import org.opensearch.client.opensearch.indices.ExistsRequest;
+import org.opensearch.client.transport.OpenSearchTransport;
+import org.opensearch.client.transport.endpoints.BooleanResponse;
+import org.opensearch.client.transport.httpclient5.ApacheHttpClient5TransportBuilder;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+public class OpenSearchConsumer {
+
+	private static final Logger logger = LoggerFactory
+		.getLogger(MethodHandles.lookup().lookupClass());
+
+	public static OpenSearchClient connect(String scheme,String hostName,int port) {
+		final HttpHost host = new HttpHost(scheme,hostName,port);
+
+	    final ApacheHttpClient5TransportBuilder builder =
+	    	ApacheHttpClient5TransportBuilder.builder(host);
+
+	    builder.setHttpClientConfigCallback(hcb -&gt; {
+	    	final PoolingAsyncClientConnectionManager manager =
+	    		PoolingAsyncClientConnectionManagerBuilder.create().build();
+	    	return hcb.setConnectionManager(manager);
+	    });
+
+	    final OpenSearchTransport transport = builder.build();
+	    return new OpenSearchClient(transport);
+	}
+
+	public static OpenSearchClient connect() {
+		return connect("http","192.168.0.123",9200);
+	}
+
+	public static boolean exist(OpenSearchClient client,String indexName)
+		throws OpenSearchException, IOException {
+		var existRequest = ExistsRequest.of(fn -&gt; fn.index(indexName));
+		BooleanResponse exist = client.indices().exists(existRequest);
+		return exist.value();
+	}
+
+	public static void createIndex(OpenSearchClient client,
+		String indexName) throws OpenSearchException, IOException {
+		var exist = exist(client,indexName);
+		if (exist) {
+			System.out.printf("index %s already exist!\n",indexName);
+		} else {
+			var createRequest = new CreateIndexRequest.Builder().index(indexName).build();
+			client.indices().create(createRequest);
+		}
+	}
+
+	//GET /_cat/indices?v
+	public static void deleteIndex(OpenSearchClient client,
+		String indexName) throws OpenSearchException, IOException {
+		var exist = exist(client,indexName);
+		if (!exist) {
+			System.out.printf("index %s not exist!\n",indexName);
+		} else {
+			var deleteRequest = new DeleteIndexRequest.Builder().index(indexName).build();
+			client.indices().delete(deleteRequest);
+		}
+	}
+
+	public static KafkaConsumer&lt;String,String&gt; createKafkaConsumer(){
+		var boostrapServer = "192.168.0.123:9092";
+		var groupId = "group-wikimedia-opensearch";
+		Properties prop = new Properties();
+		prop.setProperty(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,boostrapServer);
+		prop.setProperty(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG,StringDeserializer.class.getName());
+		prop.setProperty(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG,StringDeserializer.class.getName());
+		prop.setProperty(ConsumerConfig.GROUP_ID_CONFIG,groupId);
+		//earliest,latest etc.
+		prop.setProperty(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG,"latest");
+		return new KafkaConsumer&lt;&gt;(prop);
+	}
+
+	public static void consume(OpenSearchClient client,String indexName)
+		throws OpenSearchException, IOException {
+		var consumer = createKafkaConsumer();
+		var topic = "wikimedia.recentchange";
+		consumer.subscribe(Arrays.asList(topic));
+
+		while (true) {
+			var consumerRecord = consumer.poll(Duration.ofMillis(3000));
+			int recordCount = consumerRecord.count();
+			logger.info("receive %d record!",recordCount);
+
+			for (ConsumerRecord&lt;String,String&gt; cr : consumerRecord) {
+				//send record into OpenSearch
+				IndexData indexData = new IndexData(cr.value());
+				var indexRequest = new IndexRequest.Builder&lt;IndexData&gt;()
+					.index(indexName).document(indexData).build();
+				IndexResponse response = client.index(indexRequest);
+				System.out.println(response.id());
+			}
+		}
+	}
+
+	public static void main(String[] sa) throws OpenSearchException, IOException {
+		var client = connect();
+		var indexName = "wikimedia-opensearch";
+		//createIndex(client, indexName);
+
+		System.out.println("consuming start...");
+		consume(client,indexName);
+		System.out.println("consuming end...");
+	}
+
+
+	static class IndexData {
+		private String wikiMediaValue;
+
+		public IndexData(String wikiMediaValue) {
+			this.wikiMediaValue = wikiMediaValue;
+		}
+
+		@Override
+		public String toString() {
+			return String.format("IndexData{wikiMediaValue='%s'}",wikiMediaValue);
+		}
+
+		public String getWikiMediaValue() {
+			return wikiMediaValue;
+		}
+		public void setWikiMediaValue(String wikiMediaValue) {
+			this.wikiMediaValue = wikiMediaValue;
+		}
+	}
+
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_create_topic"><a class="anchor" href="#_create_topic"></a>11. Create Topic</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>创建主题，并启动WikimediaChangeProducer；</p>
+</li>
+<li>
+<p>注：需科学上网，需科学上网，需科学上网；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">./kafka-topics.sh \
+	--bootstrap-server 192.168.0.123:9092  \
+	--topic wikimedia.recentchange --create \
+	--partitions 3 --replication-factor 1</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">20:52:31.936 [okhttp-eventsource-events-[]-0] ERROR com.elf.kafka.producer.WikimediaChangeHandler - {"$schema":"/mediawiki/recentchange/1.0.0","meta":{"uri":"https://ru.wikipedia.org/wiki/%D0%A3%D1%87%D0%B0%D1%81%D1%82%D0%BD%D0%B8%D0%BA:Sherbek_Qarshiyev","request_id":"68d8c10a-31dc-44f3-8b1d-cb977dfd1602","id":"93bf8bf8-4c36-4a49-b226-3a9311d2c906","dt":"2024-04-25T12:16:20Z","domain":"ru.wikipedia.org","stream":"mediawiki.recentchange","topic":"eqiad.mediawiki.recentchange","partition":0,"offset":5049257037},"id":484017699,"type":"log","namespace":2,"title":"Участник:Sherbek Qarshiyev","title_url":"https://ru.wikipedia.org/wiki/%D0%A3%D1%87%D0%B0%D1%81%D1%82%D0%BD%D0%B8%D0%BA:Sherbek_Qarshiyev","comment":"Carn removed Carn from mentorship","timestamp":1714047380,"user":"Carn","bot":true,"log_id":101062090,"log_type":"growthexperiments","log_action":"setmentor","log_params":{"previous-mentor":"Carn","new-mentor":"Birulik"},"log_action_comment":"Carn установил Birulik как наставницу для Sherbek Qarshiyev (предыдущий наставник Carn): Carn removed Carn from mentorship","server_url":"https://ru.wikipedia.org","server_name":"ru.wikipedia.org","server_script_path":"/w","wiki":"ruwiki","parsedcomment":"Carn removed Carn from mentorship"}
+20:52:31.936 [okhttp-eventsource-events-[]-0] ERROR com.elf.kafka.producer.WikimediaChangeHandler - {"$schema":"/mediawiki/recentchange/1.0.0","meta":{"uri":"https://www.wikidata.org/wiki/Q46898283","request_id":"161daa3c-9f11-44f1-b042-209a3acabcf8","id":"65fb4ae3-86fd-47ab-a85f-f0dd26b04b66","dt":"2024-04-25T12:52:32Z","domain":"www.wikidata.org","stream":"mediawiki.recentchange","topic":"eqiad.mediawiki.recentchange","partition":0,"offset":5049257038},"id":2201214347,"type":"edit","namespace":0,"title":"Q46898283","title_url":"https://www.wikidata.org/wiki/Q46898283","comment":"/* wbsetclaimvalue:1| */ [[Property:P1476]]: Guidelines for diagnosis and therapy of patients with asthma 2005. The most important aspects for adults","timestamp":1714049552,"user":"KrBot","bot":true,"notify_url":"https://www.wikidata.org/w/index.php?diff=2136975570&amp;oldid=2136975561&amp;rcid=2201214347","minor":false,"patrolled":true,"length":{"old":60872,"new":60869},"revision":{"old":2136975561,"new":2136975570},"server_url":"https://www.wikidata.org","server_name":"www.wikidata.org","server_script_path":"/w","wiki":"wikidatawiki","parsedcomment":"‎&lt;span dir=\"auto\"&gt;&lt;span class=\"autocomment\"&gt;Определено значение для утверждения: &lt;/span&gt;&lt;/span&gt; &lt;a href=\"/wiki/Property:P1476\" title=\"‎название‎ | ‎название произведения (книги, фильма, газетной статьи, произведения исполнительского искусства, веб-сайта)‎\"&gt;&lt;span class=\"wb-itemlink\"&gt;&lt;span class=\"wb-itemlink-label\" lang=\"ru\" dir=\"ltr\"&gt;название&lt;/span&gt; &lt;span class=\"wb-itemlink-id\"&gt;(P1476)&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;: Guidelines for diagnosis and therapy of patients with asthma 2005. The most important aspects for adults"}
+20:52:31.936 [okhttp-eventsource-events-[]-0] ERROR com.elf.kafka.producer.WikimediaChangeHandler - {"$schema":"/mediawiki/recentchange/1.0.0","meta":{"uri":"https://en.wikipedia.org/wiki/User:Ali_Ahwazi/sandbox2","request_id":"4c136271-a6cd-4ff6-a6b7-429d769ba5ba","id":"14fcefb7-1f73-40a9-9acc-539d97aa06c3","dt":"2024-04-25T12:52:32Z","domain":"en.wikipedia.org","stream":"mediawiki.recentchange","topic":"eqiad.mediawiki.recentchange","partition":0,"offset":5049257039},"id":1769512861,"type":"edit","namespace":2,"title":"User:Ali Ahwazi/sandbox2","title_url":"https://en.wikipedia.org/wiki/User:Ali_Ahwazi/sandbox2","comment":"","timestamp":1714049552,"user":"Ali Ahwazi","bot":false,"notify_url":"https://en.wikipedia.org/w/index.php?diff=1220709553&amp;oldid=1220709505","minor":false,"length":{"old":26671,"new":31548},"revision":{"old":1220709505,"new":1220709553},"server_url":"https://en.wikipedia.org","server_name":"en.wikipedia.org","server_script_path":"/w","wiki":"enwiki","parsedcomment":""}
+20:52:31.936 [okhttp-eventsource-events-[]-0] ERROR com.elf.kafka.producer.WikimediaChangeHandler - {"$schema":"/mediawiki/recentchange/1.0.0","meta":{"uri":"https://fr.wikipedia.org/wiki/Portail:Ch%C3%A2teaux/Articles_r%C3%A9cents","request_id":"be816a4f-be27-4c49-830a-31161665401f","id":"ec47eca3-b6a4-4b4f-ac71-b44369de940d","dt":"2024-04-25T12:52:33Z","domain":"fr.wikipedia.org","stream":"mediawiki.recentchange","topic":"eqiad.mediawiki.recentchange","partition":0,"offset":5049257040},"id":519472837,"type":"edit","namespace":100,"title":"Portail:Châteaux/Articles récents","title_url":"https://fr.wikipedia.org/wiki/Portail:Ch%C3%A2teaux/Articles_r%C3%A9cents","comment":"+ [[Château de Mielmont]]","timestamp":1714049553,"user":"OrlodrimBot","bot":true,"notify_url":"https://fr.wikipedia.org/w/index.php?diff=214561930&amp;oldid=214559720&amp;rcid=519472837","minor":false,"patrolled":true,"length":{"old":779,"new":779},"revision":{"old":214559720,"new":214561930},"server_url":"https://fr.wikipedia.org","server_name":"fr.wikipedia.org","server_script_path":"/w","wiki":"frwiki","parsedcomment":"+ &lt;a href=\"/wiki/Ch%C3%A2teau_de_Mielmont\" title=\"Château de Mielmont\"&gt;Château de Mielmont&lt;/a&gt;"}
+20:52:31.936 [okhttp-eventsource-events-[]-0] ERROR com.elf.kafka.producer.WikimediaChangeHandler - {"$schema":"/mediawiki/recentchange/1.0.0","meta":{"uri":"https://ru.wikipedia.org/wiki/%D0%A3%D1%87%D0%B0%D1%81%D1%82%D0%BD%D0%B8%D0%BA:%D0%92%D0%B8%D0%BA%D1%82%D0%BE%D1%80%D0%B8%D1%8F_%D0%9D%D0%B8%D0%BA%D0%B8%D1%82%D0%B5%D0%BD%D0%BA%D0%BE","request_id":"68d8c10a-31dc-44f3-8b1d-cb977dfd1602","id":"b8ab3286-f69f-466a-9a00-c5c12c176001","dt":"2024-04-25T12:16:20Z","domain":"ru.wikipedia.org","stream":"mediawiki.recentchange","topic":"eqiad.mediawiki.recentchange","partition":0,"offset":5049257041},"id":484017700,"type":"log","namespace":2,"title":"Участник:Виктория Никитенко","title_url":"https://ru.wikipedia.org/wiki/%D0%A3%D1%87%D0%B0%D1%81%D1%82%D0%BD%D0%B8%D0%BA:%D0%92%D0%B8%D0%BA%D1%82%D0%BE%D1%80%D0%B8%D1%8F_%D0%9D%D0%B8%D0%BA%D0%B8%D1%82%D0%B5%D0%BD%D0%BA%D0%BE","comment":"Carn removed Carn from mentorship","timestamp":1714047380,"user":"Carn","bot":true,"log_id":101062091,"log_type":"growthexperiments","log_action":"setmentor","log_params":{"previous-mentor":"Carn","new-mentor":"Birulik"},"log_action_comment":"Carn установил Birulik как наставницу для Виктория Никитенко (предыдущий наставник Carn): Carn removed Carn from mentorship","server_url":"https://ru.wikipedia.org","server_name":"ru.wikipedia.org","server_script_path":"/w","wiki":"ruwiki","parsedcomment":"Carn removed Carn from mentorship"}
+
+20:52:31.937 [okhttp-eventsource-events-[]-0] ERROR com.elf.kafka.producer.WikimediaChangeHandler - {"$schema":"/mediawiki/recentchange/1.0.0","meta":{"uri":"https://oc.wikipedia.org/wiki/Pairac_lo_Chasteu","request_id":"739f7d34-fd23-4b37-ab77-87c95663aeda","id":"34ab12f5-7256-48e5-a4f8-b40bf95316ad","dt":"2024-04-25T12:52:33Z","domain":"oc.wikipedia.org","stream":"mediawiki.recentchange","topic":"eqiad.mediawiki.recentchange","partition":0,"offset":5049257042},"id":10815379,"type":"new","namespace":0,"title":"Pairac lo Chasteu","title_url":"https://oc.wikipedia.org/wiki/Pairac_lo_Chasteu","comment":"Redireccion cap a [[Pairac (lo Chasteu)]]","timestamp":1714049553,"user":"PairacLoChasteu","bot":false,"notify_url":"https://oc.wikipedia.org/w/index.php?oldid=2436522&amp;rcid=10815379","minor":false,"patrolled":false,"length":{"new":32},"revision":{"new":2436522},"server_url":"https://oc.wikipedia.org","server_name":"oc.wikipedia.org","server_script_path":"/w","wiki":"ocwiki","parsedcomment":"Redireccion cap a &lt;a href=\"/wiki/Pairac_(lo_Chasteu)\" title=\"Pairac (lo Chasteu)\"&gt;Pairac (lo Chasteu)&lt;/a&gt;"}
+20:52:31.938 [okhttp-eventsource-events-[]-0] ERROR com.elf.kafka.producer.WikimediaChangeHandler - {"$schema":"/mediawiki/recentchange/1.0.0","meta":{"uri":"https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Article_%C3%A0_r%C3%A9f%C3%A9rence_n%C3%A9cessaire","request_id":"7d6530d5-10a3-4628-a101-bc2e75b9a92f","id":"2eb4865e-b4ee-407c-9e19-b871967ed9e1","dt":"2024-04-25T12:52:30Z","domain":"fr.wikipedia.org","stream":"mediawiki.recentchange","topic":"eqiad.mediawiki.recentchange","partition":0,"offset":5049257043},"id":519472838,"type":"categorize","namespace":14,"title":"Catégorie:Article à référence nécessaire","title_url":"https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Article_%C3%A0_r%C3%A9f%C3%A9rence_n%C3%A9cessaire","comment":"[[:20e armée (Union soviétique)]] ajoutée à la catégorie","timestamp":1714049550,"user":"Le Petit Chat","bot":false,"notify_url":"https://fr.wikipedia.org/w/index.php?diff=214561929&amp;oldid=209346180&amp;rcid=519472838","server_url":"https://fr.wikipedia.org","server_name":"fr.wikipedia.org","server_script_path":"/w","wiki":"frwiki","parsedcomment":"&lt;a href=\"/wiki/20e_arm%C3%A9e_(Union_sovi%C3%A9tique)\" title=\"20e armée (Union soviétique)\"&gt;20e armée (Union soviétique)&lt;/a&gt; ajoutée à la catégorie"}
+20:52:31.939 [okhttp-eventsource-events-[]-0] ERROR com.elf.kafka.producer.WikimediaChangeHandler - {"$schema":"/mediawiki/recentchange/1.0.0","meta":{"uri":"https://commons.wikimedia.org/wiki/Category:Milford,_Derbyshire","request_id":"3d4237d1-1994-4c65-b41a-84ee1f1a05c6","id":"d9e3f133-2e22-4022-9449-65a78ed83452","dt":"2024-04-25T12:52:31Z","domain":"commons.wikimedia.org","stream":"mediawiki.recentchange","topic":"eqiad.mediawiki.recentchange","partition":0,"offset":5049257044},"id":2478318778,"type":"categorize","namespace":14,"title":"Category:Milford, Derbyshire","title_url":"https://commons.wikimedia.org/wiki/Category:Milford,_Derbyshire","comment":"[[:File:The King William pub - geograph.org.uk - 5560373.jpg]] added to category","timestamp":1714049551,"user":"WereSpielChequers","bot":false,"notify_url":"https://commons.wikimedia.org/w/index.php?diff=871189763&amp;oldid=871189716&amp;rcid=2478318778","server_url":"https://commons.wikimedia.org","server_name":"commons.wikimedia.org","server_script_path":"/w","wiki":"commonswiki","parsedcomment":"&lt;a href=\"/wiki/File:The_King_William_pub_-_geograph.org.uk_-_5560373.jpg\" title=\"File:The King William pub - geograph.org.uk - 5560373.jpg\"&gt;File:The King William pub - geograph.org.uk - 5560373.jpg&lt;/a&gt; added to category"}
+20:52:31.939 [okhttp-eventsource-events-[]-0] ERROR com.elf.kafka.producer.WikimediaChangeHandler - {"$schema":"/mediawiki/recentchange/1.0.0","meta":{"uri":"https://ko.wikipedia.org/wiki/%EC%A1%B0%EC%83%81%ED%99%98","request_id":"c408c6e9-7e92-4f96-8a99-1d518f3af5ed","id":"e94ece30-3416-41e9-860d-d3547f2248d6","dt":"2024-04-25T12:52:33Z","domain":"ko.wikipedia.org","stream":"mediawiki.recentchange","topic":"eqiad.mediawiki.recentchange","partition":0,"offset":5049257045},"type":"log","namespace":0,"title":"조상환","title_url":"https://ko.wikipedia.org/wiki/%EC%A1%B0%EC%83%81%ED%99%98","comment":"","timestamp":1714049553,"user":"Cho Sang Hwan","bot":false,"log_id":0,"log_type":"abusefilter","log_action":"hit","log_params":{"action":"edit","filter":"71","actions":"tag","log":1521905},"log_action_comment":"Cho Sang Hwan님이 [[조상환]]에서 \"edit\" 동작을 하여 [[특수:편집필터/71|필터 71]]이(가) 작동하였습니다. 조치: 태그 ([[특수:편집필터기록/1521905|자세한 사항]])","server_url":"https://ko.wikipedia.org","server_name":"ko.wikipedia.org","server_script_path":"/w","wiki":"kowiki","parsedcomment":""}
+20:52:31.940 [okhttp-eventsource-events-[]-0] ERROR com.elf.kafka.producer.WikimediaChangeHandler - {"$schema":"/mediawiki/recentchange/1.0.0","meta":{"uri":"https://os.wikipedia.org/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8:%D0%A5%D1%83%D1%81%D1%81%D0%B0%D1%80_%D0%93%D0%BE%D0%BB%D0%BB%D0%B0%D0%BD%D0%B4%D0%B8%D0%B9%D1%8B_%D1%87%D0%B8_%D0%B0%D0%BC%D0%B0%D1%80%D0%B4%D0%B8%D1%81,_%D1%83%D1%8B%D0%B4%D0%BE%D0%BD","request_id":"d2dfebf5-df74-43d5-860e-be964ee93420","id":"27e197b2-cfb1-4c65-9717-09bb25438f08","dt":"2024-04-25T12:52:33Z","domain":"os.wikipedia.org","stream":"mediawiki.recentchange","topic":"eqiad.mediawiki.recentchange","partition":0,"offset":5049257046},"id":1911685,"type":"new","namespace":14,"title":"Категори:Хуссар Голландийы чи амардис, уыдон","title_url":"https://os.wikipedia.org/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8:%D0%A5%D1%83%D1%81%D1%81%D0%B0%D1%80_%D0%93%D0%BE%D0%BB%D0%BB%D0%B0%D0%BD%D0%B4%D0%B8%D0%B9%D1%8B_%D1%87%D0%B8_%D0%B0%D0%BC%D0%B0%D1%80%D0%B4%D0%B8%D1%81,_%D1%83%D1%8B%D0%B4%D0%BE%D0%BD","comment":"Ног фарс, йæ код райдайы афтæ: «[[Категори:Нидерландты чи амардис, уыдон]] [[Категори:Хуссар Голландийы зындгонд адæм|Амард]]»","timestamp":1714049553,"user":"Taamu","bot":false,"notify_url":"https://os.wikipedia.org/w/index.php?oldid=558822&amp;rcid=1911685","minor":false,"patrolled":true,"length":{"new":167},"revision":{"new":558822},"server_url":"https://os.wikipedia.org","server_name":"os.wikipedia.org","server_script_path":"/w","wiki":"oswiki","parsedcomment":"Ног фарс, йæ код райдайы афтæ: «&lt;a href=\"/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8:%D0%9D%D0%B8%D0%B4%D0%B5%D1%80%D0%BB%D0%B0%D0%BD%D0%B4%D1%82%D1%8B_%D1%87%D0%B8_%D0%B0%D0%BC%D0%B0%D1%80%D0%B4%D0%B8%D1%81,_%D1%83%D1%8B%D0%B4%D0%BE%D0%BD\" title=\"Категори:Нидерландты чи амардис, уыдон\"&gt;Категори:Нидерландты чи амардис, уыдон&lt;/a&gt; &lt;a href=\"/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8:%D0%A5%D1%83%D1%81%D1%81%D0%B0%D1%80_%D0%93%D0%BE%D0%BB%D0%BB%D0%B0%D0%BD%D0%B4%D0%B8%D0%B9%D1%8B_%D0%B7%D1%8B%D0%BD%D0%B4%D0%B3%D0%BE%D0%BD%D0%B4_%D0%B0%D0%B4%C3%A6%D0%BC\" title=\"Категори:Хуссар Голландийы зындгонд адæм\"&gt;Амард»&lt;/a&gt;"}
+
+……</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_consume_message"><a class="anchor" href="#_consume_message"></a>12. Consume Message</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>启动OpenSearchConsumer</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash"># 此步骤可选
+./kafka-console-consumer.sh --bootstrap-server 192.168.0.123:9092 \
+	--topic wikimedia.recentchange --from-beginning</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">GET /_cat/indices?v
+
+GET _search
+{
+  "query": {
+    "match_all": {}
+  }
+}
+
+GET /index_name/_search
+{
+  "query": {
+    "match_all": {}
+  }
+}</code></pre>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/Broker/Programming/BonsaiConsole.png" alt="BonsaiConsole">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/Broker/Programming/WikiMediaKafkaOpenSearch.png" alt="WikiMediaKafkaOpenSearch">
+</div>
+</div>
+</div>
+</div>
+</article>
+	</div>
+</main>
+</div>
+		<footer class="footer">
+	
+	
+	
+	<div class="footer-thanks">
+		Authored in AsciiDoc
+		<br /><br />
+		Produced by Antora and Asciidoctor
+  	</div>
+  
+	<div class="footer-legal" style="text-align:center">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br /><br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		Copyright © 2024 Elf
+		<br /><br />
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+	
+</footer><script id="site-script" src="../../../../../_/js/site.js" 
+	data-ui-root-path="../../../../../_"></script>
+
+<script src="../../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../../.." data-snippet-length="100" data-stylesheet="../../../../../_/css/search.css"></script>
+<script async src="../../../../../search-index.js"></script>
+
+
+<script async src="../../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
+</html>

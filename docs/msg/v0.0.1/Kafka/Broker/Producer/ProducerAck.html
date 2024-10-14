@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> :: AsciiDoc</title>
+    <meta name="generator" content="Antora 3.1.7">
+
+<link rel="stylesheet" href="../../../../../_/css/site.css">
+
+<link rel="stylesheet" href="../../../../../_/css/vendor/asciidoc.css">
+
+<link rel="stylesheet" href="../../../../../_/css/vendor/extra.css">
+
+<link rel="stylesheet" href="../../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../../_/css/vendor/prism-1.29.0-coy.css">
+
+
+    <link rel="icon" href="../../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+  			
+  			<a class="navbar-item logo" target="_blank" href="">
+				<img src="../../../../../_/img/yin-yang-symbol.svg" width="100%" height="50">
+			</a>
+  			
+	            <div id="main" style="place-content: center;">
+	                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+		            </div>
+		        </section>
+    	</div>
+    	
+    	<div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Culture</div>
+          			<div class="navbar-dropdown is-right">
+            			
+			            <div class="navbar-item">Traditional Culture</div>
+			            
+			            <a class="navbar-item" target="_blank" href="../../../../../culture/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>Culture <small>传统文化</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Eco</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <a class="navbar-item" target="_blank" href="../../../../../multifariousness/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>Multifariousness <small>五花八门</small></span>
+			            </a>
+
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../../ai/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>Artificial Intelligence<small>人工智能</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../../msg/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>Messaging - Kafka <small>Kafka</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Experiment</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <div class="navbar-item">Quantum Computing</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>QC <small>量子计算...</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <div class="navbar-item">Harmony</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>CangJie <small>预览版内测...</small></span>
+			            </a>
+        			</div>
+    			</div>
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container" data-component="msg" data-version="v0.0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../../index.html">Message</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Kafka</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Broker</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Fundamental</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/KafkaEco.html">Kafka Eco</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/KafkaTopic.html">Kafka Topic</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/KafkaProducer.html">Kafka Producer</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/KafkaConsumer.html">Kafka Consumer</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/GroupOffset.html">Group Offset</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/KafkaBroker.html">Kafka Broker</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/TopicReplication.html">Topic Replication</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/KafkaKRaft.html">KafkaK Raft</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Cli</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/TopicCli.html">Topic Cli</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/ProducerCli.html">Producer Cli</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/ConsumerCli.html">Consumer Cli</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/ConsumerInGroupCli.html">Group Cli</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/ConsumerGroupManagementCli.html">Group Management Cli</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/ConnectCli.html">Connect Cli</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Topic</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/ChangeTopicConfig.html">Change Topic Config</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/TopicInternal.html">Topic Internal</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/LogRetention.html">Log Retention</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/UncleanLeaderElection.html">Unclean Leader Election</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/LogCompaction.html">Log Compaction</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/ReplicationFactorPartitionCount.html">Partition Count Factor</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/SendLargeMessage.html">Send Large Message</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/TopicNamingConvention.html">Topic Naming Convention</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Producer</span>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="4">
+    <a class="nav-link" href="ProducerAck.html">Producer Ack</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="ProducerRetry.html">Producer Retry</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="ProducerIdempotent.html">Producer Idempotent</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="MessageCompression.html">Message Compression</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="ProducerBatching.html">Producer Batching</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="ProducerPartitioner.html">Producer Partitioner</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="ProducerRest.html">Producer Rest</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Consumer</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Consumer/DeliverySemantic.html">Delivery Semantic</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Consumer/PollInternalThreadBehavior.html">Thread Behavior</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Consumer/AutoOffsetResetBehavior.html">Auto Offset Reset Behavior</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Consumer/ReadClosestReplica.html">Read Closest Replica</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Consumer/IncrementalRebalanceStaticGroupMembership.html">Rebalance Membership</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Administration</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Administration/BrokerClient.html">Broker Client</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Administration/KafkaSecurity.html">Kafka Security</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Administration/MonitoringOperation.html">Monitoring Operation</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Administration/KafkaCluster.html">Kafka Cluster</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Administration/MultiClusterMirrorMaker.html">Multi Cluster MirrorMaker</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Administration/AdvertisedHost.html">Advertised Host</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Programming</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Programming/KafkaProgrammingEntry.html">Kafka Entry</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Programming/WikimediaKafkaOpensearch.html">Wiki 2 Search</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Message</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <div class="title"><a href="../../../../../ai/v0.0.1/index.html">AI</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../ai/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../../../culture/v0.0.1/index.html">Culture</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../culture/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <div class="title"><a href="../../../index.html">Message</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../../../multifariousness/v0.0.1/index.html">Multifariousness</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../multifariousness/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+	<div class="toolbar" role="navigation">
+	<button class="nav-toggle"></button>
+	
+		<a href="../../../../../multifariousness/v0.0.1/index.html" 
+			class="home-link">
+		</a>
+
+	<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../../index.html">Message</a></li>
+    <li>Kafka</li>
+    <li>Broker</li>
+    <li>Producer</li>
+    <li><a href="ProducerAck.html">Producer Ack</a></li>
+  </ul>
+</nav>
+		</div>
+	
+	<div class="content">
+			<aside class="toc sidebar" 
+	data-title="Contents" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+			<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_introduction">1. Introduction</a></li>
+<li><a href="#_ack_setting">2. Ack Setting</a>
+<ul class="sectlevel2">
+<li><a href="#_ack0">2.1. Ack0</a></li>
+<li><a href="#_ack1">2.2. Ack1</a></li>
+<li><a href="#_ackall">2.3. AckAll</a></li>
+</ul>
+</li>
+<li><a href="#_topic_durability_availability">3. Topic Durability Availability</a></li>
+<li><a href="#_overriding_topic_config">4. Overriding Topic Config</a></li>
+<li><a href="#_min_insync_replicas">5. min.insync.replicas</a>
+<ul class="sectlevel2">
+<li><a href="#_via_config_file">5.1. Via Config File</a></li>
+<li><a href="#_dynamic_config">5.2. Dynamic Config</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_introduction"><a class="anchor" href="#_introduction"></a>1. Introduction</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>ack：在消息被认为成功写入前需确认(acknowledge)接收消息的broker的数量；</p>
+</li>
+<li>
+<p>使用min.insync.replicas和此生产者配置(如acks=all)；</p>
+</li>
+<li>
+<p>生产者只向分区的当前leader broker写入数据，生产者还必须确认acks的级别，<br>
+以指定在将消息视为成功写入之前，是否必须将消息写入最小数量的副本；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ack_setting"><a class="anchor" href="#_ack_setting"></a>2. Ack Setting</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>kafka ≥ 3.0，acks = all，否则acks = 1；</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_ack0"><a class="anchor" href="#_ack0"></a>2.1. Ack0</h3>
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/Broker/Producer/Ack0.png" alt="Ack0">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>当acks = 0，生产者在发送消息的那一刻就认为消息<br>
+"written successfully"，而根本无需等待broker接受它；</p>
+</li>
+<li>
+<p>若brokeroffline或发生异常，我们将不知道，并将丢失数据；</p>
+</li>
+<li>
+<p>这对可能potentially丢失消息的数据(如metric collection)很有用，<br>
+且因网络开销overhead最小化，故可产生高吞吐produce highest throughput设置；</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ack1"><a class="anchor" href="#_ack1"></a>2.2. Ack1</h3>
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/Broker/Producer/Ack1.png" alt="Ack1">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>当acks = 1时，当消息仅由leader确认时，生产者会将消息视为"written successfully"；</p>
+</li>
+<li>
+<p>请求leader响应(request leader response)，但不能保证guarantee复制replication；</p>
+</li>
+<li>
+<p>因它发生在后台，若没收到(receive)ack，生产者可重试请求；</p>
+</li>
+<li>
+<p>若leader broker offline，但副本replica尚未复制replicate数据，则数据丢失；</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ackall"><a class="anchor" href="#_ackall"></a>2.3. AckAll</h3>
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/Broker/Producer/AckAll.png" alt="AckAll">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>当acks = all时，当消息被所有ISR接受时，生产者将消息视为"written successfully"；</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>分区的lead replica检查是否有足够的ISR用于安全的写入消息(由min.insync.replicas控制)；</p>
+</li>
+<li>
+<p>请求被存储在缓冲区，直到leader观察到observe follower replica<br>
+已复制replicate消息，此时成功的确认acknowledgement被发送会客户端；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>min.insync.replicas可在主题和broker级别配置，<br>
+当数据写入所有ISR，即视为已提交commit数据；</p>
+</li>
+<li>
+<p>min.insync.replicas为2时，即至少有2个<br>
+ISR broker(含leader)必须响应respond他们拥有数据；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>若要确保提交的数据写入多个replica，则需将ISR的最小数量设置为更高的值；</p>
+</li>
+<li>
+<p>若主题由3个replica，则且将min.insync.replicas设置为2，<br>
+则只有在3个replica中至少由两个同步in-sync的情况下，才能写入该主题中的分区；</p>
+</li>
+<li>
+<p>当所有三个副本都同步时，一切正常进行，若其中某个replica不可用unavailable，也是如此；</p>
+</li>
+<li>
+<p>但三分之二的replica不可用，broker将不再接受produce request，<br>
+相反尝试发送数据的生产者将收到NotEnoughReplicasException；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_topic_durability_availability"><a class="anchor" href="#_topic_durability_availability"></a>3. Topic Durability Availability</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/Broker/Producer/TopicReplicationIsrMsgSafety.png" alt="TopicReplicationIsrMsgSafety">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>主题复制因子topic replication factor为3，主题数据的<br>
+持久性durability可承受(withstand)2个broker的损失(loss)；</p>
+</li>
+<li>
+<p>一般对与N个复制因子，可永久丢失(N - 1)个broker，且仍可恢复数据；</p>
+</li>
+<li>
+<p>可用性availability稍微复杂，此处先假定复制因子为3；</p>
+</li>
+<li>
+<p>读取Read：只要一个分区已启动(up)并被视为ISR，该主题就可读取；</p>
+</li>
+<li>
+<p>写Write：当acks=0且acks=1，只要一个分区已启动，并被视为ISR，<br>
+该主题就可写入，当acks=all时，情况相对复杂：</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-right valign-top">Entry</th>
+<th class="tableblock halign-left valign-top">Memo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">min.insync.replicas=1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">默认，主题必须至少有一个分区作为ISR(含reader)，<br>
+ 这样可容忍tolerate两个broker宕机down；</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">min.insync.replicas=2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">主题必须至少有2个ISR启动，那最多可容忍一个broker down(在复制因子<br>
+ 为3的情况下)，且我们保证每次写入数据时，数据至少会被写入2次；</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">min.insync.replicas=3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">复制因子为3，没多大意义，不能容忍任何broker宕机；</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Summary</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">总之，当acks=all带有replication.factor=N和min.insync.replicas=M时，<br>
+ 我们可容忍(N - M)个broker出于主题可用性的目的而宕机</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>acks = all和min.insync.replicas = 2时最流行的数据持久性durability<br>
+和可用性availability选项，最多可承受withstand一个broker的损失loss；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_overriding_topic_config"><a class="anchor" href="#_overriding_topic_config"></a>4. Overriding Topic Config</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>可使用kafka-configs.sh更改主题配置min.insync.replicas，</p>
+</li>
+<li>
+<p>此配置在broker级别默认为1，此配置的典型值(replication factor - 1)；<br>
+即当复制因子为3时，min.insync.replicas应为2；</p>
+</li>
+<li>
+<p>创建3个分区，复制因子为1，名为topic-config的主题：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">./kafka-topics.sh --bootstrap-server 192.168.0.123:9092 \
+	--topic topic-config --create \
+	--partitions 3 --replication-factor 1</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>描述(describe)主题以检查是否为此主题已设置任何配置覆盖(override)；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">./kafka-topics.sh --bootstrap-server 192.168.0.123:9092 \
+	--describe --topic topic-config</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>将主题topic-config配置min.insync.replicas为2：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">./kafka-configs.sh --bootstrap-server 192.168.0.123:9092 \
+	--alter --entity-type topics --entity-name topic-config \
+	--add-config min.insync.replicas=2</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>重新描述(describe)主题以检查是否为此主题已设置任何配置覆盖(override)；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">./kafka-topics.sh --bootstrap-server 192.168.0.123:9092 \
+	--describe --topic topic-config</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>现在可看到主题配置有属性：Configs: min.insync.replicas=2；</p>
+</li>
+<li>
+<p>可通过&#8212;&#8203;delete-config替换&#8212;&#8203;add-config来删除属性；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">./kafka-configs.sh --bootstrap-server 192.168.0.123:9092 \
+	--alter --entity-type topics --entity-name topic-config \
+	--delete-config min.insync.replicas</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>再次描述(describe)主题以检查是否为此主题已设置任何配置覆盖(override)；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">./kafka-topics.sh --bootstrap-server 192.168.0.123:9092 \
+	--describe --topic topic-config</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_min_insync_replicas"><a class="anchor" href="#_min_insync_replicas"></a>5. min.insync.replicas</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_via_config_file"><a class="anchor" href="#_via_config_file"></a>5.1. Via Config File</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>此配置的默认值为1，但这可在broker级别进行更改；</p>
+</li>
+<li>
+<p>打开broker配置，并在文件末尾追加如下内容：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties"># config/server.properties
+
+min.insync.replicas = 2</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>与kafka-configs.sh不同，kafka-configs.sh可在运行时修改，<br>
+而通过配置文件方式修改则需重新启动broker；</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_dynamic_config"><a class="anchor" href="#_dynamic_config"></a>5.2. Dynamic Config</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>通过kafka-configs.sh动态更改broker配置，而无需重启broker；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">./kafka-configs.sh --bootstrap-server 192.168.0.123:9092 \
+	--alter --entity-type brokers --entity-default \
+	--add-config min.insync.replicas=2</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>描述broker动态更新配置：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">./kafka-configs.sh --bootstrap-server 192.168.0.123:9092 \
+	--describe --entity-type brokers --entity-default
+
+Default configs for brokers in the cluster are:
+  min.insync.replicas=2 sensitive=false
+  	synonyms={DYNAMIC_DEFAULT_BROKER_CONFIG:min.insync.replicas=2}</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>删除动态配置：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">./kafka-configs.sh --bootstrap-server 192.168.0.123:9092 \
+	--alter --entity-type brokers --entity-default \
+	--delete-config min.insync.replicas</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>描述broker动态更新配置：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">./kafka-configs.sh --bootstrap-server 192.168.0.123:9092 \
+	--describe --entity-type brokers --entity-default</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+	</div>
+</main>
+</div>
+		<footer class="footer">
+	
+	
+	
+	<div class="footer-thanks">
+		Authored in AsciiDoc
+		<br /><br />
+		Produced by Antora and Asciidoctor
+  	</div>
+  
+	<div class="footer-legal" style="text-align:center">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br /><br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		Copyright © 2024 Elf
+		<br /><br />
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+	
+</footer><script id="site-script" src="../../../../../_/js/site.js" 
+	data-ui-root-path="../../../../../_"></script>
+
+<script src="../../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../../.." data-snippet-length="100" data-stylesheet="../../../../../_/css/search.css"></script>
+<script async src="../../../../../search-index.js"></script>
+
+
+<script async src="../../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
+</html>

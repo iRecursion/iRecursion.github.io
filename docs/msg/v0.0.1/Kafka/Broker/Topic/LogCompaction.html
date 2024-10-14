@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> :: AsciiDoc</title>
+    <meta name="generator" content="Antora 3.1.7">
+
+<link rel="stylesheet" href="../../../../../_/css/site.css">
+
+<link rel="stylesheet" href="../../../../../_/css/vendor/asciidoc.css">
+
+<link rel="stylesheet" href="../../../../../_/css/vendor/extra.css">
+
+<link rel="stylesheet" href="../../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../../_/css/vendor/prism-1.29.0-coy.css">
+
+
+    <link rel="icon" href="../../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+  			
+  			<a class="navbar-item logo" target="_blank" href="">
+				<img src="../../../../../_/img/yin-yang-symbol.svg" width="100%" height="50">
+			</a>
+  			
+	            <div id="main" style="place-content: center;">
+	                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+		            </div>
+		        </section>
+    	</div>
+    	
+    	<div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Culture</div>
+          			<div class="navbar-dropdown is-right">
+            			
+			            <div class="navbar-item">Traditional Culture</div>
+			            
+			            <a class="navbar-item" target="_blank" href="../../../../../culture/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>Culture <small>传统文化</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Eco</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <a class="navbar-item" target="_blank" href="../../../../../multifariousness/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>Multifariousness <small>五花八门</small></span>
+			            </a>
+
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../../ai/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>Artificial Intelligence<small>人工智能</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../../msg/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>Messaging - Kafka <small>Kafka</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Experiment</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <div class="navbar-item">Quantum Computing</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>QC <small>量子计算...</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <div class="navbar-item">Harmony</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>CangJie <small>预览版内测...</small></span>
+			            </a>
+        			</div>
+    			</div>
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container" data-component="msg" data-version="v0.0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../../index.html">Message</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Kafka</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Broker</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Fundamental</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/KafkaEco.html">Kafka Eco</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/KafkaTopic.html">Kafka Topic</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/KafkaProducer.html">Kafka Producer</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/KafkaConsumer.html">Kafka Consumer</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/GroupOffset.html">Group Offset</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/KafkaBroker.html">Kafka Broker</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/TopicReplication.html">Topic Replication</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/KafkaKRaft.html">KafkaK Raft</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Cli</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/TopicCli.html">Topic Cli</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/ProducerCli.html">Producer Cli</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/ConsumerCli.html">Consumer Cli</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/ConsumerInGroupCli.html">Group Cli</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/ConsumerGroupManagementCli.html">Group Management Cli</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/ConnectCli.html">Connect Cli</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Topic</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="ChangeTopicConfig.html">Change Topic Config</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="TopicInternal.html">Topic Internal</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="LogRetention.html">Log Retention</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="UncleanLeaderElection.html">Unclean Leader Election</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="4">
+    <a class="nav-link" href="LogCompaction.html">Log Compaction</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="ReplicationFactorPartitionCount.html">Partition Count Factor</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="SendLargeMessage.html">Send Large Message</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="TopicNamingConvention.html">Topic Naming Convention</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Producer</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/ProducerAck.html">Producer Ack</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/ProducerRetry.html">Producer Retry</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/ProducerIdempotent.html">Producer Idempotent</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/MessageCompression.html">Message Compression</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/ProducerBatching.html">Producer Batching</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/ProducerPartitioner.html">Producer Partitioner</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/ProducerRest.html">Producer Rest</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Consumer</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Consumer/DeliverySemantic.html">Delivery Semantic</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Consumer/PollInternalThreadBehavior.html">Thread Behavior</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Consumer/AutoOffsetResetBehavior.html">Auto Offset Reset Behavior</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Consumer/ReadClosestReplica.html">Read Closest Replica</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Consumer/IncrementalRebalanceStaticGroupMembership.html">Rebalance Membership</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Administration</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Administration/BrokerClient.html">Broker Client</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Administration/KafkaSecurity.html">Kafka Security</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Administration/MonitoringOperation.html">Monitoring Operation</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Administration/KafkaCluster.html">Kafka Cluster</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Administration/MultiClusterMirrorMaker.html">Multi Cluster MirrorMaker</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Administration/AdvertisedHost.html">Advertised Host</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Programming</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Programming/KafkaProgrammingEntry.html">Kafka Entry</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Programming/WikimediaKafkaOpensearch.html">Wiki 2 Search</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Message</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <div class="title"><a href="../../../../../ai/v0.0.1/index.html">AI</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../ai/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../../../culture/v0.0.1/index.html">Culture</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../culture/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <div class="title"><a href="../../../index.html">Message</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../../../multifariousness/v0.0.1/index.html">Multifariousness</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../multifariousness/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+	<div class="toolbar" role="navigation">
+	<button class="nav-toggle"></button>
+	
+		<a href="../../../../../multifariousness/v0.0.1/index.html" 
+			class="home-link">
+		</a>
+
+	<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../../index.html">Message</a></li>
+    <li>Kafka</li>
+    <li>Broker</li>
+    <li>Topic</li>
+    <li><a href="LogCompaction.html">Log Compaction</a></li>
+  </ul>
+</nav>
+		</div>
+	
+	<div class="content">
+			<aside class="toc sidebar" 
+	data-title="Contents" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+			<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_log_cleanup_policy">1. Log Cleanup Policy</a>
+<ul class="sectlevel2">
+<li><a href="#_log_cleanup_purpose">1.1. Log Cleanup Purpose</a></li>
+<li><a href="#_log_cleanup_frequency">1.2. Log Cleanup Frequency</a></li>
+</ul>
+</li>
+<li><a href="#_log_compaction_theory">2. Log Compaction Theory</a>
+<ul class="sectlevel2">
+<li><a href="#_log_compaction_case">2.1. Log Compaction Case</a></li>
+<li><a href="#_log_compaction_guarantee">2.2. Log Compaction Guarantee</a></li>
+<li><a href="#_log_compaction_myth_busting">2.3. Log Compaction Myth Busting</a></li>
+<li><a href="#_log_compaction_work">2.4. Log Compaction Work</a></li>
+<li><a href="#_log_compaction_config">2.5. Log Compaction Config</a></li>
+<li><a href="#_log_compaction_tombstone">2.6. Log Compaction Tombstone</a></li>
+</ul>
+</li>
+<li><a href="#_log_compaction_practice">3. Log Compaction Practice</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_log_cleanup_policy"><a class="anchor" href="#_log_cleanup_policy"></a>1. Log Cleanup Policy</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Kafka将消息存储一段时间，并清除超过保留期的消息；</p>
+</li>
+<li>
+<p>此过期由log.cleanup.policy控制，有两种策略；</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>log.cleanup.policy=delete</p>
+</li>
+<li>
+<p>所有用户主题(user topic)的默认设置，默认保留期为一周；</p>
+</li>
+<li>
+<p>Kafka会删除早于配置的保留时间的事件；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>log.cleanup.policy=compact</p>
+</li>
+<li>
+<p>Kafka的 __consumer_offsets 的主题默认策略；</p>
+</li>
+<li>
+<p>kafka只存储主题中每个键的最新值，将策略设置为compact，<br>
+仅在应用程序为其生成同时包含键和值的事件的主题上才有意义；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_log_cleanup_purpose"><a class="anchor" href="#_log_cleanup_purpose"></a>1.1. Log Cleanup Purpose</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Kafka最初并不打算永远保留数据，尽管有人正使用large disk或Tiered Storage；<br>
+也不需等待所有消费者阅读消息后再删除，通过为每个主题设置保留策略，它允许管理员：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>控制磁盘上数据的大小并删除过时的数据；</p>
+</li>
+<li>
+<p>限制Kafka集群的维护工作；</p>
+</li>
+<li>
+<p>限制消费者可能需消耗的历史数据量以catch up主题；</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_log_cleanup_frequency"><a class="anchor" href="#_log_cleanup_frequency"></a>1.2. Log Cleanup Frequency</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>日志清理发生在partition segment，分段将分区数据<br>
+划分为更小的文件，此类文件可更好的管理并独立清理；</p>
+</li>
+<li>
+<p>清理应经常进行，以确保文件被删除，但不要经常影响broker<br>
+和磁盘性能，较小的日志保留大小可能需更频繁的检查；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_log_compaction_theory"><a class="anchor" href="#_log_compaction_theory"></a>2. Log Compaction Theory</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>正如Kafka日志清理策略提到，Kafka将存储消息一段时间，并清除超过保留期的消息；</p>
+</li>
+<li>
+<p>但如Kafka用于存储公司所有员工工资信息，那此场景下，只存储<br>
+每个员工的最新薪资，并不是有限时间内的历史数据是有意义的；</p>
+</li>
+<li>
+<p>Kafka支持此用例，允许将主题的保留策略设置为compact，且属性至少保留<br>
+分区中每个键的最新值，如只需SNAPSHOT，而非完整的历史记录，这很有用；</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_log_compaction_case"><a class="anchor" href="#_log_compaction_case"></a>2.1. Log Compaction Case</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>想保留员工的最新工资，为此创建"employee-salary"的主题，我们不想知道员工的历史薪资；</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/Broker/Topic/LogCompaction.png" alt="LogCompaction">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>生产producing这些事件的应用应同时包含一个键和一个值，<br>
+此情况下，关键是员工Id，值将是薪资，当数据进入(come in)；</p>
+</li>
+<li>
+<p>它会被追加到append into 分区的分段segment，在compaction后，<br>
+将创建新的segment，只保留某个键的最新事件，键的旧事件被删除，消息的偏移量保持不变intact；</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_log_compaction_guarantee"><a class="anchor" href="#_log_compaction_guarantee"></a>2.2. Log Compaction Guarantee</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Kafka在log-compacted topic上生成produce的<br>
+消息提供provide重要保证important guarantee；</p>
+</li>
+<li>
+<p>任何正在读取日志尾部tail(即最新数据)的消费者仍会看到发送到该主题的所有消息；</p>
+</li>
+<li>
+<p>主题是否经过log-compacted并不重要，<br>
+订阅该主题的消费者将在该主题上produce消息时看到消息；</p>
+</li>
+<li>
+<p>保持Key级别和分区级别消息排序，log compaction只删除(remove)一些消息，<br>
+但不会重新排序，偏移量将保留，只有一些消息被删除delete；</p>
+</li>
+<li>
+<p>消息的偏移量不可变immutable，永远不变，若消息丢失missing，则跳过skip偏移量；</p>
+</li>
+<li>
+<p>在log.cleaner.delete.retension.ms(默认24小时)的一段时间内，<br>
+消费者仍可看到已删除delete的记录，这为消费者提供一些提醒时间<br>
+heads-up time来catch up on msg将被删除的消息；</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_log_compaction_myth_busting"><a class="anchor" href="#_log_compaction_myth_busting"></a>2.3. Log Compaction Myth Busting</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>log compaction misconception(误解) and Clear：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>A：它不会组织我们将重复的数据推送给Kafka，prevent pushing duplicate；</p>
+</li>
+<li>
+<p>重复数据消除deduplication是在提交commit数据段segment后完成的，<br>
+一旦数据到达，消费者仍将从日志段log segment的尾部tail读取，<br>
+这不是执行消息重复数据消除msg deduplication的方法；</p>
+</li>
+<li>
+<p>B：它不会阻止我们从Kafka中读取重复的数据，prevent reading duplicate；</p>
+</li>
+<li>
+<p>若消费者重启，可能会看到重复数据，<br>
+这是基于at-least-once reading semantic；；</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_log_compaction_work"><a class="anchor" href="#_log_compaction_work"></a>2.4. Log Compaction Work</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>若kafka启动时启用compaction，每个broker将启动一个compaction manager<br>
+thread和多个compaction thread，这些线程负责compaction task；</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/Broker/Topic/LogCompactionCleanerThread.png" alt="LogCompactionCleanerThread">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>cleaner thread从最旧的段oldest segment开始，并检查其内容，<br>
+活动分段active segment不受(left untouch) cleaner thread的影响；</p>
+</li>
+<li>
+<p>若它刚刚读取的消息仍是Key的最新消息，它会将消息复制到替换段copy<br>
+over msg to replacement segment，否则，它会omit该消息，<br>
+因分区中稍后会有一个具有identical key但具有较新值的消息；</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>一旦干净的线程，我们就将替换段替换为原始段，然后继续下一个段。<br>
+在该过程结束时，每个键只剩下一条消息，即具有最新值的消息</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>一旦cleaner thread复制(copy over)所有仍包含其Key的最新值的消息，<br>
+我们将替换段替换为原始段，然后继续下一段，那每个键只剩下一条消息，即具有最新值的消息；</p>
+</li>
+<li>
+<p>swap replacement segment for original and move on to next segment；</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Ordering Intact：在cleaner thread完成工作后，<br>
+将从旧的段创建/组合新的段，偏移量保持不变，也保持基于Key的排序；</p>
+</li>
+<li>
+<p>new segment create/combine from old segment after cleaner thread，<br>
+offset left untouch and key-based ordering as well；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_log_compaction_config"><a class="anchor" href="#_log_compaction_config"></a>2.5. Log Compaction Config</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><mark>log.cleanup.policy=compact</mark>：还有其他配置会影响log compaction的频率；</p>
+</li>
+<li>
+<p><mark>log.cleaner.enable</mark>：可禁用log compaction，<br>
+不推荐，这会影响__consumer_offsets主题，若需要，可暂时禁用；</p>
+</li>
+<li>
+<p><mark>log.cleaner.threads</mark>：用于log cleaning的background thread；</p>
+</li>
+<li>
+<p><mark>log.segment.ms</mark>：默认7天，关闭活动段的最长等待时间，<br>
+max amount of time to wait to close aactive segment；</p>
+</li>
+<li>
+<p><mark>log.segment.bytes</mark>：默认1G，单个元数据日志文件的最大大小，<br>
+max size of single metadata log file；</p>
+</li>
+<li>
+<p><mark>log.cleaner.delete.retention.ms</mark>：默认24小时，<br>
+控制删除记录和事务标记marker符合删除条件后保留的时间，<br>
+用于确保同时读取日志的消费者有机会在删除这些记录前读取这些记录；</p>
+</li>
+<li>
+<p><mark>log.cleaner.backoff.ms</mark>：默认15秒，没有要清理的日志log时的sleep时间；</p>
+</li>
+<li>
+<p><mark>log.cleaner.min.com.paction.lag.ms</mark>：默认0，防止更新到最短消息期限的消息被<br>
+compaction，若未设置，则除最后一个段(即当前正在写入的段)外，所有日志段都有资格compaction；</p>
+</li>
+<li>
+<p>即使active segment的所有消息都早于minimum compaction time lag，也不会compact活动段，<br>
+log cleaner可配置为确保最大延迟，uncompact "head" log有资格eligible log compaction；</p>
+</li>
+<li>
+<p><mark>log.cleaner.max.compaction.lag.ms</mark>：默认infinite，防止low produce rate<br>
+from remaining ineligible for compaction for unbound duration；</p>
+</li>
+<li>
+<p>若未设置，则不会压缩不超过min.cleanable.dirty.ratio的日志；</p>
+</li>
+<li>
+<p>注：此压缩截止日期并非硬性保证，因它仍受日志清理线程的可用性和实际压缩时间的影响，<br>
+将需监控uncleanable-partitions-count、<br>
+max-clean-time-secs和max-compaction-delay-secs指标；</p>
+</li>
+<li>
+<p><mark>min.cleanable.dirty.ratio</mark>：默认0.5，有资格进行清理的日志的脏日志dirty<br>
+与总日志的最小比率；若还已指定log.cleaner.max.compaction.lag.ms或<br>
+log.cleaner.min.compaction.lag.ms，则log compactor在以下情况认为日志符合压缩条件：</p>
+</li>
+<li>
+<p>A：已达脏比率阈值threshold，且该日志至少在log.cleaner.min.com.Paction.lag.ms<br>
+的持续时间内有脏dirty(uncompact))未压缩记录；</p>
+</li>
+<li>
+<p>B：该日志最多在log.clean.mix.com.pacation.lag.mss的时间内有不脏(未处理)记录；</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_log_compaction_tombstone"><a class="anchor" href="#_log_compaction_tombstone"></a>2.6. Log Compaction Tombstone</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Compaction允许删除delete，带有Key和null payload的消息<br>
+将被视为从日志中删除，这样的记录有时被称为tombstone；</p>
+</li>
+<li>
+<p>此删除标记将导致删除任何以前带有该Key的消息，就像删除任何新消息一样，<br>
+但删除标记将在一段时间后从日志中清除clean out，以释放free up空间；</p>
+</li>
+<li>
+<p>从日志开始的任何消费者都将至少看到所有记录的最终状态(按写入顺序)，另若消费者在短于<br>
+less than主题的delete.retension.ms(默认24小时)的时间段内到达日志的顶端head；</p>
+</li>
+<li>
+<p>则会看到已删除记录的所有删除标记，换言之：因删除标记与读取同时发生，<br>
+故若延迟lag超过delete.retension.ms，则用户可能会错过删除标记；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_log_compaction_practice"><a class="anchor" href="#_log_compaction_practice"></a>3. Log Compaction Practice</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>我们想保留员工的最新工资，不想知道员工的旧工资，创建employee-salary主题；</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/Broker/Topic/LogCompaction.png" alt="LogCompaction">
+</div>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Win用户，若不能使用WSL2，则不能使用log compaction；</p>
+</li>
+<li>
+<p>令Win还由长期存在的Bug(long-standing bug (KAFKA-1194))，<br>
+若使用日志清理log cleaning，就会导致Kafka奔溃，类删除主题；</p>
+</li>
+<li>
+<p>从奔溃crash中恢复recover的唯一方法是手动删除log.dirs目录中的文件夹；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>This enables log compaction for the topic.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>创建employee salary的log-compact主题，使用单分区，复制因子为1：</p>
+</li>
+<li>
+<p>分区数使用1，确保所有消息都进入同一分区；</p>
+</li>
+<li>
+<p>cleanup.policy=compact，这将启用该主题的log compaction；</p>
+</li>
+<li>
+<p>min.cleanable.dirty.ratio=0.001，为确保始终触发log cleanup；</p>
+</li>
+<li>
+<p>segment.ms=5000，每5秒将创建一个新片段segment，<br>
+log compaction仅发生在closed segment；</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">./kafka-topics.sh --bootstrap-server 192.168.0.123:9092 \
+	--create --topic employee-salary \
+    --partitions 1 --replication-factor 1 \
+    --config cleanup.policy=compact \
+    --config min.cleanable.dirty.ratio=0.001 \
+    --config segment.ms=5000</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>描述主题以确保正确应用配置：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">./kafka-topics.sh --bootstrap-server 192.168.0.123:9092 \
+	--describe --topic employee-salary</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>启动kafka console consumer，显示键和值，并用逗号分隔：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">./kafka-console-consumer.sh --bootstrap-server 192.168.0.123:9092 \
+	--topic employee-salary \
+    --from-beginning \
+    --property print.key=true \
+    --property key.separator=,</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>启动另一个shell终端来创建kafka console producer，<br>
+想发送消息的Key，键和值之间的分隔符是逗号：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">./kafka-console-producer.sh --bootstrap-server 192.168.0.123:9092 \
+    --topic employee-salary \
+    --property parse.key=true \
+    --property key.separator=,</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>生成一些具有重复Key的消息，以下消息中，Key是elf，值是salary:1000；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">elf,salary: 10000
+pal,salary: 20000
+bob,salary: 20000
+elf,salary: 25000
+pal,salary: 30000
+elf,salary: 30000</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>请稍等，然后再生成一些消息，可能是相同的消息：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">fly,salary: 0</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>停止kafka console consumer，并启动一个新的消费者，<br>
+我们从一开始旧获取所有消息，将只看到具有相应最新值的唯一Key；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">bob,salary: 20000
+pal,salary: 30000
+elf,salary: 30000
+fly,salary: 0</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>log compaction将自动在后台进行，不能显示触发，<br>
+但可使用log compaction properties来控制它的触发频率；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+	</div>
+</main>
+</div>
+		<footer class="footer">
+	
+	
+	
+	<div class="footer-thanks">
+		Authored in AsciiDoc
+		<br /><br />
+		Produced by Antora and Asciidoctor
+  	</div>
+  
+	<div class="footer-legal" style="text-align:center">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br /><br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		Copyright © 2024 Elf
+		<br /><br />
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+	
+</footer><script id="site-script" src="../../../../../_/js/site.js" 
+	data-ui-root-path="../../../../../_"></script>
+
+<script src="../../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../../.." data-snippet-length="100" data-stylesheet="../../../../../_/css/search.css"></script>
+<script async src="../../../../../search-index.js"></script>
+
+
+<script async src="../../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
+</html>

@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> :: AsciiDoc</title>
+    <meta name="generator" content="Antora 3.1.7">
+
+<link rel="stylesheet" href="../../../../../_/css/site.css">
+
+<link rel="stylesheet" href="../../../../../_/css/vendor/asciidoc.css">
+
+<link rel="stylesheet" href="../../../../../_/css/vendor/extra.css">
+
+<link rel="stylesheet" href="../../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../../_/css/vendor/prism-1.29.0-coy.css">
+
+
+    <link rel="icon" href="../../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+  			
+  			<a class="navbar-item logo" target="_blank" href="">
+				<img src="../../../../../_/img/yin-yang-symbol.svg" width="100%" height="50">
+			</a>
+  			
+	            <div id="main" style="place-content: center;">
+	                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+		            </div>
+		        </section>
+    	</div>
+    	
+    	<div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Culture</div>
+          			<div class="navbar-dropdown is-right">
+            			
+			            <div class="navbar-item">Traditional Culture</div>
+			            
+			            <a class="navbar-item" target="_blank" href="../../../../../culture/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>Culture <small>传统文化</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Eco</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <a class="navbar-item" target="_blank" href="../../../../../multifariousness/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>Multifariousness <small>五花八门</small></span>
+			            </a>
+
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../../ai/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>Artificial Intelligence<small>人工智能</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../../msg/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>Messaging - Kafka <small>Kafka</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Experiment</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <div class="navbar-item">Quantum Computing</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>QC <small>量子计算...</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <div class="navbar-item">Harmony</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>CangJie <small>预览版内测...</small></span>
+			            </a>
+        			</div>
+    			</div>
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container" data-component="msg" data-version="v0.0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../../index.html">Message</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Kafka</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Broker</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Fundamental</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/KafkaEco.html">Kafka Eco</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/KafkaTopic.html">Kafka Topic</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/KafkaProducer.html">Kafka Producer</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/KafkaConsumer.html">Kafka Consumer</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/GroupOffset.html">Group Offset</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/KafkaBroker.html">Kafka Broker</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/TopicReplication.html">Topic Replication</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/KafkaKRaft.html">KafkaK Raft</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Cli</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/TopicCli.html">Topic Cli</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/ProducerCli.html">Producer Cli</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/ConsumerCli.html">Consumer Cli</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/ConsumerInGroupCli.html">Group Cli</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/ConsumerGroupManagementCli.html">Group Management Cli</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/ConnectCli.html">Connect Cli</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Topic</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/ChangeTopicConfig.html">Change Topic Config</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/TopicInternal.html">Topic Internal</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/LogRetention.html">Log Retention</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/UncleanLeaderElection.html">Unclean Leader Election</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/LogCompaction.html">Log Compaction</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/ReplicationFactorPartitionCount.html">Partition Count Factor</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/SendLargeMessage.html">Send Large Message</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/TopicNamingConvention.html">Topic Naming Convention</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Producer</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/ProducerAck.html">Producer Ack</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/ProducerRetry.html">Producer Retry</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/ProducerIdempotent.html">Producer Idempotent</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/MessageCompression.html">Message Compression</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/ProducerBatching.html">Producer Batching</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/ProducerPartitioner.html">Producer Partitioner</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/ProducerRest.html">Producer Rest</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Consumer</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="DeliverySemantic.html">Delivery Semantic</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="4">
+    <a class="nav-link" href="PollInternalThreadBehavior.html">Thread Behavior</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="AutoOffsetResetBehavior.html">Auto Offset Reset Behavior</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="ReadClosestReplica.html">Read Closest Replica</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="IncrementalRebalanceStaticGroupMembership.html">Rebalance Membership</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Administration</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Administration/BrokerClient.html">Broker Client</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Administration/KafkaSecurity.html">Kafka Security</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Administration/MonitoringOperation.html">Monitoring Operation</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Administration/KafkaCluster.html">Kafka Cluster</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Administration/MultiClusterMirrorMaker.html">Multi Cluster MirrorMaker</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Administration/AdvertisedHost.html">Advertised Host</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Programming</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Programming/KafkaProgrammingEntry.html">Kafka Entry</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Programming/WikimediaKafkaOpensearch.html">Wiki 2 Search</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Message</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <div class="title"><a href="../../../../../ai/v0.0.1/index.html">AI</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../ai/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../../../culture/v0.0.1/index.html">Culture</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../culture/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <div class="title"><a href="../../../index.html">Message</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../../../multifariousness/v0.0.1/index.html">Multifariousness</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../multifariousness/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+	<div class="toolbar" role="navigation">
+	<button class="nav-toggle"></button>
+	
+		<a href="../../../../../multifariousness/v0.0.1/index.html" 
+			class="home-link">
+		</a>
+
+	<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../../index.html">Message</a></li>
+    <li>Kafka</li>
+    <li>Broker</li>
+    <li>Consumer</li>
+    <li><a href="PollInternalThreadBehavior.html">Thread Behavior</a></li>
+  </ul>
+</nav>
+		</div>
+	
+	<div class="content">
+			<aside class="toc sidebar" 
+	data-title="Contents" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+			<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_consumer_poll_behavior">1. Consumer Poll Behavior</a>
+<ul class="sectlevel2">
+<li><a href="#_poll_and_heartbeat">1.1. Poll and Heartbeat</a></li>
+<li><a href="#_consumer_heartbeat_thread">1.2. Consumer Heartbeat Thread</a></li>
+<li><a href="#_consumer_poll_thread">1.3. Consumer Poll Thread</a></li>
+</ul>
+</li>
+<li><a href="#_consumer_fetch_behavior">2. Consumer Fetch Behavior</a>
+<ul class="sectlevel2">
+<li><a href="#_fetch_min_bytes">2.1. fetch.min.bytes</a></li>
+<li><a href="#_fetch_max_wait_ms">2.2. fetch.max.wait.ms</a></li>
+<li><a href="#_max_partition_fetch_bytes">2.3. max.partition.fetch.bytes</a></li>
+<li><a href="#_fetch_max_bytes">2.4. fetch.max.bytes</a></li>
+<li><a href="#_max_poll_records">2.5. max.poll.records</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_consumer_poll_behavior"><a class="anchor" href="#_consumer_poll_behavior"></a>1. Consumer Poll Behavior</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>消费者poll broker以接收批量数据，一旦消费者订阅(subscribe)主题，<br>
+poll loop将处理(handle)协调(coordination)、</p>
+</li>
+<li>
+<p>分区重新平衡(partition rebalance)、心跳(heartbeat)和<br>
+数据获取(fetching)的所有细节，干净的Api，只需从分配的分区返回可用数据；</p>
+</li>
+<li>
+<p>Internal Code Optimization 内部代码优化：</p>
+</li>
+<li>
+<p>若消费者成功从Kafka中提取数据，它将提前开始发送下一个提取请求，当消费者<br>
+正在处理当前一批数据时，将不得不在next poll() call上等待下一个数据；</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/Broker/Consumer/KafkaConsumerPoll.png" alt="KafkaConsumerPoll">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Polling允许消费者控制：<br>
+﻿** A：从日志中想要消费的位置；B：想以多快的速度消费；</p>
+<div class="ulist">
+<ul>
+<li>
+<p>C：能回放事件，ability to replay event；</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_poll_and_heartbeat"><a class="anchor" href="#_poll_and_heartbeat"></a>1.1. Poll and Heartbeat</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Internal Poll Thread and Heartbeat Thread</p>
+</li>
+<li>
+<p>消费者在消费者组中维护成员和分配给他们的分区ownership<br>
+的方式是将心跳发送给指定为组协调器的broker；</p>
+</li>
+<li>
+<p>consumer maintain membership in consumer group and<br>
+ownership of partition assign to them by sending<br>
+heartbeat to broker designate as group coordinator；</p>
+</li>
+<li>
+<p>consumer poll broker for message，此两个活动在如下独立使用消费者线程上执行；</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/Broker/Consumer/KafkaConsumerLiveliness.png" alt="KafkaConsumerLiveliness">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_consumer_heartbeat_thread"><a class="anchor" href="#_consumer_heartbeat_thread"></a>1.2. Consumer Heartbeat Thread</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Heartbeat有助于确定消费者Liveliness；</p>
+</li>
+<li>
+<p>只要消费者以规则的间隔发送heartbeat(heartbeat.interval.ms)，<br>
+它就被认为是活动的assumed to alive，且正在处理来自其分区的消息；</p>
+</li>
+<li>
+<p>若消费者停止发送heartbeat的时间足够长(session.timeout.ms)，<br>
+其会话将超时，组协调器将认为它已停止并触发重新平衡；</p>
+</li>
+<li>
+<p>session will timeout and group coordinator<br>
+will consider it dead and trigger rebalance；</p>
+</li>
+<li>
+<p>消费者心跳线程定期向消费者协调器发送心跳消息，此行为由<br>
+heartbeat.interval.ms和session.timeout.ms控制；</p>
+</li>
+<li>
+<p>consumer heartbeat thread﻿ send heartbeat<br>
+message to consumer coordinator periodically；</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><mark>heartbeat.interval.ms</mark>：默认3s，使用Kafka组管理功能时，<br>
+消费者协调器的心跳之间的预期时间，心跳用于确保消费者的会话保持活动状态，<br>
+并在新消费者加入或离开该组时促进重新平衡；</p>
+</li>
+<li>
+<p>expect time between heartbeat to consumer coordinator<br>
+when using Kafka group management facility；</p>
+</li>
+<li>
+<p><mark>session.timeout.ms</mark>：默认45s，消费者被认为alive情况下<br>
+可与broker失去联系的时间，若超过session.timeout.ms；</p>
+</li>
+<li>
+<p>而消费者没向组协调器发送heartbeat，则认为它已死亡，组协调器将触发<br>
+消费者组的重新平衡，以将分区从死亡消费者分配给组中的其他消费者；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>此两属性通常一起修改，heartbeat.interval.ms必须低于<br>
+session.timeout.ms，且通常设置为不超过超时值的1/3；</p>
+</li>
+<li>
+<p>默认值适合常规用例，故在没适当测试场景下，不应调优；</p>
+</li>
+<li>
+<p>此机制用于检测消费者应用停机或网络故障；</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_consumer_poll_thread"><a class="anchor" href="#_consumer_poll_thread"></a>1.3. Consumer Poll Thread</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>消费者使用poll()定期poll broker，若两个poll()调用之间的<br>
+间隔超过max.poll.interval.ms时间，则消费者将与组断开连接；</p>
+</li>
+<li>
+<p><mark>max.poll.interval.ms</mark>：默认5分钟，使用消费者组管理时调用poll()<br>
+之间的最大延迟(delay)，这为消费者在获取更多记录之前可空闲的时间设置上限；</p>
+</li>
+<li>
+<p>若在该超时到期之前未调用poll()，则认为消费者失败，且组将重新平衡，<br>
+以将分区重新分配给另一个成员，此设置与处理数据可能需要时间的框架(如Spark)特别相关；</p>
+</li>
+<li>
+<p>此机制用于检测detect "stuck"(aka "livelock")的消费者的数据处理问题；</p>
+</li>
+<li>
+<p><mark>max.poll.records</mark>：默认500，控制对poll()的单个调用将返回的最大记录数，<br>
+有助于控制应用在处理循环(processing loop)中接受的数据量；</p>
+</li>
+<li>
+<p>较低的max.poll.records可确保在达到<br>
+max.poll.interval.ms延迟(delay)前调用next.poll()</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_consumer_fetch_behavior"><a class="anchor" href="#_consumer_fetch_behavior"></a>2. Consumer Fetch Behavior</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>调用poll()后，消费者将从分区中获取数据，然后消费者在主线程中处理数据，<br>
+且消费者继续优化pre-fetching下一批数据pipeline<br>
+以更快的流水线传输数据并减少处理延迟latency；</p>
+</li>
+<li>
+<p>从消费者到broker的获取请求可通过以下配置控制：</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_fetch_min_bytes"><a class="anchor" href="#_fetch_min_bytes"></a>2.1. fetch.min.bytes</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>允许消费者指定在获取记录时希望从broker接收的最小数据量，默认为1；</p>
+</li>
+<li>
+<p>若broker从消费者接收到对记录的请求，但新记录的字节数少于fetch.min.bytes，<br>
+则broker将等待更多消息可用，然后再将记录发送回消费者，基于fetch.max.wait.ms设置；</p>
+</li>
+<li>
+<p>这减少消费者和broker的负载(broker)，因它们必须处理更少的来回消息<br>
+(back-and-forth message)，并优化为最小的获取大小；</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_fetch_max_wait_ms"><a class="anchor" href="#_fetch_max_wait_ms"></a>2.2. fetch.max.wait.ms</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>若没足够的数据立即满足fetch.min.bytes给出的要求，<br>
+则broker在回答fetch请求之前将阻止的最长时间，默认500ms；</p>
+</li>
+<li>
+<p>maximum amount of time broker will block before answering<br>
+fetch request if there isn&#8217;t sufficient data to immediately<br>
+satisfy requirement given by fetch.min.bytes；</p>
+</li>
+<li>
+<p>在满足fetch.min.bytes的要求之前，在fetch向消费者返回数据之前，<br>
+将有长达500毫秒的延迟latency，如引入潜在的延迟potential delay以提高请求的效率；</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_max_partition_fetch_bytes"><a class="anchor" href="#_max_partition_fetch_bytes"></a>2.3. max.partition.fetch.bytes</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>最大分区获取字节数：服务器将返回的每个分区的最大数据量，默认1MB；</p>
+</li>
+<li>
+<p>记录由消费者分批提取fetch，若fetch的第一个非空分区中的第一个记录批<br>
+(record batch)大于此限制，则仍将返回该批batch，以确保消费者能处理；</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_fetch_max_bytes"><a class="anchor" href="#_fetch_max_bytes"></a>2.4. fetch.max.bytes</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>为每个fetch请求返回的最大数据量，默认55MB，若有可用内存，<br>
+请尝试增加fetch.max.bytes，以允许消费者在每个请求中读取更多数据；</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_max_poll_records"><a class="anchor" href="#_max_poll_records"></a>2.5. max.poll.records</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>控制对poll()的单个调用将返回的最大记录数，默认500，<br>
+有助于控制应用在processing loop中接收的数据量；</p>
+</li>
+<li>
+<p>此设置不影响基本的fetching behavior，消费者将缓存每个fetch<br>
+请求中的记录，并从each poll中递增地incrementally返回这些记录；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</article>
+	</div>
+</main>
+</div>
+		<footer class="footer">
+	
+	
+	
+	<div class="footer-thanks">
+		Authored in AsciiDoc
+		<br /><br />
+		Produced by Antora and Asciidoctor
+  	</div>
+  
+	<div class="footer-legal" style="text-align:center">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br /><br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		Copyright © 2024 Elf
+		<br /><br />
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+	
+</footer><script id="site-script" src="../../../../../_/js/site.js" 
+	data-ui-root-path="../../../../../_"></script>
+
+<script src="../../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../../.." data-snippet-length="100" data-stylesheet="../../../../../_/css/search.css"></script>
+<script async src="../../../../../search-index.js"></script>
+
+
+<script async src="../../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
+</html>

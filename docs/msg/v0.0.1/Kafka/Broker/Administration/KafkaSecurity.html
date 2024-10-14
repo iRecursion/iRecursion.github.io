@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> :: AsciiDoc</title>
+    <meta name="generator" content="Antora 3.1.7">
+
+<link rel="stylesheet" href="../../../../../_/css/site.css">
+
+<link rel="stylesheet" href="../../../../../_/css/vendor/asciidoc.css">
+
+<link rel="stylesheet" href="../../../../../_/css/vendor/extra.css">
+
+<link rel="stylesheet" href="../../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../../_/css/vendor/prism-1.29.0-coy.css">
+
+
+    <link rel="icon" href="../../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+  			
+  			<a class="navbar-item logo" target="_blank" href="">
+				<img src="../../../../../_/img/yin-yang-symbol.svg" width="100%" height="50">
+			</a>
+  			
+	            <div id="main" style="place-content: center;">
+	                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+		            </div>
+		        </section>
+    	</div>
+    	
+    	<div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Culture</div>
+          			<div class="navbar-dropdown is-right">
+            			
+			            <div class="navbar-item">Traditional Culture</div>
+			            
+			            <a class="navbar-item" target="_blank" href="../../../../../culture/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>Culture <small>传统文化</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Eco</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <a class="navbar-item" target="_blank" href="../../../../../multifariousness/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>Multifariousness <small>五花八门</small></span>
+			            </a>
+
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../../ai/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>Artificial Intelligence<small>人工智能</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../../msg/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>Messaging - Kafka <small>Kafka</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Experiment</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <div class="navbar-item">Quantum Computing</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>QC <small>量子计算...</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <div class="navbar-item">Harmony</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>CangJie <small>预览版内测...</small></span>
+			            </a>
+        			</div>
+    			</div>
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container" data-component="msg" data-version="v0.0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../../index.html">Message</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Kafka</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Broker</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Fundamental</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/KafkaEco.html">Kafka Eco</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/KafkaTopic.html">Kafka Topic</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/KafkaProducer.html">Kafka Producer</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/KafkaConsumer.html">Kafka Consumer</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/GroupOffset.html">Group Offset</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/KafkaBroker.html">Kafka Broker</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/TopicReplication.html">Topic Replication</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/KafkaKRaft.html">KafkaK Raft</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Cli</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/TopicCli.html">Topic Cli</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/ProducerCli.html">Producer Cli</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/ConsumerCli.html">Consumer Cli</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/ConsumerInGroupCli.html">Group Cli</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/ConsumerGroupManagementCli.html">Group Management Cli</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/ConnectCli.html">Connect Cli</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Topic</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/ChangeTopicConfig.html">Change Topic Config</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/TopicInternal.html">Topic Internal</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/LogRetention.html">Log Retention</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/UncleanLeaderElection.html">Unclean Leader Election</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/LogCompaction.html">Log Compaction</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/ReplicationFactorPartitionCount.html">Partition Count Factor</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/SendLargeMessage.html">Send Large Message</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/TopicNamingConvention.html">Topic Naming Convention</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Producer</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/ProducerAck.html">Producer Ack</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/ProducerRetry.html">Producer Retry</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/ProducerIdempotent.html">Producer Idempotent</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/MessageCompression.html">Message Compression</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/ProducerBatching.html">Producer Batching</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/ProducerPartitioner.html">Producer Partitioner</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/ProducerRest.html">Producer Rest</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Consumer</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Consumer/DeliverySemantic.html">Delivery Semantic</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Consumer/PollInternalThreadBehavior.html">Thread Behavior</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Consumer/AutoOffsetResetBehavior.html">Auto Offset Reset Behavior</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Consumer/ReadClosestReplica.html">Read Closest Replica</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Consumer/IncrementalRebalanceStaticGroupMembership.html">Rebalance Membership</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Administration</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="BrokerClient.html">Broker Client</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="4">
+    <a class="nav-link" href="KafkaSecurity.html">Kafka Security</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="MonitoringOperation.html">Monitoring Operation</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="KafkaCluster.html">Kafka Cluster</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="MultiClusterMirrorMaker.html">Multi Cluster MirrorMaker</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="AdvertisedHost.html">Advertised Host</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Programming</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Programming/KafkaProgrammingEntry.html">Kafka Entry</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Programming/WikimediaKafkaOpensearch.html">Wiki 2 Search</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Message</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <div class="title"><a href="../../../../../ai/v0.0.1/index.html">AI</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../ai/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../../../culture/v0.0.1/index.html">Culture</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../culture/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <div class="title"><a href="../../../index.html">Message</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../../../multifariousness/v0.0.1/index.html">Multifariousness</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../multifariousness/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+	<div class="toolbar" role="navigation">
+	<button class="nav-toggle"></button>
+	
+		<a href="../../../../../multifariousness/v0.0.1/index.html" 
+			class="home-link">
+		</a>
+
+	<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../../index.html">Message</a></li>
+    <li>Kafka</li>
+    <li>Broker</li>
+    <li>Administration</li>
+    <li><a href="KafkaSecurity.html">Kafka Security</a></li>
+  </ul>
+</nav>
+		</div>
+	
+	<div class="content">
+			<aside class="toc sidebar" 
+	data-title="Contents" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+			<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_kafka_security_component">1. Kafka Security Component</a></li>
+<li><a href="#_encryption_ssl">2. Encryption SSL</a></li>
+<li><a href="#_authentication_ssl_sasl">3. Authentication SSL SASL</a>
+<ul class="sectlevel2">
+<li><a href="#_ssl_authentication">3.1. SSL Authentication</a></li>
+<li><a href="#_sasl_authentication">3.2. SASL Authentication</a></li>
+</ul>
+</li>
+<li><a href="#_authorization_acl">4. Authorization ACL</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_kafka_security_component"><a class="anchor" href="#_kafka_security_component"></a>1. Kafka Security Component</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://kafka.apache.org/documentation/#security" target="_blank" rel="noopener">Kafka Security Documentation</a></p>
+</li>
+<li>
+<p><a href="https://docs.confluent.io/platform/current/security/index.html" target="_blank" rel="noopener">Confluent Security Documentation</a></p>
+</li>
+<li>
+<p>标准的Kafka设置，任何用户或应用均可向任何主题写入任何消息，也可从任何主题读取数据；</p>
+</li>
+<li>
+<p>随公司转向共享租户模式(shared tenancy model)，即多个团队和应用使用同一个Kafka集群，<br>
+或Kafka集群开始引入(onboarding)关键(critical)或机密(confidential)信息；</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>﻿*  A：Encryption of Data In Flight via SSL/TLS：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>允许数据在producer与kafka，consumer与kakfa之间加密，<br>
+这是很常见的模式，即Https中的s，即网站上绿色的小锁；</p>
+</li>
+<li>
+<p>B：Authentication via SSL或SASL，用SSL或SASL身份验证：</p>
+</li>
+<li>
+<p>这允许生产者和消费者向Kafka集群进行身份认证，此为安全方式，<br>
+使客户端认可一个身份(enable client to endorse identity)，<br>
+此操作为授权for authorization；</p>
+</li>
+<li>
+<p>C：Authorization via ACL，使用ACL的授权：一旦客户端经过身份认证，<br>
+broker就可根据ACL运行它们，以确定特定客户端是否有权写入或读取某些主题或任何Kafka资源；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_encryption_ssl"><a class="anchor" href="#_encryption_ssl"></a>2. Encryption SSL</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/Broker/Administration/KafkaSslEncryption.png" alt="KafkaSslEncryption">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Encryption解决中间人(MITM)攻击的问题，因当数据包被路由到Kafka集群时，<br>
+它会在网络中传播(travel)，并从A机器跳到B机器(hop from A to B)；</p>
+</li>
+<li>
+<p>若数据是PLAINTEXT(Kafka默认)，则这些路由器router中<br>
+的任何一个都可读取我们发送的数据的内容：</p>
+</li>
+<li>
+<p>现在可通过启用加密来设置SSL证书，数据现可加密并通过网络安全传输，<br>
+使用SSL，只有第一台和最后一台机器能解密发送的数据包；</p>
+</li>
+<li>
+<p>此类加密是有代价的：Kafka客户端和broker都利用CPU来加密和解密数据包，<br>
+SSL安全性以性能为代价，但很低，甚至可忽略不计low to negligible；</p>
+</li>
+<li>
+<p>若使用Jdk11+，那在SSL将获得显著的性能改进；</p>
+</li>
+<li>
+<p>注：encryption only in-flight，数据仍未加密的存储在broker磁盘上；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_authentication_ssl_sasl"><a class="anchor" href="#_authentication_ssl_sasl"></a>3. Authentication SSL SASL</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/Broker/Administration/KafkaAuthentication.png" alt="KafkaAuthentication">
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ssl_authentication"><a class="anchor" href="#_ssl_authentication"></a>3.1. SSL Authentication</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>SSL身份认证(双向身份认证)：即向客户颁发由证书颁发机构签署的证书，<br>
+这将允许broker验证(verify)客户的身份(identity)；</p>
+</li>
+<li>
+<p>issue certificate to client，sign by certificate authority，<br>
+allow broker to verify client identity；</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sasl_authentication"><a class="anchor" href="#_sasl_authentication"></a>3.2. SASL Authentication</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>SASL：Simple Authorization Service Layer，简单授权服务层，</p>
+</li>
+<li>
+<p>即将身份认证(authentication)机制与kafka protocol分离，<br>
+这在大数据系统很流行，如Hadoop利用Kerberos；</p>
+</li>
+<li>
+<p>SASL支持多种状态(shape)和形式(form)：SASL PLAINTEXT，<br>
+SASL SCRAM，SASL GSSAPI (Kerberos)，SASL OAUTHBEARER；</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>SASL PLAINTEXT：经典的用户名和密码组合；</p>
+</li>
+<li>
+<p>用户名和密码必须提前存储在broker，每次更改都需触发滚动重新启动<br>
+(trigger rolling restart)，很烦人(annoying)，不推荐此类安全措施；</p>
+</li>
+<li>
+<p>若使用SASL/PLAINTEXT，请确保还启用SSL encryption，<br>
+这样credential不会在网络上以PLAINTEXT形式发送；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>SASL SCRAM：用户名和密码 + 盐(salt)，更安全，</p>
+</li>
+<li>
+<p>用户名和密码存储在Zookeeper，Zookeeper被移除会存储在Kafka主题中；</p>
+</li>
+<li>
+<p>这允许在不重新启动broker情况下，扩展安全性；</p>
+</li>
+<li>
+<p>若使用SASL/SCRAM，请确保启用SSL encryption，<br>
+这样credential不会在网络上以PLAINTEXT形式发送；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>SASL GSSAPI (Kerberos)：基于Kerberos ticket机制，此为非常安全的认证机制；</p>
+</li>
+<li>
+<p>Microsoft Active Directory是Kerberos最常见的实现方式；</p>
+</li>
+<li>
+<p>SASL/GSSAPI是大型企业的绝佳选择，设置Kafka与Kerberos相对最困难，但值得；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>SASL OAUTHBEARER：允许利用Oauth2 Token进行身份认证，<br>
+目前据说因使用不安全的Json Web Token，还没准备好上生产；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_authorization_acl"><a class="anchor" href="#_authorization_acl"></a>4. Authorization ACL</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/Broker/Administration/KafkaAcl.png" alt="KafkaAcl">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>一旦Kafka客户端通过身份认证，Kafka就需能决定他们可做啥和不能做啥，<br>
+这是授权的作用，由ACL控制；</p>
+</li>
+<li>
+<p>ACL是我们所期望的：用户A能/不能从主机D对资源C执行操作B，<br>
+因新的AclAuthorizer，规则现在支持前缀prefix；</p>
+</li>
+<li>
+<p><a href="https://kafka.apache.org/documentation/#security_authz" class="bare">https://kafka.apache.org/documentation/#security_authz</a></p>
+</li>
+<li>
+<p>如A主题需仅从客户端或主机的子集写入，我们希望防止普通用户向这些主题写入任何内容，<br>
+从而防止任何数据损坏或反序列化错误，若有敏感数据，且需向监管机构(regulator)<br>
+证明prove只有某些应用或用户才能访问这些数据，那ACL非常适应；</p>
+</li>
+<li>
+<p><a href="https://kafka.apache.org/documentation/#security_authz_cli" target="_blank" rel="noopener">kafka-acls.sh Command</a></p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">./kafka-acls.sh --topic product-price --producer \
+	--bootstrap-server 192.168.0.123:9092 \
+	--add --allow-principal User:elf</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>不要将选项&#8212;&#8203;authorizer-properties zookeeper.connect=192.168.0.123:2181<br>
+与kafka-acls命令合用，因zookeeper正在被移除，现在broker直接支持处理admin Api命令；</p>
+</li>
+<li>
+<p>目前ACL存储在Zookeeper，即目前需保护Zookeeper的安全，并确保只有broker才被允许写入<br>
+Zookeepper(Zookeeper.set.acl=true)，否则任何用户都可进入并编辑ACL，从而破坏安全性；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+	</div>
+</main>
+</div>
+		<footer class="footer">
+	
+	
+	
+	<div class="footer-thanks">
+		Authored in AsciiDoc
+		<br /><br />
+		Produced by Antora and Asciidoctor
+  	</div>
+  
+	<div class="footer-legal" style="text-align:center">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br /><br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		Copyright © 2024 Elf
+		<br /><br />
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+	
+</footer><script id="site-script" src="../../../../../_/js/site.js" 
+	data-ui-root-path="../../../../../_"></script>
+
+<script src="../../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../../.." data-snippet-length="100" data-stylesheet="../../../../../_/css/search.css"></script>
+<script async src="../../../../../search-index.js"></script>
+
+
+<script async src="../../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
+</html>

@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> :: AsciiDoc</title>
+    <meta name="generator" content="Antora 3.1.7">
+
+<link rel="stylesheet" href="../../../../../_/css/site.css">
+
+<link rel="stylesheet" href="../../../../../_/css/vendor/asciidoc.css">
+
+<link rel="stylesheet" href="../../../../../_/css/vendor/extra.css">
+
+<link rel="stylesheet" href="../../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../../_/css/vendor/prism-1.29.0-coy.css">
+
+
+    <link rel="icon" href="../../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+  			
+  			<a class="navbar-item logo" target="_blank" href="">
+				<img src="../../../../../_/img/yin-yang-symbol.svg" width="100%" height="50">
+			</a>
+  			
+	            <div id="main" style="place-content: center;">
+	                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+		            </div>
+		        </section>
+    	</div>
+    	
+    	<div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Culture</div>
+          			<div class="navbar-dropdown is-right">
+            			
+			            <div class="navbar-item">Traditional Culture</div>
+			            
+			            <a class="navbar-item" target="_blank" href="../../../../../culture/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>Culture <small>传统文化</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Eco</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <a class="navbar-item" target="_blank" href="../../../../../multifariousness/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>Multifariousness <small>五花八门</small></span>
+			            </a>
+
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../../ai/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>Artificial Intelligence<small>人工智能</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../../msg/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>Messaging - Kafka <small>Kafka</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Experiment</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <div class="navbar-item">Quantum Computing</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>QC <small>量子计算...</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <div class="navbar-item">Harmony</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>CangJie <small>预览版内测...</small></span>
+			            </a>
+        			</div>
+    			</div>
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container" data-component="msg" data-version="v0.0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../../index.html">Message</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Kafka</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Broker</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Fundamental</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/KafkaEco.html">Kafka Eco</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/KafkaTopic.html">Kafka Topic</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/KafkaProducer.html">Kafka Producer</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/KafkaConsumer.html">Kafka Consumer</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/GroupOffset.html">Group Offset</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/KafkaBroker.html">Kafka Broker</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/TopicReplication.html">Topic Replication</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Fundamental/KafkaKRaft.html">KafkaK Raft</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Cli</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/TopicCli.html">Topic Cli</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/ProducerCli.html">Producer Cli</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/ConsumerCli.html">Consumer Cli</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/ConsumerInGroupCli.html">Group Cli</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/ConsumerGroupManagementCli.html">Group Management Cli</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/ConnectCli.html">Connect Cli</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Topic</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/ChangeTopicConfig.html">Change Topic Config</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/TopicInternal.html">Topic Internal</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/LogRetention.html">Log Retention</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/UncleanLeaderElection.html">Unclean Leader Election</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/LogCompaction.html">Log Compaction</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/ReplicationFactorPartitionCount.html">Partition Count Factor</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/SendLargeMessage.html">Send Large Message</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/TopicNamingConvention.html">Topic Naming Convention</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Producer</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/ProducerAck.html">Producer Ack</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/ProducerRetry.html">Producer Retry</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/ProducerIdempotent.html">Producer Idempotent</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/MessageCompression.html">Message Compression</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/ProducerBatching.html">Producer Batching</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/ProducerPartitioner.html">Producer Partitioner</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/ProducerRest.html">Producer Rest</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Consumer</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Consumer/DeliverySemantic.html">Delivery Semantic</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Consumer/PollInternalThreadBehavior.html">Thread Behavior</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Consumer/AutoOffsetResetBehavior.html">Auto Offset Reset Behavior</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Consumer/ReadClosestReplica.html">Read Closest Replica</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Consumer/IncrementalRebalanceStaticGroupMembership.html">Rebalance Membership</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Administration</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Administration/BrokerClient.html">Broker Client</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Administration/KafkaSecurity.html">Kafka Security</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Administration/MonitoringOperation.html">Monitoring Operation</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Administration/KafkaCluster.html">Kafka Cluster</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Administration/MultiClusterMirrorMaker.html">Multi Cluster MirrorMaker</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Administration/AdvertisedHost.html">Advertised Host</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Programming</span>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="4">
+    <a class="nav-link" href="KafkaProgrammingEntry.html">Kafka Entry</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="WikimediaKafkaOpensearch.html">Wiki 2 Search</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Message</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <div class="title"><a href="../../../../../ai/v0.0.1/index.html">AI</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../ai/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../../../culture/v0.0.1/index.html">Culture</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../culture/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <div class="title"><a href="../../../index.html">Message</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../../../multifariousness/v0.0.1/index.html">Multifariousness</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../multifariousness/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+	<div class="toolbar" role="navigation">
+	<button class="nav-toggle"></button>
+	
+		<a href="../../../../../multifariousness/v0.0.1/index.html" 
+			class="home-link">
+		</a>
+
+	<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../../index.html">Message</a></li>
+    <li>Kafka</li>
+    <li>Broker</li>
+    <li>Programming</li>
+    <li><a href="KafkaProgrammingEntry.html">Kafka Entry</a></li>
+  </ul>
+</nav>
+		</div>
+	
+	<div class="content">
+			<aside class="toc sidebar" 
+	data-title="Contents" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+			<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_dependency">1. Dependency</a></li>
+<li><a href="#_kafkaconst">2. KafkaConst</a></li>
+<li><a href="#_kafkautil">3. KafkaUtil</a></li>
+<li><a href="#_elfkafkaadmin">4. ElfKafkaAdmin</a></li>
+<li><a href="#_elfkafkaproducer">5. ElfKafkaProducer</a></li>
+<li><a href="#_elfkafkaconsumer">6. ElfKafkaConsumer</a></li>
+<li><a href="#_kafkademonstrator">7. KafkaDemonstrator</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_dependency"><a class="anchor" href="#_dependency"></a>1. Dependency</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
+    &lt;groupId&gt;org.apache.kafka&lt;/groupId&gt;
+    &lt;artifactId&gt;kafka-clients&lt;/artifactId&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+	&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+	&lt;artifactId&gt;spring-boot-starter-log4j2&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_kafkaconst"><a class="anchor" href="#_kafkaconst"></a>2. KafkaConst</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">public interface KafkaConst {
+
+	String TX_ID = "kafka-tx-id";
+	String TOPIC_NAME = "product-price";
+	String BOOTSTRAP_SERVER = "192.168.0.123:9092";
+
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_kafkautil"><a class="anchor" href="#_kafkautil"></a>3. KafkaUtil</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">import java.util.HashMap;
+import java.util.Map;
+
+import org.apache.kafka.clients.consumer.ConsumerConfig;
+import org.apache.kafka.clients.producer.ProducerConfig;
+import org.apache.kafka.common.serialization.StringDeserializer;
+import org.apache.kafka.common.serialization.StringSerializer;
+
+public final class KafkaUtil {
+
+	private KafkaUtil() {}
+
+	private static final String SERIALIZER_CLASS = StringSerializer.class.getName();
+	private static final String DESERIALIZER_CLASS = StringDeserializer.class.getName();
+
+	public static Map&lt;String,Object&gt; producerConfigMap(){
+		var producerConfigMap = new HashMap&lt;String,Object&gt;();
+		producerConfigMap.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG,KafkaConst.BOOTSTRAP_SERVER);
+		producerConfigMap.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG,SERIALIZER_CLASS);
+		producerConfigMap.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG,SERIALIZER_CLASS);
+
+		producerConfigMap.put(ProducerConfig.ACKS_CONFIG,"-1");
+		producerConfigMap.put(ProducerConfig.ENABLE_IDEMPOTENCE_CONFIG,true);
+		producerConfigMap.put(ProducerConfig.RETRIES_CONFIG,5);
+		producerConfigMap.put(ProducerConfig.BATCH_SIZE_CONFIG,5);
+		producerConfigMap.put(ProducerConfig.REQUEST_TIMEOUT_MS_CONFIG,3000);
+
+		//事务基于幂等性操作
+		producerConfigMap.put(ProducerConfig.TRANSACTIONAL_ID_CONFIG,KafkaConst.TX_ID);
+
+		return producerConfigMap;
+	}
+
+	public static Map&lt;String,Object&gt; consumerConfigMap(){
+		var consumerConfigMap = new HashMap&lt;String,Object&gt;();
+		consumerConfigMap.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,KafkaConst.BOOTSTRAP_SERVER);
+		consumerConfigMap.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG,DESERIALIZER_CLASS);
+		consumerConfigMap.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG,DESERIALIZER_CLASS);
+
+		//读取数据的位置：earliest：最早，latest：最晚
+		consumerConfigMap.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG,"earliest");
+		//消费者组
+		consumerConfigMap.put(ConsumerConfig.GROUP_ID_CONFIG,"elf");
+		//自动提交偏移量
+		consumerConfigMap.put(ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG,"true");
+		return consumerConfigMap;
+	}
+
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_elfkafkaadmin"><a class="anchor" href="#_elfkafkaadmin"></a>4. ElfKafkaAdmin</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.concurrent.ExecutionException;
+import org.apache.kafka.clients.admin.Admin;
+import org.apache.kafka.clients.admin.AdminClientConfig;
+import org.apache.kafka.clients.admin.CreateTopicsResult;
+import org.apache.kafka.clients.admin.NewTopic;
+
+public class ElfKafkaAdmin {
+
+	public static void createTopic(String topicName,Integer partitionCount,
+		Short replicationFactor)throws InterruptedException,ExecutionException{
+
+		Map&lt;String, Object&gt; configMap = new HashMap&lt;&gt;();
+        configMap.put(AdminClientConfig.BOOTSTRAP_SERVERS_CONFIG,KafkaConst.BOOTSTRAP_SERVER);
+
+        final Admin admin = Admin.create(configMap);
+    	var topic = new NewTopic(topicName,partitionCount,replicationFactor);
+
+        final CreateTopicsResult result = admin.createTopics(Arrays.asList(topic));
+        System.out.printf("topicId: %s",result.topicId(topicName).get());
+        admin.close();
+	}
+
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_elfkafkaproducer"><a class="anchor" href="#_elfkafkaproducer"></a>5. ElfKafkaProducer</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">import java.lang.invoke.MethodHandles;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.Future;
+import org.apache.kafka.clients.producer.KafkaProducer;
+import org.apache.kafka.clients.producer.ProducerRecord;
+import org.apache.kafka.clients.producer.RecordMetadata;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+public class ElfKafkaProducer {
+
+	private static final Logger logger = LoggerFactory
+		.getLogger(MethodHandles.lookup().lookupClass());
+
+	public static void produce(String topic,String key,String value)
+		throws InterruptedException, ExecutionException {
+		logger.error("produce msg start...");
+		var producer = new KafkaProducer&lt;String,String&gt;(KafkaUtil.producerConfigMap());
+
+		for (int i = 0; i &lt; 10; i++) {
+			var pr = new ProducerRecord&lt;String,String&gt;(topic,key + i,value + i);
+			final Future&lt;RecordMetadata&gt; frm = producer.send(pr);
+			var rm = frm.get();
+			System.out.printf("partition: %d,offset: %d,timestamp: %d \n",
+				rm.partition(),rm.offset(),rm.timestamp());
+		}
+		producer.flush();
+		producer.close();
+		logger.error("produce msg end...");
+	}
+
+	public static void produceTransactional(String topic,String key,String value)
+		throws InterruptedException, ExecutionException {
+
+		logger.error("produce msg start...");
+		var producer = new KafkaProducer&lt;String,String&gt;(KafkaUtil.producerConfigMap());
+		//初始化事务
+		producer.initTransactions();
+
+		try {
+			//开启事务
+			producer.beginTransaction();
+
+			for (int i = 0; i &lt; 10; i++) {
+				var pr = new ProducerRecord&lt;String,String&gt;(topic,key + i,value + i);
+				final Future&lt;RecordMetadata&gt; frm = producer.send(pr);
+				var rm = frm.get();
+				System.out.printf("partition: %d,offset: %d,timestamp: %d \n",
+					rm.partition(),rm.offset(),rm.timestamp());
+			}
+
+			//提交事务
+			producer.commitTransaction();
+		} catch (Exception e) {
+			e.printStackTrace();
+			//终止事务
+			producer.abortTransaction();
+		} finally {
+			producer.flush();
+			producer.close();
+			logger.error("produce msg end...");
+		}
+	}
+
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_elfkafkaconsumer"><a class="anchor" href="#_elfkafkaconsumer"></a>6. ElfKafkaConsumer</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">import java.time.Duration;
+import java.util.Collections;
+import org.apache.kafka.clients.consumer.KafkaConsumer;
+
+public class ElfKafkaConsumer {
+
+	public static void consume() {
+		@SuppressWarnings("resource")
+		var consumer = new KafkaConsumer&lt;&gt;(KafkaUtil.consumerConfigMap());
+		consumer.seekToBeginning(consumer.assignment());
+		//消费者订阅指定主题的数据
+		consumer.subscribe(Collections.singleton(KafkaConst.TOPIC_NAME));
+		while (true) {
+			//每100ms抓取一次数据
+			var recordList = consumer.poll(Duration.ofMillis(100));
+			recordList.forEach(r -&gt; {
+				String pattern = "topic:%s,partition:%d,offset:%d,key:%s,value:%s!\n";
+				System.out.printf(pattern,r.topic(),r.partition(),r.offset(),r.key(),r.value());
+			});
+		}
+	}
+
+	public static void consumeShutdownGraceful() {
+		@SuppressWarnings("resource")
+		var consumer = new KafkaConsumer&lt;String,String&gt;(KafkaUtil.consumerConfigMap());
+
+		final Thread mainThread = Thread.currentThread();
+		Runtime.getRuntime().addShutdownHook(new Thread() {
+			public void run() {
+				//detect shutdown,exit by calling consumer.wakeup()
+				consumer.wakeup();
+
+				try {
+					//join main thread to allow execution of code in main thread
+					mainThread.join();
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+			}
+		});
+
+		consumer.seekToBeginning(consumer.assignment());
+		//消费者订阅指定主题的数据
+		consumer.subscribe(Collections.singleton(KafkaConst.TOPIC_NAME));
+		while (true) {
+			//每100ms抓取一次数据
+			var recordList = consumer.poll(Duration.ofMillis(100));
+			recordList.forEach(r -&gt; {
+				String pattern = "topic:%s,partition:%d,offset:%d,key:%s,value:%s!\n";
+				System.out.printf(pattern,r.topic(),r.partition(),r.offset(),r.key(),r.value());
+			});
+		}
+	}
+
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_kafkademonstrator"><a class="anchor" href="#_kafkademonstrator"></a>7. KafkaDemonstrator</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">public class KafkaDemonstrator {
+
+	public static void main(String[] sa) throws InterruptedException, ExecutionException {
+		ElfKafkaAdmin.createTopic(KafkaConst.TOPIC_NAME,2,(short)1);
+
+		ElfKafkaProducer.produce(KafkaConst.TOPIC_NAME,"pal-","role-");
+
+		ElfKafkaConsumer.consume();
+	}
+
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</article>
+	</div>
+</main>
+</div>
+		<footer class="footer">
+	
+	
+	
+	<div class="footer-thanks">
+		Authored in AsciiDoc
+		<br /><br />
+		Produced by Antora and Asciidoctor
+  	</div>
+  
+	<div class="footer-legal" style="text-align:center">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br /><br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		Copyright © 2024 Elf
+		<br /><br />
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+	
+</footer><script id="site-script" src="../../../../../_/js/site.js" 
+	data-ui-root-path="../../../../../_"></script>
+
+<script src="../../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../../.." data-snippet-length="100" data-stylesheet="../../../../../_/css/search.css"></script>
+<script async src="../../../../../search-index.js"></script>
+
+
+<script async src="../../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
+</html>

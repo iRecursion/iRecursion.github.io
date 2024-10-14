@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> :: AsciiDoc</title>
+    <meta name="generator" content="Antora 3.1.7">
+
+<link rel="stylesheet" href="../../../../../_/css/site.css">
+
+<link rel="stylesheet" href="../../../../../_/css/vendor/asciidoc.css">
+
+<link rel="stylesheet" href="../../../../../_/css/vendor/extra.css">
+
+<link rel="stylesheet" href="../../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../../_/css/vendor/prism-1.29.0-coy.css">
+
+
+    <link rel="icon" href="../../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+  			
+  			<a class="navbar-item logo" target="_blank" href="">
+				<img src="../../../../../_/img/yin-yang-symbol.svg" width="100%" height="50">
+			</a>
+  			
+	            <div id="main" style="place-content: center;">
+	                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+		            </div>
+		        </section>
+    	</div>
+    	
+    	<div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Culture</div>
+          			<div class="navbar-dropdown is-right">
+            			
+			            <div class="navbar-item">Traditional Culture</div>
+			            
+			            <a class="navbar-item" target="_blank" href="../../../../../culture/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>Culture <small>传统文化</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Eco</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <a class="navbar-item" target="_blank" href="../../../../../multifariousness/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>Multifariousness <small>五花八门</small></span>
+			            </a>
+
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../../ai/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>Artificial Intelligence<small>人工智能</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../../msg/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>Messaging - Kafka <small>Kafka</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Experiment</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <div class="navbar-item">Quantum Computing</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>QC <small>量子计算...</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <div class="navbar-item">Harmony</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../../_/img/octicons-16.svg"></span>
+	              			<span>CangJie <small>预览版内测...</small></span>
+			            </a>
+        			</div>
+    			</div>
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container" data-component="msg" data-version="v0.0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../../index.html">Message</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Kafka</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Broker</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Fundamental</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="KafkaEco.html">Kafka Eco</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="KafkaTopic.html">Kafka Topic</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="KafkaProducer.html">Kafka Producer</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="KafkaConsumer.html">Kafka Consumer</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="GroupOffset.html">Group Offset</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="KafkaBroker.html">Kafka Broker</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="4">
+    <a class="nav-link" href="TopicReplication.html">Topic Replication</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="KafkaKRaft.html">KafkaK Raft</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Cli</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/TopicCli.html">Topic Cli</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/ProducerCli.html">Producer Cli</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/ConsumerCli.html">Consumer Cli</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/ConsumerInGroupCli.html">Group Cli</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/ConsumerGroupManagementCli.html">Group Management Cli</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Cli/ConnectCli.html">Connect Cli</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Topic</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/ChangeTopicConfig.html">Change Topic Config</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/TopicInternal.html">Topic Internal</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/LogRetention.html">Log Retention</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/UncleanLeaderElection.html">Unclean Leader Election</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/LogCompaction.html">Log Compaction</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/ReplicationFactorPartitionCount.html">Partition Count Factor</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/SendLargeMessage.html">Send Large Message</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Topic/TopicNamingConvention.html">Topic Naming Convention</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Producer</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/ProducerAck.html">Producer Ack</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/ProducerRetry.html">Producer Retry</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/ProducerIdempotent.html">Producer Idempotent</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/MessageCompression.html">Message Compression</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/ProducerBatching.html">Producer Batching</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/ProducerPartitioner.html">Producer Partitioner</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Producer/ProducerRest.html">Producer Rest</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Consumer</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Consumer/DeliverySemantic.html">Delivery Semantic</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Consumer/PollInternalThreadBehavior.html">Thread Behavior</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Consumer/AutoOffsetResetBehavior.html">Auto Offset Reset Behavior</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Consumer/ReadClosestReplica.html">Read Closest Replica</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Consumer/IncrementalRebalanceStaticGroupMembership.html">Rebalance Membership</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Administration</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Administration/BrokerClient.html">Broker Client</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Administration/KafkaSecurity.html">Kafka Security</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Administration/MonitoringOperation.html">Monitoring Operation</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Administration/KafkaCluster.html">Kafka Cluster</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Administration/MultiClusterMirrorMaker.html">Multi Cluster MirrorMaker</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Administration/AdvertisedHost.html">Advertised Host</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Programming</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Programming/KafkaProgrammingEntry.html">Kafka Entry</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../Programming/WikimediaKafkaOpensearch.html">Wiki 2 Search</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Message</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <div class="title"><a href="../../../../../ai/v0.0.1/index.html">AI</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../ai/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../../../culture/v0.0.1/index.html">Culture</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../culture/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <div class="title"><a href="../../../index.html">Message</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../../../multifariousness/v0.0.1/index.html">Multifariousness</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../multifariousness/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+	<div class="toolbar" role="navigation">
+	<button class="nav-toggle"></button>
+	
+		<a href="../../../../../multifariousness/v0.0.1/index.html" 
+			class="home-link">
+		</a>
+
+	<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../../index.html">Message</a></li>
+    <li>Kafka</li>
+    <li>Broker</li>
+    <li>Fundamental</li>
+    <li><a href="TopicReplication.html">Topic Replication</a></li>
+  </ul>
+</nav>
+		</div>
+	
+	<div class="content">
+			<aside class="toc sidebar" 
+	data-title="Contents" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+			<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_topic_replication_factor">1. Topic Replication Factor</a></li>
+<li><a href="#_partition_leader_and_replica">2. Partition Leader and Replica</a></li>
+<li><a href="#_isr_in_sync_replica">3. ISR In Sync Replica</a></li>
+<li><a href="#_producer_ack_setting">4. Producer Ack Setting</a>
+<ul class="sectlevel2">
+<li><a href="#_acks0">4.1. acks=0</a></li>
+<li><a href="#_acks1">4.2. acks=1</a></li>
+<li><a href="#_acks_all">4.3. acks = all</a></li>
+</ul>
+</li>
+<li><a href="#_topic_durability_availability">5. Topic Durability Availability</a></li>
+<li><a href="#_consumer_replica_fetching">6. Consumer Replica Fetching</a></li>
+<li><a href="#_preferr_leader">7. Preferr Leader</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_topic_replication_factor"><a class="anchor" href="#_topic_replication_factor"></a>1. Topic Replication Factor</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/Broker/Replication/TopicReplication.png" alt="TopicReplication">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>数据复制(Data Replication)通过向多个broker写入<br>
+相同的数据来帮助防止数据丢失(prevent data loss)</p>
+</li>
+<li>
+<p>复制因子是主题设置，在创建主题时指定，<br>
+主题的复制因子(replication factor)应该大于1，通常在2和3之间；</p>
+</li>
+<li>
+<p>复制因子为1：没复制，用于开发目的，测试或生产时应避免使用；</p>
+</li>
+<li>
+<p>3是常用的复制因子为，在broker loss和replication overhead间提供适当的平衡；</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/Broker/Replication/TopicReplicationSuccess.png" alt="TopicReplicationSuccess">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>这样某broker发生故障(down)，另一个代理可提供数据(serve data)；</p>
+</li>
+<li>
+<p>如具有2个分区，且复制因子为2的主题A；</p>
+</li>
+<li>
+<p>我们失去(lose) broker 102，结果：broker101和103仍然可提供数据；</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/Broker/Replication/TopicReplicationFailure.png" alt="TopicReplicationFailure">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_partition_leader_and_replica"><a class="anchor" href="#_partition_leader_and_replica"></a>2. Partition Leader and Replica</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>对于给定的主题分区，集群指定一个Kafka broker负责向客户端<br>
+发送和接收数据，该broker被称为该主题分区的leader broker；</p>
+</li>
+<li>
+<p>存储该分区(storing)的复制数据(replicated data)的任何其它<br>
+broker都称为副本,故每个分区都有一个leader和多个副本replica；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_isr_in_sync_replica"><a class="anchor" href="#_isr_in_sync_replica"></a>3. ISR In Sync Replica</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>同步副本是与partition的leader broker保持同步的副本，<br>
+任何与leader不同的(not up to date)副本都是不同步的(out of sync)；</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/Broker/Replication/InSyncReplica.png" alt="InSyncReplica">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Broker 101作为分区0的leader，Broker 102作为分区1的leader，<br>
+Broker 102 是分区0的Replica，Broker 103是分区1的Replica，<br>
+若leader broker发生fail，其中一个Replica通过选举当选为新的分区leader</p>
+</li>
+<li>
+<p>在任何时候，只有一个broker可成为给定分区的领导者；</p>
+</li>
+<li>
+<p>生产者智能想分区领导者发送数据，其它broker将复制(replicate)数据；</p>
+</li>
+<li>
+<p>故每个分区有一个领导者和多个ISR(同步副本，in-sync replica)；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_producer_ack_setting"><a class="anchor" href="#_producer_ack_setting"></a>4. Producer Ack Setting</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>生产者仅将数据写入分区的当前leader broker；</p>
+</li>
+<li>
+<p>生产者还必须指定acknowledgment ack level，<br>
+以指定消息是否必须写入最少数量的replica才能被视为成功写入；</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-right valign-top">Kafka Version</th>
+<th class="tableblock halign-left valign-top">Ack Default Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Kafka &lt; v3.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">acks=1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Kafka &gt;= v3.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">acks=all</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>生产者可选择接受数据写入的确认；<br>
+choose to receive acknowledgment of data write；</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-right valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Memo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">acks=0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">生产者不会等待确认(可能数据丢失)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">acks=1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">生产者将等待领导者确认(有限的数据丢失)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">acks=all</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Leader + Replica确认(无数据丢失)</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect2">
+<h3 id="_acks0"><a class="anchor" href="#_acks0"></a>4.1. acks=0</h3>
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/Broker/Producer/Ack0.png" alt="Ack0">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>acks=0，生产者在消息发送时就认为消息"写入成功"，而根本不等待broker接受它；</p>
+</li>
+<li>
+<p>若broker offline或发生异常，我们将不知道，且会丢失数据，<br>
+这对可能丢失消息(potentially lose msg)的数据很有用，<br>
+如指标收集，并产生最高的吞吐量设置，因network overhead最小化；</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_acks1"><a class="anchor" href="#_acks1"></a>4.2. acks=1</h3>
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/Broker/Producer/Ack1.png" alt="Ack1">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>acks=1，当消息仅由leader acknowledge时(确认)，<br>
+生产者认为消息"写入成功"；</p>
+</li>
+<li>
+<p>请求领导者响应(request leader response)，<br>
+但复制replication不能保证，因发生在后台；</p>
+</li>
+<li>
+<p>若没收到确认ack，生产者可重试该请求；</p>
+</li>
+<li>
+<p>若leader broker意外离线offline unexpectedly，<br>
+但副本尚未复制数据，我们就会丢失数据；</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_acks_all"><a class="anchor" href="#_acks_all"></a>4.3. acks = all</h3>
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/Broker/Producer/AckAll.png" alt="AckAll">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>acks=all，当消息被所有同步副本(ISR)接受时，生产者认为消息"写入成功"；</p>
+</li>
+<li>
+<p>分区的主副本(lead replica)会检查check是否有足够的同步副本<br>
+(in-sync replica)来安全写入消息(safely writing msg)<br>
+(由broker setting的min.insync.replicas控制)；</p>
+</li>
+<li>
+<p>该请求将存储在缓冲区中，直到领导者观察到(leader observe)follower replica<br>
+已复制该消息，此时成功的确认(acknowledgement)将发送回客户端；</p>
+</li>
+<li>
+<p>min.insync.replicas可在主题和broker-level配置，当数据写入<br>
+所有同步副本(min.insync.replicas)时，数据被视为已提交(commit)；</p>
+</li>
+<li>
+<p>值2意味至少2个ISR broker代理(含leader)必须响应他们拥有的数据；</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/Broker/Producer/TopicReplicationIsrMsgSafety.png" alt="TopicReplicationIsrMsgSafety">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_topic_durability_availability"><a class="anchor" href="#_topic_durability_availability"></a>5. Topic Durability Availability</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>通常，对N的复制因子，主题数据的持久性可承受(withstand)可永久丢失最多<br>
+(permanently lose up to)(N - 1)个broker，但仍然可恢复数据；</p>
+</li>
+<li>
+<p>对可用性，相对复制，此处采用三个主题复制因子说明：</p>
+</li>
+<li>
+<p>Read读取：只要一个分区已启动并被视为ISR，该主题将可用于读取；</p>
+</li>
+<li>
+<p>Write写入：A：当acks=0 和 acks=1，<br>
+只要一个分区已启动并被视为ISR，该主题就可用于写入；</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Replica</th>
+<th class="tableblock halign-left valign-top">Memo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">B：acks=all</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">min.insync.replicas=1(默认)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">主题必须至少有一个分区作为ISR(含reader)，故可容忍2个broker down</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">min.insync.replicas=2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">主题必须至少有2个ISR启动，故最多可容忍1个broker down关闭<br>
+ (在复制因子默认3的情况下)，且保证每次写入数据时，数据至少会被写入两次；</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">min.insync.replicas=3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">对相应的复制因子3来说，没太多意义，不能容忍任何broker宕机down</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>总之当acks=all带有replication.factor=N和<br>
+min.insync.replicates=M时，<br>
+可容忍(N-M)个broker出于主题可用性的目的而宕机；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_consumer_replica_fetching"><a class="anchor" href="#_consumer_replica_fetching"></a>6. Consumer Replica Fetching</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>领导者的默认生产者和消费者行为：producer只能向分区的Leader Broker写入数据；<br>
+Consumer将从分区引导器(partition leader broker)中读取分区信息；</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/Broker/Replication/DefaultFetching.png" alt="DefaultFetching">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>但从Kafka 2.4后，可将消费者配置为从同步副本(in-sync replica)<br>
+中读取(通常是最接近的 usually closest replica)；</p>
+</li>
+<li>
+<p>从最接近的同步副本(closest ISR)读取数据可提高请求延迟(improve request latency)，<br>
+还可降低网络成本，因为在大多数云环境中，跨数据中心的网络请求会产生费用；</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/Broker/Replication/IsrFetching.png" alt="IsrFetching">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_preferr_leader"><a class="anchor" href="#_preferr_leader"></a>7. Preferr Leader</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>preferr leader是在主题创建时为分区指定的leader broker，而非replica；</p>
+</li>
+<li>
+<p>Leader Election：主题创建时决定那个broker时领导的过程；<br>
+称为首选领导者选举(preferred leader election)；</p>
+</li>
+<li>
+<p>当preferr leader宕机，作为ISR(同步复制副本)的任何分区都有资格称为新的leader，<br>
+但不是preferr leader，在恢复preferr leader broker并使其分区数据恢复同步后，<br>
+preferr leader将重新获得该分区的领导权(regain leadership)；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+	</div>
+</main>
+</div>
+		<footer class="footer">
+	
+	
+	
+	<div class="footer-thanks">
+		Authored in AsciiDoc
+		<br /><br />
+		Produced by Antora and Asciidoctor
+  	</div>
+  
+	<div class="footer-legal" style="text-align:center">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br /><br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		Copyright © 2024 Elf
+		<br /><br />
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+	
+</footer><script id="site-script" src="../../../../../_/js/site.js" 
+	data-ui-root-path="../../../../../_"></script>
+
+<script src="../../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../../.." data-snippet-length="100" data-stylesheet="../../../../../_/css/search.css"></script>
+<script async src="../../../../../search-index.js"></script>
+
+
+<script async src="../../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
+</html>
