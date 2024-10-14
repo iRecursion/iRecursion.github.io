@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> :: AsciiDoc</title>
+    <meta name="generator" content="Antora 3.1.7">
+
+<link rel="stylesheet" href="../../../../_/css/site.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/asciidoc.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
+
+
+    <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+  			
+  			<a class="navbar-item logo" target="_blank" href="">
+				<img src="../../../../_/img/yin-yang-symbol.svg" width="100%" height="50">
+			</a>
+  			
+	            <div id="main" style="place-content: center;">
+	                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+		            </div>
+		        </section>
+    	</div>
+    	
+    	<div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Culture</div>
+          			<div class="navbar-dropdown is-right">
+            			
+			            <div class="navbar-item">Traditional Culture</div>
+			            
+			            <a class="navbar-item" target="_blank" href="../../../../culture/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Culture <small>传统文化</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Eco</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <a class="navbar-item" target="_blank" href="../../../../multifariousness/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Multifariousness <small>五花八门</small></span>
+			            </a>
+
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../ai/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Artificial Intelligence<small>人工智能</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../msg/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Messaging - Kafka <small>Kafka</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Experiment</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <div class="navbar-item">Quantum Computing</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>QC <small>量子计算...</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <div class="navbar-item">Harmony</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>CangJie <small>预览版内测...</small></span>
+			            </a>
+        			</div>
+    			</div>
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container" data-component="culture" data-version="v0.0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">Culture</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Culture</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">道德经</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../DaoDeJing/Ddj0110.html">道德经 01 ~ 10</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../DaoDeJing/Ddj1120.html">道德经 11 ~ 20</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../DaoDeJing/Ddj2130.html">道德经 21 ~ 30</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../DaoDeJing/Ddj3140.html">道德经 31 ~ 40</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../DaoDeJing/Ddj4150.html">道德经 41 ~ 50</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../DaoDeJing/Ddj5160.html">道德经 51 ~ 60</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../DaoDeJing/Ddj6170.html">道德经 61 ~ 70</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../DaoDeJing/Ddj7181.html">道德经 71 ~ 81</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../DaoDeJing/DdjBoShu.html">德道经 帛书校对</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">论语</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../LunYu/01XueEr.html">01 学而篇</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../LunYu/02WeiZheng.html">02 为政篇</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../LunYu/03BaYi.html">03 八佾篇</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../LunYu/04LiRen.html">04 里仁篇</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../LunYu/05GongYeChang.html">05 公冶长篇</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../LunYu/06YongYe.html">06 雍也篇</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../LunYu/07ShuEr.html">07 述而篇</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../LunYu/08TaiBo.html">08 泰伯篇</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../LunYu/09ZiHan.html">09 子罕篇</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../LunYu/10XiangDang.html">10 乡党篇</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../LunYu/11XianJin.html">11 先进篇</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../LunYu/12YanYuan.html">12 颜渊篇</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../LunYu/13ZiLu.html">13 子路篇</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../LunYu/14XianWen.html">14 宪问篇</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../LunYu/15WeiLingGong.html">15 卫灵公篇</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../LunYu/16JiShi.html">16 季氏篇</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../LunYu/17YangHuo.html">17 阳货篇</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../LunYu/18WeiZi.html">18 微子篇</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../LunYu/19ZiZhang.html">19 子张篇</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../LunYu/20YaoYue.html">20 尧曰篇</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">周易</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ZhouYiIntro.html">周易 概述</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ZhouYi0108.html">周易 01 ~ 08</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ZhouYi0916.html">周易 09 ~ 16</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ZhouYi1724.html">周易 17 ~ 24</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ZhouYi2532.html">周易 25 ~ 32</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="ZhouYi3340.html">周易 33 ~ 40</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ZhouYi4148.html">周易 41 ~ 48</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ZhouYi4956.html">周易 49 ~ 56</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ZhouYi5764.html">周易 57 ~ 64</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">推背图</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../TuiBeiTu/TuiBeiTu0110.html">推背图 01 ~ 10</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../TuiBeiTu/TuiBeiTu1120.html">推背图 11 ~ 20</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../TuiBeiTu/TuiBeiTu2130.html">推背图 21 ~ 30</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../TuiBeiTu/TuiBeiTu3140.html">推背图 31 ~ 40</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../TuiBeiTu/TuiBeiTu4150.html">推背图 41 ~ 50</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../TuiBeiTu/TuiBeiTu5160.html">推背图 51 ~ 60</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">地母经</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../DiMuJing/Dmj0110.html">地母经 01 ~ 10 甲子 癸酉</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../DiMuJing/Dmj1120.html">地母经 11 ~ 20 甲戌 癸未</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../DiMuJing/Dmj2130.html">地母经 21 ~ 30 甲申 癸巳</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../DiMuJing/Dmj3140.html">地母经 31 ~ 40 甲午 癸卯</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../DiMuJing/Dmj4150.html">地母经 41 ~ 50 甲辰 癸丑</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../DiMuJing/Dmj5160.html">地母经 51 ~ 60 甲寅 癸亥</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">混合(临时)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Divination/ChenGu.html">称骨</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Divination/SanShiShu.html">三世书</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Divination/ChinesesZodiac.html">十二生肖</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Divination/SanShiLiuJi.html">三十六计</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Divination/LiuZuTanJing.html">六祖坛经</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Divination/YinFuJing.html">黄帝阴符经</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Divination/EnneagramPersonalityType.html">9型人格类型</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Divination/SixteenPersonalityType.html">16型人格类型</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Culture</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <div class="title"><a href="../../../../ai/v0.0.1/index.html">AI</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../ai/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">Culture</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../../multifariousness/v0.0.1/index.html">Multifariousness</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../multifariousness/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+	<div class="toolbar" role="navigation">
+	<button class="nav-toggle"></button>
+	
+		<a href="../../../../multifariousness/v0.0.1/index.html" 
+			class="home-link">
+		</a>
+
+	<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li>Culture</li>
+    <li>周易</li>
+    <li><a href="ZhouYi3340.html">周易 33 ~ 40</a></li>
+  </ul>
+</nav>
+		</div>
+	
+	<div class="content">
+			<aside class="toc sidebar" 
+	data-title="Contents" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+			<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_33遁dùn卦">1. 33：遁(dùn)卦</a></li>
+<li><a href="#_34大壮dà_zhuàng卦">2. 34：大壮(dà zhuàng)卦</a></li>
+<li><a href="#_35晋jìn卦">3. 35：晋(jìn)卦</a></li>
+<li><a href="#_36明夷míng_yí卦">4. 36：明夷(míng yí)卦</a></li>
+<li><a href="#_37家人jiā_rén卦">5. 37：家人(jiā rén)卦</a></li>
+<li><a href="#_38睽kuí卦">6. 38：睽(kuí)卦</a></li>
+<li><a href="#_39蹇jiǎn卦">7. 39：蹇(jiǎn)卦</a></li>
+<li><a href="#_40解xiè卦">8. 40：解(xiè)卦</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_33遁dùn卦"><a class="anchor" href="#_33遁dùn卦"></a>1. 33：遁(dùn)卦</h2>
+<div class="sectionbody">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>天山遯 乾上艮下</p>
+</div>
+<div class="paragraph">
+<p>《遯》：亨。小利贞。</p>
+</div>
+<div class="paragraph">
+<p>初六，遯尾，厉，勿用有攸往。</p>
+</div>
+<div class="paragraph">
+<p>六二，执之用黄牛之革，莫之胜说。</p>
+</div>
+<div class="paragraph">
+<p>九三，系遯，有疾厉，畜臣妾吉。</p>
+</div>
+<div class="paragraph">
+<p>九四，好遯，君子吉，小人否。</p>
+</div>
+<div class="paragraph">
+<p>九五，嘉遯，贞吉。</p>
+</div>
+<div class="paragraph">
+<p>上九，肥遯，无不利。</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_34大壮dà_zhuàng卦"><a class="anchor" href="#_34大壮dà_zhuàng卦"></a>2. 34：大壮(dà zhuàng)卦</h2>
+<div class="sectionbody">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>雷天大壮 震上乾下</p>
+</div>
+<div class="paragraph">
+<p>《大壮》：利贞。</p>
+</div>
+<div class="paragraph">
+<p>初九，壮于趾，征凶，有孚。</p>
+</div>
+<div class="paragraph">
+<p>九二，贞吉。</p>
+</div>
+<div class="paragraph">
+<p>九三，小人用壮，君子用罔，贞厉。羝羊触藩，羸其角。</p>
+</div>
+<div class="paragraph">
+<p>九四，贞吉，悔亡。藩决不羸，壮于大舆之輹。</p>
+</div>
+<div class="paragraph">
+<p>六五，丧羊于易，无悔。</p>
+</div>
+<div class="paragraph">
+<p>上六，羝羊触藩，不能退，不能遂，无攸利，艰则吉。</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_35晋jìn卦"><a class="anchor" href="#_35晋jìn卦"></a>3. 35：晋(jìn)卦</h2>
+<div class="sectionbody">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>火地晋 离上坤下</p>
+</div>
+<div class="paragraph">
+<p>《晋》：康侯用锡马蕃庶，昼日三接。</p>
+</div>
+<div class="paragraph">
+<p>初六，晋如摧如，贞吉。罔孚，裕无咎。</p>
+</div>
+<div class="paragraph">
+<p>六二，晋如，愁如，贞吉。受兹介福于，其王母。</p>
+</div>
+<div class="paragraph">
+<p>六三，众允，悔亡。</p>
+</div>
+<div class="paragraph">
+<p>九四，晋如鼫鼠，贞厉。</p>
+</div>
+<div class="paragraph">
+<p>六五，悔亡，失得，勿恤。往吉，无不利。</p>
+</div>
+<div class="paragraph">
+<p>上九，晋其角，维用伐邑，厉吉，无咎，贞吝。</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_36明夷míng_yí卦"><a class="anchor" href="#_36明夷míng_yí卦"></a>4. 36：明夷(míng yí)卦</h2>
+<div class="sectionbody">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>离下坤上 明夷 利艰贞。</p>
+</div>
+<div class="paragraph">
+<p>初九："明夷于飞，垂其翼。君子于行，三日不食。"有攸往， 主人有言。</p>
+</div>
+<div class="paragraph">
+<p>六二：明夷，夷于左股，用拯马壮。吉。</p>
+</div>
+<div class="paragraph">
+<p>九三：明夷于南狩，得其大首。不可疾贞。</p>
+</div>
+<div class="paragraph">
+<p>六四：入于左腹，获明夷之心，于出门庭。</p>
+</div>
+<div class="paragraph">
+<p>六五：箕子之明夷，利贞。</p>
+</div>
+<div class="paragraph">
+<p>上六：不明，晦。初登于天，后入于地。</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_37家人jiā_rén卦"><a class="anchor" href="#_37家人jiā_rén卦"></a>5. 37：家人(jiā rén)卦</h2>
+<div class="sectionbody">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>风火家人 巽上离下</p>
+</div>
+<div class="paragraph">
+<p>《家人》：利女贞。</p>
+</div>
+<div class="paragraph">
+<p>初九，闲有家，悔亡。</p>
+</div>
+<div class="paragraph">
+<p>六二，无攸遂，在中馈，贞吉。</p>
+</div>
+<div class="paragraph">
+<p>九三，家人嗃□，悔厉吉；妇子嘻嘻，终吝。</p>
+</div>
+<div class="paragraph">
+<p>六四，富家，大吉。</p>
+</div>
+<div class="paragraph">
+<p>九五，王假有家，勿恤，吉。</p>
+</div>
+<div class="paragraph">
+<p>上九，有孚威如，终吉。</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_38睽kuí卦"><a class="anchor" href="#_38睽kuí卦"></a>6. 38：睽(kuí)卦</h2>
+<div class="sectionbody">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>火泽睽 离上兑下</p>
+</div>
+<div class="paragraph">
+<p>《睽》：小事吉。</p>
+</div>
+<div class="paragraph">
+<p>初九，悔亡。丧马勿逐自复。见恶人无咎。</p>
+</div>
+<div class="paragraph">
+<p>九二，遇主于巷，无咎。</p>
+</div>
+<div class="paragraph">
+<p>六三，见舆曳，其牛掣，其人天且劓，无初有终。</p>
+</div>
+<div class="paragraph">
+<p>九四，睽孤遇元夫，交孚，厉，无咎。</p>
+</div>
+<div class="paragraph">
+<p>六五，悔亡。厥宗噬肤，往何咎？斋</p>
+</div>
+<div class="paragraph">
+<p>上九，睽孤见豕负涂，载鬼一车，先张之弧，后说之弧，匪寇，婚媾。往遇雨则吉。</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_39蹇jiǎn卦"><a class="anchor" href="#_39蹇jiǎn卦"></a>7. 39：蹇(jiǎn)卦</h2>
+<div class="sectionbody">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>水山蹇 坎上艮下</p>
+</div>
+<div class="paragraph">
+<p>《蹇》：利西南，不利东北。利见大人。贞吉。</p>
+</div>
+<div class="paragraph">
+<p>初六，往蹇来誉。</p>
+</div>
+<div class="paragraph">
+<p>六二，王臣蹇蹇，匪躬之故。</p>
+</div>
+<div class="paragraph">
+<p>九三，往蹇来反。</p>
+</div>
+<div class="paragraph">
+<p>六四，往蹇来连。</p>
+</div>
+<div class="paragraph">
+<p>九五，大蹇朋来。</p>
+</div>
+<div class="paragraph">
+<p>上六，往蹇来硕，吉，利见大人。</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_40解xiè卦"><a class="anchor" href="#_40解xiè卦"></a>8. 40：解(xiè)卦</h2>
+<div class="sectionbody">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>雷水解 震上坎下</p>
+</div>
+<div class="paragraph">
+<p>《解》：利西南。无所往，其来复吉。有攸往，夙吉。</p>
+</div>
+<div class="paragraph">
+<p>初六，无咎。</p>
+</div>
+<div class="paragraph">
+<p>九二，田获三狐，得黄矢，贞吉。</p>
+</div>
+<div class="paragraph">
+<p>六三，负且乘，致寇至，贞吝。</p>
+</div>
+<div class="paragraph">
+<p>九四，解而拇，朋至斯孚。</p>
+</div>
+<div class="paragraph">
+<p>六五，君子维有解，吉，有孚于小人。</p>
+</div>
+<div class="paragraph">
+<p>上六，公用射隼于高墉之上，获之，无不利。</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</article>
+	</div>
+</main>
+</div>
+		<footer class="footer">
+	
+	
+	
+	<div class="footer-thanks">
+		Authored in AsciiDoc
+		<br /><br />
+		Produced by Antora and Asciidoctor
+  	</div>
+  
+	<div class="footer-legal" style="text-align:center">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br /><br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		Copyright © 2024 Elf
+		<br /><br />
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+	
+</footer><script id="site-script" src="../../../../_/js/site.js" 
+	data-ui-root-path="../../../../_"></script>
+
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
+</html>
