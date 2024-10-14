@@ -1,0 +1,173 @@
+
+/* 
+	Search Bar Style
+	margin-left: auto;
+  	margin-right: auto;
+*/
+#main {
+    width: 255px;
+    height: 60px;
+    background: #f2f2f2;
+    padding: 6px 10px;
+    border: 1px solid #b5b5b5;
+    border-radius: 5px;
+	margin-left: auto;
+  	margin-right: auto;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.8), inset 0 2px 2px rgba(255, 255, 255, 1), 0 5px 0 #ccc, 0 6px 0 #989898, 0 13px 0 #dfdede;
+    -moz-box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.8), inset 0 2px 2px rgba(255, 255, 255, 1), 0 5px 0 #ccc, 0 6px 0 #989898, 0 13px 0 #dfdede;
+    -webkit-box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.8), inset 0 2px 2px rgba(255, 255, 255, 1), 0 5px 0 #ccc, 0 6px 0 #989898, 0 13px 0 #dfdede;
+}
+ 
+    /**/
+input[type="text"] {
+	float:right;
+    width: 230px;
+    padding: 15px 5px 5px 5px;
+    margin-top: 5px;
+    margin-left: 3px;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: inset 0 5px 0 #ccc, inset 0 6px 0 #989898, inset 0 13px 0 #dfdede;
+    -moz-box-shadow: inset 0 5px 0 #ccc, inset 0 6px 0 #989898, inset 0 13px 0 #dfdede;
+    -webkit-box-shadow: inset 0 5px 0 #ccc, inset 0 6px 0 #989898, inset 0 13px 0 #dfdede;
+}
+
+/* Whole Site Text 3D Font Style*/
+/*
+body,#search-input{
+   text-shadow: 0px 1px 1px #ddd,
+                     0px 2px 1px #d6d6d6,
+                     0px 3px 1px #ccc,
+                     0px 4px 1px #c5c5c5,
+                     0px 5px 1px #c1c1c1,
+                     0px 6px 1px #bbb,
+                     0px 7px 1px #777,
+                     
+                     0px 8px 3px rgba(100, 100, 100, 0.4),
+                     0px 9px 5px rgba(100, 100, 100, 0.1)
+                     
+                     0px 8px 3px rgba(100, 100, 100, 0.4),
+                     0px 9px 5px rgba(100, 100, 100, 0.1),
+                     
+                     0px 10px 7px rgba(100, 100, 100, 0.15),
+                     0px 11px 9px rgba(100, 100, 100, 0.2),
+                     0px 12px 11px rgba(100, 100, 100, 0.25),
+                     0px 13px 15px rgba(100, 100, 100, 0.3);
+     transition:all .8s ease-in-out;  
+      -o-transition:all .8s ease-in-out;  
+      -moz-transition:all .8s ease-in-out;  
+      -webkit-transition:all .8s ease-in-out;
+}
+*/
+
+
+.article{
+	background: #fafafa;
+}
+
+:root {
+  	--navbar-background: #fafafa;
+  	--navbar-font-color: black;
+  	--heading-font-color: fuchsia;
+	--custom-font-size: 14px;
+}
+
+.is-current-page>.nav-link,
+.is-current-page>.nav-text {
+  	-webkit-text-stroke-width: .02em;
+ 	background: #80ea6e;
+}
+
+.navbar-brand .navbar-item.title {
+  	color: black;
+}
+
+@media screen and (min-width:1024px) {
+  	.navbar-end .navbar-item.has-dropdown:hover .navbar-link,
+  	.navbar-end .navbar-item.has-dropdown:hover>a.navbar-item,
+  	.navbar-end .navbar-link:hover,
+  	.navbar-end>a.navbar-item:hover {
+    	background: black;
+  	}
+}
+
+footer.footer {
+  	background-color: #fafafa;
+  	color: black;
+}
+
+.footer a:hover {
+  	color: #80ea6e;
+}
+
+.red{
+	color: red;
+	font-size: var(--custom-font-size);
+}
+
+.blue{
+	color: blue;
+	font-size: var(--custom-font-size);
+}
+
+.fuchsia{
+	color: fuchsia;
+	font-size: var(--custom-font-size);
+}
+
+.lime{
+	color: lime;
+	font-size: var(--custom-font-size);
+}
+.aqua{
+	color: aqua;
+	font-size: var(--custom-font-size);
+}
+
+.gray{
+	color: gray;
+	font-size: var(--custom-font-size);
+}
+.green{
+	color: green;
+	font-size: var(--custom-font-size);
+}
+.maroon{
+	color: maroon;
+	font-size: var(--custom-font-size);
+}
+.navy{
+	color: navy;
+	font-size: var(--custom-font-size);
+}
+.olive{
+	color: olive;
+	font-size: var(--custom-font-size);
+}
+.purple{
+	color: purple;
+	font-size: var(--custom-font-size);
+}
+
+.silver{
+	color: silver;
+	font-size: var(--custom-font-size);
+}
+.teal{
+	color: teal;
+	font-weight: bold;
+	font-size: var(--custom-font-size);
+}
+.yellow{
+	color: yellow;
+	font-size: var(--custom-font-size);
+}
+
+.spring{
+	color: #80ea6e;
+	font-size: var(--custom-font-size);
+}

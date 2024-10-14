@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> :: AsciiDoc</title>
+    <meta name="generator" content="Antora 3.1.7">
+
+<link rel="stylesheet" href="../../../../_/css/site.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/asciidoc.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
+
+
+    <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+  			
+  			<a class="navbar-item logo" target="_blank" href="">
+				<img src="../../../../_/img/yin-yang-symbol.svg" width="100%" height="50">
+			</a>
+  			
+	            <div id="main" style="place-content: center;">
+	                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+		            </div>
+		        </section>
+    	</div>
+    	
+    	<div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Culture</div>
+          			<div class="navbar-dropdown is-right">
+            			
+			            <div class="navbar-item">Traditional Culture</div>
+			            
+			            <a class="navbar-item" target="_blank" href="../../../../culture/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Culture <small>传统文化</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Eco</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <a class="navbar-item" target="_blank" href="../../../../multifariousness/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Multifariousness <small>五花八门</small></span>
+			            </a>
+
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../ai/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Artificial Intelligence<small>人工智能</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../msg/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Messaging - Kafka <small>Kafka</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Experiment</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <div class="navbar-item">Quantum Computing</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>QC <small>量子计算...</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <div class="navbar-item">Harmony</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>CangJie <small>预览版内测...</small></span>
+			            </a>
+        			</div>
+    			</div>
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container" data-component="multifariousness" data-version="v0.0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">Multifariousness</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Security</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Security/KeycloakInstallation.html">Keycloak Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Security/KeycloakCase.html">Keycloak Case</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Antora</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AsciidoctorInstallation.html">Asciidoctor Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AsciidoctorConfigurer.html">Asciidoctor Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraInstallation.html">Antora Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraConfigurer.html">Antora Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraHighlight.html">Antora Highlight</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/Markdown.html">Markdown</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/NodeInstallation.html">Node Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Doxygen</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxygenInstallation.html">Doxygen Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxygenEntry.html">Doxygen Entry</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DocumentingCode.html">Documenting Code</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxygenUsage.html">Doxygen Usage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxywizardUsage.html">Doxywizard Usage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxyfileProperty.html">Doxyfile Property</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/CustomCommand.html">Custom Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/SpecialCommand.html">Special Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/HtmlCommand.html">Html Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/XmlCommand.html">Xml Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/EmojiSupport.html">Emoji Support</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Lang</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustPrerequisite.html">Rust Prerequisite</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustGun.html">Rust Gun</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustConfigurer.html">Rust Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustEclipse.html">Rust Eclipse</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustVSCode.html">Rust VSCode</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/GoInstallation.html">Go Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/GroovyInstallation.html">Groovy Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/JavaFxInstallation.html">JavaFx Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/LuaInstallation.html">Lua Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/PythonInstallation.html">Python Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Ide</span>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="EclipseCustomizer.html">EclipseCustomizer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="EclipseConfigurer.html">EclipseConfigurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="FlattenLifecycle.html">FlattenLifecycle</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="JakartaSpecification.html">JakartaSpecification</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="CondaJupyter.html">CondaJupyter</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="IdeaConfigurer.html">IdeaConfigurer</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Ops</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/HyperVConfigurer.html">Hyper VConfigurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/UbuntuConfigurer.html">Ubuntu Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/DockerFundamental.html">Docker Fundamental</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/K8SInstallation.html">K8S Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/K8SExtension.html">K8S Extension</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/NexusInstallation.html">Nexus Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/JenkinsInstallation.html">Jenkins Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/BatchProcess.html">Batch Process</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/OracleContainerRegistry.html">Oracle Container Registry</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/WinConfigurer.html">Win Configurer</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Msg</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Msg/KafkaInstallation.html">Kafka Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Msg/KafkaEntryCase.html">Kafka Entry Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Msg/PulsarInstallation.html">Pulsar Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Store</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/PowerDesigner.html">Power Designer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/CassandraSetup.html">Cassandra Setup</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/CassandraBoot.html">Cassandra Boot</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/CassandraTesting.html">Cassandra Testing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/ElasticInstallation.html">Elastic Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/ElasticCase.html">Elastic Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/OpenSearchInstallation.html">Open Search Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/MySQLInstallation.html">MySQL Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/MySqlTuning.html">MySql Tuning</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/MongoInstallation.html">Mongo Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/MongoCase.html">Mongo Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/PostgresInstallation.html">Postgres Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/AeroSpikeInstallation.html">Aero Spike Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/TinkerpopCase.html">Tinkerpo pCase</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Multifariousness</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">Multifariousness</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+	<div class="toolbar" role="navigation">
+	<button class="nav-toggle"></button>
+	
+		<a href="../../index.html" 
+			class="home-link">
+		</a>
+
+	<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">Multifariousness</a></li>
+    <li>Ide</li>
+    <li><a href="EclipseCustomizer.html">EclipseCustomizer</a></li>
+  </ul>
+</nav>
+		</div>
+	
+	<div class="content">
+			<aside class="toc sidebar" 
+	data-title="Contents" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+			<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_plugin_list">1. Plugin List</a>
+<ul class="sectlevel2">
+<li><a href="#_editor">1.1. Editor</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_plugin_list"><a class="anchor" href="#_plugin_list"></a>1. Plugin List</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_editor"><a class="anchor" href="#_editor"></a>1.1. Editor</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://marketplace.eclipse.org/content/protocol-buffer-editor" target="_blank" rel="noopener">Protocol Buffer Editor</a></p>
+</li>
+<li>
+<p><a href="https://marketplace.eclipse.org/content/openapi-editor" target="_blank" rel="noopener">OpenAPI Editor</a></p>
+</li>
+<li>
+<p><a href="https://marketplace.eclipse.org/content/openapi-swagger-editor" target="_blank" rel="noopener">Swagger Editor</a></p>
+</li>
+<li>
+<p><a href="https://marketplace.eclipse.org/content/batch-editor" target="_blank" rel="noopener">Batch Editor</a></p>
+</li>
+<li>
+<p><a href="https://marketplace.eclipse.org/content/bash-editor" target="_blank" rel="noopener">Bash Editor</a></p>
+</li>
+<li>
+<p><a href="https://marketplace.eclipse.org/content/asciidoctor-editor" target="_blank" rel="noopener">Asciidoctor Editor</a></p>
+</li>
+<li>
+<p><a href="https://marketplace.eclipse.org/content/yaml-editor" target="_blank" rel="noopener">Yaml Editor</a></p>
+</li>
+<li>
+<p><a href="https://marketplace.eclipse.org/content/cmake-editor" target="_blank" rel="noopener">CMake Editor</a></p>
+</li>
+<li>
+<p><a href="https://marketplace.eclipse.org/content/sql-editor" target="_blank" rel="noopener">SQL Editor</a></p>
+</li>
+<li>
+<p><a href="https://marketplace.eclipse.org/content/jenkins-editor" target="_blank" rel="noopener">Jenkins Editor</a></p>
+</li>
+<li>
+<p>[,window="_blank"]</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>|SVEditor|https://marketplace.eclipse.org/content/sveditor<br>
+|K8S Manifest Editor|https://marketplace.eclipse.org/content/kubernetes-manifest-editor<br>
+|EGradle Editor|https://marketplace.eclipse.org/content/egradle-editor<br>
+|Zip Editor|https://marketplace.eclipse.org/content/eclipse-zip-editor</p>
+</div>
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Item</th>
+<th class="tableblock halign-left valign-top">Url</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Linux Profiling Tool</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/linux-profiling-tools" class="bare">https://marketplace.eclipse.org/content/linux-profiling-tools</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Trace Compass</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/trace-compass" class="bare">https://marketplace.eclipse.org/content/trace-compass</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mylyn WikiText</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/mylyn-wikitext" class="bare">https://marketplace.eclipse.org/content/mylyn-wikitext</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EKube</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/ekube" class="bare">https://marketplace.eclipse.org/content/ekube</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CDO Model Repository</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/cdo-model-repository" class="bare">https://marketplace.eclipse.org/content/cdo-model-repository</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data Hierarchy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/data-hierarchy" class="bare">https://marketplace.eclipse.org/content/data-hierarchy</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Eclipse Xtend</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/eclipse-xtend" class="bare">https://marketplace.eclipse.org/content/eclipse-xtend</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Spark Builder Generator</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/spark-builder-generator" class="bare">https://marketplace.eclipse.org/content/spark-builder-generator</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Appium Studio</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/appium-studio-eclipse" class="bare">https://marketplace.eclipse.org/content/appium-studio-eclipse</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Eclipse Corrosion</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/eclipse-corrosion-rust-editing-and-debugging" class="bare">https://marketplace.eclipse.org/content/eclipse-corrosion-rust-editing-and-debugging</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EMF Form</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/emf-forms" class="bare">https://marketplace.eclipse.org/content/emf-forms</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Eclipse OCL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/eclipse-ocl" class="bare">https://marketplace.eclipse.org/content/eclipse-ocl</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AST View</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/ast-view" class="bare">https://marketplace.eclipse.org/content/ast-view</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ruby Solargraph</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/ruby-solargraph" class="bare">https://marketplace.eclipse.org/content/ruby-solargraph</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Epsilon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/epsilon" class="bare">https://marketplace.eclipse.org/content/epsilon</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Java Antidecompiler</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/java-antidecompiler" class="bare">https://marketplace.eclipse.org/content/java-antidecompiler</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Infinitest</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/infinitest" class="bare">https://marketplace.eclipse.org/content/infinitest</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Import Jar As Project</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/import-jar-project" class="bare">https://marketplace.eclipse.org/content/import-jar-project</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FeatureIDE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/featureide" class="bare">https://marketplace.eclipse.org/content/featureide</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Papyrus Designer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/papyrus-software-designer" class="bare">https://marketplace.eclipse.org/content/papyrus-software-designer</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Clean Sheet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/clean-sheet" class="bare">https://marketplace.eclipse.org/content/clean-sheet</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Wild Web Developer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/wild-web-developer-html-css-javascript-typescript-nodejs-angular-json-yaml-kubernetes-xml" class="bare">https://marketplace.eclipse.org/content/wild-web-developer-html-css-javascript-typescript-nodejs-angular-json-yaml-kubernetes-xml</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Java Dependency Viewer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/java-dependency-viewer" class="bare">https://marketplace.eclipse.org/content/java-dependency-viewer</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Eclipse XPath</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/eclipse-xpath-evaluation-plugin" class="bare">https://marketplace.eclipse.org/content/eclipse-xpath-evaluation-plugin</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JDeodorant</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/jdeodorant" class="bare">https://marketplace.eclipse.org/content/jdeodorant</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AnyEdit Tool</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/anyedit-tools" class="bare">https://marketplace.eclipse.org/content/anyedit-tools</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LiClipseText</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/liclipsetext" class="bare">https://marketplace.eclipse.org/content/liclipsetext</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Eclipse SpotBugs</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/spotbugs-eclipse-plugin" class="bare">https://marketplace.eclipse.org/content/spotbugs-eclipse-plugin</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MyBatis Generator</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/mybatis-generator" class="bare">https://marketplace.eclipse.org/content/mybatis-generator</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JAutodoc</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/jautodoc" class="bare">https://marketplace.eclipse.org/content/jautodoc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Eclipse PMD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/eclipse-pmd" class="bare">https://marketplace.eclipse.org/content/eclipse-pmd</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Eclipse Docker Tooling</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/eclipse-docker-tooling" class="bare">https://marketplace.eclipse.org/content/eclipse-docker-tooling</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Memory Analyzer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/memory-analyzer" class="bare">https://marketplace.eclipse.org/content/memory-analyzer</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Eclipse Kotlin Plugin</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/kotlin-plugin-eclipse" class="bare">https://marketplace.eclipse.org/content/kotlin-plugin-eclipse</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PHP Development Tool</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/php-development-tools" class="bare">https://marketplace.eclipse.org/content/php-development-tools</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Eclipse Jetty</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/eclipse-jetty" class="bare">https://marketplace.eclipse.org/content/eclipse-jetty</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Vrapper Vim</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/vrapper-vim" class="bare">https://marketplace.eclipse.org/content/vrapper-vim</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DBeaver</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/dbeaver" class="bare">https://marketplace.eclipse.org/content/dbeaver</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Groovy Development Tool</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/groovy-development-tools" class="bare">https://marketplace.eclipse.org/content/groovy-development-tools</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Eclipse Tomcat</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/eclipse-tomcat-plugin" class="bare">https://marketplace.eclipse.org/content/eclipse-tomcat-plugin</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Buildship Gradle</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/buildship-gradle-integration" class="bare">https://marketplace.eclipse.org/content/buildship-gradle-integration</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Checkstyle</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/checkstyle-plug" class="bare">https://marketplace.eclipse.org/content/checkstyle-plug</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EGit</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/egit-git-integration-eclipse" class="bare">https://marketplace.eclipse.org/content/egit-git-integration-eclipse</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Web Developer Tool</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/eclipse-web-developer-tools" class="bare">https://marketplace.eclipse.org/content/eclipse-web-developer-tools</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">e(fx)clipse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/efxclipse" class="bare">https://marketplace.eclipse.org/content/efxclipse</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enhanced Class Decompiler</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/enhanced-class-decompiler" class="bare">https://marketplace.eclipse.org/content/enhanced-class-decompiler</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Eclipse Cucumber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/cucumber-eclipse-plugin" class="bare">https://marketplace.eclipse.org/content/cucumber-eclipse-plugin</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Eclipse Enterprise Java</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/eclipse-enterprise-java-and-web-developer-tools" class="bare">https://marketplace.eclipse.org/content/eclipse-enterprise-java-and-web-developer-tools</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PyDev</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/pydev-python-ide-eclipse" class="bare">https://marketplace.eclipse.org/content/pydev-python-ide-eclipse</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sts4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/spring-tools-4-aka-spring-tool-suite-4" class="bare">https://marketplace.eclipse.org/content/spring-tools-4-aka-spring-tool-suite-4</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Eclipse Xtext</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/eclipse-xtext" class="bare">https://marketplace.eclipse.org/content/eclipse-xtext</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EGradle IDE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/egradle-ide" class="bare">https://marketplace.eclipse.org/content/egradle-ide</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Eclipse MapStruct</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/mapstruct-eclipse-plugin" class="bare">https://marketplace.eclipse.org/content/mapstruct-eclipse-plugin</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Directory Studio</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/apache-directory-studio" class="bare">https://marketplace.eclipse.org/content/apache-directory-studio</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Eclipse C/C++</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/complete-eclipse-cc-ide" class="bare">https://marketplace.eclipse.org/content/complete-eclipse-cc-ide</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EntireJ</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/entirej" class="bare">https://marketplace.eclipse.org/content/entirej</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sirius</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/sirius" class="bare">https://marketplace.eclipse.org/content/sirius</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MyBatipse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/mybatipse" class="bare">https://marketplace.eclipse.org/content/mybatipse</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MoreUnit</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/moreunit" class="bare">https://marketplace.eclipse.org/content/moreunit</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EasyShell</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/easyshell" class="bare">https://marketplace.eclipse.org/content/easyshell</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JUnit-Tool</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/junit-tools" class="bare">https://marketplace.eclipse.org/content/junit-tools</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">UML Lab Modeling</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/uml-lab-modeling-ide" class="bare">https://marketplace.eclipse.org/content/uml-lab-modeling-ide</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AspectJ Development Tool</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/aspectj-development-tools" class="bare">https://marketplace.eclipse.org/content/aspectj-development-tools</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">UMLet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/umlet-uml-tool-fast-uml-diagrams" class="bare">https://marketplace.eclipse.org/content/umlet-uml-tool-fast-uml-diagrams</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">XML Editor Tool</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://marketplace.eclipse.org/content/eclipse-xml-editors-and-tools" class="bare">https://marketplace.eclipse.org/content/eclipse-xml-editors-and-tools</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</article>
+	</div>
+</main>
+</div>
+		<footer class="footer">
+	
+	
+	
+	<div class="footer-thanks">
+		Authored in AsciiDoc
+		<br /><br />
+		Produced by Antora and Asciidoctor
+  	</div>
+  
+	<div class="footer-legal" style="text-align:center">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br /><br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		Copyright © 2024 Elf
+		<br /><br />
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+	
+</footer><script id="site-script" src="../../../../_/js/site.js" 
+	data-ui-root-path="../../../../_"></script>
+
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
+</html>

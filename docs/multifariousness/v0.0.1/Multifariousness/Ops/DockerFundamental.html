@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> :: AsciiDoc</title>
+    <meta name="generator" content="Antora 3.1.7">
+
+<link rel="stylesheet" href="../../../../_/css/site.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/asciidoc.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
+
+
+    <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+  			
+  			<a class="navbar-item logo" target="_blank" href="">
+				<img src="../../../../_/img/yin-yang-symbol.svg" width="100%" height="50">
+			</a>
+  			
+	            <div id="main" style="place-content: center;">
+	                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+		            </div>
+		        </section>
+    	</div>
+    	
+    	<div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Culture</div>
+          			<div class="navbar-dropdown is-right">
+            			
+			            <div class="navbar-item">Traditional Culture</div>
+			            
+			            <a class="navbar-item" target="_blank" href="../../../../culture/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Culture <small>传统文化</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Eco</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <a class="navbar-item" target="_blank" href="../../../../multifariousness/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Multifariousness <small>五花八门</small></span>
+			            </a>
+
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../ai/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Artificial Intelligence<small>人工智能</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../msg/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Messaging - Kafka <small>Kafka</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Experiment</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <div class="navbar-item">Quantum Computing</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>QC <small>量子计算...</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <div class="navbar-item">Harmony</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>CangJie <small>预览版内测...</small></span>
+			            </a>
+        			</div>
+    			</div>
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container" data-component="multifariousness" data-version="v0.0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">Multifariousness</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Security</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Security/KeycloakInstallation.html">Keycloak Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Security/KeycloakCase.html">Keycloak Case</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Antora</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AsciidoctorInstallation.html">Asciidoctor Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AsciidoctorConfigurer.html">Asciidoctor Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraInstallation.html">Antora Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraConfigurer.html">Antora Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraHighlight.html">Antora Highlight</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/Markdown.html">Markdown</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/NodeInstallation.html">Node Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Doxygen</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxygenInstallation.html">Doxygen Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxygenEntry.html">Doxygen Entry</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DocumentingCode.html">Documenting Code</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxygenUsage.html">Doxygen Usage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxywizardUsage.html">Doxywizard Usage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxyfileProperty.html">Doxyfile Property</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/CustomCommand.html">Custom Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/SpecialCommand.html">Special Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/HtmlCommand.html">Html Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/XmlCommand.html">Xml Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/EmojiSupport.html">Emoji Support</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Lang</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustPrerequisite.html">Rust Prerequisite</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustGun.html">Rust Gun</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustConfigurer.html">Rust Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustEclipse.html">Rust Eclipse</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustVSCode.html">Rust VSCode</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/GoInstallation.html">Go Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/GroovyInstallation.html">Groovy Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/JavaFxInstallation.html">JavaFx Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/LuaInstallation.html">Lua Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/PythonInstallation.html">Python Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Ide</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/EclipseCustomizer.html">EclipseCustomizer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/EclipseConfigurer.html">EclipseConfigurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/FlattenLifecycle.html">FlattenLifecycle</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/JakartaSpecification.html">JakartaSpecification</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/CondaJupyter.html">CondaJupyter</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/IdeaConfigurer.html">IdeaConfigurer</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Ops</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="HyperVConfigurer.html">Hyper VConfigurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="UbuntuConfigurer.html">Ubuntu Configurer</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="DockerFundamental.html">Docker Fundamental</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="K8SInstallation.html">K8S Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="K8SExtension.html">K8S Extension</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="NexusInstallation.html">Nexus Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="JenkinsInstallation.html">Jenkins Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="BatchProcess.html">Batch Process</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="OracleContainerRegistry.html">Oracle Container Registry</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="WinConfigurer.html">Win Configurer</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Msg</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Msg/KafkaInstallation.html">Kafka Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Msg/KafkaEntryCase.html">Kafka Entry Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Msg/PulsarInstallation.html">Pulsar Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Store</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/PowerDesigner.html">Power Designer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/CassandraSetup.html">Cassandra Setup</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/CassandraBoot.html">Cassandra Boot</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/CassandraTesting.html">Cassandra Testing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/ElasticInstallation.html">Elastic Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/ElasticCase.html">Elastic Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/OpenSearchInstallation.html">Open Search Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/MySQLInstallation.html">MySQL Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/MySqlTuning.html">MySql Tuning</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/MongoInstallation.html">Mongo Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/MongoCase.html">Mongo Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/PostgresInstallation.html">Postgres Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/AeroSpikeInstallation.html">Aero Spike Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/TinkerpopCase.html">Tinkerpo pCase</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Multifariousness</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">Multifariousness</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+	<div class="toolbar" role="navigation">
+	<button class="nav-toggle"></button>
+	
+		<a href="../../index.html" 
+			class="home-link">
+		</a>
+
+	<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">Multifariousness</a></li>
+    <li>Ops</li>
+    <li><a href="DockerFundamental.html">Docker Fundamental</a></li>
+  </ul>
+</nav>
+		</div>
+	
+	<div class="content">
+			<aside class="toc sidebar" 
+	data-title="Contents" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+			<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_install_podman">1. Install Podman</a></li>
+<li><a href="#_podman_service">2. Podman Service</a></li>
+<li><a href="#_docker代理">3. Docker代理</a></li>
+<li><a href="#_镜像操作">4. 镜像操作</a></li>
+<li><a href="#_常见操作">5. 常见操作</a></li>
+<li><a href="#_run">6. Run</a></li>
+<li><a href="#_harbor">7. Harbor</a>
+<ul class="sectlevel2">
+<li><a href="#_推送镜像">7.1. 推送镜像</a></li>
+<li><a href="#_拉取镜像">7.2. 拉取镜像</a></li>
+<li><a href="#_tag_save">7.3. Tag Save</a></li>
+</ul>
+</li>
+<li><a href="#_文件夹复制">8. 文件(夹)复制</a></li>
+<li><a href="#_容器主机复制">9. 容器主机复制</a></li>
+<li><a href="#_network">10. Network</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_install_podman"><a class="anchor" href="#_install_podman"></a>1. Install Podman</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash"># apt update
+
+# apt install podman -y
+
+# podman --version
+podman version 4.9.3
+
+# podman info</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_podman_service"><a class="anchor" href="#_podman_service"></a>2. Podman Service</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash"># systemctl enable podman.socket
+
+# systemctl start podman.socket
+
+# systemctl stop podman.socket
+
+# systemctl restart podman.socket
+
+# systemctl status podman.socket</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_docker代理"><a class="anchor" href="#_docker代理"></a>3. Docker代理</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><code><strong>vim /etc/docker/daemon.json</strong></code></p>
+</li>
+<li>
+<p><code><strong>systemctl daemon-reload &amp;&amp; systemctl restart docker</strong></code></p>
+</li>
+<li>
+<p><code><strong>docker pull quay.io/keycloak/keycloak:22.0</strong></code></p>
+</li>
+<li>
+<p><code><strong>docker pull daocloud.io/keycloak/keycloak:22.0</strong></code></p>
+</li>
+<li>
+<p><code><strong>docker pull mirror.baidubce.com/keycloak/keycloak:22.0</strong></code></p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">{
+  "registry-mirrors": [
+  	"https://docker.1panel.live",
+  	"https://docker.1panelproxy.com",
+  	"https://proxy.1panel.live",
+  	"https://mirror-gcr.onrender.com",
+  	"https://docker.anyhub.us.kg",
+  	"https://dockerhub.jobcher.com",
+  	"https://dockerhub.icu",
+    "https://mirror.baidubce.com",
+    "https://dockerproxy.com",
+    "http://hub-mirror.c.163.com",
+	"https://hub-mirror.c.163.com/",
+    "https://ccr.ccs.tencentyun.com",
+    "https://ustc-edu-cn.mirror.aliyuncs.com",
+    "https://9cpn8tt6.mirror.aliyuncs.com",
+    "https://no1pfk8z.mirror.aliyuncs.com",
+	"https://kfwkfulq.mirror.aliyuncs.com",
+	"https://2lqq34jg.mirror.aliyuncs.com",
+	"https://pee6w651.mirror.aliyuncs.com",
+    "https://docker.mirrors.ustc.edu.cn",
+    "https://dockerhub.mirrors.nwafu.edu.cn/",
+    "http://f1361db2.m.daocloud.io",
+    "https://reg-mirror.qiniu.com",
+    "https://registry.docker-cn.com",
+    "https://ghcr.io"
+  ]
+}
+
+systemctl daemon-reload &amp;&amp; systemctl restart docker</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_镜像操作"><a class="anchor" href="#_镜像操作"></a>4. 镜像操作</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash"># 拉取镜像：docker pull OPTION NAME[:TAG]
+docker pull mysql:8.2.0
+
+# 标签镜像：docker tag SRC[:TAG] DEST_IMAGE[:TAG]
+docker tag mysql:8.2.0 mysql:820
+
+# 保存镜像：docker save OPTION IMAGE...
+docker save -o ./mysql820.tar mysql:820
+
+# 加载镜像
+docker load &lt; ./tarball.tar</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_常见操作"><a class="anchor" href="#_常见操作"></a>5. 常见操作</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash"># 删除镜像
+docker rmi -f $(docker images)
+
+# 删除退出状态容器
+docker rm $(sudo docker ps -qf status=exited)
+
+# 删除虚悬(dangling)镜像，仓库名和标签都为&lt;none&gt;的镜像
+docker rmi $(docker images -f "dangling=true" -q)
+
+# 停止并删除容器
+docker stop $(docker ps -q) &amp;&amp; docker rm $(docker ps -aq)
+
+# 更新启动策略
+docker update --restart=on-failure containerIdName
+
+-e TZ=Asia/Shanghai
+--restart=on-failure[:max-retries]，always
+
+# 容器IP
+docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' mysql</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_run"><a class="anchor" href="#_run"></a>6. Run</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">docker run \
+	--name gitlab \
+	-p 8080:80 \
+	--privileged=true \
+	--net network-common \
+	-itd imageInfo</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_harbor"><a class="anchor" href="#_harbor"></a>7. Harbor</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>登录harbor：https://192.168.0.123</p>
+</li>
+<li>
+<p>创建项目/命名空间specification,专门用于存规范镜像,如jdk等</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_推送镜像"><a class="anchor" href="#_推送镜像"></a>7.1. 推送镜像</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash"># 拉取镜像
+docker pull mysql:8.2.0
+
+# 登录到Harbor：docker login &lt;harbor_address&gt;
+docker login https://192.168.0.123
+
+# 镜像打标签：docker tag local_image &lt;harbor_address&gt;/namespace/target_image
+docker tag mysql:8.2.0 192.168.0.123/specification/mysql:8.2.0
+
+# 构建镜像：docker build -t &lt;harbor_address&gt;/namespace/target_image target_path
+docker build -t 192.168.0.123/specification/mysql:8.2.0 .
+
+# 推送镜像：docker push &lt;harbor_address&gt;/namespace/target_image
+docker push 192.168.0.123/specification/mysql:8.2.0</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_拉取镜像"><a class="anchor" href="#_拉取镜像"></a>7.2. 拉取镜像</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash"># 登录到Harbor：docker login &lt;harbor_address&gt;
+docker login http://192.168.0.123
+
+# 拉取镜像：docker pull &lt;harbor_address&gt;/namespace/target_image
+docker pull 192.168.0.123/specification/mysql:8.2.0</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_tag_save"><a class="anchor" href="#_tag_save"></a>7.3. Tag Save</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">docker tag gitlab/gitlab-ce:16.6.2-ce.0 gitlab:16.6.2.0 &amp;&amp; \
+	docker tag docker.elastic.co/kibana/kibana:8.11.2 kibana:8.11.2 &amp;&amp; \
+	docker tag docker.elastic.co/elasticsearch/elasticsearch:8.11.2 es:8.11.2 &amp;&amp; \
+	docker save -o ./gitlab16620.tar gitlab:16.6.2.0 &amp;&amp; \
+	docker save -o ./kibana8112.tar kibana:8.11.2 &amp;&amp; \
+	docker save -o ./es8112.tar es:8.11.2
+
+docker load &lt; ./gitlab16620.tar &amp;&amp; \
+	docker load &lt; ./es8112.tar &amp;&amp; \
+	docker load &lt; ./kibana8112.tar &amp;&amp; \</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_文件夹复制"><a class="anchor" href="#_文件夹复制"></a>8. 文件(夹)复制</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash"># 本地镜像复制到远程
+scp -r /elf/local/tarball.tar root@192.168.1.120:/elf/remote/
+
+# 远程镜像复制到本地
+scp -r root@192.168.1.120:/elf/remote/tarball.tar /elf/local/
+
+# 本地文件夹复制到远程
+scp -r /elf/local/ root@192.168.1.120:/elf/remote/
+
+# 远程文件夹复制到本地
+scp -r root@192.168.1.120:/elf/remote/ /elf/local/</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_容器主机复制"><a class="anchor" href="#_容器主机复制"></a>9. 容器主机复制</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash"># 主机复制到容器 docker cp &lt;source&gt; &lt;container&gt;:&lt;destination&gt;
+
+# 容器复制到主机 docker cp &lt;container&gt;:&lt;source&gt; &lt;destination&gt;
+docker cp es8:/usr/share/elasticsearch/config/certs/http_ca.crt /elf/http_ca.crt</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_network"><a class="anchor" href="#_network"></a>10. Network</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">docker network create network-common
+
+# docker network create -d bridge network-common
+
+# docker inspect network-common
+
+# docker network rm network-common</code></pre>
+</div>
+</div>
+</div>
+</div>
+</article>
+	</div>
+</main>
+</div>
+		<footer class="footer">
+	
+	
+	
+	<div class="footer-thanks">
+		Authored in AsciiDoc
+		<br /><br />
+		Produced by Antora and Asciidoctor
+  	</div>
+  
+	<div class="footer-legal" style="text-align:center">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br /><br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		Copyright © 2024 Elf
+		<br /><br />
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+	
+</footer><script id="site-script" src="../../../../_/js/site.js" 
+	data-ui-root-path="../../../../_"></script>
+
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
+</html>

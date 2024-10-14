@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> :: AsciiDoc</title>
+    <meta name="generator" content="Antora 3.1.7">
+
+<link rel="stylesheet" href="../../../../_/css/site.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/asciidoc.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
+
+
+    <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+  			
+  			<a class="navbar-item logo" target="_blank" href="">
+				<img src="../../../../_/img/yin-yang-symbol.svg" width="100%" height="50">
+			</a>
+  			
+	            <div id="main" style="place-content: center;">
+	                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+		            </div>
+		        </section>
+    	</div>
+    	
+    	<div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Culture</div>
+          			<div class="navbar-dropdown is-right">
+            			
+			            <div class="navbar-item">Traditional Culture</div>
+			            
+			            <a class="navbar-item" target="_blank" href="../../../../culture/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Culture <small>传统文化</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Eco</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <a class="navbar-item" target="_blank" href="../../../../multifariousness/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Multifariousness <small>五花八门</small></span>
+			            </a>
+
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../ai/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Artificial Intelligence<small>人工智能</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../msg/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Messaging - Kafka <small>Kafka</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Experiment</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <div class="navbar-item">Quantum Computing</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>QC <small>量子计算...</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <div class="navbar-item">Harmony</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>CangJie <small>预览版内测...</small></span>
+			            </a>
+        			</div>
+    			</div>
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container" data-component="multifariousness" data-version="v0.0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">Multifariousness</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Security</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Security/KeycloakInstallation.html">Keycloak Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Security/KeycloakCase.html">Keycloak Case</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Antora</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AsciidoctorInstallation.html">Asciidoctor Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AsciidoctorConfigurer.html">Asciidoctor Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraInstallation.html">Antora Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraConfigurer.html">Antora Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraHighlight.html">Antora Highlight</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/Markdown.html">Markdown</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/NodeInstallation.html">Node Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Doxygen</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxygenInstallation.html">Doxygen Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxygenEntry.html">Doxygen Entry</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DocumentingCode.html">Documenting Code</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxygenUsage.html">Doxygen Usage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxywizardUsage.html">Doxywizard Usage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxyfileProperty.html">Doxyfile Property</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/CustomCommand.html">Custom Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/SpecialCommand.html">Special Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/HtmlCommand.html">Html Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/XmlCommand.html">Xml Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/EmojiSupport.html">Emoji Support</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Lang</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustPrerequisite.html">Rust Prerequisite</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustGun.html">Rust Gun</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustConfigurer.html">Rust Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustEclipse.html">Rust Eclipse</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustVSCode.html">Rust VSCode</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/GoInstallation.html">Go Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/GroovyInstallation.html">Groovy Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/JavaFxInstallation.html">JavaFx Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/LuaInstallation.html">Lua Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/PythonInstallation.html">Python Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Ide</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/EclipseCustomizer.html">EclipseCustomizer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/EclipseConfigurer.html">EclipseConfigurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/FlattenLifecycle.html">FlattenLifecycle</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/JakartaSpecification.html">JakartaSpecification</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/CondaJupyter.html">CondaJupyter</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/IdeaConfigurer.html">IdeaConfigurer</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Ops</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/HyperVConfigurer.html">Hyper VConfigurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/UbuntuConfigurer.html">Ubuntu Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/DockerFundamental.html">Docker Fundamental</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/K8SInstallation.html">K8S Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/K8SExtension.html">K8S Extension</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/NexusInstallation.html">Nexus Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/JenkinsInstallation.html">Jenkins Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/BatchProcess.html">Batch Process</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/OracleContainerRegistry.html">Oracle Container Registry</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/WinConfigurer.html">Win Configurer</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Msg</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Msg/KafkaInstallation.html">Kafka Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Msg/KafkaEntryCase.html">Kafka Entry Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Msg/PulsarInstallation.html">Pulsar Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Store</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="PowerDesigner.html">Power Designer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="CassandraSetup.html">Cassandra Setup</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="CassandraBoot.html">Cassandra Boot</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="CassandraTesting.html">Cassandra Testing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ElasticInstallation.html">Elastic Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ElasticCase.html">Elastic Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="OpenSearchInstallation.html">Open Search Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="MySQLInstallation.html">MySQL Installation</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="MySqlTuning.html">MySql Tuning</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="MongoInstallation.html">Mongo Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="MongoCase.html">Mongo Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="PostgresInstallation.html">Postgres Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="AeroSpikeInstallation.html">Aero Spike Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="TinkerpopCase.html">Tinkerpo pCase</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Multifariousness</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">Multifariousness</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+	<div class="toolbar" role="navigation">
+	<button class="nav-toggle"></button>
+	
+		<a href="../../index.html" 
+			class="home-link">
+		</a>
+
+	<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">Multifariousness</a></li>
+    <li>Store</li>
+    <li><a href="MySqlTuning.html">MySql Tuning</a></li>
+  </ul>
+</nav>
+		</div>
+	
+	<div class="content">
+			<aside class="toc sidebar" 
+	data-title="Contents" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+			<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_不使用myisam">1. 不使用MyISAM</a></li>
+<li><a href="#_并行导出数据">2. 并行导出数据</a></li>
+<li><a href="#_快速导入数据">3. 快速导入数据</a></li>
+<li><a href="#_绕过中间存储引擎">4. 绕过中间存储引擎</a></li>
+<li><a href="#_始终使用主键">5. 始终使用主键</a></li>
+<li><a href="#_检查索引">6. 检查索引</a>
+<ul class="sectlevel2">
+<li><a href="#_unuse_index">6.1. Unuse Index</a></li>
+<li><a href="#_dumplicate_index">6.2. Dumplicate Index</a></li>
+<li><a href="#_missing_index">6.3. Missing Index</a></li>
+</ul>
+</li>
+<li><a href="#_不可见索引">7. 不可见索引</a></li>
+<li><a href="#_调整并行索引创建">8. 调整并行索引创建</a></li>
+<li><a href="#_限制查询时间">9. 限制查询时间</a></li>
+<li><a href="#_ugly_duckling">10. Ugly Duckling</a></li>
+<li><a href="#_innodb_setting">11. InnoDB Setting</a></li>
+<li><a href="#_warmbuffer">12. warmBuffer</a></li>
+<li><a href="#_disable_ahi">13. Disable AHI</a></li>
+<li><a href="#_working_set在内存">14. Working Set在内存</a></li>
+<li><a href="#_check_ratio">15. Check Ratio</a></li>
+<li><a href="#_memory_allocator">16. Memory Allocator</a></li>
+<li><a href="#_dns">17. DNS</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_不使用myisam"><a class="anchor" href="#_不使用myisam"></a>1. 不使用MyISAM</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-sql" data-lang="sql">set persist default storage engine "InnoDB";
+
+set persist only disabled storage engines="MyISAM";</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_并行导出数据"><a class="anchor" href="#_并行导出数据"></a>2. 并行导出数据</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-sql" data-lang="sql">util.loadDump("/opt/dump",{threads:32})
+util.dumpInstance("/opt/dump/",{threads: 32})
+
+util.loadDump()
+util.dumpTables()
+util.dumpSchemas()
+util.dumpInstance()</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_快速导入数据"><a class="anchor" href="#_快速导入数据"></a>3. 快速导入数据</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-sql" data-lang="sql">start mysqld with --disable-log-bin
+
+alter instance disable innodb redo_log;
+set global innodb_extend_and initialize=0FF;
+set global innodb_max_dirty_pages_pct=10;
+set global innodb_max_dirty_pages_pct_lwm=10;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_绕过中间存储引擎"><a class="anchor" href="#_绕过中间存储引擎"></a>4. 绕过中间存储引擎</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>将数据从A实例复制到B实例，可使用copy绕过dump和load中间存储；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-sql" data-lang="sql">util.copyInstance('mysql://elf@192.168.0.123',
+	{"compatibility":["force innodb","skip invalid accounts"],
+	threads: 32}
+)</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_始终使用主键"><a class="anchor" href="#_始终使用主键"></a>5. 始终使用主键</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>规避contention问题(dict sys&#8594;mutex)和replication lag(复制滞后)；</p>
+</li>
+<li>
+<p>为表定义好的主键，此也影响二级索引，而DBA，请启用GlPK模式；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-sql" data-lang="sql">set persist sql_generate_invisible_primary_key=1;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_检查索引"><a class="anchor" href="#_检查索引"></a>6. 检查索引</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>不维护未使用的索引，因会减慢写入并加载Optimizer以创建QEP(查询执行计划)；<br>
+重复索引也是如此，可能还会错过导致全表扫描的索引，通过sys schema查询；</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_unuse_index"><a class="anchor" href="#_unuse_index"></a>6.1. Unuse Index</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-sql" data-lang="sql">select
+	database_name,table_name, t1.index_name,
+	format_bytes(stat_value * @@innodb_page_size) size
+
+from sys.schema_unused_indexes t2
+
+join mysql.innodb_index_stats t1
+on object_schema=database_name
+
+and object_name=table_name
+and t2.index_name=t1.index_name
+
+where stat_name='size'
+order by stat_value desc;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_dumplicate_index"><a class="anchor" href="#_dumplicate_index"></a>6.2. Dumplicate Index</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-sql" data-lang="sql">select
+	t2.*,format_bytes(stat_value * @@innodb_page_size) size
+
+from mysql.innodb_index_stats t1
+
+join sys.schema_redundant_indexes t2
+on table_schema=database_name
+
+and t2.table_name=t1.table_name
+and t2.redundant_index_name=t1.index_name
+
+where stat_name='size'
+order by stat_value desc</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_missing_index"><a class="anchor" href="#_missing_index"></a>6.3. Missing Index</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-sql" data-lang="sql">select * from sys.schema_tables_with_full_table_scans;
+
+select * from sys.statements_with_full_table_scans
+	where db='students' and query like '%customers%'</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_不可见索引"><a class="anchor" href="#_不可见索引"></a>7. 不可见索引</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>总怪网络，Invisible Index，让索引不可见比删除索引更合适；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-sql" data-lang="sql">alter table large_tbl drop index strange_idx;
+
+alter table large_tbl alter index strange_idx invisible;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_调整并行索引创建"><a class="anchor" href="#_调整并行索引创建"></a>8. 调整并行索引创建</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>InnoDB使用的并行线程数量由innodb_ddl_threads控制，此新变量新变量<br>
+innodb_ddl_buffer_size缓冲区大小耦合，若有快速存储和多CPU核，<br>
+那调整这些变量可加快二次upsecondary索引的创建速度；</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>调整并行索引创建</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-sql" data-lang="sql">alter table booking
+add index idx_2(flight_id,seat,passenger_id);
+
+# 默认设定：
+innodb ddlthreads=4
+innodb ddlbuffer size=148576
+innodb parallel read threads =4
+
+# 查询cpu核心数：
+select count from information_schema.innodb_metrics
+	where name = 'cpu_n';
+
+# 设置并行线程数：
+set innodb_ddl_threads = 8;
+set innodb_parallel_read_threads =8;
+set innodb_ddl_buffer_size= 1048576000;
+
+# 重新添加索引，查看执行时间：
+alter table booking add index idx_2(flight_id,seat,passenger_id);</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_限制查询时间"><a class="anchor" href="#_限制查询时间"></a>9. 限制查询时间</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>使用max_execution_time或优化器提示optimizer hint：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-sql" data-lang="sql">select /*+ max_execution_time(5000)*/sleep(10);</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ugly_duckling"><a class="anchor" href="#_ugly_duckling"></a>10. Ugly Duckling</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-sql" data-lang="sql">select
+	schema_name,exec_count,query_sample_text,
+	format_pico_time(total_latency)tot_lat,
+	format_pico_time(total_latency/exec_count) latency_per_call
+
+from sys.x$statements_with_runtimes_in_95th_percentile as t1
+
+join performance_schema.events_statements_summary_by_digest as t2
+on t2.digest=t1.digest
+
+where schema_name not in('performance_schema','sys')
+order by(total_latency/exec_count) desc limit 1</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_innodb_setting"><a class="anchor" href="#_innodb_setting"></a>11. InnoDB Setting</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>在专用MySQL服务器，最好让InnoDB决定BuferPool<br>
+和Redo Log Capacity，my.cnf配置如下：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties">innodb_dedicated_server=1</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_warmbuffer"><a class="anchor" href="#_warmbuffer"></a>12. warmBuffer</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>生产服务器请使用warmBuffer Pool，<br>
+InnoDB缓冲池的内容Dump到Disk，并在启动时Load</p>
+</li>
+<li>
+<p>也可在发生crash时，每隔一段时间dump缓冲池，<br>
+然后清空以load旧dump，只需创建event：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-sql" data-lang="sql">innodb_buffer_pool_dump_at_shutdown=1
+innodb_buffer_pool_load_at_startup=1
+
+create event automatic_bufferpool_dump
+on schedule every 1 hour
+do
+set global_innodb_buffer_pool_dump_now=on;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_disable_ahi"><a class="anchor" href="#_disable_ahi"></a>13. Disable AHI</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>大多工作负载不会从自适应哈希索引中收益，最好禁用，除非只执行select和<br>
+数据fully cached in buffer pool，否则AHI是巨大的性能瓶颈；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-sql" data-lang="sql">set persist_innodb_adaptive_hash_index = 0;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_working_set在内存"><a class="anchor" href="#_working_set在内存"></a>14. Working Set在内存</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>内存毕竟比磁盘快</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-sql" data-lang="sql">show global status like 'innodb_buffer_pool_read%s';</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_check_ratio"><a class="anchor" href="#_check_ratio"></a>15. Check Ratio</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-sql" data-lang="sql">select
+	concat(format(b.num*100.0 / a.num,2),'%')DiskReadRatio
+from(
+	select
+		variable_value num
+	from performance_schema.global_status
+	where variable_name ='Innodb_buffer_pool_read_requests')a,
+	(select variable_value num from performance_schema.global_status
+	where variable_name ='Innodb_buffer_pool_reads')b;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_memory_allocator"><a class="anchor" href="#_memory_allocator"></a>16. Memory Allocator</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Linux发行版默认内存分配器(glibc-malloc)，在高并发环境性能不佳，应避免使用，<br>
+两选择：jemalloc：有利于性能，但RAM管理效率低；tcmalloc：推荐选择</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">yum -y install gperftools-libs
+
+EDITOR=vi systemctl edit mysqld
+
+[Service]
+Environment="LD_PRELOAD=/usr/lib64/libtcmalloc_minimal.so.4"</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_dns"><a class="anchor" href="#_dns"></a>17. DNS</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>连接MySQL，skip name resolve可缩短连接时间，<br>
+若启用，则必须在grant中使用ip和规避hostname</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-sql" data-lang="sql">set persist_only skip_name_resolve=l;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</article>
+	</div>
+</main>
+</div>
+		<footer class="footer">
+	
+	
+	
+	<div class="footer-thanks">
+		Authored in AsciiDoc
+		<br /><br />
+		Produced by Antora and Asciidoctor
+  	</div>
+  
+	<div class="footer-legal" style="text-align:center">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br /><br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		Copyright © 2024 Elf
+		<br /><br />
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+	
+</footer><script id="site-script" src="../../../../_/js/site.js" 
+	data-ui-root-path="../../../../_"></script>
+
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
+</html>

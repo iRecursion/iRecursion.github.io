@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> :: AsciiDoc</title>
+    <meta name="generator" content="Antora 3.1.7">
+
+<link rel="stylesheet" href="../../../../_/css/site.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/asciidoc.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
+
+
+    <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+  			
+  			<a class="navbar-item logo" target="_blank" href="">
+				<img src="../../../../_/img/yin-yang-symbol.svg" width="100%" height="50">
+			</a>
+  			
+	            <div id="main" style="place-content: center;">
+	                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+		            </div>
+		        </section>
+    	</div>
+    	
+    	<div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Culture</div>
+          			<div class="navbar-dropdown is-right">
+            			
+			            <div class="navbar-item">Traditional Culture</div>
+			            
+			            <a class="navbar-item" target="_blank" href="../../../../culture/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Culture <small>传统文化</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Eco</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <a class="navbar-item" target="_blank" href="../../../../multifariousness/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Multifariousness <small>五花八门</small></span>
+			            </a>
+
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../ai/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Artificial Intelligence<small>人工智能</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../msg/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Messaging - Kafka <small>Kafka</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Experiment</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <div class="navbar-item">Quantum Computing</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>QC <small>量子计算...</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <div class="navbar-item">Harmony</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>CangJie <small>预览版内测...</small></span>
+			            </a>
+        			</div>
+    			</div>
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container" data-component="multifariousness" data-version="v0.0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">Multifariousness</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Security</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Security/KeycloakInstallation.html">Keycloak Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Security/KeycloakCase.html">Keycloak Case</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Antora</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AsciidoctorInstallation.html">Asciidoctor Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AsciidoctorConfigurer.html">Asciidoctor Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraInstallation.html">Antora Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraConfigurer.html">Antora Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraHighlight.html">Antora Highlight</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/Markdown.html">Markdown</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/NodeInstallation.html">Node Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Doxygen</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxygenInstallation.html">Doxygen Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxygenEntry.html">Doxygen Entry</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DocumentingCode.html">Documenting Code</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxygenUsage.html">Doxygen Usage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxywizardUsage.html">Doxywizard Usage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxyfileProperty.html">Doxyfile Property</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/CustomCommand.html">Custom Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/SpecialCommand.html">Special Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/HtmlCommand.html">Html Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/XmlCommand.html">Xml Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/EmojiSupport.html">Emoji Support</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Lang</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustPrerequisite.html">Rust Prerequisite</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustGun.html">Rust Gun</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustConfigurer.html">Rust Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustEclipse.html">Rust Eclipse</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustVSCode.html">Rust VSCode</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/GoInstallation.html">Go Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/GroovyInstallation.html">Groovy Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/JavaFxInstallation.html">JavaFx Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/LuaInstallation.html">Lua Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/PythonInstallation.html">Python Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Ide</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/EclipseCustomizer.html">EclipseCustomizer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/EclipseConfigurer.html">EclipseConfigurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/FlattenLifecycle.html">FlattenLifecycle</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/JakartaSpecification.html">JakartaSpecification</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/CondaJupyter.html">CondaJupyter</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/IdeaConfigurer.html">IdeaConfigurer</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Ops</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/HyperVConfigurer.html">Hyper VConfigurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/UbuntuConfigurer.html">Ubuntu Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/DockerFundamental.html">Docker Fundamental</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/K8SInstallation.html">K8S Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/K8SExtension.html">K8S Extension</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/NexusInstallation.html">Nexus Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/JenkinsInstallation.html">Jenkins Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/BatchProcess.html">Batch Process</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/OracleContainerRegistry.html">Oracle Container Registry</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/WinConfigurer.html">Win Configurer</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Msg</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Msg/KafkaInstallation.html">Kafka Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Msg/KafkaEntryCase.html">Kafka Entry Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Msg/PulsarInstallation.html">Pulsar Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Store</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="PowerDesigner.html">Power Designer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="CassandraSetup.html">Cassandra Setup</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="CassandraBoot.html">Cassandra Boot</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="CassandraTesting.html">Cassandra Testing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ElasticInstallation.html">Elastic Installation</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="ElasticCase.html">Elastic Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="OpenSearchInstallation.html">Open Search Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="MySQLInstallation.html">MySQL Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="MySqlTuning.html">MySql Tuning</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="MongoInstallation.html">Mongo Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="MongoCase.html">Mongo Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="PostgresInstallation.html">Postgres Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="AeroSpikeInstallation.html">Aero Spike Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="TinkerpopCase.html">Tinkerpo pCase</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Multifariousness</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">Multifariousness</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+	<div class="toolbar" role="navigation">
+	<button class="nav-toggle"></button>
+	
+		<a href="../../index.html" 
+			class="home-link">
+		</a>
+
+	<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">Multifariousness</a></li>
+    <li>Store</li>
+    <li><a href="ElasticCase.html">Elastic Case</a></li>
+  </ul>
+</nav>
+		</div>
+	
+	<div class="content">
+			<aside class="toc sidebar" 
+	data-title="Contents" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+			<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_测试api连接">1. 测试Api连接</a>
+<ul class="sectlevel2">
+<li><a href="#_添加证书">1.1. 添加证书</a></li>
+<li><a href="#_添加依赖">1.2. 添加依赖</a></li>
+<li><a href="#_工具类">1.3. 工具类</a></li>
+<li><a href="#_测试代码">1.4. 测试代码</a></li>
+</ul>
+</li>
+<li><a href="#_spring_data整合es8">2. Spring Data整合ES8</a>
+<ul class="sectlevel2">
+<li><a href="#_project_structure">2.1. Project Structure</a></li>
+<li><a href="#_dependency">2.2. Dependency</a></li>
+<li><a href="#_application_yaml">2.3. application.yaml</a></li>
+<li><a href="#_configuration">2.4. Configuration</a></li>
+<li><a href="#_controller">2.5. Controller</a></li>
+<li><a href="#_entry">2.6. Entry</a></li>
+</ul>
+</li>
+<li><a href="#_elastic_client">3. Elastic Client</a>
+<ul class="sectlevel2">
+<li><a href="#_imperative_client">3.1. Imperative Client</a></li>
+<li><a href="#_reactive_client">3.2. Reactive Client</a></li>
+</ul>
+</li>
+<li><a href="#_api">4. Api</a></li>
+<li><a href="#_elastic_crud">5. Elastic Crud</a>
+<ul class="sectlevel2">
+<li><a href="#_employee">5.1. Employee</a></li>
+<li><a href="#_controller_2">5.2. Controller</a></li>
+<li><a href="#_test">5.3. Test</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_测试api连接"><a class="anchor" href="#_测试api连接"></a>1. 测试Api连接</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_添加证书"><a class="anchor" href="#_添加证书"></a>1.1. 添加证书</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>添加已导出的证书到src/main/resources/certificate/http_ca.crt</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_添加依赖"><a class="anchor" href="#_添加依赖"></a>1.2. 添加依赖</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependencies&gt;
+	&lt;dependency&gt;
+		&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+		&lt;artifactId&gt;spring-boot-starter-data-elasticsearch&lt;/artifactId&gt;
+	&lt;/dependency&gt;
+
+	&lt;dependency&gt;
+		&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+		&lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;
+	&lt;/dependency&gt;
+
+	&lt;dependency&gt;
+		&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+		&lt;artifactId&gt;spring-boot-starter-log4j2&lt;/artifactId&gt;
+	&lt;/dependency&gt;
+
+	&lt;!--
+		&lt;dependency&gt;
+		    &lt;groupId&gt;org.elasticsearch.plugin&lt;/groupId&gt;
+		    &lt;artifactId&gt;x-pack-sql-jdbc&lt;/artifactId&gt;
+		    &lt;version&gt;8.11.2&lt;/version&gt;
+		&lt;/dependency&gt;
+
+		&lt;dependency&gt;
+		    &lt;groupId&gt;com.fasterxml.jackson.core&lt;/groupId&gt;
+		    &lt;artifactId&gt;jackson-databind&lt;/artifactId&gt;
+		&lt;/dependency&gt;
+
+		&lt;dependency&gt;
+		    &lt;groupId&gt;jakarta.json&lt;/groupId&gt;
+		    &lt;artifactId&gt;jakarta.json-api&lt;/artifactId&gt;
+		&lt;/dependency&gt;
+	 --&gt;
+&lt;/dependencies&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_工具类"><a class="anchor" href="#_工具类"></a>1.3. 工具类</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">package io.os.es.kit;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.security.KeyManagementException;
+import java.security.KeyStore;
+import java.security.KeyStoreException;
+import java.security.NoSuchAlgorithmException;
+import java.security.cert.Certificate;
+import java.security.cert.CertificateException;
+import java.security.cert.CertificateFactory;
+import javax.net.ssl.SSLContext;
+import org.apache.http.HttpHost;
+import org.apache.http.auth.AuthScope;
+import org.apache.http.auth.Credentials;
+import org.apache.http.auth.UsernamePasswordCredentials;
+import org.apache.http.client.CredentialsProvider;
+import org.apache.http.conn.ssl.NoopHostnameVerifier;
+import org.apache.http.impl.client.BasicCredentialsProvider;
+import org.apache.http.impl.nio.client.HttpAsyncClientBuilder;
+import org.apache.http.ssl.SSLContextBuilder;
+import org.apache.http.ssl.SSLContexts;
+import org.elasticsearch.client.RestClient;
+import org.elasticsearch.client.RestClientBuilder;
+import co.elastic.clients.elasticsearch.ElasticsearchAsyncClient;
+import co.elastic.clients.elasticsearch.ElasticsearchClient;
+import co.elastic.clients.json.jackson.JacksonJsonpMapper;
+import co.elastic.clients.transport.ElasticsearchTransport;
+import co.elastic.clients.transport.rest_client.RestClientTransport;
+
+public class ElasticClient {
+
+	//同步需关闭传输对象：transport.close();
+	private ElasticsearchClient syncClient;
+	private ElasticsearchTransport transport;
+	private ElasticsearchAsyncClient asyncClient;
+
+	public ElasticsearchClient getSyncClient() {
+		return syncClient;
+	}
+	public void setSyncClient(ElasticsearchClient syncClient) {
+		this.syncClient = syncClient;
+	}
+
+	public ElasticsearchTransport getTransport() {
+		return transport;
+	}
+	public void setTransport(ElasticsearchTransport transport) {
+		this.transport = transport;
+	}
+
+	public ElasticsearchAsyncClient getAsyncClient() {
+		return asyncClient;
+	}
+	public void setAsyncClient(ElasticsearchAsyncClient asyncClient) {
+		this.asyncClient = asyncClient;
+	}
+
+	//syncClient操作完需关闭transport，而asyncClient则无需
+	void connectToElastic(String userName,String cipherCode,String certificatePath,HttpHost httpHost) {
+		try {
+			final CredentialsProvider provider = new BasicCredentialsProvider();
+			Credentials credential = new UsernamePasswordCredentials(userName,cipherCode);
+			provider.setCredentials(AuthScope.ANY,credential);
+
+			Path caPath = Path.of(certificatePath);
+			CertificateFactory factory = CertificateFactory.getInstance("X.509");
+			Certificate trustCa;
+			try(InputStream is = Files.newInputStream(caPath)){
+				trustCa = factory.generateCertificate(is);
+			}
+
+			KeyStore trustStore = KeyStore.getInstance("pkcs12");
+			trustStore.load(null,null);
+			trustStore.setCertificateEntry("ca",trustCa);
+
+			SSLContextBuilder sslContextBuilder = SSLContexts.custom()
+				.loadTrustMaterial(trustStore,null);
+			final SSLContext sslContext = sslContextBuilder.build();
+
+			RestClientBuilder builder = RestClient
+				.builder(new HttpHost(httpHost.getHostName(),httpHost.getPort(),httpHost.getSchemeName()))
+				.setHttpClientConfigCallback(new RestClientBuilder.HttpClientConfigCallback() {
+					@Override
+					public HttpAsyncClientBuilder customizeHttpClient(HttpAsyncClientBuilder asyncBuilder) {
+						return asyncBuilder.setSSLContext(sslContext)
+							.setSSLHostnameVerifier(NoopHostnameVerifier.INSTANCE)
+							.setDefaultCredentialsProvider(provider);
+					}
+				});
+			RestClient restClient = builder.build();
+			transport = new RestClientTransport(restClient,new JacksonJsonpMapper());
+
+			syncClient = new ElasticsearchClient(transport);
+			asyncClient = new ElasticsearchAsyncClient(transport);
+		} catch (IOException | CertificateException | KeyStoreException
+			| NoSuchAlgorithmException | KeyManagementException e) {
+			e.printStackTrace();
+		}
+	}
+
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_测试代码"><a class="anchor" href="#_测试代码"></a>1.4. 测试代码</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">import java.io.IOException;
+import java.lang.invoke.MethodHandles;
+import org.apache.http.HttpHost;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import co.elastic.clients.elasticsearch._types.ElasticsearchException;
+import co.elastic.clients.transport.endpoints.BooleanResponse;
+
+public class Tester {
+
+	private static final Logger logger = LoggerFactory
+		.getLogger(MethodHandles.lookup().lookupClass());
+
+	public static void main(String[] sa) throws ElasticsearchException, IOException{
+		ElasticClient client = new ElasticClient();
+
+		String userName = "elastic";
+		String cipherCode = "es8es8";
+		String certificatePath = "src/main/resources/certificate/http_ca.crt";
+		HttpHost httpHost = new HttpHost("192.168.0.123",9200,"https");
+
+		client.connectToElastic(userName,cipherCode,certificatePath,httpHost);
+		BooleanResponse response = client.getSyncClient().indices().exists(r -&gt; r.index("elf"));
+		logger.error("exist index:{}",response.value());
+		client.getTransport().close();
+	}
+
+}</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>21:15:17.754 [main] ERROR io.os.es.kit.Tester - exist index:true</p>
+</li>
+<li>
+<p>org.springframework.boot.autoconfigure.elasticsearch.ElasticsearchProperties</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_spring_data整合es8"><a class="anchor" href="#_spring_data整合es8"></a>2. Spring Data整合ES8</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>ElasticSearch 8.11.2</p>
+</li>
+<li>
+<p>Spring Data 2023.1</p>
+</li>
+<li>
+<p>Spring Data ElasticSearch 5.2.0</p>
+</li>
+<li>
+<p>Spring Boot 3.2.0</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_project_structure"><a class="anchor" href="#_project_structure"></a>2.1. Project Structure</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">📄 pom.xml
+📂 src
+  📂 main
+    📂 java
+      📂 io.os.es
+        📄 ElasticEntry.java
+        📂 config
+          📄 ElasticConfig.java
+        📂 controller
+          📄 ElasticController.java
+    📂 resources
+      📄 application.yaml
+      📂 certificate
+        📄 http_ca.crt</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_dependency"><a class="anchor" href="#_dependency"></a>2.2. Dependency</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependencies&gt;
+	&lt;dependency&gt;
+		&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+		&lt;artifactId&gt;spring-boot-starter-data-elasticsearch&lt;/artifactId&gt;
+	&lt;/dependency&gt;
+
+	&lt;dependency&gt;
+		&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+		&lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;
+	&lt;/dependency&gt;
+
+	&lt;dependency&gt;
+		&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+		&lt;artifactId&gt;spring-boot-starter-log4j2&lt;/artifactId&gt;
+	&lt;/dependency&gt;
+&lt;/dependencies&gt;
+
+&lt;build&gt;
+	&lt;resources&gt;
+		&lt;resource&gt;
+	    	&lt;directory&gt;src/main/resources&lt;/directory&gt;
+	     	&lt;filtering&gt;true&lt;/filtering&gt;
+	     	&lt;includes&gt;
+	        	&lt;include&gt;**/*.yaml&lt;/include&gt;
+	     	&lt;/includes&gt;
+		&lt;/resource&gt;
+	&lt;/resources&gt;
+&lt;/build&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_application_yaml"><a class="anchor" href="#_application_yaml"></a>2.3. application.yaml</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">spring:
+  elasticsearch:
+    username: elastic
+    password: es8es8
+    restclient:
+      ssl:
+        bundle: src/main/resources/certificate/http_ca.crt
+    #此处不能携带schema，如https://192.168.0.123:9200
+    uris:
+    - 192.168.0.123:9200
+  data:
+    elasticsearch:
+      repositories:
+        enabled: true</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_configuration"><a class="anchor" href="#_configuration"></a>2.4. Configuration</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">package io.os.es.config;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.security.KeyManagementException;
+import java.security.KeyStore;
+import java.security.KeyStoreException;
+import java.security.NoSuchAlgorithmException;
+import java.security.cert.Certificate;
+import java.security.cert.CertificateException;
+import java.security.cert.CertificateFactory;
+import java.time.Duration;
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.TrustManagerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.elasticsearch.ElasticsearchProperties;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.data.elasticsearch.client.ClientConfiguration;
+import org.springframework.data.elasticsearch.client.elc.ElasticsearchConfiguration;
+
+@Configuration
+@EnableConfigurationProperties({ElasticsearchProperties.class})
+public class ElasticConfig extends ElasticsearchConfiguration {
+
+	@Autowired
+	private ElasticsearchProperties prop;
+
+    @Override
+    public ClientConfiguration clientConfiguration() {
+    	String[] uriArr = prop.getUris().toArray(String[]::new);
+        return ClientConfiguration.builder()
+            .connectedTo(uriArr)
+            .usingSsl(getSslContext(),(hostname,session) -&gt; true)
+            .withConnectTimeout(Duration.ofSeconds(5))
+            .withSocketTimeout(Duration.ofSeconds(30))
+            .withBasicAuth(prop.getUsername(),prop.getPassword())
+            .build();
+    }
+
+    private SSLContext getSslContext(){
+		try {
+			Path caPath = Path.of(prop.getRestclient().getSsl().getBundle());
+			CertificateFactory factory = CertificateFactory.getInstance("X.509");
+			Certificate trustCa;
+			try(InputStream is = Files.newInputStream(caPath)){
+				trustCa = factory.generateCertificate(is);
+			}
+
+			String keyStoreType = KeyStore.getDefaultType();
+	        KeyStore keyStore = KeyStore.getInstance(keyStoreType);
+	        keyStore.load(null, null);
+	        keyStore.setCertificateEntry("ca", trustCa);
+
+	        String algorithm = TrustManagerFactory.getDefaultAlgorithm();
+	        TrustManagerFactory tmf = TrustManagerFactory.getInstance(algorithm);
+	        tmf.init(keyStore);
+
+	        SSLContext context = SSLContext.getInstance("TLS");
+	        context.init(null,tmf.getTrustManagers(),null);
+	        return context;
+		} catch (CertificateException | IOException | KeyStoreException
+			| NoSuchAlgorithmException | KeyManagementException e) {
+			e.printStackTrace();
+			return null;
+		}
+    }
+
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_controller"><a class="anchor" href="#_controller"></a>2.5. Controller</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">import java.io.IOException;
+import java.lang.invoke.MethodHandles;
+import java.util.UUID;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import co.elastic.clients.elasticsearch.ElasticsearchClient;
+import co.elastic.clients.elasticsearch._types.ElasticsearchException;
+
+@RestController
+@RequestMapping
+public class ElasticController {
+
+	private static final Logger logger = LoggerFactory
+		.getLogger(MethodHandles.lookup().lookupClass());
+
+	@Autowired
+	private ElasticsearchClient esClient;
+
+	@GetMapping("/create")
+	public String createIndex() {
+		try {
+			String response = esClient.indices().create(r -&gt; r.index(UUID.randomUUID().toString())).toString();
+			logger.error("create index:{}",response);
+			return response;
+		} catch (ElasticsearchException | IOException e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_entry"><a class="anchor" href="#_entry"></a>2.6. Entry</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class ElasticEntry {
+
+	public static void main(String[] args) {
+		SpringApplication.run(ElasticEntry.class, args);
+	}
+
+}</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://localhost:8080/create" class="bare">http://localhost:8080/create</a></p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">2023-12-10T11:02:54.544+08:00 ERROR 40672 i.o.e.c.ElasticController
+	create index:CreateIndexResponse:
+{"index":"26726252-8571-416a-b47a-47a6dc2124b2","shards_acknowledged":true,"acknowledged":true}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_elastic_client"><a class="anchor" href="#_elastic_client"></a>3. Elastic Client</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_imperative_client"><a class="anchor" href="#_imperative_client"></a>3.1. Imperative Client</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">@Configuration
+public class ImperativeElasticConfig
+	extends ElasticsearchConfiguration {}
+
+@Autowired
+ElasticsearchOperations imperativeOperation;
+
+@Autowired
+ElasticsearchClient imperativeClient;
+
+@Autowired
+RestClient restClient;
+
+@Autowired
+JsonpMapper jsonpMapper;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_reactive_client"><a class="anchor" href="#_reactive_client"></a>3.2. Reactive Client</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">@Configuration
+public class ReactiveElasticConfig
+	extends ReactiveElasticsearchConfiguration {}
+
+@Autowired
+ReactiveElasticsearchOperations reactiveOperation;
+
+@Autowired
+ReactiveElasticsearchClient reactiveClient;
+
+@Autowired
+RestClient restClient;
+
+@Autowired
+JsonpMapper jsonpMapper;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_api"><a class="anchor" href="#_api"></a>4. Api</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>ElasticsearchTemplate</p>
+</li>
+<li>
+<p>ElasticsearchRepository</p>
+</li>
+<li>
+<p>ElasticsearchOperations(Recommended)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>IndexOperations</p>
+</li>
+<li>
+<p>SearchOperations</p>
+</li>
+<li>
+<p>DocumentOperations</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_elastic_crud"><a class="anchor" href="#_elastic_crud"></a>5. Elastic Crud</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_employee"><a class="anchor" href="#_employee"></a>5.1. Employee</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">@Document(indexName = "employee", createIndex = true)
+public class Employee {
+
+    @Id
+    private String employeeId;
+
+    @Field(type = FieldType.Text, name = "name")
+    private String name;
+
+    @Field(type = FieldType.Long, name = "salary")
+    private long salary;
+
+    public Employee() {}
+
+	public String getEmployeeId() {
+		return employeeId;
+	}
+	public void setEmployeeId(String employeeId) {
+		this.employeeId = employeeId;
+	}
+
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public long getSalary() {
+		return salary;
+	}
+	public void setSalary(long salary) {
+		this.salary = salary;
+	}
+
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_controller_2"><a class="anchor" href="#_controller_2"></a>5.2. Controller</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.elasticsearch.core.ElasticsearchOperations;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import io.os.elastic.model.Employee;
+
+@RestController
+@RequestMapping
+public class EmployeeController {
+
+	@Autowired
+	private ElasticsearchOperations elasticOperation;
+
+	@PostMapping("/employee")
+	public ResponseEntity&lt;Employee&gt; insert(@RequestBody Employee employee){
+		var emp = elasticOperation.save(employee);
+		return ResponseEntity.ok(emp);
+	}
+
+	@DeleteMapping("/deleteById/{employeeId}")
+	public ResponseEntity&lt;String&gt; deleteById(
+			@PathVariable("employeeId") String employeeId){
+		String empId = elasticOperation.delete(employeeId,Employee.class);
+		return ResponseEntity.ok(empId);
+	}
+
+	@PutMapping("/updateById")
+	public ResponseEntity&lt;Employee&gt; updateById(
+		@RequestBody Employee employee){
+		Employee emp = elasticOperation.get(employee.getEmployeeId(),Employee.class);
+		emp.setName(employee.getName());
+		emp.setSalary(employee.getSalary());
+		elasticOperation.save(emp);
+		return ResponseEntity.ok(emp);
+	}
+
+	@GetMapping("/getById/{employeeId}")
+	public ResponseEntity&lt;Employee&gt; getById(
+		@PathVariable("employeeId") String employeeId){
+		Employee emp = elasticOperation.get(employeeId,Employee.class);
+		return ResponseEntity.ok(emp);
+	}
+
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_test"><a class="anchor" href="#_test"></a>5.3. Test</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>localhost:8080/employee</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">{
+    "name":"elf",
+    "salary":"666"
+}</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>localhost:8080/updateById</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">{
+    "employeeId": "9KQfHI4BwaDO2KMCR8eQ",
+    "name":"lml",
+    "salary":"666"
+}</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>localhost:8080/getById/86QaHI4BwaDO2KMCPcdA</p>
+</li>
+<li>
+<p>localhost:8080/deleteById/8qQWHI4BwaDO2KMC7seg</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</article>
+	</div>
+</main>
+</div>
+		<footer class="footer">
+	
+	
+	
+	<div class="footer-thanks">
+		Authored in AsciiDoc
+		<br /><br />
+		Produced by Antora and Asciidoctor
+  	</div>
+  
+	<div class="footer-legal" style="text-align:center">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br /><br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		Copyright © 2024 Elf
+		<br /><br />
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+	
+</footer><script id="site-script" src="../../../../_/js/site.js" 
+	data-ui-root-path="../../../../_"></script>
+
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
+</html>

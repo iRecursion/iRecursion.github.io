@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> :: AsciiDoc</title>
+    <meta name="generator" content="Antora 3.1.7">
+
+<link rel="stylesheet" href="../../../../_/css/site.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/asciidoc.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
+
+
+    <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+  			
+  			<a class="navbar-item logo" target="_blank" href="">
+				<img src="../../../../_/img/yin-yang-symbol.svg" width="100%" height="50">
+			</a>
+  			
+	            <div id="main" style="place-content: center;">
+	                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+		            </div>
+		        </section>
+    	</div>
+    	
+    	<div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Culture</div>
+          			<div class="navbar-dropdown is-right">
+            			
+			            <div class="navbar-item">Traditional Culture</div>
+			            
+			            <a class="navbar-item" target="_blank" href="../../../../culture/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Culture <small>传统文化</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Eco</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <a class="navbar-item" target="_blank" href="../../../../multifariousness/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Multifariousness <small>五花八门</small></span>
+			            </a>
+
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../ai/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Artificial Intelligence<small>人工智能</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../msg/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Messaging - Kafka <small>Kafka</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Experiment</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <div class="navbar-item">Quantum Computing</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>QC <small>量子计算...</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <div class="navbar-item">Harmony</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>CangJie <small>预览版内测...</small></span>
+			            </a>
+        			</div>
+    			</div>
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container" data-component="multifariousness" data-version="v0.0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">Multifariousness</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Security</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Security/KeycloakInstallation.html">Keycloak Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Security/KeycloakCase.html">Keycloak Case</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Antora</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="AsciidoctorInstallation.html">Asciidoctor Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="AsciidoctorConfigurer.html">Asciidoctor Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="AntoraInstallation.html">Antora Installation</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="AntoraConfigurer.html">Antora Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="AntoraHighlight.html">Antora Highlight</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="AntoraUI.html">Antora UI</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="Markdown.html">Markdown</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="NodeInstallation.html">Node Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Doxygen</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxygenInstallation.html">Doxygen Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxygenEntry.html">Doxygen Entry</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DocumentingCode.html">Documenting Code</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxygenUsage.html">Doxygen Usage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxywizardUsage.html">Doxywizard Usage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxyfileProperty.html">Doxyfile Property</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/CustomCommand.html">Custom Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/SpecialCommand.html">Special Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/HtmlCommand.html">Html Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/XmlCommand.html">Xml Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/EmojiSupport.html">Emoji Support</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Lang</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustPrerequisite.html">Rust Prerequisite</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustGun.html">Rust Gun</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustConfigurer.html">Rust Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustEclipse.html">Rust Eclipse</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustVSCode.html">Rust VSCode</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/GoInstallation.html">Go Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/GroovyInstallation.html">Groovy Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/JavaFxInstallation.html">JavaFx Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/LuaInstallation.html">Lua Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/PythonInstallation.html">Python Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Ide</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/EclipseCustomizer.html">EclipseCustomizer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/EclipseConfigurer.html">EclipseConfigurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/FlattenLifecycle.html">FlattenLifecycle</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/JakartaSpecification.html">JakartaSpecification</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/CondaJupyter.html">CondaJupyter</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/IdeaConfigurer.html">IdeaConfigurer</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Ops</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/HyperVConfigurer.html">Hyper VConfigurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/UbuntuConfigurer.html">Ubuntu Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/DockerFundamental.html">Docker Fundamental</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/K8SInstallation.html">K8S Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/K8SExtension.html">K8S Extension</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/NexusInstallation.html">Nexus Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/JenkinsInstallation.html">Jenkins Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/BatchProcess.html">Batch Process</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/OracleContainerRegistry.html">Oracle Container Registry</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/WinConfigurer.html">Win Configurer</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Msg</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Msg/KafkaInstallation.html">Kafka Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Msg/KafkaEntryCase.html">Kafka Entry Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Msg/PulsarInstallation.html">Pulsar Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Store</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/PowerDesigner.html">Power Designer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/CassandraSetup.html">Cassandra Setup</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/CassandraBoot.html">Cassandra Boot</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/CassandraTesting.html">Cassandra Testing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/ElasticInstallation.html">Elastic Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/ElasticCase.html">Elastic Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/OpenSearchInstallation.html">Open Search Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/MySQLInstallation.html">MySQL Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/MySqlTuning.html">MySql Tuning</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/MongoInstallation.html">Mongo Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/MongoCase.html">Mongo Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/PostgresInstallation.html">Postgres Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/AeroSpikeInstallation.html">Aero Spike Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/TinkerpopCase.html">Tinkerpo pCase</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Multifariousness</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">Multifariousness</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+	<div class="toolbar" role="navigation">
+	<button class="nav-toggle"></button>
+	
+		<a href="../../index.html" 
+			class="home-link">
+		</a>
+
+	<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">Multifariousness</a></li>
+    <li>Antora</li>
+    <li><a href="AntoraConfigurer.html">Antora Configurer</a></li>
+  </ul>
+</nav>
+		</div>
+	
+	<div class="content">
+			<aside class="toc sidebar" 
+	data-title="Contents" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+			<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_include">1. Include</a></li>
+<li><a href="#_line_number">2. Line Number</a></li>
+<li><a href="#_emoji">3. Emoji</a></li>
+<li><a href="#_mathjax">4. MathJax</a></li>
+<li><a href="#_asciidoctor_kroki">5. asciidoctor-kroki</a></li>
+<li><a href="#_pdf">6. Pdf</a></li>
+<li><a href="#_lunr_retrieve">7. Lunr Retrieve</a></li>
+<li><a href="#_tab">8. Tab</a></li>
+<li><a href="#_antora_operation">9. Antora Operation</a></li>
+<li><a href="#_antora_github">10. Antora Github</a></li>
+<li><a href="#_trackback">11. Trackback</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_include"><a class="anchor" href="#_include"></a>1. Include</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><mark>include::ROOT:partial$Header.adoc[]</mark></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_line_number"><a class="anchor" href="#_line_number"></a>2. Line Number</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">asciidoc:
+  sourcemap: true</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>antora --asciidoc-sourcemap --fetch antora-playbook.yml</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_emoji"><a class="anchor" href="#_emoji"></a>3. Emoji</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">npm i -g @asciidoctor/core asciidoctor-emoji</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">asciidoc:
+  extensions:
+  - asciidoctor-emoji</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-asciidoc" data-lang="asciidoc">emoji:bear[5x]
+
+emoji:heart[5x]</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_mathjax"><a class="anchor" href="#_mathjax"></a>4. MathJax</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://asciimath.org/#syntax" class="bare">https://asciimath.org/#syntax</a></p>
+</li>
+<li>
+<p><a href="https://docs.mathjax.org/en/latest/" class="bare">https://docs.mathjax.org/en/latest/</a></p>
+</li>
+<li>
+<p><a href="https://gitlab.com/djencks/asciidoctor-mathjax.js" class="bare">https://gitlab.com/djencks/asciidoctor-mathjax.js</a></p>
+</li>
+<li>
+<p>asciidoctor-mathjax提供Asciidoctor.js扩展，<br>
+使用Mathjax 3 JavaScript在服务器端呈现AsciiMath和LaTeX；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">npm i -g @djencks/asciidoctor-mathjax</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">asciidoc:
+  attributes:
+    stem: 'asciimath'
+  extensions:
+  - '@djencks/asciidoctor-mathjax'</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">****
+stem:[\vec{A} * \vec{B} = A_1B_1 + A_2B_2]
+****</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_asciidoctor_kroki"><a class="anchor" href="#_asciidoctor_kroki"></a>5. asciidoctor-kroki</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Asciidoctor使用Kroki转换diagram到图片的extension</p>
+</li>
+<li>
+<p><a href="https://www.npmjs.com/package/asciidoctor-kroki" class="bare">https://www.npmjs.com/package/asciidoctor-kroki</a></p>
+</li>
+<li>
+<p>asciidoctor-kroki替代已过时的asciidoctor-plantuml</p>
+</li>
+<li>
+<p>可使用kroki-fetch-diagram属性在Kroki构建的时间来下载图像，<br>
+即在浏览页面时将不再依赖Kroki,但在Antora中,当前与嵌入式svg图像不兼容</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash"># 用于Asciidoctor
+gem install asciidoctor-kroki
+
+asciidoctor -r asciidoctor-kroki fileName.adoc
+
+# 用于Antora
+npm i -g asciidoctor asciidoctor-kroki
+
+# docker方式：https://hub.docker.com/r/yuzutech/kroki
+# https://docs.kroki.io/kroki/setup/configuration
+docker pull yuzutech/kroki:0.22.0</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">asciidoc:
+  extensions:
+    - asciidoctor-kroki
+  attributes:
+    # kroki-server-url: http://192.168.0.123:9500
+    kroki-fetch-diagram: true
+    kroki-default-format: svg</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_pdf"><a class="anchor" href="#_pdf"></a>6. Pdf</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://gitlab.com/antora/antora-assembler" class="bare">https://gitlab.com/antora/antora-assembler</a></p>
+</li>
+<li>
+<p><a href="https://www.npmjs.com/package/@antora/pdf-extension" class="bare">https://www.npmjs.com/package/@antora/pdf-extension</a></p>
+</li>
+<li>
+<p><a href="https://docs.asciidoctor.org/pdf-converter/latest/theme" class="bare">https://docs.asciidoctor.org/pdf-converter/latest/theme</a></p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">gem install text-hyphen
+
+gem install asciidoctor-pdf
+
+asciidoctor-pdf fileName.adoc
+
+asciidoctor -r asciidoctor-pdf fileName.adoc
+
+npm i -g @antora/pdf-extension</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>在antora-playbook.yaml同级目录创建antora-assembler.yaml</p>
+</li>
+<li>
+<p>并通过antora-assembler.yaml来指定pdf-theme.yaml和font</p>
+</li>
+<li>
+<p>antora --extension @antora/pdf-extension antora-playbook.yml</p>
+</li>
+<li>
+<p>antora-playbook.yaml</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml"># antora-playbook.yaml
+
+asciidoc:
+  attributes:
+    source-highlighter: highlight.js
+    # module/version/fileName：osp/v0.0.1/osp-adoc.pdf
+    attachmentsdir: .
+asciidoc:
+  attributes:
+
+antora:
+  extensions:
+  - '@antora/pdf-extension'
+  - require: '@antora/lunr-extension'
+    index_latest_only: true
+    #languages: [en, cn]</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">📄 antora-assembler.yaml
+📄 antora-playbook.yaml
+📂 aui-external
+  📂 Cjk
+    📄 cjk-theme.yml
+    📄 NotoSansCJKsc-VF.ttf
+    📄 NotoSansMonoCJKsc-VF.ttf</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>antora-assembler.yaml</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">root_level: 0
+component_versions: '*'
+asciidoc:
+  attributes:
+    source-highlighter: highlight.js
+    pdf-theme: ./aui-external/Cjk/cjk-theme.yml</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>cjk-theme.yaml</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">extends: default
+font:
+  catalog:
+    merge: true
+    Noto Sans CN: D:/Install/Dev/workspace/AsciiDoc/asciidoc-antora/asciidoc-generator/External/Cjk/NotoSansCJKsc-VF.ttf
+    Noto Sans Mono CN: D:/Install/Dev/workspace/AsciiDoc/asciidoc-antora/asciidoc-generator/External/Cjk/NotoSansMonoCJKsc-VF.ttf
+  fallbacks:
+  - Noto Serif
+base:
+  text-align: left
+  font-family: Noto Sans CN
+codespan:
+  font-family: Noto Sans Mono CN
+kbd:
+  font-family: $codespan-font-family
+code:
+  font-family: $codespan-font-family</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_lunr_retrieve"><a class="anchor" href="#_lunr_retrieve"></a>7. Lunr Retrieve</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>各种jieba版本，与node版本不匹配，甚至有从v16到v20的，<br>
+中文无分词效果，中文无分词效果，中文无分词效果，坐等社区维护；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">npm i -g @antora/lunr-extension
+
+npm i -g @node-rs/jieba</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>footer-scripts.hbs</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-html" data-lang="html">{{#if env.SITE_SEARCH_PROVIDER}}
+{{&gt; search-scripts}}
+{{/if}}</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>header-content.hbs</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-html" data-lang="html">&lt;div class="navbar-item has-dropdown is-hoverable"&gt;
+	&lt;div class="navbar-link"&gt;
+		{{#if env.SITE_SEARCH_PROVIDER}}
+	    	&lt;div class="navbar-item search hide-for-print"&gt;
+	        	&lt;div id="search-field" class="field"&gt;
+	          		&lt;label for="search-input"&gt;&lt;/label&gt;
+	          		&lt;input id="search-input" type="text"
+	          			placeholder="Type To Retrieving..."
+	          			{{#if page.home}} autofocus{{/if}} /&gt;
+	        	&lt;/div&gt;
+	      	&lt;/div&gt;
+		{{/if}}
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>antora-playbook.yaml</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">antora:
+  extensions:
+  - require: '@antora/lunr-extension'
+    index_latest_only: true
+    #languages: [en, cn]</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_tab"><a class="anchor" href="#_tab"></a>8. Tab</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/asciidoctor/asciidoctor-tabs" class="bare">https://github.com/asciidoctor/asciidoctor-tabs</a></p>
+</li>
+<li>
+<p>因Antora不支持asciidoctor v3.x版本的asciidoctor-tabs；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">npm uninstall asciidoctor@3.0.4 -g
+
+npm uninstall @asciidoctor/core@3.0.4 -g
+
+npm i -g asciidoctor@2.2.7
+
+npm i -g @asciidoctor/core@2.2.7</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">gem install asciidoctor-tabs
+
+asciidoctor -r asciidoctor-tabs fileName.adoc
+
+npm i -D -g @asciidoctor/tabs</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_antora_operation"><a class="anchor" href="#_antora_operation"></a>9. Antora Operation</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">echo off
+cls
+chcp 65001
+
+set BASE_URL=D:/Install/Antora/AsciiDoc
+
+set ANTORA_URL=%BASE_URL%/asciidoc-generator/
+set SITE_URL=%BASE_URL%/asciidoc-distro/docs/index.html
+
+d:
+cd %ANTORA_URL%
+
+rem --extension @antora/pdf-extension
+rem --extension @antora/lunr-extension
+
+rem -r asciidoctor-pdf
+rem -r @djencks/asciidoctor-mathjax
+
+rem --fetch antora-playbook.yml
+
+antora antora-playbook.yml &amp; start %SITE_URL%</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_antora_github"><a class="anchor" href="#_antora_github"></a>10. Antora Github</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>创建仓库username.github.io：iRecursion.github.io</p>
+</li>
+<li>
+<p>仓库根目录下创建/docs目录，用于存放antora生成的文件</p>
+</li>
+<li>
+<p>在/docs目录下创建.nojekyll，此文件可空内容，<br>
+<a href="https://docs.antora.org/antora/latest/publish-to-github-pages/" class="bare">https://docs.antora.org/antora/latest/publish-to-github-pages/</a></p>
+</li>
+<li>
+<p>点击仓库 &#8594; Settings &#8594; Pages(左侧)<br>
+&#8594; 可选择分支，文件夹，自定义域名，取消发布站点</p>
+</li>
+<li>
+<p><a href="https://iRecursion.github.io" class="bare">https://iRecursion.github.io</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_trackback"><a class="anchor" href="#_trackback"></a>11. Trackback</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://docs.antora.org/antora/latest/antora-container" class="bare">https://docs.antora.org/antora/latest/antora-container</a></p>
+</li>
+<li>
+<p><a href="https://zhuanlan.zhihu.com/p/622524912" class="bare">https://zhuanlan.zhihu.com/p/622524912</a></p>
+</li>
+<li>
+<p><a href="https://gitee.com/mirrors/opennms/blob/develop/docs/antora.yml" class="bare">https://gitee.com/mirrors/opennms/blob/develop/docs/antora.yml</a></p>
+</li>
+<li>
+<p><a href="https://gitee.com/mirrors/opennms/blob/develop/antora-playbook-local.yml" class="bare">https://gitee.com/mirrors/opennms/blob/develop/antora-playbook-local.yml</a></p>
+</li>
+<li>
+<p><a href="https://github.com/spring-io/spring-antora-maven-plugins" class="bare">https://github.com/spring-io/spring-antora-maven-plugins</a></p>
+</li>
+<li>
+<p><a href="https://github.com/spring-io/antora-extensions" class="bare">https://github.com/spring-io/antora-extensions</a></p>
+</li>
+<li>
+<p><a href="https://antora.gitlab.io/antora-ui-default/#" class="bare">https://antora.gitlab.io/antora-ui-default/#</a></p>
+</li>
+<li>
+<p><a href="https://github.com/rwinch/spring-framework/blob/antora/framework-docs/antora.yml" class="bare">https://github.com/rwinch/spring-framework/blob/antora/framework-docs/antora.yml</a></p>
+</li>
+<li>
+<p><a href="https://docs.asciidoctor.org/" class="bare">https://docs.asciidoctor.org/</a></p>
+</li>
+<li>
+<p><a href="https://docs.antora.org/antora/latest/" class="bare">https://docs.antora.org/antora/latest/</a></p>
+</li>
+<li>
+<p><a href="https://docs.antora.org/antora/latest/playbook/private-repository-auth/" class="bare">https://docs.antora.org/antora/latest/playbook/private-repository-auth/</a></p>
+</li>
+<li>
+<p><a href="https://github.com/asciidoctor/asciidoctor-docs-ui/releases/download/prod-299/ui-bundle.zip" class="bare">https://github.com/asciidoctor/asciidoctor-docs-ui/releases/download/prod-299/ui-bundle.zip</a></p>
+</li>
+<li>
+<p><a href="https://libraries.io/maven/io.spring.asciidoctor:spring-asciidoctor-extensions-spring-boot" class="bare">https://libraries.io/maven/io.spring.asciidoctor:spring-asciidoctor-extensions-spring-boot</a></p>
+</li>
+<li>
+<p><a href="https://gitlab.com/antora/antora-asciidoctor-extensions" class="bare">https://gitlab.com/antora/antora-asciidoctor-extensions</a></p>
+</li>
+<li>
+<p><a href="https://github.com/spring-io/spring-asciidoctor-extensions" class="bare">https://github.com/spring-io/spring-asciidoctor-extensions</a></p>
+</li>
+<li>
+<p><a href="https://docs.antora.org/antora/latest/extend/enable-extension/" class="bare">https://docs.antora.org/antora/latest/extend/enable-extension/</a></p>
+</li>
+<li>
+<p><a href="https://docs.antora.org/antora/latest/extend/extension-tutorial/" class="bare">https://docs.antora.org/antora/latest/extend/extension-tutorial/</a></p>
+</li>
+<li>
+<p><a href="https://docs.antora.org/antora/latest/playbook/asciidoc-extensions/" class="bare">https://docs.antora.org/antora/latest/playbook/asciidoc-extensions/</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+	</div>
+</main>
+</div>
+		<footer class="footer">
+	
+	
+	
+	<div class="footer-thanks">
+		Authored in AsciiDoc
+		<br /><br />
+		Produced by Antora and Asciidoctor
+  	</div>
+  
+	<div class="footer-legal" style="text-align:center">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br /><br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		Copyright © 2024 Elf
+		<br /><br />
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+	
+</footer><script id="site-script" src="../../../../_/js/site.js" 
+	data-ui-root-path="../../../../_"></script>
+
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
+</html>

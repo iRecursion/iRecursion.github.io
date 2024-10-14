@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> :: AsciiDoc</title>
+    <meta name="generator" content="Antora 3.1.7">
+
+<link rel="stylesheet" href="../../../../_/css/site.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/asciidoc.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
+
+
+    <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+  			
+  			<a class="navbar-item logo" target="_blank" href="">
+				<img src="../../../../_/img/yin-yang-symbol.svg" width="100%" height="50">
+			</a>
+  			
+	            <div id="main" style="place-content: center;">
+	                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+		            </div>
+		        </section>
+    	</div>
+    	
+    	<div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Culture</div>
+          			<div class="navbar-dropdown is-right">
+            			
+			            <div class="navbar-item">Traditional Culture</div>
+			            
+			            <a class="navbar-item" target="_blank" href="../../../../culture/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Culture <small>传统文化</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Eco</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <a class="navbar-item" target="_blank" href="../../../../multifariousness/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Multifariousness <small>五花八门</small></span>
+			            </a>
+
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../ai/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Artificial Intelligence<small>人工智能</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../msg/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Messaging - Kafka <small>Kafka</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Experiment</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <div class="navbar-item">Quantum Computing</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>QC <small>量子计算...</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <div class="navbar-item">Harmony</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>CangJie <small>预览版内测...</small></span>
+			            </a>
+        			</div>
+    			</div>
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container" data-component="multifariousness" data-version="v0.0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">Multifariousness</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Security</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Security/KeycloakInstallation.html">Keycloak Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Security/KeycloakCase.html">Keycloak Case</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Antora</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AsciidoctorInstallation.html">Asciidoctor Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AsciidoctorConfigurer.html">Asciidoctor Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraInstallation.html">Antora Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraConfigurer.html">Antora Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraHighlight.html">Antora Highlight</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/Markdown.html">Markdown</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/NodeInstallation.html">Node Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Doxygen</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="DoxygenInstallation.html">Doxygen Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="DoxygenEntry.html">Doxygen Entry</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="DocumentingCode.html">Documenting Code</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="DoxygenUsage.html">Doxygen Usage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="DoxywizardUsage.html">Doxywizard Usage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="DoxyfileProperty.html">Doxyfile Property</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="CustomCommand.html">Custom Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="SpecialCommand.html">Special Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="HtmlCommand.html">Html Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="XmlCommand.html">Xml Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="EmojiSupport.html">Emoji Support</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Lang</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustPrerequisite.html">Rust Prerequisite</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustGun.html">Rust Gun</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustConfigurer.html">Rust Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustEclipse.html">Rust Eclipse</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustVSCode.html">Rust VSCode</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/GoInstallation.html">Go Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/GroovyInstallation.html">Groovy Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/JavaFxInstallation.html">JavaFx Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/LuaInstallation.html">Lua Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/PythonInstallation.html">Python Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Ide</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/EclipseCustomizer.html">EclipseCustomizer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/EclipseConfigurer.html">EclipseConfigurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/FlattenLifecycle.html">FlattenLifecycle</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/JakartaSpecification.html">JakartaSpecification</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/CondaJupyter.html">CondaJupyter</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/IdeaConfigurer.html">IdeaConfigurer</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Ops</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/HyperVConfigurer.html">Hyper VConfigurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/UbuntuConfigurer.html">Ubuntu Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/DockerFundamental.html">Docker Fundamental</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/K8SInstallation.html">K8S Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/K8SExtension.html">K8S Extension</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/NexusInstallation.html">Nexus Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/JenkinsInstallation.html">Jenkins Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/BatchProcess.html">Batch Process</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/OracleContainerRegistry.html">Oracle Container Registry</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/WinConfigurer.html">Win Configurer</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Msg</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Msg/KafkaInstallation.html">Kafka Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Msg/KafkaEntryCase.html">Kafka Entry Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Msg/PulsarInstallation.html">Pulsar Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Store</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/PowerDesigner.html">Power Designer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/CassandraSetup.html">Cassandra Setup</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/CassandraBoot.html">Cassandra Boot</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/CassandraTesting.html">Cassandra Testing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/ElasticInstallation.html">Elastic Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/ElasticCase.html">Elastic Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/OpenSearchInstallation.html">Open Search Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/MySQLInstallation.html">MySQL Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/MySqlTuning.html">MySql Tuning</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/MongoInstallation.html">Mongo Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/MongoCase.html">Mongo Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/PostgresInstallation.html">Postgres Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/AeroSpikeInstallation.html">Aero Spike Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/TinkerpopCase.html">Tinkerpo pCase</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Multifariousness</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">Multifariousness</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+	<div class="toolbar" role="navigation">
+	<button class="nav-toggle"></button>
+	
+		<a href="../../index.html" 
+			class="home-link">
+		</a>
+
+	<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">Multifariousness</a></li>
+    <li>Doxygen</li>
+    <li><a href="DocumentingCode.html">Documenting Code</a></li>
+  </ul>
+</nav>
+		</div>
+	
+	<div class="content">
+			<aside class="toc sidebar" 
+	data-title="Contents" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+			<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_special_comment_block">1. Special Comment Block</a>
+<ul class="sectlevel2">
+<li><a href="#_clike_lang">1.1. CLike Lang</a>
+<ul class="sectlevel3">
+<li><a href="#_put_doc_after_member">1.1.1. Put Doc After Member</a></li>
+<li><a href="#_example">1.1.2. Example</a></li>
+<li><a href="#_doc_at_other_place">1.1.3. Doc At Other Place</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_special_comment_block"><a class="anchor" href="#_special_comment_block"></a>1. Special Comment Block</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_clike_lang"><a class="anchor" href="#_clike_lang"></a>1.1. CLike Lang</h3>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>类 C 语言 (C/C++/C#/Objective-C/PHP/Java) 的注释块<br>
+* 类C语言(C，Cpp，Java等)的注释块：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>对代码中的每个实体，有两种类型描述，他们共同构成该实体的文档：<br>
+简要描述brief description和详细描述detail description；</p>
+</li>
+<li>
+<p>允许多个简要描述或详细描述，但不建议，因未指定描述的显示顺序；</p>
+</li>
+<li>
+<p>简要描述是简短文字，short one-liner，详细描述提供更长，更详细的文档；</p>
+</li>
+<li>
+<p>正文描述("in body" description)：可充当详细描述，也可描述一组实现细节；</p>
+</li>
+<li>
+<p>对Html输出，简要描述还用于在引用item的地方提供tooltip；</p>
+</li>
+<li>
+<p>comment block as detail description：</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><span class="fuchsia">A：使用Javadoc样式，由两个*开头的C样式注释块组成</span>：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">/**
+ * JavaDoc Style
+ */</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="fuchsia">B：使用QT样式，并在C样式注释块开头后添加感叹号(!)，中间的*是可选</span>：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-cpp" data-lang="cpp">/*!
+ * QT Style with intermediate asterisk
+ */
+
+/*!
+
+ QT Style without intermediate asterisk
+
+ */</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="fuchsia">C：选择使用至少两个Cpp注释行的块，其中每行都以单个额外斜杠<br>
+或感叹号开头</span>，此场景下：空白行会劫数文档块，两种示例如下：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-cpp" data-lang="cpp">///
+/// at least two cpp comment line with additional slash
+///
+
+
+//!
+//! at least two cpp comment line with exclamation mark
+//!</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="fuchsia">D：注释块在文档中更显眼</span>：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">/*******************************************//**
+ *  comment
+ ***********************************************/
+
+/////////////////////////////////////////////////
+/// comment
+/////////////////////////////////////////////////
+
+/***********************************************
+ * comment
+ ***********************************************/</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><mark>注：2个斜线结束正常注释块并开始特殊注释块</mark>；</p>
+</li>
+<li>
+<p>注：用clang-format等重新格式化程序时要小心，因它<br>
+可能会将此类注释视为2个单独的注释并在它们之间引入空格；</p>
+</li>
+<li>
+<p><span class="fuchsia">E：banner comment：JAVADOC_BANNER 设置为YES</span>：<br>
+<a href="https://www.doxygen.nl/manual/config.html#cfg_javadoc_banner" class="bare">https://www.doxygen.nl/manual/config.html#cfg_javadoc_banner</a><br>
+<a href="https://www.doxygen.nl/manual/examples/javadoc-banner/html/javadoc-banner_8h.html" class="bare">https://www.doxygen.nl/manual/examples/javadoc-banner/html/javadoc-banner_8h.html</a></p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">/**
+ * brief history of JavaDoc-style (C-style) comment
+ *
+ * typical JavaDoc-style C-style comment，start with two asterisk
+ *
+ * @param theory Even if there only one possible unified theory，
+ * it is just a set of rules and equations.
+ */
+void cstyle( int theory );
+
+/******************************************************************************
+ * brief history of JavaDoc-style (C-style) banner comment
+ *
+ * typical JavaDoc-style C-style "banner" comment，
+ * start with forward slash follow by some number,
+ *
+ * n of asterisk，where n &gt; 2，It's written this way to
+ * be more "visible" to developer who are reading source code
+ *
+ * often，developer are unaware that this is not (by default)
+ * valid Doxygen comment block!
+ *
+ * however，as long as JAVADOC_BLOCK = YES add to Doxyfile，
+ * it will work as expected；
+ *
+ * this style of commenting behave well with clang-format，
+ *
+ * @param theory even if there only one possible unified theory，
+ * it is just a set of rules and equations.
+ ******************************************************************************/
+void javadocBanner( int theory );
+
+/**************************************************************************//**
+ * brief history of Doxygen-style banner comment
+ *
+ * Doxygen-style C-style "banner" comment，
+ * It start with "normal" comment and then convert to
+ *
+ * "special" comment block near the end of the first line，
+ * It is written this way to be more "visible" to developer
+ * who are reading the source code；
+ *
+ * this style of commenting behave poorly with clang-format；
+ *
+ * @param theory even if there is only one possible unified theory，
+ * it is just a set of rules and equations.
+ ******************************************************************************/
+void doxygenBanner( int theory );</code></pre>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><span class="fuchsia">brief description several possibility</span>：</p>
+</li>
+<li>
+<p>A：可将[fuchsia]#\brief#命令与上述注释块之一结合使用，<br>
+此命令在段落末尾结束，故详细描述位于空行之后；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-cpp" data-lang="cpp">/*! \brief Brief description,
+ *         Brief description continue；
+ *
+ *  detail description start from here
+ */</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>B：若在配置文件中将JAVADOC_AUTOBRIEF设置为YES，则用Javadoc<br>
+样式注释块将自动开始简短描述，该描述以第一个点结尾，后跟空格或换行符：</p>
+</li>
+<li>
+<p><a href="https://www.doxygen.nl/manual/config.html#cfg_javadoc_autobrief" class="bare">https://www.doxygen.nl/manual/config.html#cfg_javadoc_autobrief</a></p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">/** Brief description which end at this dot. detail follow
+ *  here.
+ */</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>该选项对多行特殊 C++ 注释具有相同的效果：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-cpp" data-lang="cpp">/// Brief description which end at this dot. Details follow
+/// here.</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>C：用特殊的C++样式注释，该注释不超过一行：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-cpp" data-lang="cpp">/// 简要说明。
+/** 详细说明。 */</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-cpp" data-lang="cpp">//! 简要说明
+
+//! 详细说明
+//! 从这里开始</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>注：上面示例中的空白行，该空白行用于将简要说明与包含详细说明的块分开，<br>
+此时需将JAVADOC_AUTOBRIEF设置为NO；</p>
+</li>
+<li>
+<p>D：多个详细描述：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-cpp" data-lang="cpp">//! Brief description, which is
+//! really a detailed description since it spans multiple lines.
+/*! Another detailed description!
+ */</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>与大多文档系统不同：Doxygen允许将成员(包括全局函数)的文档放在定义之前；</p>
+</li>
+<li>
+<p>这样文档就可放在源文件中，而不是头文件中，这可使头文件保持紧凑，<br>
+并允许成员的实现者更直接地访问文档，作为权衡，<br>
+可将简短描述放在声明之前，将详细描述放在成员定义之前</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_put_doc_after_member"><a class="anchor" href="#_put_doc_after_member"></a>1.1.1. Put Doc After Member</h4>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>若想要文档化file，struct，union，class或enum的member，<br>
+有时需将文档块放在成员之后而不是之前；</p>
+</li>
+<li>
+<p>为此，必须在注释块中放置一个额外的 &lt; 标记，注：这也适于函数的参数；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-cpp" data-lang="cpp">int var; /*!&lt; detail description after member */</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-cpp" data-lang="cpp">int var; /**&lt; detail description after member */</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-cpp" data-lang="cpp">int var; //!&lt; detail description after member
+         //!&lt;</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-cpp" data-lang="cpp">int var; ///&lt; detail description after member
+         ///&lt;</code></pre>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>brief description after member</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-cpp" data-lang="cpp">int var; //!&lt; brief description after member</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-cpp" data-lang="cpp">int var; ///&lt; brief description after member</code></pre>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>对函数，可用@param命令来文档化参数，<br>
+然后用[in]、[out]、[in,out]来document direction；</p>
+</li>
+<li>
+<p>对内联inline文档，可通过从direction属性开始来实现，如：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-cpp" data-lang="cpp">void foo(int v /**&lt; [in] doc for input parameter v */);</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>注：这些块具有与上一节中特殊注释块相同的结构和含义，只有 &lt; 表示成员位于块前面而不是块后面；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">/*! A test class */
+
+class AfterdocTest{
+  public:
+    /** An enum type.
+     *  The documentation block cannot be put after the enum!
+     */
+    enum EnumType
+    {
+      int EVal1,     /**&lt; enum value 1 */
+      int EVal2      /**&lt; enum value 2 */
+    };
+    void member();   //!&lt; a member function.
+
+  protected:
+    int value;       /*!&lt; an integer value */
+};</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.doxygen.nl/manual/examples/afterdoc/html/class_afterdoc___test.html" class="bare">https://www.doxygen.nl/manual/examples/afterdoc/html/class_afterdoc___test.html</a></p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>这些块只能用于文档化member and parameter，它们不能用于文档化file，<br>
+class，union，struct，group，namespace，macro，enum本身；</p>
+</li>
+<li>
+<p>另下一节中提到的结构命令，如class不允许在这些注释块内使用，<br>
+将此构造用作宏定义的一部分时要小心；</p>
+</li>
+<li>
+<p>因当在应用宏的地方将MACRO_EXPANSION设置为YES时，注释也将被替换，<br>
+然后此注释将用作遇到的最后一项的文档，而不是宏定义本身的文档!</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_example"><a class="anchor" href="#_example"></a>1.1.2. Example</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-cpp" data-lang="cpp">//!  A test class.
+/*!
+  A more elaborate class description.
+*/
+
+class QTstyle_Test
+{
+  public:
+
+    //! An enum.
+    /*! More detailed enum description. */
+    enum TEnum {
+                 TVal1, /*!&lt; Enum value TVal1. */
+                 TVal2, /*!&lt; Enum value TVal2. */
+                 TVal3  /*!&lt; Enum value TVal3. */
+               }
+         //! Enum pointer.
+         /*! Details. */
+         *enumPtr,
+         //! Enum variable.
+         /*! Details. */
+         enumVar;
+
+    //! A constructor.
+    /*!
+      A more elaborate description of the constructor.
+    */
+    QTstyle_Test();
+
+    //! A destructor.
+    /*!
+      A more elaborate description of the destructor.
+    */
+   ~QTstyle_Test();
+
+    //! A normal member taking two arguments and returning an integer value.
+    /*!
+      \param a an integer argument.
+      \param s a constant character pointer.
+      \return The test results
+      \sa QTstyle_Test(), ~QTstyle_Test(), testMeToo() and publicVar()
+    */
+    int testMe(int a,const char *s);
+
+    //! A pure virtual member.
+    /*!
+      \sa testMe()
+      \param c1 the first argument.
+      \param c2 the second argument.
+    */
+    virtual void testMeToo(char c1,char c2) = 0;
+
+    //! A public variable.
+    /*!
+      Details.
+    */
+    int publicVar;
+
+    //! A function variable.
+    /*!
+      Details.
+    */
+    int (*handler)(int a,int b);
+};</code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.doxygen.nl/manual/examples/qtstyle/html/class_q_tstyle___test.html" class="bare">https://www.doxygen.nl/manual/examples/qtstyle/html/class_q_tstyle___test.html</a></p>
+</li>
+<li>
+<p><a href="https://www.doxygen.nl/manual/config.html#cfg_brief_member_desc" class="bare">https://www.doxygen.nl/manual/config.html#cfg_brief_member_desc</a></p>
+</li>
+<li>
+<p><a href="https://www.doxygen.nl/manual/config.html#cfg_repeat_brief" class="bare">https://www.doxygen.nl/manual/config.html#cfg_repeat_brief</a></p>
+</li>
+<li>
+<p><a href="https://www.doxygen.nl/manual/config.html#cfg_javadoc_autobrief" class="bare">https://www.doxygen.nl/manual/config.html#cfg_javadoc_autobrief</a></p>
+</li>
+<li>
+<p>brief description包含在类、命名空间或文件的成员概述中，<br>
+并使用小斜体字体打印(可将BRIEF_MEMBER_DESC设置为NO来隐藏此说明)；</p>
+</li>
+<li>
+<p>默认：简要说明成为详细描述的第一句，但可通过将REPEAT_BRIEF<br>
+设置为NO来更改，对Qt样式，简要说明和详细描述都是可选；</p>
+</li>
+<li>
+<p>默认：Javadoc样式文档块的行为与Qt样式文档块相同，但这不符合Javadoc规范，<br>
+其中文档块的第一句会自动被视为简要说明，用JAVADOC_AUTOBRIEF=YES来启用；</p>
+</li>
+<li>
+<p>若启用此选项并想在句子中间放置一个点而不结束它，<br>
+则应该在它后面放置一个反斜杠和一个空格，若：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-cpp" data-lang="cpp">  /** Brief description (e.g.\ using only a few words). Details follow. */</code></pre>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>类似地，若希望Qt风格文档块的第一句话自动被视为简短描述，<br>
+将QT_AUTOBRIEF设置为YES；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">/**
+ *  A test class. A more elaborate class description.
+ */
+
+class Javadoc_Test
+{
+  public:
+
+    /**
+     * An enum.
+     * More detailed enum description.
+     */
+
+    enum TEnum {
+          TVal1, /**&lt; enum value TVal1. */
+          TVal2, /**&lt; enum value TVal2. */
+          TVal3  /**&lt; enum value TVal3. */
+         }
+       *enumPtr, /**&lt; enum pointer. Details. */
+       enumVar;  /**&lt; enum variable. Details. */
+
+      /**
+       * A constructor.
+       * A more elaborate description of the constructor.
+       */
+      Javadoc_Test();
+
+      /**
+       * A destructor.
+       * A more elaborate description of the destructor.
+       */
+     ~Javadoc_Test();
+
+      /**
+       * a normal member taking two arguments and returning an integer value.
+       * @param a an integer argument.
+       * @param s a constant character pointer.
+       * @see Javadoc_Test()
+       * @see ~Javadoc_Test()
+       * @see testMeToo()
+       * @see publicVar()
+       * @return The test results
+       */
+       int testMe(int a,const char *s);
+
+      /**
+       * A pure virtual member.
+       * @see testMe()
+       * @param c1 the first argument.
+       * @param c2 the second argument.
+       */
+       virtual void testMeToo(char c1,char c2) = 0;
+
+      /**
+       * a public variable.
+       * Details.
+       */
+       int publicVar;
+
+      /**
+       * a function variable.
+       * Details.
+       */
+       int (*handler)(int a,int b);
+};</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_doc_at_other_place"><a class="anchor" href="#_doc_at_other_place"></a>1.1.3. Doc At Other Place</h4>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>在上一节的示例中，注释块始终位于file，class，namespace<br>
+的声明或定义之前，或位于其成员之一之前或之后；</p>
+</li>
+<li>
+<p>虽这通常很方便，但有时可能需要将文档放在其他地方，<br>
+对文档化文件，这甚至是必需的，因没有"在文件前面"这样的说法；</p>
+</li>
+<li>
+<p>Doxygen允许将文档块放在几乎任何地方，函数主体内部或普通C样式注释块内部除外；</p>
+</li>
+<li>
+<p>不将文档块直接放在项目之前或之后的代价是需在文档块内放置结构命令，<br>
+这会导致一些信息重复，故除非其他要求迫使这样做，否则应避免使用结构命令；</p>
+</li>
+<li>
+<p>结构命令(同其它命令)以反斜杠(\)开头，或若喜欢Javadoc样式，<br>
+则以at符号(@)开头，后跟命令名称和一或多个参数；</p>
+</li>
+<li>
+<p><a href="https://www.doxygen.nl/manual/commands.html#cmd_intro" class="bare">https://www.doxygen.nl/manual/commands.html#cmd_intro</a></p>
+</li>
+<li>
+<p>如若想文档化上面示例中的Test类，那可将以下文档块放在Doxygen读取的输入中的某个位置：</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-cpp" data-lang="cpp">/*! \class Test
+    \brief A test class.
+
+    A more detailed class description.
+*/</code></pre>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Command</th>
+<th class="tableblock halign-left valign-top">Memo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">\class</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">文档化类</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">\struct</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">文档化C-struct</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">\union</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">文档化union</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">\enum</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">文档化enumeration</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">\fn</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">文档化function</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">\var</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">文档化variable或typedef或enum value</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">\def</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">文档化#define</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">\typedef</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">文档化type definition</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">\file</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">文档化file</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">\namespace</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">文档化namespace</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">\package</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">文档化Java包</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">\interface</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">文档化IDL接口</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.doxygen.nl/manual/commands.html" class="bare">https://www.doxygen.nl/manual/commands.html</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+	</div>
+</main>
+</div>
+		<footer class="footer">
+	
+	
+	
+	<div class="footer-thanks">
+		Authored in AsciiDoc
+		<br /><br />
+		Produced by Antora and Asciidoctor
+  	</div>
+  
+	<div class="footer-legal" style="text-align:center">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br /><br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		Copyright © 2024 Elf
+		<br /><br />
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+	
+</footer><script id="site-script" src="../../../../_/js/site.js" 
+	data-ui-root-path="../../../../_"></script>
+
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
+</html>

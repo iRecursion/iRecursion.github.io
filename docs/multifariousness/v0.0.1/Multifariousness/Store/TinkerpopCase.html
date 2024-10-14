@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> :: AsciiDoc</title>
+    <meta name="generator" content="Antora 3.1.7">
+
+<link rel="stylesheet" href="../../../../_/css/site.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/asciidoc.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
+
+
+    <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+  			
+  			<a class="navbar-item logo" target="_blank" href="">
+				<img src="../../../../_/img/yin-yang-symbol.svg" width="100%" height="50">
+			</a>
+  			
+	            <div id="main" style="place-content: center;">
+	                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+		            </div>
+		        </section>
+    	</div>
+    	
+    	<div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Culture</div>
+          			<div class="navbar-dropdown is-right">
+            			
+			            <div class="navbar-item">Traditional Culture</div>
+			            
+			            <a class="navbar-item" target="_blank" href="../../../../culture/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Culture <small>传统文化</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Eco</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <a class="navbar-item" target="_blank" href="../../../../multifariousness/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Multifariousness <small>五花八门</small></span>
+			            </a>
+
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../ai/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Artificial Intelligence<small>人工智能</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../msg/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Messaging - Kafka <small>Kafka</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Experiment</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <div class="navbar-item">Quantum Computing</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>QC <small>量子计算...</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <div class="navbar-item">Harmony</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>CangJie <small>预览版内测...</small></span>
+			            </a>
+        			</div>
+    			</div>
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container" data-component="multifariousness" data-version="v0.0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">Multifariousness</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Security</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Security/KeycloakInstallation.html">Keycloak Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Security/KeycloakCase.html">Keycloak Case</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Antora</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AsciidoctorInstallation.html">Asciidoctor Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AsciidoctorConfigurer.html">Asciidoctor Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraInstallation.html">Antora Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraConfigurer.html">Antora Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraHighlight.html">Antora Highlight</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/Markdown.html">Markdown</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/NodeInstallation.html">Node Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Doxygen</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxygenInstallation.html">Doxygen Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxygenEntry.html">Doxygen Entry</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DocumentingCode.html">Documenting Code</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxygenUsage.html">Doxygen Usage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxywizardUsage.html">Doxywizard Usage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxyfileProperty.html">Doxyfile Property</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/CustomCommand.html">Custom Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/SpecialCommand.html">Special Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/HtmlCommand.html">Html Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/XmlCommand.html">Xml Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/EmojiSupport.html">Emoji Support</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Lang</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustPrerequisite.html">Rust Prerequisite</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustGun.html">Rust Gun</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustConfigurer.html">Rust Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustEclipse.html">Rust Eclipse</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustVSCode.html">Rust VSCode</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/GoInstallation.html">Go Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/GroovyInstallation.html">Groovy Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/JavaFxInstallation.html">JavaFx Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/LuaInstallation.html">Lua Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/PythonInstallation.html">Python Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Ide</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/EclipseCustomizer.html">EclipseCustomizer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/EclipseConfigurer.html">EclipseConfigurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/FlattenLifecycle.html">FlattenLifecycle</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/JakartaSpecification.html">JakartaSpecification</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/CondaJupyter.html">CondaJupyter</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/IdeaConfigurer.html">IdeaConfigurer</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Ops</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/HyperVConfigurer.html">Hyper VConfigurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/UbuntuConfigurer.html">Ubuntu Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/DockerFundamental.html">Docker Fundamental</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/K8SInstallation.html">K8S Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/K8SExtension.html">K8S Extension</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/NexusInstallation.html">Nexus Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/JenkinsInstallation.html">Jenkins Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/BatchProcess.html">Batch Process</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/OracleContainerRegistry.html">Oracle Container Registry</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/WinConfigurer.html">Win Configurer</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Msg</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Msg/KafkaInstallation.html">Kafka Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Msg/KafkaEntryCase.html">Kafka Entry Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Msg/PulsarInstallation.html">Pulsar Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Store</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="PowerDesigner.html">Power Designer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="CassandraSetup.html">Cassandra Setup</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="CassandraBoot.html">Cassandra Boot</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="CassandraTesting.html">Cassandra Testing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ElasticInstallation.html">Elastic Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ElasticCase.html">Elastic Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="OpenSearchInstallation.html">Open Search Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="MySQLInstallation.html">MySQL Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="MySqlTuning.html">MySql Tuning</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="MongoInstallation.html">Mongo Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="MongoCase.html">Mongo Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="PostgresInstallation.html">Postgres Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="AeroSpikeInstallation.html">Aero Spike Installation</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="TinkerpopCase.html">Tinkerpo pCase</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Multifariousness</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">Multifariousness</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+	<div class="toolbar" role="navigation">
+	<button class="nav-toggle"></button>
+	
+		<a href="../../index.html" 
+			class="home-link">
+		</a>
+
+	<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">Multifariousness</a></li>
+    <li>Store</li>
+    <li><a href="TinkerpopCase.html">Tinkerpo pCase</a></li>
+  </ul>
+</nav>
+		</div>
+	
+	<div class="content">
+			<aside class="toc sidebar" 
+	data-title="Contents" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+			<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_dependency">1. Dependency</a></li>
+<li><a href="#_structure">2. Structure</a></li>
+<li><a href="#_starter">3. Starter</a>
+<ul class="sectlevel2">
+<li><a href="#_tinkerpopproperties">3.1. TinkerpopProperties</a></li>
+<li><a href="#_tinkerpoprepository">3.2. TinkerpopRepository</a></li>
+<li><a href="#_gremlinclusterautoconfiguration">3.3. GremlinClusterAutoConfiguration</a></li>
+<li><a href="#_注意事项">3.4. 注意事项</a></li>
+</ul>
+</li>
+<li><a href="#_application">4. Application</a>
+<ul class="sectlevel2">
+<li><a href="#_引入starter">4.1. 引入starter</a></li>
+<li><a href="#_remote_objects_yaml">4.2. remote-objects.yaml</a></li>
+<li><a href="#_application_yaml">4.3. application.yaml</a></li>
+<li><a href="#_repository">4.4. Repository</a></li>
+<li><a href="#_connector">4.5. Connector</a></li>
+<li><a href="#_entry">4.6. Entry</a></li>
+</ul>
+</li>
+<li><a href="#_python_collector">5. Python Collector</a>
+<ul class="sectlevel2">
+<li><a href="#_安装gremlin_python">5.1. 安装Gremlin-Python</a></li>
+<li><a href="#_导入相关包">5.2. 导入相关包</a></li>
+<li><a href="#_graphtraversalsource">5.3. GraphTraversalSource</a></li>
+<li><a href="#_执行遍历">5.4. 执行遍历</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_dependency"><a class="anchor" href="#_dependency"></a>1. Dependency</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;properties&gt;
+	&lt;janus.version&gt;1.0.0&lt;/janus.version&gt;
+	&lt;tinkerpop.version&gt;3.7.0&lt;/tinkerpop.version&gt;
+&lt;/properties&gt;
+
+&lt;dependency&gt;
+    &lt;groupId&gt;org.janusgraph&lt;/groupId&gt;
+    &lt;artifactId&gt;janusgraph-driver&lt;/artifactId&gt;
+    &lt;version&gt;${janus.version}&lt;/version&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+    &lt;groupId&gt;org.apache.tinkerpop&lt;/groupId&gt;
+    &lt;artifactId&gt;tinkerpop&lt;/artifactId&gt;
+    &lt;version&gt;${tinkerpop.version}&lt;/version&gt;
+    &lt;scope&gt;import&lt;/scope&gt;
+    &lt;type&gt;pom&lt;/type&gt;
+&lt;/dependency&gt;
+
+&lt;!-- optional --&gt;
+&lt;build&gt;
+	&lt;resources&gt;
+		&lt;resource&gt;
+	    	&lt;directory&gt;src/main/resources&lt;/directory&gt;
+	     	&lt;filtering&gt;true&lt;/filtering&gt;
+	     	&lt;includes&gt;
+	        	&lt;include&gt;**/*.yaml&lt;/include&gt;
+	     	&lt;/includes&gt;
+		&lt;/resource&gt;
+	&lt;/resources&gt;
+&lt;/build&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_structure"><a class="anchor" href="#_structure"></a>2. Structure</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">📒 src/main/resources
+  📂 conf
+    📄 remote-objects.yaml
+  📂 META-INF/spring/
+	# content：io.os.tinkerpop.autoconfigure.GremlinClusterAutoConfiguration
+    📄 org.springframework.boot.autoconfigure.AutoConfiguration.imports</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_starter"><a class="anchor" href="#_starter"></a>3. Starter</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_tinkerpopproperties"><a class="anchor" href="#_tinkerpopproperties"></a>3.1. TinkerpopProperties</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">import org.springframework.boot.context.properties.ConfigurationProperties;
+
+@ConfigurationProperties(prefix = "io.os.tinkerpop")
+public class TinkerpopProperties{
+
+	private String traversalName = "g";
+	private String configFile = "src/main/resources/conf/remote-objects.yaml";
+
+	public String getTraversalName() {
+		return traversalName;
+	}
+	public void setTraversalName(String traversalName) {
+		this.traversalName = traversalName;
+	}
+	public String getConfigFile() {
+		return configFile;
+	}
+	public void setConfigFile(String configFile) {
+		this.configFile = configFile;
+	}
+
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_tinkerpoprepository"><a class="anchor" href="#_tinkerpoprepository"></a>3.2. TinkerpopRepository</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">import org.apache.tinkerpop.gremlin.driver.Client;
+import org.apache.tinkerpop.gremlin.process.traversal.dsl.graph.GraphTraversalSource;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class TinkerpopRepository {
+
+	protected Client client;
+	protected GraphTraversalSource g;
+
+	public TinkerpopRepository(GraphTraversalSource g,Client client) {
+		this.g = g;
+		this.client = client;
+	}
+
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_gremlinclusterautoconfiguration"><a class="anchor" href="#_gremlinclusterautoconfiguration"></a>3.3. GremlinClusterAutoConfiguration</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>src/main/resources/META-INF/spring.factories</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.elf.dp.tinkerpop.config.GremlinClusterAutoConfiguration</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">import org.apache.tinkerpop.gremlin.driver.Client;
+import org.apache.tinkerpop.gremlin.driver.Cluster;
+import org.apache.tinkerpop.gremlin.driver.remote.DriverRemoteConnection;
+import org.apache.tinkerpop.gremlin.process.remote.RemoteConnection;
+import org.apache.tinkerpop.gremlin.process.traversal.AnonymousTraversalSource;
+import org.apache.tinkerpop.gremlin.process.traversal.dsl.graph.GraphTraversalSource;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class GremlinClusterAutoConfiguration {
+
+	@Autowired
+	private TinkerpopProperties tp;
+
+    @Bean
+    @ConditionalOnMissingBean
+    Cluster cluster() throws Exception {
+        return Cluster.open(tp.getConfigFile());
+    }
+
+    @Bean
+    @ConditionalOnMissingBean
+    Client client() throws Exception {
+        return cluster().connect();
+    }
+
+    @Bean
+    @ConditionalOnMissingBean
+    RemoteConnection remoteConnection(final Cluster cluster) {
+    	String traversalName = tp.getTraversalName();
+        return DriverRemoteConnection.using(cluster,traversalName);
+    }
+
+    @Bean
+    @ConditionalOnMissingBean
+    GraphTraversalSource graphTraversalSource(
+        final RemoteConnection remoteConnection) throws Exception {
+       return AnonymousTraversalSource.traversal()
+		   .withRemote(remoteConnection);
+    }
+
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_注意事项"><a class="anchor" href="#_注意事项"></a>3.4. 注意事项</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>连接使用GraphBinary和janusgraph-driver,<br>
+它不允许访问内部JanusGraph组件,如ManagementSystem,<br>
+要访问ManagementSystem,必须更新包和序列化.</p>
+</li>
+<li>
+<p>janusgraph-driver包替换为janusgraph-core包</p>
+</li>
+<li>
+<p>conf/remote-objects.yaml替换className序列化类,<br>
+GraphBinaryMessageSerializerV1替换为GryoMessageSerializerV1d0,<br>
+最新版Gremlin序列化类是GryoMessageSerializerV3d0,<br>
+org.apache.tinkerpop.gremlin.driver.ser.GraphBinaryMessageSerializerV1<br>
+org.apache.tinkerpop.gremlin.driver.ser.GryoMessageSerializerV1d0</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_application"><a class="anchor" href="#_application"></a>4. Application</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_引入starter"><a class="anchor" href="#_引入starter"></a>4.1. 引入starter</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
+	&lt;groupId&gt;io.os.starter&lt;/groupId&gt;
+	&lt;artifactId&gt;starter-tinkerpop&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_remote_objects_yaml"><a class="anchor" href="#_remote_objects_yaml"></a>4.2. remote-objects.yaml</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">hosts: [192.168.9.111]
+port: 8182
+serializer: {
+    className: org.apache.tinkerpop.gremlin.driver.ser.GryoMessageSerializerV3d0,
+    config: {
+        ioRegistries: [org.janusgraph.graphdb.tinkerpop.JanusGraphIoRegistry]
+    }
+}
+# 推荐4K
+connectionPool: {maxContentLength: 6553600}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_application_yaml"><a class="anchor" href="#_application_yaml"></a>4.3. application.yaml</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">server:
+  port: 8080
+  servlet:
+    context-path: /tinkerpop
+logging:
+  level:
+    root: warn
+    '[org.apache.tinkerpop.gremlin.driver]': warn
+    '[io.os.gremlin]': debug
+io:
+  os:
+    tinkerpop:
+      traversalName: g
+      configFile: src/main/resources/conf/remote-objects.yaml</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_repository"><a class="anchor" href="#_repository"></a>4.4. Repository</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">import java.util.List;
+import java.util.Map;
+
+import org.apache.tinkerpop.gremlin.driver.Client;
+import org.apache.tinkerpop.gremlin.process.traversal.dsl.graph.GraphTraversalSource;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class LineageRepository extends TinkerpopRepository{
+
+	public LineageRepository(GraphTraversalSource g,Client client) {
+		super(g, client);
+	}
+
+	public List&lt;Map&lt;Object,Object&gt;&gt; getLineageByGuid() {
+		return g.V().elementMap().toList();
+	}
+
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_connector"><a class="anchor" href="#_connector"></a>4.5. Connector</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">import java.lang.invoke.MethodHandles;
+import java.util.List;
+import java.util.Map;
+import org.apache.tinkerpop.gremlin.driver.Cluster;
+import org.apache.tinkerpop.gremlin.driver.remote.DriverRemoteConnection;
+import org.apache.tinkerpop.gremlin.driver.ser.GraphBinaryMessageSerializerV1;
+import org.apache.tinkerpop.gremlin.process.traversal.AnonymousTraversalSource;
+import org.apache.tinkerpop.gremlin.process.traversal.dsl.graph.GraphTraversalSource;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.util.StringUtils;
+
+public class TinkerpopConnector {
+
+	private static final Logger logger = LoggerFactory
+		.getLogger(MethodHandles.lookup().lookupClass());
+
+	//connect("192.168.9.111",8182);
+	public static void connect(final String host,final int port) {
+		if (StringUtils.hasText(host)) {
+			String msg = String.format("%s can not be blank!",host);
+			throw new IllegalArgumentException(msg);
+		}
+		if (port &lt; 1) {
+			throw new IllegalArgumentException("invalid port!");
+		}
+		Cluster.Builder builder = Cluster.build();
+		builder.addContactPoint(host);
+		builder.port(port);
+		builder.serializer(new GraphBinaryMessageSerializerV1());
+
+		Cluster cluster = builder.create();
+		GraphTraversalSource g = AnonymousTraversalSource.traversal()
+			.withRemote(DriverRemoteConnection.using(cluster));
+
+		Long count = g.V().count().next();
+		List&lt;Map&lt;Object, Object&gt;&gt; resultMapList = g.V().elementMap().toList();
+		logger.info("janus record count:{}",count);
+
+		resultMapList.forEach(resultMap -&gt; {
+			logger.info(resultMap.toString());
+		});
+		cluster.close();
+	}
+
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_entry"><a class="anchor" href="#_entry"></a>4.6. Entry</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">@SpringBootApplication
+@EnableConfigurationProperties(value = {
+	TinkerpopProperties.class
+})
+public class Entry {
+
+	public static void main(String[] sa) {
+		Class&lt;?&gt; cls = MethodHandles.lookup().lookupClass();
+		SpringApplication.run(cls,sa);
+	}
+
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_python_collector"><a class="anchor" href="#_python_collector"></a>5. Python Collector</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>一些gremlin步骤(step)和谓词(predicate)名称在python中是关键字,<br>
+在Gremlin-Python中只能以_为后缀,如in()变为in_(),not()变为not_()等,<br>
+受影响的其它名称如all,and,as,from,global,is,list,or和set.</p>
+</div>
+<div class="sect2">
+<h3 id="_安装gremlin_python"><a class="anchor" href="#_安装gremlin_python"></a>5.1. 安装Gremlin-Python</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">pip install gremlinpython==3.5.3</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_导入相关包"><a class="anchor" href="#_导入相关包"></a>5.2. 导入相关包</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python">from gremlin_python import statics
+from gremlin_python.structure.graph import Graph
+from gremlin_python.process.graph_traversal import __
+from gremlin_python.driver.driver_remote_connection import DriverRemoteConnection</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_graphtraversalsource"><a class="anchor" href="#_graphtraversalsource"></a>5.3. GraphTraversalSource</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python">from gremlin_python.process.anonymous_traversal_source import traversal
+connection = DriverRemoteConnection('ws://localhost:8182/gremlin','g')
+g = traversal().withRemote(connection)</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_执行遍历"><a class="anchor" href="#_执行遍历"></a>5.4. 执行遍历</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python">age = g.V().has('name','elf').values('age').next()
+print('elf is {} years old.'.format(age))</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+	</div>
+</main>
+</div>
+		<footer class="footer">
+	
+	
+	
+	<div class="footer-thanks">
+		Authored in AsciiDoc
+		<br /><br />
+		Produced by Antora and Asciidoctor
+  	</div>
+  
+	<div class="footer-legal" style="text-align:center">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br /><br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		Copyright © 2024 Elf
+		<br /><br />
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+	
+</footer><script id="site-script" src="../../../../_/js/site.js" 
+	data-ui-root-path="../../../../_"></script>
+
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
+</html>

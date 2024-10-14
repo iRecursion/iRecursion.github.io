@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> :: AsciiDoc</title>
+    <meta name="generator" content="Antora 3.1.7">
+
+<link rel="stylesheet" href="../../../../_/css/site.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/asciidoc.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
+
+
+    <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+  			
+  			<a class="navbar-item logo" target="_blank" href="">
+				<img src="../../../../_/img/yin-yang-symbol.svg" width="100%" height="50">
+			</a>
+  			
+	            <div id="main" style="place-content: center;">
+	                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+		            </div>
+		        </section>
+    	</div>
+    	
+    	<div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Culture</div>
+          			<div class="navbar-dropdown is-right">
+            			
+			            <div class="navbar-item">Traditional Culture</div>
+			            
+			            <a class="navbar-item" target="_blank" href="../../../../culture/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Culture <small>传统文化</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Eco</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <a class="navbar-item" target="_blank" href="../../../../multifariousness/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Multifariousness <small>五花八门</small></span>
+			            </a>
+
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../ai/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Artificial Intelligence<small>人工智能</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../msg/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Messaging - Kafka <small>Kafka</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Experiment</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <div class="navbar-item">Quantum Computing</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>QC <small>量子计算...</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <div class="navbar-item">Harmony</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>CangJie <small>预览版内测...</small></span>
+			            </a>
+        			</div>
+    			</div>
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container" data-component="multifariousness" data-version="v0.0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">Multifariousness</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Security</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Security/KeycloakInstallation.html">Keycloak Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Security/KeycloakCase.html">Keycloak Case</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Antora</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AsciidoctorInstallation.html">Asciidoctor Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AsciidoctorConfigurer.html">Asciidoctor Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraInstallation.html">Antora Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraConfigurer.html">Antora Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraHighlight.html">Antora Highlight</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/Markdown.html">Markdown</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/NodeInstallation.html">Node Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Doxygen</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxygenInstallation.html">Doxygen Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxygenEntry.html">Doxygen Entry</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DocumentingCode.html">Documenting Code</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxygenUsage.html">Doxygen Usage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxywizardUsage.html">Doxywizard Usage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxyfileProperty.html">Doxyfile Property</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/CustomCommand.html">Custom Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/SpecialCommand.html">Special Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/HtmlCommand.html">Html Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/XmlCommand.html">Xml Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/EmojiSupport.html">Emoji Support</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Lang</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="RustPrerequisite.html">Rust Prerequisite</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="RustGun.html">Rust Gun</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="RustConfigurer.html">Rust Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="RustEclipse.html">Rust Eclipse</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="RustVSCode.html">Rust VSCode</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="GoInstallation.html">Go Installation</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="GroovyInstallation.html">Groovy Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="JavaFxInstallation.html">JavaFx Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="LuaInstallation.html">Lua Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="PythonInstallation.html">Python Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Ide</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/EclipseCustomizer.html">EclipseCustomizer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/EclipseConfigurer.html">EclipseConfigurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/FlattenLifecycle.html">FlattenLifecycle</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/JakartaSpecification.html">JakartaSpecification</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/CondaJupyter.html">CondaJupyter</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/IdeaConfigurer.html">IdeaConfigurer</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Ops</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/HyperVConfigurer.html">Hyper VConfigurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/UbuntuConfigurer.html">Ubuntu Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/DockerFundamental.html">Docker Fundamental</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/K8SInstallation.html">K8S Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/K8SExtension.html">K8S Extension</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/NexusInstallation.html">Nexus Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/JenkinsInstallation.html">Jenkins Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/BatchProcess.html">Batch Process</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/OracleContainerRegistry.html">Oracle Container Registry</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/WinConfigurer.html">Win Configurer</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Msg</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Msg/KafkaInstallation.html">Kafka Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Msg/KafkaEntryCase.html">Kafka Entry Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Msg/PulsarInstallation.html">Pulsar Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Store</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/PowerDesigner.html">Power Designer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/CassandraSetup.html">Cassandra Setup</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/CassandraBoot.html">Cassandra Boot</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/CassandraTesting.html">Cassandra Testing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/ElasticInstallation.html">Elastic Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/ElasticCase.html">Elastic Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/OpenSearchInstallation.html">Open Search Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/MySQLInstallation.html">MySQL Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/MySqlTuning.html">MySql Tuning</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/MongoInstallation.html">Mongo Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/MongoCase.html">Mongo Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/PostgresInstallation.html">Postgres Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/AeroSpikeInstallation.html">Aero Spike Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/TinkerpopCase.html">Tinkerpo pCase</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Multifariousness</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">Multifariousness</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+	<div class="toolbar" role="navigation">
+	<button class="nav-toggle"></button>
+	
+		<a href="../../index.html" 
+			class="home-link">
+		</a>
+
+	<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">Multifariousness</a></li>
+    <li>Lang</li>
+    <li><a href="GroovyInstallation.html">Groovy Installation</a></li>
+  </ul>
+</nav>
+		</div>
+	
+	<div class="content">
+			<aside class="toc sidebar" 
+	data-title="Contents" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+			<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_groovy安装">1. Groovy安装</a></li>
+<li><a href="#_default_import">2. Default Import</a></li>
+<li><a href="#_multi_method">3. Multi Method</a></li>
+<li><a href="#_array_initializer">4. Array Initializer</a></li>
+<li><a href="#_package_scope_visibility">5. Package Scope Visibility</a></li>
+<li><a href="#_arm_block">6. ARM Block</a></li>
+<li><a href="#_inner_class">7. Inner Class</a></li>
+<li><a href="#_lambda_method_reference">8. Lambda Method Reference</a></li>
+<li><a href="#_gstring">9. GString</a></li>
+<li><a href="#_string_and_character">10. String and Character</a></li>
+<li><a href="#_behaviour_of">11. Behaviour of</a></li>
+<li><a href="#_primitive_and_wrapper">12. Primitive and Wrapper</a></li>
+<li><a href="#_extra_keyword">13. Extra Keyword</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_groovy安装"><a class="anchor" href="#_groovy安装"></a>1. Groovy安装</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>GROOVY_HOME：D:/Install/Dev/Groovy</p>
+</li>
+<li>
+<p>PATH：%GROOVY_HOME%\bin</p>
+</li>
+<li>
+<p>groovy -v，groovy script.groovy</p>
+</li>
+<li>
+<p>Eclipse插件：Groovy Development Tool</p>
+</li>
+<li>
+<p><a href="https://groovy-lang.org/api.html" class="bare">https://groovy-lang.org/api.html</a></p>
+</li>
+<li>
+<p><a href="https://groovy-lang.org/gdk.html" class="bare">https://groovy-lang.org/gdk.html</a></p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
+    &lt;groupId&gt;org.apache.groovy&lt;/groupId&gt;
+    &lt;artifactId&gt;groovy-bom&lt;/artifactId&gt;
+    &lt;version&gt;4.0.17&lt;/version&gt;
+    &lt;scope&gt;import&lt;/scope&gt;
+    &lt;type&gt;pom&lt;/type&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_default_import"><a class="anchor" href="#_default_import"></a>2. Default Import</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>java.io.*；</p>
+</li>
+<li>
+<p>java.lang.*；</p>
+</li>
+<li>
+<p>java.math.BigDecimal；</p>
+</li>
+<li>
+<p>java.math.BigInteger；</p>
+</li>
+<li>
+<p>java.net.*；</p>
+</li>
+<li>
+<p>java.util.*；</p>
+</li>
+<li>
+<p>groovy.lang.*；</p>
+</li>
+<li>
+<p>groovy.util.*；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_multi_method"><a class="anchor" href="#_multi_method"></a>3. Multi Method</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>groovy中，被调用的方法是在运行时选择，称为runtime dispatch<br>
+或multi-method，即将在运行时根据参数类型来选择方法；</p>
+</li>
+<li>
+<p>而在Java正好想法，方法是编译时根据声明的类型选择，<br>
+如下所示，用Java编写，用Java和Groovy编译：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">int method(String arg) {
+    return 1;
+}
+int method(Object arg) {
+    return 2;
+}
+
+Object o = "Object";
+int result = method(o);
+
+# Java
+assertEquals(2, result);
+
+# Groovy:
+assertEquals(1, result);
+
+# 因Java将使用静态信息类型，即o被声明为Object，
+# 而Groovy在运行时选择，用String调用故选择String版本；</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_array_initializer"><a class="anchor" href="#_array_initializer"></a>4. Array Initializer</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Java中，数组初始化有如下两种形式：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">int[] shorthand = {1, 2, 3};
+
+int[] longhand = new int[] {4, 5, 6};</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>而Groovy中，{……}块是闭包(closure)保留的，故不能使用shorthand方式创建；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-groovy" data-lang="groovy">int[] groovy = [1, 2, 3]
+
+def groovy3Plus = new int[] {1, 2, 3}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_package_scope_visibility"><a class="anchor" href="#_package_scope_visibility"></a>5. Package Scope Visibility</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>groovy中，声明属性可省略修饰符，这是私有字段，有对应的getter和setter；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-groovy" data-lang="groovy">class Person {
+    String name
+}</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>可使用@PackageScope来声明包字段，</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-groovy" data-lang="groovy">class Person {
+    @PackageScope String name
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_arm_block"><a class="anchor" href="#_arm_block"></a>6. ARM Block</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>groovy 3+ 提供java的arm twr语法，<br>
+也提供各种依赖于闭包的方法，相同效果更实用；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">import java.io.BufferedReader;
+import java.io.IOException;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.nio.file.Path;
+
+public class Arm{
+
+	public static void arm() {
+		Path file = Path.of("/path/to/file");
+		Charset charset = Charset.forName("UTF-8");
+		try (BufferedReader reader = Files.newBufferedReader(file, charset)) {
+			String line;
+			while ((line = reader.readLine()) != null) {
+				System.out.println(line);
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-groovy" data-lang="groovy">new File('filePath').eachLine('UTF-8') {
+   println it
+}
+
+new File('filePath').eachLine('UTF-8',){reader -&gt;
+	reader.eachLine {
+		println it
+	}
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_inner_class"><a class="anchor" href="#_inner_class"></a>7. Inner Class</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>匿名内部类和嵌套内部类类似于Java，但从这些类中访问局部变量不一定是final，<br>
+在生成内部类字节码时，借鉴groovy.lang.Closure的实现细节；</p>
+</li>
+<li>
+<p>静态内部类最受支持：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-groovy" data-lang="groovy">class A {
+    static class B {}
+}
+
+new A.B()</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>匿名(Anonymous)内部类：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-groovy" data-lang="groovy">import java.util.concurrent.CountDownLatch
+import java.util.concurrent.TimeUnit
+
+CountDownLatch called = new CountDownLatch(1)
+
+Timer timer = new Timer()
+timer.schedule(new TimerTask() {
+	void run() {
+		called.countDown()
+	}
+}, 0)
+
+assert called.await(10, TimeUnit.SECONDS)</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_lambda_method_reference"><a class="anchor" href="#_lambda_method_reference"></a>8. Lambda Method Reference</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">Runnable run = () -&gt; System.out.println("Run");
+list.forEach(System.out::println);</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-groovy" data-lang="groovy">Runnable run = { println 'run' }
+list.each { println it }
+list.each(this.println())</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_gstring"><a class="anchor" href="#_gstring"></a>9. GString</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>双引号字符串被解释为GString值，若使用Groovy和<br>
+Java编译器编译具有含$字符的Str类，Groovy可能编译失败；</p>
+</li>
+<li>
+<p>虽通常若Api声明参数类型，Groovy将在GString和String间自动转换，<br>
+但注意接受Object参数，然后检查实际类型的Java Api；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_string_and_character"><a class="anchor" href="#_string_and_character"></a>10. String and Character</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Groovy中单引号用于String，双引号用于String或GString，<br>
+取决于字符串中是否有插值(interpolation)；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-groovy" data-lang="groovy">assert 'c'.class == String
+assert "c".class == String
+assert "c${1}".class in GString</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>只有当赋值给char类型变量时，groovy才会自动将单字符String强制转换为char，<br>
+当使用char类型参数调用方法时，需显示强制转换，或确保值已提前强制转换；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-groovy" data-lang="groovy">char a = 'a'
+assert Character.digit(a, 16) == 10: 'But Groovy does boxing'
+assert Character.digit((char) 'a', 16) == 10
+
+try {
+	assert Character.digit('a', 16) == 10
+	assert false: 'Need explicit cast'
+} 	catch(MissingMethodException e) {
+
+}</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>groovy支持单char和多char强制转换，两者存在细微差异，<br>
+Groovy样式强制转换更宽松(lenient)，<br>
+并采用第一个字符，而C-style强制类型转换则会失败；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-groovy" data-lang="groovy">// for single char strings, both are the same
+assert ((char) "c").class == Character
+assert ("c" as char).class == Character
+
+// for multi char strings they are not
+try {
+  ((char) 'cx') == 'c'
+  assert false: 'will fail - not castable'
+} catch(GroovyCastException e) {
+}
+assert ('cx' as char) == 'c'
+assert 'cx'.asType(char) == 'c'</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_behaviour_of"><a class="anchor" href="#_behaviour_of"></a>11. Behaviour of</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Java中==表示对象的基本类型(primitive)或标识(identity)相等，<br>
+groovy中==表示所有地方相等(equality)；</p>
+</li>
+<li>
+<p>对非基本数据类型，当计算可比较对象的相等性时(evaluating equality)，<br>
+它转换为a.compareTo(b) == 0，否则转换为a.equals(b)；</p>
+</li>
+<li>
+<p>要检查标识(引用相等)(identity (reference equality))，<br>
+请使用is()：a.is(b)，或使用全等式，a === b，c !== d；</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_primitive_and_wrapper"><a class="anchor" href="#_primitive_and_wrapper"></a>12. Primitive and Wrapper</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Java中支持基本数据类型和包装类自动装箱和拆箱，</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">public class Main {
+
+   float f1 = 1.0f;
+   Float f2 = 2.0f;
+
+   float add(Float a1, float a2) { return a1 + a2; }
+
+   Float calc() { return add(f1, f2); }
+
+    public static void main(String[] args) {
+       Float calcResult = new Main().calc();
+       System.out.println(calcResult);
+    }
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-groovy" data-lang="groovy">class Main {
+
+    float f1 = 1.0f
+    Float f2 = 2.0f
+
+    float add(Float a1, float a2) { a1 + a2 }
+
+    Float calc() { add(f1, f2) }
+}
+
+assert new Main().calc() == 3.0</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>groovy也支持基本数据类型和对象类型，单在推动OO纯粹性(purity)方面更进一步，<br>
+视一切皆对象，任何基本数据类型变量或属性都可像对象一样处理，并将按需自动包装，</p>
+</li>
+<li>
+<p>虽基本数据类型可能被覆盖(under the cover)，但只要可能，<br>
+基本类型的使用与正常对象无法区分(indistinguishable)，按需装箱或拆箱；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">public class Main {
+    public float z1 = 0.0f;
+
+    public static void main(String[] args){
+    	# 编译失败
+      	new Main().z1.equals(1.0f);
+    }
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-groovy" data-lang="groovy">class Main {
+    float z1 = 0.0f
+}
+assert !(new Main().z1.equals(1.0f))</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-groovy" data-lang="groovy">int i
+m(i)
+
+void m(long l) {
+    println "in m(long)"
+}
+
+void m(Integer i) {
+    println "in m(Integer)"
+}</code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>使用@CompileStatic对数值型基本数据类型优化；</p>
+</li>
+<li>
+<p>正负零边缘，参考 IEEE754标准；</p>
+</li>
+<li>
+<p>在groovy中，若希望区分正零和负零，请直接使用equals()或使用<br>
+==前将基本数据类型转换为包装等效(wrapper equivalent)；</p>
+</li>
+<li>
+<p>若要忽略正零和负零的差异，请使用equalsIgnoreZeroSign()，<br>
+或使用==前将任何非基本数据类型转换为等效基本类型；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash"># Primitive Type
+jshell&gt; float f1 = 0.0f
+f1 ==&gt; 0.0
+
+jshell&gt; float f2 = -0.0f
+f2 ==&gt; -0.0
+
+jshell&gt; f1 == f2
+$3 ==&gt; true
+
+# Wrapper Class
+jshell&gt; Float f1 = 0.0f
+f1 ==&gt; 0.0
+
+jshell&gt; Float f2 = -0.0f
+f2 ==&gt; -0.0
+
+jshell&gt; f1.equals(f2)
+$3 ==&gt; false</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-groovy" data-lang="groovy">float f1 = 0.0f
+float f2 = -0.0f
+Float f3 = 0.0f
+Float f4 = -0.0f
+
+assert f1 == f2
+assert (Float) f1 != (Float) f2
+
+assert f3 != f4
+assert (float) f3 == (float) f4
+
+assert !f1.equals(f2)
+assert !f3.equals(f4)
+
+assert f1.equalsIgnoreZeroSign(f2)
+assert f3.equalsIgnoreZeroSign(f4)</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_extra_keyword"><a class="anchor" href="#_extra_keyword"></a>13. Extra Keyword</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>as，def，in，trait，it(within closure)；</p>
+</li>
+<li>
+<p>Groovy没Java严格，但在可能混淆场景，避免用于变量，方法和类名，<br>
+如var - var是糟糕的样式；具体示例如下：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-groovy" data-lang="groovy">var var = [def:1,as:2,in:3,trait:4]</code></pre>
+</div>
+</div>
+</div>
+</div>
+</article>
+	</div>
+</main>
+</div>
+		<footer class="footer">
+	
+	
+	
+	<div class="footer-thanks">
+		Authored in AsciiDoc
+		<br /><br />
+		Produced by Antora and Asciidoctor
+  	</div>
+  
+	<div class="footer-legal" style="text-align:center">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br /><br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		Copyright © 2024 Elf
+		<br /><br />
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+	
+</footer><script id="site-script" src="../../../../_/js/site.js" 
+	data-ui-root-path="../../../../_"></script>
+
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
+</html>

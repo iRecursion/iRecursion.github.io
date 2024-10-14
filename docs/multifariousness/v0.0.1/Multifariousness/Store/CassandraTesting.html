@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> :: AsciiDoc</title>
+    <meta name="generator" content="Antora 3.1.7">
+
+<link rel="stylesheet" href="../../../../_/css/site.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/asciidoc.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
+
+
+    <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+  			
+  			<a class="navbar-item logo" target="_blank" href="">
+				<img src="../../../../_/img/yin-yang-symbol.svg" width="100%" height="50">
+			</a>
+  			
+	            <div id="main" style="place-content: center;">
+	                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+		            </div>
+		        </section>
+    	</div>
+    	
+    	<div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Culture</div>
+          			<div class="navbar-dropdown is-right">
+            			
+			            <div class="navbar-item">Traditional Culture</div>
+			            
+			            <a class="navbar-item" target="_blank" href="../../../../culture/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Culture <small>传统文化</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Eco</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <a class="navbar-item" target="_blank" href="../../../../multifariousness/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Multifariousness <small>五花八门</small></span>
+			            </a>
+
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../ai/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Artificial Intelligence<small>人工智能</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../msg/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Messaging - Kafka <small>Kafka</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Experiment</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <div class="navbar-item">Quantum Computing</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>QC <small>量子计算...</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <div class="navbar-item">Harmony</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>CangJie <small>预览版内测...</small></span>
+			            </a>
+        			</div>
+    			</div>
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container" data-component="multifariousness" data-version="v0.0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">Multifariousness</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Security</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Security/KeycloakInstallation.html">Keycloak Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Security/KeycloakCase.html">Keycloak Case</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Antora</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AsciidoctorInstallation.html">Asciidoctor Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AsciidoctorConfigurer.html">Asciidoctor Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraInstallation.html">Antora Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraConfigurer.html">Antora Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraHighlight.html">Antora Highlight</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/Markdown.html">Markdown</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/NodeInstallation.html">Node Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Doxygen</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxygenInstallation.html">Doxygen Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxygenEntry.html">Doxygen Entry</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DocumentingCode.html">Documenting Code</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxygenUsage.html">Doxygen Usage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxywizardUsage.html">Doxywizard Usage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxyfileProperty.html">Doxyfile Property</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/CustomCommand.html">Custom Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/SpecialCommand.html">Special Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/HtmlCommand.html">Html Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/XmlCommand.html">Xml Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/EmojiSupport.html">Emoji Support</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Lang</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustPrerequisite.html">Rust Prerequisite</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustGun.html">Rust Gun</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustConfigurer.html">Rust Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustEclipse.html">Rust Eclipse</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustVSCode.html">Rust VSCode</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/GoInstallation.html">Go Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/GroovyInstallation.html">Groovy Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/JavaFxInstallation.html">JavaFx Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/LuaInstallation.html">Lua Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/PythonInstallation.html">Python Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Ide</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/EclipseCustomizer.html">EclipseCustomizer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/EclipseConfigurer.html">EclipseConfigurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/FlattenLifecycle.html">FlattenLifecycle</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/JakartaSpecification.html">JakartaSpecification</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/CondaJupyter.html">CondaJupyter</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/IdeaConfigurer.html">IdeaConfigurer</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Ops</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/HyperVConfigurer.html">Hyper VConfigurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/UbuntuConfigurer.html">Ubuntu Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/DockerFundamental.html">Docker Fundamental</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/K8SInstallation.html">K8S Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/K8SExtension.html">K8S Extension</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/NexusInstallation.html">Nexus Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/JenkinsInstallation.html">Jenkins Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/BatchProcess.html">Batch Process</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/OracleContainerRegistry.html">Oracle Container Registry</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/WinConfigurer.html">Win Configurer</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Msg</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Msg/KafkaInstallation.html">Kafka Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Msg/KafkaEntryCase.html">Kafka Entry Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Msg/PulsarInstallation.html">Pulsar Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Store</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="PowerDesigner.html">Power Designer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="CassandraSetup.html">Cassandra Setup</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="CassandraBoot.html">Cassandra Boot</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="CassandraTesting.html">Cassandra Testing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ElasticInstallation.html">Elastic Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ElasticCase.html">Elastic Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="OpenSearchInstallation.html">Open Search Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="MySQLInstallation.html">MySQL Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="MySqlTuning.html">MySql Tuning</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="MongoInstallation.html">Mongo Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="MongoCase.html">Mongo Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="PostgresInstallation.html">Postgres Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="AeroSpikeInstallation.html">Aero Spike Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="TinkerpopCase.html">Tinkerpo pCase</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Multifariousness</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">Multifariousness</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+	<div class="toolbar" role="navigation">
+	<button class="nav-toggle"></button>
+	
+		<a href="../../index.html" 
+			class="home-link">
+		</a>
+
+	<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">Multifariousness</a></li>
+    <li>Store</li>
+    <li><a href="CassandraTesting.html">Cassandra Testing</a></li>
+  </ul>
+</nav>
+		</div>
+	
+	<div class="content">
+			<aside class="toc sidebar" 
+	data-title="Contents" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+			<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_intro">1. Intro</a></li>
+<li><a href="#_construct_data">2. Construct Data</a></li>
+<li><a href="#_visualization_tool">3. Visualization Tool</a></li>
+<li><a href="#_create_product">4. Create Product</a></li>
+<li><a href="#_update_product">5. Update Product</a></li>
+<li><a href="#_retrieve_by_id">6. Retrieve By Id</a></li>
+<li><a href="#_retrieve_all_product">7. Retrieve All Product</a></li>
+<li><a href="#_delete_product">8. Delete Product</a></li>
+<li><a href="#_delete_all_product">9. Delete All Product</a></li>
+<li><a href="#_retrieve_by_state">10. Retrieve By State</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_intro"><a class="anchor" href="#_intro"></a>1. Intro</h2>
+<div class="sectionbody">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>启动CassandraEntry；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_construct_data"><a class="anchor" href="#_construct_data"></a>2. Construct Data</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>CassandraProduct.cql</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-sql" data-lang="sql">create keyspace if not exists elf with replication={'class':'SimpleStrategy','replication_factor':1};
+
+use elf;
+
+create table if not exists elf.product(
+	product_id uuid primary key,
+	product_name varchar,
+	product_memo text,
+   	product_state boolean
+);
+
+select * from elf.product;
+truncate table elf.product;
+
+# 不要换行，不要随意添加空格，否则cql语法可能无法通过；
+# UUID：Java UUID.randomUUID()形式，Cassandra uuid()形式；
+
+insert into elf.product(product_id,product_name,product_memo,product_state)values(uuid(),'JanusGraph','Graph,Open Source',true);
+insert into elf.product(product_id,product_name,product_memo,product_state)values(uuid(),'Cassandra','Wide Column,Vector,Multi Model',true);
+insert into elf.product(product_id,product_name,product_memo,product_state)values(uuid(),'Presto','Relational,Open Source,Big Data',false);
+insert into elf.product(product_id,product_name,product_memo,product_state)values(uuid(),'Trino','Relational,Document,Spatial,TS,KV',true);
+insert into elf.product(product_id,product_name,product_memo,product_state)values(uuid(),'Weaviate','Vector,AI,Real Time',true);
+insert into elf.product(product_id,product_name,product_memo,product_state)values(uuid(),'Milvus','Vector,Similarity Search,ML',true);
+insert into elf.product(product_id,product_name,product_memo,product_state)values(uuid(),'Qdrant','Vector,NN,Semantic Matching',true);
+insert into elf.product(product_id,product_name,product_memo,product_state)values(uuid(),'ElasticSearch','Search,Document,Spatial,Vector',true);</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-sql" data-lang="sql">+--------------------------------------+-----------------------------------+---------------+--------------+
+| product_id                           | product_memo                      | product_name  | product_state|
+|--------------------------------------+-----------------------------------+---------------+--------------|
+| 29af0738-4a17-4571-90cd-700ab8995db7 |       Vector,Similarity Search,ML |        Milvus |          True|
+| 3a3415aa-8dfa-42fa-9723-0142960b687a |   Relational,Open Source,Big Data |        Presto |         False|
+| 741e5240-8a7b-40fa-b07c-e88b3638bf36 |                 Graph,Open Source |    JanusGraph |          True|
+| 63608ee0-eaf1-41cf-970e-04238a556103 |               Vector,AI,Real Time |      Weaviate |          True|
+| 6d580a60-daba-46cc-b3d9-6061aa48f0ff |    Search,Document,Spatial,Vector | ElasticSearch |          True|
+| d4760f62-9b76-4c40-8a56-8c1e7214dfdd |    Wide Column,Vector,Multi Model |     Cassandra |          True|
+| ddfe8f96-c49f-4ad0-899a-9b3b484419d8 |       Vector,NN,Semantic Matching |        Qdrant |          True|
+| cb99a803-2443-48ec-accb-5262ef9bc429 | Relational,Document,Spatial,TS,KV |         Trino |          True|
++--------------------------------------+-----------------------------------+---------------+--------------+</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_visualization_tool"><a class="anchor" href="#_visualization_tool"></a>3. Visualization Tool</h2>
+<div class="sectionbody">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>安装DbVisualizer V24.1.4；</p>
+</li>
+<li>
+<p>Tool ☞ Driver Manager ☞ 搜索Cassandra<br>
+☞ 右键选择Create User Driver from Template</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Cassandra/Elementary/DbVisualizerCassandra01.png" alt="DbVisualizerCassandra01">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Name：Custom Cassandra</p>
+</li>
+<li>
+<p>Url：jdbc:cassandra://192.168.0.123:9042</p>
+</li>
+<li>
+<p>Driver Class：com.simba.cassandra.jdbc42.Driver</p>
+</li>
+<li>
+<p>点击右侧地球仪：Download/Update driver for remote artifact，<br>
+下载完成后关闭窗口；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>点击左上角加号 ☞ Create Database Connection：</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Cassandra/Elementary/DbVisualizerCassandra02.png" alt="DbVisualizerCassandra02">
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>SQL Commander ☞ New SQL Commander ☞ select * from elf.product;</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Cassandra/Elementary/DbVisualizerCassandra03.png" alt="DbVisualizerCassandra03">
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_create_product"><a class="anchor" href="#_create_product"></a>4. Create Product</h2>
+<div class="sectionbody">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://localhost:8080/api/product/createProduct" class="bare">http://localhost:8080/api/product/createProduct</a></p>
+</li>
+<li>
+<p>请求方法：POST，请求对象和响应对象分别为：</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">{
+    "productName":"Cassandra",
+    "productMemo":"Wide Column，Vector，Multi Model",
+    "productState":true
+}
+
+{
+    "productId": "24672630-4ca4-424b-8fc5-c20f1400074b",
+    "productName": "Cassandra",
+    "productMemo": "Wide Column，Vector，Multi Model",
+    "productState": true
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_update_product"><a class="anchor" href="#_update_product"></a>5. Update Product</h2>
+<div class="sectionbody">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://localhost:8080/api/product/updateProduct/productId" class="bare">http://localhost:8080/api/product/updateProduct/productId</a><br>
+<a href="http://localhost:8080/api/product/updateProduct/24672630-4ca4-424b-8fc5-c20f1400074b" class="bare">http://localhost:8080/api/product/updateProduct/24672630-4ca4-424b-8fc5-c20f1400074b</a></p>
+</li>
+<li>
+<p>请求方法：PUT，请求对象和响应对象分别为：</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">{
+    "productName":"Cassandra-Update",
+    "productMemo":"Wide Column，Vector，Multi Model",
+    "productState":true
+}
+
+{
+    "productId": "24672630-4ca4-424b-8fc5-c20f1400074b",
+    "productName": "Cassandra-Update",
+    "productMemo": "Wide Column，Vector，Multi Model",
+    "productState": true
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_retrieve_by_id"><a class="anchor" href="#_retrieve_by_id"></a>6. Retrieve By Id</h2>
+<div class="sectionbody">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>请求方法：GET；</p>
+</li>
+<li>
+<p><a href="http://localhost:8080/api/product/getProductById/productId" class="bare">http://localhost:8080/api/product/getProductById/productId</a><br>
+<a href="http://localhost:8080/api/product/getProductById/29af0738-4a17-4571-90cd-700ab8995db7" class="bare">http://localhost:8080/api/product/getProductById/29af0738-4a17-4571-90cd-700ab8995db7</a></p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">{
+    "productId": "29af0738-4a17-4571-90cd-700ab8995db7",
+    "productName": "Milvus",
+    "productMemo": "Vector,Similarity Search,ML",
+    "productState": true
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_retrieve_all_product"><a class="anchor" href="#_retrieve_all_product"></a>7. Retrieve All Product</h2>
+<div class="sectionbody">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>请求方法：GET；</p>
+</li>
+<li>
+<p><a href="http://localhost:8080/api/product/getAllProductProduct" class="bare">http://localhost:8080/api/product/getAllProductProduct</a></p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">[
+    {
+        "productId": "29af0738-4a17-4571-90cd-700ab8995db7",
+        "productName": "Milvus",
+        "productMemo": "Vector,Similarity Search,ML",
+        "productState": true
+    },
+    {
+        "productId": "3a3415aa-8dfa-42fa-9723-0142960b687a",
+        "productName": "Presto",
+        "productMemo": "Relational,Open Source,Big Data",
+        "productState": false
+    },
+    {
+        "productId": "741e5240-8a7b-40fa-b07c-e88b3638bf36",
+        "productName": "JanusGraph",
+        "productMemo": "Graph,Open Source",
+        "productState": true
+    },
+    {
+        "productId": "63608ee0-eaf1-41cf-970e-04238a556103",
+        "productName": "Weaviate",
+        "productMemo": "Vector,AI,Real Time",
+        "productState": true
+    },
+    {
+        "productId": "6d580a60-daba-46cc-b3d9-6061aa48f0ff",
+        "productName": "ElasticSearch",
+        "productMemo": "Search,Document,Spatial,Vector",
+        "productState": true
+    },
+    {
+        "productId": "d4760f62-9b76-4c40-8a56-8c1e7214dfdd",
+        "productName": "Cassandra",
+        "productMemo": "Wide Column,Vector,Multi Model",
+        "productState": true
+    },
+    {
+        "productId": "ddfe8f96-c49f-4ad0-899a-9b3b484419d8",
+        "productName": "Qdrant",
+        "productMemo": "Vector,NN,Semantic Matching",
+        "productState": true
+    },
+    {
+        "productId": "cb99a803-2443-48ec-accb-5262ef9bc429",
+        "productName": "Trino",
+        "productMemo": "Relational,Document,Spatial,TS,KV",
+        "productState": true
+    }
+]</code></pre>
+</div>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://localhost:8080/api/product/getAllProductProduct?productMemo=vector" class="bare">http://localhost:8080/api/product/getAllProductProduct?productMemo=vector</a></p>
+</li>
+<li>
+<p><mark>关于自定义索引，后续章节说明，此处不再赘述</mark>；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-sql" data-lang="sql">select * from elf.product where product_memo like '%vector%';</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">InvalidRequest: Error from server: code=2200 [Invalid query]
+msg="like restriction only support on properly indexed column
+product_memo LIKE '%vector%' is not valid."</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_delete_product"><a class="anchor" href="#_delete_product"></a>8. Delete Product</h2>
+<div class="sectionbody">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>请求方法：DELETE；</p>
+</li>
+<li>
+<p><a href="http://localhost:8080/api/deleteProductById/productId" class="bare">http://localhost:8080/api/deleteProductById/productId</a><br>
+<a href="http://localhost:8080/api/deleteProductById/6d580a60-daba-46cc-b3d9-6061aa48f0ff" class="bare">http://localhost:8080/api/deleteProductById/6d580a60-daba-46cc-b3d9-6061aa48f0ff</a></p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_delete_all_product"><a class="anchor" href="#_delete_all_product"></a>9. Delete All Product</h2>
+<div class="sectionbody">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>请求方法：DELETE；</p>
+</li>
+<li>
+<p><a href="http://localhost:8080/api/product/deleteAllProduct" class="bare">http://localhost:8080/api/product/deleteAllProduct</a></p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_retrieve_by_state"><a class="anchor" href="#_retrieve_by_state"></a>10. Retrieve By State</h2>
+<div class="sectionbody">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>请求方法：GET；</p>
+</li>
+<li>
+<p><a href="http://localhost:8080/api/product/getProductByState" class="bare">http://localhost:8080/api/product/getProductByState</a></p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">[
+    {
+        "productId": "29af0738-4a17-4571-90cd-700ab8995db7",
+        "productName": "Milvus",
+        "productMemo": "Vector,Similarity Search,ML",
+        "productState": true
+    },
+    {
+        "productId": "741e5240-8a7b-40fa-b07c-e88b3638bf36",
+        "productName": "JanusGraph",
+        "productMemo": "Graph,Open Source",
+        "productState": true
+    },
+    {
+        "productId": "63608ee0-eaf1-41cf-970e-04238a556103",
+        "productName": "Weaviate",
+        "productMemo": "Vector,AI,Real Time",
+        "productState": true
+    },
+    {
+        "productId": "d4760f62-9b76-4c40-8a56-8c1e7214dfdd",
+        "productName": "Cassandra",
+        "productMemo": "Wide Column,Vector,Multi Model",
+        "productState": true
+    },
+    {
+        "productId": "ddfe8f96-c49f-4ad0-899a-9b3b484419d8",
+        "productName": "Qdrant",
+        "productMemo": "Vector,NN,Semantic Matching",
+        "productState": true
+    },
+    {
+        "productId": "cb99a803-2443-48ec-accb-5262ef9bc429",
+        "productName": "Trino",
+        "productMemo": "Relational,Document,Spatial,TS,KV",
+        "productState": true
+    }
+]</code></pre>
+</div>
+</div>
+</div>
+</div>
+</article>
+	</div>
+</main>
+</div>
+		<footer class="footer">
+	
+	
+	
+	<div class="footer-thanks">
+		Authored in AsciiDoc
+		<br /><br />
+		Produced by Antora and Asciidoctor
+  	</div>
+  
+	<div class="footer-legal" style="text-align:center">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br /><br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		Copyright © 2024 Elf
+		<br /><br />
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+	
+</footer><script id="site-script" src="../../../../_/js/site.js" 
+	data-ui-root-path="../../../../_"></script>
+
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
+</html>

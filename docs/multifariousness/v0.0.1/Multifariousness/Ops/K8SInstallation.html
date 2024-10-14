@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> :: AsciiDoc</title>
+    <meta name="generator" content="Antora 3.1.7">
+
+<link rel="stylesheet" href="../../../../_/css/site.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/asciidoc.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
+
+
+    <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+  			
+  			<a class="navbar-item logo" target="_blank" href="">
+				<img src="../../../../_/img/yin-yang-symbol.svg" width="100%" height="50">
+			</a>
+  			
+	            <div id="main" style="place-content: center;">
+	                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+		            </div>
+		        </section>
+    	</div>
+    	
+    	<div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Culture</div>
+          			<div class="navbar-dropdown is-right">
+            			
+			            <div class="navbar-item">Traditional Culture</div>
+			            
+			            <a class="navbar-item" target="_blank" href="../../../../culture/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Culture <small>传统文化</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Eco</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <a class="navbar-item" target="_blank" href="../../../../multifariousness/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Multifariousness <small>五花八门</small></span>
+			            </a>
+
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../ai/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Artificial Intelligence<small>人工智能</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../msg/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Messaging - Kafka <small>Kafka</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Experiment</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <div class="navbar-item">Quantum Computing</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>QC <small>量子计算...</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <div class="navbar-item">Harmony</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>CangJie <small>预览版内测...</small></span>
+			            </a>
+        			</div>
+    			</div>
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container" data-component="multifariousness" data-version="v0.0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">Multifariousness</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Security</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Security/KeycloakInstallation.html">Keycloak Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Security/KeycloakCase.html">Keycloak Case</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Antora</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AsciidoctorInstallation.html">Asciidoctor Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AsciidoctorConfigurer.html">Asciidoctor Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraInstallation.html">Antora Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraConfigurer.html">Antora Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraHighlight.html">Antora Highlight</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/Markdown.html">Markdown</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/NodeInstallation.html">Node Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Doxygen</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxygenInstallation.html">Doxygen Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxygenEntry.html">Doxygen Entry</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DocumentingCode.html">Documenting Code</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxygenUsage.html">Doxygen Usage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxywizardUsage.html">Doxywizard Usage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxyfileProperty.html">Doxyfile Property</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/CustomCommand.html">Custom Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/SpecialCommand.html">Special Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/HtmlCommand.html">Html Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/XmlCommand.html">Xml Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/EmojiSupport.html">Emoji Support</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Lang</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustPrerequisite.html">Rust Prerequisite</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustGun.html">Rust Gun</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustConfigurer.html">Rust Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustEclipse.html">Rust Eclipse</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustVSCode.html">Rust VSCode</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/GoInstallation.html">Go Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/GroovyInstallation.html">Groovy Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/JavaFxInstallation.html">JavaFx Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/LuaInstallation.html">Lua Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/PythonInstallation.html">Python Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Ide</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/EclipseCustomizer.html">EclipseCustomizer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/EclipseConfigurer.html">EclipseConfigurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/FlattenLifecycle.html">FlattenLifecycle</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/JakartaSpecification.html">JakartaSpecification</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/CondaJupyter.html">CondaJupyter</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/IdeaConfigurer.html">IdeaConfigurer</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Ops</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="HyperVConfigurer.html">Hyper VConfigurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="UbuntuConfigurer.html">Ubuntu Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="DockerFundamental.html">Docker Fundamental</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="K8SInstallation.html">K8S Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="K8SExtension.html">K8S Extension</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="NexusInstallation.html">Nexus Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="JenkinsInstallation.html">Jenkins Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="BatchProcess.html">Batch Process</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="OracleContainerRegistry.html">Oracle Container Registry</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="WinConfigurer.html">Win Configurer</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Msg</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Msg/KafkaInstallation.html">Kafka Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Msg/KafkaEntryCase.html">Kafka Entry Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Msg/PulsarInstallation.html">Pulsar Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Store</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/PowerDesigner.html">Power Designer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/CassandraSetup.html">Cassandra Setup</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/CassandraBoot.html">Cassandra Boot</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/CassandraTesting.html">Cassandra Testing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/ElasticInstallation.html">Elastic Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/ElasticCase.html">Elastic Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/OpenSearchInstallation.html">Open Search Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/MySQLInstallation.html">MySQL Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/MySqlTuning.html">MySql Tuning</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/MongoInstallation.html">Mongo Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/MongoCase.html">Mongo Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/PostgresInstallation.html">Postgres Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/AeroSpikeInstallation.html">Aero Spike Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/TinkerpopCase.html">Tinkerpo pCase</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Multifariousness</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">Multifariousness</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+	<div class="toolbar" role="navigation">
+	<button class="nav-toggle"></button>
+	
+		<a href="../../index.html" 
+			class="home-link">
+		</a>
+
+	<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">Multifariousness</a></li>
+    <li>Ops</li>
+    <li><a href="K8SInstallation.html">K8S Installation</a></li>
+  </ul>
+</nav>
+		</div>
+	
+	<div class="content">
+			<aside class="toc sidebar" 
+	data-title="Contents" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+			<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_trackback">1. Trackback</a></li>
+<li><a href="#_前置条件">2. 前置条件</a>
+<ul class="sectlevel2">
+<li><a href="#_基础环境">2.1. 基础环境</a></li>
+<li><a href="#_hosts">2.2. hosts</a></li>
+<li><a href="#_更新环境">2.3. 更新环境</a></li>
+<li><a href="#_disable_swap">2.4. Disable Swap</a></li>
+<li><a href="#_关闭防火墙">2.5. 关闭防火墙</a></li>
+<li><a href="#_network_traffic">2.6. Network Traffic</a></li>
+<li><a href="#_ip_forward">2.7. IP Forward</a></li>
+<li><a href="#_安装docker">2.8. 安装Docker</a></li>
+</ul>
+</li>
+<li><a href="#_k8s前置">3. K8S前置</a>
+<ul class="sectlevel2">
+<li><a href="#_依赖组件">3.1. 依赖组件</a></li>
+<li><a href="#_密钥与源">3.2. 密钥与源</a></li>
+<li><a href="#_安装kube工具">3.3. 安装kube工具</a></li>
+<li><a href="#_查看版本">3.4. 查看版本</a></li>
+<li><a href="#_开机启动">3.5. 开机启动</a></li>
+</ul>
+</li>
+<li><a href="#_容器运行时">4. 容器运行时</a>
+<ul class="sectlevel2">
+<li><a href="#_生成配置文件">4.1. 生成配置文件</a></li>
+<li><a href="#_启用systemd">4.2. 启用systemd</a></li>
+<li><a href="#_开机自启动">4.3. 开机自启动</a></li>
+</ul>
+</li>
+<li><a href="#_master_node">5. Master Node</a>
+<ul class="sectlevel2">
+<li><a href="#_生成初始化配置">5.1. 生成初始化配置</a></li>
+<li><a href="#_修改kubeadm_conf">5.2. 修改kubeadm.conf</a></li>
+<li><a href="#_master初始化">5.3. Master初始化</a></li>
+<li><a href="#_配置kubectl">5.4. 配置kubectl</a></li>
+<li><a href="#_cni_plugin">5.5. CNI Plugin</a></li>
+</ul>
+</li>
+<li><a href="#_worker_node">6. Worker Node</a>
+<ul class="sectlevel2">
+<li><a href="#_worker_join">6.1. Worker Join</a></li>
+<li><a href="#_配置kubectl_2">6.2. 配置kubectl</a></li>
+<li><a href="#_集群节点">6.3. 集群节点</a></li>
+</ul>
+</li>
+<li><a href="#_排错">7. 排错</a>
+<ul class="sectlevel2">
+<li><a href="#_kubelet日志">7.1. kubelet日志</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_trackback"><a class="anchor" href="#_trackback"></a>1. Trackback</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://kubernetes.io" class="bare">https://kubernetes.io</a></p>
+</li>
+<li>
+<p><a href="https://artifacthub.io" class="bare">https://artifacthub.io</a></p>
+</li>
+<li>
+<p><a href="https://operatorhub.io" class="bare">https://operatorhub.io</a></p>
+</li>
+<li>
+<p><a href="https://www.downloadkubernetes.com" class="bare">https://www.downloadkubernetes.com</a></p>
+</li>
+<li>
+<p><a href="https://blog.csdn.net/zhangzhaokun/article/details/131452979" class="bare">https://blog.csdn.net/zhangzhaokun/article/details/131452979</a></p>
+</li>
+<li>
+<p><a href="https://blog.radwell.codes/2022/07/single-node-kubernetes-cluster-via-kubeadm-on-ubuntu-22-04/" class="bare">https://blog.radwell.codes/2022/07/single-node-kubernetes-cluster-via-kubeadm-on-ubuntu-22-04/</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_前置条件"><a class="anchor" href="#_前置条件"></a>2. 前置条件</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_基础环境"><a class="anchor" href="#_基础环境"></a>2.1. 基础环境</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>MateBook D16 Win 11 Build.22621 HyperV</p>
+</li>
+<li>
+<p>Ubuntu Server 22.04.3</p>
+</li>
+<li>
+<p>安装完毕Ubuntu Server后设置SSH，安装源，时间同步，编码</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">IP</th>
+<th class="tableblock halign-left valign-top">Role</th>
+<th class="tableblock halign-left valign-top">HostName</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">192.168.1.121</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">k8s-master</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>hostnamectl set-hostname k8s-master</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">192.168.1.122</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">k8s-worker</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>hostnamectl set-hostname k8s-worker</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_hosts"><a class="anchor" href="#_hosts"></a>2.2. hosts</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">vim /etc/hosts
+
+192.168.1.121	k8s-master
+192.168.1.122	k8s-worker</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_更新环境"><a class="anchor" href="#_更新环境"></a>2.3. 更新环境</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">apt update</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_disable_swap"><a class="anchor" href="#_disable_swap"></a>2.4. Disable Swap</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">swapoff -a &amp;&amp; sed -i -e '/swap/d' /etc/fstab
+
+# vim /etc/fstab
+# 注释swap.img行
+# /swap.img     none    swap    sw      0       0
+
+# 重新加载/etc/fstab
+# mount -a
+
+swapon --show &amp;&amp; free -mh</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_关闭防火墙"><a class="anchor" href="#_关闭防火墙"></a>2.5. 关闭防火墙</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash"># 生产慎用
+ufw disable &amp;&amp; ufw status</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_network_traffic"><a class="anchor" href="#_network_traffic"></a>2.6. Network Traffic</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">cat &lt;&lt;EOF | tee /etc/modules-load.d/k8s.conf
+overlay
+br_netfilter
+EOF</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">modprobe overlay &amp;&amp; modprobe br_netfilter
+
+lsmod | grep br_netfilter &amp;&amp; lsmod | grep overlay</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ip_forward"><a class="anchor" href="#_ip_forward"></a>2.7. IP Forward</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">cat &lt;&lt;EOF | tee /etc/sysctl.d/k8s.conf
+net.bridge.bridge-nf-call-iptables = 1
+net.bridge.bridge-nf-call-ip6tables = 1
+net.ipv4.ip_forward = 1
+EOF</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">sysctl --system</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_安装docker"><a class="anchor" href="#_安装docker"></a>2.8. 安装Docker</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://docs.docker.com/engine/install/ubuntu" class="bare">https://docs.docker.com/engine/install/ubuntu</a></p>
+</li>
+<li>
+<p>修改 <code>/etc/docker/daemon.json</code>，添加Docker代理源</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_k8s前置"><a class="anchor" href="#_k8s前置"></a>3. K8S前置</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm" class="bare">https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm</a></p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_依赖组件"><a class="anchor" href="#_依赖组件"></a>3.1. 依赖组件</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">apt update &amp;&amp; apt install -y apt-transport-https ca-certificates curl</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_密钥与源"><a class="anchor" href="#_密钥与源"></a>3.2. 密钥与源</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">#curl -fsSL https://packages.cloud.google.com/apt/doc/apt-key.gpg | \
+#	gpg --dearmor -o /etc/apt/keyrings/kubernetes-archive-keyring.gpg
+
+#echo "deb [signed-by=/etc/apt/keyrings/kubernetes-archive-keyring.gpg] \
+#	https://apt.kubernetes.io/ kubernetes-xenial main" \
+#	| tee /etc/apt/sources.list.d/kubernetes.list
+
+# curl -fsSL https://mirrors.tencent.com/docker-ce/linux/ubuntu/gpg | sudo apt-key add -
+# apt-add-repository "deb https://mirrors.tencent.com/kubernetes/apt/ kubernetes-xenial main"
+
+curl -fsSL https://mirrors.aliyun.com/kubernetes/apt/doc/apt-key.gpg | \
+	gpg --dearmor -o /etc/apt/keyrings/kubernetes-archive-keyring.gpg
+
+echo "deb [signed-by=/etc/apt/keyrings/kubernetes-archive-keyring.gpg] \
+	https://mirrors.aliyun.com/kubernetes/apt/ kubernetes-xenial main" \
+	| tee /etc/apt/sources.list.d/kubernetes.list</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_安装kube工具"><a class="anchor" href="#_安装kube工具"></a>3.3. 安装kube工具</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash"># apt install -y kubelet=1.27.4-00 kubeadm=1.27.4-00 kubectl=1.27.4-00
+apt update &amp;&amp; apt install -y kubelet kubeadm kubectl
+
+# 阻止自动更新
+apt-mark hold kubelet kubeadm kubectl</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_查看版本"><a class="anchor" href="#_查看版本"></a>3.4. 查看版本</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash"># 指定格式yaml或json
+
+kubectl version --output=json --client &amp;&amp; \
+	kubeadm version --output=json &amp;&amp; kubelet --version</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_开机启动"><a class="anchor" href="#_开机启动"></a>3.5. 开机启动</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">systemctl enable kubelet</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_容器运行时"><a class="anchor" href="#_容器运行时"></a>4. 容器运行时</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_生成配置文件"><a class="anchor" href="#_生成配置文件"></a>4.1. 生成配置文件</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">containerd config default |tee /etc/containerd/config.toml</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_启用systemd"><a class="anchor" href="#_启用systemd"></a>4.2. 启用systemd</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><code>vim /etc/containerd/config.toml</code></p>
+</li>
+<li>
+<p><code>[plugins."io.containerd.grpc.v1.cri".containerd.runtimes.runc.options]</code><br>
+<code>SystemdCgroup = false</code> &#8658; <code>SystemdCgroup = true</code></p>
+</li>
+<li>
+<p>SystemdCgroup = false：大约125行</p>
+</li>
+<li>
+<p>第61行：<code>sandbox_image = "registry.k8s.io/pause:3.6"</code> 修改为：<br>
+<code>sandbox_image = "registry.aliyuncs.com/google_containers/pause:3.9"</code></p>
+</li>
+<li>
+<p>我们通过命令：<code>kubeadm config images list</code> 查看组件pause的版本为3.9</p>
+</li>
+<li>
+<p><code>kubeadm config images list</code><br>
+<code>kubeadm --image-repository registry.aliyuncs.com/google_containers config images list</code></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_开机自启动"><a class="anchor" href="#_开机自启动"></a>4.3. 开机自启动</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">systemctl daemon-reload &amp;&amp; \
+	systemctl restart containerd &amp;&amp; \
+	systemctl enable containerd</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_master_node"><a class="anchor" href="#_master_node"></a>5. Master Node</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_生成初始化配置"><a class="anchor" href="#_生成初始化配置"></a>5.1. 生成初始化配置</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">kubeadm config print init-defaults &gt; kubeadm.conf</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_修改kubeadm_conf"><a class="anchor" href="#_修改kubeadm_conf"></a>5.2. 修改kubeadm.conf</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">apiVersion: kubeadm.k8s.io/v1beta3
+bootstrapTokens:
+- groups:
+  - system:bootstrappers:kubeadm:default-node-token
+  token: abcdef.0123456789abcdef
+  ttl: 24h0m0s
+  usages:
+  - signing
+  - authentication
+kind: InitConfiguration
+localAPIEndpoint:
+  #advertiseAddress: 1.2.3.4	<i class="conum" data-value="2"></i><b>(2)</b>
+  advertiseAddress: 192.168.1.121
+  bindPort: 6443
+nodeRegistration:
+  criSocket: unix:///var/run/containerd/containerd.sock
+  imagePullPolicy: IfNotPresent
+  # name: node	<i class="conum" data-value="1"></i><b>(1)</b>
+  name: k8s-master
+  taints: null
+---
+apiServer:
+  timeoutForControlPlane: 4m0s
+apiVersion: kubeadm.k8s.io/v1beta3
+certificatesDir: /etc/kubernetes/pki
+clusterName: kubernetes
+controllerManager: {}
+dns: {}
+etcd:
+  local:
+    dataDir: /var/lib/etcd
+# imageRepository: registry.k8s.io	<i class="conum" data-value="3"></i><b>(3)</b>
+imageRepository: registry.aliyuncs.com/google_containers
+kind: ClusterConfiguration
+kubernetesVersion: v1.27.0	<i class="conum" data-value="5"></i><b>(5)</b>
+networking:
+  dnsDomain: cluster.local
+  podSubnet: 10.244.0.0/16 <i class="conum" data-value="4"></i><b>(4)</b>
+  serviceSubnet: 10.96.0.0/12
+scheduler: {}</code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>第17行：nodeRegistration.name：修改为master主机名<br>
+nodeRegistration.name：node 修改为<br>
+<strong>nodeRegistration.name：k8s-master</strong></td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>第12行：localAPIEndpoint.advertiseAddress，<br>
+修改为master的IP地址<br>
+localAPIEndpoint.advertiseAddress: 1.2.3.4 修改为<br>
+<strong>localAPIEndpoint.advertiseAddress: 192.168.1.121</strong></td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>第30行，修改镜像仓库地址：<br>
+imageRepository: registry.k8s.io 修改为：<br>
+<strong>imageRepository: registry.aliyuncs.com/google_containers</strong></td>
+</tr>
+<tr>
+<td><i class="conum" data-value="4"></i><b>4</b></td>
+<td>networking节点下第34和35行之间添加podSubnet节点：<br>
+<strong>podSubnet: 10.244.0.0/16</strong></td>
+</tr>
+<tr>
+<td><i class="conum" data-value="5"></i><b>5</b></td>
+<td>kubernetesVersion: 1.27.0 修改为<br>
+<strong>kubernetesVersion: v1.27.4</strong></td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_master初始化"><a class="anchor" href="#_master初始化"></a>5.3. Master初始化</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">kubeadm init --config=kubeadm.conf --v=6
+
+# 若初始化失败，则重置
+kubeadm reset</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash"># 无需操作此步骤，仅供参考
+kubeadm init \
+	--apiserver-advertise-address=192.168.1.121 \
+	--image-repository registry.aliyuncs.com/google_containers \
+	--kubernetes-version v1.27.4 \
+	--service-cidr=10.96.0.0/12 \
+	--pod-network-cidr=10.244.0.0/16 \
+  	--control-plane-endpoint=k8s-master</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_配置kubectl"><a class="anchor" href="#_配置kubectl"></a>5.4. 配置kubectl</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">mkdir -p $HOME/.kube &amp;&amp; \
+	cp -i /etc/kubernetes/admin.conf $HOME/.kube/config &amp;&amp; \
+	chown $(id -u):$(id -g) $HOME/.kube/config
+
+export KUBECONFIG=/etc/kubernetes/admin.conf</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_cni_plugin"><a class="anchor" href="#_cni_plugin"></a>5.5. CNI Plugin</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Container Network Interface Plugin</p>
+</li>
+<li>
+<p>仅在Master安装fannel：<code>​kubectl apply -f kube-flannel.yml</code></p>
+</li>
+<li>
+<p><a href="https://github.com/flannel-io/flannel/releases/latest/download/kube-flannel.yml" class="bare">https://github.com/flannel-io/flannel/releases/latest/download/kube-flannel.yml</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_worker_node"><a class="anchor" href="#_worker_node"></a>6. Worker Node</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_worker_join"><a class="anchor" href="#_worker_join"></a>6.1. Worker Join</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>在master节点执行打印join命令</strong>：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">kubeadm token create --print-join-command</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>在相应的worker节点执行join命令</strong></p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">kubeadm join 192.168.1.121:6443 --token 40q6kz.b05lx4s099nku2r9 \
+	--discovery-token-ca-cert-hash \
+	sha256:4fa9ffe9c07b42edc5f286359b6661d1e2798c73a3d63fe33ade9cb808c8154a</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_配置kubectl_2"><a class="anchor" href="#_配置kubectl_2"></a>6.2. 配置kubectl</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>将master节点中的"/etc/kubernetes/admin.conf"文件拷贝到<br>
+worker节点相同目录，再在worker节点执行如下命令(非root)：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">scp -r root@192.168.1.121:/etc/kubernetes/admin.conf /etc/kubernetes/
+
+mkdir -p $HOME/.kube &amp;&amp; \
+	cp -i /etc/kubernetes/admin.conf $HOME/.kube/config &amp;&amp; \
+	chown $(id -u):$(id -g) $HOME/.kube/config
+
+export KUBECONFIG=/etc/kubernetes/admin.conf</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_集群节点"><a class="anchor" href="#_集群节点"></a>6.3. 集群节点</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>master或worker都行，worker的role为空，<br>
+通过命令添加，label-value随意添加</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash"># kubectl get nodes
+NAME         STATUS   ROLES           AGE   VERSION
+k8s-master   Ready    control-plane   31m   v1.27.4
+k8s-worker   Ready    &lt;none&gt;          12m   v1.27.4
+
+# kubectl get nodes --show-labels
+
+# kubectl label nodes k8s-worker node-role.kubernetes.io/worker=worker
+
+# kubectl get nodes
+NAME         STATUS   ROLES           AGE   VERSION
+k8s-master   Ready    control-plane   42m   v1.27.4
+k8s-worker   Ready    worker          23m   v1.27.4
+
+kubectl cluster-info</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>列出命名空间列表：kubectl get namespace</p>
+</li>
+<li>
+<p>列出命名空间下pod：kubectl get po --all-namespaces</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">kubectl label nodes &lt;node-name&gt; &lt;label-key&gt;=&lt;label-value&gt;
+kubectl label nodes k8s-worker node-role.kubernetes.io/control-plane=control-plane
+kubectl label nodes k8s-worker node-role.kubernetes.io/worker=worker
+kubectl label nodes k8s-worker node-role.kubernetes.io/worker1=worker1
+kubectl label nodes k8s-worker node-role.kubernetes.io/worker2=worker2</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_排错"><a class="anchor" href="#_排错"></a>7. 排错</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_kubelet日志"><a class="anchor" href="#_kubelet日志"></a>7.1. kubelet日志</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">tail -f /var/log/syslog</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>注：若在/var/log/syslog的日志中看到如下kubelet服务启动失败信息，<br>
+可先不用担心，在k8s master节点初始化之前，出现如下信息是正常的，<br>
+kubelet会定时尝试连接k8s api server，直到成功。</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash"># tail -f /var/log/syslog
+Started kubelet: The Kubernetes Node Agent.
+"command failed" err="failed to load kubelet config file, error:
+	failed to load Kubelet config file /var/lib/kubelet/config.yaml,
+	error failed to read kubelet config file \"/var/lib/kubelet/config.yaml\",
+	error: open /var/lib/kubelet/config.yaml: no such file or directory,
+	path: /var/lib/kubelet/config.yaml"
+kubelet.service: Main process exited, code=exited, status=1/FAILURE
+kubelet.service: Failed with result 'exit-code'.</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+	</div>
+</main>
+</div>
+		<footer class="footer">
+	
+	
+	
+	<div class="footer-thanks">
+		Authored in AsciiDoc
+		<br /><br />
+		Produced by Antora and Asciidoctor
+  	</div>
+  
+	<div class="footer-legal" style="text-align:center">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br /><br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		Copyright © 2024 Elf
+		<br /><br />
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+	
+</footer><script id="site-script" src="../../../../_/js/site.js" 
+	data-ui-root-path="../../../../_"></script>
+
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
+</html>

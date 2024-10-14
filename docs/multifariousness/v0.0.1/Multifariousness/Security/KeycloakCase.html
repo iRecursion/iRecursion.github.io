@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> :: AsciiDoc</title>
+    <meta name="generator" content="Antora 3.1.7">
+
+<link rel="stylesheet" href="../../../../_/css/site.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/asciidoc.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
+
+
+    <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+  			
+  			<a class="navbar-item logo" target="_blank" href="">
+				<img src="../../../../_/img/yin-yang-symbol.svg" width="100%" height="50">
+			</a>
+  			
+	            <div id="main" style="place-content: center;">
+	                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+		            </div>
+		        </section>
+    	</div>
+    	
+    	<div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Culture</div>
+          			<div class="navbar-dropdown is-right">
+            			
+			            <div class="navbar-item">Traditional Culture</div>
+			            
+			            <a class="navbar-item" target="_blank" href="../../../../culture/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Culture <small>传统文化</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Eco</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <a class="navbar-item" target="_blank" href="../../../../multifariousness/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Multifariousness <small>五花八门</small></span>
+			            </a>
+
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../ai/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Artificial Intelligence<small>人工智能</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../msg/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Messaging - Kafka <small>Kafka</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Experiment</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <div class="navbar-item">Quantum Computing</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>QC <small>量子计算...</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <div class="navbar-item">Harmony</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>CangJie <small>预览版内测...</small></span>
+			            </a>
+        			</div>
+    			</div>
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container" data-component="multifariousness" data-version="v0.0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">Multifariousness</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Security</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="KeycloakInstallation.html">Keycloak Installation</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="KeycloakCase.html">Keycloak Case</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Antora</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AsciidoctorInstallation.html">Asciidoctor Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AsciidoctorConfigurer.html">Asciidoctor Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraInstallation.html">Antora Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraConfigurer.html">Antora Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraHighlight.html">Antora Highlight</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/Markdown.html">Markdown</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/NodeInstallation.html">Node Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Doxygen</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxygenInstallation.html">Doxygen Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxygenEntry.html">Doxygen Entry</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DocumentingCode.html">Documenting Code</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxygenUsage.html">Doxygen Usage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxywizardUsage.html">Doxywizard Usage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxyfileProperty.html">Doxyfile Property</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/CustomCommand.html">Custom Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/SpecialCommand.html">Special Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/HtmlCommand.html">Html Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/XmlCommand.html">Xml Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/EmojiSupport.html">Emoji Support</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Lang</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustPrerequisite.html">Rust Prerequisite</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustGun.html">Rust Gun</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustConfigurer.html">Rust Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustEclipse.html">Rust Eclipse</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustVSCode.html">Rust VSCode</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/GoInstallation.html">Go Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/GroovyInstallation.html">Groovy Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/JavaFxInstallation.html">JavaFx Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/LuaInstallation.html">Lua Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/PythonInstallation.html">Python Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Ide</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/EclipseCustomizer.html">EclipseCustomizer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/EclipseConfigurer.html">EclipseConfigurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/FlattenLifecycle.html">FlattenLifecycle</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/JakartaSpecification.html">JakartaSpecification</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/CondaJupyter.html">CondaJupyter</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/IdeaConfigurer.html">IdeaConfigurer</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Ops</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/HyperVConfigurer.html">Hyper VConfigurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/UbuntuConfigurer.html">Ubuntu Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/DockerFundamental.html">Docker Fundamental</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/K8SInstallation.html">K8S Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/K8SExtension.html">K8S Extension</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/NexusInstallation.html">Nexus Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/JenkinsInstallation.html">Jenkins Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/BatchProcess.html">Batch Process</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/OracleContainerRegistry.html">Oracle Container Registry</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/WinConfigurer.html">Win Configurer</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Msg</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Msg/KafkaInstallation.html">Kafka Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Msg/KafkaEntryCase.html">Kafka Entry Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Msg/PulsarInstallation.html">Pulsar Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Store</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/PowerDesigner.html">Power Designer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/CassandraSetup.html">Cassandra Setup</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/CassandraBoot.html">Cassandra Boot</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/CassandraTesting.html">Cassandra Testing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/ElasticInstallation.html">Elastic Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/ElasticCase.html">Elastic Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/OpenSearchInstallation.html">Open Search Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/MySQLInstallation.html">MySQL Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/MySqlTuning.html">MySql Tuning</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/MongoInstallation.html">Mongo Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/MongoCase.html">Mongo Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/PostgresInstallation.html">Postgres Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/AeroSpikeInstallation.html">Aero Spike Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/TinkerpopCase.html">Tinkerpo pCase</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Multifariousness</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">Multifariousness</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+	<div class="toolbar" role="navigation">
+	<button class="nav-toggle"></button>
+	
+		<a href="../../index.html" 
+			class="home-link">
+		</a>
+
+	<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">Multifariousness</a></li>
+    <li>Security</li>
+    <li><a href="KeycloakCase.html">Keycloak Case</a></li>
+  </ul>
+</nav>
+		</div>
+	
+	<div class="content">
+			<aside class="toc sidebar" 
+	data-title="Contents" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+			<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_dependency">1. Dependency</a></li>
+<li><a href="#_explanation">2. Explanation</a></li>
+<li><a href="#_verify_token">3. Verify Token</a></li>
+<li><a href="#_testing">4. Testing</a></li>
+<li><a href="#_keycloak_testcontainer">5. Keycloak Testcontainer</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_dependency"><a class="anchor" href="#_dependency"></a>1. Dependency</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>用Keycloak创建有OAuth2支持的Cloud Gateway；</p>
+</li>
+<li>
+<p>网关充当OAuth2 Client和OAuth2 Resource Server，<br>
+需依赖spring-boot-starter-oauth2-client和<br>
+spring-security-oauth2-resource-server</p>
+</li>
+<li>
+<p>还需依赖spring-security-oauth2-jose来自动解码jwt token，<br>
+当然我们需依赖spring-cloud-starter-gateway；</p>
+</li>
+<li>
+<p>最后需依赖JUnit自动化测试，和Testcontainers运行Keycloak容器；<br>
+添加spring-boot-starter-test，testcontainers-keycloak<br>
+和org.testcontainers.junit-jupiter依赖</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-boot-starter-oauth2-client&lt;/artifactId&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.security&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-security-oauth2-resource-server&lt;/artifactId&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.security&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-security-oauth2-jose&lt;/artifactId&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-cloud-starter-gateway&lt;/artifactId&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-boot-starter-log4j2&lt;/artifactId&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-boot-starter-test&lt;/artifactId&gt;
+    &lt;scope&gt;test&lt;/scope&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+    &lt;groupId&gt;com.github.dasniko&lt;/groupId&gt;
+    &lt;artifactId&gt;testcontainers-keycloak&lt;/artifactId&gt;
+    &lt;version&gt;3.2.0&lt;/version&gt;
+    &lt;scope&gt;test&lt;/scope&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+    &lt;groupId&gt;org.testcontainers&lt;/groupId&gt;
+    &lt;artifactId&gt;junit-jupiter&lt;/artifactId&gt;
+    &lt;version&gt;1.19.6&lt;/version&gt;
+    &lt;scope&gt;test&lt;/scope&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_explanation"><a class="anchor" href="#_explanation"></a>2. Explanation</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>oauth2Login()负责将未经身份认证的请求重定向到Keycloak登录页，<br>
+oauth2ResourceServer()在转发到下游服务前验证访问令牌；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">@Configuration
+@EnableWebFluxSecurity
+public class SecurityConfig {
+
+    @Bean
+    SecurityWebFilterChain springSecurityFilterChain(ServerHttpSecurity http) {
+    	//http.headers(header -&gt; header.frameOptions(frame -&gt; frame.mode(Mode.SAMEORIGIN)));
+    	//http.headers(header -&gt; header.frameOptions(frame -&gt; frame.disable()));
+
+        http.authorizeExchange(auth -&gt; auth.anyExchange().authenticated())
+            .oauth2Login(Customizer.withDefaults())
+            .oauth2ResourceServer((oauth2) -&gt; oauth2.jwt(Customizer.withDefaults()));
+        http.csrf(ServerHttpSecurity.CsrfSpec::disable);
+        return http.build();
+    }
+
+}</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>还需提供带spring.security.oauth2前缀的配置，OAuth2 Resource Server<br>
+模块将使用Keycloak的JWKS端点来verify传入的Jwt令牌；</p>
+</li>
+<li>
+<p>而在OAuth2 Client部分中，需提供Keycloak issuer realm address，<br>
+另还需提供Keycloak client credential，<br>
+choose authorization grant type and scope；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: http://192.168.0.123:18080/realms/elf/protocol/openid-connect/certs
+      client:
+        provider:
+          keycloak:
+            issuer-uri: http://192.168.0.123:18080/realms/elf
+        registration:
+          spring-with-test-scope:
+            provider: keycloak
+            client-id: spring-with-test-scope
+            client-secret: riJEmHGVr0kvBSgTFRzZfJY5dhpBwc1A
+            authorization-grant-type: authorization_code
+            scope: openid</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Gateway本身公开expose一个http端点，<br>
+使用@RegisteredOAuth2AuthorizedClient返回当前Jwt Acccess Token；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">@GetMapping(value = "/token")
+public Mono&lt;String&gt; getHome(
+	@RegisteredOAuth2AuthorizedClient OAuth2AuthorizedClient client) {
+    return Mono.just(client.getAccessToken().getTokenValue());
+}</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>另需在application.yaml配置Gateway Routing，Gateway可使用<br>
+TokenRelay GatewayFilter将OAuth2访问令牌转发到其代理的服务的下游；</p>
+</li>
+<li>
+<p>可将其设置为所有传入请求的默认过滤器filter，网关将转发到caller和callee，<br>
+此处没使用服务发现，默认callee端口8040，caller端口8020，网关端口8060；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">server:
+  port: 8060
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      default-filters:
+        - TokenRelay=
+      routes:
+        - id: callee-service
+          uri: http://localhost:8040
+          predicates:
+            - Path=/callee/**
+        - id: caller-service
+          uri: http://localhost:8020
+          predicates:
+            - Path=/caller/**</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_verify_token"><a class="anchor" href="#_verify_token"></a>3. Verify Token</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Microservice OAuth2 Resource Server Verify Token</p>
+</li>
+<li>
+<p>callee和caller的依赖相似，因caller使用WebClient，<br>
+故需依赖spring-webflux和spring-boot-starter-web；</p>
+</li>
+<li>
+<p>另需spring-security-oauth2-resource-server，<br>
+spring-security-oauth2-jose(jwt令牌解码)；</p>
+</li>
+<li>
+<p>oauth2ResourceServer()用Keycloak JWKS端点验证访问令牌；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">@Configuration
+@EnableWebSecurity
+public class SecurityConfig {
+
+    @Bean
+    SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+        http.authorizeHttpRequests(authorize -&gt; authorize.anyRequest().authenticated())
+            .oauth2ResourceServer((oauth2) -&gt; oauth2.jwt(Customizer.withDefaults()));
+        return http.build();
+    }
+}</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>OAuth2 Resource Server application.yaml</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: http://192.168.0.123:18080/realms/elf/protocol/openid-connect/certs</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Rest Controller，ping()只能由具有cs-elf scope的客户端访问，<br>
+返回从Authentication获取的assigned scope列表；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">@RestController
+@RequestMapping("/callee")
+public class CalleeController {
+
+	@GetMapping("/ping")
+    @PreAuthorize("hasAuthority('SCOPE_cs-elf')")
+    public String ping() {
+        SecurityContext context = SecurityContextHolder.getContext();
+        Authentication authentication = context.getAuthentication();
+        return "Scope List：" + authentication.getAuthorities();
+    }
+
+}</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>此方法由外部客户端通过Api网关直接调用，但caller也会在自己的ping端点实现中调用该端点；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">@RestController
+@RequestMapping("/caller")
+public class CallerController {
+
+    private WebClient webClient;
+
+    public CallerController(WebClient webClient) {
+        this.webClient = webClient;
+    }
+
+    @GetMapping("/ping")
+    @PreAuthorize("hasAuthority('SCOPE_cs-elf')")
+    public String ping() {
+        SecurityContext context = SecurityContextHolder.getContext();
+        var authentication = context.getAuthentication();
+        System.out.println("authenticationName：" + authentication.getName());
+
+        String scopes = webClient
+            .get()
+            .uri("http://localhost:8040/callee/ping")
+            .retrieve()
+            .bodyToMono(String.class)
+            .block();
+        return "Callee Scope List: " + scopes;
+    }
+}</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>若WebClient调用第二个微服务公开的端点，它还必须传播(propagate)bearer token，<br>
+可通过ServletBearerExchangeFilterFunction轻松实现，如下所示，</p>
+</li>
+<li>
+<p>另Security将查找当前的Authentication并提取AbstractOAuth2Token<br>
+credential，但它将自动在Authorization header中propagate该令牌；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">@SpringBootApplication
+public class CallerEntry {
+
+	public static void main(String[] sa) {
+		Class&lt;?&gt; cls = MethodHandles.lookup().lookupClass();
+		SpringApplication.run(cls, sa);
+	}
+
+    @Bean
+    WebClient webClient() {
+        return WebClient.builder()
+    		.filter(new ServletBearerExchangeFilterFunction())
+            .build();
+    }
+
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_testing"><a class="anchor" href="#_testing"></a>4. Testing</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>依次启动gateway：8060，caller：8020，callee：8040，应用启动顺序无关</p>
+</li>
+<li>
+<p>现通过网关调用应用端点：http://localhost:8060/caller/ping，<br>
+网关会将我们重定向到Keycloak登录页，使用elf-user - elf-cipher登录</p>
+</li>
+<li>
+<p>返回：Callee Scope List: Scope List：<br>
+[SCOPE_openid, SCOPE_email, SCOPE_profile, SCOPE_cs-elf]</p>
+</li>
+<li>
+<p>callee：Secured GET /callee/ping</p>
+</li>
+<li>
+<p>caller：Secured GET /caller/ping<br>
+authenticationName：70a8b381-b1d3-44ab-be9f-be33d796800d<br>
+HTTP GET <a href="http://localhost:8040/callee/ping" class="bare">http://localhost:8040/callee/ping</a>, headers={masked}<br>
+Response 200 OK, headers={masked}</p>
+</li>
+<li>
+<p>可使用网关暴露的expose端点(GET /token)获取访问令牌；<br>
+<a href="http://localhost:8060/token" class="bare">http://localhost:8060/token</a><br>
+eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJIX2taUW1MeFl0M3dxNU1rdG9NQUc3M1p3UTBSMVp3SHhPbFRTNEhCZmRjIn0.eyJleHAiOjE3MDkzNDA1NDEsImlhdCI6MTcwOTM0MDI0MSwiYXV0aF90aW1lIjoxNzA5MzM3MjI0LCJqdGkiOiIyNzdiNWM1MS00ZTEyLTRlYWItYTJhMi03YjkyNDY4OTYwZTEiLCJpc3MiOiJodHRwOi8vMTkyLjE2OC4wLjEyMzoxODA4MC9yZWFsbXMvZWxmIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjcwYThiMzgxLWIxZDMtNDRhYi1iZTlmLWJlMzNkNzk2ODAwZCIsInR5cCI6IkJlYXJlciIsImF6cCI6InNwcmluZy13aXRoLXRlc3Qtc2NvcGUiLCJub25jZSI6InBJRllzSWRoejFSZndxMzl3ZTNiVmU2c3dXbHZoNFFtR1lRZWduWEZXaGMiLCJzZXNzaW9uX3N0YXRlIjoiMzdlNDgwMTYtYjgzZS00MWVjLWJiZTQtYWE0NmYyZjFiNjIxIiwiYWNyIjoiMCIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsImRlZmF1bHQtcm9sZXMtZWxmIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6Im9wZW5pZCBlbWFpbCBwcm9maWxlIGNzLWVsZiIsInNpZCI6IjM3ZTQ4MDE2LWI4M2UtNDFlYy1iYmU0LWFhNDZmMmYxYjYyMSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwibmFtZSI6IuWMheWtkCDlnJ8iLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJlbGYtdXNlciIsImdpdmVuX25hbWUiOiLljIXlrZAiLCJmYW1pbHlfbmFtZSI6IuWcnyIsImVtYWlsIjoiMjAzMjA0NzUxMUBxcS5jb20ifQ.gsFcuTb0WH6FGFPYc5FqO4yxEnRzDb-gtn8d1R2VizJcNFmZbLbKyUtS_5TMAJl_8M3uClHrUv0-Vn6C7EJ3ED9iFCbhBTEIOxrQMAWUf4gsqZVm3K-gxeaZZNkmA8QIlqujFd4JLd8bgqXVHjUd1PE83RN5lEm5-n7d99DiUPXmp7HX1vsoAmtnbtpI4G1M3AAJWC0db_2zuG_wgX0B78rNAhg2YJWT-2xjy3_h4bQ-xIOZv3x0TA1ubmmMl9A9zy1Tuul3AbyYvSNM318F5lrUuqHzUDNIG-acqkF8n8eOVWk2CigonUo3TmTrv2Ff8iRt2NJVbJDHAyHxP6bARA</p>
+</li>
+<li>
+<p>现在可使用curl，postman或程序等工具来执行之前类似的调用，<br>
+将bearer token添加到Authorization header；</p>
+</li>
+<li>
+<p>curl <a href="http://localhost:8060/callee/ping" class="bare">http://localhost:8060/callee/ping</a> \<br>
+-H "Authorization: Bearer eyJh……P6bARA" -v</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">*   Trying [::1]:8060...
+* Connected to localhost (::1) port 8060
+&gt; GET /callee/ping HTTP/1.1
+&gt; Host: localhost:8060
+&gt; User-Agent: curl/8.4.0
+&gt; Accept: */*
+&gt; Authorization: Bearer eyJh……P6bARA
+&gt;
+&lt; HTTP/1.1 200 OK
+&lt; Vary: Origin
+&lt; Vary: Access-Control-Request-Method
+&lt; Vary: Access-Control-Request-Headers
+&lt; X-Content-Type-Options: nosniff
+&lt; X-XSS-Protection: 0
+&lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+&lt; Pragma: no-cache
+&lt; Expires: 0
+&lt; X-Frame-Options: DENY
+&lt; Content-Type: text/plain;charset=UTF-8
+&lt; Content-Length: 69
+&lt; Date: Sat, 02 Mar 2024 00:44:51 GMT
+&lt; Referrer-Policy: no-referrer
+&lt;
+Scope List：[SCOPE_openid, SCOPE_email, SCOPE_profile, SCOPE_cs-elf]</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>现在我们可使用JUnit and Testcontainers自动化测试</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_keycloak_testcontainer"><a class="anchor" href="#_keycloak_testcontainer"></a>5. Keycloak Testcontainer</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>现在路由到Gateway模块的src/test/java</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">package io.os.security.keycloak.gateway;
+
+@RestController
+@RequestMapping("/callee")
+public class CalleeController {
+
+    @PreAuthorize("hasAuthority('SCOPE_cs-elf')")
+    @GetMapping("/ping")
+    public String ping() {
+        return "Hello!";
+    }
+}</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>运行测试所需的配置，在8060端口启动gateway，并使用WebTestClient实例调用，<br>
+为启动自动配置Keycloak，将导入realm-export.json中的elf realm配置；</p>
+</li>
+<li>
+<p>因Testcontainers使用随机端口，需覆盖一些Spring OAuth2配置，<br>
+还覆盖Gateway route，将流量转发到callee控制器的测试实现，而非真正的服务；</p>
+</li>
+<li>
+<p><mark>Testcontainers在Win平台支持度不够，故不做测试</mark>；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
+@Testcontainers
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+public class GatewayEntryTest {
+
+    static String accessToken;
+
+    @Autowired
+    WebTestClient webTestClient;
+
+    @Container
+    static KeycloakContainer keycloak = new KeycloakContainer()
+        .withRealmImportFile("realm-export.json")
+        .withExposedPorts(18080);
+
+    @DynamicPropertySource
+    static void registerResourceServerIssuerProperty(DynamicPropertyRegistry registry) {
+        registry.add("spring.security.oauth2.client.provider.keycloak.issuer-uri",
+                () -&gt; keycloak.getAuthServerUrl() + "/realms/elf");
+        registry.add("spring.security.oauth2.resourceserver.jwt.jwk-set-uri",
+                () -&gt; keycloak.getAuthServerUrl() + "/realms/elf/protocol/openid-connect/certs");
+        registry.add("spring.cloud.gateway.routes[0].uri",
+                () -&gt; "http://localhost:8060");
+        registry.add("spring.cloud.gateway.routes[0].id", () -&gt; "callee-service");
+        registry.add("spring.cloud.gateway.routes[0].predicates[0]", () -&gt; "Path=/callee/**");
+    }
+}</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>首个测试：不含任何令牌，故应将其重定向到Keycloak授权机制。</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">@Test
+@Order(1)
+void shouldBeRedirectedToLoginPage() {
+    webTestClient.get().uri("/callee/ping")
+            .exchange()
+            .expectStatus().is3xxRedirection();
+}</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>第二个测试：用WebClient实例与Keycloak容器交互，Kecloak对<br>
+elf-user用户和spring-with-test-scope客户端进行身份认证，<br>
+Kecloak将生成并返回访问令牌</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">@Test
+@Order(2)
+void shouldObtainAccessToken() throws URISyntaxException {
+    URI authorizationURI = new URIBuilder(keycloak.getAuthServerUrl()
+    	+ "/realms/elf/protocol/openid-connect/token").build();
+    WebClient webclient = WebClient.builder().build();
+    MultiValueMap&lt;String, String&gt; formData = new LinkedMultiValueMap&lt;&gt;();
+    formData.put("grant_type", Collections.singletonList("password"));
+    formData.put("client_id", Collections.singletonList("spring-with-test-scope"));
+    formData.put("username", Collections.singletonList("elf-user"));
+    formData.put("password", Collections.singletonList("elf-cipher"));
+
+    String result = webclient.post()
+            .uri(authorizationURI)
+            .contentType(MediaType.APPLICATION_FORM_URLENCODED)
+            .body(BodyInserters.fromFormData(formData))
+            .retrieve()
+            .bodyToMono(String.class)
+            .block();
+    JacksonJsonParser jsonParser = new JacksonJsonParser();
+    accessToken = jsonParser.parseMap(result)
+            .get("access_token")
+            .toString();
+    Assertions.assertNotNull(accessToken);
+}</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>最后运行类似第一步的测试，但在Authorization Header<br>
+中提供访问令牌，预期响应是200 OK和"Hello!"的有效负载payload；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">@Test
+@Order(3)
+void shouldReturnToken() {
+    webTestClient.get().uri("/callee/ping")
+        .header("Authorization", "Bearer " + accessToken)
+        .exchange()
+        .expectStatus().is2xxSuccessful()
+        .expectBody(String.class).isEqualTo("Hello!");
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</article>
+	</div>
+</main>
+</div>
+		<footer class="footer">
+	
+	
+	
+	<div class="footer-thanks">
+		Authored in AsciiDoc
+		<br /><br />
+		Produced by Antora and Asciidoctor
+  	</div>
+  
+	<div class="footer-legal" style="text-align:center">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br /><br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		Copyright © 2024 Elf
+		<br /><br />
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+	
+</footer><script id="site-script" src="../../../../_/js/site.js" 
+	data-ui-root-path="../../../../_"></script>
+
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
+</html>

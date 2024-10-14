@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> :: AsciiDoc</title>
+    <meta name="generator" content="Antora 3.1.7">
+
+<link rel="stylesheet" href="../../../../_/css/site.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/asciidoc.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
+
+
+    <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+  			
+  			<a class="navbar-item logo" target="_blank" href="">
+				<img src="../../../../_/img/yin-yang-symbol.svg" width="100%" height="50">
+			</a>
+  			
+	            <div id="main" style="place-content: center;">
+	                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+		            </div>
+		        </section>
+    	</div>
+    	
+    	<div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Culture</div>
+          			<div class="navbar-dropdown is-right">
+            			
+			            <div class="navbar-item">Traditional Culture</div>
+			            
+			            <a class="navbar-item" target="_blank" href="../../../../culture/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Culture <small>传统文化</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Eco</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <a class="navbar-item" target="_blank" href="../../../../multifariousness/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Multifariousness <small>五花八门</small></span>
+			            </a>
+
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../ai/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Artificial Intelligence<small>人工智能</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../msg/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Messaging - Kafka <small>Kafka</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Experiment</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <div class="navbar-item">Quantum Computing</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>QC <small>量子计算...</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <div class="navbar-item">Harmony</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>CangJie <small>预览版内测...</small></span>
+			            </a>
+        			</div>
+    			</div>
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container" data-component="multifariousness" data-version="v0.0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">Multifariousness</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Security</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Security/KeycloakInstallation.html">Keycloak Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Security/KeycloakCase.html">Keycloak Case</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Antora</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AsciidoctorInstallation.html">Asciidoctor Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AsciidoctorConfigurer.html">Asciidoctor Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraInstallation.html">Antora Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraConfigurer.html">Antora Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraHighlight.html">Antora Highlight</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/Markdown.html">Markdown</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/NodeInstallation.html">Node Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Doxygen</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="DoxygenInstallation.html">Doxygen Installation</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="DoxygenEntry.html">Doxygen Entry</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="DocumentingCode.html">Documenting Code</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="DoxygenUsage.html">Doxygen Usage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="DoxywizardUsage.html">Doxywizard Usage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="DoxyfileProperty.html">Doxyfile Property</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="CustomCommand.html">Custom Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="SpecialCommand.html">Special Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="HtmlCommand.html">Html Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="XmlCommand.html">Xml Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="EmojiSupport.html">Emoji Support</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Lang</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustPrerequisite.html">Rust Prerequisite</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustGun.html">Rust Gun</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustConfigurer.html">Rust Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustEclipse.html">Rust Eclipse</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustVSCode.html">Rust VSCode</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/GoInstallation.html">Go Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/GroovyInstallation.html">Groovy Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/JavaFxInstallation.html">JavaFx Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/LuaInstallation.html">Lua Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/PythonInstallation.html">Python Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Ide</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/EclipseCustomizer.html">EclipseCustomizer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/EclipseConfigurer.html">EclipseConfigurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/FlattenLifecycle.html">FlattenLifecycle</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/JakartaSpecification.html">JakartaSpecification</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/CondaJupyter.html">CondaJupyter</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/IdeaConfigurer.html">IdeaConfigurer</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Ops</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/HyperVConfigurer.html">Hyper VConfigurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/UbuntuConfigurer.html">Ubuntu Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/DockerFundamental.html">Docker Fundamental</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/K8SInstallation.html">K8S Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/K8SExtension.html">K8S Extension</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/NexusInstallation.html">Nexus Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/JenkinsInstallation.html">Jenkins Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/BatchProcess.html">Batch Process</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/OracleContainerRegistry.html">Oracle Container Registry</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/WinConfigurer.html">Win Configurer</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Msg</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Msg/KafkaInstallation.html">Kafka Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Msg/KafkaEntryCase.html">Kafka Entry Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Msg/PulsarInstallation.html">Pulsar Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Store</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/PowerDesigner.html">Power Designer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/CassandraSetup.html">Cassandra Setup</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/CassandraBoot.html">Cassandra Boot</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/CassandraTesting.html">Cassandra Testing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/ElasticInstallation.html">Elastic Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/ElasticCase.html">Elastic Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/OpenSearchInstallation.html">Open Search Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/MySQLInstallation.html">MySQL Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/MySqlTuning.html">MySql Tuning</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/MongoInstallation.html">Mongo Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/MongoCase.html">Mongo Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/PostgresInstallation.html">Postgres Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/AeroSpikeInstallation.html">Aero Spike Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/TinkerpopCase.html">Tinkerpo pCase</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Multifariousness</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">Multifariousness</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+	<div class="toolbar" role="navigation">
+	<button class="nav-toggle"></button>
+	
+		<a href="../../index.html" 
+			class="home-link">
+		</a>
+
+	<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">Multifariousness</a></li>
+    <li>Doxygen</li>
+    <li><a href="DoxygenEntry.html">Doxygen Entry</a></li>
+  </ul>
+</nav>
+		</div>
+	
+	<div class="content">
+			<aside class="toc sidebar" 
+	data-title="Contents" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+			<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_intro">1. Intro</a></li>
+<li><a href="#_checking_doxygen_support">2. Checking Doxygen Support</a></li>
+<li><a href="#_creating_configuration">3. Creating Configuration</a></li>
+<li><a href="#_running_doxygen">4. Running Doxygen</a>
+<ul class="sectlevel2">
+<li><a href="#_html_output">4.1. Html Output</a></li>
+<li><a href="#_latex_output">4.2. LaTeX Output</a></li>
+<li><a href="#_rtf_output">4.3. Rtf Output</a></li>
+<li><a href="#_xml_output">4.4. Xml Output</a></li>
+<li><a href="#_man_page_output">4.5. Man Page Output</a></li>
+<li><a href="#_docbook_output">4.6. DocBook Output</a></li>
+</ul>
+</li>
+<li><a href="#_documenting_source">5. Documenting Source</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_intro"><a class="anchor" href="#_intro"></a>1. Intro</h2>
+<div class="sectionbody">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>可执行文件doxygen是解析源代码并生成文档的主程序；</p>
+</li>
+<li>
+<p>另也可可选的使用图形前端：doxywizard，用于编辑<br>
+Doxygen使用的配置文件，并在图形环境中运行Doxygen；</p>
+</li>
+<li>
+<p><a href="https://www.doxygen.nl/manual/doxygen_usage.html" class="bare">https://www.doxygen.nl/manual/doxygen_usage.html</a><br>
+<a href="https://www.doxygen.nl/manual/doxywizard_usage.html" class="bare">https://www.doxygen.nl/manual/doxywizard_usage.html</a></p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/Doxygen/DoxygenInfoFlow.png" alt="DoxygenInfoFlow">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_checking_doxygen_support"><a class="anchor" href="#_checking_doxygen_support"></a>2. Checking Doxygen Support</h2>
+<div class="sectionbody">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>首先确保语言是否被Doxygen识别，默认支持Idl，Java，Python，Vhdl等；</p>
+</li>
+<li>
+<p>可配置某些文件类型扩展名以使用某些解析器；也可用预处理器程序来支持完全不同的语言；</p>
+</li>
+<li>
+<p><a href="https://www.doxygen.nl/manual/config.html#cfg_extension_mapping" class="bare">https://www.doxygen.nl/manual/config.html#cfg_extension_mapping</a><br>
+<a href="https://www.doxygen.nl/helpers.html" class="bare">https://www.doxygen.nl/helpers.html</a></p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_creating_configuration"><a class="anchor" href="#_creating_configuration"></a>3. Creating Configuration</h2>
+<div class="sectionbody">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Doxygen用配置文件来确定其所有设置，每个项目都应有独立的配置文件，<br>
+项目可由单个源文件组成，也可递归扫描整个源树；创建模板配置文件：</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">doxygen -g &lt;config-file&gt;</code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>config-file默认为Doxyfile，若已存在，则Doxyfile<br>
+将在生成配置模板前将其重命名为&lt;config file&gt;.bak；</p>
+</li>
+<li>
+<p>若使用 <mark>-</mark>(减号)作为文件名，则Doxygen将尝试从<br>
+标准输入(stdin)读取配置文件，这对脚本编写很有用；</p>
+</li>
+<li>
+<p>配置文件格式类似于Makefile，由多个assignment(tag)组成；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties">LANG = Java Python CangJie
+
+HOBBY = Reading，Translating</code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>若有由源目录或树组成的大项目，应将根目录分配给INPUT tag，<br>
+并将一或多个文件模式添加到FILE_PATTERNS tag(如： *.cj *.java)</p>
+</li>
+<li>
+<p>只有与其中一种模式匹配的文件才被解析<br>
+(若省略模式，Doxygen支持的文件类型将使用典型模式列表)；</p>
+</li>
+<li>
+<p>对源树的递归解析，必须将recursive标记设置为YES，可用EXCLUDE和<br>
+EXCLUDE_PATTERNS tag，如省略源代码树中所有测试目录，可用：</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties">EXCLUDE_PATTERNS = */test/*</code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Doxygen根据文件扩展名以确定如何解析文件；</p>
+</li>
+<li>
+<p>任何未解析的扩展都可通过将其添加到FILE_PATTERNS，<br>
+并设置适当的extension_MAPPING；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<table class="tableblock frame-all grid-all stripes-even fit-content">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-right valign-top">Extension</th>
+<th class="tableblock halign-left valign-top">Language</th>
+<th class="tableblock halign-right valign-top">Extension</th>
+<th class="tableblock halign-left valign-top">Language</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">.java</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Java</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">.l</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lex</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">.md</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Markdown</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">.py</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Python</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">.markdown</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Markdown</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">.pyw</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Python</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">.vhd</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">VHDL</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">.idl</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IDL</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">.vhdl</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">VHDL</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">.ddl</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IDL</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">.ucf</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">VHDL</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">.odl</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IDL</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">.qsf</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">VHDL</p></td>
+<td class="tableblock halign-right valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>将EXTRACT_ALL tag设置为YES，Doxygen会认为源码中<br>
+所有内容都被文档化，而不会生成关于被被文档成员的结果警告；</p>
+</li>
+<li>
+<p>consequence warnings about undocument member</p>
+</li>
+<li>
+<p>为分析现有软件，将(文档记录documented)的实体与其<br>
+在源文件中定义交叉引用(cross-reference)有用；</p>
+</li>
+<li>
+<p>若将SOURCE_BROWSER设置为YES，Doxygen将生成此类交叉引用；</p>
+</li>
+<li>
+<p>若INLINE_SOURCES设置为YES，<br>
+可将源代码直接包含在文档中，这对代码审查很方便；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.doxygen.nl/manual/config.html" class="bare">https://www.doxygen.nl/manual/config.html</a></p>
+</li>
+<li>
+<p><a href="https://www.doxygen.nl/manual/doxywizard_usage.html" class="bare">https://www.doxygen.nl/manual/doxywizard_usage.html</a></p>
+</li>
+<li>
+<p><a href="https://www.doxygen.nl/manual/config.html#cfg_input" class="bare">https://www.doxygen.nl/manual/config.html#cfg_input</a></p>
+</li>
+<li>
+<p><a href="https://www.doxygen.nl/manual/config.html#cfg_file_patterns" class="bare">https://www.doxygen.nl/manual/config.html#cfg_file_patterns</a></p>
+</li>
+<li>
+<p><a href="https://www.doxygen.nl/manual/config.html#cfg_recursive" class="bare">https://www.doxygen.nl/manual/config.html#cfg_recursive</a></p>
+</li>
+<li>
+<p><a href="https://www.doxygen.nl/manual/config.html#cfg_exclude" class="bare">https://www.doxygen.nl/manual/config.html#cfg_exclude</a></p>
+</li>
+<li>
+<p><a href="https://www.doxygen.nl/manual/config.html#cfg_exclude_patterns" class="bare">https://www.doxygen.nl/manual/config.html#cfg_exclude_patterns</a></p>
+</li>
+<li>
+<p><a href="https://www.doxygen.nl/manual/config.html#cfg_extension_mapping" class="bare">https://www.doxygen.nl/manual/config.html#cfg_extension_mapping</a></p>
+</li>
+<li>
+<p><a href="https://www.doxygen.nl/manual/config.html#cfg_extract_all" class="bare">https://www.doxygen.nl/manual/config.html#cfg_extract_all</a></p>
+</li>
+<li>
+<p><a href="https://www.doxygen.nl/manual/config.html#cfg_inline_sources" class="bare">https://www.doxygen.nl/manual/config.html#cfg_inline_sources</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_running_doxygen"><a class="anchor" href="#_running_doxygen"></a>4. Running Doxygen</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">doxygen &lt;config-file&gt;</code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>按设置，Doxygen将在目录中创建html，rtf，latex，xml，<br>
+man和/或docbook目录，这些目录包含其生成相应格式的文档；</p>
+</li>
+<li>
+<p>OUTPUT_DIRECTORY可修改输出写入的根目录；</p>
+</li>
+<li>
+<p>HTML_OUTPUT，RTF_OUTPUT，LATEX_OUTPUT，XML_OUTPUT，<br>
+MAN_OUTPUT，DOCBOOK_OUTPUT可修改特定格式的输出目录；</p>
+</li>
+<li>
+<p>若输出目录不存在，doxygen将尝试创建(但不会像mkdir -p递归创建整个路径)；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.doxygen.nl/manual/config.html#cfg_output_directory" class="bare">https://www.doxygen.nl/manual/config.html#cfg_output_directory</a></p>
+</li>
+<li>
+<p><a href="https://www.doxygen.nl/manual/config.html#cfg_html_output" class="bare">https://www.doxygen.nl/manual/config.html#cfg_html_output</a></p>
+</li>
+<li>
+<p><a href="https://www.doxygen.nl/manual/config.html#cfg_rtf_output" class="bare">https://www.doxygen.nl/manual/config.html#cfg_rtf_output</a></p>
+</li>
+<li>
+<p><a href="https://www.doxygen.nl/manual/config.html#cfg_latex_output" class="bare">https://www.doxygen.nl/manual/config.html#cfg_latex_output</a></p>
+</li>
+<li>
+<p><a href="https://www.doxygen.nl/manual/config.html#cfg_xml_output" class="bare">https://www.doxygen.nl/manual/config.html#cfg_xml_output</a></p>
+</li>
+<li>
+<p><a href="https://www.doxygen.nl/manual/config.html#cfg_man_output" class="bare">https://www.doxygen.nl/manual/config.html#cfg_man_output</a></p>
+</li>
+<li>
+<p><a href="https://www.doxygen.nl/manual/config.html#cfg_docbook_output" class="bare">https://www.doxygen.nl/manual/config.html#cfg_docbook_output</a></p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_html_output"><a class="anchor" href="#_html_output"></a>4.1. Html Output</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.doxygen.nl/manual/config.html#cfg_generate_treeview" class="bare">https://www.doxygen.nl/manual/config.html#cfg_generate_treeview</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_latex_output"><a class="anchor" href="#_latex_output"></a>4.2. LaTeX Output</h3>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>生成的LaTeX文档须首先由LaTeX编译器(MikTex)编译，<br>
+doxygen将Makefile写入latex目录(Win平台还会生成make.bat)；</p>
+</li>
+<li>
+<p>Makefile内容和目标取决于USE_PDFLATEX设置，若禁用(设置为NO)，<br>
+则在latex目录中键入make会生成refman.dvi文件，用xdvi查看此文件，<br>
+或输入make ps(需dvips)将其转换为PostScript文件refman.ps；</p>
+</li>
+<li>
+<p>要将2个page放在一个物理页面，请改用make ps_2on1，<br>
+生成的PostScript文件可发送到PostScript打印机；</p>
+</li>
+<li>
+<p>若没PostScript打印机，可尝试用ghostscript<br>
+将PostScript转换为自己打印机可以理解的内容；</p>
+</li>
+<li>
+<p>若已安装ghostscript解释器，可转换为pdf；<br>
+只需输入make pdf或make pdf_2on1；</p>
+</li>
+<li>
+<p>要获得最佳pdf输出效果，应将PDF_HYPERLINKS和USE_PDFLATEX<br>
+设置为YES，此情况下，Makefile将仅包含直接构建refman.pdf的目标；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.doxygen.nl/manual/config.html#cfg_use_pdflatex" class="bare">https://www.doxygen.nl/manual/config.html#cfg_use_pdflatex</a></p>
+</li>
+<li>
+<p><a href="https://www.doxygen.nl/manual/config.html#cfg_pdf_hyperlinks" class="bare">https://www.doxygen.nl/manual/config.html#cfg_pdf_hyperlinks</a></p>
+</li>
+<li>
+<p><a href="https://www.doxygen.nl/manual/config.html#cfg_use_pdflatex" class="bare">https://www.doxygen.nl/manual/config.html#cfg_use_pdflatex</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_rtf_output"><a class="anchor" href="#_rtf_output"></a>4.3. Rtf Output</h3>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Doxygen将rtf输出合并到refman.rtf，此文件已针对导入Word进行优化；</p>
+</li>
+<li>
+<p>某些信息用字段编码，要显示实际值，需全选(Edit - select all)，<br>
+然后切换字段(toggle field，右键单击并从下拉菜单中选择选项)；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_xml_output"><a class="anchor" href="#_xml_output"></a>4.4. Xml Output</h3>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Xml输出由Doxygen手机的信息的结构化"dump"组成；</p>
+</li>
+<li>
+<p>每个复合文件(class/namespace/file/&#8230;&#8203;)<br>
+都有自己的xml文件，还有一个名为index.xml的索引文件；</p>
+</li>
+<li>
+<p>还会生成Combine.xslt，可用于将所有xml合并为一个文件；</p>
+</li>
+<li>
+<p>Doxygen还会生成两个Xml Schema：<br>
+index.xsd(用于索引)和compound.xsd(用于复合)；</p>
+</li>
+<li>
+<p>schema描述可能的元素，属性及结构，即描述xml的语法，可用于验证或引导xslt脚本；</p>
+</li>
+<li>
+<p>在addon/doxmlparser目录中，可找到解析器库，<br>
+以增量方式读取Doxygen生成的xml输出；</p>
+</li>
+<li>
+<p>有关库的接口，请参阅addon/doxmlparser/doxmparser/index.py<br>
+和addon/doxmlparser/doxmlparser/compound.py；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_man_page_output"><a class="anchor" href="#_man_page_output"></a>4.5. Man Page Output</h3>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>可用man程序查看生成的手册页，需确保man目录位于man路径中(请参阅MANPATH环境变量)，<br>
+man directory in man path (MANPATH environment variable)；</p>
+</li>
+<li>
+<p>注：man page格式的功能存在限制，如class diagram，<br>
+cross reference and formula将会丢失；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_docbook_output"><a class="anchor" href="#_docbook_output"></a>4.6. DocBook Output</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://docbook.org" class="bare">https://docbook.org</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_documenting_source"><a class="anchor" href="#_documenting_source"></a>5. Documenting Source</h2>
+<div class="sectionbody">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>若EXTRACT_ALL设置为NO(默认值)，则Doxygen将仅为已记录的实体(document entity)<br>
+生成文档，如何文档化这些内容，对member，class，namespace，基本有两个选项；</p>
+<div class="ulist">
+<ul>
+<li>
+<p>A：在member，class，namespace的声明或定义前面放置一个特殊文档块，<br>
+对member，class，namespace，也可将文档直接放置在成员之后；</p>
+</li>
+<li>
+<p><a href="https://www.doxygen.nl/manual/docblocks.html#specialblock" target="_blank" rel="noopener">Special Comment Block</a></p>
+</li>
+<li>
+<p>B：将特殊文档块放在其他地方(另一个文件或其他位置)，并在文档块中放置结构命令，<br>
+结构命令将文档块链接到可文档化的某个实体(如member，class，namespace)；</p>
+</li>
+<li>
+<p><a href="https://www.doxygen.nl/manual/docblocks.html#structuralcommands" target="_blank" rel="noopener">Documentation At Other Place</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>选择A的优点：无需重复实体名词，entity name；</p>
+</li>
+<li>
+<p>只能用第二种选择来文档化文件，因没办法将文档块放在文件前面，当然文件成员(function，<br>
+variable，typedef，define)无需显示结构命令，只需在它们前或后面放置特殊文档块即可；</p>
+</li>
+<li>
+<p>在将特殊文档块中的文本写入html和/或LaTeX输出文件之前，会对其解析，解析步骤：</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>A：Markdown格式被相应的html或特殊命令所取代</p>
+</li>
+<li>
+<p>B：文档中的特殊命令将被执行，<br>
+<a href="https://www.doxygen.nl/manual/commands.html" class="bare">https://www.doxygen.nl/manual/commands.html</a></p>
+</li>
+<li>
+<p>C：若一行以一些空格(whitespace)开头，后跟一或多个星号(*，asterisk)，<br>
+然后可选地还有更多空格，则所有空格和星号都将被删除；</p>
+</li>
+<li>
+<p>D：所有产生的空行都被视为段落分隔符(paragraph separator)；</p>
+</li>
+<li>
+<p>E：为与文档类相对应的单词创建链接<br>
+(除非单词前面有%；否则单词将不会被链接，且%符号将被删除)；</p>
+</li>
+<li>
+<p>F：当在文本中找到某些模式时，将创建指向成员的链接；<br>
+<a href="https://www.doxygen.nl/manual/autolink.html" class="bare">https://www.doxygen.nl/manual/autolink.html</a></p>
+</li>
+<li>
+<p>G：文档中的Html tag将被解释并转换为LaTeX输出的LaTeX等效标记，<br>
+<a href="https://www.doxygen.nl/manual/htmlcmds.html" class="bare">https://www.doxygen.nl/manual/htmlcmds.html</a></p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</article>
+	</div>
+</main>
+</div>
+		<footer class="footer">
+	
+	
+	
+	<div class="footer-thanks">
+		Authored in AsciiDoc
+		<br /><br />
+		Produced by Antora and Asciidoctor
+  	</div>
+  
+	<div class="footer-legal" style="text-align:center">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br /><br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		Copyright © 2024 Elf
+		<br /><br />
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+	
+</footer><script id="site-script" src="../../../../_/js/site.js" 
+	data-ui-root-path="../../../../_"></script>
+
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
+</html>

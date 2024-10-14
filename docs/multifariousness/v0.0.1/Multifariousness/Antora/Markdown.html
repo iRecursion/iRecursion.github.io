@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> :: AsciiDoc</title>
+    <meta name="generator" content="Antora 3.1.7">
+
+<link rel="stylesheet" href="../../../../_/css/site.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/asciidoc.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
+
+
+    <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+  			
+  			<a class="navbar-item logo" target="_blank" href="">
+				<img src="../../../../_/img/yin-yang-symbol.svg" width="100%" height="50">
+			</a>
+  			
+	            <div id="main" style="place-content: center;">
+	                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+		            </div>
+		        </section>
+    	</div>
+    	
+    	<div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Culture</div>
+          			<div class="navbar-dropdown is-right">
+            			
+			            <div class="navbar-item">Traditional Culture</div>
+			            
+			            <a class="navbar-item" target="_blank" href="../../../../culture/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Culture <small>传统文化</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Eco</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <a class="navbar-item" target="_blank" href="../../../../multifariousness/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Multifariousness <small>五花八门</small></span>
+			            </a>
+
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../ai/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Artificial Intelligence<small>人工智能</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../msg/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Messaging - Kafka <small>Kafka</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Experiment</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <div class="navbar-item">Quantum Computing</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>QC <small>量子计算...</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <div class="navbar-item">Harmony</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>CangJie <small>预览版内测...</small></span>
+			            </a>
+        			</div>
+    			</div>
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container" data-component="multifariousness" data-version="v0.0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">Multifariousness</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Security</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Security/KeycloakInstallation.html">Keycloak Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Security/KeycloakCase.html">Keycloak Case</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Antora</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="AsciidoctorInstallation.html">Asciidoctor Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="AsciidoctorConfigurer.html">Asciidoctor Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="AntoraInstallation.html">Antora Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="AntoraConfigurer.html">Antora Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="AntoraHighlight.html">Antora Highlight</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="AntoraUI.html">Antora UI</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="Markdown.html">Markdown</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="NodeInstallation.html">Node Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Doxygen</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxygenInstallation.html">Doxygen Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxygenEntry.html">Doxygen Entry</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DocumentingCode.html">Documenting Code</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxygenUsage.html">Doxygen Usage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxywizardUsage.html">Doxywizard Usage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxyfileProperty.html">Doxyfile Property</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/CustomCommand.html">Custom Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/SpecialCommand.html">Special Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/HtmlCommand.html">Html Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/XmlCommand.html">Xml Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/EmojiSupport.html">Emoji Support</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Lang</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustPrerequisite.html">Rust Prerequisite</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustGun.html">Rust Gun</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustConfigurer.html">Rust Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustEclipse.html">Rust Eclipse</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustVSCode.html">Rust VSCode</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/GoInstallation.html">Go Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/GroovyInstallation.html">Groovy Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/JavaFxInstallation.html">JavaFx Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/LuaInstallation.html">Lua Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/PythonInstallation.html">Python Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Ide</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/EclipseCustomizer.html">EclipseCustomizer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/EclipseConfigurer.html">EclipseConfigurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/FlattenLifecycle.html">FlattenLifecycle</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/JakartaSpecification.html">JakartaSpecification</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/CondaJupyter.html">CondaJupyter</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/IdeaConfigurer.html">IdeaConfigurer</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Ops</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/HyperVConfigurer.html">Hyper VConfigurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/UbuntuConfigurer.html">Ubuntu Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/DockerFundamental.html">Docker Fundamental</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/K8SInstallation.html">K8S Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/K8SExtension.html">K8S Extension</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/NexusInstallation.html">Nexus Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/JenkinsInstallation.html">Jenkins Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/BatchProcess.html">Batch Process</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/OracleContainerRegistry.html">Oracle Container Registry</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/WinConfigurer.html">Win Configurer</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Msg</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Msg/KafkaInstallation.html">Kafka Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Msg/KafkaEntryCase.html">Kafka Entry Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Msg/PulsarInstallation.html">Pulsar Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Store</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/PowerDesigner.html">Power Designer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/CassandraSetup.html">Cassandra Setup</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/CassandraBoot.html">Cassandra Boot</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/CassandraTesting.html">Cassandra Testing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/ElasticInstallation.html">Elastic Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/ElasticCase.html">Elastic Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/OpenSearchInstallation.html">Open Search Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/MySQLInstallation.html">MySQL Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/MySqlTuning.html">MySql Tuning</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/MongoInstallation.html">Mongo Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/MongoCase.html">Mongo Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/PostgresInstallation.html">Postgres Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/AeroSpikeInstallation.html">Aero Spike Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/TinkerpopCase.html">Tinkerpo pCase</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Multifariousness</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">Multifariousness</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+	<div class="toolbar" role="navigation">
+	<button class="nav-toggle"></button>
+	
+		<a href="../../index.html" 
+			class="home-link">
+		</a>
+
+	<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">Multifariousness</a></li>
+    <li>Antora</li>
+    <li><a href="Markdown.html">Markdown</a></li>
+  </ul>
+</nav>
+		</div>
+	
+	<div class="content">
+			<aside class="toc sidebar" 
+	data-title="Contents" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+			<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_comment_注释">1. Comment 注释</a></li>
+<li><a href="#_list_列表">2. List 列表</a>
+<ul class="sectlevel2">
+<li><a href="#_ol_有序列表">2.1. OL 有序列表</a></li>
+<li><a href="#_ul_无序列表">2.2. UL 无序列表</a></li>
+<li><a href="#_nl_列表嵌套">2.3. NL 列表嵌套</a></li>
+</ul>
+</li>
+<li><a href="#_checkbox_复选框">3. Checkbox 复选框</a></li>
+<li><a href="#_table_表格">4. Table 表格</a></li>
+<li><a href="#_source_highlight">5. Source Highlight</a>
+<ul class="sectlevel2">
+<li><a href="#_单行代码">5.1. 单行代码</a></li>
+<li><a href="#_代码块">5.2. 代码块</a></li>
+<li><a href="#_原样显示">5.3. 原样显示</a></li>
+<li><a href="#_语法高亮推荐">5.4. 语法高亮,推荐</a>
+<ul class="sectlevel3">
+<li><a href="#_常用高亮语言">5.4.1. 常用高亮语言</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#_link_链接">6. Link 链接</a>
+<ul class="sectlevel2">
+<li><a href="#_image_图片">6.1. Image 图片</a></li>
+<li><a href="#_hyper_link_超链接">6.2. Hyper Link 超链接</a></li>
+<li><a href="#_automatic_link_自动链接">6.3. Automatic Link 自动链接</a></li>
+<li><a href="#_anchor_锚点">6.4. Anchor 锚点</a></li>
+</ul>
+</li>
+<li><a href="#_format_格式化">7. Format 格式化</a>
+<ul class="sectlevel2">
+<li><a href="#_bold_加粗">7.1. Bold 加粗</a></li>
+<li><a href="#_italic_斜体">7.2. Italic 斜体</a></li>
+<li><a href="#_italic_bold_斜体加粗">7.3. Italic &amp; Bold 斜体加粗</a></li>
+<li><a href="#_line_through_删除线">7.4. Line-Through 删除线</a></li>
+<li><a href="#_discoloration_变色">7.5. Discoloration 变色</a></li>
+</ul>
+</li>
+<li><a href="#_block_element_区块元素">8. Block Element 区块元素</a>
+<ul class="sectlevel2">
+<li><a href="#_类setext形式">8.1. 类Setext形式</a></li>
+<li><a href="#_类atx形式">8.2. 类Atx形式</a></li>
+<li><a href="#_选择性的闭合类atx样式标题">8.3. 选择性的闭合类Atx样式标题</a></li>
+<li><a href="#_区块引用blockquote">8.4. 区块引用Blockquote</a></li>
+<li><a href="#_引用可嵌套">8.5. 引用可嵌套</a></li>
+<li><a href="#_分隔线">8.6. 分隔线</a></li>
+</ul>
+</li>
+<li><a href="#_other_其它">9. Other 其它</a>
+<ul class="sectlevel2">
+<li><a href="#_换行">9.1. 换行</a></li>
+<li><a href="#_特殊字符自动转换_和">9.2. 特殊字符自动转换 &lt;和&amp;</a></li>
+<li><a href="#_版权符号">9.3. 版权符号©</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_comment_注释"><a class="anchor" href="#_comment_注释"></a>1. Comment 注释</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">&lt;!-- comment --&gt;
+
+[//]: # (comment)
+
+[//]: &lt;&gt; (comment)
+
+[^_^]: # (comment)
+
+[comment]: &lt;&gt; (comment)
+
+&lt;div style='display: none'&gt;comment&lt;/div&gt;</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-sql" data-lang="sql">select * from party</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_list_列表"><a class="anchor" href="#_list_列表"></a>2. List 列表</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_ol_有序列表"><a class="anchor" href="#_ol_有序列表"></a>2.1. OL 有序列表</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>数字加英文句号(.)</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">1. Pal
+2. Elf
+3. Lua</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ul_无序列表"><a class="anchor" href="#_ul_无序列表"></a>2.2. UL 无序列表</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>星号(*) 加号(+) 减号(-) 三者选其一</p>
+</li>
+<li>
+<p>列表符号与内容之间需要一个英文空格</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">* Red
++ Green
+- Blue</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_nl_列表嵌套"><a class="anchor" href="#_nl_列表嵌套"></a>2.3. NL 列表嵌套</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>上一级与下一级之间三个空格</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">+ Elf
++ Cpp
++ Java
+   1. Thread
+   2. IO
+   3. Net</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_checkbox_复选框"><a class="anchor" href="#_checkbox_复选框"></a>3. Checkbox 复选框</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>-和[间有一个空格</p>
+</li>
+<li>
+<p>[和]间需一个空格</p>
+</li>
+<li>
+<p>]和后面文字间需一个空格</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">- [ ] hello
+- [ ] world
+- [ ] end</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_table_表格"><a class="anchor" href="#_table_表格"></a>4. Table 表格</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>第二行分割表头和内容:-有一个就行,为对齐,可酌情增减;<br>
+文字默认居左,-两边加:文字居中,-右边加:表示文字居右;<br>
+注:原生语法两边都要用|包起来,此处省略</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">姓名|技能|排行
+--|:--:|--:
+刘备|哭|大哥
+关羽|打|二哥
+张飞|骂|三弟</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_source_highlight"><a class="anchor" href="#_source_highlight"></a>5. Source Highlight</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_单行代码"><a class="anchor" href="#_单行代码"></a>5.1. 单行代码</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>代码左右分别用一个反引号包起来</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">`single line code`</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_代码块"><a class="anchor" href="#_代码块"></a>5.2. 代码块</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>代码前后分别用三个反引号抱起来,且两边的反引号单独占一行</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">```
+System.exit(-1);
+```</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_原样显示"><a class="anchor" href="#_原样显示"></a>5.3. 原样显示</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">`&lt;pre&gt;`和`&lt;code&gt;`</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_语法高亮推荐"><a class="anchor" href="#_语法高亮推荐"></a>5.4. 语法高亮,推荐</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">``` key
+code segment
+```
+
+``` shell
+# 编译与安装
+make &amp;&amp; make install
+```</code></pre>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_常用高亮语言"><a class="anchor" href="#_常用高亮语言"></a>5.4.1. 常用高亮语言</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">Key|Language
+--:|:--
+asciidoc|*.adoc
+bash|*.sh,*.bash
+bat|*.bat,*.cmd
+c|*.c,*.h
+cpp|*.cpp
+css|*.css
+erlang|*.erl
+go|*.go
+gradle|gradle
+html|*.html,*.htm
+ini|*.ini,*.cfg
+java|*.java
+js|*.js
+javascript|*.js
+jsp|*.jsp
+json|*.json
+markdown|*.md
+nginx|Nginx
+properties|*.properties
+protobuf|*.proto
+scaml|*.scaml
+sql|*.sql
+text|*.txt
+velocity|*.vm
+xml|*.xml
+xslt|*.xsl,*.xslt
+yaml|*.yaml,*.yml</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_link_链接"><a class="anchor" href="#_link_链接"></a>6. Link 链接</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_image_图片"><a class="anchor" href="#_image_图片"></a>6.1. Image 图片</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">![alt text](img url "Optional title")
+![Security](https://ico.ooopic.com/ajax/iconpng/?id=186750.png "安全")
+
+子路径
+![avatar](folderName/imgName.jpg)
+
+当前路径: ./
+![avatar](./folderName/imgName.jpg)
+
+父路径用"../":
+![avatar](../imgName.jpg)</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_hyper_link_超链接"><a class="anchor" href="#_hyper_link_超链接"></a>6.2. Hyper Link 超链接</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">(title是英文双引号,可选项):[超链接名](超链接地址 ''超链接title'')
+[百度](http://baidu.com "百度")
+&lt;a href="超链接地址" target="_blank"&gt;超链接名&lt;/a&gt;
+&lt;a href="http://baidu.com" target="_blank"&gt;百度&lt;/a&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_automatic_link_自动链接"><a class="anchor" href="#_automatic_link_自动链接"></a>6.3. Automatic Link 自动链接</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>用尖括号包起来,处理网址和邮件地址</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">&lt;http://www.baidu.com&gt;
+&lt;address@email.com&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_anchor_锚点"><a class="anchor" href="#_anchor_锚点"></a>6.4. Anchor 锚点</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">[锚点说明](hashtag(#)anchorId);
+&lt;h1 id="anchorId"&gt;目标锚点&lt;/h1&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_format_格式化"><a class="anchor" href="#_format_格式化"></a>7. Format 格式化</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_bold_加粗"><a class="anchor" href="#_bold_加粗"></a>7.1. Bold 加粗</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>加粗文字左右分别用两个*号包起来</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">**加粗**</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_italic_斜体"><a class="anchor" href="#_italic_斜体"></a>7.2. Italic 斜体</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>要倾斜的文字左右分别用一个*号包起来</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">*斜体*</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_italic_bold_斜体加粗"><a class="anchor" href="#_italic_bold_斜体加粗"></a>7.3. Italic &amp; Bold 斜体加粗</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>要倾斜和加粗的文字左右分别用三个*号包起来</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">***斜体与加粗***</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_line_through_删除线"><a class="anchor" href="#_line_through_删除线"></a>7.4. Line-Through 删除线</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>要加删除线的文字左右分别用两个~~号包起来</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">~~删除线~~</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_discoloration_变色"><a class="anchor" href="#_discoloration_变色"></a>7.5. Discoloration 变色</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">$\color{red}{红色}$
+&lt;font color=silver&gt;银灰色&lt;/font&gt;
+$\color{#0000FF}{蓝色}$</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_block_element_区块元素"><a class="anchor" href="#_block_element_区块元素"></a>8. Block Element 区块元素</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_类setext形式"><a class="anchor" href="#_类setext形式"></a>8.1. 类Setext形式</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>用底线形式,利用=(最高阶标题)和-(第二阶标题),任何数量的=和-均可</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">High Level Title
+================
+
+Low Level Title
+---------------</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_类atx形式"><a class="anchor" href="#_类atx形式"></a>8.2. 类Atx形式</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>在行首插入1~6个#,对应到标题1到6阶</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-markdown" data-lang="markdown"># H1 Title
+## H2 Title
+### H3 Title
+#### H4 Title
+##### H5 Title
+###### H6 Title</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_选择性的闭合类atx样式标题"><a class="anchor" href="#_选择性的闭合类atx样式标题"></a>8.3. 选择性的闭合类Atx样式标题</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>在行尾加#,而行尾#数量也不用和开头一样,</p>
+</li>
+<li>
+<p>行首的#字符数量决定标题的阶数</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-markdown" data-lang="markdown"># H1 Title ######
+## H2 Title #####
+### H3 Title ####
+#### H4 Title ###
+##### H5 Title ##
+###### H6 Title #</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_区块引用blockquote"><a class="anchor" href="#_区块引用blockquote"></a>8.4. 区块引用Blockquote</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>在每行最前面添加&gt;,也可以只在第一行最前加&gt;</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">&gt; all features are available free of charge.
+&gt; It is a full version: no hidden payments,demo versions,or limitations.
+
+&gt; all features are available free of charge.
+  It is a full version: no hidden payments,demo versions,or limitations.</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_引用可嵌套"><a class="anchor" href="#_引用可嵌套"></a>8.5. 引用可嵌套</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>输入n个&gt;即代表引用n层</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">&gt; This is the first level of quoting.
+&gt;
+&gt;&gt; This is nested blockquote.
+&gt;
+&gt; Back to the first level.
+
+原内容
+&gt;一层引用原内容
+&gt;&gt;二层引用原内容
+&gt;&gt;&gt;三层引用原内容</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_分隔线"><a class="anchor" href="#_分隔线"></a>8.6. 分隔线</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>在一行中用三个以上的星号,减号,底线来建立一个分隔线,<br>
+行内不能有其他东西,可以在星号或是减号中间插入空格</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>***
+*****
+- - -
+--------------------------------------</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_other_其它"><a class="anchor" href="#_other_其它"></a>9. Other 其它</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_换行"><a class="anchor" href="#_换行"></a>9.1. 换行</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">`&lt;br&gt;`</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_特殊字符自动转换_和"><a class="anchor" href="#_特殊字符自动转换_和"></a>9.2. 特殊字符自动转换 &lt;和&amp;</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>&lt;符号用于起始标签</p>
+</li>
+<li>
+<p>&amp;符号用于标记html实体</p>
+</li>
+<li>
+<p>必须要使用实体的形式,像是&lt;和 &amp;</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">「 AT&amp;T」 =&gt; 「AT&amp;amp;T」   4 &lt; 5 =&gt; 4 &amp;lt; 5
+&amp; =&gt; https://www.google.com/search?num=30&amp;amp;q=elf&amp;amp;tbm=isch</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_版权符号"><a class="anchor" href="#_版权符号"></a>9.3. 版权符号©</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">&amp;copy;
+
+&lt;div class="footer"&gt;
+  &amp;copy; 2020 Elf Corporation
+&lt;/div&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+	</div>
+</main>
+</div>
+		<footer class="footer">
+	
+	
+	
+	<div class="footer-thanks">
+		Authored in AsciiDoc
+		<br /><br />
+		Produced by Antora and Asciidoctor
+  	</div>
+  
+	<div class="footer-legal" style="text-align:center">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br /><br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		Copyright © 2024 Elf
+		<br /><br />
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+	
+</footer><script id="site-script" src="../../../../_/js/site.js" 
+	data-ui-root-path="../../../../_"></script>
+
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
+</html>

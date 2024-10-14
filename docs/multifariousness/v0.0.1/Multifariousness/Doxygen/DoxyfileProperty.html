@@ -1,0 +1,3009 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> :: AsciiDoc</title>
+    <meta name="generator" content="Antora 3.1.7">
+
+<link rel="stylesheet" href="../../../../_/css/site.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/asciidoc.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
+
+
+    <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+  			
+  			<a class="navbar-item logo" target="_blank" href="">
+				<img src="../../../../_/img/yin-yang-symbol.svg" width="100%" height="50">
+			</a>
+  			
+	            <div id="main" style="place-content: center;">
+	                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+		            </div>
+		        </section>
+    	</div>
+    	
+    	<div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Culture</div>
+          			<div class="navbar-dropdown is-right">
+            			
+			            <div class="navbar-item">Traditional Culture</div>
+			            
+			            <a class="navbar-item" target="_blank" href="../../../../culture/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Culture <small>传统文化</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Eco</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <a class="navbar-item" target="_blank" href="../../../../multifariousness/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Multifariousness <small>五花八门</small></span>
+			            </a>
+
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../ai/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Artificial Intelligence<small>人工智能</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../msg/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Messaging - Kafka <small>Kafka</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Experiment</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <div class="navbar-item">Quantum Computing</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>QC <small>量子计算...</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <div class="navbar-item">Harmony</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>CangJie <small>预览版内测...</small></span>
+			            </a>
+        			</div>
+    			</div>
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container" data-component="multifariousness" data-version="v0.0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">Multifariousness</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Security</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Security/KeycloakInstallation.html">Keycloak Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Security/KeycloakCase.html">Keycloak Case</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Antora</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AsciidoctorInstallation.html">Asciidoctor Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AsciidoctorConfigurer.html">Asciidoctor Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraInstallation.html">Antora Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraConfigurer.html">Antora Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraHighlight.html">Antora Highlight</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/Markdown.html">Markdown</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/NodeInstallation.html">Node Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Doxygen</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="DoxygenInstallation.html">Doxygen Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="DoxygenEntry.html">Doxygen Entry</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="DocumentingCode.html">Documenting Code</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="DoxygenUsage.html">Doxygen Usage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="DoxywizardUsage.html">Doxywizard Usage</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="DoxyfileProperty.html">Doxyfile Property</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="CustomCommand.html">Custom Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="SpecialCommand.html">Special Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="HtmlCommand.html">Html Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="XmlCommand.html">Xml Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="EmojiSupport.html">Emoji Support</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Lang</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustPrerequisite.html">Rust Prerequisite</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustGun.html">Rust Gun</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustConfigurer.html">Rust Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustEclipse.html">Rust Eclipse</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustVSCode.html">Rust VSCode</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/GoInstallation.html">Go Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/GroovyInstallation.html">Groovy Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/JavaFxInstallation.html">JavaFx Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/LuaInstallation.html">Lua Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/PythonInstallation.html">Python Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Ide</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/EclipseCustomizer.html">EclipseCustomizer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/EclipseConfigurer.html">EclipseConfigurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/FlattenLifecycle.html">FlattenLifecycle</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/JakartaSpecification.html">JakartaSpecification</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/CondaJupyter.html">CondaJupyter</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ide/IdeaConfigurer.html">IdeaConfigurer</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Ops</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/HyperVConfigurer.html">Hyper VConfigurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/UbuntuConfigurer.html">Ubuntu Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/DockerFundamental.html">Docker Fundamental</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/K8SInstallation.html">K8S Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/K8SExtension.html">K8S Extension</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/NexusInstallation.html">Nexus Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/JenkinsInstallation.html">Jenkins Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/BatchProcess.html">Batch Process</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/OracleContainerRegistry.html">Oracle Container Registry</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/WinConfigurer.html">Win Configurer</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Msg</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Msg/KafkaInstallation.html">Kafka Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Msg/KafkaEntryCase.html">Kafka Entry Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Msg/PulsarInstallation.html">Pulsar Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Store</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/PowerDesigner.html">Power Designer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/CassandraSetup.html">Cassandra Setup</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/CassandraBoot.html">Cassandra Boot</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/CassandraTesting.html">Cassandra Testing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/ElasticInstallation.html">Elastic Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/ElasticCase.html">Elastic Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/OpenSearchInstallation.html">Open Search Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/MySQLInstallation.html">MySQL Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/MySqlTuning.html">MySql Tuning</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/MongoInstallation.html">Mongo Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/MongoCase.html">Mongo Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/PostgresInstallation.html">Postgres Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/AeroSpikeInstallation.html">Aero Spike Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/TinkerpopCase.html">Tinkerpo pCase</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Multifariousness</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">Multifariousness</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+	<div class="toolbar" role="navigation">
+	<button class="nav-toggle"></button>
+	
+		<a href="../../index.html" 
+			class="home-link">
+		</a>
+
+	<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">Multifariousness</a></li>
+    <li>Doxygen</li>
+    <li><a href="DoxyfileProperty.html">Doxyfile Property</a></li>
+  </ul>
+</nav>
+		</div>
+	
+	<div class="content">
+			<aside class="toc sidebar" 
+	data-title="Contents" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+			<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_概览">1. 概览</a></li>
+<li><a href="#_intro">2. Intro</a></li>
+<li><a href="#_project">3. Project</a></li>
+<li><a href="#_build">4. Build</a></li>
+<li><a href="#_warn_progress_msg">5. Warn Progress Msg</a></li>
+<li><a href="#_input_file">6. Input File</a></li>
+<li><a href="#_source_browsing">7. Source Browsing</a></li>
+<li><a href="#_alphabetical_class_index">8. Alphabetical Class Index</a></li>
+<li><a href="#_html_output">9. Html Output</a></li>
+<li><a href="#_latex_output">10. LaTeX Output</a></li>
+<li><a href="#_rtf_output">11. Rtf Output</a></li>
+<li><a href="#_man_page_output">12. Man Page Output</a></li>
+<li><a href="#_xml_output">13. Xml Output</a></li>
+<li><a href="#_docbook_output">14. DocBook Output</a></li>
+<li><a href="#_autogen_definition_output">15. AutoGen Definition Output</a></li>
+<li><a href="#_sqlite3_output">16. Sqlite3 Output</a></li>
+<li><a href="#_perl_module_output">17. Perl Module Output</a></li>
+<li><a href="#_preprocessor">18. Preprocessor</a></li>
+<li><a href="#_external_reference">19. External Reference</a></li>
+<li><a href="#_diagram_generator_tool">20. Diagram Generator Tool</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_概览"><a class="anchor" href="#_概览"></a>1. 概览</h2>
+<div class="sectionbody">
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><span class="fuchsia">配置文件默认名称为Doxyfile，由doxygen解析，结构与Makefile类似</span>；</p>
+</li>
+<li>
+<p><span class="fuchsia">该文件可能包含制表符tab和换行符newline，用于格式化，大小写敏感</span>；</p>
+</li>
+<li>
+<p><span class="blue">可使用模式$(ENV_VARIABLE_NAME)扩展环境变量</span>；</p>
+</li>
+<li>
+<p><span class="blue">TAG_NAME(大写) = OneOrMoreValue，多次赋值，以最后为准</span></p>
+</li>
+<li>
+<p><span class="fuchsia">对以列表为参数的tag，可用 += 代替 = 将新值追加到列表，值是非空白序列</span>；</p>
+</li>
+<li>
+<p><span class="fuchsia">若值包含一或多空白，则须用引号("&#8230;&#8203;")括起来，<br>
+插入反斜杠backslash(\)作为一行的最后一个非空白字符来连接多行</span>；</p>
+</li>
+<li>
+<p><span class="blue">注释以hashtag开头，以行末结束；注释可放在文件内的任何位置(引号内除外)</span>；</p>
+</li>
+<li>
+<p><span class="blue">以两个hashtag开头，放置在TAG_NAME前面，被视为注释</span>；</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties"># Doxyfile 1.12.0 www.doxygen.org
+
+# #后的文本被视为注释，##跟TAG_NAME也被视为注释
+
+# TAG = value [value, ...]
+
+# for list，item append via：
+# TAG += value [value, ...]
+
+# value contain space should place between (\" \")</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties"># Case Study
+DOT_PATH = $(OUR_DOT_PATH)
+
+@INCLUDE_PATH = custom_config_dir
+
+@INCLUDE = config_part_file_name
+
+# Note
+## DOXYFILE_ENCODING      = UTF-8</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_intro"><a class="anchor" href="#_intro"></a>2. Intro</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties">#----------------------------------------
+# Doxyfile 1.12.0 Doxygen www.doxygen.org
+#----------------------------------------
+
+# 注释：single hash (#)
+# 标签(tag)注释： double hash (##)
+
+# format：
+# TAG = value [value, ...]
+
+# for list：append item as follow：
+# TAG += value [value, ...]
+
+# 包含空格(space)的值(value)，应放在引号之间(between quote(\" \"))；
+
+# 将使用的配置文件与模板配置文件比较：doxygen -x [configFile]
+
+# 将使用的配置文件与模板配置文件比较，而不替换环境变量或CMake类型替换变量：
+# environment variable or CMake type replacement variable：
+# doxygen -x_noenv [configFile]</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_project"><a class="anchor" href="#_project"></a>3. Project</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties">#---------------
+# Project Option
+#---------------
+
+# Doxyfile编码：指定配置文件中所有字符的编码，默认值：UTF-8；
+# Doxygen用libiconv(或libc内置的iconv)转码(transcoding)
+# https://www.gnu.org/software/libiconv
+DOXYFILE_ENCODING      = UTF-8
+
+# 项目名称：值是单词(word)，或引号(double-quote)括起来的单词序列
+# (word sequence)，除非使用Doxywizard，默认值："My Project"；
+PROJECT_NAME           = "My Project"
+
+# 项目编号：用于版本控制系统或revision num，默认值：留空；
+PROJECT_NUMBER         =
+
+# 项目简述：为出现在每页顶部的项目提供可选的单行描述，
+# 并应让观众快速了解项目的目的，保持描述简短，默认值：留空；
+
+# optional one line description，at top of each page，
+# give viewer quick idea，purpose，keep description short；
+PROJECT_BRIEF          =
+
+# 项目徽标：指定文档的logo或icon，默认值：留空；
+# 最大高度：55px，最大宽度：200px，后续章节可修改；
+PROJECT_LOGO           =
+
+# 项目图标：指定在显示Html文档时包含在tab选项卡中的图标，默认值：留空；
+PROJECT_ICON           =
+
+# 文档输出的根目录：指定生成文档写入的相对或绝对路径，默认值：留空；
+# 若输入相对路径，将与Doxygen的start位置有关，若留空，则使用当前目录；
+OUTPUT_DIRECTORY       =
+
+# 创建子目录：默认值：NO；
+
+# YES：则Doxygen将在每种输出格式的输出目录下创建多达4096
+# 个子目录(分2个level)，并将生成的文件分发到这些目录上；
+
+# 当向Doxygen提供大量源文件时很有用，否则将所有生成的文件放在同一目录中
+# 会导致文件系统的性能问题，调整CREATE_SUBDIRS_LEVEL以控制子目录的数量；
+CREATE_SUBDIRS         = NO
+
+# 创建子目录的层级：控制当CREATE_SUBDIRS为YES时将创建的子目录的数量；
+# 值范围：0 ~ 8，默认值：8，先决条件：CREATE_SUBDIRS = YES；
+
+# 级别0：16个目录，每增加一级，目录数量会翻倍，目录层级为8时目录数为4096，
+# 这是默认值，也是最大值，子目录分两级，第一级总是固定的16个目录；
+CREATE_SUBDIRS_LEVEL   = 8
+
+# 允许Unicode名称：默认值：NO；
+# YES：Doxygen将允许非Ascii字符出现在生成的文件名中；
+# NO：则非Ascii字符将被转义，如_xE3_x81_x84将用于Unicode U+3044；
+ALLOW_UNICODE_NAMES    = NO
+
+# 输出语言：指定Doxygen生成的所有文档的编写语言，可选值如：English(默认)，Chinese；
+OUTPUT_LANGUAGE        = English
+
+# 简短的成员描述：默认值：YES；NO：禁用此功能；
+# YES：Doxygen将在文件和类文档中列出的成员后包含简短的成员描述，类似于Javadoc；
+BRIEF_MEMBER_DESC      = YES
+
+# 重复简述：默认值：YES；
+# YES：Doxygen将在详细描述之前(prepend)添加成员或函数的简要描述；
+
+# prepend brief description of member 
+# or function before detail description
+
+# 注：若HIDE_UNDOC_MEMBERS和BRIEF_MEMBER_DESC都为NO，
+# 则简要描述将被完全抑制(completely suppress)；
+REPEAT_BRIEF           = YES
+
+# 简述缩写：实现在各种列表中形成文本的准智能简短描述缩写器；
+# implement quasi-intelligent brief description 
+# abbreviator that used to form text in various listing
+
+# 若发现此列表中的每个字符串是简要描述的前导(leading)文本，则将从文本中
+# 删除/剥离(strip)，处理整个列表后的结果将用作注解(annotate)文本；
+
+# 否则，将按原样(as-is)使用简要描述，若留空，则使用以下值：
+# $name将自动替换为实体的名称，entity：类，接口，枚举，属性，方法等；
+
+# $name class，$name widget，$name file，is，provides，
+# specifies，contains，represents，a，an and .；
+ABBREVIATE_BRIEF       = "The $name class" \
+                         "The $name widget" \
+                         "The $name file" \
+                         is \
+                         provides \
+                         specifies \
+                         contains \
+                         represents \
+                         a \
+                         an \
+                         the
+
+# 通常详细描述章节：默认值：NO；
+# 若ALWAYS_DETAILED_SEC和REPEAT_BRIEF均为YES，那即使只有
+# brief description，Doxygen也会生成detailed section；
+ALWAYS_DETAILED_SEC    = NO
+
+# 内联继承成员：默认值：NO；
+# YES：Doxygen将在该类的文档中显示该类的所有继承成员，这些成员像普通的类成员一样，
+# 基类的constructor，destructor，assignment operator将不会显示；
+
+INLINE_INHERITED_MEMB  = NO
+
+# 全路径名称：默认值：YES；NO：将使用使文件名唯一的最短路径；
+# YES：Doxygen将在文件列表和header文件中的文件名前prepend添加完整路径；
+FULL_PATH_NAMES        = YES
+
+# 从路径剥离：剥离路径的用户定义part，仅当指定的字符串之一与
+# 路径的左侧部分匹配时才剥离；用于在文件列表中显示相对路径；
+
+# 默认值：留空；先决条件：FULL_PATH_NAMES = YES；
+
+# 留空：则运行Doxygen的目录将用作剥离的路径；
+# 注：可指定相对路径或绝对路径，相对路径相对于启动Doxygen的目录；
+STRIP_FROM_PATH        =
+
+# 从包含路径剥离：剥离类文档中提到的路径的用户定义part，
+# 此标签告诉读者，使用类需包含那个header文件；
+
+# 默认值：留空；留空：则仅使用包含类定义的header文件的名称，
+# 否则应使用 -I flag指定通常传递给编译器的包含路径列表；
+STRIP_FROM_INC_PATH    =
+
+# 短名称：默认值：NO；
+# YES：Doxygen将生成更短(但可读性readable差)的文件名；
+# 若文件系统不支持DOS，Mac，CD-ROM上的长名称，这很有用；
+SHORT_NAMES            = NO
+
+# Java文档自动简述：默认值：NO；
+# YES：则Doxygen将把Javadoc样式注释的第一行(直到第一个dot)解释interpret为简要说明；
+# NO：则Javadoc样式将表现像常规Qt样式注释(故需显式@brief命令进行brief description)；
+JAVADOC_AUTOBRIEF      = NO
+
+# Java文档横幅：默认值：NO；
+# YES：则Doxygen会将一行(如/*****)解释(interpret)为Javadoc样式注释"banner"的开头；
+# NO：Javadoc样式将表现得与常规注释一样，且不会被Doxygen解释(interpret)；
+JAVADOC_BANNER         = NO
+
+# QT自动简述：默认值：NO；
+# YES：则Doxygen将把Qt样式注释的第一行(直到第一个dot)解释为brief description；
+# NO：Qt样式将表现得像常规Qt样式注释(故需明确的\brief命令来进行简要说明)；
+QT_AUTOBRIEF           = NO
+
+# 多cpp简述：默认值：NO；YES：意味着不再识别(recognize)rational rose注释；
+# YES：以使Doxygen将多行C++特殊注释块(即//!或///注释块)视为简要说明，
+# 这曾经时默认行为，新的默认行为时将多行C++注释块视为详细描述，若喜欢旧行为，则设为YES；
+MULTILINE_CPP_IS_BRIEF = NO
+
+# Python DocStr：默认值：YES；默认：Python文档字符串显示为
+# 预格式化文本(preformat text)，且无法使用Doxygen的特殊命令；
+# NO：则可使用Doxygen特殊命令，且文档字符串的内容文档块显示为Doxygen文档；
+PYTHON_DOCSTRING       = YES
+
+# 继承文档：默认值：YES；
+# YES：未文档化的成员将从其re-implement的任何documented member继承文档；
+INHERIT_DOCS           = YES
+
+# 分离成员页：默认值：NO；YES：则Doxygen将为每个成员生成一个新页面；
+# NO：则成员的文档将成为包含它的file/class/namespace的一部分(part)；
+SEPARATE_MEMBER_PAGES  = NO
+
+# tab大小：设置制表符(tab)中的空格数(space)，值范围：1 ~ 16；默认值4；
+# Doxygen使用此值将code fragment中的制表符替换为空格；
+TAB_SIZE               = 4
+
+# 别名：指定多个在文档中充当命令的别名，别名的形式为：name=value：
+# 如添加"sideeffect=@par Side Effects:^^"；
+
+# 将允许在文档中放置命令\sideeffect或@sideeffect，
+# 这将导致用户定义的段落标题为"Side Effects:"；
+# user-defined paragraph with heading "Side Effects:"；
+
+# 注：不能在别名的值部分放置\n来插入换行符(在结果输出中)，可在别名的
+# 值部分放置 ^^ 来插入换行符，就像原始文件中有物理换行符一样；
+
+# 当需literal { 或 }时，在别名的值部分(part)，
+# 必须通过反斜杠backslash(\)对其转义escape；
+
+# 这可能导致与命令 \{ 和 \} 发生冲突，
+# 故建议使用版本 @{ 和 @} 或使用双转义 \\{ 和 \\}；
+ALIASES                =
+
+# 优化输出C：默认值：NO；
+# 若项目仅包含C源，请将OPTIMIZE_OUTPUT_FOR_C设为YES；
+
+# 然后Doxygen将生成更适合C的输出，如使用的一些名称将有所不同，
+# 所有成员的列表将被省略等，all member list omit；
+OPTIMIZE_OUTPUT_FOR_C  = NO
+
+# 优化输出Java：默认值：NO；
+# 若项目仅包含Java或Python，请将OPTIMIZE_OUTPUT_JAVA设为YES；
+
+# 然后Doxygen将生成更适合该语言的输出，
+# 如namespace将作为package呈现，qualified scope将看起来不同等；
+OPTIMIZE_OUTPUT_JAVA   = NO
+
+# 为Fortran优化：默认值：NO；
+# 若项目包含Fortran源头，请将OPTIMIZE_FOR_FORTRAN设为YES，
+# 然后Doxygen将生成针对Fortran定制(tailor)的输出；
+OPTIMIZE_FOR_FORTRAN   = NO
+
+# 优化输出vhdl：默认值：NO；
+# 若项目包含vhdl源，请将OPTIMIZE_OUTPUT_VHDL设为YES，
+# 然后Doxygen将生成针对VHDL定制(tailor)的输出；
+OPTIMIZE_OUTPUT_VHDL   = NO
+
+# 优化输出切片：默认值：NO；
+# 若项目仅包含Slice源，请将标签设为YES；然后Doxygen将生成更适合该语言的输出，
+# 如namespace将呈现为module，type将separate into group；
+OPTIMIZE_OUTPUT_SLICE  = NO
+
+# 扩展映射：Doxygen根据其解析的文件的扩展名选择要使用的解析器，可指定要为给定
+# 扩展名使用的解析器；Doxygen具有内置映射，可用此标签override或extend；
+
+# 格式：ext=language，ext：文件扩展名；language：Doxygen支持的解析器，
+# 如：IDL，Java，JavaScript，Lex，md (Markdown)，Python等；
+
+# 注：对自定义扩展名，需设置FILE_PATTERNS，否则Doxygen不会读取文件，
+# 指定no_extension时，应将*添加道 FILE_PATTERNS；
+
+# 注：对没扩展名的文件，可使用no_extension作为placeholder；
+# 另请查阅：default file extension mapping list；
+EXTENSION_MAPPING      =
+
+# Markdown支持：默认值：YES；
+# YES：则Doxygen根据Markdown格式预处理所有注释，使文档更具可读性readable；
+# https://daringfireball.net/projects/markdown
+
+# markdown处理的输出由Doxygen进一步处理，故可将Doxygen、Html
+# 和Xml命令与Markdown格式混合使用，仅在出现向后兼容性问题时禁用；
+MARKDOWN_SUPPORT       = YES
+
+# toc包含heading：非零值：所有达到该level的Heading都会自动包含在toc中，
+# 即使它们没Id属性，注：此功能仅适应于Markdown Heading；
+# 值范围：0 ~ 99，默认值：6；先决条件：MARKDOWN_SUPPORT = YES；
+TOC_INCLUDE_HEADINGS   = 6
+
+# Markdown Id样式：指定生成Markdownheading 
+# identifier的algorithm。注：每个标识符都唯一；
+# 默认值：DOXYGEN，先决条件：MARKDOWN_SUPPORT = YES；
+
+# 可选值：DOXYGEN使用固定的'autotoc_md'字符串，后跟从零开始的
+# 序列号(sequence num)，github使用小写版本的标题(lower case title)，
+# 任何空格都用'-'替换，标点符号(punctuation character)被删除；
+MARKDOWN_ID_STYLE      = DOXYGEN
+
+# 自动链接支持：默认值：YES；NO：全局阻止此类链接；
+# YES：Doxygen会尝试将与文档class或namespace相对应的word链接到其相应的文档；
+
+# 个别情况，可通过在单词前面放置% sign来阻止此类链接；
+# link can prevent in individual case by putting % sign；
+AUTOLINK_SUPPORT       = YES
+
+# 内置STL支持：默认值：NO；
+# 若使用stl类(即std::string、std::vector等)，
+# 但不想包含(tag file for)stl源作为输入，则应设为YES；
+
+# 以便让Doxygen匹配参数包含stl类的函数声明和定义，
+# 如func(std::string);与func(std::string) {}
+# 也使涉及stl类的继承和协作图更加完整complete和准确accurate；
+BUILTIN_STL_SUPPORT    = NO
+
+# Cpp Cli支持：默认值：NO；
+# 若使用微软的C++/CLI language，则应设为YES，以启用解析支持；
+CPP_CLI_SUPPORT        = NO
+
+# sip支持：若项目仅包含SIP源，请设为YES；默认值NO；
+# https://www.riverbankcomputing.com/software
+
+# Doxygen将像普通C++一样解析它们，但当不存在显式保护关键字时，
+# 将假定所有类都使用公共继承而不是私有继承；
+
+# assume all class use public instead of private 
+# inheritance when no explicit protection keyword present；
+SIP_SUPPORT            = NO
+
+# idl属性支持：默认值：YES；
+# 对Microsoft的IDL，有propget和propput属性来指示属性的getter和setter；
+# YES：将使Doxygen用文档中的属性替换getter和setter；
+
+# 这仅在方法确实获取或设置简单类型时才有效，若非此类情况，
+# 或无论如何都想显示方法，则应将此选项设置为NO；
+IDL_PROPERTY_SUPPORT   = YES
+
+# 默认值为：NO。
+
+# 分配组文档：若文档中使用成员分组，且此标签设为YES，则Doxygen将重用(reuse)组中
+# 第一个成员的文档(若有，if any)供组中的其他成员使用，默认：组的所有成员都必须明确文档化；
+DISTRIBUTE_GROUP_DOC   = NO
+
+# 组嵌套复合项：默认值：NO；
+
+# 若将struct或class添加到组中且启用此选项，则任何nest的class或struct
+# 也会添加到同一组中，默认禁用此选项，可通过\ingroup添加嵌套复合项；
+GROUP_NESTED_COMPOUNDS = NO
+
+# 子组：默认值：YES；NO：可防止子分组，
+# prevent subgrouping；可用\nosubgrouping命令按类执行此操作；
+
+# YES：以允许将相同类型的类成员组(如一组公共函数)作为该类型的子组(如，在公共函数section下)
+
+# allow class member group of same type(for instance 
+# group of public function) to put as subgroup of 
+# that type(e.g. under Public Function section)
+SUBGROUPING            = YES
+
+# 内联组类：默认值：NO；此功能不能与SEPARATE_MEMBER_PAGES合用；
+
+# YES：struct，class，union将显示在所在的组
+# (shown inside group)(使用\ingroup)，而不是显示在
+# separate page(对Html和Man Page)或section(对LaTeX和Rtf)中；
+INLINE_GROUPED_CLASSES = NO
+
+# 内联简单结构：默认值NO；NO：struct，class，union将显示在
+# separate page(对Html和Man Page)或section(对LaTeX和Rtf)中；
+
+# YES：仅具有公共数据字段(public data field)或简单typedef字段的
+# struct，class，union将以内联(inline)方式显示在定义它们的范围(scope)
+# 的文档中(即file，namespace，group doc)，前提是此scope已文档化；
+INLINE_SIMPLE_STRUCTS  = NO
+
+# typedef隐藏struct：默认值：NO；
+# YES：struct，union，enum将文档化为带有typedef名称的struct，union，enum；
+# 因此typedef struct TypeS {} TypeT将再文档中显示为名称为TypeT的struct；
+
+# 禁用时，typedef将作为file，namespace，class的member出现，
+# 且struct被命名为TypeS，这对C代码很有用，因coding convention
+# 规定(dictate)所有复合类型(compound)都是typedef，且只引用typedef，从不引用tag name；
+TYPEDEF_HIDES_STRUCT   = NO
+
+# 查找缓冲大小：设置符号查找缓存大小；symbol lookup cache size；
+# 此缓存用于根据符号的名称和范围解析符号，resolve symbol，name，scope；
+
+# 此过程昂贵(expensive)，且同一符号通常会在代码中出现多次，
+# 故Doxygen会保留预先解析的符号缓存，
+# 若缓存太小，Doxygen会变慢，若缓存太大，则浪费内存，
+
+# 缓存大小公式：2 ^ (16 + LOOKUP_CACHE_SIZE)；
+# 值范围：0 ~ 9，默认值：0，对应缓存大小：2^16=65536个symbol；
+# 运行结束时，Doxygen将报告缓存使用情况并从速度角度建议最佳缓存大小；
+LOOKUP_CACHE_SIZE      = 0
+
+# 处理线程数：指定Doxygen在处理(processing)期间允许使用的线程数(thread num)；
+# 值范围：0 ~ 32，默认值：1；若值大于零，以更好地控制CPU负载和处理速度间的平衡；
+# 目前仍是实验性功能，1：即禁用并行处理，并行生成dot由DOT_NUM_THREADS设置；
+NUM_PROC_THREADS       = 1
+
+# 时间戳：可选值：YES、NO(默认)、DATETIME和DATE；
+# 若设置不同于NO：则生成的每个页面将包含生成页面的date或datetime；
+# 将其设为NO：有助于比较多次运行的输出；
+TIMESTAMP              = NO</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_build"><a class="anchor" href="#_build"></a>4. Build</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties">#-------------
+# Build Option
+#-------------
+
+# 抽取所有：默认值：NO；
+# YES：Doxygen将假定文档中的所有实体都已文档化，即使没可用的文档；
+# 注：这还将禁用在WARNINGS设置为YES时通常会生成的有关未文档化成员的警告
+
+# 除非EXTRACT_PRIVATE和EXTRACT_STATIC设为YES，否则私有类成员
+# (private class member)和静态文件成员(static file member)将被隐藏，
+EXTRACT_ALL            = NO
+
+# 抽取私有：默认值：NO；
+# YES：则类的所有私有成员(private member)都将包含在文档中；
+EXTRACT_PRIVATE        = NO
+
+# 抽取私有虚拟：默认值：NO；
+# YES：则类的文档化私有虚拟方法(private virtual method)将包含在文档中；
+EXTRACT_PRIV_VIRTUAL   = NO
+
+# 抽取包：默认值：NO；
+# YES：则所有具有包或内部范围的成员都将包含在文档中；
+# all member with package or internal scope；
+EXTRACT_PACKAGE        = NO
+
+# 抽取静态：默认值：NO；
+# YES：则文件的所有静态成员(static member)都将包含在文档中
+EXTRACT_STATIC         = NO
+
+# 抽取局部类：默认值：YES；
+# YES：则源文件中locally定义的class(和struct)将包含在文档中；
+# NO：则仅包含在header file中定义的类，对Java source没任何影响；
+EXTRACT_LOCAL_CLASSES  = YES
+
+# 抽取局部方法：默认值：NO；此标签仅对Objective-C有用；
+# YES：则在RI中定义但未在接口中定义的局部方法将包含在文档中；
+# NO：则仅包含接口中的方法；
+EXTRACT_LOCAL_METHODS  = NO
+
+# 抽取匿名命名空间：默认值：NO；默认：匿名命名空间是隐藏的；
+# YES：则匿名命名空间的成员将被抽取并作为名为'anonymous_namespace{file}'
+# 的命名空间出现在文档中，其中file将被替换为包含匿名命名空间的文件的基本名称；
+EXTRACT_ANON_NSPACES   = NO
+
+# 解析未命名参数：默认值：YES；默认：未命名参数在输出中保持未命名状态；
+# YES：则声明中未命名参数的名称将由相应的定义确定；
+RESOLVE_UNNAMED_PARAMS = YES
+
+# 隐藏未文档化成员：默认值：NO；
+# NO：这些成员将包含在各种overview中，若启用EXTRACT_ALL，则此标签无效；
+
+# YES：Doxygen将隐藏已文档化的类或文件内所有未文档化的成员；
+# hide all undocument member inside document cls or file；
+HIDE_UNDOC_MEMBERS     = NO
+
+# 隐藏未文档化类：默认值：NO；NO：这些类将包含在各种overview中；
+# 若启用，此选项还将隐藏未文档化的C++概念，若已启用EXTRACT_ALL，则标签无效；
+
+# YES：Doxygen将隐藏类层次结构中通常可见的所有未文档化的类；
+# hide all undocument cls normally visible in cls hierarchy；
+HIDE_UNDOC_CLASSES     = NO
+
+# 隐藏友好声明：默认值：NO；NO：这些声明将包含在文档中；
+# YES：Doxygen将隐藏所有友好声明；hide all friend declaration；
+HIDE_FRIEND_COMPOUNDS  = NO
+
+# 隐藏函数体文档：默认值：NO；
+# YES：隐藏函数主体内的任何文档块；
+# NO：这些块将append到函数的详细(detail)文档块中；
+HIDE_IN_BODY_DOCS      = NO
+
+# 内部文档：是否包括在\internal命令后输入(type)的文档；
+# NO：则将排除文档；YES：包括内部文档；默认值：NO；
+INTERNAL_DOCS          = NO
+
+# 正确设置CASE_SENSE_NAMES，Doxygen将更好匹配底层文件系统的功能；
+# 可选值：SYSTEM(默认)、NO和YES；
+
+# 若文件系统区分大小写(即它支持同一目录中名称仅在大小写上不同的文件)，
+# 则必须将选项设置为YES 才能正确处理此类文件(若它们出现在输入中)；
+
+# 对不区分大小写的文件系统，应设为NO，以正确处理为仅在大小写上不同的
+# 符号编写(symbol write)的输出文件，如两个类，A为CLASS，B为Class，
+# 且还支持对文件的引用，而无需指定完全匹配的大小写；
+
+# 在Win(包括Cygwin)和mac上，用户通常应设为NO，
+# 而在Linux或其它Unix，通常应设为YES；
+CASE_SENSE_NAMES       = SYSTEM
+
+# 隐藏名称范围：默认值：NO；YES：则范围将被隐藏；
+# NO：则Doxygen将在文档中显示成员及其完整的类和命名空间范围；
+# show member with their full cls and namespace scope in doc；
+HIDE_SCOPE_NAMES       = NO
+
+# 隐藏复合引用：默认值：NO；YES：则复合引用将被隐藏；
+# NO：则Doxygen将在页面标题后附加其他文本，如Class Reference
+# append additional text to page title，such as Class Reference；
+HIDE_COMPOUND_REFERENCE= NO
+
+# 显示Header文件：默认值：YES；YES：则类的文档将显示需包含哪个文件才能使用该类；
+# doc for cls will show which file need to include to use cls
+SHOW_HEADERFILE        = YES
+
+# 显示包含文件：默认值：YES；
+# YES：Doxygen会将文件所包含的文件列表放在该文件的文档中；
+SHOW_INCLUDE_FILES     = YES
+
+# 显示包含组成员：默认值：NO；
+# YES：则Doxygen将为每个分组成员在文档中添加一个包含语句，告诉读者需包含哪个文件才能使用该成员；
+
+# add for each group member include statement to doc
+# telling reader which file to include in order to use member
+SHOW_GROUPED_MEMB_INC  = NO
+
+# 强制局部包含：默认值：NO；YES：则Doxygen将在文档中列出带有双引号而非尖括号的包含文件；
+# list include file：double quote，sharp bracket；
+FORCE_LOCAL_INCLUDES   = NO
+
+# 内联信息：默认值：YES；YES即在内联成员的文档中插入标签 [inline]；
+INLINE_INFO            = YES
+
+# 排序成员文档：默认值YES；NO：则成员将按声明顺序出现；
+# YES：则Doxygen将按成员名称的字母顺序对文件和类成员的(详细)文档排序；
+# sort (detail) doc of file and cls member alphabetically by member name；
+SORT_MEMBER_DOCS       = YES
+
+# 排序简述文档：默认值：NO；NO：成员将按声明顺序出现；注：这影响类列表中类的顺序；
+# YES：则Doxygen将按成员名称的字母顺序对文件、命名空间和类成员的简要描述排序；
+
+# sort brief description of file，namespace and 
+# cls members alphabetically by member name
+SORT_BRIEF_DOCS        = NO
+
+# NO(默认)：则构造函数将按SORT_BRIEF_DOCS和SORT_MEMBER_DOCS定义的相应顺序出现；
+# YES：则Doxygen将对类成员的(简要和详细)文档排序，以便首先列出构造函数和析构函数；
+
+# sort (brief and detail) doc of class member 
+# so that list constructor and destructor first；
+
+# 注：若SORT_BRIEF_DOCS设为NO，则在对简要成员文档排序时会忽略此选项；
+# 注：若SORT_MEMBER_DOCS设为NO，则在对详细成员文档排序时会忽略此选项；
+SORT_MEMBERS_CTORS_1ST = NO
+
+# 排序组名称：默认值：NO；NO：则组名将按其定义的顺序显示；
+# YES：则Doxygen将按字母顺序对组名的层次结构排序；
+SORT_GROUP_NAMES       = NO
+
+# 按名称范围排序：默认值：NO；NO：则类列表将仅按类名排序，不包括命名空间部分；
+
+# YES：则类列表将按完全限定名称排序，包括命名空间；
+# sort cls list by fully-qualified name，including namespace；
+
+# 注：若HIDE_SCOPE_NAMES为YES，则此选项用处不大；
+# 注：此选项仅适用于类列表，不适用于字母列表(alphabetical list)；
+SORT_BY_SCOPE_NAME     = NO
+
+# 严格proto匹配：默认值：NO；通过禁用STRICT_PROTO_MATCHING，
+# 在这种情况下，Doxygen仍将接受原型和实现之间的匹配；
+
+# 若启用STRICT_PROTO_MATCHING，
+# 且Doxygen无法对函数的所有参数进行正确的类型解析；
+
+# 它将拒绝原型和成员函数实现之间的匹配，即使只有一个候选者，
+# 或通过执行简单字符串匹配就可很明显地选择哪个候选者；
+
+# fail to do proper type resolution of all parameter of function，
+# reject match between prototype and RI of member function even 
+
+# only one candidate or obvious which candidate 
+# to choose by doing simple string match；
+STRICT_PROTO_MATCHING  = NO
+
+# 生成TODO列表：默认值：YES；
+# 启用(YES)或禁用(NO) TODO列表，文档中输入\todo命令创建此列表；
+GENERATE_TODOLIST      = YES
+
+# 生成测试列表：默认值：YES；
+# 启用(YES)或禁用(NO) Test列表，文档中输入\test命令创建此列表；
+GENERATE_TESTLIST      = YES
+
+# 生成Bug列表：默认值：YES；
+# 启用(YES)或禁用(NO) Bug列表，文档中输入\bug命令创建此列表；
+GENERATE_BUGLIST       = YES
+
+# 生成弃用(Deprecation)列表：默认值：YES；
+# 启用(YES)或禁用(NO) 弃用列表，文档中输入\deprecated命令创建此列表；
+GENERATE_DEPRECATEDLIST= YES
+
+# 启用章节：启用条件文档章节(section)，默认值：留空；标记为块：
+# \if &lt;section_label&gt; ... \endif
+# \cond &lt;section_label&gt; ... \endcond
+ENABLED_SECTIONS       =
+
+# MAX_INITIALIZER_LINES 标记
+# 无论此设置如何，都可以使用  。
+# 最小值：0，最大值：10000，默认值：30。
+
+# 最大初始行数：值范围：0 ~ 10000，默认值：30；
+# 确定variable或macro/define的initial value在文档中显示的最大行数；
+
+# 无论此设置如何，都可用\showinitializer或\hideinitializer
+# 命令控制文档中各个variable和macro/define的值的外观(appear)；
+
+# 若初始化程序(initializer)包含的行数多于此处指定的行数，
+# 它将被隐藏，使用值0可完全隐藏初始化程序；
+MAX_INITIALIZER_LINES  = 30
+
+# 显示使用文件：默认值：YES；
+# YES：列表将提及(mention)用于生成文档的文件；
+# NO：以禁用在class和struct文档bottom生成的文件列表；
+SHOW_USED_FILES        = YES
+
+# 显示文件：默认值：YES；
+# NO：以禁用文件页面的生成，这将从快速索引和文件夹树视图(若指定)中删除文件条目；
+
+# disable file page generation，remove file entry 
+# from Quick Index and from Folder Tree View
+SHOW_FILES             = YES
+
+# 显示命名空间：默认值：YES；
+# NO：以禁用命名空间页面的生成，这将从快速索引和文件夹树视图(若指定)中删除命名空间条目；
+
+# disable namespace page generation，remove Namespace 
+# entry from Quick Index and from Folder Tree View；
+SHOW_NAMESPACES        = YES
+
+# 文件版本过滤器：默认值：留空；程序写入标准输出
+# (standard output)的任何内容都用作文件版本(file version)
+
+# 指定Doxygen应调用(invoke)以获取每个文件的当前版本(通常来自版本控制系统)的程序或脚本；
+# Doxygen将通过执行(通过popen())命令 command input-file来调用该程序；
+
+# 其中command是FILE_VERSION_FILTER的值，
+# input-file是Doxygen提供的输入文件的名称；
+
+FILE_VERSION_FILTER    =
+
+# 布局文件：指定将由Doxygen解析的布局文件；默认值：留空；
+
+# 布局文件以独立于输出格式的方式控制生成的输出文件的全局结构，
+# 要创建代表Doxygen默认值的布局文件，请用 -l 选项运行Doxygen；
+
+# 在该选项后可选地指定文件名，若省略，则默认DoxygenLayout.xml
+# 请参考：Changing the layout of page章节；
+
+# 注：若从包含名为DoxygenLayout.xml的文件的目录运行Doxygen，
+# 即使LAYOUT_FILE标记留空，Doxygen也会自动解析它；
+LAYOUT_FILE            =
+
+# 引用bib(Bibliography)文件：默认值：留空；
+
+# 指定一或多个包含参考定义(reference definition)的bib文件，
+# 这必须是.bib文件列表，若省略(omit)，则会自动追加.bib扩展名；
+
+# append .bib extension，这需安装bibtex工具，
+# https://en.wikipedia.org/wiki/BibTeX；
+
+# 对LaTeX，可用LATEX_BIB_STYLE控制bibliography的style，
+# 要使用此功能，需在搜索路径中提供bibtex和perl，另参考\cite命令；
+CITE_BIB_FILES         =
+
+# 外部工具路径：扩展搜索路径(extend search path，PATH环境变量)，
+# 以便可找到外部(external)工具，如latex和gs，默认值：留空；
+
+# 注：用EXTERNAL_TOOL_PATH指定的目录将添加到
+# PATH变量已指定的路径前面，并按指定的顺序添加；
+
+# 注：当从Doxywizard运行Doxygen时，此选项对mac版本14(Sonoma)及
+# 更高版本特有用，因在此情况下，对PATH的任何用户定义更改都将被忽略(ignore)；
+
+# mac典型示例是设置及标准路径(standard path)：
+# EXTERNAL_TOOL_PATH = /Library/TeX/texbin /usr/local/bin
+
+# doxygen在启动外部工具时使用的完整搜索路径将变为：
+# PATH=/Library/TeX/texbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+EXTERNAL_TOOL_PATH     =</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_warn_progress_msg"><a class="anchor" href="#_warn_progress_msg"></a>5. Warn Progress Msg</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties">#-----------------------------
+# Warning and Progress Message
+#-----------------------------
+
+# 打开/关闭Doxygen生成到标准输出的消息，YES：消息已关闭，默认值：NO；
+QUIET                  = NO
+
+# 警告：打开/关闭Doxygen生成的标准错误(stderr)警告消息；
+# 默认值：YES，YES：警告已打开；编写文档时打开警告；
+WARNINGS               = YES
+
+# 未文档化警告：YES：则Doxygen将针对未文档化的成员生成警告；
+# 默认值：YES；若EXTRACT_ALL设为YES，则此标签自动禁用；
+WARN_IF_UNDOCUMENTED   = YES
+
+# 文档化错误警告：默认值：YES；YES：Doxygen将对文档中的潜在错误生成警告；
+# 如在已文档化的函数中两次文档化某些参数，或文档化不存在的参数或错误地使用标记命令；
+WARN_IF_DOC_ERROR      = YES
+
+# 未完全文档化警告：默认值：YES；
+# YES：Doxygen将警告函数参数文档不完整
+# NO：Doxygen将接受某些参数没文档，而不发出警告；
+WARN_IF_INCOMPLETE_DOC = YES
+
+# 无参文档化警告：若值为YES：以获取已文档化但没参数或返回值文档的函数的警告；
+# NO(默认值)：Doxygen将仅警告错误的参数文档，而不警告缺少文档；
+# 若EXTRACT_ALL设为YES，则此标签自动禁用；参考WARN_IF_INCOMPLETE_DOC；
+WARN_NO_PARAMDOC       = NO
+
+# 未文档化枚举值警告：默认值：NO；
+# EXTRACT_ALL为YES，则此标签将自动禁用；
+
+# YES：Doxygen将警告未文档化的枚举值；
+# NO：Doxygen将接受未文档化的枚举值；
+WARN_IF_UNDOC_ENUM_VAL = NO
+
+# 错误警告：可选值：NO(默认)，YES，
+# FAIL_ON_WARNINGS，FAIL_ON_WARNINGS_PRINT；
+
+# A：YES：Doxygen将在遇到警告时立即停止；
+
+# B：FAIL_ON_WARNING：则Doxygen将继续运行，就像WARN_AS_ERROR
+# 设为NO一样，但在Doxygen process结束时，Doxygen返回非零状态；
+
+# C：FAIL_ON_WARNINGS_PRINT：则Doxygen行为类FAIL_ON_WARNINGS；
+# C-A：但若没定义WARN_LOGFILE，Doxygen不会在
+# 其他消息之间写入警告消息，而在运行结束时写入警告消息；
+
+# C-B：若已定义WARN_LOGILE，则警告消息除在定义的文件中外，
+# 还会在运行结束后显示，除非WARN_LOGFILE定义为 - 即标准输出
+# (stdout)，在这种情况下，行为将与设置FAIL_ON_WARNINGS保持一致；
+WARN_AS_ERROR          = NO
+
+# 警告格式：决定Doxygen可生成的警告消息的格式；默认值：$file:$line: $text；
+# 字符串应包含$file、$line和$text标签，标签将被警告来源的文件和行号及警告文本替换；
+
+# 格式可能包含$version(可选)，它将被文件的版本替换，
+# 可通过FILE_VERSION_FILTER获取，另请参考WARN_LINE_FORMAT；
+WARN_FORMAT            = "$file:$line: $text"
+
+# 警告行格式：默认值：at line $line of file $file；
+# 在WARN_FORMAT的$text部分，可给出对更具体位置的引用；
+
+# 为更容易跳转到该位置(在Doxygen之外)，用户可定义自定义cut/paste字符串；
+# 如：WARN_LINE_FORMAT = "'vi $file + $line'"
+WARN_LINE_FORMAT       = "at line $line of file $file"
+
+# 警告日志文件：指定应警告和错误消息写入的文件，默认值：留空；
+# 留空：则输出将写入标准错误(stderr)；
+
+# 若无法打开指定的文件进行写入，则警告和错误消息将写入标准错误，
+# 当指定为文件 - 时，警告和错误消息将写入标准输出 (stdout)；
+WARN_LOGFILE           =</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_input_file"><a class="anchor" href="#_input_file"></a>6. Input File</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties">#-----------
+# Input File
+#-----------
+
+# 输入：指定包含文档化源文件的文件和/或目录；默认值：留空；留空则搜索当前目录；
+# specify file and/or directory contain document source file
+
+# 可输入文件名：如Doxygen.cj，也可输入目录：如/elf/doc/doxygen；
+# 使用空格分隔文件或目录，参考：FILE_PATTERNS和EXTENSION_MAPPING；
+INPUT                  =
+
+# 输入编码：指定Doxygen解析的源文件的字符编码；
+# 默认值：UTF-8；Doxygen在内部使用UTF-8编码；
+
+# Doxygen使用libiconv(或libc内置的iconv)进行转码(transcoding)；
+# https://www.gnu.org/software/libiconv，和INPUT_FILE_ENCODING；
+INPUT_ENCODING         = UTF-8
+
+# 输入文件编码：指定Doxygen解析的源文件的字符编码，
+# INPUT_FILE_ENCODING用于可根据每个文件模式指定字符编码；
+
+# Doxygen将比较文件名与每个模式(pattern)，
+# 若匹配，则应用编码(而非而默认的INPUT_ENCODING)
+
+# 字符编码(character encoding)是以下形式：
+# pattern=encoding，如*.php=ISO-8859-1)，请参考INPUT_ENCODING；
+INPUT_FILE_ENCODING    =
+
+# 文件模式：若INPUT标签的值包含目录，则FILE_PATTERNS指定一或多个通配符模式
+# (wildcard pattern)，如*.cpp和*.h来过滤(filter out)目录中的源文件；
+
+# 注：对自定义扩展或不直接支持的扩展(extensions)，
+# 还需为扩展设置EXTENSION_MAPPING，否则Doxygen不会读取文件；
+# 注意：默认检查的文件模式列表可能与默认文件扩展名映射列表不同；
+
+# 若留空：则使用以下已测试的模式：*.c，*.cc，*.cxx，*.cxxm，*.cpp，
+# *.cppm，*.ccm，*.c++，*.c++m，*.java，*.ii，*.ixx，*.ipp，
+# *.i++，*.inl，*.idl，*.ddl，*.odl，*.h，*.hh，*.hxx，*.hpp，
+# *.h++，*.ixx，*.l，*.cs，*.d，*.php，*.php4，*.php5，*.phtml，
+# *.inc，*.m，*.markdown，*.md，*.mm，*.py，*.pyw，*.f90，*.f95，
+# *.dox(to be provided as Doxygen C comment)，*.f03，*.f08，
+# *.f18，*.f，*.for，*.vhd，*.vhdl，*.ucf，*.qsf，*.ice；
+
+# 推荐值：*.cj，*.java，*.py，*.pyw，*.markdown, *.md，
+# *.c，*.cpp，*.h，*.hpp，*.cs，*.php；
+
+FILE_PATTERNS          = *.c \
+                         *.cc \
+                         *.cxx \
+                         *.cxxm \
+                         *.cpp \
+                         *.cppm \
+                         *.ccm \
+                         *.c++ \
+                         *.c++m \
+                         *.java \
+                         *.ii \
+                         *.ixx \
+                         *.ipp \
+                         *.i++ \
+                         *.inl \
+                         *.idl \
+                         *.ddl \
+                         *.odl \
+                         *.h \
+                         *.hh \
+                         *.hxx \
+                         *.hpp \
+                         *.h++ \
+                         *.ixx \
+                         *.l \
+                         *.cs \
+                         *.d \
+                         *.php \
+                         *.php4 \
+                         *.php5 \
+                         *.phtml \
+                         *.inc \
+                         *.m \
+                         *.markdown \
+                         *.md \
+                         *.mm \
+                         *.dox \
+                         *.py \
+                         *.pyw \
+                         *.f90 \
+                         *.f95 \
+                         *.f03 \
+                         *.f08 \
+                         *.f18 \
+                         *.f \
+                         *.for \
+                         *.vhd \
+                         *.vhdl \
+                         *.ucf \
+                         *.qsf \
+                         *.ice
+
+# 递归：指定是否也应在子目录中搜索输入文件，默认值：NO；
+RECURSIVE              = NO
+
+# 排除：指定应从INPUT源文件中排除的文件和/或目录，默认值：留空；
+# specify file and/or directory exclude from INPUT source file；
+
+# 可轻松地从使用INPUT标签指定根的目录树中排除子目录；
+# 注：相对路径是相对于运行doxygen的目录；
+EXCLUDE                =
+
+# 排除符号链接：选择是否从输入中排除符号链接的文件或目录，默认值：NO；
+# 符号链接：symbolic link：Unix文件系统功能；
+EXCLUDE_SYMLINKS       = NO
+
+# 排除模式：默认值：留空；若值包含目录，则可用EXCLUDE_PATTERNS
+# 指定一或多个通配符模式，以从这些目录中排除某些文件；
+
+# 注：通配符与具有绝对路径的文件匹配，
+# 故要排除所有测试目录，如使用模式：*/test/*；
+EXCLUDE_PATTERNS       =
+
+# 排除符号名称：默认值：留空，指定应从输出中排除的
+# 一或多个符号名称(namespace，class，function，etc.)；
+
+# 符号名称(symbol name)可以是fully qualified name、word；
+
+# 或若使用通配符(wildcard) *，则是子字符串，如：
+# ANamespace，AClass，ANamespace::AClass，ANamespace::*Test；
+EXCLUDE_SYMBOLS        =
+
+# 示例路径：指定包含示例代码片段的一或多个文件或目录；
+# include example code fragment；
+# 默认值：留空，参考\include命令；
+EXAMPLE_PATH           =
+
+# 示例模式：若EXAMPLE_PATH的值包含目录，则可用EXAMPLE_PATTERNS指定一或
+# 多个通配符模式(wildcard pattern)，如(*.cpp和*.h)来过滤目录中的源文件；
+
+# 默认值：留空；留空则包含所有文件；
+EXAMPLE_PATTERNS       = *
+
+# 示例递归：默认值：NO；
+
+# YES：则无论RECURSIVE的值是啥，都会在子目录中搜索要与
+# \include 或 \dontinclude 命令一起使用的输入文件
+EXAMPLE_RECURSIVE      = NO
+
+# 图像路径：指定一或多个包含要包含在文档中的图像的文件或目录；
+# 默认值：留空；请参考\image 命令；
+
+# specify one or more file or dir 
+# contain image to include in doc；
+IMAGE_PATH             =
+
+# 输入过滤器：默认值：留空；指定Doxygen应调用来过滤每个输入文件的程序，
+# Doxygen将通过执行(通过popen())以下命令来调用过滤程序：
+
+# &lt;filter&gt; &lt;input-file&gt;
+# &lt;filter&gt;是INPUT_FILTER的值；&lt;input-file&gt;是输入文件的名称；
+
+# 但Doxygen将使用过滤程序写入标准输出的输出，
+# 若指定FILTER_PATTERNS，则将忽略此标签；
+
+# 注：过滤器不得添加或删除行；它是在扫描代码之前应用，
+# 而不是在生成输出代码时应用，若添加或删除行，则锚点将无法正确放置；
+
+# 注：Doxygen将使用已处理(process)并写入标准输出的数据进行进一步处理，
+# 故不应将任何其他内容(如debug statement或used command)，
+# 故对Win批处理文件，请始终使用@echo OFF写入标准输出；
+
+# 注：对自定义扩展或不直接支持的扩展，还需为扩展设置
+# EXTENSION_MAPPING，否则Doxygen无法正确处理文件，
+INPUT_FILTER           =
+
+# 过滤器模式：默认值：留空；参考INPUT_FILTER；
+# 若FILTER_PATTERNS为空或没任何模式与文件名匹配，则应用INPUT_FILTER；
+
+# 根据每个文件模式指定过滤器，Doxygen将比较文件名与每个模式，若匹配则应用过滤器；
+# 过滤器是以下形式的列表：pattern=filter(如：*.cj=custom_cj_filter)；
+
+# 注：对自定义扩展或不直接支持的扩展，还需为扩展设置
+# EXTENSION_MAPPING，否则Doxygen无法正确处理文件；
+FILTER_PATTERNS        =
+
+# 过滤源文件：默认值：NO；
+
+# YES：则输入过滤器(若使用INPUT_FILTER设置)，也将用于过滤用于
+# 生成要浏览的源文件的输入文件(即当SOURCE_BROWSER为YES时)；
+
+# input filter(if set via INPUT_FILTER) will also be 
+# used to filter input file used for producing source 
+# file to browse(i.e. when SOURCE_BROWSER set to YES)；
+FILTER_SOURCE_FILES    = NO
+
+# FILTER_SOURCE_PATTERNS 标记可用于
+# 此标记要求将标记 FILTER_SOURCE_FILES 设置为 YES。
+
+# 过滤源文件模式：默认值：留空；先决条件：FILTER_SOURCE_FILES = YES；
+# 指定每个文件模式的源过滤器。模式将覆盖FILTER_PATTERN的设置(若有)，
+# 且还可用 *.ext= 禁用特定模式的源过滤(故无需命名过滤器)
+FILTER_SOURCE_PATTERNS =
+
+# 使用markdown文件作为man page：默认值：留空；
+
+# 引用(refer)作为输入一部分的markdown文件的名称，
+# 则其内容将放置在主页(index.html)上；若在github上有个项目，
+# 且想要将介绍页面也重用于Doxygen输出，很有用；
+USE_MDFILE_AS_MAINPAGE =
+
+# Fortran标准规定：对固定格式的Fortran代码，位置72处的所有
+# 字符都应视为注释；常见的扩展是在自动注释开始前允许更长的行；
+
+# 设置FORTRAN_COMMENT_AFTER还可在自动注释开始前处理更长的行；
+
+# 值范围：7 ~ 10000，默认值：72；
+FORTRAN_COMMENT_AFTER  = 72</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_source_browsing"><a class="anchor" href="#_source_browsing"></a>7. Source Browsing</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties">#----------------
+# Source Browsing
+#----------------
+
+# 源文件浏览：默认值：NO；
+# YES：则会生成源文件列表，文档化的实体将与这些源进行交叉引用cross reference；
+# 注：要删除生成的输出中的所有源代码，请确保VERBATIM_HEADERS也设置为NO；
+SOURCE_BROWSER         = NO
+
+# 内联源文件：默认值：NO；
+# YES：将会把函数主体、多行宏、枚举或列表初始化变量直接包含在文档中；
+
+# include the body of function body，multi-line macro，
+# enum，list initialize variable directly into doc；
+INLINE_SOURCES         = NO
+
+# 剥离代码注释：默认值：YES；
+
+# YES：将指示(instruct)Doxygen隐藏(hide)生成的源代码片段(fragment)中的
+# 任何特殊注释块(special comment block)，常规C、C++和Fortran注释将始终保持可见；
+STRIP_CODE_COMMENTS    = YES
+
+# 依关系引用：默认值：NO；functions referencing；
+# YES：那对每个文档化的实体，将列出引用它的所有文档化的函数；
+REFERENCED_BY_RELATION = NO
+
+# 引用关系：默认值：NO；YES：那对每个文档化的函数，
+# 将列出该函数调用/使用的(called/used)所有文档化的实体；
+REFERENCES_RELATION    = NO
+
+# 引用链接源文件：默认值：YES；若设为YES，且SOURCE_BROWSER也为YES；
+# 则REFERENCES_RELATION和REFERENCED_BY_RELATION
+# 列表中的函数的超链接将链接到源代码，否则，它们将链接到文档；
+REFERENCES_LINK_SOURCE = YES
+
+# 源文件工具提示：默认值：YES；先决条件：SOURCE_BROWSER = YES；
+
+# YES：则将鼠标悬停在源代码中的超链接，上将显示工具提示，
+# 包含其他信息：如原型，简要说明及定义和文档的链接，
+# 因这会使Html文件变大，且大文件的加载速度会变慢，故可选择禁用此功能；
+SOURCE_TOOLTIPS        = YES
+
+# 默认值：NO，先决条件：SOURCE_BROWSER = YES；
+# YES：则对源代码的引用将指向htags(1)工具生成的
+# Html，而非Doxygen内置的source browser；
+
+# htags工具是GNU global source tagging system的一部分，
+# https://www.gnu.org/software/global/global.html；
+
+# 需4.8.6或更高的版本，要使用它，执行如下步骤：
+# A：全局安装最新版本；
+# B：配置文件中启用SOURCE_BROWSER和USE_HTAGS；
+# C：确保INPUT指向source tree的根目录；
+# D：正常运行doxygen；
+
+# Doxygen将调用htags(进而调用gtags)，故这些工具必须可从命令行(即在搜索路径中)获得；
+# 结果：源代码链接现在将指向htags的输出，而非Doxygen生成的source browser；
+USE_HTAGS              = NO
+
+# 逐字header，默认值：YES；NO：禁用此功能，请参考：\class命令；
+# YES：则Doxygen将为已指定包含的每个类生成header文件的verbatim copy；
+VERBATIM_HEADERS       = YES
+
+# C语言辅助解析：默认值：NO；http://clang.llvm.org；
+
+# YES：则Doxygen将使用clang解析器进行更准确的计息，代价是性能降低；
+# 这对模板丰富的Cpp代码尤其有用，因Doxygen的内置解析器缺少必要的类型信息；
+
+# 注：此选项的可用性(availability)取决于Doxygen是否使用
+# CMake的-Duse_libclang=ON 选项生成的；
+CLANG_ASSISTED_PARSING = NO
+
+# C语言添加路径：默认值：YES；先决条件：CLANG_ASSISTED_PARSING = YES；
+
+# 若CLANG_ASSISTED_PARSING和CLANG_ADD_INC_PATHS
+# 均为YES，则Doxygen会将每个输入的目录添加到包含路径；
+
+# add each input directory to include path；
+CLANG_ADD_INC_PATHS    = YES
+
+# C语言选项：默认值：留空；先决条件：CLANG_ASSISTED_PARSING = YES；
+
+# 若已启用CLANG_ASSISTED_PARSING，可为编译器提供调用编译器时通常使用的命令行选项；
+# 注：Doxygen已为使用INPUT和INCLUDE_PATH指定的文件和目录设置include路径；
+CLANG_OPTIONS          =
+
+# C语言数据库路径：默认值：留空；
+
+# 若已启用CLANG_ASSISTED_PARSING，可向CLang解析器
+# 提供包含名为compile_commands.json的文件的目录路径；
+
+# 此文件是编译数据库：其中包含构建源文件时使用的选项，
+# 这相当于为CLang工具(如clang-check)指定 -p 选项；
+# http://clang.llvm.org/docs/HowToSetupToolingForLLVM.html，
+
+# 然后这些选项将传递给解析器，任何使用CLANG_OPTIONS指定的选项也将被添加；
+# 注：此选项的可用性取决于是否使用CMake的 -Duse_libclang=ON选项生成Doxygen；
+CLANG_DATABASE_PATH    =</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_alphabetical_class_index"><a class="anchor" href="#_alphabetical_class_index"></a>8. Alphabetical Class Index</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties">#-------------------------
+# Alphabetical Class Index
+#-------------------------
+
+# 字母索引：默认值：YES；
+
+# YES：将生成所有复合物(compound)的字母索引(alphabetical index)；
+
+# 若project包含大量class、struct、union或interface，请启用此功能；
+ALPHABETICAL_INDEX     = YES
+
+# 忽略前缀：指定在生成index header时应忽略的前缀(或前缀列表prefix list)；
+# 默认值：留空，先决条件：ALPHABETICAL_INDEX = YES；
+
+# IGNORE_PREFIX标签适应于(work for) class，function and member name；
+# 实体将放置在删除前缀后剩余的实体名称首字母下的字母列表中；
+
+# entity place in alphabetical list under first letter 
+# of entity name that remain after removing prefix；
+IGNORE_PREFIX          =</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_html_output"><a class="anchor" href="#_html_output"></a>9. Html Output</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties">#------------
+# Html Output
+#------------
+
+# 生成Html：默认值：YES；YES：Doxygen将生成Html输出；
+GENERATE_HTML          = YES
+
+# Html输出目录：指定Html文档的放置位置；
+# 默认值：html；先决条件：GENERATE_HTML = YES；
+
+# 若输入相对路径，则OUTPUT_DIRECTORY的值放置在其前面，
+# 即：OUTPUT_DIRECTORY / HTML_OUTPUT
+HTML_OUTPUT            = html
+
+# Html文件扩展名：指定每个生成的Html页面的文件扩展名，如.htm、.php、.asp；
+# 默认值：.html；先决条件：GENERATE_HTML = YES；
+HTML_FILE_EXTENSION    = .html
+
+# Html Header：为每个生成的Html页面指定用户定义的Html header文件；
+# 默认值：留空；留空：Doxygen将生成standard header；
+
+# 注：header可能发生变化：故升级到较新版本的Doxygen通常需
+# 重新生成默认header；先决条件：GENERATE_HTML = YES；
+
+# 若要获取有效Html，Header应包含Doxygen所需的任何script和
+# style sheet，这取决于所使用的配置选项，如设置GENERATE_TREEVIEW；
+
+# 建议使用如下命令，从默认header开始，然后修改文件new_header.html；
+# 另：请参考Doxygen Usage章节，以了解如何生成Doxygen通常使用的默认Header；
+# doxygen -w html new_header.html new_footer.html new_stylesheet.css YourConfigFile
+HTML_HEADER            =
+
+# Html页脚：为每个生成的Html页面指定用户定义的Html footer；
+# 默认值：留空；留空即Doxygen将生成标准页脚；
+
+# 参考HTML_HEADER和Doxygen Usage章节；
+# 先决条件：GENERATE_HTML = YES；
+HTML_FOOTER            =
+
+# Html样式表：默认值：留空；留空即：Doxygen将生成默认样式表；
+# 先决条件：GENERATE_HTML = YES；建议查看Doxygen Usage；
+
+# 指定每个Html页面使用的用户定义级联样式表(cascading style sheet)；
+# 可用于微调(fine-tune)Html输出的外观(look)；
+
+# 建议使用HTML_EXTRA_STYLESHEET代替此标签，
+# 因更强大，且HTML_STYLESHEET将来会过时(obsolete)；
+HTML_STYLESHEET        =
+
+# Html额外样式表：指定additional用户定义的级联样式表(cascading style sheet)；
+# 额外些样式表在标准样式表后，使用此选项可overrule certain style aspect；
+
+# HTML_EXTRA_STYLESHEET比HTML_STYLESHEET更可取，
+# 因不会替换标准样式表，对未来更新更具鲁棒性(robust)；
+
+# 额外样式表文件的顺序很重要，后面的样式表将覆盖或否决前面的样式表设置；
+# 默认值：留空；先决条件：GENERATE_HTML = YES；
+
+# 注：目前无法在Webkit/Chromium中否决(overrule)滚动条
+# (scrollbar)的样式，故若指定一或多个额外样式表，
+# 则样式将排除在默认doxygen.css之外，故需自定义滚动条，则必须明确添加；
+HTML_EXTRA_STYLESHEET  =
+
+# Html额外文件：指定应复制到Html输出目录的一或多个extra图像或其他源文件；
+# 默认值：留空；先决条件：GENERATE_HTML = YES；
+
+# 用HTML_HEADER和/或HTML_FOOTER文件中的$relpath^ marker来加载这些文件，
+# 在HTML_STYLESHEET文件中，仅用文件名，文件将按原样复制(as-is)；没可用的command或marker；
+HTML_EXTRA_FILES       =
+
+# Html颜色样式：指定生成的Html输出是否应使用dark或light主题呈现；
+# 默认值：AUTO_LIGHT；先决条件：GENERATE_HTML = YES；
+# 可选值：LIGHT，DARK，AUTO_LIGHT(默认)，AUTO_DARK，TOGGLE；
+
+# A：LIGHT：始终生成浅色模式输出；
+# B：DARK：始终生成深色模式输出；
+# C：AUTO_LIGHT：根据用户偏好自动设置模式，若未设定偏好，则默认浅色模式；
+# D：AUTO_DARK：根据用户偏好自动设置模式，若未设置偏好则使用深色模式；
+# E：TOGGLE：允许用户通过按钮在浅色和深色模式间切换；
+HTML_COLORSTYLE        = AUTO_LIGHT
+
+# Html颜色样式Hue：控制Html输出的颜色；先决条件：GENERATE_HTML = YES；
+# Doxygen将根据此颜色调整样式表和背景图中的颜色；
+
+# 色调指定为色轮上的一个角度：Hue as angle on color-wheel；
+# https://en.wikipedia.org/wiki/Hue；
+
+# 如：值 0：红色；60：黄色；120：绿色；180：青色；240：蓝色；
+# 300：紫色；360：红色；最小值：0，最大值：359，默认值：220；
+HTML_COLORSTYLE_HUE    = 220
+
+# Html颜色样式SAT：控制Html输出中颜色的纯度purity(或饱和度saturation)；
+# 最小值：0，最大值：255，默认值：100；先决条件：GENERATE_HTML = YES；
+
+# 值0：输出将仅使用灰度(gray-scales only)；
+# 值255：将产生最鲜艳的(vivid color)颜色；
+HTML_COLORSTYLE_SAT    = 100
+
+# Html颜色样式GAMMA：控制对Html输出中颜色亮度分量应用的伽马校正；
+# # control gamma correction apply to luminance 
+# component of color in html output；
+
+# 值低于100：逐渐使输出变亮；值高于100：输出变暗；
+# 值除以100是实际应用的伽马，故80：伽马为0.8，值220：伽马为2.2，而100不改变伽马；
+# 值范围：40 ~ 220；默认值：80；先决条件：GENERATE_HTML = YES；
+HTML_COLORSTYLE_GAMMA  = 80
+
+# Html动态菜单：默认值：YES；先决条件：GENERATE_HTML = YES；
+
+# YES：则生成的Html文档将包含主索引，其中包含通过JavaScript动态创建的
+# 垂直导航菜单，main index with vertical navigation menu；
+
+# 若禁用，导航索引将由静态嵌入每个Html页面的多个级别的选项卡组成，
+# 禁用此选项以支持没JavaScript的浏览器，如Qt帮助浏览器；
+
+# navigation index consists of multiple level of tab 
+# statically embed in every Html page，Qt help browser；
+HTML_DYNAMIC_MENUS     = YES
+
+# Html动态章节：默认值：NO；先决条件：GENERATE_HTML = YES；
+# YES：则生成的Html文档将包含可在页面加载后隐藏和显示的section；
+HTML_DYNAMIC_SECTIONS  = NO
+
+# Html代码折叠：默认值：YES；先决条件：GENERATE_HTML = YES；
+# YES：类和函数可在生成的Html源代码中动态折叠fold和展开expand
+HTML_CODE_FOLDING      = YES
+
+# Html复制剪贴板：默认值：YES；先决条件：GENERATE_HTML = YES；
+# YES：则Doxygen将在代码和文本片段(text fragment)的
+# 右上角显示图标，允许用户将其内容复制到剪贴板(clipboard)；
+
+# 注：这仅在浏览器支持且网页通过安全上下文(secure context)
+# 提供时才有效，即使用https:或file:协议；
+# 请参考：https://www.w3.org/TR/secure-contexts
+HTML_COPY_CLIPBOARD    = YES
+
+# Html项目Cookie：存储项目特定键下的设置，这样用户首选项将单独存储；
+# 默认值：留空；先决条件：GENERATE_HTML = YES；
+
+# Doxygen在浏览器中通过cookie持久存储某些设置，
+# 默认：这些设置适用于所有项目中由Doxygen生成的所有Html页面；
+HTML_PROJECT_COOKIE    =
+
+# Html索引条目数量：控制最初在各种树结构索引中显示的首选条目数；用户可稍后动态展开和折叠条目；
+# 默认值：100，值范围：0 ~ 9999；先决条件：GENERATE_HTML = YES；
+
+# control preferr number of entry shown in various tree structure 
+# indice initially，expand and collapse entry dynamically later on；
+
+# Doxygen将树展开到这样的级别，即最多可看到指定数量的条目(除非完全折叠的树已经超过此数量)；
+# 故：将条目数设置为1，将默认生成完全折叠的树，0：无限数量的条目，默认将生成完全展开的树；
+HTML_INDEX_NUM_ENTRIES = 100
+
+# 生成docset：默认值：NO；先决条件：GENERATE_HTML = YES；
+# YES：生成其他索引文件，这些文件可用作Apple的Xcode3集成开发环境的输入；
+# https://developer.apple.com/xcode，此环境随OSX 10.5(Leopard)一起引入；
+
+# 要创建docset，Doxygen将在Html输出目录中生成Makefile；
+# 运行make将在该目录中生成docset，运行make install将在 
+# ~/Library/Developer/Shared/Documentation/DocSets中安装docset
+
+# 以便Xcode在启动时找到它，请参考
+# https://developer.apple.com/library/archive/featuredarticles/DoxygenXcode/_index.html
+GENERATE_DOCSET        = NO
+
+# docset订阅源名称：确定docset要订阅的名称，文档订阅要提供保护伞，
+# 可将来自单个提供商(如公司或产品套件)的多个docset分组到该保护伞下；
+
+# doc feed provide umbrella under which multiple doc set from 
+# single provider(such as party or product suite) can group；
+
+# 默认值：Doxygen generated docs；先决条件：GENERATE_DOCSET = YES；
+DOCSET_FEEDNAME        = "Doxygen generated docs"
+
+# docset订阅地址：默认值：留空；先决条件：GENERATE_DOCSET = YES；
+DOCSET_FEEDURL         =
+
+# docset捆绑Id：指定字符串，唯一的标识文档集捆绑，
+# uniquely identify doc set bundle；
+
+# 格式：反向域名样式的字符串，如io.os.doc.ElfDocSet，
+# 将在名称后append .docset；
+
+# 默认值：org.doxygen.Project；先决条件：GENERATE_DOCSET = YES；
+DOCSET_BUNDLE_ID       = org.doxygen.Project
+
+# docset发布者Id：指定字符串，唯一标识文档发布者，
+# 格式应为：反向域名的字符串，如io.os.doc.ElfDocSet.doc；
+# 默认值：org.doxygen.Publisher；先决条件：GENERATE_DOCSET = YES；
+DOCSET_PUBLISHER_ID    = org.doxygen.Publisher
+
+# docset发布者名称：标识文档发布者名称；
+# 默认值：Publisher；先决条件：GENERATE_DOCSET = YES；
+DOCSET_PUBLISHER_NAME  = Publisher
+
+# 生成Html帮助文档：默认值：NO；先决条件：GENERATE_HTML = YES；
+# YES：Doxygen生成三个additional文件：index.hhp、index.hhc和index.hhk；
+
+# hhp：项目文件：html help project；
+# hhk：索引文件：html help index：
+# hhc：目录文件：html help content(toc)；
+
+# index.hhp：是project file，可由Microsoft Html Help Workshop读取，
+# 此Workshop包含编译器，可将Doxygen生成的所有Html输出转换为单个Html文件(.chm)，
+# 编译的Html文件现用作Win帮助格式，将来将在所有Win平台取代就的Win帮助格式(.hlp)；
+
+# 压缩的Html文件还包含索引(index)，toc，可在文档中搜索单词(word)，
+# Html workshop还包括压缩Html文件的查看器(viewer)；
+GENERATE_HTMLHELP      = NO
+
+# Chm文件：指定生成的.chm文件的文件名；
+# 默认值：留空；先决条件：GENERATE_HTMLHELP = YES；
+# 若结果不应写入Html输出目录，可在文件前面添加路径；
+CHM_FILE               =
+
+# HHC路径：指定Html帮助编译器(hhc.exe)的位置(包括文件名的绝对路径)；
+# 默认值：留空；先决条件：GENERATE_HTMLHELP = YES；
+# 若不留空：Doxygen将尝试在生成的index.hhp上运行Html帮助编译器，必须指定文件的完整路径；
+HHC_LOCATION           =
+
+# 生成chi：控制是否生成单独的.chi索引文件(YES)或是否应将其包含在主.chm文件中(NO)；
+# 默认值：NO，先决条件：GENERATE_HTMLHELP = YES；
+GENERATE_CHI           = NO
+
+# Chm索引编码：对HtmlHelp索引(hhk)、内容(hhc)和项目文件内容进行编码；
+# 默认值：留空；先决条件：GENERATE_HTMLHELP = YES；
+CHM_INDEX_ENCODING     =
+
+# 二进制toc：控制在chm文件中是否生成二进制toc(YES)或普通toc(NO)；
+# 另：启用Previous和Next Button
+
+# 默认值：NO；先决条件：GENERATE_HTMLHELP = YES；
+BINARY_TOC             = NO
+
+# toc展开：默认值：NO；先决条件：GENERATE_HTMLHELP = YES；
+# YES：将组成员(group member)的extra item添加到Html帮助文档的toc和tree view中；
+TOC_EXPAND             = NO
+
+# sitemap url：指定用户在部署文档期间将生成的文档放置在服务器上的位置的完整url；
+# 默认值：留空；先决条件：GENERATE_HTML = YES；
+
+# 生成的sitemap称为sitemap.xml，并放置在HTML_OUTPUT指定的目录中，
+# 若没指定SITEMAP_URL，则不会生成sitemap，https://www.sitemaps.org
+SITEMAP_URL            =
+
+# 生成QHP：默认值：NO；先决条件：GENERATE_HTML = YES；
+# 若设为YES，且同时设置QHP_NAMESPACE和QHP_VIRTUAL_FOLDER，
+
+# 则会生成additional index file，该文件可用作QT的
+# qhelpgenerator的输入，医生称生成的Html文档的QT压缩帮助(.qch)
+GENERATE_QHP           = NO
+
+# QCH文件：默认值：留空；先决条件：GENERATE_QHP = YES；
+# 若指定QHG_LOCATION，则可用QCH_FILE指定生成的.qch
+# 文件的文件名，指定的路径相对于Html输出文件夹；
+QCH_FILE               =
+
+# QHP命名空间：指定生成Qt Help Project输出时要使用的命名空间；
+# 默认值：org.doxygen.Project；先决条件：GENERATE_QHP = YES；
+# https://doc.qt.io/qt-6/qthelpproject.html#namespace
+QHP_NAMESPACE          = org.doxygen.Project
+
+# QHP虚拟文件夹：指定生成Qt Help Project输出时要使用的命名空间；
+# https://doc.qt.io/qt-6/qthelpproject.html#virtual-folders
+# 默认值：doc，先决条件：GENERATE_QHP = YES；
+QHP_VIRTUAL_FOLDER     = doc
+
+# QHP自定义过滤器名称：指定要添加的自定义过滤器的名称；默认值：留空；先决条件：GENERATE_QHP = YES；
+# https://doc.qt.io/qt-6/qthelpproject.html#qt-help-project-file-format
+QHP_CUST_FILTER_NAME   =
+
+# QHP自定义过滤器属性：默认值：留空；先决条件：GENERATE_QHP = YES；
+# 指定要添加的自定义过滤器的属性列表：
+# https://doc.qt.io/qt-6/qthelpproject.html#qt-help-project-file-format
+QHP_CUST_FILTER_ATTRS  =
+
+# QHP章节过滤器属性：指定此项目的过滤器section匹配(match)的属性列表；
+# 默认值：留空；先决条件：GENERATE_QHP = YES；
+# https://doc.qt.io/qt-6/qthelpproject.html#qt-help-project-file-format
+QHP_SECT_FILTER_ATTRS  =
+
+# QHG位置：指定Qt的qhelpgenerator的位置(包括文件名的绝对路径)；
+# 默认值：留空；先决条件：GENERATE_QHP = YES；
+# 若非空，Doxygen将尝试在生成的.qhp文件上运行qhelpgenerator；
+QHG_LOCATION           =
+
+# 生成Eclipse帮助：默认值：NO；先决条件：GENERATE_HTML = YES；
+# YES：生成附加索引文件(additional index)，它们与Html文件一起构成Eclipse帮助插件；
+
+# 要安装此插件并使其在Eclipse中的帮助内容菜单下可用(content menu)，
+# 需将包含Html和Xml文件的目录的内容复制到Eclipse的插件目录中
+
+# 插件目录中的目录名称应与ECLIPSE_DOC_ID值相同，复制后，需重启Eclipse才能显示帮助；
+GENERATE_ECLIPSEHELP   = NO
+
+# Eclipse文档Id：Eclipse帮助插件的unique identifier，
+# 安装插件时，包含Html和Xml文件的目录名称也应具有此名称；
+# 每个docset都应有自己的identifier；
+
+# 默认值：org.doxygen.Project；
+# 先决条件：GENERATE_ECLIPSEHELP = YES；
+ECLIPSE_DOC_ID         = org.doxygen.Project
+
+# NO：启用索引；YES：禁用索引；先决条件：GENERATE_HTML = YES；
+# 禁用索引：想完全控制生成的Html页面的布局，可能需禁用索引并将其替换为自己的索引；
+
+# 此标签用于打开/关闭每个Html页面顶部的压缩索引(选项卡)；
+# turn on/off condensed index(tab) at top of each Html page
+
+# 因索引中tab包含与导航树(navigation tree)相同的信息，
+# 故若还将GENERATE_TREEVIEW设为YES，则可将此选项设置为YES；
+DISABLE_INDEX          = NO
+
+# 生成treeview：指定是否应生成树状索引结构以显示层次结构信息；
+# 默认值：NO；先决条件：GENERATE_HTML = YES；
+# tree-like index structure generate to display hierarchical；
+
+# YES：生成包含树状索引结构(tree-like index structure)
+# 的侧面板(类Html帮助生成的侧面板 side panel)；
+
+# 要实现此功能，需支持JavaScript、DHtml、Css和框架的浏览器(即任何现代浏览器)；
+# Win用户最好使用HHtml帮助功能，通过自定义样式表(参考HTML_EXTRA_STYLESHEET)，
+# 可进一步微调索引的外观(fine tune index look)，参考Fine-Tuning Output章节；
+
+# 如Doxygen生成的默认样式表有示例，展示如何将图像放在树的根部而不是PROJECT_NAME；
+# 因树基本上具有与tab index相同的信息，故在启用此选项时，可考虑将DISABLE_INDEX设为YES；
+GENERATE_TREEVIEW      = NO
+
+# 刷星侧边栏：默认值：NO，先决条件：GENERATE_HTML = YES；
+# 若GENERATE_TREEVIEW或DISABLE_INDEX均为NO，则此标签无效；
+# https://docs.readthedocs.io
+
+# 内容空间越大(content room)，
+# 但project logo，title，description的空间则更小，
+
+# 若GENERATE_TREEVIEW和DISABLE_INDEX都为YES，FULL_SIDEBAR：
+# 将确定侧边栏是否仅限于树形视图区域(NO，limit to only treeview area)
+# 或是否应扩展到窗口的整个高度(YES，extend to window full height)；
+FULL_SIDEBAR           = NO
+
+# 每行枚举值的数量：设置Doxygen在生成的Html文档中一行上分组的枚举值的数量；
+# 值范围：0 ~ 20，默认值：4，先决条件：GENERATE_HTML = YES；
+# 0：将完全禁止(suppress)枚举值出现在概述部分(overview section)中；
+ENUM_VALUES_PER_LINE   = 4
+
+# 显示枚举值：在枚举助记符(mnemonic)旁显示指定的枚举值，默认值：NO；
+SHOW_ENUM_VALUES       = NO
+
+# treeview宽度：若已启用GENERATE_TREEVIEW，则此标签设置显示树的框架的初始宽度(pixel)；
+# 默认值：250；值范围：0 ~ 1500；先决条件：GENERATE_HTML = YES；
+TREEVIEW_WIDTH         = 250
+
+# 窗口中外部符号：默认值：NO；先决条件：GENERATE_HTML = YES；
+# YES：将在单独的窗口中打开通过tag文件导入的外部符号的链接；
+# open link to external symbol import via tag file in separate win；
+EXT_LINKS_IN_WINDOW    = NO
+
+# 混淆邮件地址：YES：将混淆电子邮件地址；
+# 默认值；YES；先决条件：GENERATE_HTML = YES；
+OBFUSCATE_EMAILS       = YES
+
+# Html公式格式：可选值：png(默认)和svg；先决条件：GENERATE_HTML = YES；
+# https://github.com/dawbarton/pdf2svg；https://inkscape.org
+
+# 若设为svg：Doxygen将使用pdf2svg或inkscape将公式生成svg图像，
+# 而不是png图像，用于Html输出，图像在缩放分辨率(scale resolution)更美观；
+HTML_FORMULA_FORMAT    = png
+
+# 公式字体大小：更改Html文档中作为图像包含的LaTeX公式的字体大小；
+# 值范围：8 ~ 50，默认值：10，先决条件：GENERATE_HTML = YES；
+
+# 在成功运行Doxygen后更改字体大小时，
+# 需手动从Html输出目录中删除任何form_*.png图像以强制重新生成；
+FORMULA_FONTSIZE       = 10
+
+# 公式宏文件：默认值：留空；包含LaTeX \newcommand和\renewcommand命令，
+# 以创建新的LaTeX命令，作为公式中的构建块使用，参考Including Formula章节；
+FORMULA_MACROFILE      =
+
+# 使用MathJax：默认值：NO；先决条件：GENERATE_HTML = YES；
+
+# 启用USE_MATHJAX以使用MathJax呈现LaTeX公式，
+# 用JavaScript呈现，而非用预渲染的位图(pre-rendered bitmap)；
+
+# 启用此标签后，还需单独安装MathJax并使用MATHJAX_RELPATH
+# 选项配置其路径，https://www.mathjax.org；
+USE_MATHJAX            = NO
+
+# MathJax版本：指定MathJax版本；先决条件：USE_MATHJAX = YES；
+# 可选值：MathJax_2(默认值)或MathJax_3；
+
+# 注：不同版本的MathJax对不同设置有不同要求，
+# 故切换MathJax版本时，还需更改其它MathJax设置；
+MATHJAX_VERSION        = MathJax_2
+
+# MathJax格式：设置MathJax输出的默认输出格式；
+# 默认值：HTML-CSS，先决条件：USE_MATHJAX = YES；
+# https://docs.mathjax.org/en/latest/output/index.html
+
+# 可选值：A：HTML-CSS(速度慢，兼容性好)。这是Mathjax2的名称，Mathjax3将被翻译成chtml；
+# B：NativeMML：即MathML，仅支持MathJax2，对MathJax3，将改用chtml；
+# C：chtml：这是MathJax3的名称，MathJax2将被翻译成HTML-CSS和svg；
+MATHJAX_FORMAT         = HTML-CSS
+
+#MathJax相对路径：指定相对于Html输出目录的位置；
+# 默认值：留空，先决条件：USE_MATHJAX = YES；
+
+# 目标目录应包含MathJax.js，若mathjax目录与Html输出目录
+# 位于同一级别，则MATHJAX_RELPATH应为../mathjax；
+
+# 默认值只想MathJax CDN(Content Delivery Network)，故无需安装MathJax；
+# 但建议在部署之前从https://www.mathjax.org安装MathJax的本地副本(local copy)；
+
+# 默认值：in case of MathJax2/MathJax3：
+# MathJax2：https://cdn.jsdelivr.net/npm/mathjax@2
+# MathJax3：https://cdn.jsdelivr.net/npm/mathjax@3
+MATHJAX_RELPATH        =
+
+# MathJax扩展：指定在MathJax渲染期间应启用的一或多个
+# MathJax extension name；先决条件：USE_MATHJAX = YES；
+
+# https://docs.mathjax.org/en/v2.7-latest/tex.html#tex-and-latex-extensions)
+# MATHJAX_EXTENSIONS = TeX/AMSmath TeX/AMSsymbols
+
+# https://docs.mathjax.org/en/latest/input/tex/extensions.html
+# MATHJAX_EXTENSIONS = ams
+MATHJAX_EXTENSIONS     =
+
+# MathJax代码文件：指定文件，包含将在启动MathJax代码时使用的JavaScript代码piece，
+# 默认值：留空；先决条件：USE_MATHJAX = YES；
+# http://docs.mathjax.org/en/v2.7-latest/output.html
+MATHJAX_CODEFILE       =
+
+# 搜索引擎：默认值：YES；先决条件：GENERATE_HTML = YES；
+# YES：Doxygen 将为Html输出生成搜索框，底层搜索引擎
+# 用JavaScript和DHtml，应可在任何现代浏览器上运行；
+
+# 注：用Html帮助(GENERATE_HTMLHELP)、Qt帮助(GENERATE_QHP)
+# 或DocSet(GENERATE_DOCSET)时，已经有个搜索功能，故通常应禁用此功能；
+
+# 对大项目，基于JavaScript的搜索引擎可能会很慢，
+# 然后启用SERVER_BASED_SEARCH可能会提供更好的解决方案；
+
+# 可用键盘搜索；要跳转到搜索框，请使用 &lt;access key&gt; + S，&lt;access key&gt;是啥，
+# 取决于操作系统和浏览器，但通常是&lt;CTRL&gt;、&lt;ALT&gt;/&lt;option&gt;或两者；
+
+# 在搜索框内，用&lt;cursor down key&gt;跳转到搜索结果窗口，
+# 可使用&lt;cursor keys&gt;导航结果；按&lt;Enter&gt;选择个项目或按&lt;escape&gt;取消搜索；
+
+# 当光标位于搜索框内时，可通过按&lt;Shift&gt;+&lt;cursor down&gt;来选择过滤器选项；
+# 用&lt;cursor keys&gt;选择个过滤器，再按&lt;Enter&gt;或
+# &lt;escape&gt;activate或cancel filter option；
+SEARCHENGINE           = YES
+
+# 基于服务器搜索：默认值：NO；先决条件：SEARCHENGINE = YES；
+# YES：搜索引擎将用Web服务器而非用JavaScript的Web客户端来实现；
+# 请查看：External Indexing and Searching相关章节；
+
+# 根据EXTERNAL_SEARCH的设置，有两种基于Web服务器的搜索方式：
+# A：禁用时：Doxygen将生成用于搜索的Php脚本和该脚本使用的索引文件；
+# B：启用EXTERNAL_SEARCH后，索引和搜索需由外部(external)工具提供；
+SERVER_BASED_SEARCH    = NO
+
+# 外部搜索：默认值：NO；先决条件：SEARCHENGINE = YES；
+# 请参考：External Indexing and Searching章节；
+
+# YES：Doxygen将不再生成用于搜索的Php脚本，相反，
+# 搜索结果将写入需由external indexer处理的Xml文件，
+# Doxygen将调用SEARCHENGINE_URL指向的外部搜索引擎来获取搜索结果
+
+# Doxygen附带(ship)示例索引器(example indexer：doxyindexer)和
+# 搜索引擎(doxysearch.cgi)，都基于开源搜索引擎库Xapian：https://xapian.org；
+EXTERNAL_SEARCH        = NO
+
+# 搜索引擎Url：指向由web服务器托管(host)的搜索引擎；
+# 默认值：留空，先决条件：SEARCHENGINE = YES；
+# 当启用EXTERNAL_SEARCH，该搜索引擎将返回搜索结果；
+
+# Doxygen附带(ship)示例索引器(example indexer：doxyindexer)和
+# 搜索引擎(doxysearch.cgi)，都基于开源搜索引擎库Xapian：https://xapian.org；
+SEARCHENGINE_URL       =
+
+# 搜索数据文件：默认值：searchdata.xml；先决条件：SEARCHENGINE = YES；
+# 当SERVER_BASED_SEARCH和EXTERNAL_SEARCH都启用时，
+# 未编入索引的搜索数据将写入文件，以供外部工具编入索引；
+
+# unindexed search data written to file for indexing 
+# by external tool，用SEARCHDATA_FILE可指定此文件的名称；
+SEARCHDATA_FILE        = searchdata.xml
+
+# 外部搜索Id：默认值：留空，先决条件：SEARCHENGINE = YES；
+
+# 当SERVER_BASED_SEARCH和EXTERNAL_SEARCH
+# 都启用，EXTERNAL_SEARCH_ID用作项目的标识符
+
+# 这与EXTRA_SEARCH_MAPPINGS合用很有用，可搜索多个项目并将结果重定向回正确的项目；
+EXTERNAL_SEARCH_ID     =
+
+# 外部搜索映射：搜索除此配置文件定义的项目之外的Doxygen项目；
+# 但这些项目都添加到同一个外部搜索索引中，每个项目都需通过EXTERNAL_SEARCH_ID
+
+# 设置一个唯一的Id，然后搜索映射将Id映射道文档的相对位置，格式为：
+# EXTRA_SEARCH_MAPPINGS = tagNameA=locationA tagNameB=locationB ...
+
+# 默认值：留空；先决条件：SEARCHENGINE = YES；
+EXTRA_SEARCH_MAPPINGS  =</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_latex_output"><a class="anchor" href="#_latex_output"></a>10. LaTeX Output</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties">#-------------
+# LaTeX Output
+#-------------
+
+# 生成LaTeX：默认值：YES；
+GENERATE_LATEX         = YES
+
+# LaTeX输出目录：指定LaTeX文档的输出目录；
+# 默认值：latex；先决条件：GENERATE_LATEX = YES；
+
+# 若输入相对路径，则OUTPUT_DIRECTORY的值放置在其前面，
+# 即：OUTPUT_DIRECTORY / LATEX_OUTPUT
+LATEX_OUTPUT           = latex
+
+# LaTeX命令名称：指定要调用的LaTeX命令名称；
+# 默认值：留空，先决条件：GENERATE_LATEX = YES；
+
+# 注：当不启用USE_PDFLATEX时，默认值为：latex；
+# 当启用USE_PDFLATEX时，默认值为：pdflatex
+# 当在后一种情况下选择latex时，默认值将被pdflatex覆盖；
+
+# 对特定的输出语言，默认值可设置不同，这取决于输出语言的实现；
+LATEX_CMD_NAME         =
+
+# 指定为LaTeX生成索引的命令名称；
+# 默认值：makeindex；先决条件：GENERATE_LATEX = YES；
+
+# 注：此标签用于Makefile/make.bat；
+# 参考LATEX_MAKEINDEX_CMD，以了解生成的输出文件(.tex)章节；
+MAKEINDEX_CMD_NAME     = makeindex
+
+# 指定生成LaTeX索引的命令名称，若没反斜杠(\)作为第一个字符，它将自动添加到LaTeX代码中；
+# 默认值：makeindex，先决条件：GENERATE_LATEX = YES；
+
+# 注：此标签用于生成的输出文件(.tex)，请参考
+# MAKEINDEX_CMD_NAME，以了解Makefile/make.bat 章节；
+LATEX_MAKEINDEX_CMD    = makeindex
+
+# 紧凑LaTeX：默认值：NO，先决条件：GENERATE_LATEX = YES；
+# YES：Doxygen会生成更紧凑的LaTeX文档，对小项目有用，且通常有助于节省一些树；
+COMPACT_LATEX          = NO
+
+# 纸张类型：设置打印机使用的纸张类型，默认值：a4，先决条件：GENERATE_LATEX = YES；
+
+# 可选值：a4(210 x 297 mm)，letter(8.5 x 11 inch)，
+# legal(8.5 x 14 inch)和executive(7.25 x 10.5 inch)；
+PAPER_TYPE             = a4
+
+# 额外包：指定应包含在LaTeX输出中的一或多个LaTeX包名称；
+# 包可仅通过其名称指定，也可用与LaTeX \usepackage 命令合用的正确语法来指定；
+
+# 若要获取times字体：EXTRA_PACKAGES=times或EXTRA_PACKAGES={times}
+# 若要将选项intlimits与amsmath包合用：EXTRA_PACKAGES=[intlimits]{amsmath}；
+
+# 默认值：留空；若留空，则不包含任何额外包；先决条件：GENERATE_LATEX = YES；
+EXTRA_PACKAGES         =
+
+# LaTeX头：为生成的LaTeX文档指定用户定义的LaTeX header；
+# 默认值：留空；先决条件：GENERATE_LATEX = YES；
+
+# header应包含直到第一章(chapter)的所有内容；
+# 若留空，则Doxygen将生成standard header；
+
+# 强烈建议使用如下命令：(从default header开始，然后修改文件new_header.tex)：
+# doxygen -w latex new_header.tex new_footer.tex new_stylesheet.sty
+
+# 参考"Doxygen Usage"章节，了解如何生成Doxygen通常使用的默认标头；
+# 注：header可能会修改，故升级道较新版本的Doxygen时，通常需重新生成default header；
+LATEX_HEADER           =
+
+# LaTeX页脚：为生成的LaTeX文档指定用户定义的LaTeX页脚；
+# 默认值：留空；先决条件：GENERATE_LATEX = YES；
+
+# 页脚应包含最后一章(chapter)之后的所有内容；
+# 若留空，Doxygen将生成standard footer；
+
+# 参考LATEX_HEADER，Doxygen Usage章节，
+# 以了解如何生成Doxygen通常使用的默认页脚；
+LATEX_FOOTER           =
+
+# LaTeX额外样式表：指定在Doxygen创建的标准样式表后包含的额外用户定义LaTeX样式表；
+# 默认值：留空；先决条件：GENERATE_LATEX = YES；
+
+# 使用此选项可否决某些样式方面，overrule certain style aspect；
+# 注：额外样式表文件的顺序很重要：如列表中后一个样式表将否决前面样式表的设置；
+LATEX_EXTRA_STYLESHEET =
+
+# LaTeX额外文件：指定一或多个额外图像或其他源文件，
+# 这些文件应复制到LATEX_OUTPUT输出目录；
+
+# 注：文件将按原样复制(as-is)；没可用的command或marker；
+# 默认值：留空；先决条件：GENERATE_LATEX = YES；
+LATEX_EXTRA_FILES      =
+
+# Pdf超链接：默认值：YES；先决条件：GENERATE_LATEX = YES；
+# YES：则生成的LaTeX将准备转换为Pdf(使用ps2pdf或pdflatex)；
+
+# Pdf文件将包含链接(类Html输出)，而非页面引用(page reference)，
+# 这使输出适合使用Pdf查看器在线浏览；
+PDF_HYPERLINKS         = YES
+
+# 使用Pdf LaTeX：默认值：YES；先决条件：GENERATE_LATEX = YES；
+
+# YES：Doxygen将使用LATEX_CMD_NAME指定的引擎直接从LaTeX文件生成Pdf文件；
+# YES：可获得更高质量的Pdf文档，请参考LATEX_CMD_NAME章节以选择引擎；
+USE_PDFLATEX           = YES
+
+# LaTeX批处理模式：出现错误时显示LaTeX的行为；
+# signal behavior of LaTeX in case of error；
+
+# 可选值：NO同ERROR_STOP，YES同BATCH；
+# 默认值NO；先决条件：GENERATE_LATEX = YES；
+
+# BATCH在批处理模式下，终端(terminal)不打印任何内容；
+# 错误会滚动显示(error scroll)，好像每次出错时都会按&lt;return&gt;；
+
+# TeX尝试输入或从键盘输入请求的文件丢失(在未打开的输入流上 \read)会导致job abort；
+# missing file that TeX try to input or request from keyboard 
+# input(\read on not open input stream) cause job to abort；
+
+# NON_STOP在非停止模式下，诊断消息将显示在终端，但不可能像批处理模式一样进行用户交互；
+# NON_STOP In nonstop mode diagnostic msg will appear on terminal，
+# but no possibility of user interaction just like in batch mode；
+
+# SCROLL在滚动模式下，TeX只会在缺少文件输入或需键盘输入时停止；
+# SCROLL In scroll mode，TeX will stop only for missing 
+# file to input or if keyboard input is necessary
+
+# ERROR_STOP在错误停止模式下，TeX会在每次出现错误时停止，要求用户干预；
+# ERROR_STOP In errorstop mode，TeX will stop 
+# at each error，asking for user intervention
+LATEX_BATCHMODE        = NO
+
+# LaTeX隐藏指标：默认值：NO；先决条件：GENERATE_LATEX = YES；
+# YES：则Doxygen将不会在输出中包含索引章节(如文件索引、复合索引等)
+
+# not include index chapter，如File Index，Compound Index，etc.；
+LATEX_HIDE_INDICES     = NO
+
+# LaTeX BIB样式：指定bibliography使用的样式，如plainnat或ieeetr；
+# https://en.wikipedia.org/wiki/BibTeX，参考\cite命令；
+
+# 默认值：plain；先决条件：GENERATE_LATEX = YES；
+LATEX_BIB_STYLE        = plain
+
+# LaTeX Emoji目录：指定读取Emoji图像的(相对或绝对)路径；
+# 默认值：留空；先决条件：GENERATE_LATEX = YES；
+
+# 若输入相对路径，则相对于LATEX_OUTPUT目录，若留空，则使用LATEX_OUTPUT目录；
+LATEX_EMOJI_DIRECTORY  =</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_rtf_output"><a class="anchor" href="#_rtf_output"></a>11. Rtf Output</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties">#-----------------------
+# RTF Output：不建议开启此章节
+#-----------------------
+
+# 生成RTF：值为YES时，Doxygen将生成RTF输出，默认值：NO；
+GENERATE_RTF           = NO
+
+# RTF输出目录：指定RTF文档的放置位置；
+# 默认值：rtf，先决条件：GENERATE_RTF = YES；
+
+# 若输入相对路径，则OUTPUT_DIRECTORY的值放置在其前面，
+# 即：OUTPUT_DIRECTORY / RTF_OUTPUT
+RTF_OUTPUT             = rtf
+
+# Rtf紧凑：默认值：NO，先决条件：GENERATE_RTF = YES；
+
+# YES：Doxygen将生成更紧凑(compact)的RTF文档；
+
+# 这可能对小型项目有用，且通常有助于节省一些树(tree)；
+COMPACT_RTF            = NO
+
+# RTF超链接：YES：则生成的RTF将包含超链接字段；
+# 默认值：NO，先决条件：GENERATE_RTF = YES；
+
+# RTF文件将包含链接(类Html输出)而不是页面引用，page reference，
+# 这使输出适合使用Word或支持这些字段的其他Word兼容阅读器在线浏览；
+RTF_HYPERLINKS         = NO
+
+# RTF样式文件：从文件加载样式表定义，load stylesheet definition from file；
+# 语法类Doxygen的配置文件，即一系列赋值，只需提供替换，缺失的定义将设置为其默认值；
+
+# 请参考"Doxygen Usage"章节
+# 默认值：留空，先决条件：GENERATE_RTF = YES；
+RTF_STYLESHEET_FILE    =
+
+# RTF扩展文件：设置生成RTF文档时使用的可选(optional)变量；
+# 默认值：留空，先决条件：GENERATE_RTF = YES；
+
+# 语法与Doxygen的配置文件类似，
+# 可用doxygen -e rtf extensionFile生成template extensions file；
+RTF_EXTENSIONS_FILE    =
+
+# RTF额外文件：默认值：留空，先决条件：GENERATE_RTF = YES；
+
+# 指定应复制到RTF_OUTPUT输出目录的一或多个extra image或其他源文件；
+
+# 注：文件将按原样复制(copy as-is)；没有可用的命令command或标记marker；
+RTF_EXTRA_FILES        =</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_man_page_output"><a class="anchor" href="#_man_page_output"></a>12. Man Page Output</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties">#-----------------------------
+# Man Page Output：建议可选开启此章节
+#-----------------------------
+
+# 手册页：默认值NO；
+
+# YES：Doxygen将为class和file生成手册页(man page)
+GENERATE_MAN           = NO
+
+# 手册页输出目录：指定手册页的存放位置，将在MAN_OUTPUT指定的目录中创建目录man3；
+# 默认值：man，先决条件：GENERATE_MAN = YES；
+
+# 若输入相对路径，则OUTPUT_DIRECTORY的值放置在其前面，
+# 即：OUTPUT_DIRECTORY / MAN_OUTPUT
+MAN_OUTPUT             = man
+
+# 手册页扩展：确定添加到生成的手册页的扩展；
+# determine extension add to generate man page；
+# 默认值：(.3)，先决条件：GENERATE_MAN = YES；
+
+# 若manual章节不以数字开头，则会在前面(prepended)添加数字3，
+# MAN_EXTENSION开头的点(.)是可选的；
+MAN_EXTENSION          = .3
+
+# 手册页子目录：确定在MAN_OUTPUT中创建的放置手册页的目录的名称，
+# 若默认为man，则后跟MAN_EXTENSION，但initial . removed；
+
+# 默认值：留空，先决条件：GENERATE_MAN = YES；
+MAN_SUBDIR             =
+
+# 手册页链接：默认值：NO，先决条件：GENERATE_MAN = YES；
+
+# 若MAN_LINKS为YES，且Doxygen生成man输出，则它将为real man page
+# 手册页中文档化的每个entity生成一个additional的man文件；
+
+# additional file only source real man page，but without 
+# them man command would unable to find correct page；
+
+# 这些附加文件仅提供(only source，唯一来源)真正的手册页
+# 若没它们，man命令将无法找到正确的页面；
+MAN_LINKS              = NO</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_xml_output"><a class="anchor" href="#_xml_output"></a>13. Xml Output</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties">#-----------------------
+# Xml Output：不建议开启此章节
+#-----------------------
+
+# 生成Xml：默认值：NO；
+
+# YES：Doxygen将生成Xml文件，该文件可捕获包括所有文档在内的代码结构；
+GENERATE_XML           = NO
+
+# Xml输出目录：指定Xml页面的放置位置；
+# 默认值：xml；先决条件：GENERATE_XML = YES；
+
+# 若输入相对路径，则OUTPUT_DIRECTORY的值放置在其前面，
+# 即：OUTPUT_DIRECTORY / XML_OUTPUT
+XML_OUTPUT             = xml
+
+# Xml程序列表：默认值：YES；先决条件：GENERATE_XML = YES；
+
+# YES：Doxygen将把程序列表(包括语法高亮和交叉引用信息)dump到xml输出；
+# 注：启用此功能将显著(significantly)增加Xml输出的大小；
+
+# including syntax highlighting and cross-referencing info
+XML_PROGRAMLISTING     = YES
+
+# 文件范围命名空间成员，默认值：NO；先决条件：GENERATE_XML = YES；
+
+# YES：Doxygen也将在文件范围内包含命名空间成员，与Html输出匹配；
+XML_NS_MEMB_FILE_SCOPE = NO</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_docbook_output"><a class="anchor" href="#_docbook_output"></a>14. DocBook Output</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties">#---------------------------
+# DocBook Output：不建议开启此章节
+#---------------------------
+
+# 生成DocBook：默认值：NO；
+
+# YES：Doxygen将生成可用于生成Pdf的DocBook文件
+GENERATE_DOCBOOK       = NO
+
+# DocBook输出目录，指定Docbook页面的放置位置；
+# 默认值：docbook；先决条件：GENERATE_DOCBOOK = YES
+
+# 若输入相对路径，则OUTPUT_DIRECTORY的值放置在其前面，
+# 即：OUTPUT_DIRECTORY / DOCBOOK_OUTPUT
+DOCBOOK_OUTPUT         = docbook</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_autogen_definition_output"><a class="anchor" href="#_autogen_definition_output"></a>15. AutoGen Definition Output</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties">#--------------------------------------
+# AutoGen Definition Output：不建议开启此章节
+#--------------------------------------
+
+# 生成自动生成定义输出：默认值：NO；
+# https://autogen.sourceforge.net
+
+# YES：Doxygen将生成AutoGen Definition文件；
+# 该文件捕获代码结构(包括所有文档)，注：此功能目前仍处于试验阶段且不完整；
+GENERATE_AUTOGEN_DEF   = NO</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_sqlite3_output"><a class="anchor" href="#_sqlite3_output"></a>16. Sqlite3 Output</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties">#---------------------------
+# Sqlite3 Output：不建议开启此章节
+#---------------------------
+
+# 生成Sqlite3，默认值：NO；
+
+# YES：Doxygen将生成Sqlite3数据库，其中Doxygen找到的符号存储在表中；
+# Sqlite3 db with symbol found by Doxygen stor in table
+GENERATE_SQLITE3       = NO
+
+# Sqlite3输出目录，指定Sqlite3数据库的存放位置；
+# 默认值：sqlite3；先决条件：GENERATE_SQLITE3 = YES；
+
+# 若输入相对路径，则OUTPUT_DIRECTORY的值放置在其前面，
+# 即：OUTPUT_DIRECTORY / SQLITE3_OUTPUT
+SQLITE3_OUTPUT         = sqlite3
+
+# 重建数据库：默认值：YES，先决条件：GENERATE_SQLITE3 = YES；
+
+# YES：则每次运行Doxygen时都会重新创建现有的doxygen_sqlite3.db数据库文件；
+# NO：则若已找到数据库文件，Doxygen将发出警告，且不会对其进行修改；
+SQLITE3_RECREATE_DB    = YES</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_perl_module_output"><a class="anchor" href="#_perl_module_output"></a>17. Perl Module Output</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties">#-------------------------------
+# Perl Module Output：不建议开启此章节
+#-------------------------------
+
+# 生成Perl模块：默认值：NO；注：此功能目前仍处于试验阶段且不完整；
+# YES：Doxygen将生成Perl模块文件，此文件包含代码结构(包括所有文档)；
+GENERATE_PERLMOD       = NO
+
+# Perl模块LaTeX：默认值NO，先决条件：GENERATE_PERLMOD = YES；
+
+# YES：Doxygen将生成必要的Makefile rule、Perl script和LaTeX code，
+# 以便能从Perl模块输出生成Pdf和DVI(DeVice Independant，独立于设备)输出；
+PERLMOD_LATEX          = NO
+
+# Perl模块美观的输出：默认值：YES；先决条件：GENERATE_PERLMOD = YES；
+
+# YES：Perl模块输出将被友好的(nicely)格式化，以便Human Readable；
+# NO：Perl模块输出的大小将小得多，Perl将同样对其进行解析；
+PERLMOD_PRETTY         = YES
+
+# Perl模块中Make变量名的前缀，默认值：留空；先决条件：GENERATE_PERLMOD = YES；
+
+# 生成的doxyrules.make文件中的make变量名称以PERLMOD_MAKEVAR_PREFIX中包含的
+# 字符串作为前缀，这样同一Makefile中包含不同doxyrules.make文件，则不会覆盖彼此的变量；
+PERLMOD_MAKEVAR_PREFIX =</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_preprocessor"><a class="anchor" href="#_preprocessor"></a>18. Preprocessor</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties">#-----------------------------------------
+# Preprocessor：参考：DoxygenTerminology.adoc
+#-----------------------------------------
+
+# 启用预处理：默认值：YES；
+
+# YES：Doxygen将评估(evaluate)在源文件和包含文件中找到的所有C预处理器指令；
+# evaluate C-preprocessor directive found in source and include file
+ENABLE_PREPROCESSING   = YES
+
+# 宏展开：默认值：NO，先决条件：ENABLE_PREPROCESSING = YES；
+
+# YES：Doxygen将expand源代码中的所有macro name；
+# NO：则仅执行条件编译(only conditional compilation)；
+
+# 将EXPAND_ONLY_PREDEF设置为YES，则以受控方式进行宏扩展；
+# macro expansion done in control way
+MACRO_EXPANSION        = NO
+
+# 展开仅预定义：默认值：NO，先决条件：ENABLE_PREPROCESSING = YES；
+
+# 若EXPAND_ONLY_PREDEF和MACRO_EXPANSION都为YES，则宏扩展仅限于
+# (limit to)用PREDEFINED和EXPAND_AS_DEFINED标签指定的宏；
+EXPAND_ONLY_PREDEF     = NO
+
+# 默认值：YES，先决条件：ENABLE_PREPROCESSING = YES；
+
+# YES：则在发现#include时将搜索INCLUDE_PATH中的包含文件；
+# include file in INCLUDE_PATH will search if #include found
+SEARCH_INCLUDES        = YES
+
+# 包含路径：指定一或多个包含文件的目录，这些文件不是输入文件
+# (input file)，但应由预处理器处理(preprocessor process)，
+
+# 默认值：留空，先决条件：SEARCH_INCLUDES = YES；
+# 注：INCLUDE_PATH不是递归(RECURSIVE)的，故RECURSIVE的设置在此no effect；
+INCLUDE_PATH           =
+
+# 包含文件模式：指定一或多个通配符模式(如*.h和*.hpp)来过滤掉目录中的头文件；
+# 默认值：留空，先决条件：ENABLE_PREPROCESSING = YES；
+
+# wildcard pattern(如*.h和*.hpp) to filter out header-file；
+# 若留空，则将使用FILE_PATTERNS指定的模式；
+INCLUDE_FILE_PATTERNS  =
+
+# 预定义：指定在启动预处理器前定义的一或多个宏名称(类 gcc的-D选项)；
+# 默认值：留空，先决条件：ENABLE_PREPROCESSING = YES；
+
+# tag parameter是macro lsit，格式为：name或name=definition(无空格)；
+
+# 若省略(omit)定义和"="，则假定(assume)为"=1"，为防止宏定义通过 
+# "#undef" 未定义或递归expand，请使用":="运算符，而不是"="运算符；
+PREDEFINED             =
+
+# 按定义展开：默认值：留空，先决条件：ENABLE_PREPROCESSING = YES；
+
+# 若MACRO_EXPANSION和EXPAND_ONLY_PREDEF都为YES，
+# 则EXPAND_AS_DEFINED指定应expand的macro name list；
+
+# 将使用在源代码中找到的宏定义，若想使用不同的宏定义
+# 来覆盖在源代码中找到的定义，请使用PREDEFINED标签；
+EXPAND_AS_DEFINED      =
+
+# 跳过函数和宏：默认值：YES，先决条件：ENABLE_PREPROCESSING = YES；
+
+# YES：则Doxygen的预处理器将删除所有对类函数宏的引用，
+# 这些宏单独占一行、名称全部大写且不以分号结尾；
+
+# preprocessor will remove all reference to 
+# function-like macro that are alone on line；
+
+# have all uppercase name，and don't end with semicolon；
+
+# 此类函数宏通常用于样板代码(boiler-plate code)，
+# 若不删除，会使parser感到困惑(confuse)；
+SKIP_FUNCTION_MACROS   = YES</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_external_reference"><a class="anchor" href="#_external_reference"></a>19. External Reference</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties">#-------------------
+# External Reference
+#-------------------
+
+# 标签文件列表：指定一或多个tag，默认值：留空；
+# 对每个tag文件，应添加外部(external)文档的位置；
+
+# tag file without location：
+# TAGFILES = file1 file2 ...
+
+# tag file with location：
+# TAGFILES = file1=loc1 "file2 = loc2" ...
+
+# loc1和loc2可为相对或绝对路径或Url；
+# 参考："Linking to External Documentation"章节；
+
+# 注：每个tag文件必须具有唯一的名称(名称不包括路径)；
+# unique name where name doesn't include path；
+
+# 若tag文件不在运行Doxygen的目录中，还必须在此处指定tag文件的路径；
+TAGFILES               =
+
+# 生成标签文件：当在GENERATE_TAGFILE之后指定文件名时，
+# Doxygen将根据其读取的输入文件创建一个tag文件，
+# 参考"Linking to External Documentation"章节；
+GENERATE_TAGFILE       =
+
+# 所有外部：默认值NO；NO即：则只列出继承的外部类：
+# only list inherited external class；
+
+# YES：则类和命名空间索引中会列出所有外部类和命名空间；
+# external cls and ns list in cls and ns index
+ALLEXTERNALS           = NO
+
+# 外部组：默认值：YES；YES即：所有外部组都将列在主题索引中，
+# all external group list in topic index；
+
+# NO：仅列出当前项目的组，only list current project group；
+EXTERNAL_GROUPS        = YES
+
+# 外部页：默认值：YES；YES即：所有外部页面都将列在相关页面索引中；
+# all external page list in relate page index；
+
+# NO：则仅列出当前项目的页面，only list current project page；
+EXTERNAL_PAGES         = YES</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_diagram_generator_tool"><a class="anchor" href="#_diagram_generator_tool"></a>20. Diagram Generator Tool</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties">#-----------------------
+# Diagram Generator Tool
+#-----------------------
+
+# 隐藏未文档化关系：默认值：YES；
+# YES：若目标文档化或不是类，继承和协作图将隐藏继承和使用关系；
+
+# inheritance and collaboration graph will hide inheritance
+# and usage relation if target undocument or not a class；
+
+HIDE_UNDOC_RELATIONS   = YES
+
+# 是否有dot：默认值：NO；NO：则本章节的其它选项将无效；
+# YES：则Doxygen将假定(assume)dot工具可路径中使用；
+
+# https://www.graphviz.org
+# graph visualization toolkit from AT&amp;T and Lucent Bell Lab
+HAVE_DOT               = NO
+
+# dot线程数量：指定允许Doxygen并行运行的dot调用数(invocation)；
+# 值范围：0 ~ 32；默认值：0；先决条件：HAVE_DOT = YES；
+
+# 0：Doxygen将根据系统中可用的处理器数量来确定此数量；
+# 大于0：以控制CPU负载和处理速度之间的平衡；
+DOT_NUM_THREADS        = 0
+
+# dot通用属性：是subgraph的node，edge，label的通用属性；
+# 默认值：fontname=Helvetica,fontsize=10；先决条件：HAVE_DOT = YES；
+
+# 可指定fontname，fontcolor，fontsize属性，以使生成文件字体改变；
+# https://graphviz.org/doc/info/attrs.html
+
+# 若需确保dot能找到字体，可通过将其放置在标准位置或设置DOTFONTPATH环境变量，
+# 或将DOT_FONTPATH设置未包含字体的目录来完成，graphviz的默认字体大小为14；
+DOT_COMMON_ATTR        = "fontname=Helvetica,fontsize=10"
+
+# dot边缘属性：DOT_EDGE_ATTR与DOT_COMMON_ATTR连接(concatenate)；
+# 默认值：labelfontname=Helvetica,labelfontsize=10；
+
+# 先决条件：HAVE_DOT = YES；为获得优雅风格(elegant style)，
+# 可添加：arrowhead=open、arrowtail=open、arrowsize=0.5；
+
+# https://graphviz.org/doc/info/arrows.html
+DOT_EDGE_ATTR          = "labelfontname=Helvetica,labelfontsize=10"
+
+# dot节点属性：DOT_NODE_ATTR与DOT_COMMON_ATTR连接(concatenate)；
+# 默认值：shape=box,height=0.2,width=0.4；先决条件：HAVE_DOT = YES；
+
+# 对没节点边框的视图(view without box around node)，
+# 请设置：'shape=plain' 或 'shape=plaintext'
+
+# https://www.graphviz.org/doc/info/shapes.html
+DOT_NODE_ATTR          = "shape=box,height=0.2,width=0.4"
+
+# dot字体路径：可在DOT_COMMON_ATTR和其它dot属性中设置，
+# dot可找到用fontname指定的字体的路径；
+
+# 默认值：留空；先决条件：HAVE_DOT = YES；
+DOT_FONTPATH           =
+
+# 类图：可选值：NO，YES(默认)，TEXT，GRAPH，BUILTIN；
+# 先决条件：HAVE_DOT = YES；
+
+# A：若值为YES或GRAPH或BUILTIN，
+# 则Doxygen将为每个文档化的类生成graph，显示直接和间接继承关系；
+
+# B：若值为：YES或GRAPH，且同时启用HAVE_DOT，则用dot来绘制图形；
+# C：若值为YES，且禁用HAVE_DOT，或值为BUILTIN，则用内置生成器；
+
+# D：若值为TEXT，则直接和间接继承关系将显示为text/link；
+
+# E：命令\inheritancegraph：启用继承图或为特定类的继承图选择不同的表示形式；
+# F：命令\hideinheritancegraph：禁用继承图；
+CLASS_GRAPH            = YES
+
+# 协作图：默认值：YES；先决条件：HAVE_DOT = YES；
+# 命令\collaborationgraph：启用协作图；
+# 命令\hidecollaborationgraph：禁用协作图；
+
+# YES：则Doxygen将为每个文档化的类生成graph，显示该类与其它文档化的类之间的直接和
+# 间接实现依赖关系(inheritance，containment，class reference variable)；
+COLLABORATION_GRAPH    = YES
+
+# 组图：默认值：YES；先决条件：HAVE_DOT = YES；
+# 命令\groupgraph：启用group dependency graph；
+# 命令\hidegroupgraph：禁用directory graph；
+
+# YES：则Doxygen将生成group graph，
+# show direct groups dependency；
+GROUP_GRAPHS           = YES
+
+# 默认值：NO，先决条件：HAVE_DOT = YES；
+# YES：Doxygen将生成类OMG UML风格的继承和协作图；
+UML_LOOK               = NO
+
+# Uml字段数量限制：值范围：0 ~ 100；
+# 0：无限制；默认值：10，先决条件：UML_LOOK = YES；
+
+# 若启用UML_LOOK，则字段和方法将显示在类节点内，
+# 若有许多字段或方法以及许多节点，则graph可能会变得太大而无法使用；
+
+# UML_LIMIT_NUM_FIELDS阈值限制每种类型的项目数量，以使大小更易于管理；
+
+# 注：在强制执行限制前，阈值可能超过50%，故当阈值设为10时，
+# 最多可能会出现15个字段，但若数量超过15，则显示的字段总数限制为10；
+
+UML_LIMIT_NUM_FIELDS   = 10
+
+# dot Uml详情：可选值：NO(默认)，YES，NONE；先决条件：UML_LOOK = YES；
+
+# NO：Doxygen将在Uml图中显示没有类型和参数的属性和方法；
+# YES：Doxygen将在Uml图中为属性和方法添加类型和参数；
+
+# NONE：Doxygen将不会在Uml图中生成带有类成员信息的字段，
+# 类图(class diagram)看起来类似于默认类图，但使用Uml notation；
+DOT_UML_DETAILS        = NO
+
+# 设置单行上显示的最大字符数(character)，若实际行长明显超出此阈值，
+# 则会将其换行到多行，应用些启发式(heuristic)方法，以避免难看的换行符；
+
+# 值范围：0 ~ 1000，默认值：17，先决条件：HAVE_DOT = YES；
+DOT_WRAP_THRESHOLD     = 17
+
+# 模板关系：默认值：NO；先决条件：HAVE_DOT = YES；
+# YES：则继承和协作图将显示模板与其实例之间的关系；
+TEMPLATE_RELATIONS     = NO
+
+# 包含图：默认值：YES；先决条件：HAVE_DOT = YES；
+# 命令\includegraph：启用包含图(include graph)；
+# 命令\hideincludegraph：禁用包含图(include graph)；
+
+# 若INCLUDE_GRAPH、ENABLE_PREPROCESSING和SEARCH_INCLUDES均为YES，
+# 则Doxygen将为每个文档文件生成graph，显示该文件与其他文档文件的直接和间接包含依赖关系；
+INCLUDE_GRAPH          = YES
+
+# 通过图包含：默认值：YES；先决条件：HAVE_DOT = YES；
+# 命令\includedbygraph：启用包含图表(included by graph)；
+# 命令\hideincludedbygraph：禁用包含图表(included by graph)；
+
+# 若INCLUDED_BY_GRAPH、ENABLE_PREPROCESSING和SEARCH_INCLUDES均为YES，
+# 则Doxygen将为每个文档文件生成graph，显示该文件与其他文档文件的直接和间接包含依赖关系；
+INCLUDED_BY_GRAPH      = YES
+
+# 调用图：默认值：NO；先决条件：HAVE_DOT = YES；
+# YES：则Doxygen将为每个全局函数或类方法生成调用依赖关系图；
+# call dependency graph，global fn或cls method；
+
+# 注：启用此选项将显著增加运行时间，故在大多场景，最好仅用\callgraph命令为
+# 选定的函数启用调用图，命令\hidecallgraph 禁用调用图(call graph)；
+CALL_GRAPH             = NO
+
+# 调用者图：默认值：NO；先决条件：HAVE_DOT = YES；
+# YES：则Doxygen将为每个全局函数或类方法生成调用者依赖关系图；
+# caller dependency graph，global fn或cls method；
+
+# 注：启用此选项将显著增加运行时间，故在大多场景，最好仅用\callergraph命令为
+# 选定函数启用调用者图，命令\hidecallergraph禁用调用者图(caller graph)；
+CALLER_GRAPH           = NO
+
+# 图层次结构：默认值：YES；先决条件：HAVE_DOT = YES；
+
+# YES：则Doxygen将以图形graphical方式呈现所有类的
+# 层次结构(hierarchy)，而非文本textual层次结构；
+GRAPHICAL_HIERARCHY    = YES
+
+# 默认值：YES；先决条件：HAVE_DOT = YES；
+# 命令\directorygraph：启用目录图(directory graph)；
+# 命令\hidedirectorygraph：禁用目录图；
+
+# YES：则Doxygen将以图形方式显示目录对其他目录的依赖关系，
+# 依赖关系由目录中文件之间的#include关系决定；
+
+DIRECTORY_GRAPH        = YES
+
+# 目录图最大深度：通过dot来限制目录依赖关系图中生成的子目录的最大层数；
+# 值范围：1 ~ 25，默认值：1；先决条件：DIRECTORY_GRAPH = YES；
+
+# limit maximum num of level of child directory 
+# generate in directory dependency graph by dot；
+DIR_GRAPH_MAX_DEPTH    = 1
+
+# dot图像格式：设置dot生成的图像的图像格式；默认值：png；先决条件：HAVE_DOT = YES；
+
+# 可选值： png，jpg，gif，svg，png:gd，png:gd:gd，png:cairo，png:cairo:gd，
+# png:cairo:cairo，png:cairo:gdiplus，png:gdiplus，png:gdiplus:gdiplus；
+
+# 注：若选svg，需将HTML_FILE_EXTENSION设为xhtml，以兼容IE9+；
+# 其它浏览器无此要求，https://www.graphviz.org；
+DOT_IMAGE_FORMAT       = png
+
+# 默认值：NO；先决条件：HAVE_DOT = YES；注：若选svg，
+# 需将HTML_FILE_EXTENSION设为xhtml，以兼容IE9+；
+
+# 若DOT_IMAGE_FORMAT为svg，则INTERACTIVE_SVG可设为YES；
+# 以启用允许缩放(zooming)和平移(panning)的交互式svg图像生成；
+INTERACTIVE_SVG        = NO
+
+# dot路径：指定可找到dot工具的路径，先决条件：HAVE_DOT = YES；
+# 默认值：留空；若留空：则假定(assume)可在路径中找到dot工具；
+DOT_PATH               =
+
+# dot文件路径：指定一或多个包含文档中包含的dot文件的目录；
+# 参考\dotfile命令；默认值：留空；先决条件：HAVE_DOT = YES；
+DOTFILE_DIRS           =
+
+# dia路径：可在Doxygen文档中包含使用dia制作的图表，然后Doxygen将运行
+# dia来生成图表并将其插入文档中，DIA_PATH允许指定dia二进制文件所在的目录；
+
+# include diagram made with dia in Doxygen doc；
+# 默认值：留空，留空：则假定(assume)在默认搜索路径中找到dia；
+DIA_PATH               =
+
+# dia文件路径：默认值：留空；
+# 指定一或多个包含文档中包含的dia文件的目录，参考\diafile命令；
+DIAFILE_DIRS           =
+
+# PlantUml Jar路径：使用PlantUml时，应使用PLANTUML_JAR_PATH标签，
+# 指定Java可找到plantuml.jar文件的路径或要用的jar文件的文件名；
+
+# 默认值：留空；若留空，则假定在预处理步骤中未使用或调用PlantUml；
+# 此场景下，Doxygen遇到\startuml命令时会生成警告，且不会为图表生成输出；
+PLANTUML_JAR_PATH      =
+
+# PlantUml配置文件：指定PlantUml的配置文件；默认值：留空；
+PLANTUML_CFG_FILE      =
+
+# PlantUml包含路径：使用PlantUml时，会在指定的路径中搜索由
+# PlantUml块(block)中的 !include 语句指定的文件；默认值：留空；
+PLANTUML_INCLUDE_PATH  =
+
+# dot图最大节点数：设置图中显示的最大节点数；
+# 值范围：0 ~ 10000，默认值：50，先决条件：HAVE_DOT = YES；
+
+# 若图中的节点数大于此值，Doxygen将截断图(truncate graph)；
+# 通过将节点表示为红色框来可视化，
+
+# 注：若图中根节点的直接子节点数已经大于DOT_GRAPH_MAX_NODES，
+# 则根本不会显示该图，另MAX_DOT_GRAPH_DEPTH可进一步限制图的大小；
+DOT_GRAPH_MAX_NODES    = 50
+
+# 最大dot图深度：设置dot生成的图的最大深度；
+# 默认值：0，值范围：0 ~ 1000，先决条件：HAVE_DOT = YES；
+
+# 深度为3：仅显示通过最多3条边(edge)的路径从根节点可到达的节点；
+# 距离根节点较远的节点将被忽略(omit)，设为1或2可大幅减少大型代码库所需的计算时间；
+
+# 另：DOT_GRAPH_MAX_NODES可进一步限制图的大小，深度0：没深度限制；
+MAX_DOT_GRAPH_DEPTH    = 0
+
+# dot多目标：默认值：NO，先决条件：HAVE_DOT = YES；
+
+# YES：以允许dot在一次运行中生成多个输出文件
+# (即命令行上的多个 -o 和 -T 选项)，这会使dot运行得更快；
+DOT_MULTI_TARGETS      = NO
+
+# 生成图例：默认值：YES，先决条件：HAVE_DOT = YES；
+# 注：此标签要求未设置UML_LOOK，即使用Doxygen内部继承和协作图的图形表示；
+
+# YES：Doxygen将生成图例页面(legend page)，
+# 解释dot生成的图形中各种框(box)和箭头(arrow)的含义；
+GENERATE_LEGEND        = YES
+
+# dot清理：默认值：YES；注：此设置适于dot文件，还适于msc temporary file；
+# YES：Doxygen将删除用于生成各种图形的中间文件(intermediate file)；
+DOT_CLEANUP            = YES
+
+# msc生成工具：\msc命令在Doxygen注释中定义msg sequence chart；
+# 默认值：留空；留空即Doxygen将使用内置版本的mscgen工具来生成图表；
+
+# 或MSCGEN_TOOL也可指定外部工具的名称，如：指定prog作为值，
+# prog -T &lt;outfile_format&gt; -o &lt;outputfile&gt; &lt;inputfile&gt;
+
+# 外部工具应支持输出文件格式：png，eps，svg，ismap
+MSCGEN_TOOL            =
+
+# msc文件目录：指定一或多个包含文档中包含的msc文件的目录；
+# 默认值：留空，参考\mscfile命令；
+MSCFILE_DIRS           =</code></pre>
+</div>
+</div>
+</div>
+</div>
+</article>
+	</div>
+</main>
+</div>
+		<footer class="footer">
+	
+	
+	
+	<div class="footer-thanks">
+		Authored in AsciiDoc
+		<br /><br />
+		Produced by Antora and Asciidoctor
+  	</div>
+  
+	<div class="footer-legal" style="text-align:center">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br /><br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		Copyright © 2024 Elf
+		<br /><br />
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+	
+</footer><script id="site-script" src="../../../../_/js/site.js" 
+	data-ui-root-path="../../../../_"></script>
+
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
+</html>

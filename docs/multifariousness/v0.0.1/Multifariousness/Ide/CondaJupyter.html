@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> :: AsciiDoc</title>
+    <meta name="generator" content="Antora 3.1.7">
+
+<link rel="stylesheet" href="../../../../_/css/site.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/asciidoc.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
+
+
+    <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+  			
+  			<a class="navbar-item logo" target="_blank" href="">
+				<img src="../../../../_/img/yin-yang-symbol.svg" width="100%" height="50">
+			</a>
+  			
+	            <div id="main" style="place-content: center;">
+	                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+		            </div>
+		        </section>
+    	</div>
+    	
+    	<div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Culture</div>
+          			<div class="navbar-dropdown is-right">
+            			
+			            <div class="navbar-item">Traditional Culture</div>
+			            
+			            <a class="navbar-item" target="_blank" href="../../../../culture/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Culture <small>传统文化</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Eco</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <a class="navbar-item" target="_blank" href="../../../../multifariousness/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Multifariousness <small>五花八门</small></span>
+			            </a>
+
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../ai/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Artificial Intelligence<small>人工智能</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../msg/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Messaging - Kafka <small>Kafka</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Experiment</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <div class="navbar-item">Quantum Computing</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>QC <small>量子计算...</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <div class="navbar-item">Harmony</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>CangJie <small>预览版内测...</small></span>
+			            </a>
+        			</div>
+    			</div>
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container" data-component="multifariousness" data-version="v0.0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">Multifariousness</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Security</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Security/KeycloakInstallation.html">Keycloak Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Security/KeycloakCase.html">Keycloak Case</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Antora</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AsciidoctorInstallation.html">Asciidoctor Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AsciidoctorConfigurer.html">Asciidoctor Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraInstallation.html">Antora Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraConfigurer.html">Antora Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraHighlight.html">Antora Highlight</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/AntoraUI.html">Antora UI</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/Markdown.html">Markdown</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Antora/NodeInstallation.html">Node Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Doxygen</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxygenInstallation.html">Doxygen Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxygenEntry.html">Doxygen Entry</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DocumentingCode.html">Documenting Code</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxygenUsage.html">Doxygen Usage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxywizardUsage.html">Doxywizard Usage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/DoxyfileProperty.html">Doxyfile Property</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/CustomCommand.html">Custom Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/SpecialCommand.html">Special Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/HtmlCommand.html">Html Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/XmlCommand.html">Xml Command</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Doxygen/EmojiSupport.html">Emoji Support</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Lang</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustPrerequisite.html">Rust Prerequisite</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustGun.html">Rust Gun</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustConfigurer.html">Rust Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustEclipse.html">Rust Eclipse</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/RustVSCode.html">Rust VSCode</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/GoInstallation.html">Go Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/GroovyInstallation.html">Groovy Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/JavaFxInstallation.html">JavaFx Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/LuaInstallation.html">Lua Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Lang/PythonInstallation.html">Python Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Ide</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="EclipseCustomizer.html">EclipseCustomizer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="EclipseConfigurer.html">EclipseConfigurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="FlattenLifecycle.html">FlattenLifecycle</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="JakartaSpecification.html">JakartaSpecification</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="CondaJupyter.html">CondaJupyter</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="IdeaConfigurer.html">IdeaConfigurer</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Ops</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/HyperVConfigurer.html">Hyper VConfigurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/UbuntuConfigurer.html">Ubuntu Configurer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/DockerFundamental.html">Docker Fundamental</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/K8SInstallation.html">K8S Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/K8SExtension.html">K8S Extension</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/NexusInstallation.html">Nexus Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/JenkinsInstallation.html">Jenkins Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/BatchProcess.html">Batch Process</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/OracleContainerRegistry.html">Oracle Container Registry</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Ops/WinConfigurer.html">Win Configurer</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Msg</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Msg/KafkaInstallation.html">Kafka Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Msg/KafkaEntryCase.html">Kafka Entry Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Msg/PulsarInstallation.html">Pulsar Installation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Store</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/PowerDesigner.html">Power Designer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/CassandraSetup.html">Cassandra Setup</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/CassandraBoot.html">Cassandra Boot</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/CassandraTesting.html">Cassandra Testing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/ElasticInstallation.html">Elastic Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/ElasticCase.html">Elastic Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/OpenSearchInstallation.html">Open Search Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/MySQLInstallation.html">MySQL Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/MySqlTuning.html">MySql Tuning</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/MongoInstallation.html">Mongo Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/MongoCase.html">Mongo Case</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/PostgresInstallation.html">Postgres Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/AeroSpikeInstallation.html">Aero Spike Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Store/TinkerpopCase.html">Tinkerpo pCase</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Multifariousness</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">Multifariousness</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+	<div class="toolbar" role="navigation">
+	<button class="nav-toggle"></button>
+	
+		<a href="../../index.html" 
+			class="home-link">
+		</a>
+
+	<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">Multifariousness</a></li>
+    <li>Ide</li>
+    <li><a href="CondaJupyter.html">CondaJupyter</a></li>
+  </ul>
+</nav>
+		</div>
+	
+	<div class="content">
+			<aside class="toc sidebar" 
+	data-title="Contents" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+			<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_install_python">1. Install Python</a></li>
+<li><a href="#_install_conda">2. Install Conda</a></li>
+<li><a href="#_optional_install_navigator">3. Optional Install Navigator</a></li>
+<li><a href="#_repository_notebook_jupyter">4. Repository notebook-jupyter</a></li>
+<li><a href="#_create_directory">5. Create Directory</a></li>
+<li><a href="#_setup_environment_variable">6. Setup Environment Variable</a></li>
+<li><a href="#_install_jupyter_lab">7. Install Jupyter Lab</a></li>
+<li><a href="#_setup_configuration">8. Setup Configuration</a></li>
+<li><a href="#_launch_jupyterlab">9. Launch JupyterLab</a></li>
+<li><a href="#_jupyterlab_verification">10. JupyterLab Verification</a></li>
+<li><a href="#_common_command">11. Common Command</a></li>
+<li><a href="#_jupyter_rust">12. Jupyter Rust</a></li>
+<li><a href="#_optional_command">13. Optional Command</a></li>
+<li><a href="#_rust_verification">14. Rust Verification</a></li>
+<li><a href="#_jupyter_starter">15. Jupyter Starter</a></li>
+<li><a href="#_jupyter_loader">16. Jupyter Loader</a></li>
+<li><a href="#_jupyter_execute_command">17. Jupyter Execute Command</a>
+<ul class="sectlevel2">
+<li><a href="#_via_magic_command">17.1. Via Magic Command</a></li>
+<li><a href="#_via_subprocess_module">17.2. Via Subprocess Module</a></li>
+</ul>
+</li>
+<li><a href="#_bash_kernel">18. Bash Kernel</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_install_python"><a class="anchor" href="#_install_python"></a>1. Install Python</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Python V3.12.3；D:/Install/Dev/Python；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">python -V &amp;&amp; pip -V
+
+Python 3.12.3
+pip 24.0</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_install_conda"><a class="anchor" href="#_install_conda"></a>2. Install Conda</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Conda是开源包和环境管理系统，此处选择Python3.12版本；</p>
+</li>
+<li>
+<p><a href="https://repo.anaconda.com/miniconda/" class="bare">https://repo.anaconda.com/miniconda/</a></p>
+</li>
+<li>
+<p>Miniconda3-py312_24.3.0-0-Windows-x86_64.exe</p>
+</li>
+<li>
+<p>PATH：D:\Install\Dev\Conda\condabin</p>
+</li>
+<li>
+<p><a href="https://conda.io/projects/conda/en/latest/user-guide/getting-started.html" target="_blank" rel="noopener">Conda Quick Start</a></p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">conda --version &amp;&amp; conda info --envs
+
+conda 	24.1.2
+base    D:\Install\Dev\Conda</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_optional_install_navigator"><a class="anchor" href="#_optional_install_navigator"></a>3. Optional Install Navigator</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://docs.anaconda.com/free/navigator/index.html" target="_blank" rel="noopener">Navigator Quick Start</a></p>
+</li>
+<li>
+<p><mark>若要使用Rust，请用Navigator方式安装JupyterLab</mark>；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">conda install anaconda-navigator -y</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>官方说安装Anaconda Distribution自带Navigator，实际无法正常运行；</p>
+</li>
+<li>
+<p>搜索栏搜索：Anaconda Navigator，然后固定到开始屏幕，以管理员方式运行；</p>
+</li>
+<li>
+<p>向下滚动滑轮，选择安装JupyterLab，点击Launch启动</p>
+</li>
+<li>
+<p>Anaconda Navigator界面字体过小，设置环境变量：QT_SCALE_FACTOR=1.5</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_repository_notebook_jupyter"><a class="anchor" href="#_repository_notebook_jupyter"></a>4. Repository notebook-jupyter</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>创建Gitee仓库：D:\Install\Dev\workspace\jupyter-module</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_create_directory"><a class="anchor" href="#_create_directory"></a>5. Create Directory</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash"># PowerShell执行
+
+@('data','config','search','runtime','notebook','workspace') |
+    ForEach-Object {
+        New-Item (Join-Path 'D:/Install/Dev/workspace/jupyter-module/' $_) -ItemType Directory -force
+    }</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_setup_environment_variable"><a class="anchor" href="#_setup_environment_variable"></a>6. Setup Environment Variable</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>案例如：<mark>setx /M PATH "%%JAVA_HOME%%\bin;%PATH%;"</mark></p>
+</li>
+<li>
+<p>setEnvironmentVariable.bat，<mark>管理员身份运行</mark>；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bat" data-lang="bat">@echo 请以管理员身份运行
+
+setx /M JUPYTER_BASE "D:/Install/Dev/workspace/jupyter-module"
+
+setx /M JUPYTER_DATA_DIR "%%JUPYTER_BASE%%\data"
+setx /M JUPYTER_CONFIG_DIR "%%JUPYTER_BASE%%\config"
+setx /M JUPYTER_CONFIG_PATH "%%JUPYTER_BASE%%\search"
+setx /M JUPYTER_RUNTIME_DIR "%%JUPYTER_BASE%%\runtime"
+setx /M JUPYTERLAB_WORKSPACES_DIR "%%JUPYTER_BASE%%\workspace"
+
+pause</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_install_jupyter_lab"><a class="anchor" href="#_install_jupyter_lab"></a>7. Install Jupyter Lab</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://jupyterlab.readthedocs.io/en/stable" class="bare">https://jupyterlab.readthedocs.io/en/stable</a></p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python">pip install jupyterlab jupyterlab-language-pack-zh-CN</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_setup_configuration"><a class="anchor" href="#_setup_configuration"></a>8. Setup Configuration</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">cd d:
+
+jupyter-lab --generate-config
+
+D:/Install/Dev/workspace/jupyter-module/config/jupyter_lab_config.py
+
+vim jupyter_lab_config.py
+
+c.ServerApp.root_dir = 'D:\\Install\\Dev\\workspace\\jupyter-module\\notebook'
+
+c.ServerApp.browser = 'D:/Install/System/Firefox/firefox.exe http://127.0.0.1:12345/lab --app=%s'
+
+c.ServerApp.ip = '*'
+
+c.ServerApp.port = 12345
+
+c.ServerApp.allow_origin = '*'
+
+# 其它配置或环境变量可酌情修改</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_launch_jupyterlab"><a class="anchor" href="#_launch_jupyterlab"></a>9. Launch JupyterLab</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">cd D:\Install\Dev\workspace\jupyter-module
+
+jupyter-lab
+
+复制token，如：8df31971fba74a75ed1b0679ed250cee5d292ebead751ec9</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_jupyterlab_verification"><a class="anchor" href="#_jupyterlab_verification"></a>10. JupyterLab Verification</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">http://127.0.0.1:12345/lab
+
+键入token并设置密码：elf
+
+停止JupyterLab后，重新启动JupyterLab
+
+http://127.0.0.1:12345/lab，输入密码elf登录后操作</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_common_command"><a class="anchor" href="#_common_command"></a>11. Common Command</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">$ jupyter -h
+$ jupyter --version
+$ jupyter --paths
+
+$ jupyter-lab -h
+$ jupyter labextension --help
+
+jupyter notebook --version &amp;&amp; jupyter lab --version</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_jupyter_rust"><a class="anchor" href="#_jupyter_rust"></a>12. Jupyter Rust</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Visual Studio Build Tool和Windows SDK</p>
+</li>
+<li>
+<p>安装时左边选择Desktop Dev with C++，<br>
+右边选择Windows SDK；并自定义路径；具体查看Graal安装章节；</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash"># rustc 1.75.0
+rustc --version
+
+
+conda --version
+
+cd D:\Install\Green\JupyterRust
+
+conda create -n jupyter-rust python=3 -y
+
+# conda deactivate
+conda activate jupyter-rust
+
+conda install -c anaconda cmake -y
+
+# cargo install evcxr_jupyter
+# 安装时需大点内存，否则Compiling和Building会失败
+cargo install --locked evcxr_jupyter --force
+
+evcxr_jupyter --install
+
+# 重新构建jupyter lab
+jupyter lab build
+
+# 查看Jupyter Available Kernel List
+juyter lab kernelspec list</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_optional_command"><a class="anchor" href="#_optional_command"></a>13. Optional Command</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash"># 因Conda Navigator可页面安装，故此选项可选
+# conda install -c conda-forge jupyterlab -y
+
+# Optional：注意版本适配，ValueError: The extension "jupyterlab-plotly"
+# doesn't yet JupyterLab support current version
+# https://github.com/jupyterlab/jupyterlab/issues/14590
+# jupyter labextension install jupyterlab-plotly
+
+# conda search nodejs
+# conda uninstall nodejs
+conda install -c conda-forge nodejs=18.18.2 -y</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_rust_verification"><a class="anchor" href="#_rust_verification"></a>14. Rust Verification</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>打开Conda Navigator，启动Jupyter Lab，新建Rust Notebook</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-rust" data-lang="rust">fn main(){
+	println!("Hello, world!");
+}
+main();</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_jupyter_starter"><a class="anchor" href="#_jupyter_starter"></a>15. Jupyter Starter</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">echo off
+cls
+chcp 65001
+
+set JUPYTER_URL=D:/Install/Dev/workspace/jupyter-module
+
+d:
+cd %JUPYTER_URL%
+
+jupyter-lab</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_jupyter_loader"><a class="anchor" href="#_jupyter_loader"></a>16. Jupyter Loader</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>将文件或文件夹复制到notebook目录</p>
+</li>
+<li>
+<p>D:\Install\Dev\workspace\jupyter-module\notebook</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_jupyter_execute_command"><a class="anchor" href="#_jupyter_execute_command"></a>17. Jupyter Execute Command</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Execute Terminal Command in Jupyter Notebook</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_via_magic_command"><a class="anchor" href="#_via_magic_command"></a>17.1. Via Magic Command</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">!ls
+
+!pip install numpy</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_via_subprocess_module"><a class="anchor" href="#_via_subprocess_module"></a>17.2. Via Subprocess Module</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python">import subprocess
+
+result = subprocess.run(['ls', '-l'], stdout=subprocess.PIPE)
+print(result.stdout.decode())</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python">import subprocess
+
+result = subprocess.run(['./script.sh'],input=b'yes\n',encoding='utf-8',stdout=subprocess.PIPE)
+print(result.stdout)</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_bash_kernel"><a class="anchor" href="#_bash_kernel"></a>18. Bash Kernel</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">!pip install bash_kernel
+
+!python -m bash_kernel.install
+
+ls *.pth
+
+ls -R DirectoryName</code></pre>
+</div>
+</div>
+</div>
+</div>
+</article>
+	</div>
+</main>
+</div>
+		<footer class="footer">
+	
+	
+	
+	<div class="footer-thanks">
+		Authored in AsciiDoc
+		<br /><br />
+		Produced by Antora and Asciidoctor
+  	</div>
+  
+	<div class="footer-legal" style="text-align:center">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br /><br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		Copyright © 2024 Elf
+		<br /><br />
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+	
+</footer><script id="site-script" src="../../../../_/js/site.js" 
+	data-ui-root-path="../../../../_"></script>
+
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
+</html>
