@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> :: AsciiDoc</title>
+    <meta name="generator" content="Antora 3.1.7">
+
+<link rel="stylesheet" href="../../../../_/css/site.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/asciidoc.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/extra.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/vs.css">
+
+<link rel="stylesheet" href="../../../../_/css/vendor/prism-1.29.0-coy.css">
+
+
+    <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
+  	</head>
+  	
+  	<body class="article">
+		<header class="header">
+	<nav class="navbar">
+    	<div class="navbar-brand">
+  			
+  			<a class="navbar-item logo" target="_blank" href="">
+				<img src="../../../../_/img/yin-yang-symbol.svg" width="100%" height="50">
+			</a>
+  			
+	            <div id="main" style="place-content: center;">
+	                    <input id="search-input" type="text" placeholder="Type for Retrieving...">
+		            </div>
+		        </section>
+    	</div>
+    	
+    	<div id="topbar-nav" class="navbar-menu">
+      		<div class="navbar-end">
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Culture</div>
+          			<div class="navbar-dropdown is-right">
+            			
+			            <div class="navbar-item">Traditional Culture</div>
+			            
+			            <a class="navbar-item" target="_blank" href="../../../../culture/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Culture <small>传统文化</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Eco</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <a class="navbar-item" target="_blank" href="../../../../multifariousness/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Multifariousness <small>五花八门</small></span>
+			            </a>
+
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../ai/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Artificial Intelligence<small>人工智能</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <a class="navbar-item" target="_blank" href="../../../../msg/v0.0.1/index.html">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>Messaging - Kafka <small>Kafka</small></span>
+			            </a>
+        			</div>
+    			</div>
+    			
+				<div class="navbar-item has-dropdown is-hoverable">
+          			<div class="navbar-link">Experiment</div>
+          			
+          			<div class="navbar-dropdown is-right">
+			            <div class="navbar-item">Quantum Computing</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>QC <small>量子计算...</small></span>
+			            </a>
+			            
+			            <hr class="navbar-divider">
+			            <div class="navbar-item">Harmony</div>
+			            
+			            <a class="navbar-item" href="#">
+			            	<span class="icon"><img src="../../../../_/img/octicons-16.svg"></span>
+	              			<span>CangJie <small>预览版内测...</small></span>
+			            </a>
+        			</div>
+    			</div>
+      		</div>
+    	</div>
+	</nav>
+</header>
+		<div class="body">
+	<div class="nav-container" data-component="ai" data-version="v0.0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../index.html">AI</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">PyTorch</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">PyTorch Fundamental</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Fundamental/PytorchInstallation.html">Pytorch Setup</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Fundamental/TensorIntro.html">Tensor Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Fundamental/InfoRetrieving.html">Info Retrieving</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Fundamental/Manipulating.html">Manipulating</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Fundamental/ShapeError.html">Shape Error</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Fundamental/Indexing.html">Indexing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Fundamental/TensorNumPy.html">Tensor NumPy</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Fundamental/Reproducibility.html">Reproducibility</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Fundamental/TensorOnGpu.html">Tensor On Gpu</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Fundamental/Exercise.html">Exercise</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Fundamental/ExtraCurriculum.html">Extra Curriculum</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">PyTorch Workflow</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Workflow/WorkflowIntro.html">Workflow Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Workflow/DataPreparingLoading.html">Data Preparing Loading</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Workflow/BuildModel.html">Build Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Workflow/TrainModel.html">Train Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Workflow/PredictionInference.html">Prediction Inference</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Workflow/SavingLoadingModel.html">Saving Loading Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Workflow/PuttingTogether.html">Putting Together</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Workflow/Exercise.html">Exercise</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Workflow/ExtraCurriculum.html">Extra Curriculum</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">NN Classification</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Classification/NNClassificationIntro.html">NNC Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Classification/GettingDataReady.html">Getting Data Ready</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Classification/BuildingModel.html">Building Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Classification/TrainModel.html">Train Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Classification/PredictionEvaluating.html">Prediction Evaluating</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Classification/ImprovingModel.html">Improving Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Classification/NonLinearity.html">Non Linearity</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Classification/ReplicatingNonLinearityAF.html">Replicating Non Linearity AF</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Classification/PuttingTogetherMultiClass.html">Putting Together MultiClass</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Classification/EvaluationMetric.html">Evaluation Metric</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Classification/Exercise.html">Exercise</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Computer Vision</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ComputerVision/ComputerVisionIntro.html">ComputerVisionIntro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ComputerVision/GettingDataset.html">Getting Dataset</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ComputerVision/PrepareDataLoader.html">Prepare DataLoader</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ComputerVision/BuildBaselineModel.html">Build Baseline Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ComputerVision/PredictionWithResult.html">Prediction With Result</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ComputerVision/SetupDeviceAgnosticCode.html">Setup Device Agnostic Code</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ComputerVision/BuildingNonLinearityModel.html">Building Non Linearity Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ComputerVision/BuildCnn.html">Build Cnn</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ComputerVision/CompareResultTrainingTime.html">Result and Training Time</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ComputerVision/EvaluateRandomPrediction.html">Evaluate Random Prediction</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ComputerVision/ConfusionMatrix.html">Confusion Matrix</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ComputerVision/SaveAndLoad.html">Save And Load</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ComputerVision/Exercise.html">Exercise</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ComputerVision/ExtraCurriculum.html">Extra Curriculum</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Custom Dataset</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../CustomDataset/CustomDatasetIntro.html">Custom Dataset Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../CustomDataset/DataPreparation.html">Data Preparation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../CustomDataset/TransformingData.html">Transforming Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../CustomDataset/OptionALoadingImgDataViaImageFolder.html">Loading ImageFolder</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../CustomDataset/OptionBLoadingImgDataWithCustomDataset.html">Loading Custom Dataset</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../CustomDataset/TransformFormDataAugmentation.html">Data Augmentation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../CustomDataset/ModelATinyVGGWithoutDataAugmentation.html">Without Augmentation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../CustomDataset/LossCurve.html">Loss Curve</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../CustomDataset/ModelBTinyVGGWithDataAugmentation.html">With Augmentation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../CustomDataset/CompareModelResult.html">Compare Model Result</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../CustomDataset/PredictionOnCustomImg.html">Prediction On Custom Img</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../CustomDataset/Takeaway.html">Takeaway</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../CustomDataset/Exercise.html">Exercise</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../CustomDataset/ExtraCurriculum.html">Extra Curriculum</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">PyTorch Modular</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Modular/ModularIntro.html">Modular Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Modular/CellVSScript.html">Cell VS Script</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Modular/GettingData.html">Getting Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Modular/MakingModel.html">Making Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Modular/CombiningTrainTest.html">Combining Train Test</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Modular/SavingModel.html">Saving Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Modular/TrainingEvaluatingSaving.html">Training Evaluating Saving</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Modular/Exercise.html">Exercise</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Modular/ExtraCurriculum.html">Extra Curriculum</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Transfer Learning</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../TransferLearning/TransferLearningIntro.html">Transfer Learning Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../TransferLearning/FindPretrainedModel.html">FindPretrainedModel</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../TransferLearning/TransferLearningCover.html">Transfer Learning Cover</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../TransferLearning/SettingUp.html">Setting Up</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../TransferLearning/GettingData.html">Getting Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../TransferLearning/CreateDatasetDataLoader.html">Create Dataset DataLoader</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../TransferLearning/GettingPretrainedModel.html">Getting Pretrained Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../TransferLearning/TrainingModel.html">Training Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../TransferLearning/EvaluatingModel.html">Evaluating Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../TransferLearning/MakingPrediction.html">Making Prediction</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../TransferLearning/Takeaway.html">Takeaway</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../TransferLearning/Exercise.html">Exercise</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../TransferLearning/ExtraCurriculum.html">Extra Curriculum</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Experiment Tracking</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ExperimentTracking/TrackExperimentIntro.html">Track Experiment Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ExperimentTracking/GettingSetup.html">Getting Setup</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ExperimentTracking/GettingData.html">Getting Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ExperimentTracking/CreateDatasetDataLoader.html">Create Dataset DataLoader</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ExperimentTracking/TrainModelTrackResult.html">Train Model Track Result</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ExperimentTracking/ViewModelResult.html">View Model Result</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ExperimentTracking/HelperFunction.html">Helper Function</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ExperimentTracking/SetupModellingExperiment.html">Setup Modelling Experiment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ExperimentTracking/ViewExperiment.html">View Experiment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ExperimentTracking/LoadModelPrediction.html">Load Model Prediction</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ExperimentTracking/Takeaway.html">Takeaway</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ExperimentTracking/Exercise.html">Exercise</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Paper Replicating</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../PaperReplicating/PaperReplicatingIntro.html">Paper Replicating Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../PaperReplicating/GettingSetup.html">Getting Setup</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../PaperReplicating/GettingData.html">Getting Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../PaperReplicating/CreateDatasetDataLoader.html">Create Dataset DataLoader</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../PaperReplicating/ReplicatingViTPaper.html">Replicating ViT Paper</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../PaperReplicating/EquationAScpp.html">Equation A Scpp</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../PaperReplicating/EquationBMsa.html">Equation B MSA</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../PaperReplicating/EquationCMlp.html">Equation C MLP</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../PaperReplicating/CreateTransformerEncoder.html">Create Transformer Encoder</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../PaperReplicating/PuttingViTTogether.html">Putting ViT Together</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../PaperReplicating/SettingViTModel.html">Setting ViT Model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../PaperReplicating/UsingPretrainedViT.html">Using Pretrained ViT</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../PaperReplicating/MakePrediction.html">Make Prediction</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../PaperReplicating/Takeaway.html">Takeaway</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../PaperReplicating/Exercise.html">Exercise</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../PaperReplicating/ExtraCurriculum.html">Extra Curriculum</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Model Deployment</span>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="ModelDeploymentIntro.html">Model Deployment Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="GettingSetup.html">Getting Setup</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="GettingData.html">Getting Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="DeploymentExperimentOutline.html">Deployment Experiment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="EffNetB2FeatureExtractor.html">EffNetB2 Feature Extractor</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ViTFeatureExtractor.html">ViT Feature Extractor</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="MakingPrediction.html">Making Prediction</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ComparingResultTimeSize.html">Comparing Result Time Size</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="CreatingGradio.html">Creating Gradio</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="TurningDemoDeployable.html">Turning Demo Deployable</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="DeployingHuggingFace.html">Deploying HuggingFace</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="CreatingFoodVision.html">Creating Food Vision</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="TurningModelDeployable.html">Turning Model Deployable</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Takeaway.html">Takeaway</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Exercise.html">Exercise</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ExtraCurriculum.html">Extra Curriculum</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Version 2X</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Version2X/Version2XIntro.html">Version 2X Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Version2X/GettingSetup.html">Getting Setup</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Version2X/GettingGPUInfo.html">Getting GPU Info</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Version2X/SetupExperiment.html">Setup Experiment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Version2X/TimeModelSingleRun.html">Time Model Single Run</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Version2X/TimeModelMultipleRun.html">Time Model Multiple Run</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Version2X/PossibleImprovementExtension.html">Improvement Extension</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Version2X/Resource.html">Resource</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Solitary</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Solitary/PyTorchExtraResource.html">PyTorch Extra Resource</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Solitary/PyTorchCheatSheet.html">PyTorch Cheat Sheet</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Solitary/PyTorchCommonError.html">PyTorch Common Error</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Spring AI</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Intro</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Intro/SpringAIConcept.html">Spring AI Concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Intro/SpringAIDependency.html">Spring AI Dependency</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Intro/SpringAIObservability.html">Spring AI Observability</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Intro/DockerCompose.html">Docker Compose</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Intro/Testcontainer.html">Testcontainer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Intro/CloudBinding.html">Cloud Binding</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Api Solitary</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/ApiIntro.html">Api Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/GenericModel.html">GenericModel</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/ChatClient.html">Chat Client</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/FunctionCalling.html">Function Calling</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/Multimodality.html">Multimodality</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/Prompt.html">Prompt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/StructureOutput.html">Structure Output</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/EtlPipeline.html">ETL Pipeline</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Solitary/EvaluationTesting.html">Evaluation Testing</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Chat Model</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Chat/ChatModelIntro.html">Chat Model Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Chat/HuggingFace.html">Hugging Face</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Chat/MiniMaxChat.html">MiniMax Chat</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Chat/MiniMaxFunctionCalling.html">MiniMax Function Calling</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Chat/Moonshot.html">Moonshot</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Chat/Nvidia.html">Nvidia</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Chat/OllamaChat.html">OllamaChat</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Chat/QianFanChat.html">QianFan Chat</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Chat/ZhiPuChat.html">ZhiPuChat</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Embedding Model</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/EmbeddingModelIntro.html">Embedding Model Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/MiniMax.html">MiniMax</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/OllamaEmbedding.html">Ollama Embedding</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/OnnxTransformer.html">Onnx Transformer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/Pgml.html">Postgre ML</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/EmbeddingQianFan.html">QianFan</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Embedding/EmbeddingZhiPu.html">ZhiPu</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Image Model</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Image/ImageModelIntro.html">Image Model Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Image/EmbeddingZhiPu.html">ZhiPu</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Image/EmbeddingQianFan.html">QianFan</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Audio Model</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Audio/Transcription.html">Transcription</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Audio/Tts.html">Text To Speech</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Moderation Model</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Vector Store</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Vector/VectorStoreIntro.html">Vector Store Intro</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Vector/Cassandra.html">Cassandra</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Vector/Chroma.html">Chroma</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Vector/Elastic.html">Elastic Vector</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Vector/Milvus.html">Milvus</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Vector/Neo4j.html">Neo4j</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Vector/OpenSearch.html">Open Search</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Vector/OracleStore.html">Oracle Store</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Vector/PostgreVector.html">Postgre Vector</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Vector/Qdrant.html">Qdrant</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Vector/Redis.html">Redis</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Vector/Typesense.html">Typesense</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../SpringAI/Vector/Weaviate.html">Weaviate</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">AI</span>
+    <span class="version">v0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../index.html">AI</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../../multifariousness/v0.0.1/index.html">Multifariousness</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../multifariousness/v0.0.1/index.html">v0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+	<main class="article">
+	<div class="toolbar" role="navigation">
+	<button class="nav-toggle"></button>
+	
+		<a href="../../../../multifariousness/v0.0.1/index.html" 
+			class="home-link">
+		</a>
+
+	<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">AI</a></li>
+    <li>PyTorch</li>
+    <li>Model Deployment</li>
+    <li><a href="ModelDeploymentIntro.html">Model Deployment Intro</a></li>
+  </ul>
+</nav>
+		</div>
+	
+	<div class="content">
+			<aside class="toc sidebar" 
+	data-title="Contents" 
+	data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+			<article class="doc">
+
+</article>
+	</div>
+</main>
+</div>
+		<footer class="footer">
+	
+	
+	
+	<div class="footer-thanks">
+		Authored in AsciiDoc
+		<br /><br />
+		Produced by Antora and Asciidoctor
+  	</div>
+  
+	<div class="footer-legal" style="text-align:center">
+		Gitee：<a href="https://gitee.com/iRecursion" 
+			target="_blank">https://gitee.com/iRecursion</a>
+		
+		<br /><br />
+		
+		Github：<a href="https://github.com/iRecursion" 
+			target="_blank">https://github.com/iRecursion</a>
+	</div>
+  
+	<div class="footer-thanks" style="text-align:left">
+		Copyright © 2024 Elf
+		<br /><br />
+		<address>
+			Mailto：<a href="mailto:2032047511@qq.com">2032047511@qq.com</a>
+		</address>
+	</div>
+	
+</footer><script id="site-script" src="../../../../_/js/site.js" 
+	data-ui-root-path="../../../../_"></script>
+
+<script src="../../../../_/js/vendor/lunr.js"></script>
+<script src="../../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../../.." data-snippet-length="100" data-stylesheet="../../../../_/css/search.css"></script>
+<script async src="../../../../search-index.js"></script>
+
+
+<script async src="../../../../_/js/vendor/prism-1.29.0-coy.js"></script>
+  	</body>
+</html>
