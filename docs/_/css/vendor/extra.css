@@ -73,7 +73,7 @@ body,#search-input{
   	--navbar-background: #fafafa;
   	--navbar-font-color: black;
   	--heading-font-color: fuchsia;
-	--custom-font-size: 14px;
+	--custom-font-size: 16px;
 }
 
 .is-current-page>.nav-link,
